@@ -1,1 +1,0 @@
-{"version":3,"sources":["Scroller.styl"],"names":[],"mappings":"AAAA;;;;;;;AAOA;EACI,UAAS,OAAT","file":"Scroller.css","sourcesContent":["/**\n * Scroller Component Demo for tingle\n * @author gbk\n *\n * Copyright 2014-2015, Tingle Team, Alinw.\n * All rights reserved.\n */\n.tScroller\n    overflow hidden"],"sourceRoot":"/source/"}
