@@ -10,7 +10,7 @@
         "spec": ">=0.1.1 <0.2.0",
         "type": "range"
       },
-      "/Users/Poling/Documents/Project/Mine/saltui/node_modules/tingle-tab"
+      "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/tingle-tab"
     ]
   ],
   "_cnpm_publish_time": 1441948845382,
@@ -24,9 +24,7 @@
     "email": "yize.shc@gmail.com"
   },
   "_npmVersion": "2.11.2",
-  "_phantomChildren": {
-    "classnames": "2.2.5"
-  },
+  "_phantomChildren": {},
   "_requested": {
     "raw": "tingle-scroller@~0.1.1",
     "scope": null,
@@ -39,11 +37,11 @@
   "_requiredBy": [
     "/tingle-tab"
   ],
-  "_resolved": "https://registry.npm.taobao.org/tingle-scroller/download/tingle-scroller-0.1.1.tgz",
+  "_resolved": "http://registry.npm.alibaba-inc.com/tingle-scroller/download/tingle-scroller-0.1.1.tgz",
   "_shasum": "a6e3561f0b53e4a09b0ab8ed1001691bbf8eecd0",
   "_shrinkwrap": null,
   "_spec": "tingle-scroller@~0.1.1",
-  "_where": "/Users/Poling/Documents/Project/Mine/saltui/node_modules/tingle-tab",
+  "_where": "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/tingle-tab",
   "author": {
     "name": "gbk",
     "email": "ck0123456@gmail.com"
@@ -71,7 +69,8 @@
     "shasum": "a6e3561f0b53e4a09b0ab8ed1001691bbf8eecd0",
     "size": 16315,
     "noattachment": false,
-    "tarball": "http://registry.npm.taobao.org/tingle-scroller/download/tingle-scroller-0.1.1.tgz"
+    "key": "tingle-scroller/-/tingle-scroller-0.1.1.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/tingle-scroller/download/tingle-scroller-0.1.1.tgz"
   },
   "files": [
     "src",

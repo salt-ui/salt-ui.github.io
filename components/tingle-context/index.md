@@ -92,15 +92,6 @@ Context.rem(750); // 10rem
 
 ## updates
 
-#### v1.0.1
-
-* 保证`require`方式引用时返回的是同一个上下文对象
-
-#### v1.0.0
-
-* 将react从`0.13.3`升级到`0.14.3`
-* 删除`React.initializeTouchEvents`
-
 #### v0.1.5
 
 * 在`html`上添加`dpr`类值
