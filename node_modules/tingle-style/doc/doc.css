@@ -1,0 +1,30 @@
+.container{
+    margin: 10px 0;
+    background-color: #ddd;
+    color:#fff;
+}
+.note{
+    font-size: 20px;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: rgb(255, 204, 0);
+}
+.ddd{background-color: #ddd;}
+.red{background-color: red;}
+.orange{background-color: orange;}
+.pink{background-color: pink;}
+.green{background-color: green;}
+.yellowgreen{background-color: yellowgreen;}
+.h200{height: 200px;}
+.h30{height: 30px;}
+.h40{height: 40px;}
+.h50{height: 50px;}
+.h70{height: 70px;}
+.h100{height: 100px;}
+.w30{width: 30px;}
+.w40{width: 40px;}
+.w50{width: 50px;}
+.w70{width: 70px;}
+.w100{width: 100px;}
+p{color:#666;line-height: 1.5;}
+p strong{color:#000;font-weight: bold;}
