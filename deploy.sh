@@ -7,8 +7,8 @@ mv build ~/.salt
 git checkout master
 rm -rf *
 mv ~/.salt/* .
-git add .
-git commit -m v$BRANCH
-git push origin master
-git checkout source
+# git add .
+# git commit -m v$BRANCH
+# git push origin master
+# git checkout source
 
