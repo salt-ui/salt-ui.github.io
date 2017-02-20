@@ -10,7 +10,7 @@
         "spec": ">=0.2.2 <0.3.0",
         "type": "range"
       },
-      "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io"
+      "/home/caoke/git/salt-ui/salt-ui.github.io"
     ]
   ],
   "_cnpm_publish_time": 1452158439582,
@@ -41,7 +41,7 @@
   "_shasum": "aa7c003bfb08180bac86ccb8be53ee52fce53174",
   "_shrinkwrap": null,
   "_spec": "tingle-tab@^0.2.2",
-  "_where": "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io",
+  "_where": "/home/caoke/git/salt-ui/salt-ui.github.io",
   "author": {
     "name": "zhangshun",
     "email": "kangning1206@163.com"
