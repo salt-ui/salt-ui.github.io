@@ -92,6 +92,7 @@
     "react-document-title": "^2.0.2",
     "tingle-avatar": "^0.2.0",
     "tingle-tab": "^0.2.2",
+    "uxcore-button": "^0.4.6",
     "uxcore-select2": "^0.4.1"
   }
 }
