@@ -1,0 +1,55 @@
+{
+  "name": "@ali/tingle-layer",
+  "version": "1.0.11",
+  "description": "tingle-layer component for tingle.",
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-layer"
+  },
+  "author": {
+    "name": "gnosaij,zhouquan.yezq"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "keywords": [
+    "tingle-layer",
+    "Layer"
+  ],
+  "dependencies": {
+    "@ali/tingle-context": "~1.0.0",
+    "@ali/tingle-mask": "^1.0.5",
+    "@ali/tingle-style": "~1.0.0",
+    "classnames": "~2.2.3"
+  },
+  "devDependencies": {
+    "@ali/tingle-ui": "~1.0.0",
+    "fastclick": "^1.0.6",
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8",
+    "salt-tools": "~0.1.0"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
+  },
+  "scripts": {
+    "start": "salt-tools run start",
+    "build": "salt-tools run build",
+    "pub": "salt-tools run pub",
+    "dep": "salt-tools run dep",
+    "tnpm-dep": "salt-tools run tnpm-dep",
+    "update": "salt-tools run update",
+    "tnpm-update": "salt-tools run tnpm-update"
+  },
+  "license": "MIT",
+  "screenshots": "",
+  "readme": "# tingle-layer [![tnpm version](http://web.npm.alibaba-inc.com/badge/v/@ali/tingle-layer.svg?style=flat-square)](http://web.npm.alibaba-inc.com/package/@ali/tingle-layer)\n\n模态对话框的基础,但NB的是提供了9宫格定位功能，使用top,left,bottom,right等来定位任意你想要定位的位置\n\n![image](http://aligitlab.oss-cn-hangzhou-zmf.aliyuncs.com/uploads/tingle-ui/tingle-layer/96153afa65fedc62cd0172869064ca0c/image.png)\n\n## Install\n\n```\ntnpm install @ali/tingle-layer --save\n```\n\n## Simple Usage\n\n```\n<Layer width=\"auto\" bottom=\"0\" right=\"0\"  zIndex={888} visible={index === 1} onClick={this.handleClick.bind(this)}>\n      <div style={{width: 100, height: 100, backgroundColor: 'red'}}></div>\n</Layer>\n```\n\n## Props\n\nonClick\n\n* 描述：点击之后的响应事件\n* 类型：function\n* 默认：noop\n* 必填：否\n\nonHide\n\n* 描述：关闭时的响应事件\n* 类型：function\n* 默认：noop\n* 必填：否\n\nzIndex\n\n* 描述：使用自动生成机制，但用户也可以自定义传入 \n* 类型：number\n* 默认：无\n* 必填：否\n\nhasMask\n\n* 描述：是有遮罩层\n* 类型：boolean\n* 默认：true\n* 必填：否\n\nvisible\n\n* 描述：是否直接展示 \n* 类型：boolean\n* 默认：false\n* 必填：否\n\n## APIs\n -暂无\n \n## Links\n\n- [Issues](http://gitlab.alibaba-inc.com/tingle-ui/tingle-layer/issues)\n",
+  "readmeFilename": "README.md",
+  "gitHead": "3704e1df666eafb631f3f116cffdbd419a861622",
+  "_id": "@ali/tingle-layer@1.0.11",
+  "_shasum": "3f2439d96afa3d418a7040fb79f90efdab5b19b8",
+  "_from": "@ali/tingle-layer@>=1.0.0 <2.0.0"
+}

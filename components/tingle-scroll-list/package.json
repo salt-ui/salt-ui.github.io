@@ -1,0 +1,131 @@
+{
+  "name": "@ali/tingle-scroll-list",
+  "version": "1.1.7",
+  "description": "scroll list",
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-scroll-list"
+  },
+  "author": {
+    "name": "zhouquan.yezq"
+  },
+  "main": "dist/index.js",
+  "devices": [
+    "mobile"
+  ],
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "keywords": [
+    "tingle-scroll-list",
+    "ScrollList"
+  ],
+  "dependencies": {
+    "classnames": "~2.2.3",
+    "@ali/tingle-context": "~1.0.0",
+    "@ali/tingle-style": "~1.0.0",
+    "deep-equal": "1.0.1",
+    "iscroll": "5.2.0",
+    "object-assign": "^4.1.0",
+    "react-iscroll": "1.0.2",
+    "@ali/vu-data-source-parser": "^1.0.7",
+    "@ali/tingle-icon": "~1.0.2",
+    "@ali/tingle-icon-source": "~1.0.0"
+  },
+  "devDependencies": {
+    "@ali/tingle-ui": "~1.0.0",
+    "babel": "~6.3.26",
+    "babel-core": "~6.4.0",
+    "babel-loader": "~6.2.1",
+    "babel-plugin-add-module-exports": "~0.1.2",
+    "babel-preset-es2015": "~6.3.13",
+    "babel-preset-react": "~6.3.13",
+    "babel-preset-stage-1": "~6.3.13",
+    "browser-sync": "~2.11.1",
+    "gulp": "~3.9.0",
+    "gulp-babel": "~6.1.1",
+    "gulp-concat": "~2.6.0",
+    "gulp-just-replace": "~1.0.2",
+    "gulp-pathmap": "~0.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "~1.6.0",
+    "gulp-stylus": "~2.3.1",
+    "gulp-svgstore": "^6.0.0",
+    "gulp-uglify": "~1.5.1",
+    "gulp-unique-files": "~0.1.2",
+    "react": "~0.14.8",
+    "react-dom": "~0.14.8",
+    "fastclick": "~1.0.6",
+    "svg2react-loader": "^1.0.2",
+    "through2": "~2.0.1",
+    "cross-spawn": "^2.0.0",
+    "webpack": "~1.12.11",
+    "lodash": "~4.14.1"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
+  },
+  "scripts": {
+    "start": "gulp d",
+    "build": "gulp b"
+  },
+  "license": "MIT",
+  "screenshots": "",
+  "readmeFilename": "README.md",
+  "gitHead": "714028b9b4687818fe9b61a94649afdcb22e4eb7",
+  "_id": "@ali/tingle-scroll-list@1.1.7",
+  "_shasum": "a41da7396d30b611dfafab7aab8ca06105d88e4c",
+  "_from": "@ali/tingle-scroll-list@>=1.0.1 <2.0.0",
+  "_npmVersion": "3.10.9",
+  "_nodeVersion": "4.2.6",
+  "_npmUser": {
+    "name": "wb-zhouwenjie.a",
+    "email": "wb-zhouwenjie.a@alibaba-inc.com"
+  },
+  "maintainers": [
+    {
+      "name": "alex.mm",
+      "email": "alex.mm@alibaba-inc.com"
+    },
+    {
+      "name": "caoke.ck",
+      "email": "caoke.ck@alibaba-inc.com"
+    },
+    {
+      "name": "minjie.lmj",
+      "email": "minjie.lmj@alibaba-inc.com"
+    },
+    {
+      "name": "quanyun.mqy",
+      "email": "quanyun.mqy@alibaba-inc.com"
+    },
+    {
+      "name": "ruiyang.dry",
+      "email": "ruiyang.dry@alibaba-inc.com"
+    },
+    {
+      "name": "wb-zhouwenjie.a",
+      "email": "wb-zhouwenjie.a@alibaba-inc.com"
+    },
+    {
+      "name": "xiaohe.wp",
+      "email": "xiaohe.wp@alibaba-inc.com"
+    },
+    {
+      "name": "zhouquan.yezq",
+      "email": "zhouquan.yezq@alibaba-inc.com"
+    }
+  ],
+  "dist": {
+    "shasum": "a41da7396d30b611dfafab7aab8ca06105d88e4c",
+    "size": 20833,
+    "key": "@ali/tingle-scroll-list/-/@ali/tingle-scroll-list-1.1.7.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-scroll-list/download/@ali/tingle-scroll-list-1.1.7.tgz"
+  },
+  "_publish_on_cnpm": true,
+  "_cnpm_publish_time": 1487587845698,
+  "publish_time": 1487587845698,
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-scroll-list/download/@ali/tingle-scroll-list-1.1.7.tgz"
+}

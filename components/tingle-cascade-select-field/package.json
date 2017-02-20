@@ -1,0 +1,98 @@
+{
+  "name": "@ali/tingle-cascade-select-field",
+  "version": "1.0.13",
+  "description": "tingle-cascade-select-field component for tingle.",
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-cascade-select-field"
+  },
+  "author": {
+    "name": "caoke.ck"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "keywords": [
+    "tingle-cascade-select-field",
+    "CascadeSelectField",
+    "时间选择"
+  ],
+  "dependencies": {
+    "@ali/tingle-context": "~1.0.0",
+    "@ali/tingle-field": "~1.0.1",
+    "@ali/tingle-slot": "~1.0.0",
+    "classnames": "~2.2.3"
+  },
+  "devDependencies": {
+    "@ali/tingle-group": "~1.0.7",
+    "@ali/tingle-layer": "^1.0.6",
+    "@ali/tingle-mask": "^1.0.5",
+    "@ali/tingle-style": "~1.0.0",
+    "@ali/tingle-ui": "~1.0.0",
+    "babel": "~6.3.26",
+    "babel-core": "~6.4.0",
+    "babel-loader": "~6.2.1",
+    "babel-plugin-add-module-exports": "~0.1.2",
+    "babel-preset-es2015": "~6.3.13",
+    "babel-preset-react": "~6.3.13",
+    "babel-preset-stage-1": "~6.3.13",
+    "browser-sync": "~2.11.1",
+    "cross-spawn": "^2.0.0",
+    "fastclick": "~1.0.6",
+    "gulp": "~3.9.0",
+    "gulp-babel": "~6.1.1",
+    "gulp-concat": "~2.6.0",
+    "gulp-just-replace": "~1.0.2",
+    "gulp-pathmap": "~0.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "~1.6.0",
+    "gulp-stylus": "~2.3.1",
+    "gulp-svgstore": "^6.0.0",
+    "gulp-uglify": "~1.5.1",
+    "gulp-unique-files": "~0.1.2",
+    "react": "~0.14.8",
+    "react-dom": "~0.14.8",
+    "svg2react-loader": "^1.0.2",
+    "through2": "~2.0.1",
+    "webpack": "~1.12.11"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
+  },
+  "scripts": {
+    "start": "gulp d",
+    "build": "gulp b"
+  },
+  "license": "MIT",
+  "screenshots": "",
+  "readmeFilename": "README.md",
+  "gitHead": "3d81c9c1c0f08f4c51e447c2884184df69b2f954",
+  "_id": "@ali/tingle-cascade-select-field@1.0.13",
+  "_shasum": "f00d225252fe9baff993f56ef01f224a7d1f8b67",
+  "_from": "@ali/tingle-cascade-select-field@>=1.0.12 <2.0.0",
+  "_npmVersion": "2.15.11",
+  "_nodeVersion": "4.6.0",
+  "_npmUser": {
+    "name": "caoke.ck",
+    "email": "caoke.ck@alibaba-inc.com"
+  },
+  "maintainers": [
+    {
+      "name": "caoke.ck",
+      "email": "caoke.ck@alibaba-inc.com"
+    }
+  ],
+  "dist": {
+    "shasum": "f00d225252fe9baff993f56ef01f224a7d1f8b67",
+    "size": 11224,
+    "key": "@ali/tingle-cascade-select-field/-/@ali/tingle-cascade-select-field-1.0.13.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-cascade-select-field/download/@ali/tingle-cascade-select-field-1.0.13.tgz"
+  },
+  "_publish_on_cnpm": true,
+  "_cnpm_publish_time": 1476886725501,
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-cascade-select-field/download/@ali/tingle-cascade-select-field-1.0.13.tgz",
+  "readme": "ERROR: No README data found!"
+}

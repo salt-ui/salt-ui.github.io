@@ -1,60 +1,29 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "@ali/tingle-slide@^1.0.0",
-        "scope": "@ali",
-        "escapedName": "@ali%2ftingle-slide",
-        "name": "@ali/tingle-slide",
-        "rawSpec": "^1.0.0",
-        "spec": ">=1.0.0 <2.0.0",
-        "type": "range"
-      },
-      "/home/caoke/git/salt-ui/salt-ui.github.io"
-    ]
-  ],
-  "_cnpm_publish_time": 1478245637373,
-  "_from": "@ali/tingle-slide@>=1.0.0 <2.0.0",
-  "_id": "@ali/tingle-slide@1.0.9",
-  "_inCache": true,
-  "_location": "/@ali/tingle-slide",
-  "_nodeVersion": "4.5.0",
-  "_npmUser": {
-    "name": "changming.zy",
-    "email": "changming.zy@alibaba-inc.com"
+  "name": "@ali/tingle-slide",
+  "version": "1.0.11",
+  "description": "tingle-slide component for tingle.",
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-slide"
   },
-  "_npmVersion": "2.15.11",
-  "_phantomChildren": {},
-  "_publish_on_cnpm": true,
-  "_requested": {
-    "raw": "@ali/tingle-slide@^1.0.0",
-    "scope": "@ali",
-    "escapedName": "@ali%2ftingle-slide",
-    "name": "@ali/tingle-slide",
-    "rawSpec": "^1.0.0",
-    "spec": ">=1.0.0 <2.0.0",
-    "type": "range"
-  },
-  "_requiredBy": [
-    "/",
-    "/@ali/tingle-gallery",
-    "/@ali/tingle-grid/@ali/tingle-ui",
-    "/@ali/tingle-ui"
-  ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-slide/download/@ali/tingle-slide-1.0.9.tgz",
-  "_shasum": "3112bd6e294f9e173252ca3c3ac5882ca068b5aa",
-  "_shrinkwrap": null,
-  "_spec": "@ali/tingle-slide@^1.0.0",
-  "_where": "/home/caoke/git/salt-ui/salt-ui.github.io",
   "author": {
     "name": "cm"
   },
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "keywords": [
+    "tingle-slide",
+    "Slide"
+  ],
   "dependencies": {
+    "classnames": "~2.2.3",
     "@ali/tingle-context": "~1.0.0",
-    "@ali/tingle-style": "~1.0.0",
-    "classnames": "~2.2.3"
+    "@ali/tingle-style": "~1.0.0"
   },
-  "description": "tingle-slide component for tingle.",
   "devDependencies": {
     "@ali/tingle-ui": "~1.0.0",
     "babel": "~6.3.26",
@@ -65,8 +34,6 @@
     "babel-preset-react": "~6.3.13",
     "babel-preset-stage-1": "~6.3.13",
     "browser-sync": "~2.11.1",
-    "cross-spawn": "^2.0.0",
-    "fastclick": "~1.0.6",
     "gulp": "~3.9.0",
     "gulp-babel": "~6.1.1",
     "gulp-concat": "~2.6.0",
@@ -80,32 +47,40 @@
     "gulp-unique-files": "~0.1.2",
     "react": "~0.14.8",
     "react-dom": "~0.14.8",
+    "fastclick": "~1.0.6",
     "svg2react-loader": "^1.0.2",
     "through2": "~2.0.1",
+    "cross-spawn": "^2.0.0",
     "webpack": "~1.12.11"
   },
-  "dist": {
-    "shasum": "3112bd6e294f9e173252ca3c3ac5882ca068b5aa",
-    "size": 32886,
-    "key": "@ali/tingle-slide/-/@ali/tingle-slide-1.0.9.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-slide/download/@ali/tingle-slide-1.0.9.tgz"
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "files": [
-    "dist",
-    "src",
-    "README.md"
-  ],
-  "gitHead": "998e979a6abd72a51806ac74cbfcd45fe80ee87f",
-  "keywords": [
-    "tingle-slide",
-    "Slide"
-  ],
+  "scripts": {
+    "start": "gulp d",
+    "build": "gulp b"
+  },
   "license": "MIT",
-  "main": "dist/index.js",
+  "screenshots": "",
+  "readmeFilename": "README.md",
+  "gitHead": "a52d8a70a61bf6af3f39c606a2bbcff30db2e6b6",
+  "_id": "@ali/tingle-slide@1.0.11",
+  "_shasum": "6afc3c1fe51b7218d110934ece49a66c95205f80",
+  "_from": "@ali/tingle-slide@>=1.0.0 <2.0.0",
+  "_npmVersion": "3.10.9",
+  "_nodeVersion": "6.9.4",
+  "_npmUser": {
+    "name": "caoke.ck",
+    "email": "caoke.ck@alibaba-inc.com"
+  },
   "maintainers": [
     {
       "name": "alex.mm",
       "email": "alex.mm@alibaba-inc.com"
+    },
+    {
+      "name": "caoke.ck",
+      "email": "caoke.ck@alibaba-inc.com"
     },
     {
       "name": "changming.zy",
@@ -116,22 +91,14 @@
       "email": "quanyun.mqy@alibaba-inc.com"
     }
   ],
-  "name": "@ali/tingle-slide",
-  "optionalDependencies": {},
-  "publishConfig": {
-    "registry": "http://registry.npm.alibaba-inc.com"
+  "dist": {
+    "shasum": "6afc3c1fe51b7218d110934ece49a66c95205f80",
+    "size": 35041,
+    "key": "@ali/tingle-slide/-/@ali/tingle-slide-1.0.11.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-slide/download/@ali/tingle-slide-1.0.11.tgz"
   },
-  "publish_time": 1478245637373,
-  "readme": "ERROR: No README data found!",
-  "readmeFilename": "README.md",
-  "repository": {
-    "type": "git",
-    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-slide"
-  },
-  "screenshots": "",
-  "scripts": {
-    "build": "gulp b",
-    "start": "gulp d"
-  },
-  "version": "1.0.9"
+  "_publish_on_cnpm": true,
+  "_cnpm_publish_time": 1487573792308,
+  "publish_time": 1487573792308,
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-slide/download/@ali/tingle-slide-1.0.11.tgz"
 }

@@ -1,36 +1,107 @@
-# Button 按钮 [![npm version](https://badge.fury.io/js/tingle-button.svg)](http://badge.fury.io/js/tingle-button)
+# tingle-button 按钮 [![tnpm version](http://web.npm.alibaba-inc.com/badge/v/@ali/tingle-button.svg?style=flat-square)](http://web.npm.alibaba-inc.com/package/@ali/tingle-button)
 
-<img src="http://ww1.sinaimg.cn/large/8df27f17gw1f2fxc4ai3bj20az0hpwfg.jpg" width="300"/>
+<img src="https://img.alicdn.com/tps/TB1_8LfJFXXXXbOXFXXXXXXXXXX-640-1136.png" width="300"/>
 
-## Simple Usage
+## Install
 
-```html
-<Button>默认按钮</Button>
-
-<Button type="primary" onClick={this.handleClick}>主 按 钮</Button>
-<Button type="secondary" onClick={this.handleClick}>次 按 钮</Button>
-<Button type="danger" onClick={this.handleClick}>警告按钮</Button>
-<Button type="text" onClick={this.handleClick}>纯文本</Button>
-
-<Button type="primary" size="medium" onClick={this.handleClick}>中按钮</Button>
-<Button type="primary" size="large" onClick={this.handleClick}>大按钮</Button>
-<Button type="primary" size="small" onClick={this.handleClick}>小按钮</Button>
-
-<Button disabled={true}>不可点击</Button>
-<Button disabled={true} type="text">纯文本不可点击</Button>
-<Button disabled={true} size="small">不可点击</Button>
+```
+tnpm install @ali/tingle-button --save
 ```
 
 ## Props
 
-| 配置项 | 必填 | 默认值 | 功能/备注 |
-|---|----|---|----|
-|className|optional| |给组件添加额外的class｜
-|disabled| optional |false|按钮失效|
-|type| optional |primary|按钮的类型, 可选的参数primary、secondary、danger、text|
-|size| optional |large|按钮的大小, 可选的参数 small 、medium 、large|
-|onClick|optional| |按钮点击时的回调|
+#### className
+
+描述：自定义的扩展样式名称
+
+类型：String
+
+默认：''
+
+必填：否
+
+#### disabled
+
+描述：按钮失效
+
+类型：Boolean
+
+默认：false
+
+必填：否
+
+#### type
+
+描述：按钮的类型, 可选的参数 primary、secondary、minor、danger、text
+
+类型：String
+
+默认：'primary'
+
+必填：否
+
+#### size
+
+描述：按钮的大小, 可选的参数 small 、medium 、large
+
+类型：String
+
+默认：'large'
+
+必填：否
+
+#### onClick
+
+描述：按钮点击时的回调
+
+类型：Function
+
+默认：noop
+
+必填：否
+
+#### style
+
+描述：按钮的行内样式复写
+
+类型：object
+
+默认：`{}`
+
+必填：否
+
+## Simple Usage
+
+```javascript
+import {Button} from 'tingle';
+
+let View = React.createClass({
+  handleClick() {
+    console.log('a button clicked')
+  },
+
+  render() {
+      return (
+        <div style={{padding:'20px'}}>
+          <Button>默认按钮</Button> <br/>
+          <Button type="primary" onClick={this.handleClick}>一级按钮</Button> <br/>
+          <Button type="secondary" onClick={this.handleClick}>二级按钮</Button> <br/>
+          <Button type="minor" onClick={this.handleClick}>次要按钮</Button> <br/>
+          <Button disabled={true}>不可点击</Button> <br/>
+          <div className="demo-row">
+              <div className="demo-cell"><Button type="primary" onClick={this.handleClick}>一级按钮</Button></div>
+              <div className="demo-cell"><Button type="secondary" onClick={this.handleClick}>二级按钮</Button></div>
+          </div> <br/>
+          <Button style={{marginLeft:-20,marginRight:-20,borderRadius:0}} onClick={this.handleClick}>通栏按钮</Button> <br/>
+          <Button type="primary" size="large" onClick={this.handleClick}>大按钮</Button> <br/>
+          <Button type="primary" size="medium" onClick={this.handleClick}>中按钮</Button> <br/>
+          <Button type="primary" size="small" onClick={this.handleClick}>小按钮</Button> <br/>
+        </div>
+      )
+  }
+})
+```
 
 ## Links 相关链接
 
-- [Fire a bug/Issues 提Bug](https://github.com/tinglejs/tingle-button/issues)
+- [Fire a bug/Issues 提Bug](http://gitlab.alibaba-inc.com/tingle-ui/tingle-button/issues)

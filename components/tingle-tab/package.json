@@ -1,116 +1,101 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "tingle-tab@^0.2.2",
-        "scope": null,
-        "escapedName": "tingle-tab",
-        "name": "tingle-tab",
-        "rawSpec": "^0.2.2",
-        "spec": ">=0.2.2 <0.3.0",
-        "type": "range"
-      },
-      "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io"
-    ]
-  ],
-  "_cnpm_publish_time": 1452158439582,
-  "_from": "tingle-tab@>=0.2.2 <0.3.0",
-  "_id": "tingle-tab@0.2.2",
-  "_inCache": true,
-  "_location": "/tingle-tab",
-  "_nodeVersion": "4.2.3",
-  "_npmUser": {
-    "name": "gnosaij",
-    "email": "gnosaij@yeah.net"
+  "name": "@ali/tingle-tab",
+  "version": "1.0.26",
+  "description": "tingle-tab component for tingle.",
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-tab"
   },
-  "_npmVersion": "2.14.7",
-  "_phantomChildren": {},
-  "_requested": {
-    "raw": "tingle-tab@^0.2.2",
-    "scope": null,
-    "escapedName": "tingle-tab",
-    "name": "tingle-tab",
-    "rawSpec": "^0.2.2",
-    "spec": ">=0.2.2 <0.3.0",
-    "type": "range"
-  },
-  "_requiredBy": [
-    "/"
-  ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/tingle-tab/download/tingle-tab-0.2.2.tgz",
-  "_shasum": "aa7c003bfb08180bac86ccb8be53ee52fce53174",
-  "_shrinkwrap": null,
-  "_spec": "tingle-tab@^0.2.2",
-  "_where": "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io",
   "author": {
-    "name": "zhangshun",
-    "email": "kangning1206@163.com"
+    "name": "zhangshun@alipay.com"
   },
-  "bugs": {
-    "url": "https://github.com/tinglejs/tingle-tab/issues"
-  },
-  "dependencies": {
-    "classnames": "^2.1.2",
-    "tingle-context": "~0.1.0",
-    "tingle-scroller": "~0.1.1",
-    "tingle-style": "~0.2.0"
-  },
-  "description": "tingle-tab tab选项",
-  "devDependencies": {
-    "babel-core": "^5.8.19",
-    "babel-loader": "^5.3.2",
-    "fastclick": "^1.0.6",
-    "gulp": "^3.9.0",
-    "react": "^0.13.3",
-    "tingle-dev-tools": "latest"
-  },
-  "directories": {},
-  "dist": {
-    "shasum": "aa7c003bfb08180bac86ccb8be53ee52fce53174",
-    "size": 4934,
-    "noattachment": false,
-    "key": "tingle-tab/-/tingle-tab-0.2.2.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/tingle-tab/download/tingle-tab-0.2.2.tgz"
-  },
+  "main": "dist/index.js",
   "files": [
+    "dist",
     "src",
     "README.md"
   ],
-  "gitHead": "3bd840102e36674c48bad0ec2a935b7f7d61800c",
-  "homepage": "https://github.com/tinglejs/tingle-tab#readme",
   "keywords": [
     "tingle-tab",
-    "tab",
-    "选项",
-    "tingle"
+    "Tab"
   ],
+  "dependencies": {
+    "classnames": "~2.2.3",
+    "@ali/tingle-context": "~1.0.0",
+    "@ali/tingle-style": "~1.0.0",
+    "@ali/tingle-scroller": "~1.0.0"
+  },
+  "devDependencies": {
+    "@ali/tingle-ui": "~1.0.0",
+    "babel": "~6.3.26",
+    "babel-core": "~6.4.0",
+    "babel-loader": "~6.2.1",
+    "babel-plugin-add-module-exports": "~0.1.2",
+    "babel-preset-es2015": "~6.3.13",
+    "babel-preset-react": "~6.3.13",
+    "babel-preset-stage-1": "~6.3.13",
+    "browser-sync": "~2.11.1",
+    "gulp": "~3.9.0",
+    "gulp-babel": "~6.1.1",
+    "gulp-concat": "~2.6.0",
+    "gulp-just-replace": "~1.0.2",
+    "gulp-pathmap": "~0.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "~1.6.0",
+    "gulp-stylus": "~2.3.1",
+    "gulp-svg-symbols": "~1.0.0",
+    "gulp-uglify": "~1.5.1",
+    "gulp-unique-files": "~0.1.2",
+    "react": "~0.14.8",
+    "react-dom": "~0.14.8",
+    "fastclick": "~1.0.6",
+    "svg2react-loader": "^1.0.2",
+    "through2": "~2.0.1",
+    "cross-spawn": "^2.0.0",
+    "webpack": "~1.12.11"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
+  },
+  "scripts": {
+    "start": "gulp d",
+    "build": "gulp b"
+  },
   "license": "MIT",
-  "main": "src/index.js",
+  "screenshots": "",
+  "readmeFilename": "README.md",
+  "gitHead": "c6f6c86895abf530d4d4cc2ace99674506299ee5",
+  "_id": "@ali/tingle-tab@1.0.26",
+  "_shasum": "380c2b55939fa1f4c4c2004d9c76b686685969dc",
+  "_from": "@ali/tingle-tab@>=1.0.0 <2.0.0",
+  "_npmVersion": "3.10.9",
+  "_nodeVersion": "6.9.4",
+  "_npmUser": {
+    "name": "caoke.ck",
+    "email": "caoke.ck@alibaba-inc.com"
+  },
   "maintainers": [
     {
-      "name": "gbk",
-      "email": "ck0123456@gmail.com"
+      "name": "alex.mm",
+      "email": "alex.mm@alibaba-inc.com"
     },
     {
-      "name": "gnosaij",
-      "email": "gnosaij@yeah.net"
+      "name": "caoke.ck",
+      "email": "caoke.ck@alibaba-inc.com"
     },
     {
-      "name": "yize",
-      "email": "yize.shc@gmail.com"
+      "name": "quanyun.mqy",
+      "email": "quanyun.mqy@alibaba-inc.com"
     }
   ],
-  "name": "tingle-tab",
-  "optionalDependencies": {},
-  "publish_time": 1452158439582,
-  "readme": "ERROR: No README data found!",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tinglejs/tingle-tab.git"
+  "dist": {
+    "shasum": "380c2b55939fa1f4c4c2004d9c76b686685969dc",
+    "size": 17431,
+    "key": "@ali/tingle-tab/-/@ali/tingle-tab-1.0.26.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-tab/download/@ali/tingle-tab-1.0.26.tgz"
   },
-  "screenshots": "https://img.alicdn.com/tps/TB1yoIXJpXXXXaEXXXXXXXXXXXX-750-1254.png",
-  "scripts": {
-    "start": "gulp server"
-  },
-  "version": "0.2.2"
+  "_publish_on_cnpm": true,
+  "_cnpm_publish_time": 1487574086742,
+  "publish_time": 1487574086742,
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-tab/download/@ali/tingle-tab-1.0.26.tgz"
 }

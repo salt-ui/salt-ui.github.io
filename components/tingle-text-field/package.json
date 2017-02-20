@@ -1,60 +1,30 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "@ali/tingle-text-field@^1.0.0",
-        "scope": "@ali",
-        "escapedName": "@ali%2ftingle-text-field",
-        "name": "@ali/tingle-text-field",
-        "rawSpec": "^1.0.0",
-        "spec": ">=1.0.0 <2.0.0",
-        "type": "range"
-      },
-      "/home/caoke/git/salt-ui/salt-ui.github.io"
-    ]
-  ],
-  "_cnpm_publish_time": 1481455868911,
-  "_from": "@ali/tingle-text-field@>=1.0.0 <2.0.0",
-  "_id": "@ali/tingle-text-field@1.0.6",
-  "_inCache": true,
-  "_location": "/@ali/tingle-text-field",
-  "_nodeVersion": "6.9.1",
-  "_npmUser": {
-    "name": "quanyun.mqy",
-    "email": "quanyun.mqy@alibaba-inc.com"
+  "name": "@ali/tingle-text-field",
+  "version": "1.0.8",
+  "description": "tingle-text-field component for tingle.",
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-text-field"
   },
-  "_npmVersion": "3.10.9",
-  "_phantomChildren": {},
-  "_publish_on_cnpm": true,
-  "_requested": {
-    "raw": "@ali/tingle-text-field@^1.0.0",
-    "scope": "@ali",
-    "escapedName": "@ali%2ftingle-text-field",
-    "name": "@ali/tingle-text-field",
-    "rawSpec": "^1.0.0",
-    "spec": ">=1.0.0 <2.0.0",
-    "type": "range"
-  },
-  "_requiredBy": [
-    "/",
-    "/@ali/tingle-grid/@ali/tingle-ui",
-    "/@ali/tingle-ui"
-  ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-text-field/download/@ali/tingle-text-field-1.0.6.tgz",
-  "_shasum": "3ed5b4ac74800b373ac6cfd65cddc7c39155263c",
-  "_shrinkwrap": null,
-  "_spec": "@ali/tingle-text-field@^1.0.0",
-  "_where": "/home/caoke/git/salt-ui/salt-ui.github.io",
   "author": {
     "name": "jiasong.js"
   },
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "keywords": [
+    "tingle-text-field",
+    "TextField"
+  ],
   "dependencies": {
     "@ali/tingle-context": "~1.0.0",
     "@ali/tingle-field": "~1.0.4",
     "@ali/tingle-style": "~1.0.0",
     "classnames": "~2.2.3"
   },
-  "description": "tingle-text-field component for tingle.",
   "devDependencies": {
     "@ali/tingle-group": "~1.0.2",
     "@ali/tingle-ui": "~1.0.0",
@@ -85,28 +55,34 @@
     "through2": "~2.0.1",
     "webpack": "~1.12.11"
   },
-  "dist": {
-    "shasum": "3ed5b4ac74800b373ac6cfd65cddc7c39155263c",
-    "size": 11090,
-    "key": "@ali/tingle-text-field/-/@ali/tingle-text-field-1.0.6.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-text-field/download/@ali/tingle-text-field-1.0.6.tgz"
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "files": [
-    "dist",
-    "src",
-    "README.md"
-  ],
-  "gitHead": "d034b48a1bf6ecbd1edaaeba5e81a40eebf3f8cc",
-  "keywords": [
-    "tingle-text-field",
-    "TextField"
-  ],
+  "scripts": {
+    "start": "gulp d",
+    "build": "gulp b"
+  },
   "license": "MIT",
-  "main": "dist/index.js",
+  "screenshots": "",
+  "readmeFilename": "README.md",
+  "gitHead": "c48ff3af6bb6fedb08d134fb9bc5d23393472968",
+  "_id": "@ali/tingle-text-field@1.0.8",
+  "_shasum": "e3a4c653de520949d8f722222583fbaea0938215",
+  "_from": "@ali/tingle-text-field@>=1.0.0 <2.0.0",
+  "_npmVersion": "3.10.9",
+  "_nodeVersion": "6.9.4",
+  "_npmUser": {
+    "name": "caoke.ck",
+    "email": "caoke.ck@alibaba-inc.com"
+  },
   "maintainers": [
     {
       "name": "alex.mm",
       "email": "alex.mm@alibaba-inc.com"
+    },
+    {
+      "name": "caoke.ck",
+      "email": "caoke.ck@alibaba-inc.com"
     },
     {
       "name": "jiasong.js",
@@ -117,22 +93,14 @@
       "email": "quanyun.mqy@alibaba-inc.com"
     }
   ],
-  "name": "@ali/tingle-text-field",
-  "optionalDependencies": {},
-  "publishConfig": {
-    "registry": "http://registry.npm.alibaba-inc.com"
+  "dist": {
+    "shasum": "e3a4c653de520949d8f722222583fbaea0938215",
+    "size": 11025,
+    "key": "@ali/tingle-text-field/-/@ali/tingle-text-field-1.0.8.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-text-field/download/@ali/tingle-text-field-1.0.8.tgz"
   },
-  "publish_time": 1481455868911,
-  "readme": "ERROR: No README data found!",
-  "readmeFilename": "README.md",
-  "repository": {
-    "type": "git",
-    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-text-field"
-  },
-  "screenshots": "",
-  "scripts": {
-    "build": "gulp b",
-    "start": "gulp d"
-  },
-  "version": "1.0.6"
+  "_publish_on_cnpm": true,
+  "_cnpm_publish_time": 1487574237665,
+  "publish_time": 1487574237665,
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-text-field/download/@ali/tingle-text-field-1.0.8.tgz"
 }

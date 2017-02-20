@@ -1,0 +1,56 @@
+{
+  "name": "@ali/tingle-rate",
+  "version": "1.0.3",
+  "description": "tingle-rate component for tingle.",
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-rate"
+  },
+  "author": {
+    "name": "quanyun.mqy"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "keywords": [
+    "tingle-rate",
+    "Rate"
+  ],
+  "dependencies": {
+    "@ali/tingle-context": "~1.0.0",
+    "@ali/tingle-icon": "^1.0.11",
+    "@ali/tingle-style": "^1.0.20",
+    "classnames": "~2.2.3"
+  },
+  "devDependencies": {
+    "@ali/tingle-icon-source": "~1.0.0",
+    "@ali/tingle-ui": "~1.0.0",
+    "fastclick": "^1.0.6",
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8",
+    "salt-tools": "~0.1.0"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
+  },
+  "scripts": {
+    "start": "salt-tools run start",
+    "build": "salt-tools run build",
+    "pub": "salt-tools run pub",
+    "dep": "salt-tools run dep",
+    "tnpm-dep": "salt-tools run tnpm-dep",
+    "update": "salt-tools run update",
+    "tnpm-update": "salt-tools run tnpm-update"
+  },
+  "license": "MIT",
+  "screenshots": "",
+  "readme": "# tingle-rate [![tnpm version](http://web.npm.alibaba-inc.com/badge/v/@ali/tingle-rate.svg?style=flat-square)](http://web.npm.alibaba-inc.com/package/@ali/tingle-rate)\n\n评分组件.\n\n![tingle-rate](http://aligitlab.oss-cn-hangzhou-zmf.aliyuncs.com/uploads/tingle-ui/tingle-icon-source/cb82ed23b86df267ece18d0e28575208/image.png)\n\n## Install\n\n```\ntnpm install @ali/tingle-rate --save\n```\n\n## Simple Usage\n\n```js\n<Rate totalScore={5} height={30} gap={15} score={t.state.score} onChange={t.handleChange.bind(t)} />\n```\n\n## Props\n\n#### className\n\n描述：自定义样式的class名称。\n\n类型：String\n\n默认：''\n\n必选：否\n\n#### totalScore\n\n描述：icon的个数，即总分。\n\n类型：Number\n\n默认：5\n\n必选：否\n\n\n\n#### height\n\n描述：icon的尺寸，icon一定是正方形的，也就是width=height。\n\n类型：Number 或 String\n\n默认：30\n\n必选：否\n\n\n#### gap\n\n描述：每一项的padding-let 和 padding-right的总和。但第一项的padding-let和最后一项padding-right均为: 0 !important。\n\n类型：Number 或 String\n\n默认：10\n\n必选：否\n\n\n#### score\n\n描述：默认已得到的分数。\n\n类型：Number\n\n默认：0\n\n必选：否\n\n\n#### onChange\n\n描述：回调函数，会返回选中的分数onChange(currentScore)。\n\n类型：Function\n\n默认：noop\n\n必选：否\n\n\n## Links\n\n- [Issues](http://gitlab.alibaba-inc.com/tingle-ui/tingle-rate/issues)\n",
+  "readmeFilename": "README.md",
+  "gitHead": "8f75db773c050bdc2481f051a9e95c716a3f5951",
+  "_id": "@ali/tingle-rate@1.0.3",
+  "_shasum": "fc6c75fc302c110e3ccb8f79a73c1776013bfae3",
+  "_from": "@ali/tingle-rate@>=1.0.0 <2.0.0"
+}
