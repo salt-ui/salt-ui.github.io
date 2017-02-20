@@ -81,6 +81,7 @@
     "@ali/tingle-text-field": "^1.0.0",
     "@ali/tingle-textarea-field": "^1.0.0",
     "@ali/tingle-toast": "^1.0.0",
+    "babel-runtime": "^6.23.0",
     "bisheng-plugin-react": "^0.3.1",
     "bisheng-plugin-uxcore": "^1.0.2",
     "classnames": "^2.2.5",
