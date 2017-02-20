@@ -10,7 +10,7 @@
         "spec": ">=0.1.1 <0.2.0",
         "type": "range"
       },
-      "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/tingle-tab"
+      "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/tingle-tab"
     ]
   ],
   "_cnpm_publish_time": 1441948845382,
@@ -41,7 +41,7 @@
   "_shasum": "a6e3561f0b53e4a09b0ab8ed1001691bbf8eecd0",
   "_shrinkwrap": null,
   "_spec": "tingle-scroller@~0.1.1",
-  "_where": "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/tingle-tab",
+  "_where": "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/tingle-tab",
   "author": {
     "name": "gbk",
     "email": "ck0123456@gmail.com"
