@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run predo && npm run bisheng",
+    "start": "npm run bisheng",
     "predo": "node ./bisheng/predo.js",
     "bisheng1": "bisheng start -c ./bisheng/bisheng.site.config.js --no-livereload",
     "bisheng2": "bisheng start -c ./bisheng/bisheng.mobile.config.js --no-livereload",
