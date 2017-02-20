@@ -5,7 +5,7 @@ git commit -am v$BRANCH
 git push origin source
 mv build ~/.salt
 git checkout master
-mv ~/.salt/* .
+mv -f ~/.salt/* .
 git add .
 git commit -m v$BRANCH
 git push origin master
