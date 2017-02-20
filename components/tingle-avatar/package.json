@@ -10,7 +10,7 @@
         "spec": ">=0.2.0 <0.3.0",
         "type": "range"
       },
-      "/home/caoke/git/salt-ui/salt-ui.github.io"
+      "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io"
     ]
   ],
   "_cnpm_publish_time": 1452091399260,
@@ -41,7 +41,7 @@
   "_shasum": "780d90bbd11129c79b16660fa3c144d83a39c85b",
   "_shrinkwrap": null,
   "_spec": "tingle-avatar@^0.2.0",
-  "_where": "/home/caoke/git/salt-ui/salt-ui.github.io",
+  "_where": "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io",
   "author": {
     "name": "alex.mm"
   },

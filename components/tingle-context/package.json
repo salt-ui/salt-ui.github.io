@@ -10,7 +10,7 @@
         "spec": ">=0.1.1 <0.2.0",
         "type": "range"
       },
-      "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/tingle-avatar"
+      "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/tingle-avatar"
     ]
   ],
   "_cnpm_publish_time": 1448008851506,
@@ -43,7 +43,7 @@
   "_shasum": "faa810e7cea0af3614c5b6bf4b5f85e562305949",
   "_shrinkwrap": null,
   "_spec": "tingle-context@~0.1.1",
-  "_where": "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/tingle-avatar",
+  "_where": "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/tingle-avatar",
   "author": {
     "name": "gnosaij",
     "email": "gnosaij@yeah.net"
