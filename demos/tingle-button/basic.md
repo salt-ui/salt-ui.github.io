@@ -9,7 +9,7 @@ title: basic
 const { Button } = SaltUI;
 
 ReactDOM.render(
-  <div>
+  <div className="btn-container">
     <Button>默认按钮</Button>
     <Button type="primary">主 按 钮</Button> 
     <Button type="secondary">次 按 钮</Button> 
@@ -24,3 +24,8 @@ ReactDOM.render(
   </div>, mountNode
 );
 ```
+````css
+.btn-container .t-button{
+    margin: 0.16rem 0;
+}
+````

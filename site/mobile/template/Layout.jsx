@@ -22,15 +22,25 @@ export default class Layout extends React.Component {
 		window.addEventListener('message', this.receiveMessage);
 	}
 
+	shouldComponentUpdate(){
+		return false;
+	}
+
 	receiveMessage(event){
 
 		const mount = this.refs.mountNode;
 		const copms = [ReactDOM, React, window.SaltUI, mount];
-
-  		try{
+		try{
 			// let f = new Function(args, code);
-			let f = new Function(ARGS, event.data);
+			let f = new Function(ARGS, event.data.code);
 			f.apply(null, copms);
+
+			if(event.data.style){
+				let style = document.createElement('style');
+				style.type = 'text/css';
+				style.innerHTML = event.data.style;
+				document.getElementsByTagName('head').item(0).appendChild(style); 
+			}
 
 		}catch (error){
 			console.log(error)
@@ -38,8 +48,11 @@ export default class Layout extends React.Component {
 	}
 
 	render(){
+
 		return (
-			<div ref="mountNode"></div>
+			<div>
+				<div ref="mountNode" />
+			</div>
 		)
 	}
 

@@ -41,14 +41,13 @@ export default class Layout extends React.Component {
       }
     });
 
-    console.log(types)
     this.types = types;
 
   }
 
   render() {
     const { data, children, routeParams, route, hasAside, params } = this.props;
-    
+    console.log(data)
     return (
       <div className={classnames('page-wrap', {
         'hide-aside': !hasAside, 

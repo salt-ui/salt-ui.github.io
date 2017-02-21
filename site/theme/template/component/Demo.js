@@ -38,7 +38,7 @@ export default class Demo extends React.Component {
 				demos: this.sortDemos(next.demos)
 			}, () =>{
 				window.setTimeout(() => {
-					this.transform(this.state.demos[0].content);
+					this.transform(this.state.demos[0]);
 				}, 1000)
 			})
 		}
@@ -48,31 +48,42 @@ export default class Demo extends React.Component {
 		const { demos, selectDemoIndex } = this.state;
 
 		window.setTimeout(() => {
-			this.transform(demos[selectDemoIndex].content);
-		}, 1000)
+			// this.transform(demos[selectDemoIndex].content, demos[selectDemoIndex].style);
+			this.transform(demos[selectDemoIndex]);
+		}, 3000)
 	}
 
 	sortDemos(demos){
-
 		let arr = Object.keys(demos).map(name => {
 			const old = demos[name];
-			return {
+			const obj = {
 				name,
 				meta: old.meta,
 				highlightedCode: old.highlightedCode,
 				content: old.content[1][2][1]
+			};
+
+			if(old.content.length === 3 ){
+				obj.style = {
+					highlightedCode: old.content[2],
+					content: old.content[2][2][1]
+				}
 			}
-			// return {...demos[name], name};
+
+			return obj;
 		});
 
 		return arr.sort((a, b) => a.meta.order - b.meta.order);
 	}
 
-	transform(contents){
-		const { code, err } = transformCode(contents);
-
+	transform(data){
+		const { code, err } = transformCode(data.content);
+		const { demos } = this.state;
 		if(!err){
-			this.container.contentWindow.postMessage(code, '*');
+			this.container.contentWindow.postMessage({
+				code, 
+				style: data.style ? data.style.content : null
+			}, '*');
 		}	
 	}
 
@@ -81,7 +92,7 @@ export default class Demo extends React.Component {
 
 		if(selectDemoIndex != index){
 			window.setTimeout(() => {
-				this.transform(demos[index].content);
+				this.transform(demos[index]);
 			}, 1000)
 
 			this.setState({
@@ -115,7 +126,6 @@ export default class Demo extends React.Component {
 		const demoUrl = isLocalMode 
 			? `${protocol}//${host}/demos/${params}/${selectDemo.name}/` 
 			: `${protocol}//${host}/mobile/demos/${params}/${selectDemo.name}`;
-			
 		return (
 			<div className="demo-wrapper">
 				<div className="preview-wrapper">
@@ -147,6 +157,7 @@ export default class Demo extends React.Component {
 								transform={this.transform}
 								showExpandDemo={this.showExpandDemo}
 								toggleFrame={this.toggleFrame}
+								utils={utils}
 								/>
 						)
 					}
@@ -160,6 +171,8 @@ export default class Demo extends React.Component {
           className='demo-dialog'
           >
          	 {utils.toReactComponent(dialog.content)}
+         	 
+         	 {dialog.style && utils.toReactComponent(dialog.style)}
         </Dialog>
 			</div>
 		)
