@@ -39,7 +39,7 @@ const generateComponents = (components, componentDir) => {
 			path.join(targetDir, 'index.md')
 		);
 		copyFile(
-			path.join(componentDir, component, 'History.md'),
+			path.join(componentDir, component, 'HISTORY.md'),
 			path.join(targetDir, 'HISTORY.md')
 		);
 		copyFile(
@@ -48,10 +48,12 @@ const generateComponents = (components, componentDir) => {
 		);
 	});
 }
-fs.readdir('./node_modules', (err, files) => {
+fs.readdir('./node_modules/@ali', (err, files) => {
 	const components = files
 		.filter(file => file.startsWith('tingle-'));
 
-  generateComponents(components, './node_modules');
+		console.log(components);
+
+  generateComponents(components, './node_modules/@ali');
 
 });

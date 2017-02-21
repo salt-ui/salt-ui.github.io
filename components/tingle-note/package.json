@@ -1,0 +1,56 @@
+{
+  "name": "@ali/tingle-note",
+  "version": "1.0.5",
+  "description": "tingle-note component for tingle.",
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-note"
+  },
+  "author": {
+    "name": "Kuncheng Zhao"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "keywords": [
+    "tingle-note",
+    "Note"
+  ],
+  "dependencies": {
+    "@ali/tingle-context": "~1.0.0",
+    "@ali/tingle-icon": "~1.0.0",
+    "@ali/tingle-icon-source": "~1.0.4",
+    "@ali/tingle-style": "~1.0.0",
+    "classnames": "~2.2.3"
+  },
+  "devDependencies": {
+    "@ali/tingle-ui": "~1.0.0",
+    "fastclick": "^1.0.6",
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8",
+    "salt-tools": "~0.1.0"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
+  },
+  "scripts": {
+    "start": "salt-tools run start",
+    "build": "salt-tools run build",
+    "pub": "salt-tools run pub",
+    "dep": "salt-tools run dep",
+    "tnpm-dep": "salt-tools run tnpm-dep",
+    "update": "salt-tools run update",
+    "tnpm-update": "salt-tools run tnpm-update"
+  },
+  "license": "MIT",
+  "screenshots": "",
+  "readme": "# tingle-note [![tnpm version](http://web.npm.alibaba-inc.com/badge/v/@ali/tingle-note.svg?style=flat-square)](http://web.npm.alibaba-inc.com/package/@ali/tingle-note)\n\n 全局提醒，警示, 非pop式\n\n![](http://aligitlab.oss-cn-hangzhou-zmf.aliyuncs.com/uploads/tingle-ui/tingle-ui/34525f5e79d32e427af039df4bd6c49e/image.png)\n\n\n## Install\n\n```\ntnpm install @ali/tingle-note --save\n```\n\n## Simple Usage\n\n  ```\n      <Note message='当前年假余额10天' type='warning' closeText='查看详情'/>\n\n  ```\n## Props\n\n### type\n    \n描述：通知类型 `message` `warning`\n\n类型：string\n\n默认：`message`\n\n必选：否\n    \n### closable\n    \n描述：true  提醒可关闭,配置后会出现关闭按钮, false 提醒看详情,配置后会出现右导航箭头\n    \n类型：Boolean\n\n默认：false\n\n必选：否\n    \n### closeText\n    \n描述：关闭文案\n\n类型：string\n\n默认：''\n\n必选：否\n    \n### message\n    \n描述：通知正文\n\n类型：string\n\n默认：''\n\n必选：是\n    \n### onClose\n    \n描述：关闭回调\n\n类型：Function\n\n默认：Context.noop\n\n必选：否\n\n## APIs\n\n### doClose\n\n关闭提示\n\n## Links\n\n- [Issues](http://gitlab.alibaba-inc.com/tingle-ui/tingle-note/issues)\n",
+  "readmeFilename": "README.md",
+  "gitHead": "76dbbf259080bc69382b2b91f6ed187b9d324750",
+  "_id": "@ali/tingle-note@1.0.5",
+  "_shasum": "b5a594d541477efdf4cd3362a19ef76346dacb77",
+  "_from": "@ali/tingle-note@>=1.0.0 <2.0.0"
+}

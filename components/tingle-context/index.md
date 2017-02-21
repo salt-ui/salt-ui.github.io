@@ -1,4 +1,4 @@
-## Context
+# Context
 
 `tingle`的上下文模块，提供全局性的属性和方法。
 
@@ -83,31 +83,3 @@ privateRem(750); // 基于`640px`的设计稿，`750px`等于`11.71875rem`
 // 默认的`rem`方法是基于`750px`宽的设计稿
 Context.rem(750); // 10rem
 ```
-
-
-
-## TODOs
-
-* 添加`set`方法，用于全局配置`tingle`的运行环境。如`Tingle.set('artBoardWidth', 640)`。
-
-## updates
-
-#### v0.1.5
-
-* 在`html`上添加`dpr`类值
-
-#### v0.1.0 (2015-08-25)
-
-* `ES6`化。
-* 简化环境判断的层级，如：`Context.is.pc`改为`Context.isPC`。
-
-#### v0.0.4 (2015-08-18)
-
-* `0.5px`支持，在`html`元素的`class`中以`hairline`标识。
-* 无入侵的`rem`方案支持，添加`rem`方法和`makePrivateRem`方法。
-
-#### v0.0.3 (2015-07-14)
-
-* 添加文档
-
-

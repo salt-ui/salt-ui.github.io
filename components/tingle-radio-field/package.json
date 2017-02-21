@@ -1,0 +1,58 @@
+{
+  "name": "@ali/tingle-radio-field",
+  "version": "1.0.10",
+  "description": "tingle-radio-field component for tingle.",
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-radio-field"
+  },
+  "author": {
+    "name": "shanchao"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "keywords": [
+    "tingle-radio-field",
+    "RadioField"
+  ],
+  "dependencies": {
+    "@ali/tingle-context": "~1.0.0",
+    "@ali/tingle-field": "~1.0.3",
+    "@ali/tingle-group": "^1.0.2",
+    "@ali/tingle-icon": "~1.0.2",
+    "@ali/tingle-style": "~1.0.0",
+    "classnames": "~2.2.3"
+  },
+  "devDependencies": {
+    "@ali/tingle-icon-source": "~1.0.4",
+    "@ali/tingle-ui": "~1.0.0",
+    "fastclick": "^1.0.6",
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8",
+    "salt-tools": "~0.1.0"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
+  },
+  "scripts": {
+    "start": "salt-tools run start",
+    "build": "salt-tools run build",
+    "pub": "salt-tools run pub",
+    "dep": "salt-tools run dep",
+    "tnpm-dep": "salt-tools run tnpm-dep",
+    "update": "salt-tools run update",
+    "tnpm-update": "salt-tools run tnpm-update"
+  },
+  "license": "MIT",
+  "screenshots": "",
+  "readme": "# tingle-radio-field [![tnpm version](http://web.npm.alibaba-inc.com/badge/v/@ali/tingle-radio-field.svg?style=flat-square)](http://web.npm.alibaba-inc.com/package/@ali/tingle-radio-field)\n\n单选框犹如人中之凤，万里挑一。  \n\n![](http://gtms01.alicdn.com/tps/i1/TB1NxzWJFXXXXXiXVXXbLzyZVXX-320-194.png)\n\n## Install\n\n```\ntnpm install @ali/tingle-radio-field --save\n```\n\n## Simple Usage\n```javascript\nlet radioFieldProps = {\n    data: [\n    {\n        value:\"1\",\n        checked: true,\n        text: (<div>你好</div>),\n        disable: false\n    }, \n    {\n        value:\"2\",\n        checked: false,\n        text: \"他好\",\n        disable: true\n    }, \n    {\n        value:\"3\",\n        checked: false,\n        text: \"我也好\",\n        disable: false\n    }, \n    {\n        value:\"4\",\n        checked: false,\n        text: \"大家都好\",\n        disable: false\n    }\n    ],\n    onChange: function (value, index, data) {\n        console.log(value, index, data);\n    }\n}\nreturn <div>\n    <RadioField {...radioFieldProps} />\n</div>\n```\n## Props\n#### className\n\n描述：自定义的扩展样式名称\n\n类型：String\n\n默认：''\n\n必填：否\n\n#### data\n\n描述：复选框所需数据\n\n类型：Array\n\n数组对象：\n```javascript\n{\n    value: undefined, // 非必填，默认为undefined，当前复选框的value值，any\n    checked:true, // 非必填，默认为false，是否选中，boolen\n    text:\"hello boys\", // 非必填，默认空文本，文本域填充内容，String/jsx\n    disable:true // 非必填，默认false，是否禁用，bollen\n}    \n```\n\n\n默认：空数组\n\n必填：否\n\n#### onChange\n\n描述：点击按钮的回调\n\n类型：Function  \n\n默认：空函数\n\n必填：否\n\n注入的参数:  \n- value，当前复选框数据  \n- index，当前复选框索引  \n- data，所有复选框数据  \n\n#### groupListFlag\n\n描述：是否使用tingle-group来布局checkbox\n\n类型：Boolen\n\n默认：true\n\n必填：否\n\n#### label\n\n描述：一个checkbox组的label\n\n类型：String\n\n默认：空字符串\n\n必填：否\n\n#### groupListArgument\n\n描述：如果tingle-group为true，可以传入tingle-group相关参数。参考`http://gitlab.alibaba-inc.com/tingle-ui/tingle-group`\n\n类型：Object\n\n默认：  \n```\n{\n    lineIndent:0,\n    itemIndent:18\n}\n```\n\n\n## APIs\n#### getData(TO DO)\n\n描述：获取复选框组数据\n\n类型：Function\n\n### 注意事项\n\n1. 点击disable的复选框，不会触发用户注册的回调函数。\n2. 单选框语义上你只能传入一个checked:true，如果你传入多个，我不阻止。\n\n## Links\n\n- [Issues](http://gitlab.alibaba-inc.com/tingle-ui/tingle-radio-field/issues)\n- [README 标准写法](http://gitlab.alibaba-inc.com/tingle-ui/doc/blob/master/README%E6%A0%87%E5%87%86%E5%86%99%E6%B3%95.md)\n",
+  "readmeFilename": "README.md",
+  "gitHead": "978641121be602aa0a19ebc76589f138270904a7",
+  "_id": "@ali/tingle-radio-field@1.0.10",
+  "_shasum": "532151e713bc9769b3bfc97a296283ead0a5799c",
+  "_from": "@ali/tingle-radio-field@>=1.0.0 <2.0.0"
+}

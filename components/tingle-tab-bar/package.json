@@ -1,52 +1,24 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "@ali/tingle-tab-bar@^1.1.0",
-        "scope": "@ali",
-        "escapedName": "@ali%2ftingle-tab-bar",
-        "name": "@ali/tingle-tab-bar",
-        "rawSpec": "^1.1.0",
-        "spec": ">=1.1.0 <2.0.0",
-        "type": "range"
-      },
-      "/home/caoke/git/salt-ui/salt-ui.github.io"
-    ]
-  ],
-  "_cnpm_publish_time": 1481529492255,
-  "_from": "@ali/tingle-tab-bar@>=1.1.0 <2.0.0",
-  "_id": "@ali/tingle-tab-bar@1.2.3",
-  "_inCache": true,
-  "_location": "/@ali/tingle-tab-bar",
-  "_nodeVersion": "4.2.6",
-  "_npmUser": {
-    "name": "wb-zhouwenjie.a",
-    "email": "wb-zhouwenjie.a@alibaba-inc.com"
+  "name": "@ali/tingle-tab-bar",
+  "version": "1.2.5",
+  "description": "tingle-tab-bar component for tingle.",
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-tab-bar"
   },
-  "_npmVersion": "3.10.9",
-  "_phantomChildren": {},
-  "_publish_on_cnpm": true,
-  "_requested": {
-    "raw": "@ali/tingle-tab-bar@^1.1.0",
-    "scope": "@ali",
-    "escapedName": "@ali%2ftingle-tab-bar",
-    "name": "@ali/tingle-tab-bar",
-    "rawSpec": "^1.1.0",
-    "spec": ">=1.1.0 <2.0.0",
-    "type": "range"
-  },
-  "_requiredBy": [
-    "/",
-    "/@ali/tingle-ui"
-  ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-tab-bar/download/@ali/tingle-tab-bar-1.2.3.tgz",
-  "_shasum": "08849b808936ad00df1b82edd9acc6822d39f7b2",
-  "_shrinkwrap": null,
-  "_spec": "@ali/tingle-tab-bar@^1.1.0",
-  "_where": "/home/caoke/git/salt-ui/salt-ui.github.io",
   "author": {
     "name": "zhouwenjie"
   },
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "keywords": [
+    "tingle-tab-bar",
+    "TabBar"
+  ],
   "dependencies": {
     "@ali/tingle-box": "^1.0.0",
     "@ali/tingle-context": "~1.0.0",
@@ -55,7 +27,6 @@
     "classnames": "~2.2.3",
     "object-assign": "^4.1.0"
   },
-  "description": "tingle-tab-bar component for tingle.",
   "devDependencies": {
     "@ali/tingle-icon-source": "^1.0.4",
     "@ali/tingle-ui": "~1.0.0",
@@ -86,28 +57,34 @@
     "through2": "~2.0.1",
     "webpack": "~1.12.11"
   },
-  "dist": {
-    "shasum": "08849b808936ad00df1b82edd9acc6822d39f7b2",
-    "size": 15837,
-    "key": "@ali/tingle-tab-bar/-/@ali/tingle-tab-bar-1.2.3.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-tab-bar/download/@ali/tingle-tab-bar-1.2.3.tgz"
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "files": [
-    "dist",
-    "src",
-    "README.md"
-  ],
-  "gitHead": "c9fe5fc20e815532dedde13134bce8786aebdd9c",
-  "keywords": [
-    "tingle-tab-bar",
-    "TabBar"
-  ],
+  "scripts": {
+    "start": "gulp d",
+    "build": "gulp b"
+  },
   "license": "MIT",
-  "main": "dist/index.js",
+  "screenshots": "",
+  "readmeFilename": "README.md",
+  "gitHead": "adcd20daf1313b3a03db5bb26a9e021a12122bea",
+  "_id": "@ali/tingle-tab-bar@1.2.5",
+  "_shasum": "58338bb21e8de5b725e38209080b6cf46fffca7c",
+  "_from": "@ali/tingle-tab-bar@>=1.1.0 <2.0.0",
+  "_npmVersion": "3.10.9",
+  "_nodeVersion": "6.9.4",
+  "_npmUser": {
+    "name": "caoke.ck",
+    "email": "caoke.ck@alibaba-inc.com"
+  },
   "maintainers": [
     {
       "name": "alex.mm",
       "email": "alex.mm@alibaba-inc.com"
+    },
+    {
+      "name": "caoke.ck",
+      "email": "caoke.ck@alibaba-inc.com"
     },
     {
       "name": "jiasong.js",
@@ -122,22 +99,14 @@
       "email": "wb-zhouwenjie.a@alibaba-inc.com"
     }
   ],
-  "name": "@ali/tingle-tab-bar",
-  "optionalDependencies": {},
-  "publishConfig": {
-    "registry": "http://registry.npm.alibaba-inc.com"
+  "dist": {
+    "shasum": "58338bb21e8de5b725e38209080b6cf46fffca7c",
+    "size": 15522,
+    "key": "@ali/tingle-tab-bar/-/@ali/tingle-tab-bar-1.2.5.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-tab-bar/download/@ali/tingle-tab-bar-1.2.5.tgz"
   },
-  "publish_time": 1481529492255,
-  "readme": "ERROR: No README data found!",
-  "readmeFilename": "README.md",
-  "repository": {
-    "type": "git",
-    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-tab-bar"
-  },
-  "screenshots": "",
-  "scripts": {
-    "build": "gulp b",
-    "start": "gulp d"
-  },
-  "version": "1.2.3"
+  "_publish_on_cnpm": true,
+  "_cnpm_publish_time": 1487574161864,
+  "publish_time": 1487574161864,
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-tab-bar/download/@ali/tingle-tab-bar-1.2.5.tgz"
 }

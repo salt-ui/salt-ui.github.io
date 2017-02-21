@@ -10,7 +10,8 @@
     "bisheng2": "bisheng start -c ./bisheng/bisheng.mobile.config.js --no-livereload",
     "build": "concurrently \"bisheng build -c ./bisheng/bisheng.site.config.js \" \"bisheng build -c ./bisheng/bisheng.mobile.config.js \"",
     "bisheng": "concurrently \"bisheng start -c ./bisheng/bisheng.site.config.js --no-livereload\" \"bisheng start -c ./bisheng/bisheng.mobile.config.js --no-livereload\"",
-    "start-o": "bisheng start"
+    "start-o": "bisheng start",
+    "deploy": "sh ./deploy.sh"
   },
   "repository": {
     "type": "git",
@@ -78,6 +79,7 @@
     "@ali/tingle-text-field": "^1.0.0",
     "@ali/tingle-textarea-field": "^1.0.0",
     "@ali/tingle-toast": "^1.0.0",
+    "babel-runtime": "^6.23.0",
     "bisheng-plugin-react": "^0.3.1",
     "bisheng-plugin-uxcore": "^1.0.2",
     "classnames": "^2.2.5",

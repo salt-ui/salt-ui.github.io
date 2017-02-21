@@ -1,53 +1,24 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "@ali/tingle-search-bar@^1.0.1",
-        "scope": "@ali",
-        "escapedName": "@ali%2ftingle-search-bar",
-        "name": "@ali/tingle-search-bar",
-        "rawSpec": "^1.0.1",
-        "spec": ">=1.0.1 <2.0.0",
-        "type": "range"
-      },
-      "/home/caoke/git/salt-ui/salt-ui.github.io"
-    ]
-  ],
-  "_cnpm_publish_time": 1480920247805,
-  "_from": "@ali/tingle-search-bar@>=1.0.1 <2.0.0",
-  "_id": "@ali/tingle-search-bar@1.0.5",
-  "_inCache": true,
-  "_location": "/@ali/tingle-search-bar",
-  "_nodeVersion": "4.2.6",
-  "_npmUser": {
-    "name": "wb-zhouwenjie.a",
-    "email": "wb-zhouwenjie.a@alibaba-inc.com"
+  "name": "@ali/tingle-search-bar",
+  "version": "1.0.9",
+  "description": "tingle-search-bar component for tingle.",
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-search-bar"
   },
-  "_npmVersion": "3.10.9",
-  "_phantomChildren": {},
-  "_publish_on_cnpm": true,
-  "_requested": {
-    "raw": "@ali/tingle-search-bar@^1.0.1",
-    "scope": "@ali",
-    "escapedName": "@ali%2ftingle-search-bar",
-    "name": "@ali/tingle-search-bar",
-    "rawSpec": "^1.0.1",
-    "spec": ">=1.0.1 <2.0.0",
-    "type": "range"
-  },
-  "_requiredBy": [
-    "/",
-    "/@ali/tingle-grid/@ali/tingle-ui",
-    "/@ali/tingle-ui"
-  ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-search-bar/download/@ali/tingle-search-bar-1.0.5.tgz",
-  "_shasum": "fda0016be5d7a584e656602981096633e07c7c24",
-  "_shrinkwrap": null,
-  "_spec": "@ali/tingle-search-bar@^1.0.1",
-  "_where": "/home/caoke/git/salt-ui/salt-ui.github.io",
   "author": {
     "name": "zhouquan.yezq"
   },
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "keywords": [
+    "tingle-search-bar",
+    "SearchBar"
+  ],
   "dependencies": {
     "@ali/tingle-context": "~1.0.0",
     "@ali/tingle-icon": "~1.0.2",
@@ -56,7 +27,6 @@
     "classnames": "~2.2.3",
     "lodash": "^4.14.0"
   },
-  "description": "tingle-search-bar component for tingle.",
   "devDependencies": {
     "@ali/tingle-ui": "~1.0.0",
     "babel": "~6.3.26",
@@ -67,8 +37,6 @@
     "babel-preset-react": "~6.3.13",
     "babel-preset-stage-1": "~6.3.13",
     "browser-sync": "~2.11.1",
-    "cross-spawn": "^2.0.0",
-    "fastclick": "~1.0.6",
     "gulp": "~3.9.0",
     "gulp-babel": "~6.1.1",
     "gulp-concat": "~2.6.0",
@@ -82,32 +50,40 @@
     "gulp-unique-files": "~0.1.2",
     "react": "~0.14.8",
     "react-dom": "~0.14.8",
+    "fastclick": "~1.0.6",
     "svg2react-loader": "^1.0.2",
     "through2": "~2.0.1",
+    "cross-spawn": "^2.0.0",
     "webpack": "~1.12.11"
   },
-  "dist": {
-    "shasum": "fda0016be5d7a584e656602981096633e07c7c24",
-    "size": 21873,
-    "key": "@ali/tingle-search-bar/-/@ali/tingle-search-bar-1.0.5.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-search-bar/download/@ali/tingle-search-bar-1.0.5.tgz"
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "files": [
-    "dist",
-    "src",
-    "README.md"
-  ],
-  "gitHead": "c293f7df9db779698fe242cab2db216176de5435",
-  "keywords": [
-    "tingle-search-bar",
-    "SearchBar"
-  ],
+  "scripts": {
+    "start": "gulp d",
+    "build": "gulp b"
+  },
   "license": "MIT",
-  "main": "dist/index.js",
+  "screenshots": "",
+  "readmeFilename": "README.md",
+  "gitHead": "98c008012d77559ca77e6110a124244425a18497",
+  "_id": "@ali/tingle-search-bar@1.0.9",
+  "_shasum": "d1f3f1691fb9e3cfa32e519e32a190bf62c69c5c",
+  "_from": "@ali/tingle-search-bar@>=1.0.1 <2.0.0",
+  "_npmVersion": "3.10.9",
+  "_nodeVersion": "6.9.4",
+  "_npmUser": {
+    "name": "caoke.ck",
+    "email": "caoke.ck@alibaba-inc.com"
+  },
   "maintainers": [
     {
       "name": "alex.mm",
       "email": "alex.mm@alibaba-inc.com"
+    },
+    {
+      "name": "caoke.ck",
+      "email": "caoke.ck@alibaba-inc.com"
     },
     {
       "name": "quanyun.mqy",
@@ -122,22 +98,14 @@
       "email": "zhouquan.yezq@alibaba-inc.com"
     }
   ],
-  "name": "@ali/tingle-search-bar",
-  "optionalDependencies": {},
-  "publishConfig": {
-    "registry": "http://registry.npm.alibaba-inc.com"
+  "dist": {
+    "shasum": "d1f3f1691fb9e3cfa32e519e32a190bf62c69c5c",
+    "size": 21246,
+    "key": "@ali/tingle-search-bar/-/@ali/tingle-search-bar-1.0.9.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-search-bar/download/@ali/tingle-search-bar-1.0.9.tgz"
   },
-  "publish_time": 1480920247805,
-  "readme": "ERROR: No README data found!",
-  "readmeFilename": "README.md",
-  "repository": {
-    "type": "git",
-    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-search-bar"
-  },
-  "screenshots": "",
-  "scripts": {
-    "build": "gulp b",
-    "start": "gulp d"
-  },
-  "version": "1.0.5"
+  "_publish_on_cnpm": true,
+  "_cnpm_publish_time": 1487573695747,
+  "publish_time": 1487573695747,
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-search-bar/download/@ali/tingle-search-bar-1.0.9.tgz"
 }

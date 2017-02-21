@@ -1,115 +1,98 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "tingle-scroller@~0.1.1",
-        "scope": null,
-        "escapedName": "tingle-scroller",
-        "name": "tingle-scroller",
-        "rawSpec": "~0.1.1",
-        "spec": ">=0.1.1 <0.2.0",
-        "type": "range"
-      },
-      "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/tingle-tab"
-    ]
-  ],
-  "_cnpm_publish_time": 1441948845382,
-  "_from": "tingle-scroller@>=0.1.1 <0.2.0",
-  "_id": "tingle-scroller@0.1.1",
-  "_inCache": true,
-  "_location": "/tingle-scroller",
-  "_nodeVersion": "0.12.6",
-  "_npmUser": {
-    "name": "yize",
-    "email": "yize.shc@gmail.com"
+  "name": "@ali/tingle-scroller",
+  "version": "1.0.7",
+  "description": "iScroll 的 React 封装，用作滑动容器。内部 iScroll 的版本是 5.1.3",
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-scroller"
   },
-  "_npmVersion": "2.11.2",
-  "_phantomChildren": {},
-  "_requested": {
-    "raw": "tingle-scroller@~0.1.1",
-    "scope": null,
-    "escapedName": "tingle-scroller",
-    "name": "tingle-scroller",
-    "rawSpec": "~0.1.1",
-    "spec": ">=0.1.1 <0.2.0",
-    "type": "range"
-  },
-  "_requiredBy": [
-    "/tingle-tab"
-  ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/tingle-scroller/download/tingle-scroller-0.1.1.tgz",
-  "_shasum": "a6e3561f0b53e4a09b0ab8ed1001691bbf8eecd0",
-  "_shrinkwrap": null,
-  "_spec": "tingle-scroller@~0.1.1",
-  "_where": "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/tingle-tab",
   "author": {
-    "name": "gbk",
-    "email": "ck0123456@gmail.com"
+    "name": "gbk"
   },
-  "bugs": {
-    "url": "https://github.com/tinglejs/tingle-scroller/issues"
-  },
-  "dependencies": {
-    "classnames": "^2.1.2",
-    "tingle-context": "~0.1.0",
-    "tingle-style": "~0.2.0"
-  },
-  "description": "The `Scroller Component` for tinglejs",
-  "devDependencies": {
-    "babel-core": "^5.8.19",
-    "babel-loader": "^5.3.2",
-    "fastclick": "^1.0.6",
-    "gulp": "^3.9.0",
-    "react": "^0.13.3",
-    "tingle-dev-tools": "latest",
-    "tingle-group-list": "~0.2.0"
-  },
-  "directories": {},
-  "dist": {
-    "shasum": "a6e3561f0b53e4a09b0ab8ed1001691bbf8eecd0",
-    "size": 16315,
-    "noattachment": false,
-    "key": "tingle-scroller/-/tingle-scroller-0.1.1.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/tingle-scroller/download/tingle-scroller-0.1.1.tgz"
-  },
+  "main": "dist/index.js",
   "files": [
+    "dist",
     "src",
     "README.md"
   ],
-  "gitHead": "2748faec8d0efc35fbde37cabd6c76a11e666b50",
-  "homepage": "https://github.com/tinglejs/tingle-scroller#readme",
   "keywords": [
     "tingle-scroller",
     "Scroller",
     "iscroll"
   ],
+  "dependencies": {
+    "classnames": "~2.2.3",
+    "@ali/tingle-context": "~1.0.0",
+    "@ali/tingle-style": "~1.0.0"
+  },
+  "devDependencies": {
+    "@ali/tingle-group": "~1.0.0",
+    "@ali/tingle-ui": "~1.0.0",
+    "babel": "~6.3.26",
+    "babel-core": "~6.4.0",
+    "babel-loader": "~6.2.1",
+    "babel-plugin-add-module-exports": "~0.1.2",
+    "babel-preset-es2015": "~6.3.13",
+    "babel-preset-react": "~6.3.13",
+    "babel-preset-stage-1": "~6.3.13",
+    "browser-sync": "~2.11.1",
+    "gulp": "~3.9.0",
+    "gulp-babel": "~6.1.1",
+    "gulp-concat": "~2.6.0",
+    "gulp-just-replace": "~1.0.2",
+    "gulp-pathmap": "~0.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "~1.6.0",
+    "gulp-stylus": "~2.3.1",
+    "gulp-svg-symbols": "~1.0.0",
+    "gulp-uglify": "~1.5.1",
+    "gulp-unique-files": "~0.1.2",
+    "react": "~0.14.8",
+    "react-dom": "~0.14.8",
+    "fastclick": "~1.0.6",
+    "svg2react-loader": "^1.0.2",
+    "through2": "~2.0.1",
+    "cross-spawn": "^2.0.0",
+    "webpack": "~1.12.11"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
+  },
+  "scripts": {
+    "start": "gulp d",
+    "build": "gulp b"
+  },
   "license": "MIT",
-  "main": "src/index.js",
+  "screenshots": "",
+  "readmeFilename": "README.md",
+  "gitHead": "471ab966f15d069b0371f9469f39fcfd0f4cf924",
+  "_id": "@ali/tingle-scroller@1.0.7",
+  "_shasum": "2080a1c77827daf83b65e29941ba1503cd72e225",
+  "_from": "@ali/tingle-scroller@>=1.0.0 <2.0.0",
+  "_npmVersion": "3.10.2",
+  "_nodeVersion": "4.2.4",
+  "_npmUser": {
+    "name": "alex.mm",
+    "email": "alex.mm@alibaba-inc.com"
+  },
   "maintainers": [
     {
-      "name": "gbk",
-      "email": "ck0123456@gmail.com"
+      "name": "alex.mm",
+      "email": "alex.mm@alibaba-inc.com"
     },
     {
-      "name": "gnosaij",
-      "email": "gnosaij@yeah.net"
-    },
-    {
-      "name": "yize",
-      "email": "yize.shc@gmail.com"
+      "name": "jiasong.js",
+      "email": "jiasong.js@alibaba-inc.com"
     }
   ],
-  "name": "tingle-scroller",
-  "optionalDependencies": {},
-  "publish_time": 1441948845382,
-  "readme": "ERROR: No README data found!",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tinglejs/tingle-scroller.git"
+  "dist": {
+    "shasum": "2080a1c77827daf83b65e29941ba1503cd72e225",
+    "size": 73716,
+    "key": "@ali/tingle-scroller/-/@ali/tingle-scroller-1.0.7.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-scroller/download/@ali/tingle-scroller-1.0.7.tgz"
   },
-  "screenshots": "https://img.alicdn.com/tps/TB1jnocJpXXXXcmXpXXXXXXXXXX-750-1254.png",
-  "scripts": {
-    "start": "gulp server"
-  },
-  "version": "0.1.1"
+  "_publish_on_cnpm": true,
+  "_cnpm_publish_time": 1472733789890,
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-scroller/download/@ali/tingle-scroller-1.0.7.tgz",
+  "readme": "ERROR: No README data found!"
 }

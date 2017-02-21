@@ -1,8 +1,5 @@
-# tingle-scroller [![npm version](https://badge.fury.io/js/tingle-scroller.svg)](http://badge.fury.io/js/tingle-scroller)
+# tingle-scroller [![tnpm version](http://web.npm.alibaba-inc.com/badge/v/@ali/tingle-scroller.svg?style=flat-square)](http://web.npm.alibaba-inc.com/package/@ali/tingle-scroller)
 
-The `Scroller Component` for tinglejs.
-
-## TL;DR
 
 Scroller 是对 [iScroll](http://iscrolljs.com/) 的 React 封装，用作滑动容器。内部 iScroll 的版本是 5.1.3。
 
@@ -10,60 +7,43 @@ Scroller 是对 [iScroll](http://iscrolljs.com/) 的 React 封装，用作滑动
 
 ## Install
 
-```bash
-npm install tingle-scroller --save
+```
+tnpm install @ali/tingle-scroller --save
 ```
 
-## Simple Usage
+## Props
 
-```js
-render() {
-    return (
-        <Scroller>
-            <GroupList title={"列表标题1"}>
-                <div className="tLH44 tPL10">aa</div>
-                <div className="tLH44 tPL10">aa</div>
-                <div className="tLH44 tPL10">aa</div>
-                <div className="tLH44 tPL10">aa</div>
-                <div className="tLH44 tPL10">aa</div>
-                <div className="tLH44 tPL10">aa</div>
-                <div className="tLH44 tPL10">aa</div>
-                <div className="tLH44 tPL10">aa</div>
-            </GroupList>
-        </Scroller>
-    );
-}
-```
+#### className
 
-## Options 可用配置
+描述：自定义的扩展样式名称
 
-| 配置项 | 必填 | 默认值 | 功能/备注 |
-|---|----|---|----|
-|className|optional|-|自定义样式类|
-|autoRefresh|optional|true|是否在内容变化时自动重新计算和渲染|
-|minWidth|optional|100%|容器的最小宽度（为了避免容器宽度过小而显示不正常）|
+类型：String
 
-- 不在列表中的其余参数全部传透给 iScroll，作为 iScroll 的初始化配置项。
+默认：''
 
-```js
-<Scroller ref="sc" click={true} mouseWheel={false}></Scroller>
-```
+必填：否
+
+#### autoRefresh
+
+描述：是否在内容变化时自动重新计算和渲染
+
+类型：Boolean
+
+默认：true
+
+必填：否
+
+#### minWidth
+
+描述：容器的最小宽度（为了避免容器宽度过小而显示不正常）
+
+类型：String
+
+默认：'100%'
+
+必填：否
 
 更多配置详见[官网](http://iscrolljs.com/#configuring)。
-
-- 以 on 开头的参数全部作为事件挂载到 iScroll 实例上。
-
-```js
-<Scroller ref="sc" onScrollEnd={t.handleScrollEnd.bind(t)}></Scroller>
-```
-
-相当于
-
-```js
-t.refs.sc.scroller.on('scrollEnd', t.handleScrollEnd.bind(t));
-```
-
-更多事件详见[官网](http://iscrolljs.com/#custom-events)。
 
 ## API 接口
 
@@ -73,8 +53,45 @@ t.refs.sc.scroller.on('scrollEnd', t.handleScrollEnd.bind(t));
 t.refs.sc.scroller.scrollTo(0, 100);
 ```
 
-## Links 相关链接
+## Demos
 
-- [iScroll 官网](http://iscrolljs.com/)
-- [Fire a bug/Issues 提Bug](https://github.com/tinglejs/tingle-scroller/issues)
-- [Tingle项目](https://github.com/tinglejs/generator-tingle)
+```
+render() {
+    return (
+        <Scroller>
+            <Group.Head>{"列表标题1"}</Group.Head>
+            <Group.List>
+                <div className="t-LH44 t-PL10">aa</div>
+                <div className="t-LH44 t-PL10">aa</div>
+                <div className="t-LH44 t-PL10">aa</div>
+                <div className="t-LH44 t-PL10">aa</div>
+                <div className="t-LH44 t-PL10">aa</div>
+                <div className="t-LH44 t-PL10">aa</div>
+                <div className="t-LH44 t-PL10">aa</div>
+                <div className="t-LH44 t-PL10">aa</div>
+            </Group.List>
+        </Scroller>
+    );
+}
+```
+- 不在列表中的其余参数全部传透给 iScroll，作为 iScroll 的初始化配置项。
+
+```
+<Scroller ref="sc" click={true} mouseWheel={false}></Scroller>
+```
+
+- 以 on 开头的参数全部作为事件挂载到 iScroll 实例上。
+
+```
+<Scroller ref="sc" onScrollEnd={t.handleScrollEnd.bind(t)}></Scroller>
+```
+
+相当于
+
+```
+t.refs.sc.scroller.on('scrollEnd', t.handleScrollEnd.bind(t));
+```
+
+## Links
+
+- [Issues](http://gitlab.alibaba-inc.com/tingle-ui/tingle-scroller/issues)
