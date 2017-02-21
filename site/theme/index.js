@@ -1,6 +1,4 @@
-import 'uxcore/assets/iconfont.css';
-import 'uxcore/assets/orange.min.css';
-import './static/style';
+
 
 let routes = [
   {

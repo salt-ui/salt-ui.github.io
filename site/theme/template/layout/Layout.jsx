@@ -9,7 +9,9 @@ import Nav from './Nav';
 import { mapping } from '../../../constants';
 import {upperFirstCharactor, removeTingle, mappingNavItem } from '../../../utils';
 
-
+import 'uxcore/assets/iconfont.css';
+import 'uxcore/assets/orange.min.css';
+import '../../static/style';
 
 export default class Layout extends React.Component {
 
