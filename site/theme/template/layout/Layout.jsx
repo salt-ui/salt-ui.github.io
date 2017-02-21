@@ -6,9 +6,10 @@ import { Link } from 'react-router';
 
 import Aside from '../component/Aside';
 import Nav from './Nav';
+import { mapping } from '../../../constants';
+import {upperFirstCharactor, removeTingle, mappingNavItem } from '../../../utils';
 
-import '../../static/style';
-const config = require('../../index');
+
 
 export default class Layout extends React.Component {
 
@@ -21,7 +22,26 @@ export default class Layout extends React.Component {
 
   constructor(props) {
     super(props);
-    
+  }
+
+  componentWillMount(){
+    const { data: { components } } = this.props;
+    let types = {};
+    Object.keys(components).map((compName) => {
+      let mapItem = mapping[removeTingle(compName)];
+      if(mapItem){
+        const type = mapItem.type;
+        if(!types[type]){
+          types[type] = [];
+        }
+
+        types[type].push({ ...mapItem, name: compName});
+      }
+    });
+
+    console.log(types)
+    this.types = types;
+
   }
 
   render() {
@@ -38,9 +58,10 @@ export default class Layout extends React.Component {
           hasAside && 
             <Aside 
               key="aside"
-              sideNav={config.sideNav}  
               params={params} 
-              components={data.components}/>
+              components={data.components}
+              types={this.types}
+              />
         }
         
         <div className="main">

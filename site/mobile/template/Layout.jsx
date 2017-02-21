@@ -23,7 +23,6 @@ export default class Layout extends React.Component {
 	}
 
 	receiveMessage(event){
-		console.log(event.data)
 
 		const mount = this.refs.mountNode;
 		const copms = [ReactDOM, React, window.SaltUI, mount];
@@ -36,8 +35,6 @@ export default class Layout extends React.Component {
 		}catch (error){
 			console.log(error)
 		}
-			
-
 	}
 
 	render(){

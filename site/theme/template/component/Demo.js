@@ -1,11 +1,10 @@
 import React from 'react';
-import Dialog from 'uxcore-dialog';
-import Button from 'uxcore-button';
+import Button from 'uxcore/lib/Button';
+import Dialog from 'uxcore/lib/Dialog';
 import brace from 'brace';
 require('brace/mode/jsx');
 require('brace/mode/javascript');
 require('brace/theme/github');
-// require('brace/theme/twilight');
 
 
 import DemoItem from './DemoItem';

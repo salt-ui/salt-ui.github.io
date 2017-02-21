@@ -1,4 +1,3 @@
-console.log('testing')
 module.exports = {
 
 	// routes: [{

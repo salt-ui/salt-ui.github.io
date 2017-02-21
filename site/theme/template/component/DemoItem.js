@@ -1,7 +1,8 @@
 import React from 'react';
 import classnames from 'classnames';
 import AceEditor from 'react-ace';
-import Message from 'uxcore-message';
+import Message from 'uxcore/lib/Message';
+
 import CopyToClipboard from 'react-copy-to-clipboard';
 
 export default class DemoItem extends React.Component {
