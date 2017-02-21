@@ -7,6 +7,7 @@ git push origin source
 mkdir ~/SALT_UI_BUILD
 mv ./build/* ~/SALT_UI_BUILD/
 git checkout master
+git pull origin master
 cp -rf ~/SALT_UI_BUILD/* .
 rm -rf ~/SALT_UI_BUILD
 git add .
