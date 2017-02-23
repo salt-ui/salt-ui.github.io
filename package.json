@@ -88,6 +88,7 @@
     "object-assign": "^4.1.0",
     "react-addons-css-transition-group": "^15.4.1",
     "react-document-title": "^2.0.2",
+    "uppercamelcase": "^1.1.0",
     "uxcore": "^0.7.4"
   }
 }

@@ -69,7 +69,7 @@ export default class DemoItem extends React.Component {
 						onClick={() => showExpandDemo({ 
 							title: data.name, 
 							content: data.highlightedCode,
-							style: data.style.highlightedCode
+							style: data.style ? data.style.highlightedCode : null
 						})}
 					/>
 				</span>
