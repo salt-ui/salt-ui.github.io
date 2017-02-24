@@ -180,16 +180,6 @@ class Demo extends React.Component {
 <Calendar showTopPanel={true} />
 ```
 
-### showBottomPanel
-描述：是否显示底部的控制面板。  
-类型：`Boolean`  
-默认：`false`  
-必选：否
-示例：
-```
-<Calendar showBottomPanel={true} />
-```
-
 ### extraClass
 描述：日期生成时，是否添加新的样式，可以是字符串也可是回调函数。  
 类型：`String|Function`  
@@ -238,6 +228,17 @@ class Demo extends React.Component {
 示例：
 ```
 <Calendar onSelecting={(date, e)=>{console.log('arguments:', arguments)}} />
+```
+
+### onMaskClick
+描述：当mask点击时调用的function
+类型：`Function`
+默认：`new Function`
+必选：否
+返回值：return true时，mask会关闭；否则，mask不会关闭。
+示例：
+```
+<Calendar onMaskClick={(e)=>{return true;} />
 ```
 
 ## APIs

@@ -1,30 +1,60 @@
 {
-  "name": "@ali/tingle-gallery",
-  "version": "1.1.2",
-  "description": "tingle-gallery component for tingle.",
-  "repository": {
-    "type": "git",
-    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-gallery"
+  "_args": [
+    [
+      {
+        "raw": "@ali/tingle-gallery@^1.0.0",
+        "scope": "@ali",
+        "escapedName": "@ali%2ftingle-gallery",
+        "name": "@ali/tingle-gallery",
+        "rawSpec": "^1.0.0",
+        "spec": ">=1.0.0 <2.0.0",
+        "type": "range"
+      },
+      "/Users/qy/work/tingle/salt-ui.github.io"
+    ]
+  ],
+  "_cnpm_publish_time": 1476168048398,
+  "_from": "@ali/tingle-gallery@>=1.0.0 <2.0.0",
+  "_id": "@ali/tingle-gallery@1.1.2",
+  "_inCache": true,
+  "_location": "/@ali/tingle-gallery",
+  "_nodeVersion": "4.2.4",
+  "_npmUser": {
+    "name": "alex.mm",
+    "email": "alex.mm@alibaba-inc.com"
   },
+  "_npmVersion": "3.10.2",
+  "_phantomChildren": {},
+  "_publish_on_cnpm": true,
+  "_requested": {
+    "raw": "@ali/tingle-gallery@^1.0.0",
+    "scope": "@ali",
+    "escapedName": "@ali%2ftingle-gallery",
+    "name": "@ali/tingle-gallery",
+    "rawSpec": "^1.0.0",
+    "spec": ">=1.0.0 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/",
+    "/@ali/tingle-grid/@ali/tingle-ui",
+    "/@ali/tingle-ui"
+  ],
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-gallery/download/@ali/tingle-gallery-1.1.2.tgz",
+  "_shasum": "ee6fc3585d0c82e16404300ef184d256104e3b7b",
+  "_shrinkwrap": null,
+  "_spec": "@ali/tingle-gallery@^1.0.0",
+  "_where": "/Users/qy/work/tingle/salt-ui.github.io",
   "author": {
     "name": "cm"
   },
-  "main": "dist/index.js",
-  "files": [
-    "dist",
-    "src",
-    "README.md"
-  ],
-  "keywords": [
-    "tingle-gallery",
-    "Gallery"
-  ],
   "dependencies": {
     "@ali/tingle-context": "~1.0.0",
     "@ali/tingle-slide": "^1.0.4",
     "@ali/tingle-style": "~1.0.0",
     "classnames": "~2.2.3"
   },
+  "description": "tingle-gallery component for tingle.",
   "devDependencies": {
     "@ali/tingle-ui": "~1.0.0",
     "babel": "~6.3.26",
@@ -35,6 +65,8 @@
     "babel-preset-react": "~6.3.13",
     "babel-preset-stage-1": "~6.3.13",
     "browser-sync": "~2.11.1",
+    "cross-spawn": "^2.0.0",
+    "fastclick": "~1.0.6",
     "gulp": "~3.9.0",
     "gulp-babel": "~6.1.1",
     "gulp-concat": "~2.6.0",
@@ -48,32 +80,28 @@
     "gulp-unique-files": "~0.1.2",
     "react": "~0.14.8",
     "react-dom": "~0.14.8",
-    "fastclick": "~1.0.6",
     "svg2react-loader": "^1.0.2",
     "through2": "~2.0.1",
-    "cross-spawn": "^2.0.0",
     "webpack": "~1.12.11"
   },
-  "publishConfig": {
-    "registry": "http://registry.npm.alibaba-inc.com"
+  "dist": {
+    "shasum": "ee6fc3585d0c82e16404300ef184d256104e3b7b",
+    "size": 10258,
+    "key": "@ali/tingle-gallery/-/@ali/tingle-gallery-1.1.2.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-gallery/download/@ali/tingle-gallery-1.1.2.tgz"
   },
-  "scripts": {
-    "start": "gulp d",
-    "build": "gulp b"
-  },
-  "license": "MIT",
-  "screenshots": "",
-  "readmeFilename": "README.md",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
   "gitHead": "8a7b5636ddbdcc107e36641f8a2d68b902356367",
-  "_id": "@ali/tingle-gallery@1.1.2",
-  "_shasum": "ee6fc3585d0c82e16404300ef184d256104e3b7b",
-  "_from": "@ali/tingle-gallery@>=1.0.0 <2.0.0",
-  "_npmVersion": "3.10.2",
-  "_nodeVersion": "4.2.4",
-  "_npmUser": {
-    "name": "alex.mm",
-    "email": "alex.mm@alibaba-inc.com"
-  },
+  "keywords": [
+    "tingle-gallery",
+    "Gallery"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
   "maintainers": [
     {
       "name": "alex.mm",
@@ -82,16 +110,28 @@
     {
       "name": "changming.zy",
       "email": "changming.zy@alibaba-inc.com"
+    },
+    {
+      "name": "quanyun.mqy",
+      "email": "quanyun.mqy@alibaba-inc.com"
     }
   ],
-  "dist": {
-    "shasum": "ee6fc3585d0c82e16404300ef184d256104e3b7b",
-    "size": 10258,
-    "key": "@ali/tingle-gallery/-/@ali/tingle-gallery-1.1.2.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-gallery/download/@ali/tingle-gallery-1.1.2.tgz"
+  "name": "@ali/tingle-gallery",
+  "optionalDependencies": {},
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "_publish_on_cnpm": true,
-  "_cnpm_publish_time": 1476168048398,
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-gallery/download/@ali/tingle-gallery-1.1.2.tgz",
-  "readme": "ERROR: No README data found!"
+  "publish_time": 1476168048398,
+  "readme": "ERROR: No README data found!",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-gallery"
+  },
+  "screenshots": "",
+  "scripts": {
+    "build": "gulp b",
+    "start": "gulp d"
+  },
+  "version": "1.1.2"
 }

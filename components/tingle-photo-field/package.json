@@ -1,28 +1,57 @@
 {
-  "name": "@ali/tingle-photo-field",
-  "version": "1.0.8",
-  "description": "tingle-photo-field component for tingle.",
-  "repository": {
-    "type": "git",
-    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-photo-field"
+  "_args": [
+    [
+      {
+        "raw": "@ali/tingle-photo-field@^1.0.1",
+        "scope": "@ali",
+        "escapedName": "@ali%2ftingle-photo-field",
+        "name": "@ali/tingle-photo-field",
+        "rawSpec": "^1.0.1",
+        "spec": ">=1.0.1 <2.0.0",
+        "type": "range"
+      },
+      "/Users/qy/work/tingle/salt-ui.github.io"
+    ]
+  ],
+  "_cnpm_publish_time": 1487593804096,
+  "_from": "@ali/tingle-photo-field@>=1.0.1 <2.0.0",
+  "_id": "@ali/tingle-photo-field@1.0.8",
+  "_inCache": true,
+  "_location": "/@ali/tingle-photo-field",
+  "_nodeVersion": "6.9.1",
+  "_npmUser": {
+    "name": "guanghong.wsj",
+    "email": "guanghong.wsj@alibaba-inc.com"
   },
+  "_npmVersion": "2.15.11",
+  "_phantomChildren": {},
+  "_publish_on_cnpm": true,
+  "_requested": {
+    "raw": "@ali/tingle-photo-field@^1.0.1",
+    "scope": "@ali",
+    "escapedName": "@ali%2ftingle-photo-field",
+    "name": "@ali/tingle-photo-field",
+    "rawSpec": "^1.0.1",
+    "spec": ">=1.0.1 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/",
+    "/@ali/tingle-ui"
+  ],
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-photo-field/download/@ali/tingle-photo-field-1.0.8.tgz",
+  "_shasum": "521b0037cc82d7689aa7ed2b22bd59dff4e7a30f",
+  "_shrinkwrap": null,
+  "_spec": "@ali/tingle-photo-field@^1.0.1",
+  "_where": "/Users/qy/work/tingle/salt-ui.github.io",
   "author": "",
-  "main": "dist/index.js",
-  "files": [
-    "dist",
-    "src",
-    "README.md"
-  ],
-  "keywords": [
-    "tingle-photo-field",
-    "PhotoField"
-  ],
   "dependencies": {
-    "classnames": "~2.2.3",
     "@ali/tingle-context": "~1.0.0",
+    "@ali/tingle-icon": "~1.0.0",
     "@ali/tingle-style": "~1.0.0",
-    "@ali/tingle-icon": "~1.0.0"
+    "classnames": "~2.2.3"
   },
+  "description": "tingle-photo-field component for tingle.",
   "devDependencies": {
     "@ali/tingle-group": "~1.0.7",
     "@ali/tingle-icon-source": "~1.0.0",
@@ -32,24 +61,63 @@
     "react-dom": "^0.14.8",
     "salt-tools": "~0.1.0"
   },
+  "dist": {
+    "shasum": "521b0037cc82d7689aa7ed2b22bd59dff4e7a30f",
+    "size": 7256,
+    "key": "@ali/tingle-photo-field/-/@ali/tingle-photo-field-1.0.8.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-photo-field/download/@ali/tingle-photo-field-1.0.8.tgz"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "gitHead": "c6e130f95de8c462b6e147a9e4a6ddc860549bc3",
+  "keywords": [
+    "tingle-photo-field",
+    "PhotoField"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "maintainers": [
+    {
+      "name": "alex.mm",
+      "email": "alex.mm@alibaba-inc.com"
+    },
+    {
+      "name": "caoke.ck",
+      "email": "caoke.ck@alibaba-inc.com"
+    },
+    {
+      "name": "guanghong.wsj",
+      "email": "guanghong.wsj@alibaba-inc.com"
+    },
+    {
+      "name": "quanyun.mqy",
+      "email": "quanyun.mqy@alibaba-inc.com"
+    }
+  ],
+  "name": "@ali/tingle-photo-field",
+  "optionalDependencies": {},
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "scripts": {
-    "start": "salt-tools run start",
-    "build": "salt-tools run build",
-    "pub": "salt-tools run pub",
-    "dep": "salt-tools run dep",
-    "tnpm-dep": "salt-tools run tnpm-dep",
-    "update": "salt-tools run update",
-    "tnpm-update": "salt-tools run tnpm-update"
-  },
-  "license": "MIT",
-  "screenshots": "",
-  "readme": "# tingle-photo-field [![tnpm version](http://web.npm.alibaba-inc.com/badge/v/@ali/tingle-photo-field.svg?style=flat-square)](http://web.npm.alibaba-inc.com/package/@ali/tingle-photo-field)\n\n上传/查看图片的组件。\n\n> 此组件是对 Native API 的封装， 只能在钉钉容器内运行，且运行 demo 时需要在钉钉的白名单域名下。\n\n![image](http://aligitlab.oss-cn-hangzhou-zmf.aliyuncs.com/uploads/tingle-ui/tingle-photo-field/ea60ff01b88b9895d4aa1bf97e0b35be/image.png)\n\n## Install\n\n```\ntnpm install @ali/tingle-photo-field --save\n```\n\n## Simple Usage\n\n```js\nclass Demo extends React.Component {\n\n    constructor(props) {\n        super(props);\n        this.state = {\n            photoList: [\n              {\n                url: 'http://aligitlab.oss-cn-hangzhou-zmf.aliyuncs.com/uploads/user/avatar/16261/gitlab.gif',\n                name: '111'\n              },\n              {\n                url: 'http://aligitlab.oss-cn-hangzhou-zmf.aliyuncs.com/uploads/tingle-ui/tingle-photo-field/eed863a778315746f6f0bf736a3200fc/image.png',\n                name: '222'\n              },\n              {\n                url: 'http://gtms02.alicdn.com/tps/i2/TB1Xe3SMpXXXXX6XpXXTCU0QpXX-300-300.jpg',\n                name: '222'\n              }\n            ]\n        }\n    }\n\n    onDelete(index) {\n        let photoList = this.state.photoList.filter((item, i) => {return index != i}) || [];\n\n        this.setState({\n            photoList\n        })\n    }\n    onChange(fieldData) {\n        const value = [];\n\n        if (fieldData.value && fieldData.value.length) {\n          fieldData.value.forEach((url, i) => {\n            value.push({\n              url,\n              name: i,\n            });\n          });\n        }\n\n        this.setState({\n            photoList: [].concat(this.state.photoList, value)\n        });\n    }\n\n    render() {\n        return (\n            <Group>\n                <Group.List>\n                    <PhotoField\n                        label=\"图片\"\n                        photoList={this.state.photoList}\n                        corpId={\"dingd8e1123006514592\"}\n                        onChange={this.onChange.bind(this)}\n                        onDelete={this.onDelete.bind(this)}\n                        />\n                </Group.List>\n            </Group>\n        );\n    }\n};\n```\n\n## Props\n\n### className\n\n描述：自定义样式的`class`名称。  \n\n类型：`String`  \n\n默认：`''`  \n\n必选：否\n\n示例：\n\n```\n<PhotoField className=\"customClass\"/>\n```\n\n### columns\n\n描述：显示的图片分几列。\n\n类型：`number`  \n\n默认：`3`  \n\n必选：否\n\n示例：\n\n```\n<PhotoField columns={3}/>\n```\n\n### className\n\n描述：自定义样式的`class`名称。  \n\n类型：`String`  \n\n默认：`''`  \n\n必选：否\n\n示例：\n\n```\n<PhotoField className=\"customClass\"/>\n```\n\n### multiple\n\n描述：是否同时上传多张照片。  \n\n类型：`Boolean`  \n\n默认：`true`  \n\n必选：否\n\n示例：\n\n```\n<PhotoField multiple=\"true\"/>\n```\n\n### layout\n\n描述：label 布局,支持上下结构`v`和左右结构`h`。\n\n类型：`String`  \n\n默认：`h`  \n\n必选：否\n\n示例：\n\n```\n<PhotoField layout=\"h\"/>\n```\n\n### label\n\n描述：显示在fild左侧的名字。  \n\n类型：`String`  \n\n默认：`''`  \n\n必选：否\n\n示例：\n\n```\n<PhotoField label=\"图片\"/>\n```\n\n### max\n\n描述：钉钉组件一次性最多选择上传的图片数量\n\n类型：`number`  \n\n默认：`9`  \n\n必选：否\n\n示例：\n\n```\n<PhotoField max={9}/>\n```\n\n### readOnly\n\n描述：是否只读，只读时不能输入，默认false。\n\n类型：`Boolean`  \n\n默认：`false`  \n\n必选：否\n\n示例：\n\n```\n<PhotoField readOnly={false}/>\n```\n\n### photoList\n\n描述：显示的图片列表。  \n\n类型：`Array`  \n\n默认：`[]`  \n\n必选：否\n\n示例：\n\n```\n<PhotoField photoList={this.state.photoList}/>\n```\n\n### fill\n\n描述：右侧相机icon的颜色。  \n\n类型：`String`  \n\n默认：`#ccc`  \n\n必选：否\n\n示例：\n\n```\n<PhotoField fill=\"#ccc\"/>\n```\n\n### placeholder\n\n描述：默认文字  \n\n类型：`String`  \n\n默认：``  \n\n必选：否\n\n示例：\n\n```\n<PhotoField placeholder=\"\"/>\n```\n\n### corpId\n\n描述：钉钉公司corpId。\n\n类型：`String`  \n\n默认：`''`  \n\n必选：是\n\n示例：\n\n```\n<PhotoField corpId=\"abcdsdsdsdsdsd\"/>\n```\n\n### onChange(values)\n\n描述：上传图片回调，values是一个数组，里面为上传的多张图片url\n\n类型：`Function`  \n\n默认：`noop`  \n\n必选：否\n\n### onDelete(index)\n\n描述：删除图片回调，index是序号\n\n类型：`Function`  \n\n默认：`noop`  \n\n必选：否\n\n## APIs\n\n## Links\n\n- [Issues](http://gitlab.alibaba-inc.com/tingle-ui/tingle-photo-field/issues)\n- [README 标准写法](http://gitlab.alibaba-inc.com/tingle-ui/doc/blob/master/README%E6%A0%87%E5%87%86%E5%86%99%E6%B3%95.md)\n",
+  "publish_time": 1487593804096,
+  "readme": "ERROR: No README data found!",
   "readmeFilename": "README.md",
-  "gitHead": "c6e130f95de8c462b6e147a9e4a6ddc860549bc3",
-  "_id": "@ali/tingle-photo-field@1.0.8",
-  "_shasum": "521b0037cc82d7689aa7ed2b22bd59dff4e7a30f",
-  "_from": "@ali/tingle-photo-field@>=1.0.1 <2.0.0"
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-photo-field"
+  },
+  "screenshots": "",
+  "scripts": {
+    "build": "salt-tools run build",
+    "dep": "salt-tools run dep",
+    "pub": "salt-tools run pub",
+    "start": "salt-tools run start",
+    "tnpm-dep": "salt-tools run tnpm-dep",
+    "tnpm-update": "salt-tools run tnpm-update",
+    "update": "salt-tools run update"
+  },
+  "version": "1.0.8"
 }

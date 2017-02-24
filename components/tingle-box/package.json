@@ -1,29 +1,64 @@
 {
-  "name": "@ali/tingle-box",
-  "version": "1.0.2",
-  "description": "tingle-box component for tingle.",
-  "repository": {
-    "type": "git",
-    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-box"
+  "_args": [
+    [
+      {
+        "raw": "@ali/tingle-box@^1.0.0",
+        "scope": "@ali",
+        "escapedName": "@ali%2ftingle-box",
+        "name": "@ali/tingle-box",
+        "rawSpec": "^1.0.0",
+        "spec": ">=1.0.0 <2.0.0",
+        "type": "range"
+      },
+      "/Users/qy/work/tingle/salt-ui.github.io"
+    ]
+  ],
+  "_cnpm_publish_time": 1476167377132,
+  "_from": "@ali/tingle-box@>=1.0.0 <2.0.0",
+  "_id": "@ali/tingle-box@1.0.2",
+  "_inCache": true,
+  "_location": "/@ali/tingle-box",
+  "_nodeVersion": "4.2.4",
+  "_npmUser": {
+    "name": "alex.mm",
+    "email": "alex.mm@alibaba-inc.com"
   },
+  "_npmVersion": "3.10.2",
+  "_phantomChildren": {},
+  "_publish_on_cnpm": true,
+  "_requested": {
+    "raw": "@ali/tingle-box@^1.0.0",
+    "scope": "@ali",
+    "escapedName": "@ali%2ftingle-box",
+    "name": "@ali/tingle-box",
+    "rawSpec": "^1.0.0",
+    "spec": ">=1.0.0 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/",
+    "/@ali/tingle-grid",
+    "/@ali/tingle-grid/@ali/tingle-tab-bar",
+    "/@ali/tingle-grid/@ali/tingle-ui",
+    "/@ali/tingle-list",
+    "/@ali/tingle-tab-bar",
+    "/@ali/tingle-toast",
+    "/@ali/tingle-ui"
+  ],
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-box/download/@ali/tingle-box-1.0.2.tgz",
+  "_shasum": "b3d5135c3373cc1a4f6971f2b0b16b91a18900b1",
+  "_shrinkwrap": null,
+  "_spec": "@ali/tingle-box@^1.0.0",
+  "_where": "/Users/qy/work/tingle/salt-ui.github.io",
   "author": {
     "name": "fushan"
   },
-  "main": "dist/index.js",
-  "files": [
-    "dist",
-    "src",
-    "README.md"
-  ],
-  "keywords": [
-    "tingle-box",
-    "Box"
-  ],
   "dependencies": {
-    "classnames": "~2.2.3",
     "@ali/tingle-context": "~1.0.0",
-    "@ali/tingle-style": "~1.0.0"
+    "@ali/tingle-style": "~1.0.0",
+    "classnames": "~2.2.3"
   },
+  "description": "tingle-box component for tingle.",
   "devDependencies": {
     "@ali/tingle-ui": "~1.0.5",
     "babel": "~6.3.26",
@@ -53,26 +88,24 @@
     "through2": "~2.0.1",
     "webpack": "~1.12.11"
   },
-  "publishConfig": {
-    "registry": "http://registry.npm.alibaba-inc.com"
+  "dist": {
+    "shasum": "b3d5135c3373cc1a4f6971f2b0b16b91a18900b1",
+    "size": 6705,
+    "key": "@ali/tingle-box/-/@ali/tingle-box-1.0.2.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-box/download/@ali/tingle-box-1.0.2.tgz"
   },
-  "scripts": {
-    "start": "gulp d",
-    "build": "gulp b"
-  },
-  "license": "MIT",
-  "screenshots": "",
-  "readmeFilename": "README.md",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
   "gitHead": "f943490298b48a47cdb4527e0fe89c6b739734b0",
-  "_id": "@ali/tingle-box@1.0.2",
-  "_shasum": "b3d5135c3373cc1a4f6971f2b0b16b91a18900b1",
-  "_from": "@ali/tingle-box@>=1.0.0 <2.0.0",
-  "_npmVersion": "3.10.2",
-  "_nodeVersion": "4.2.4",
-  "_npmUser": {
-    "name": "alex.mm",
-    "email": "alex.mm@alibaba-inc.com"
-  },
+  "keywords": [
+    "tingle-box",
+    "Box"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
   "maintainers": [
     {
       "name": "alex.mm",
@@ -81,16 +114,28 @@
     {
       "name": "jiasong.js",
       "email": "jiasong.js@alibaba-inc.com"
+    },
+    {
+      "name": "quanyun.mqy",
+      "email": "quanyun.mqy@alibaba-inc.com"
     }
   ],
-  "dist": {
-    "shasum": "b3d5135c3373cc1a4f6971f2b0b16b91a18900b1",
-    "size": 6705,
-    "key": "@ali/tingle-box/-/@ali/tingle-box-1.0.2.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-box/download/@ali/tingle-box-1.0.2.tgz"
+  "name": "@ali/tingle-box",
+  "optionalDependencies": {},
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "_publish_on_cnpm": true,
-  "_cnpm_publish_time": 1476167377132,
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-box/download/@ali/tingle-box-1.0.2.tgz",
-  "readme": "ERROR: No README data found!"
+  "publish_time": 1476167377132,
+  "readme": "ERROR: No README data found!",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-box"
+  },
+  "screenshots": "",
+  "scripts": {
+    "build": "gulp b",
+    "start": "gulp d"
+  },
+  "version": "1.0.2"
 }

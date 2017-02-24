@@ -1,32 +1,60 @@
 {
-  "name": "@ali/tingle-switch",
-  "version": "1.0.5",
-  "description": "模拟 iPhone 开关控件",
-  "repository": {
-    "type": "git",
-    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-switch"
+  "_args": [
+    [
+      {
+        "raw": "@ali/tingle-switch@^1.0.0",
+        "scope": "@ali",
+        "escapedName": "@ali%2ftingle-switch",
+        "name": "@ali/tingle-switch",
+        "rawSpec": "^1.0.0",
+        "spec": ">=1.0.0 <2.0.0",
+        "type": "range"
+      },
+      "/Users/qy/work/tingle/salt-ui.github.io"
+    ]
+  ],
+  "_cnpm_publish_time": 1487573931526,
+  "_from": "@ali/tingle-switch@>=1.0.0 <2.0.0",
+  "_id": "@ali/tingle-switch@1.0.5",
+  "_inCache": true,
+  "_location": "/@ali/tingle-switch",
+  "_nodeVersion": "6.9.4",
+  "_npmUser": {
+    "name": "caoke.ck",
+    "email": "caoke.ck@alibaba-inc.com"
   },
+  "_npmVersion": "3.10.9",
+  "_phantomChildren": {},
+  "_publish_on_cnpm": true,
+  "_requested": {
+    "raw": "@ali/tingle-switch@^1.0.0",
+    "scope": "@ali",
+    "escapedName": "@ali%2ftingle-switch",
+    "name": "@ali/tingle-switch",
+    "rawSpec": "^1.0.0",
+    "spec": ">=1.0.0 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/",
+    "/@ali/tingle-grid/@ali/tingle-ui",
+    "/@ali/tingle-switch-field",
+    "/@ali/tingle-ui"
+  ],
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-switch/download/@ali/tingle-switch-1.0.5.tgz",
+  "_shasum": "e96942f91b4448b98015330d061f27fbbe7b68ba",
+  "_shrinkwrap": null,
+  "_spec": "@ali/tingle-switch@^1.0.0",
+  "_where": "/Users/qy/work/tingle/salt-ui.github.io",
   "author": {
     "name": "ruiyang.dry"
   },
-  "main": "dist/index.js",
-  "files": [
-    "dist",
-    "src",
-    "README.md"
-  ],
-  "keywords": [
-    "tingle-switch",
-    "OnOff",
-    "switch",
-    "开关",
-    "表单"
-  ],
   "dependencies": {
-    "classnames": "~2.2.3",
     "@ali/tingle-context": "~1.0.0",
-    "@ali/tingle-style": "~1.0.0"
+    "@ali/tingle-style": "~1.0.0",
+    "classnames": "~2.2.3"
   },
+  "description": "模拟 iPhone 开关控件",
   "devDependencies": {
     "@ali/tingle-ui": "~1.0.0",
     "babel": "~6.3.26",
@@ -37,6 +65,8 @@
     "babel-preset-react": "~6.3.13",
     "babel-preset-stage-1": "~6.3.13",
     "browser-sync": "~2.11.1",
+    "cross-spawn": "^2.0.0",
+    "fastclick": "~1.0.6",
     "gulp": "~3.9.0",
     "gulp-babel": "~6.1.1",
     "gulp-concat": "~2.6.0",
@@ -50,32 +80,31 @@
     "gulp-unique-files": "~0.1.2",
     "react": "~0.14.8",
     "react-dom": "~0.14.8",
-    "fastclick": "~1.0.6",
     "svg2react-loader": "^1.0.2",
     "through2": "~2.0.1",
-    "cross-spawn": "^2.0.0",
     "webpack": "~1.12.11"
   },
-  "publishConfig": {
-    "registry": "http://registry.npm.alibaba-inc.com"
+  "dist": {
+    "shasum": "e96942f91b4448b98015330d061f27fbbe7b68ba",
+    "size": 6551,
+    "key": "@ali/tingle-switch/-/@ali/tingle-switch-1.0.5.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-switch/download/@ali/tingle-switch-1.0.5.tgz"
   },
-  "scripts": {
-    "start": "gulp d",
-    "build": "gulp b"
-  },
-  "license": "MIT",
-  "screenshots": "",
-  "readmeFilename": "README.md",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
   "gitHead": "8e31785153636925bcd951b8d393cb41719ac283",
-  "_id": "@ali/tingle-switch@1.0.5",
-  "_shasum": "e96942f91b4448b98015330d061f27fbbe7b68ba",
-  "_from": "@ali/tingle-switch@>=1.0.0 <2.0.0",
-  "_npmVersion": "3.10.9",
-  "_nodeVersion": "6.9.4",
-  "_npmUser": {
-    "name": "caoke.ck",
-    "email": "caoke.ck@alibaba-inc.com"
-  },
+  "keywords": [
+    "tingle-switch",
+    "OnOff",
+    "switch",
+    "开关",
+    "表单"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
   "maintainers": [
     {
       "name": "alex.mm",
@@ -94,14 +123,22 @@
       "email": "quanyun.mqy@alibaba-inc.com"
     }
   ],
-  "dist": {
-    "shasum": "e96942f91b4448b98015330d061f27fbbe7b68ba",
-    "size": 6551,
-    "key": "@ali/tingle-switch/-/@ali/tingle-switch-1.0.5.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-switch/download/@ali/tingle-switch-1.0.5.tgz"
+  "name": "@ali/tingle-switch",
+  "optionalDependencies": {},
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "_publish_on_cnpm": true,
-  "_cnpm_publish_time": 1487573931526,
   "publish_time": 1487573931526,
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-switch/download/@ali/tingle-switch-1.0.5.tgz"
+  "readme": "ERROR: No README data found!",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-switch"
+  },
+  "screenshots": "",
+  "scripts": {
+    "build": "gulp b",
+    "start": "gulp d"
+  },
+  "version": "1.0.5"
 }

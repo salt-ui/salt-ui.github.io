@@ -1,24 +1,53 @@
 {
-  "name": "@ali/tingle-list",
-  "version": "1.0.12",
-  "description": "tingle-list component for tingle.",
-  "repository": {
-    "type": "git",
-    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-list"
+  "_args": [
+    [
+      {
+        "raw": "@ali/tingle-list@^1.0.0",
+        "scope": "@ali",
+        "escapedName": "@ali%2ftingle-list",
+        "name": "@ali/tingle-list",
+        "rawSpec": "^1.0.0",
+        "spec": ">=1.0.0 <2.0.0",
+        "type": "range"
+      },
+      "/Users/qy/work/tingle/salt-ui.github.io"
+    ]
+  ],
+  "_cnpm_publish_time": 1487578456680,
+  "_from": "@ali/tingle-list@>=1.0.0 <2.0.0",
+  "_id": "@ali/tingle-list@1.0.12",
+  "_inCache": true,
+  "_location": "/@ali/tingle-list",
+  "_nodeVersion": "6.9.1",
+  "_npmUser": {
+    "name": "guanghong.wsj",
+    "email": "guanghong.wsj@alibaba-inc.com"
   },
+  "_npmVersion": "2.15.11",
+  "_phantomChildren": {},
+  "_publish_on_cnpm": true,
+  "_requested": {
+    "raw": "@ali/tingle-list@^1.0.0",
+    "scope": "@ali",
+    "escapedName": "@ali%2ftingle-list",
+    "name": "@ali/tingle-list",
+    "rawSpec": "^1.0.0",
+    "spec": ">=1.0.0 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/",
+    "/@ali/tingle-grid/@ali/tingle-ui",
+    "/@ali/tingle-ui"
+  ],
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-list/download/@ali/tingle-list-1.0.12.tgz",
+  "_shasum": "7a26a133c34c76f74e5b9ede4b4e316696c36f00",
+  "_shrinkwrap": null,
+  "_spec": "@ali/tingle-list@^1.0.0",
+  "_where": "/Users/qy/work/tingle/salt-ui.github.io",
   "author": {
     "name": "muxin"
   },
-  "main": "dist/index.js",
-  "files": [
-    "dist",
-    "src",
-    "README.md"
-  ],
-  "keywords": [
-    "tingle-list",
-    "List"
-  ],
   "dependencies": {
     "@ali/tingle-box": "^1.0.1",
     "@ali/tingle-context": "~1.0.0",
@@ -28,6 +57,7 @@
     "@ali/tingle-style": "^1.0.13",
     "classnames": "~2.2.3"
   },
+  "description": "tingle-list component for tingle.",
   "devDependencies": {
     "@ali/tingle-ui": "~1.0.0",
     "fastclick": "^1.0.6",
@@ -35,24 +65,63 @@
     "react-dom": "^0.14.8",
     "salt-tools": "~0.1.0"
   },
+  "dist": {
+    "shasum": "7a26a133c34c76f74e5b9ede4b4e316696c36f00",
+    "size": 8435,
+    "key": "@ali/tingle-list/-/@ali/tingle-list-1.0.12.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-list/download/@ali/tingle-list-1.0.12.tgz"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "gitHead": "1f8b5fe484c2be1a2975c7ff471632980154c783",
+  "keywords": [
+    "tingle-list",
+    "List"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "maintainers": [
+    {
+      "name": "alex.mm",
+      "email": "alex.mm@alibaba-inc.com"
+    },
+    {
+      "name": "guanghong.wsj",
+      "email": "guanghong.wsj@alibaba-inc.com"
+    },
+    {
+      "name": "jiasong.js",
+      "email": "jiasong.js@alibaba-inc.com"
+    },
+    {
+      "name": "quanyun.mqy",
+      "email": "quanyun.mqy@alibaba-inc.com"
+    }
+  ],
+  "name": "@ali/tingle-list",
+  "optionalDependencies": {},
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "scripts": {
-    "start": "salt-tools run start",
-    "build": "salt-tools run build",
-    "pub": "salt-tools run pub",
-    "dep": "salt-tools run dep",
-    "tnpm-dep": "salt-tools run tnpm-dep",
-    "update": "salt-tools run update",
-    "tnpm-update": "salt-tools run tnpm-update"
-  },
-  "license": "MIT",
-  "screenshots": "",
-  "readme": "# tingle-list [![tnpm version](http://web.npm.alibaba-inc.com/badge/v/@ali/tingle-list.svg?style=flat-square)](http://web.npm.alibaba-inc.com/package/@ali/tingle-list)\n\n## 图文列表 组件 + Demo\n\n- 组件支持\n  - 两种布局方式：左图右文、左文右图\n  - 右侧 icon 显示、类型、大小 可配置\n  - 滑动删除 可配置\n\n- Demo包括\n  - 图加标题\n  - 图文纵排\n  - 信息卡列表\n\n![](https://img.alicdn.com/tps/TB1nYvqJFXXXXasXFXXXXXXXXXX-292-743.png)\n\n![](https://img.alicdn.com/tps/TB16LjXJFXXXXXfaXXXXXXXXXXX-291-603.png)\n\n- 以下是组件使用方式介绍\n\n## Install\n\n```\ntnpm install @ali/tingle-list --save\n```\n\n## Simple Usage\n\n```html\n<List\n    layout=\"left\"\n    hasRightIcon={true}\n    iconName='angle-right'\n    iconWidth={20}\n    isDelete={false}\n    onClick={this.handleClick.bind(this)}\n    clickPhoto={this.handleClickImg.bind(this)}\n    data={[\n    {\n        imgUrl : \"https://img.alicdn.com/tps/TB1P1vaLpXXXXXxaXXXXXXXXXXX-50-50.jpg\",\n        title : \"列表标题\",\n        text : \"列表内容测试测试测试测试测试测试测试测试测试测试测试测试\",\n        date  : \"2016-7-18\"\n    },\n    {\n        title : \"列表标题\",\n        text : \"列表内容测试测试测试测试测试测试测试测试测试测试测试测试\"\n    }]}/>\n```\n\n## Props\n\n### className\n\n描述：自定义样式的`class`名称\n\n类型：`String`\n\n默认：`''`\n\n必选：否\n\n示例：\n\n```\n<List className=\"customClass\"/>\n```\n\n### layout\n\n描述：自定义列表布局方式\n\n类型：`String`\n\n默认：`left`\n\n可选值：`left`、`right`\n\n必选：否\n\n示例：\n\n```\n<List layout=\"right\"/>\n```\n\n### hasRightIcon\n\n描述：控制列表右侧 icon 的显示\n\n类型：`Boolen`\n\n默认：`true`\n\n必选：否\n\n示例：\n\n```\n<List hasArrow={true}/>\n```\n\n### iconName\n\n描述：控制列表右侧 icon 的类型\n\n类型：`String`\n\n默认：`angle-right`\n\n必选：否\n\n示例：\n\n```\n<List iconName=\"angle-left\"/>\n```\n### iconWidth\n\n描述：控制列表右侧 icon 的宽度\n\n类型：`Number`\n\n默认：`20`\n\n必选：否\n\n示例：\n\n```\n<List iconWidth={24}/>\n```\n\n### isDelete\n\n描述：控制列表是否支持滑动删除\n\n类型：`Boolen`\n\n默认：`false`\n\n必选：否\n\n示例：\n\n```\n<List isDelete={true}/>\n```\n### data\n\n描述：列表数据，data中某一项不传即为空\n\n类型：`Array`\n\n默认：`[{imgUrl:'',title:'',text:'',date:''}]`\n\n必选：是\n\n示例：\n\n```\n<List data={[\n    {\n        imgUrl : \"https://img.alicdn.com/tps/TB1P1vaLpXXXXXxaXXXXXXXXXXX-50-50.jpg\",\n        title : \"列表标题\",\n        text : \"列表内容测试测试测试测试测试测试测试测试测试测试测试测试\",\n        date : \"2016-7-18\"\n    }]}/>\n```\n\n## APIs\n\n### onClick\n\n描述：列表的 onClick 回调，参数 dataItem 为当前点击的这一 list 的 data 对象\n\n类型：`Function`\n\n默认：``\n\n必选：否\n\n示例：\n\n```\nhandleClick(e,dataItem){\n  do something...\n}\n\n<List\n  onClick={this.handleClick.bind(this)}\n/>\n```\n\n### clickPhoto\n\n描述：列表头像的 onClick 回调,参数 imgUrl 为当前点击的这一头像的 url\n\n类型：`Function`\n\n默认：``\n\n必选：否\n\n示例：\n\n```\nhandleClickImg(e,imgUrl){\n  do something...\n}\n\n<List\n  clickPhoto={this.handleClickImg.bind(this)}\n/>\n```\n\n### onDelete\n\n描述：列表滑动删除的回调函数，参数 dataItem 为当前删除的这一 list 的 data 对象\n\n类型：`Function`\n\n默认：``\n\n必选：否\n\n示例：\n\n```\nhandleDelete(e,dataItem){\n  do something...\n}\n\n<List\n  onDelete={this.handleDelete.bind(this)}\n/>\n```\n\n## Links\n\n- [Issues](http://gitlab.alibaba-inc.com/tingle-ui/tingle-list/issues)\n- [README 标准写法](http://gitlab.alibaba-inc.com/tingle-ui/doc/blob/master/README%E6%A0%87%E5%87%86%E5%86%99%E6%B3%95.md)\n",
+  "publish_time": 1487578456680,
+  "readme": "ERROR: No README data found!",
   "readmeFilename": "README.md",
-  "gitHead": "1f8b5fe484c2be1a2975c7ff471632980154c783",
-  "_id": "@ali/tingle-list@1.0.12",
-  "_shasum": "7a26a133c34c76f74e5b9ede4b4e316696c36f00",
-  "_from": "@ali/tingle-list@>=1.0.0 <2.0.0"
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-list"
+  },
+  "screenshots": "",
+  "scripts": {
+    "build": "salt-tools run build",
+    "dep": "salt-tools run dep",
+    "pub": "salt-tools run pub",
+    "start": "salt-tools run start",
+    "tnpm-dep": "salt-tools run tnpm-dep",
+    "tnpm-update": "salt-tools run tnpm-update",
+    "update": "salt-tools run update"
+  },
+  "version": "1.0.12"
 }

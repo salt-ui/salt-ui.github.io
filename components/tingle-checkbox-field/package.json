@@ -1,24 +1,53 @@
 {
-  "name": "@ali/tingle-checkbox-field",
-  "version": "1.1.5",
-  "description": "tingle-checkbox-field component for tingle.",
-  "repository": {
-    "type": "git",
-    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-checkbox-field"
+  "_args": [
+    [
+      {
+        "raw": "@ali/tingle-checkbox-field@^1.0.0",
+        "scope": "@ali",
+        "escapedName": "@ali%2ftingle-checkbox-field",
+        "name": "@ali/tingle-checkbox-field",
+        "rawSpec": "^1.0.0",
+        "spec": ">=1.0.0 <2.0.0",
+        "type": "range"
+      },
+      "/Users/qy/work/tingle/salt-ui.github.io"
+    ]
+  ],
+  "_cnpm_publish_time": 1484477928005,
+  "_from": "@ali/tingle-checkbox-field@>=1.0.0 <2.0.0",
+  "_id": "@ali/tingle-checkbox-field@1.1.5",
+  "_inCache": true,
+  "_location": "/@ali/tingle-checkbox-field",
+  "_nodeVersion": "6.9.1",
+  "_npmUser": {
+    "name": "quanyun.mqy",
+    "email": "quanyun.mqy@alibaba-inc.com"
   },
+  "_npmVersion": "3.10.9",
+  "_phantomChildren": {},
+  "_publish_on_cnpm": true,
+  "_requested": {
+    "raw": "@ali/tingle-checkbox-field@^1.0.0",
+    "scope": "@ali",
+    "escapedName": "@ali%2ftingle-checkbox-field",
+    "name": "@ali/tingle-checkbox-field",
+    "rawSpec": "^1.0.0",
+    "spec": ">=1.0.0 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/",
+    "/@ali/tingle-ui"
+  ],
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-checkbox-field/download/@ali/tingle-checkbox-field-1.1.5.tgz",
+  "_shasum": "837a4f2ba408ddab3cb57a63171282812ecab9de",
+  "_shrinkwrap": null,
+  "_spec": "@ali/tingle-checkbox-field@^1.0.0",
+  "_where": "/Users/qy/work/tingle/salt-ui.github.io",
   "author": {
     "name": "shanchao"
   },
-  "main": "dist/index.js",
-  "files": [
-    "dist",
-    "src",
-    "README.md"
-  ],
-  "keywords": [
-    "tingle-checkbox-field",
-    "CheckboxField"
-  ],
   "dependencies": {
     "@ali/tingle-context": "~1.0.0",
     "@ali/tingle-field": "~1.0.3",
@@ -29,6 +58,7 @@
     "@ali/tingle-style": "~1.0.0",
     "classnames": "~2.2.3"
   },
+  "description": "tingle-checkbox-field component for tingle.",
   "devDependencies": {
     "@ali/tingle-icon-source": "~1.0.4",
     "@ali/tingle-ui": "~1.0.0",
@@ -59,26 +89,24 @@
     "through2": "~2.0.1",
     "webpack": "~1.12.11"
   },
-  "publishConfig": {
-    "registry": "http://registry.npm.alibaba-inc.com"
+  "dist": {
+    "shasum": "837a4f2ba408ddab3cb57a63171282812ecab9de",
+    "size": 22967,
+    "key": "@ali/tingle-checkbox-field/-/@ali/tingle-checkbox-field-1.1.5.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-checkbox-field/download/@ali/tingle-checkbox-field-1.1.5.tgz"
   },
-  "scripts": {
-    "start": "gulp d",
-    "build": "gulp b"
-  },
-  "license": "MIT",
-  "screenshots": "",
-  "readmeFilename": "README.md",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
   "gitHead": "5856de731e5d31ffe0c712c2dcbde3a3402b0513",
-  "_id": "@ali/tingle-checkbox-field@1.1.5",
-  "_shasum": "837a4f2ba408ddab3cb57a63171282812ecab9de",
-  "_from": "@ali/tingle-checkbox-field@>=1.0.0 <2.0.0",
-  "_npmVersion": "3.10.9",
-  "_nodeVersion": "6.9.1",
-  "_npmUser": {
-    "name": "quanyun.mqy",
-    "email": "quanyun.mqy@alibaba-inc.com"
-  },
+  "keywords": [
+    "tingle-checkbox-field",
+    "CheckboxField"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
   "maintainers": [
     {
       "name": "alex.mm",
@@ -93,15 +121,22 @@
       "email": "quanyun.mqy@alibaba-inc.com"
     }
   ],
-  "dist": {
-    "shasum": "837a4f2ba408ddab3cb57a63171282812ecab9de",
-    "size": 22967,
-    "key": "@ali/tingle-checkbox-field/-/@ali/tingle-checkbox-field-1.1.5.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-checkbox-field/download/@ali/tingle-checkbox-field-1.1.5.tgz"
+  "name": "@ali/tingle-checkbox-field",
+  "optionalDependencies": {},
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "_publish_on_cnpm": true,
-  "_cnpm_publish_time": 1484477928005,
   "publish_time": 1484477928005,
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-checkbox-field/download/@ali/tingle-checkbox-field-1.1.5.tgz",
-  "readme": "ERROR: No README data found!"
+  "readme": "ERROR: No README data found!",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-checkbox-field"
+  },
+  "screenshots": "",
+  "scripts": {
+    "build": "gulp b",
+    "start": "gulp d"
+  },
+  "version": "1.1.5"
 }

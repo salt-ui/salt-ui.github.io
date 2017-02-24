@@ -1,29 +1,60 @@
 {
-  "name": "@ali/tingle-button",
-  "version": "1.0.10",
-  "description": "tingle-button component for tingle.",
-  "repository": {
-    "type": "git",
-    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-button"
+  "_args": [
+    [
+      {
+        "raw": "@ali/tingle-button@^1.0.0",
+        "scope": "@ali",
+        "escapedName": "@ali%2ftingle-button",
+        "name": "@ali/tingle-button",
+        "rawSpec": "^1.0.0",
+        "spec": ">=1.0.0 <2.0.0",
+        "type": "range"
+      },
+      "/Users/qy/work/tingle/salt-ui.github.io"
+    ]
+  ],
+  "_cnpm_publish_time": 1472999775723,
+  "_from": "@ali/tingle-button@>=1.0.0 <2.0.0",
+  "_id": "@ali/tingle-button@1.0.10",
+  "_inCache": true,
+  "_location": "/@ali/tingle-button",
+  "_nodeVersion": "4.5.0",
+  "_npmUser": {
+    "name": "caoke.ck",
+    "email": "caoke.ck@alibaba-inc.com"
   },
+  "_npmVersion": "2.15.9",
+  "_phantomChildren": {},
+  "_publish_on_cnpm": true,
+  "_requested": {
+    "raw": "@ali/tingle-button@^1.0.0",
+    "scope": "@ali",
+    "escapedName": "@ali%2ftingle-button",
+    "name": "@ali/tingle-button",
+    "rawSpec": "^1.0.0",
+    "spec": ">=1.0.0 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/",
+    "/@ali/tingle-grid/@ali/tingle-ui",
+    "/@ali/tingle-toast",
+    "/@ali/tingle-ui"
+  ],
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-button/download/@ali/tingle-button-1.0.10.tgz",
+  "_shasum": "3b07133b9b747c41b2815c9e805ab32497f57337",
+  "_shrinkwrap": null,
+  "_spec": "@ali/tingle-button@^1.0.0",
+  "_where": "/Users/qy/work/tingle/salt-ui.github.io",
   "author": {
     "name": "cm"
   },
-  "main": "dist/index.js",
-  "files": [
-    "dist",
-    "src",
-    "README.md"
-  ],
-  "keywords": [
-    "tingle-button",
-    "Button"
-  ],
   "dependencies": {
     "@ali/tingle-context": "~1.0.0",
     "@ali/tingle-style": "^1.0.11",
     "classnames": "~2.2.3"
   },
+  "description": "tingle-button component for tingle.",
   "devDependencies": {
     "@ali/tingle-ui": "~1.0.0",
     "babel": "~6.3.26",
@@ -53,26 +84,24 @@
     "through2": "~2.0.1",
     "webpack": "~1.12.11"
   },
-  "publishConfig": {
-    "registry": "http://registry.npm.alibaba-inc.com"
+  "dist": {
+    "shasum": "3b07133b9b747c41b2815c9e805ab32497f57337",
+    "size": 11697,
+    "key": "@ali/tingle-button/-/@ali/tingle-button-1.0.10.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-button/download/@ali/tingle-button-1.0.10.tgz"
   },
-  "scripts": {
-    "start": "gulp d",
-    "build": "gulp b"
-  },
-  "license": "MIT",
-  "screenshots": "",
-  "readmeFilename": "README.md",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
   "gitHead": "18661927d06fc0527de69678d50b3bd56a1e627b",
-  "_id": "@ali/tingle-button@1.0.10",
-  "_shasum": "3b07133b9b747c41b2815c9e805ab32497f57337",
-  "_from": "@ali/tingle-button@>=1.0.0 <2.0.0",
-  "_npmVersion": "2.15.9",
-  "_nodeVersion": "4.5.0",
-  "_npmUser": {
-    "name": "caoke.ck",
-    "email": "caoke.ck@alibaba-inc.com"
-  },
+  "keywords": [
+    "tingle-button",
+    "Button"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
   "maintainers": [
     {
       "name": "alex.mm",
@@ -87,18 +116,34 @@
       "email": "changming.zy@alibaba-inc.com"
     },
     {
+      "name": "guanghong.wsj",
+      "email": "guanghong.wsj@alibaba-inc.com"
+    },
+    {
       "name": "jiasong.js",
       "email": "jiasong.js@alibaba-inc.com"
+    },
+    {
+      "name": "quanyun.mqy",
+      "email": "quanyun.mqy@alibaba-inc.com"
     }
   ],
-  "dist": {
-    "shasum": "3b07133b9b747c41b2815c9e805ab32497f57337",
-    "size": 11697,
-    "key": "@ali/tingle-button/-/@ali/tingle-button-1.0.10.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-button/download/@ali/tingle-button-1.0.10.tgz"
+  "name": "@ali/tingle-button",
+  "optionalDependencies": {},
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "_publish_on_cnpm": true,
-  "_cnpm_publish_time": 1472999775723,
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-button/download/@ali/tingle-button-1.0.10.tgz",
-  "readme": "ERROR: No README data found!"
+  "publish_time": 1472999775723,
+  "readme": "ERROR: No README data found!",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-button"
+  },
+  "screenshots": "",
+  "scripts": {
+    "build": "gulp b",
+    "start": "gulp d"
+  },
+  "version": "1.0.10"
 }
