@@ -4,7 +4,7 @@ title: 基本使用
 ---
 
 ```jsx
-const { HBox, VBox, Box } = SaltUI;
+const { HBox, VBox, Box } = SaltUI.Boxs;
 
 class Demo extends React.Component {
     render() {

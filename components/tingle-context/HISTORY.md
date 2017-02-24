@@ -4,6 +4,11 @@
 
 ## updates
 
+#### v1.1.0
+
+* 升级脚手架yo @ali/tingle:upgrade
+* demo引用的css classname更新
+
 #### v1.0.1
 
 * 保证`require`方式引用时返回的是同一个上下文对象

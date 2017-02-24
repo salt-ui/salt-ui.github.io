@@ -1,6 +1,12 @@
 # Release notes for tingle-scroll-list
 
 ---
+##  Version 1.3.0 - 2017.02.17
+
+### fix
+* 在android 7.0上tingle-scroller无法滚动, 添加disablePointer属性来解决这个问题
+
+---
 ##  Version 1.1.4 - 2016.08.30
 
 ### fix

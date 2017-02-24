@@ -2,19 +2,19 @@
   "_args": [
     [
       {
-        "raw": "@ali/tingle-city-select-field@^1.0.2",
+        "raw": "@ali/tingle-city-select-field",
         "scope": "@ali",
         "escapedName": "@ali%2ftingle-city-select-field",
         "name": "@ali/tingle-city-select-field",
-        "rawSpec": "^1.0.2",
-        "spec": ">=1.0.2 <2.0.0",
-        "type": "range"
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
       },
-      "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui"
+      "/Users/qy/work/tingle/salt-ui.github.io"
     ]
   ],
   "_cnpm_publish_time": 1487753602832,
-  "_from": "@ali/tingle-city-select-field@>=1.0.2 <2.0.0",
+  "_from": "@ali/tingle-city-select-field@latest",
   "_id": "@ali/tingle-city-select-field@1.0.5",
   "_inCache": true,
   "_location": "/@ali/tingle-city-select-field",
@@ -27,22 +27,24 @@
   "_phantomChildren": {},
   "_publish_on_cnpm": true,
   "_requested": {
-    "raw": "@ali/tingle-city-select-field@^1.0.2",
+    "raw": "@ali/tingle-city-select-field",
     "scope": "@ali",
     "escapedName": "@ali%2ftingle-city-select-field",
     "name": "@ali/tingle-city-select-field",
-    "rawSpec": "^1.0.2",
-    "spec": ">=1.0.2 <2.0.0",
-    "type": "range"
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
   },
   "_requiredBy": [
+    "#USER",
+    "/",
     "/@ali/tingle-ui"
   ],
   "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-city-select-field/download/@ali/tingle-city-select-field-1.0.5.tgz",
   "_shasum": "45ed33f1467aeaa40af683b9b5a39c50373a6cfe",
   "_shrinkwrap": null,
-  "_spec": "@ali/tingle-city-select-field@^1.0.2",
-  "_where": "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui",
+  "_spec": "@ali/tingle-city-select-field",
+  "_where": "/Users/qy/work/tingle/salt-ui.github.io",
   "author": {
     "name": "qingnan.yqn"
   },

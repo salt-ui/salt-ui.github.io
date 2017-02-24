@@ -2,47 +2,51 @@
   "_args": [
     [
       {
-        "raw": "@ali/tingle-scroll-list@^1.0.1",
+        "raw": "@ali/tingle-scroll-list@1.3.0",
         "scope": "@ali",
         "escapedName": "@ali%2ftingle-scroll-list",
         "name": "@ali/tingle-scroll-list",
-        "rawSpec": "^1.0.1",
-        "spec": ">=1.0.1 <2.0.0",
-        "type": "range"
+        "rawSpec": "1.3.0",
+        "spec": "1.3.0",
+        "type": "version"
       },
       "/Users/qy/work/tingle/salt-ui.github.io"
     ]
   ],
-  "_cnpm_publish_time": 1487661015711,
-  "_from": "@ali/tingle-scroll-list@>=1.0.1 <2.0.0",
-  "_id": "@ali/tingle-scroll-list@1.1.8",
+  "_cnpm_publish_time": 1487323176314,
+  "_from": "@ali/tingle-scroll-list@1.3.0",
+  "_id": "@ali/tingle-scroll-list@1.3.0",
   "_inCache": true,
   "_location": "/@ali/tingle-scroll-list",
-  "_nodeVersion": "4.4.4",
+  "_nodeVersion": "6.9.1",
   "_npmUser": {
-    "name": "minjie.lmj",
-    "email": "minjie.lmj@alibaba-inc.com"
+    "name": "quanyun.mqy",
+    "email": "quanyun.mqy@alibaba-inc.com"
   },
-  "_npmVersion": "2.15.11",
-  "_phantomChildren": {},
+  "_npmVersion": "3.10.9",
+  "_phantomChildren": {
+    "@ali/tingle-style": "1.0.22",
+    "classnames": "2.2.5"
+  },
   "_publish_on_cnpm": true,
   "_requested": {
-    "raw": "@ali/tingle-scroll-list@^1.0.1",
+    "raw": "@ali/tingle-scroll-list@1.3.0",
     "scope": "@ali",
     "escapedName": "@ali%2ftingle-scroll-list",
     "name": "@ali/tingle-scroll-list",
-    "rawSpec": "^1.0.1",
-    "spec": ">=1.0.1 <2.0.0",
-    "type": "range"
+    "rawSpec": "1.3.0",
+    "spec": "1.3.0",
+    "type": "version"
   },
   "_requiredBy": [
+    "#USER",
     "/",
     "/@ali/tingle-grid/@ali/tingle-ui"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-scroll-list/download/@ali/tingle-scroll-list-1.1.8.tgz",
-  "_shasum": "f54e9341d97169d254b22159d6c4a1c04d6da856",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-scroll-list/download/@ali/tingle-scroll-list-1.3.0.tgz",
+  "_shasum": "aaea6119012aba5df06b1f07ca77ab0049dc66cc",
   "_shrinkwrap": null,
-  "_spec": "@ali/tingle-scroll-list@^1.0.1",
+  "_spec": "@ali/tingle-scroll-list@1.3.0",
   "_where": "/Users/qy/work/tingle/salt-ui.github.io",
   "author": {
     "name": "zhouquan.yezq"
@@ -51,13 +55,10 @@
     "@ali/tingle-context": "~1.0.0",
     "@ali/tingle-icon": "~1.0.2",
     "@ali/tingle-icon-source": "~1.0.0",
+    "@ali/tingle-scroller": "^1.0.7",
     "@ali/tingle-style": "~1.0.0",
-    "@ali/vu-data-source-parser": "^1.0.7",
     "classnames": "~2.2.3",
-    "deep-equal": "1.0.1",
-    "iscroll": "5.2.0",
-    "object-assign": "^4.1.0",
-    "react-iscroll": "1.0.2"
+    "object-assign": "^4.1.0"
   },
   "description": "scroll list",
   "devDependencies": {
@@ -94,17 +95,17 @@
     "mobile"
   ],
   "dist": {
-    "shasum": "f54e9341d97169d254b22159d6c4a1c04d6da856",
-    "size": 20481,
-    "key": "@ali/tingle-scroll-list/-/@ali/tingle-scroll-list-1.1.8.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-scroll-list/download/@ali/tingle-scroll-list-1.1.8.tgz"
+    "shasum": "aaea6119012aba5df06b1f07ca77ab0049dc66cc",
+    "size": 15823,
+    "key": "@ali/tingle-scroll-list/-/@ali/tingle-scroll-list-1.3.0.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-scroll-list/download/@ali/tingle-scroll-list-1.3.0.tgz"
   },
   "files": [
     "dist",
     "src",
     "README.md"
   ],
-  "gitHead": "f74efffab6b29d824cb150f5c447831cc88b1f15",
+  "gitHead": "be6d5d7ec05330b517915b2c02dadfb5bbbad739",
   "keywords": [
     "tingle-scroll-list",
     "ScrollList"
@@ -150,7 +151,7 @@
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1487661015711,
+  "publish_time": 1487323176314,
   "readme": "ERROR: No README data found!",
   "readmeFilename": "README.md",
   "repository": {
@@ -162,5 +163,5 @@
     "build": "gulp b",
     "start": "gulp d"
   },
-  "version": "1.1.8"
+  "version": "1.3.0"
 }

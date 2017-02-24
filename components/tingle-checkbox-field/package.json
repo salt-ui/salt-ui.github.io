@@ -36,6 +36,7 @@
     "type": "range"
   },
   "_requiredBy": [
+    "#USER",
     "/",
     "/@ali/tingle-ui"
   ],
