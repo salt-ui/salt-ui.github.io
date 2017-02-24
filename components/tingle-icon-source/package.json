@@ -1,25 +1,61 @@
 {
-  "name": "@ali/tingle-icon-source",
-  "version": "1.0.13",
-  "description": "tingle icons",
-  "repository": {
-    "type": "git",
-    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-icon-source"
+  "_args": [
+    [
+      {
+        "raw": "@ali/tingle-icon-source@^1.0.0",
+        "scope": "@ali",
+        "escapedName": "@ali%2ftingle-icon-source",
+        "name": "@ali/tingle-icon-source",
+        "rawSpec": "^1.0.0",
+        "spec": ">=1.0.0 <2.0.0",
+        "type": "range"
+      },
+      "/Users/qy/work/tingle/salt-ui.github.io"
+    ]
+  ],
+  "_cnpm_publish_time": 1476271469602,
+  "_from": "@ali/tingle-icon-source@>=1.0.0 <2.0.0",
+  "_id": "@ali/tingle-icon-source@1.0.13",
+  "_inCache": true,
+  "_location": "/@ali/tingle-icon-source",
+  "_nodeVersion": "4.2.4",
+  "_npmUser": {
+    "name": "alex.mm",
+    "email": "alex.mm@alibaba-inc.com"
   },
+  "_npmVersion": "3.10.2",
+  "_phantomChildren": {},
+  "_publish_on_cnpm": true,
+  "_requested": {
+    "raw": "@ali/tingle-icon-source@^1.0.0",
+    "scope": "@ali",
+    "escapedName": "@ali%2ftingle-icon-source",
+    "name": "@ali/tingle-icon-source",
+    "rawSpec": "^1.0.0",
+    "spec": ">=1.0.0 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/",
+    "/@ali/tingle-field",
+    "/@ali/tingle-grid/@ali/tingle-ui",
+    "/@ali/tingle-list",
+    "/@ali/tingle-note",
+    "/@ali/tingle-scroll-list",
+    "/@ali/tingle-search-bar",
+    "/@ali/tingle-ui",
+    "/@ali/tingle-ui/@ali/tingle-scroll-list"
+  ],
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-icon-source/download/@ali/tingle-icon-source-1.0.13.tgz",
+  "_shasum": "df6820868fac62be35b1a1f00794ddb5736ec4ec",
+  "_shrinkwrap": null,
+  "_spec": "@ali/tingle-icon-source@^1.0.0",
+  "_where": "/Users/qy/work/tingle/salt-ui.github.io",
   "author": {
     "name": "fushan"
   },
-  "main": "dist/index.js",
-  "files": [
-    "dist",
-    "src",
-    "README.md"
-  ],
-  "keywords": [
-    "tingle-icon-source",
-    "IconSource"
-  ],
   "dependencies": {},
+  "description": "tingle icons",
   "devDependencies": {
     "@ali/tingle-icon": "^1.0.3",
     "babel": "~6.3.26",
@@ -30,6 +66,8 @@
     "babel-preset-react": "~6.3.13",
     "babel-preset-stage-1": "~6.3.13",
     "browser-sync": "~2.11.1",
+    "cross-spawn": "^2.0.0",
+    "fastclick": "~1.0.6",
     "gulp": "~3.9.0",
     "gulp-babel": "~6.1.1",
     "gulp-concat": "~2.6.0",
@@ -43,50 +81,62 @@
     "gulp-unique-files": "~0.1.2",
     "react": "~0.14.8",
     "react-dom": "~0.14.8",
-    "fastclick": "~1.0.6",
     "svg2react-loader": "^1.0.2",
     "through2": "~2.0.1",
-    "cross-spawn": "^2.0.0",
     "webpack": "~1.12.11"
   },
-  "publishConfig": {
-    "registry": "http://registry.npm.alibaba-inc.com"
-  },
-  "scripts": {
-    "start": "gulp d",
-    "build": "gulp b"
-  },
-  "license": "MIT",
-  "screenshots": "",
-  "readmeFilename": "README.md",
-  "gitHead": "57993fa8fc505ca112594e6fde949412943e49c9",
-  "_id": "@ali/tingle-icon-source@1.0.13",
-  "_shasum": "df6820868fac62be35b1a1f00794ddb5736ec4ec",
-  "_from": "@ali/tingle-icon-source@>=1.0.0 <2.0.0",
-  "_npmVersion": "3.10.2",
-  "_nodeVersion": "4.2.4",
-  "_npmUser": {
-    "name": "alex.mm",
-    "email": "alex.mm@alibaba-inc.com"
-  },
-  "maintainers": [
-    {
-      "name": "alex.mm",
-      "email": "alex.mm@alibaba-inc.com"
-    },
-    {
-      "name": "jiasong.js",
-      "email": "jiasong.js@alibaba-inc.com"
-    }
-  ],
   "dist": {
     "shasum": "df6820868fac62be35b1a1f00794ddb5736ec4ec",
     "size": 7352,
     "key": "@ali/tingle-icon-source/-/@ali/tingle-icon-source-1.0.13.tgz",
     "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-icon-source/download/@ali/tingle-icon-source-1.0.13.tgz"
   },
-  "_publish_on_cnpm": true,
-  "_cnpm_publish_time": 1476271469602,
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-icon-source/download/@ali/tingle-icon-source-1.0.13.tgz",
-  "readme": "ERROR: No README data found!"
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "gitHead": "57993fa8fc505ca112594e6fde949412943e49c9",
+  "keywords": [
+    "tingle-icon-source",
+    "IconSource"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "maintainers": [
+    {
+      "name": "alex.mm",
+      "email": "alex.mm@alibaba-inc.com"
+    },
+    {
+      "name": "guanghong.wsj",
+      "email": "guanghong.wsj@alibaba-inc.com"
+    },
+    {
+      "name": "jiasong.js",
+      "email": "jiasong.js@alibaba-inc.com"
+    },
+    {
+      "name": "quanyun.mqy",
+      "email": "quanyun.mqy@alibaba-inc.com"
+    }
+  ],
+  "name": "@ali/tingle-icon-source",
+  "optionalDependencies": {},
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
+  },
+  "publish_time": 1476271469602,
+  "readme": "ERROR: No README data found!",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-icon-source"
+  },
+  "screenshots": "",
+  "scripts": {
+    "build": "gulp b",
+    "start": "gulp d"
+  },
+  "version": "1.0.13"
 }

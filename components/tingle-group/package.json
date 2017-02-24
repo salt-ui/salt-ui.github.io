@@ -1,20 +1,82 @@
 {
-  "name": "@ali/tingle-group",
-  "version": "1.0.9",
-  "description": "列表容器组件",
-  "repository": {
-    "type": "git",
-    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-group"
+  "_args": [
+    [
+      {
+        "raw": "@ali/tingle-group@^1.0.0",
+        "scope": "@ali",
+        "escapedName": "@ali%2ftingle-group",
+        "name": "@ali/tingle-group",
+        "rawSpec": "^1.0.0",
+        "spec": ">=1.0.0 <2.0.0",
+        "type": "range"
+      },
+      "/Users/qy/work/tingle/salt-ui.github.io"
+    ]
+  ],
+  "_cnpm_publish_time": 1487576056181,
+  "_from": "@ali/tingle-group@>=1.0.0 <2.0.0",
+  "_id": "@ali/tingle-group@1.0.9",
+  "_inCache": true,
+  "_location": "/@ali/tingle-group",
+  "_nodeVersion": "6.9.1",
+  "_npmUser": {
+    "name": "guanghong.wsj",
+    "email": "guanghong.wsj@alibaba-inc.com"
   },
+  "_npmVersion": "2.15.11",
+  "_phantomChildren": {},
+  "_publish_on_cnpm": true,
+  "_requested": {
+    "raw": "@ali/tingle-group@^1.0.0",
+    "scope": "@ali",
+    "escapedName": "@ali%2ftingle-group",
+    "name": "@ali/tingle-group",
+    "rawSpec": "^1.0.0",
+    "spec": ">=1.0.0 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/",
+    "/@ali/tingle-checkbox-field",
+    "/@ali/tingle-grid/@ali/tingle-checkbox-field",
+    "/@ali/tingle-grid/@ali/tingle-ui",
+    "/@ali/tingle-list",
+    "/@ali/tingle-radio-field",
+    "/@ali/tingle-ui"
+  ],
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-group/download/@ali/tingle-group-1.0.9.tgz",
+  "_shasum": "b9688e06de821dd1bd998eaf8fea7b05e89e6d34",
+  "_shrinkwrap": null,
+  "_spec": "@ali/tingle-group@^1.0.0",
+  "_where": "/Users/qy/work/tingle/salt-ui.github.io",
   "author": {
     "name": "jiasong.js"
   },
-  "main": "dist/index.js",
+  "dependencies": {
+    "@ali/tingle-context": "~1.0.0",
+    "@ali/tingle-style": "~1.0.0",
+    "classnames": "~2.2.3"
+  },
+  "description": "列表容器组件",
+  "devDependencies": {
+    "@ali/tingle-ui": "~1.0.0",
+    "fastclick": "^1.0.6",
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8",
+    "salt-tools": "~0.1.0"
+  },
+  "dist": {
+    "shasum": "b9688e06de821dd1bd998eaf8fea7b05e89e6d34",
+    "size": 5335,
+    "key": "@ali/tingle-group/-/@ali/tingle-group-1.0.9.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-group/download/@ali/tingle-group-1.0.9.tgz"
+  },
   "files": [
     "dist",
     "src",
     "README.md"
   ],
+  "gitHead": "bd8b592755911a7dcdcbebc88f39cc9b729819ce",
   "keywords": [
     "tingle-group",
     "react-list-component",
@@ -23,36 +85,51 @@
     "列表",
     "布局"
   ],
-  "dependencies": {
-    "classnames": "~2.2.3",
-    "@ali/tingle-context": "~1.0.0",
-    "@ali/tingle-style": "~1.0.0"
-  },
-  "devDependencies": {
-    "@ali/tingle-ui": "~1.0.0",
-    "fastclick": "^1.0.6",
-    "react": "^0.14.8",
-    "react-dom": "^0.14.8",
-    "salt-tools": "~0.1.0"
-  },
+  "license": "MIT",
+  "main": "dist/index.js",
+  "maintainers": [
+    {
+      "name": "alex.mm",
+      "email": "alex.mm@alibaba-inc.com"
+    },
+    {
+      "name": "caoke.ck",
+      "email": "caoke.ck@alibaba-inc.com"
+    },
+    {
+      "name": "guanghong.wsj",
+      "email": "guanghong.wsj@alibaba-inc.com"
+    },
+    {
+      "name": "jiasong.js",
+      "email": "jiasong.js@alibaba-inc.com"
+    },
+    {
+      "name": "quanyun.mqy",
+      "email": "quanyun.mqy@alibaba-inc.com"
+    }
+  ],
+  "name": "@ali/tingle-group",
+  "optionalDependencies": {},
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "scripts": {
-    "start": "salt-tools run start",
-    "build": "salt-tools run build",
-    "pub": "salt-tools run pub",
-    "dep": "salt-tools run dep",
-    "tnpm-dep": "salt-tools run tnpm-dep",
-    "update": "salt-tools run update",
-    "tnpm-update": "salt-tools run tnpm-update"
-  },
-  "license": "MIT",
-  "screenshots": "",
-  "readme": "# tingle-group [![tnpm version](http://web.npm.alibaba-inc.com/badge/v/@ali/tingle-group.svg?style=flat-square)](http://web.npm.alibaba-inc.com/package/@ali/tingle-group)\n\n`Group`是列表容器组件。封装了以下功能：\n\n* 灵活配置间隔线和子元素的缩进值，而且间隔线和子元素的缩进值是相互独立的，使`IOS`和`Material`风格的多样式列表更加容易实现。\n* 在支持`hairline`显示的设备上自动优化显示成极细的线。\n\n效果预览：\n\n![](https://gw.alicdn.com/tps/TB1efEEKFXXXXXLXFXXXXXXXXXX-347-574.png)\n\n## Install\n\n```\ntnpm install @ali/tingle-group --save\n```\n\n## Props\n\n## Group.List\n\n#### className\n\n描述：自定义样式的`class`名称。\n\n类型：`String`\n\n默认：`''`\n\n必选：否\n\n示例：\n\n```\n<Group>\n    <Group.List className=\"customClass\">...</Group.List>\n</Group>\n```\n\n\n#### lineIndent\n\n描述：配置间隔线的缩进值。\n\n类型：`Number|String|Array`\n\n  - Number：设置左缩进，默认追加`px`作为单位，如：`lineIndent={10}`\n  - String：设置左缩进，自定义长度单位，如：`lineIndent={'1rem'}`\n  - Array：设置左右缩进，数组成员的类型为`Number`或`String`，默认处理如上。如：`lineIndent={[10, 10]}`\n\n默认：无\n\n必选：否\n\n示例：\n\n```\n<Group>\n    <Group.List lineIndent={10}>...</Group.List>\n</Group>\n```\n\n#### itemIndent\n\n描述：配置列表子元素的缩进值。\n\n类型：`Number|String|Array`\n\n  - Number：设置左缩进，默认追加`px`作为单位，如：`itemIndent={10}`\n  - String：设置左缩进，自定义长度单位，如：`itemIndent={'1rem'}`\n  - Array：设置左右缩进，数组成员的类型为`Number`或`String`，默认处理如上。如：`itemIndent={[10, 10]}`\n\n默认：无\n\n必选：否\n\n示例：\n\n```\n<Group>\n    <Group.List itemIndent={[10, 10]}>...</Group.List>\n</Group>\n```\n\n#### borderTopNone\n\n描述：不显示顶部边线,通常在和其他组件一起使用时使用\n类型：`Boolean`\n默认：`false`\n必选：否\n\n\n## Demos\n\n首先引入`Group`，其中`Group`下面包含`Head`和`List`两个子组件。\n\n项目环境下，`Tingle`是全局变量：\n\n```\n// ES5\nvar Group = Tingle.Group;\n// ES2015\nlet {Group} = Tingle;\n```\n\n```\n...\nrender() {\n    return (<Group>\n        <Group.Head>title</Group.Head>\n        <Group.List>\n            <div>content</div>\n            <div>content</div>\n        </Group.List>\n    </Group>);\n}\n```\n\n## Links\n\n- [Issues](http://gitlab.alibaba-inc.com/tingle-ui/tingle-group/issues)\n",
+  "publish_time": 1487576056181,
+  "readme": "ERROR: No README data found!",
   "readmeFilename": "README.md",
-  "gitHead": "bd8b592755911a7dcdcbebc88f39cc9b729819ce",
-  "_id": "@ali/tingle-group@1.0.9",
-  "_shasum": "b9688e06de821dd1bd998eaf8fea7b05e89e6d34",
-  "_from": "@ali/tingle-group@>=1.0.0 <2.0.0"
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-group"
+  },
+  "screenshots": "",
+  "scripts": {
+    "build": "salt-tools run build",
+    "dep": "salt-tools run dep",
+    "pub": "salt-tools run pub",
+    "start": "salt-tools run start",
+    "tnpm-dep": "salt-tools run tnpm-dep",
+    "tnpm-update": "salt-tools run tnpm-update",
+    "update": "salt-tools run update"
+  },
+  "version": "1.0.9"
 }

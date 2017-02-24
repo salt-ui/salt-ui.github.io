@@ -1,37 +1,67 @@
 {
-  "name": "@ali/tingle-slot",
-  "version": "1.0.11",
-  "description": "老虎机，用于模拟原生的 Select 交互。",
-  "repository": {
-    "type": "git",
-    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-slot"
+  "_args": [
+    [
+      {
+        "raw": "@ali/tingle-slot@^1.0.0",
+        "scope": "@ali",
+        "escapedName": "@ali%2ftingle-slot",
+        "name": "@ali/tingle-slot",
+        "rawSpec": "^1.0.0",
+        "spec": ">=1.0.0 <2.0.0",
+        "type": "range"
+      },
+      "/Users/qy/work/tingle/salt-ui.github.io"
+    ]
+  ],
+  "_cnpm_publish_time": 1487573812582,
+  "_from": "@ali/tingle-slot@>=1.0.0 <2.0.0",
+  "_id": "@ali/tingle-slot@1.0.11",
+  "_inCache": true,
+  "_location": "/@ali/tingle-slot",
+  "_nodeVersion": "6.9.4",
+  "_npmUser": {
+    "name": "caoke.ck",
+    "email": "caoke.ck@alibaba-inc.com"
   },
+  "_npmVersion": "3.10.9",
+  "_phantomChildren": {},
+  "_publish_on_cnpm": true,
+  "_requested": {
+    "raw": "@ali/tingle-slot@^1.0.0",
+    "scope": "@ali",
+    "escapedName": "@ali%2ftingle-slot",
+    "name": "@ali/tingle-slot",
+    "rawSpec": "^1.0.0",
+    "spec": ">=1.0.0 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/",
+    "/@ali/tingle-cascade-select-field",
+    "/@ali/tingle-datetime-field",
+    "/@ali/tingle-grid/@ali/tingle-ui",
+    "/@ali/tingle-select-field",
+    "/@ali/tingle-ui"
+  ],
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-slot/download/@ali/tingle-slot-1.0.11.tgz",
+  "_shasum": "18de5dcd5ac6bd4953541569ac22631283c2d5c6",
+  "_shrinkwrap": null,
+  "_spec": "@ali/tingle-slot@^1.0.0",
+  "_where": "/Users/qy/work/tingle/salt-ui.github.io",
   "author": {
     "name": "caoke.ck"
   },
-  "main": "dist/index.js",
-  "files": [
-    "dist",
-    "src",
-    "README.md"
-  ],
-  "keywords": [
-    "tingle-slot",
-    "Slot",
-    "select",
-    "选择",
-    "老虎机"
-  ],
   "dependencies": {
     "@ali/tingle-context": "~1.0.0",
     "@ali/tingle-layer": "~1.0.0",
     "@ali/tingle-scroller": "~1.0.0",
     "classnames": "~2.2.3"
   },
+  "description": "老虎机，用于模拟原生的 Select 交互。",
   "devDependencies": {
     "@ali/tingle-button": "~1.0.0",
-    "@ali/tingle-style": "~1.0.0",
     "@ali/tingle-mask": "~1.0.0",
+    "@ali/tingle-style": "~1.0.0",
     "@ali/tingle-ui": "~1.0.0",
     "babel": "~6.3.26",
     "babel-core": "~6.4.0",
@@ -60,26 +90,27 @@
     "through2": "~2.0.1",
     "webpack": "~1.12.11"
   },
-  "publishConfig": {
-    "registry": "http://registry.npm.alibaba-inc.com"
+  "dist": {
+    "shasum": "18de5dcd5ac6bd4953541569ac22631283c2d5c6",
+    "size": 23318,
+    "key": "@ali/tingle-slot/-/@ali/tingle-slot-1.0.11.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-slot/download/@ali/tingle-slot-1.0.11.tgz"
   },
-  "scripts": {
-    "start": "gulp d",
-    "build": "gulp b"
-  },
-  "license": "MIT",
-  "screenshots": "https://img.alicdn.com/tps/TB1onQXJpXXXXbCXXXXXXXXXXXX-750-1254.png",
-  "readmeFilename": "README.md",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
   "gitHead": "fd3fccae92fb6d26b8e14d78b09a9b3fff365f5a",
-  "_id": "@ali/tingle-slot@1.0.11",
-  "_shasum": "18de5dcd5ac6bd4953541569ac22631283c2d5c6",
-  "_from": "@ali/tingle-slot@>=1.0.0 <2.0.0",
-  "_npmVersion": "3.10.9",
-  "_nodeVersion": "6.9.4",
-  "_npmUser": {
-    "name": "caoke.ck",
-    "email": "caoke.ck@alibaba-inc.com"
-  },
+  "keywords": [
+    "tingle-slot",
+    "Slot",
+    "select",
+    "选择",
+    "老虎机"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
   "maintainers": [
     {
       "name": "alex.mm",
@@ -98,14 +129,22 @@
       "email": "quanyun.mqy@alibaba-inc.com"
     }
   ],
-  "dist": {
-    "shasum": "18de5dcd5ac6bd4953541569ac22631283c2d5c6",
-    "size": 23318,
-    "key": "@ali/tingle-slot/-/@ali/tingle-slot-1.0.11.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-slot/download/@ali/tingle-slot-1.0.11.tgz"
+  "name": "@ali/tingle-slot",
+  "optionalDependencies": {},
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "_publish_on_cnpm": true,
-  "_cnpm_publish_time": 1487573812582,
   "publish_time": 1487573812582,
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-slot/download/@ali/tingle-slot-1.0.11.tgz"
+  "readme": "ERROR: No README data found!",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-slot"
+  },
+  "screenshots": "https://img.alicdn.com/tps/TB1onQXJpXXXXbCXXXXXXXXXXXX-750-1254.png",
+  "scripts": {
+    "build": "gulp b",
+    "start": "gulp d"
+  },
+  "version": "1.0.11"
 }

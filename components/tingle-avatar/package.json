@@ -1,29 +1,59 @@
 {
-  "name": "@ali/tingle-avatar",
-  "version": "1.0.5",
-  "description": "tingle-avatar component for tingle.",
-  "repository": {
-    "type": "git",
-    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-avatar"
+  "_args": [
+    [
+      {
+        "raw": "@ali/tingle-avatar@^1.0.0",
+        "scope": "@ali",
+        "escapedName": "@ali%2ftingle-avatar",
+        "name": "@ali/tingle-avatar",
+        "rawSpec": "^1.0.0",
+        "spec": ">=1.0.0 <2.0.0",
+        "type": "range"
+      },
+      "/Users/qy/work/tingle/salt-ui.github.io"
+    ]
+  ],
+  "_cnpm_publish_time": 1463146573812,
+  "_from": "@ali/tingle-avatar@>=1.0.0 <2.0.0",
+  "_id": "@ali/tingle-avatar@1.0.5",
+  "_inCache": true,
+  "_location": "/@ali/tingle-avatar",
+  "_nodeVersion": "4.2.4",
+  "_npmUser": {
+    "name": "alex.mm",
+    "email": "alex.mm@alibaba-inc.com"
   },
+  "_npmVersion": "2.15.2",
+  "_phantomChildren": {},
+  "_publish_on_cnpm": true,
+  "_requested": {
+    "raw": "@ali/tingle-avatar@^1.0.0",
+    "scope": "@ali",
+    "escapedName": "@ali%2ftingle-avatar",
+    "name": "@ali/tingle-avatar",
+    "rawSpec": "^1.0.0",
+    "spec": ">=1.0.0 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/",
+    "/@ali/tingle-grid/@ali/tingle-ui",
+    "/@ali/tingle-ui"
+  ],
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-avatar/download/@ali/tingle-avatar-1.0.5.tgz",
+  "_shasum": "5587e63eb86803c7268d74a47f186f80b597678a",
+  "_shrinkwrap": null,
+  "_spec": "@ali/tingle-avatar@^1.0.0",
+  "_where": "/Users/qy/work/tingle/salt-ui.github.io",
   "author": {
     "name": "maming"
   },
-  "main": "dist/index.js",
-  "files": [
-    "dist",
-    "src",
-    "README.md"
-  ],
-  "keywords": [
-    "tingle-avatar",
-    "Avatar"
-  ],
   "dependencies": {
-    "classnames": "~2.2.3",
     "@ali/tingle-context": "~1.0.0",
-    "@ali/tingle-style": "~1.0.0"
+    "@ali/tingle-style": "~1.0.0",
+    "classnames": "~2.2.3"
   },
+  "description": "tingle-avatar component for tingle.",
   "devDependencies": {
     "@ali/tingle-ui": "~1.0.0",
     "babel": "~6.3.26",
@@ -34,6 +64,8 @@
     "babel-preset-react": "~6.3.13",
     "babel-preset-stage-1": "~6.3.13",
     "browser-sync": "~2.11.1",
+    "cross-spawn": "^2.0.0",
+    "fastclick": "~1.0.6",
     "gulp": "~3.9.0",
     "gulp-babel": "~6.1.1",
     "gulp-concat": "~2.6.0",
@@ -47,46 +79,54 @@
     "gulp-unique-files": "~0.1.2",
     "react": "~0.14.8",
     "react-dom": "~0.14.8",
-    "fastclick": "~1.0.6",
     "svg2react-loader": "^1.0.2",
     "through2": "~2.0.1",
-    "cross-spawn": "^2.0.0",
     "webpack": "~1.12.11"
   },
-  "publishConfig": {
-    "registry": "http://registry.npm.alibaba-inc.com"
-  },
-  "scripts": {
-    "start": "gulp d",
-    "build": "gulp b"
-  },
-  "license": "MIT",
-  "screenshots": "http://aligitlab.oss-cn-hangzhou-zmf.aliyuncs.com/uploads/tingle-ui/tingle-ui/ca88c25bb4c0fb73ca3ac1fd0b167ff8/image.png",
-  "readmeFilename": "README.md",
-  "gitHead": "c53ac64bdfe333a77081123da88dc4102ae1626d",
-  "_id": "@ali/tingle-avatar@1.0.5",
-  "_shasum": "5587e63eb86803c7268d74a47f186f80b597678a",
-  "_from": "@ali/tingle-avatar@>=1.0.0 <2.0.0",
-  "_npmVersion": "2.15.2",
-  "_nodeVersion": "4.2.4",
-  "_npmUser": {
-    "name": "alex.mm",
-    "email": "alex.mm@alibaba-inc.com"
-  },
-  "maintainers": [
-    {
-      "name": "alex.mm",
-      "email": "alex.mm@alibaba-inc.com"
-    }
-  ],
   "dist": {
     "shasum": "5587e63eb86803c7268d74a47f186f80b597678a",
     "size": 11158,
     "key": "@ali/tingle-avatar/-/@ali/tingle-avatar-1.0.5.tgz",
     "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-avatar/download/@ali/tingle-avatar-1.0.5.tgz"
   },
-  "_publish_on_cnpm": true,
-  "_cnpm_publish_time": 1463146573812,
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-avatar/download/@ali/tingle-avatar-1.0.5.tgz",
-  "readme": "ERROR: No README data found!"
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "gitHead": "c53ac64bdfe333a77081123da88dc4102ae1626d",
+  "keywords": [
+    "tingle-avatar",
+    "Avatar"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "maintainers": [
+    {
+      "name": "alex.mm",
+      "email": "alex.mm@alibaba-inc.com"
+    },
+    {
+      "name": "quanyun.mqy",
+      "email": "quanyun.mqy@alibaba-inc.com"
+    }
+  ],
+  "name": "@ali/tingle-avatar",
+  "optionalDependencies": {},
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
+  },
+  "publish_time": 1463146573812,
+  "readme": "ERROR: No README data found!",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-avatar"
+  },
+  "screenshots": "http://aligitlab.oss-cn-hangzhou-zmf.aliyuncs.com/uploads/tingle-ui/tingle-ui/ca88c25bb4c0fb73ca3ac1fd0b167ff8/image.png",
+  "scripts": {
+    "build": "gulp b",
+    "start": "gulp d"
+  },
+  "version": "1.0.5"
 }

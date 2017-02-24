@@ -1,0 +1,112 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "@ali/tingle-city-select-field@^1.0.2",
+        "scope": "@ali",
+        "escapedName": "@ali%2ftingle-city-select-field",
+        "name": "@ali/tingle-city-select-field",
+        "rawSpec": "^1.0.2",
+        "spec": ">=1.0.2 <2.0.0",
+        "type": "range"
+      },
+      "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui"
+    ]
+  ],
+  "_cnpm_publish_time": 1487753602832,
+  "_from": "@ali/tingle-city-select-field@>=1.0.2 <2.0.0",
+  "_id": "@ali/tingle-city-select-field@1.0.5",
+  "_inCache": true,
+  "_location": "/@ali/tingle-city-select-field",
+  "_nodeVersion": "7.4.0",
+  "_npmUser": {
+    "name": "qingnan.yqn",
+    "email": "qingnan.yqn@alibaba-inc.com"
+  },
+  "_npmVersion": "3.10.9",
+  "_phantomChildren": {},
+  "_publish_on_cnpm": true,
+  "_requested": {
+    "raw": "@ali/tingle-city-select-field@^1.0.2",
+    "scope": "@ali",
+    "escapedName": "@ali%2ftingle-city-select-field",
+    "name": "@ali/tingle-city-select-field",
+    "rawSpec": "^1.0.2",
+    "spec": ">=1.0.2 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/@ali/tingle-ui"
+  ],
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-city-select-field/download/@ali/tingle-city-select-field-1.0.5.tgz",
+  "_shasum": "45ed33f1467aeaa40af683b9b5a39c50373a6cfe",
+  "_shrinkwrap": null,
+  "_spec": "@ali/tingle-city-select-field@^1.0.2",
+  "_where": "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui",
+  "author": {
+    "name": "qingnan.yqn"
+  },
+  "dependencies": {
+    "@ali/tingle-context": "~1.0.0",
+    "@ali/tingle-field": "^1.0.14",
+    "@ali/tingle-layer": "^1.0.10",
+    "@ali/tingle-style": "^1.0.11",
+    "classnames": "~2.2.3"
+  },
+  "description": "tingle-city-select-field component for tingle.",
+  "devDependencies": {
+    "@ali/tingle-icon-source": "^1.0.6",
+    "@ali/tingle-ui": "~1.0.0",
+    "fastclick": "^1.0.6",
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8",
+    "salt-tools": "~0.1.0"
+  },
+  "dist": {
+    "shasum": "45ed33f1467aeaa40af683b9b5a39c50373a6cfe",
+    "size": 45845,
+    "key": "@ali/tingle-city-select-field/-/@ali/tingle-city-select-field-1.0.5.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-city-select-field/download/@ali/tingle-city-select-field-1.0.5.tgz"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "gitHead": "00f82da15f445d2627e64c4d784900d3b3fcad1c",
+  "keywords": [
+    "tingle-city-select-field",
+    "CitySelectField"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "maintainers": [
+    {
+      "name": "qingnan.yqn",
+      "email": "qingnan.yqn@alibaba-inc.com"
+    }
+  ],
+  "name": "@ali/tingle-city-select-field",
+  "optionalDependencies": {},
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
+  },
+  "publish_time": 1487753602832,
+  "readme": "ERROR: No README data found!",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-city-select-field"
+  },
+  "screenshots": "",
+  "scripts": {
+    "build": "salt-tools run build",
+    "dep": "salt-tools run dep",
+    "pub": "salt-tools run pub",
+    "start": "salt-tools run start",
+    "tnpm-dep": "salt-tools run tnpm-dep",
+    "tnpm-update": "salt-tools run tnpm-update",
+    "update": "salt-tools run update"
+  },
+  "version": "1.0.5"
+}

@@ -110,6 +110,11 @@ export const mapping = {
   },
 
 
+  'calendar-field': {
+    zh: '日期区间',
+    // order: 0,
+    type: 'Form'
+  },
   'cascade-select-field': {
     zh: '级联选择',
     // order: 0,
@@ -117,6 +122,11 @@ export const mapping = {
   },
   'checkbox-field': {
     zh: '复选框',
+    // order: 0,
+    type: 'Form'
+  },
+  'city-select-field': {
+    zh: '省市区选择',
     // order: 0,
     type: 'Form'
   },

@@ -1,29 +1,59 @@
 {
-  "name": "@ali/tingle-nav-bar",
-  "version": "1.0.3",
-  "description": "tingle-nav-bar component for tingle.",
-  "repository": {
-    "type": "git",
-    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-nav-bar"
+  "_args": [
+    [
+      {
+        "raw": "@ali/tingle-nav-bar@^1.0.0",
+        "scope": "@ali",
+        "escapedName": "@ali%2ftingle-nav-bar",
+        "name": "@ali/tingle-nav-bar",
+        "rawSpec": "^1.0.0",
+        "spec": ">=1.0.0 <2.0.0",
+        "type": "range"
+      },
+      "/Users/qy/work/tingle/salt-ui.github.io"
+    ]
+  ],
+  "_cnpm_publish_time": 1487593378844,
+  "_from": "@ali/tingle-nav-bar@>=1.0.0 <2.0.0",
+  "_id": "@ali/tingle-nav-bar@1.0.3",
+  "_inCache": true,
+  "_location": "/@ali/tingle-nav-bar",
+  "_nodeVersion": "6.9.1",
+  "_npmUser": {
+    "name": "guanghong.wsj",
+    "email": "guanghong.wsj@alibaba-inc.com"
   },
+  "_npmVersion": "2.15.11",
+  "_phantomChildren": {},
+  "_publish_on_cnpm": true,
+  "_requested": {
+    "raw": "@ali/tingle-nav-bar@^1.0.0",
+    "scope": "@ali",
+    "escapedName": "@ali%2ftingle-nav-bar",
+    "name": "@ali/tingle-nav-bar",
+    "rawSpec": "^1.0.0",
+    "spec": ">=1.0.0 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/",
+    "/@ali/tingle-grid/@ali/tingle-ui",
+    "/@ali/tingle-ui"
+  ],
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-nav-bar/download/@ali/tingle-nav-bar-1.0.3.tgz",
+  "_shasum": "c92a64f007377a317d7688b9bf3fc0cc2b9c49fc",
+  "_shrinkwrap": null,
+  "_spec": "@ali/tingle-nav-bar@^1.0.0",
+  "_where": "/Users/qy/work/tingle/salt-ui.github.io",
   "author": {
     "name": "ruiyang.dry"
   },
-  "main": "dist/index.js",
-  "files": [
-    "dist",
-    "src",
-    "README.md"
-  ],
-  "keywords": [
-    "tingle-nav-bar",
-    "NavBar"
-  ],
   "dependencies": {
-    "classnames": "~2.2.3",
     "@ali/tingle-context": "~1.0.0",
-    "@ali/tingle-style": "~1.0.0"
+    "@ali/tingle-style": "~1.0.0",
+    "classnames": "~2.2.3"
   },
+  "description": "tingle-nav-bar component for tingle.",
   "devDependencies": {
     "@ali/tingle-ui": "~1.0.0",
     "fastclick": "^1.0.6",
@@ -31,24 +61,59 @@
     "react-dom": "^0.14.8",
     "salt-tools": "~0.1.0"
   },
+  "dist": {
+    "shasum": "c92a64f007377a317d7688b9bf3fc0cc2b9c49fc",
+    "size": 4350,
+    "key": "@ali/tingle-nav-bar/-/@ali/tingle-nav-bar-1.0.3.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-nav-bar/download/@ali/tingle-nav-bar-1.0.3.tgz"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "gitHead": "0f6b69921ba97a866fbec9b371bf361d1e84788c",
+  "keywords": [
+    "tingle-nav-bar",
+    "NavBar"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "maintainers": [
+    {
+      "name": "alex.mm",
+      "email": "alex.mm@alibaba-inc.com"
+    },
+    {
+      "name": "guanghong.wsj",
+      "email": "guanghong.wsj@alibaba-inc.com"
+    },
+    {
+      "name": "quanyun.mqy",
+      "email": "quanyun.mqy@alibaba-inc.com"
+    }
+  ],
+  "name": "@ali/tingle-nav-bar",
+  "optionalDependencies": {},
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "scripts": {
-    "start": "salt-tools run start",
-    "build": "salt-tools run build",
-    "pub": "salt-tools run pub",
-    "dep": "salt-tools run dep",
-    "tnpm-dep": "salt-tools run tnpm-dep",
-    "update": "salt-tools run update",
-    "tnpm-update": "salt-tools run tnpm-update"
-  },
-  "license": "MIT",
-  "screenshots": "",
-  "readme": "# tingle-nav-bar [![tnpm version](http://web.npm.alibaba-inc.com/badge/v/@ali/tingle-nav-bar.svg?style=flat-square)](http://web.npm.alibaba-inc.com/package/@ali/tingle-nav-bar)\n\ntingle-nav-bar 一个native导航的H5版本\n\n![](http://aligitlab.oss-cn-hangzhou-zmf.aliyuncs.com/uploads/tingle-ui/tingle-checkbox-field/f08a5ab5b894c2f02450be1e2d6b38f6/image.png)\n\n## Install\n\n```\ntnpm install @ali/tingle-nav-bar --save\n```\n\n## Simple Usage\n\n```html\n<div id=\"TingleDemo\"></div>\n\n```\n\n```js\nclass Demo extends React.Component {\n\n    constructor(props) {\n        super(props);\n        this.state = {\n            className: '',\n            title: '我是标题我是标题',\n            rightText: '更多',\n            isShow: true\n        }\n    }\n    handleOnLeftClick(){\n        alert('返回事件')\n    }\n    handleOnRightClick(){\n        alert('更多事件')\n    }\n    handleCloseViewClick(){\n        alert('关闭webView事件')\n    }\n    render() {\n        return <div>\n            <NavBar title={this.state.title} isShow={this.state.isShow} onLeftClick={this.handleOnLeftClick.bind(this)}\n             onRightClick={this.handleOnRightClick.bind(this)} closeViewClick={this.handleCloseViewClick.bind(this)} />\n        </div>\n    }\n};\n\n\n```\n\n## Props\n\n### className\n\n描述：自定义样式`class`名称。\n\n类型：`String`\n\n默认：`''`\n\n必选：否\n\n\n\n### title\n\n描述：nav-bar 标题名称，超过六个字会显示...\n\n类型：`String`\n\n默认：`''`\n\n必选：是\n\n### rightText\n\n描述：nav-bar 右侧按钮的文本\n\n类型：`String`\n\n默认：`更多`\n\n必选：否\n\n### isShow\n\n描述：nav-bar 当前页面左侧是否显示关闭\n\n类型：`Boolean`\n\n默认：`true`\n\n必选：否\n\n### onLeftClick\n\n描述：nav-bar 左侧返回按钮事件\n\n类型：`Function`\n\n必选：是\n\n\n### onRightClick\n\n描述：nav-bar 右侧按钮事件\n\n类型：`Function`\n\n必选：是\n\n### closeViewClick\n\n描述：nav-bar 左侧关闭按钮事件\n\n类型：`Function`\n\n必选：是\n\n备注：当前页面isShow 是true 的情况下有效\n\n\n## Links\n\n- [Issues](http://gitlab.alibaba-inc.com/tingle-ui/tingle-nav-bar/issues)\n- [README 标准写法](http://gitlab.alibaba-inc.com/tingle-ui/doc/blob/master/README%E6%A0%87%E5%87%86%E5%86%99%E6%B3%95.md)\n",
+  "publish_time": 1487593378844,
+  "readme": "ERROR: No README data found!",
   "readmeFilename": "README.md",
-  "gitHead": "0f6b69921ba97a866fbec9b371bf361d1e84788c",
-  "_id": "@ali/tingle-nav-bar@1.0.3",
-  "_shasum": "c92a64f007377a317d7688b9bf3fc0cc2b9c49fc",
-  "_from": "@ali/tingle-nav-bar@>=1.0.0 <2.0.0"
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-nav-bar"
+  },
+  "screenshots": "",
+  "scripts": {
+    "build": "salt-tools run build",
+    "dep": "salt-tools run dep",
+    "pub": "salt-tools run pub",
+    "start": "salt-tools run start",
+    "tnpm-dep": "salt-tools run tnpm-dep",
+    "tnpm-update": "salt-tools run tnpm-update",
+    "update": "salt-tools run update"
+  },
+  "version": "1.0.3"
 }

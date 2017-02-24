@@ -45,6 +45,7 @@
     "@ali/tingle-box": "^1.0.0",
     "@ali/tingle-button": "^1.0.0",
     "@ali/tingle-calendar": "^1.0.0",
+    "@ali/tingle-calendar-field": "^1.0.2",
     "@ali/tingle-cascade-select-field": "^1.0.12",
     "@ali/tingle-checkbox-field": "^1.0.0",
     "@ali/tingle-context": "^1.0.0",

@@ -1,28 +1,53 @@
 {
-  "name": "@ali/tingle-select-field",
-  "version": "1.0.11",
-  "description": "表单选择域",
-  "repository": {
-    "type": "git",
-    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-select-field"
+  "_args": [
+    [
+      {
+        "raw": "@ali/tingle-select-field@^1.0.0",
+        "scope": "@ali",
+        "escapedName": "@ali%2ftingle-select-field",
+        "name": "@ali/tingle-select-field",
+        "rawSpec": "^1.0.0",
+        "spec": ">=1.0.0 <2.0.0",
+        "type": "range"
+      },
+      "/Users/qy/work/tingle/salt-ui.github.io"
+    ]
+  ],
+  "_cnpm_publish_time": 1487573716853,
+  "_from": "@ali/tingle-select-field@>=1.0.0 <2.0.0",
+  "_id": "@ali/tingle-select-field@1.0.11",
+  "_inCache": true,
+  "_location": "/@ali/tingle-select-field",
+  "_nodeVersion": "6.9.4",
+  "_npmUser": {
+    "name": "caoke.ck",
+    "email": "caoke.ck@alibaba-inc.com"
   },
+  "_npmVersion": "3.10.9",
+  "_phantomChildren": {},
+  "_publish_on_cnpm": true,
+  "_requested": {
+    "raw": "@ali/tingle-select-field@^1.0.0",
+    "scope": "@ali",
+    "escapedName": "@ali%2ftingle-select-field",
+    "name": "@ali/tingle-select-field",
+    "rawSpec": "^1.0.0",
+    "spec": ">=1.0.0 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/",
+    "/@ali/tingle-grid/@ali/tingle-ui",
+    "/@ali/tingle-ui"
+  ],
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-select-field/download/@ali/tingle-select-field-1.0.11.tgz",
+  "_shasum": "dca16a37c96174528cd0276de0bc9a9b8f43251b",
+  "_shrinkwrap": null,
+  "_spec": "@ali/tingle-select-field@^1.0.0",
+  "_where": "/Users/qy/work/tingle/salt-ui.github.io",
   "author": {
     "name": "caoke.ck"
   },
-  "main": "dist/index.js",
-  "files": [
-    "dist",
-    "src",
-    "README.md"
-  ],
-  "keywords": [
-    "tingle-select-field",
-    "SelectField",
-    "select",
-    "field",
-    "表单",
-    "选择域"
-  ],
   "dependencies": {
     "@ali/tingle-context": "~1.0.0",
     "@ali/tingle-field": "~1.0.1",
@@ -30,6 +55,7 @@
     "@ali/tingle-slot": "~1.0.0",
     "classnames": "~2.2.3"
   },
+  "description": "表单选择域",
   "devDependencies": {
     "@ali/tingle-group": "^1.0.7",
     "@ali/tingle-icon-source": "~1.0.4",
@@ -64,26 +90,28 @@
     "through2": "~2.0.1",
     "webpack": "~1.12.11"
   },
-  "publishConfig": {
-    "registry": "http://registry.npm.alibaba-inc.com"
+  "dist": {
+    "shasum": "dca16a37c96174528cd0276de0bc9a9b8f43251b",
+    "size": 8800,
+    "key": "@ali/tingle-select-field/-/@ali/tingle-select-field-1.0.11.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-select-field/download/@ali/tingle-select-field-1.0.11.tgz"
   },
-  "scripts": {
-    "start": "gulp d",
-    "build": "gulp b"
-  },
-  "license": "MIT",
-  "screenshots": "",
-  "readmeFilename": "README.md",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
   "gitHead": "9e4388b1a1d0817dee57af957fac11b541b620ee",
-  "_id": "@ali/tingle-select-field@1.0.11",
-  "_shasum": "dca16a37c96174528cd0276de0bc9a9b8f43251b",
-  "_from": "@ali/tingle-select-field@>=1.0.0 <2.0.0",
-  "_npmVersion": "3.10.9",
-  "_nodeVersion": "6.9.4",
-  "_npmUser": {
-    "name": "caoke.ck",
-    "email": "caoke.ck@alibaba-inc.com"
-  },
+  "keywords": [
+    "tingle-select-field",
+    "SelectField",
+    "select",
+    "field",
+    "表单",
+    "选择域"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
   "maintainers": [
     {
       "name": "alex.mm",
@@ -98,14 +126,22 @@
       "email": "quanyun.mqy@alibaba-inc.com"
     }
   ],
-  "dist": {
-    "shasum": "dca16a37c96174528cd0276de0bc9a9b8f43251b",
-    "size": 8800,
-    "key": "@ali/tingle-select-field/-/@ali/tingle-select-field-1.0.11.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-select-field/download/@ali/tingle-select-field-1.0.11.tgz"
+  "name": "@ali/tingle-select-field",
+  "optionalDependencies": {},
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "_publish_on_cnpm": true,
-  "_cnpm_publish_time": 1487573716853,
   "publish_time": 1487573716853,
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-select-field/download/@ali/tingle-select-field-1.0.11.tgz"
+  "readme": "ERROR: No README data found!",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-select-field"
+  },
+  "screenshots": "",
+  "scripts": {
+    "build": "gulp b",
+    "start": "gulp d"
+  },
+  "version": "1.0.11"
 }
