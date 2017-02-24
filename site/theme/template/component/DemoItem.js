@@ -1,7 +1,8 @@
 import React from 'react';
 import classnames from 'classnames';
 import AceEditor from 'react-ace';
-import Message from 'uxcore-message';
+import Message from 'uxcore/lib/Message';
+
 import CopyToClipboard from 'react-copy-to-clipboard';
 
 export default class DemoItem extends React.Component {
@@ -17,7 +18,8 @@ export default class DemoItem extends React.Component {
 
 
 	onChangeValue(newValue){
-		this.props.transform(newValue);
+		const { data } = this.props;
+		this.props.transform({ content: newValue, style: data.style });
 	}
 
 	toggleCode(e){
@@ -28,7 +30,7 @@ export default class DemoItem extends React.Component {
 	
 
 	render(){
-		const { data, selectIndex, index, toggleCode, showExpandDemo, toggleFrame } = this.props;
+		const { data, selectIndex, index, toggleCode, showExpandDemo, toggleFrame, utils } = this.props;
 		const { expand } = this.state;
 
 		const paneProps = {
@@ -44,13 +46,15 @@ export default class DemoItem extends React.Component {
 			onChange: this.onChangeValue.bind(this)
 		}
 
+		// console.log(data)
+
 		return(
 			<div className={classnames('demo-card', {
 	          'demo-expand': expand,
 	          'demo-selected': selectIndex == index
 	        })}
 				onClick={e => toggleFrame(index)}
-	      >
+	    >
 				<h3 className="title">{data.meta.title}</h3>
 				<CopyToClipboard 
 					text={data.content}
@@ -61,7 +65,13 @@ export default class DemoItem extends React.Component {
 					</span>
 				</CopyToClipboard>
 				<span className="demo-btn expand-btn">
-					<i className='iconfont icon-expand' onClick={e => showExpandDemo({ title: data.name, content: data.highlightedCode})}/>
+					<i className='iconfont icon-expand' 
+						onClick={() => showExpandDemo({ 
+							title: data.name, 
+							content: data.highlightedCode,
+							style: data.style ? data.style.highlightedCode : null
+						})}
+					/>
 				</span>
 				<span className="demo-btn toggle-btn" onClick={e => this.toggleCode()}>
 
@@ -70,9 +80,14 @@ export default class DemoItem extends React.Component {
               'icon-arrow-down': !expand,
             })} />
         </span>
-          {expand && <AceEditor {...paneProps} />}
-          <input type="text" ref="content" style={{ display:'none'}} value={data.content}/>
+          {expand && 
+          	<div>
+          		<AceEditor {...paneProps} />
+          		<div className="demo-css-wrap">{data.style && utils.toReactComponent(data.style.highlightedCode)}</div>
+          	</div>
+          }
 			</div>
-		)
+		);
 	}
 }
+          // <input type="text" ref="content" style={{ display:'none'}} value={data.content}/>

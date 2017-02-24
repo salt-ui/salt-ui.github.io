@@ -24,7 +24,7 @@ export const removeTingle = (word) => word.slice(7);
 
 export const mappingNavItem = (name) => {
   const newName = removeTingle(name);
-  return mapping[newName];
+  return mapping[newName].zh;
 
 }
 

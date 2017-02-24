@@ -1,7 +1,7 @@
 import React from 'react';
 import DocumentTitle from 'react-document-title';
 import classnames from 'classnames';
-import Grid from 'uxcore-grid';
+import Grid from 'uxcore/lib/Grid';
 
 const { Row, Col} = Grid;
 

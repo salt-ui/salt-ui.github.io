@@ -6,9 +6,12 @@ import { Link } from 'react-router';
 
 import Aside from '../component/Aside';
 import Nav from './Nav';
+import { mapping } from '../../../constants';
+import {upperFirstCharactor, removeTingle, mappingNavItem } from '../../../utils';
 
+import 'uxcore/assets/iconfont.css';
+import 'uxcore/assets/orange.min.css';
 import '../../static/style';
-const config = require('../../index');
 
 export default class Layout extends React.Component {
 
@@ -21,12 +24,30 @@ export default class Layout extends React.Component {
 
   constructor(props) {
     super(props);
-    
+  }
+
+  componentWillMount(){
+    const { data: { components } } = this.props;
+    let types = {};
+    Object.keys(components).map((compName) => {
+      let mapItem = mapping[removeTingle(compName)];
+      if(mapItem){
+        const type = mapItem.type;
+        if(!types[type]){
+          types[type] = [];
+        }
+
+        types[type].push({ ...mapItem, name: compName});
+      }
+    });
+
+    this.types = types;
+
   }
 
   render() {
     const { data, children, routeParams, route, hasAside, params } = this.props;
-    
+    console.log(data)
     return (
       <div className={classnames('page-wrap', {
         'hide-aside': !hasAside, 
@@ -38,9 +59,10 @@ export default class Layout extends React.Component {
           hasAside && 
             <Aside 
               key="aside"
-              sideNav={config.sideNav}  
               params={params} 
-              components={data.components}/>
+              components={data.components}
+              types={this.types}
+              />
         }
         
         <div className="main">

@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router';
 import DocumentTitle from 'react-document-title';
+import classnames from 'classnames';
 import Layout from './layout/Layout';
 import Card from './layout/Card';
 import CardWrap from './layout/CardWrap';
-import classnames from 'classnames';
 
 const COMPONENT_NAME_REG = /^(?:uxcore-)?((\w).*)$/;
 const DEFAULT_IMAGE_SRC = '//img.alicdn.com/tps/TB1QBvyOXXXXXcMXXXXXXXXXXXX-256-256.png';

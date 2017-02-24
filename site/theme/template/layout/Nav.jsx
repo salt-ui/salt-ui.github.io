@@ -1,7 +1,8 @@
 import React from 'react';
 import { withRouter, Link } from 'react-router';
 import classnames from 'classnames';
-import Select from 'uxcore-select2';
+import Select from 'uxcore/lib/Select2';
+
 
 import Icon from '../component/Icon';
 // import IconMenu from '../svg/Menu';

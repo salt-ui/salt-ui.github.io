@@ -27,8 +27,9 @@ class SearchBarDemo extends Component {
   render() {
     return (
       <div>
-        <SearchBar onSearch={this.onSearch} />
-        <div>{this.state.keyword}</div>
+        <SearchBar onSearch={this.onSearch}>
+          <div>{`search result: ${this.state.keyword}`}</div>
+        </SearchBar>
       </div>
     );
   }
