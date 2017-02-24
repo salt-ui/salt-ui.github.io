@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import classnames from 'classnames';
+import uppercamelcase from 'uppercamelcase';
 import {upperFirstCharactor, removeTingle, mappingNavItem } from '../../../utils';
 import { typeOrder } from '../../../constants';
 
@@ -26,7 +27,7 @@ export default ({ sideNav, components, params, types }) => {
                             active: params.component === list.name,
                           })}> 
                           <Link to={`/components/${list.name}`}>
-                            { upperFirstCharactor(removeTingle(list.name))}
+                            { uppercamelcase(removeTingle(list.name))}
                             <span>{ list.zh}</span>
                           </Link>
                         </li>
