@@ -158,7 +158,7 @@ export default class Demo extends React.Component {
 								showExpandDemo={this.showExpandDemo}
 								toggleFrame={this.toggleFrame}
 								utils={utils}
-								/>
+							/>
 						)
 					}
 				</div>
