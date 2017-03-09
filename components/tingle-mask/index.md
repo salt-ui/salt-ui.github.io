@@ -44,7 +44,7 @@ class Demo extends React.Component {
         return (
             <div>
                 <h3 onClick={t.showMask.bind(this)}>点击打开mask</h3>
-                <Mask visiable={t.state.maskVisiable}
+                <Mask visible={t.state.maskVisiable}
                       onWillHide={t.handleWillHide.bind(t)}
                       onDidHide={t.handleDidHide.bind(t)}
                 />
@@ -98,7 +98,7 @@ Mask关闭后执行的事件。
 * 默认：空函数 
 * 必选：否
 
-#### visiable
+#### visible
 
 Mask是否显示。依赖Mask的组件，需要通过切换该值来控制Mask是否可见。
 

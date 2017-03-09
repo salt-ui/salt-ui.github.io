@@ -60,9 +60,9 @@ export default class DemoItem extends React.Component {
 	          'demo-expand': expand,
 	          'demo-selected': selectIndex === index
 	        })}
-				onClick={e => this.toggleCode(index)}
+				
 	    >
-				<h3 className="title">{data.meta.title}</h3>
+				<h3 className="title" onClick={e => this.toggleCode(index)}>{data.meta.title}</h3>
 				<CopyToClipboard 
 					text={data.content}
 					onCopy={() => Message.info('复制成功！')}
