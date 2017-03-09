@@ -53,14 +53,11 @@ export default class DemoItem extends React.Component {
 			onChange: this.onChangeValue.bind(this)
 		}
 
-		// console.log(data)
-
 		return(
 			<div className={classnames('demo-card', {
 	          'demo-expand': expand,
-	          'demo-selected': selectIndex === index
+	          'demo-selected': selectIndex === index,
 	        })}
-				
 	    >
 				<h3 className="title" onClick={e => this.toggleCode(index)}>{data.meta.title}</h3>
 				<CopyToClipboard 
