@@ -20,10 +20,9 @@ export default (props) => (
       <Grid fluid={true}>
         <Row className="home-banner">
           <Col md={14} >
-            <h1>The top open source framework for building amazing mobile apps.
+            <h1>高效、简洁的移动端 UI 组件库
             </h1>
-            <p>SaltUI is the beautiful, free and open source mobile UI for developing native and progressive web apps with ease.
-            </p>
+            <p>钉钉官方合作</p>
             <a className="start-btn" href="/components/tingle-avatar">Get Started</a>
           </Col>
           <Col md={10} >
