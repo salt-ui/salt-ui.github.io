@@ -2,10 +2,24 @@
 ---
 Official Site of SaltUI
 
+## 更新
+
+```sh
+tnpm install
+```
+
+> 请使用 tnpm@^3
+
+## 开发
+
+```sh
+tnpm start
+```
+
 ## 部署
 
 ```sh
-./deploy.sh
+tnpm run deploy
 ```
 
 ## 添加demo
