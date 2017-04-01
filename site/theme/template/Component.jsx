@@ -56,37 +56,47 @@ const parseDemoRaw = (demos) => {
 
 export default (props) => {
   const { data, pageData, params, utils } = props;
-  let demos = utils.get(data.demos, params.component) || {};
+  const demos = utils.get(data.demos, params.component) || {};
   // demos = parseDemoRaw(demos);
   // detail: http://gitlab.alibaba-inc.com/uxcore/inner-doc/issues/1
-  let doc = pageData.index.content;
-  let history = pageData.HISTORY.content;
+  const doc = pageData.index ? pageData.index.content : null;
+  const history = pageData.HISTORY.content;
   console.log(props)
+  const title = params.component === 'tingle-ui' ? 'History' : `${params.component} - Component`;
   return (
-    <DocumentTitle title={`${params.component} - Component`}>
+    <DocumentTitle title={title}>
       <div>
-        <h2 className="component-page-title">
-          <a href={`//gitlab.alibaba-inc.com/uxcore/${params.component}`} target="_blank">
-          {uppercamelcase(removeTingle(params.component))}</a>
-        </h2>
-
+        {
+          params.component !== 'tingle-ui' && (
+            <h2 className="component-page-title">
+              <a href={`//gitlab.alibaba-inc.com/uxcore/${params.component}`} target="_blank">
+              {uppercamelcase(removeTingle(params.component))}</a>
+            </h2>
+          )
+        }
+        {
+          Object.keys(demos).length > 0 && (
+            <CardWrap width="100%">
+              <Card>
+                <Demo demos={demos} params={params.component} utils={utils}/>
+              </Card>
+            </CardWrap>
+          )
+        }
         <CardWrap width="100%">
-          <Card>
           {
-            Object.keys(demos).length > 0 && <Demo demos={demos} params={params.component} utils={utils}/>
-            // demos.map(demo => <Card style={{width: demo.raw.width}} key={demo.name}><Demo utils={utils} content={demo} /></Card>)
+            doc && (
+              <Card>
+                <Markdown icon="doc" title="文档" content={ utils.toReactComponent(doc) } />
+              </Card>
+            )
           }
-          </Card>
-        </CardWrap>
-
-        <CardWrap width="100%">
-          <Card>
-            <Markdown icon="doc" title="文档" content={ utils.toReactComponent(doc) } />
-          </Card>
           {
-            history.length > 2 
-              ? <Card><Markdown icon="history" title="版本更新" content={ utils.toReactComponent(history) } /></Card> 
-              : null
+            history.length && (
+              <Card>
+                <Markdown icon="history" title="版本更新" content={ utils.toReactComponent(history) } />
+              </Card>
+            )
           }
         </CardWrap>
       </div>
