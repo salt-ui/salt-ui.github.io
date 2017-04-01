@@ -202,11 +202,11 @@ export const mapping = {
     // order: 0,
     type: 'Other'
   },
-  'ui': {
-    zh: '组件合集',
-    // order: 0,
-    type: 'Other'
-  },
+  // 'ui': {
+  //   zh: '组件合集',
+  //   // order: 0,
+  //   type: 'Other'
+  // },
 
 
 

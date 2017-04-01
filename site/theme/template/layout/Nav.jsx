@@ -48,8 +48,9 @@ class Nav extends React.PureComponent {
         </div>
 
         <div className="logo" />
-        <NavLink href={`/`} name="首页" route={route} activeLink={`/`}/>
-        <NavLink href={`/components/${defaultComp}`} name="组件" route={route} activeLink={`/components`}/>
+        <NavLink href="/" name="首页" route={route} activeLink="/"/>
+        <NavLink href={`/components/${defaultComp}`} name="组件" route={route} activeLink="/components"/>
+        <NavLink href="/components/tingle-ui" name="历史" route={route} activeLink="/components/tingle-ui"/>
         
       </nav>
     );
