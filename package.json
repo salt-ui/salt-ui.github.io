@@ -5,13 +5,13 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run bisheng",
-    "postinstall": "sh ./postinstall.sh",
+    "postinstall": "bash ./postinstall.sh",
     "bisheng1": "bisheng start -c ./bisheng/bisheng.site.config.js --no-livereload",
     "bisheng2": "bisheng start -c ./bisheng/bisheng.mobile.config.js --no-livereload",
     "build": "concurrently \"bisheng build -c ./bisheng/bisheng.site.config.js \" \"bisheng build -c ./bisheng/bisheng.mobile.config.js \"",
     "bisheng": "concurrently \"bisheng start -c ./bisheng/bisheng.site.config.js --no-livereload\" \"bisheng start -c ./bisheng/bisheng.mobile.config.js --no-livereload\"",
     "start-o": "bisheng start",
-    "deploy": "sh ./deploy.sh"
+    "deploy": "bash ./deploy.sh"
   },
   "repository": {
     "type": "git",

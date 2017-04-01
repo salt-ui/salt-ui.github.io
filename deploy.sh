@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 BRANCH=`date +%Y.%m%d.%H%M%S`
 npm run build
 git add .
