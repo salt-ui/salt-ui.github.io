@@ -27,7 +27,7 @@
     "node": "6.1.0"
   },
   "dependencies": {
-    "@ali/tingle": "latest",
+    "@ali/tingle-ui": "latest",
     "babel-runtime": "^6.23.0",
     "babel-standalone": "^6.21.1",
     "bisheng": "^0.16.3",
