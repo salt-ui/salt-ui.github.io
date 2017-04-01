@@ -1,5 +1,6 @@
 #!/bin/bash
 BRANCH=`date +%Y.%m%d.%H%M%S`
+TINGLE=`tnpm view @ali/tingle-ui version`
 npm run build
 git add .
 git commit -m v$BRANCH
@@ -13,6 +14,6 @@ rm -rf ~/SALT_UI_BUILD
 git add .
 git commit -m v$BRANCH
 git push origin master
-git tag v$BRANCH
-git push origin v$BRANCH
+git tag v$TINGLE
+git push origin v$TINGLE
 git checkout source
