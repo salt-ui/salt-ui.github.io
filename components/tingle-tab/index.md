@@ -7,7 +7,7 @@
 ## Simple Usage
 
 ```javascript
-<Tab index={2} onChange={t.handleChange.bind(t)}>
+<Tab active={2} onChange={t.handleChange.bind(t)}>
     <Tab.item title="头条" data={{"customKey1":"自定义值1","customKey2":"自定义值2"}}>
     <div className="tLH1_3 tP10">
          与 Angular，Ember，Backbone 等等比起来 React 的表现如何？要如何处理数据？要如何连接服务器？JSX 到底是什么？“组件”又是如何定义的？
@@ -47,9 +47,9 @@
 
 | 配置项 | 类型 | 默认值 | 功能/备注 |
 |---|----|---|----|
-|index|Interger|0|默认选项，第一个|
+|active|Interger|0|默认选项，第一个|
 |onChange|Function| function() {} | 单击选项变更时触发 |
-|scroll|Boolean|true|tab子项目很多时，横向是否显示滚动条，默认true,等分item|
+|scroll|Boolean|true|tab子项目很多时，横向是否显示滚动条，默认false,等分item|
 
 ### 子项目item
 
@@ -68,8 +68,8 @@
 handleChange(obj) {
     var t = this;
     console.log({
-        activeIndex: obj.index,
-        preActiveIndex: obj.preIndex,
+        activeIndex: obj.active,
+        preActiveIndex: obj.preActive,
         data:obj.data
     });
 }

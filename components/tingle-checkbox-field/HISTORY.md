@@ -1,3 +1,18 @@
+1.1.12 / 2017-4-11
+* fix: slot模式下，修正readOnly状态的颜色
+
+1.1.11 / 2017-3-16
+* fix: Issue #4
+
+1.1.9 / 2017-3-16
+* fix: Issue #3
+
+1.1.7 / 2017-3-7
+* `feat`: 升级tingle-icon，并修改demo，不再引入tingle-icon-source
+
+1.1.6 / 2017-2-26
+* `feat`: update version of `@ali/tingle-field` to support tip
+
 1.1.5 / 2017-1-15
 ==================
  * fix: 移除未使用的deepcopy

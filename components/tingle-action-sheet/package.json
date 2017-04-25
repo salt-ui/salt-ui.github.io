@@ -1,0 +1,114 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "@ali/tingle-action-sheet@^0.1.0",
+        "scope": "@ali",
+        "escapedName": "@ali%2ftingle-action-sheet",
+        "name": "@ali/tingle-action-sheet",
+        "rawSpec": "^0.1.0",
+        "spec": ">=0.1.0 <0.2.0",
+        "type": "range"
+      },
+      "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui"
+    ]
+  ],
+  "_cnpm_publish_time": 1489583150033,
+  "_from": "@ali/tingle-action-sheet@>=0.1.0 <0.2.0",
+  "_id": "@ali/tingle-action-sheet@0.1.0",
+  "_inCache": true,
+  "_location": "/@ali/tingle-action-sheet",
+  "_nodeVersion": "6.9.1",
+  "_npmUser": {
+    "name": "guanghong.wsj",
+    "email": "guanghong.wsj@alibaba-inc.com"
+  },
+  "_npmVersion": "2.15.11",
+  "_phantomChildren": {},
+  "_publish_on_cnpm": true,
+  "_requested": {
+    "raw": "@ali/tingle-action-sheet@^0.1.0",
+    "scope": "@ali",
+    "escapedName": "@ali%2ftingle-action-sheet",
+    "name": "@ali/tingle-action-sheet",
+    "rawSpec": "^0.1.0",
+    "spec": ">=0.1.0 <0.2.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/@ali/tingle-ui"
+  ],
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-action-sheet/download/@ali/tingle-action-sheet-0.1.0.tgz",
+  "_shasum": "48689abfde17a393a1af46b5b5d18285bcca2afc",
+  "_shrinkwrap": null,
+  "_spec": "@ali/tingle-action-sheet@^0.1.0",
+  "_where": "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui",
+  "author": "",
+  "dependencies": {
+    "@ali/tingle-context": "^1.0.0",
+    "@ali/tingle-popup": "^0.1.2",
+    "@ali/tingle-style": "^1.0.11",
+    "classnames": "^2.2.3"
+  },
+  "description": "tingle-action-sheet component for tingle.",
+  "devDependencies": {
+    "@ali/tingle-button": "^1.0.10",
+    "@ali/tingle-icon": "^2.0.1",
+    "@ali/tingle-ui": "^1.0.0",
+    "fastclick": "^1.0.6",
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8",
+    "salt-tools": "~0.1.0"
+  },
+  "dist": {
+    "shasum": "48689abfde17a393a1af46b5b5d18285bcca2afc",
+    "size": 6640,
+    "key": "@ali/tingle-action-sheet/-/@ali/tingle-action-sheet-0.1.0.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-action-sheet/download/@ali/tingle-action-sheet-0.1.0.tgz"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "gitHead": "ffa291e346fb5ad6f170a8d24abc007cc10e89f2",
+  "keywords": [
+    "tingle-action-sheet",
+    "ActionSheet"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "maintainers": [
+    {
+      "name": "guanghong.wsj",
+      "email": "guanghong.wsj@alibaba-inc.com"
+    },
+    {
+      "name": "quanyun.mqy",
+      "email": "quanyun.mqy@alibaba-inc.com"
+    }
+  ],
+  "name": "@ali/tingle-action-sheet",
+  "optionalDependencies": {},
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
+  },
+  "publish_time": 1489583150033,
+  "readme": "ERROR: No README data found!",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-action-sheet"
+  },
+  "screenshots": "",
+  "scripts": {
+    "build": "salt-tools run build",
+    "dep": "salt-tools run dep",
+    "pub": "salt-tools run pub",
+    "start": "salt-tools run start",
+    "tnpm-dep": "salt-tools run tnpm-dep",
+    "tnpm-update": "salt-tools run tnpm-update",
+    "update": "salt-tools run update"
+  },
+  "version": "0.1.0"
+}

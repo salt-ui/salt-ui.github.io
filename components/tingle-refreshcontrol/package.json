@@ -1,0 +1,110 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "@ali/tingle-refreshcontrol@^1.0.1",
+        "scope": "@ali",
+        "escapedName": "@ali%2ftingle-refreshcontrol",
+        "name": "@ali/tingle-refreshcontrol",
+        "rawSpec": "^1.0.1",
+        "spec": ">=1.0.1 <2.0.0",
+        "type": "range"
+      },
+      "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-scroll-view"
+    ]
+  ],
+  "_cnpm_publish_time": 1489492943023,
+  "_from": "@ali/tingle-refreshcontrol@>=1.0.1 <2.0.0",
+  "_id": "@ali/tingle-refreshcontrol@1.0.1",
+  "_inCache": true,
+  "_location": "/@ali/tingle-refreshcontrol",
+  "_nodeVersion": "6.10.0",
+  "_npmUser": {
+    "name": "xiaohe.wp",
+    "email": "xiaohe.wp@alibaba-inc.com"
+  },
+  "_npmVersion": "3.10.9",
+  "_phantomChildren": {},
+  "_publish_on_cnpm": true,
+  "_requested": {
+    "raw": "@ali/tingle-refreshcontrol@^1.0.1",
+    "scope": "@ali",
+    "escapedName": "@ali%2ftingle-refreshcontrol",
+    "name": "@ali/tingle-refreshcontrol",
+    "rawSpec": "^1.0.1",
+    "spec": ">=1.0.1 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/@ali/tingle-scroll-view"
+  ],
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-refreshcontrol/download/@ali/tingle-refreshcontrol-1.0.1.tgz",
+  "_shasum": "03338273ea95d59dae0f605590b0d09709d3fef6",
+  "_shrinkwrap": null,
+  "_spec": "@ali/tingle-refreshcontrol@^1.0.1",
+  "_where": "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-scroll-view",
+  "author": {
+    "name": "xiaohe.wp"
+  },
+  "dependencies": {
+    "@ali/tingle-context": "^1.0.0",
+    "@ali/tingle-icon": "^2.0.2",
+    "@ali/tingle-style": "^1.0.11",
+    "classnames": "^2.2.3"
+  },
+  "description": "顶部下拉刷新组件",
+  "devDependencies": {
+    "@ali/tingle-ui": "^1.0.0",
+    "fastclick": "^1.0.6",
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8",
+    "salt-tools": "~0.1.0"
+  },
+  "dist": {
+    "shasum": "03338273ea95d59dae0f605590b0d09709d3fef6",
+    "size": 9444,
+    "key": "@ali/tingle-refreshcontrol/-/@ali/tingle-refreshcontrol-1.0.1.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-refreshcontrol/download/@ali/tingle-refreshcontrol-1.0.1.tgz"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "gitHead": "1dd1948167a025a2d2b7fec0a50168887f046836",
+  "keywords": [
+    "tingle-refreshcontrol",
+    "Refreshcontrol"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "maintainers": [
+    {
+      "name": "xiaohe.wp",
+      "email": "xiaohe.wp@alibaba-inc.com"
+    }
+  ],
+  "name": "@ali/tingle-refreshcontrol",
+  "optionalDependencies": {},
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
+  },
+  "publish_time": 1489492943023,
+  "readme": "ERROR: No README data found!",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-refreshcontrol"
+  },
+  "screenshots": "",
+  "scripts": {
+    "build": "salt-tools run build",
+    "dep": "salt-tools run dep",
+    "pub": "salt-tools run pub",
+    "start": "salt-tools run start",
+    "tnpm-dep": "salt-tools run tnpm-dep",
+    "tnpm-update": "salt-tools run tnpm-update",
+    "update": "salt-tools run update"
+  },
+  "version": "1.0.1"
+}

@@ -2,50 +2,71 @@
   "_args": [
     [
       {
-        "raw": "@ali/tingle-context@1.1.0",
+        "raw": "@ali/tingle-context@^1.0.0",
         "scope": "@ali",
         "escapedName": "@ali%2ftingle-context",
         "name": "@ali/tingle-context",
-        "rawSpec": "1.1.0",
-        "spec": "1.1.0",
-        "type": "version"
+        "rawSpec": "^1.0.0",
+        "spec": ">=1.0.0 <2.0.0",
+        "type": "range"
       },
-      "/Users/qy/work/tingle/salt-ui.github.io"
+      "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
-  "_cnpm_publish_time": 1487907262400,
-  "_from": "@ali/tingle-context@1.1.0",
-  "_id": "@ali/tingle-context@1.1.0",
+  "_cnpm_publish_time": 1489581537683,
+  "_from": "@ali/tingle-context@>=1.0.0 <2.0.0",
+  "_id": "@ali/tingle-context@1.1.1",
   "_inCache": true,
   "_location": "/@ali/tingle-context",
   "_nodeVersion": "6.9.1",
   "_npmUser": {
-    "name": "quanyun.mqy",
-    "email": "quanyun.mqy@alibaba-inc.com"
+    "name": "guanghong.wsj",
+    "email": "guanghong.wsj@alibaba-inc.com"
   },
-  "_npmVersion": "3.10.9",
+  "_npmVersion": "2.15.11",
   "_phantomChildren": {},
   "_publish_on_cnpm": true,
   "_requested": {
-    "raw": "@ali/tingle-context@1.1.0",
+    "raw": "@ali/tingle-context@^1.0.0",
     "scope": "@ali",
     "escapedName": "@ali%2ftingle-context",
     "name": "@ali/tingle-context",
-    "rawSpec": "1.1.0",
-    "spec": "1.1.0",
-    "type": "version"
+    "rawSpec": "^1.0.0",
+    "spec": ">=1.0.0 <2.0.0",
+    "type": "range"
   },
   "_requiredBy": [
-    "#USER",
-    "/",
+    "/@ali/tingle-action-sheet",
+    "/@ali/tingle-calendar",
+    "/@ali/tingle-calendar-field",
+    "/@ali/tingle-cascade-select-field",
+    "/@ali/tingle-checkbox-field",
+    "/@ali/tingle-datetime-field",
     "/@ali/tingle-dialog",
+    "/@ali/tingle-gallery",
+    "/@ali/tingle-infinite-scroll",
+    "/@ali/tingle-menu",
+    "/@ali/tingle-note",
+    "/@ali/tingle-photo-field",
+    "/@ali/tingle-picker-field",
+    "/@ali/tingle-popup",
+    "/@ali/tingle-progress",
+    "/@ali/tingle-radio-field",
+    "/@ali/tingle-refreshcontrol",
+    "/@ali/tingle-scroll-view",
+    "/@ali/tingle-search-bar",
+    "/@ali/tingle-select-field",
+    "/@ali/tingle-slot",
+    "/@ali/tingle-tab-bar",
+    "/@ali/tingle-table",
+    "/@ali/tingle-toast",
     "/@ali/tingle-ui"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-context/download/@ali/tingle-context-1.1.0.tgz",
-  "_shasum": "e609cc56bf269501606f7f5489f28871d606bfac",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-context/download/@ali/tingle-context-1.1.1.tgz",
+  "_shasum": "0a879f1c729f0c6a9830184ef01eaba50e784eb5",
   "_shrinkwrap": null,
-  "_spec": "@ali/tingle-context@1.1.0",
-  "_where": "/Users/qy/work/tingle/salt-ui.github.io",
+  "_spec": "@ali/tingle-context@^1.0.0",
+  "_where": "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui",
   "author": {
     "name": "gnosaij"
   },
@@ -62,17 +83,17 @@
     "salt-tools": "~0.1.0"
   },
   "dist": {
-    "shasum": "e609cc56bf269501606f7f5489f28871d606bfac",
-    "size": 19016,
-    "key": "@ali/tingle-context/-/@ali/tingle-context-1.1.0.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-context/download/@ali/tingle-context-1.1.0.tgz"
+    "shasum": "0a879f1c729f0c6a9830184ef01eaba50e784eb5",
+    "size": 19418,
+    "key": "@ali/tingle-context/-/@ali/tingle-context-1.1.1.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-context/download/@ali/tingle-context-1.1.1.tgz"
   },
   "files": [
     "dist",
     "src",
     "README.md"
   ],
-  "gitHead": "f6b400e94b36d01edc3b5747a5488e2e25eb100a",
+  "gitHead": "a55825faee8b2ba41c28cc550b4b98ae38f6cfda",
   "keywords": [
     "tingle-context",
     "tingle",
@@ -85,6 +106,10 @@
     {
       "name": "alex.mm",
       "email": "alex.mm@alibaba-inc.com"
+    },
+    {
+      "name": "guanghong.wsj",
+      "email": "guanghong.wsj@alibaba-inc.com"
     },
     {
       "name": "jiasong.js",
@@ -100,7 +125,7 @@
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1487907262400,
+  "publish_time": 1489581537683,
   "readme": "ERROR: No README data found!",
   "readmeFilename": "README.md",
   "repository": {
@@ -116,5 +141,5 @@
     "tnpm-update": "salt-tools run tnpm-update",
     "update": "salt-tools run update"
   },
-  "version": "1.1.0"
+  "version": "1.1.1"
 }

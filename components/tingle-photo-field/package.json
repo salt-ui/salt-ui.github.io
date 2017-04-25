@@ -10,20 +10,20 @@
         "spec": ">=1.0.1 <2.0.0",
         "type": "range"
       },
-      "/Users/qy/work/tingle/salt-ui.github.io"
+      "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
-  "_cnpm_publish_time": 1487593804096,
+  "_cnpm_publish_time": 1489582496752,
   "_from": "@ali/tingle-photo-field@>=1.0.1 <2.0.0",
-  "_id": "@ali/tingle-photo-field@1.0.8",
+  "_id": "@ali/tingle-photo-field@1.0.10",
   "_inCache": true,
   "_location": "/@ali/tingle-photo-field",
   "_nodeVersion": "6.9.1",
   "_npmUser": {
-    "name": "guanghong.wsj",
-    "email": "guanghong.wsj@alibaba-inc.com"
+    "name": "quanyun.mqy",
+    "email": "quanyun.mqy@alibaba-inc.com"
   },
-  "_npmVersion": "2.15.11",
+  "_npmVersion": "3.10.9",
   "_phantomChildren": {},
   "_publish_on_cnpm": true,
   "_requested": {
@@ -36,43 +36,41 @@
     "type": "range"
   },
   "_requiredBy": [
-    "/",
     "/@ali/tingle-ui"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-photo-field/download/@ali/tingle-photo-field-1.0.8.tgz",
-  "_shasum": "521b0037cc82d7689aa7ed2b22bd59dff4e7a30f",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-photo-field/download/@ali/tingle-photo-field-1.0.10.tgz",
+  "_shasum": "3076804ed8d870a203204c654ee15980df6e887a",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-photo-field@^1.0.1",
-  "_where": "/Users/qy/work/tingle/salt-ui.github.io",
+  "_where": "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui",
   "author": "",
   "dependencies": {
-    "@ali/tingle-context": "~1.0.0",
-    "@ali/tingle-icon": "~1.0.0",
-    "@ali/tingle-style": "~1.0.0",
+    "@ali/tingle-context": "^1.0.0",
+    "@ali/tingle-icon": "^2.0.0",
+    "@ali/tingle-style": "^1.0.0",
     "classnames": "~2.2.3"
   },
   "description": "tingle-photo-field component for tingle.",
   "devDependencies": {
     "@ali/tingle-group": "~1.0.7",
-    "@ali/tingle-icon-source": "~1.0.0",
-    "@ali/tingle-ui": "~1.0.0",
+    "@ali/tingle-ui": "^1.0.0",
     "fastclick": "^1.0.6",
     "react": "^0.14.8",
     "react-dom": "^0.14.8",
     "salt-tools": "~0.1.0"
   },
   "dist": {
-    "shasum": "521b0037cc82d7689aa7ed2b22bd59dff4e7a30f",
-    "size": 7256,
-    "key": "@ali/tingle-photo-field/-/@ali/tingle-photo-field-1.0.8.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-photo-field/download/@ali/tingle-photo-field-1.0.8.tgz"
+    "shasum": "3076804ed8d870a203204c654ee15980df6e887a",
+    "size": 7468,
+    "key": "@ali/tingle-photo-field/-/@ali/tingle-photo-field-1.0.10.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-photo-field/download/@ali/tingle-photo-field-1.0.10.tgz"
   },
   "files": [
     "dist",
     "src",
     "README.md"
   ],
-  "gitHead": "c6e130f95de8c462b6e147a9e4a6ddc860549bc3",
+  "gitHead": "01eed32986d9486f5bc2517a9099259a32c548d4",
   "keywords": [
     "tingle-photo-field",
     "PhotoField"
@@ -102,7 +100,7 @@
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1487593804096,
+  "publish_time": 1489582496752,
   "readme": "ERROR: No README data found!",
   "readmeFilename": "README.md",
   "repository": {
@@ -119,5 +117,5 @@
     "tnpm-update": "salt-tools run tnpm-update",
     "update": "salt-tools run update"
   },
-  "version": "1.0.8"
+  "version": "1.0.10"
 }

@@ -10,18 +10,18 @@
         "spec": ">=1.0.0 <2.0.0",
         "type": "range"
       },
-      "/Users/qy/work/tingle/salt-ui.github.io"
+      "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
-  "_cnpm_publish_time": 1487578855330,
+  "_cnpm_publish_time": 1491557031094,
   "_from": "@ali/tingle-toast@>=1.0.0 <2.0.0",
-  "_id": "@ali/tingle-toast@1.0.13",
+  "_id": "@ali/tingle-toast@1.0.15",
   "_inCache": true,
   "_location": "/@ali/tingle-toast",
-  "_nodeVersion": "6.9.4",
+  "_nodeVersion": "6.9.1",
   "_npmUser": {
-    "name": "caoke.ck",
-    "email": "caoke.ck@alibaba-inc.com"
+    "name": "quanyun.mqy",
+    "email": "quanyun.mqy@alibaba-inc.com"
   },
   "_npmVersion": "3.10.9",
   "_phantomChildren": {},
@@ -36,50 +36,46 @@
     "type": "range"
   },
   "_requiredBy": [
-    "/",
     "/@ali/tingle-grid/@ali/tingle-ui",
     "/@ali/tingle-ui"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-toast/download/@ali/tingle-toast-1.0.13.tgz",
-  "_shasum": "1e17595ac2298f7075a9e3837bab3af0f8a0f810",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-toast/download/@ali/tingle-toast-1.0.15.tgz",
+  "_shasum": "7a5af955a653f028fe7141f4d7864d374babb176",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-toast@^1.0.0",
-  "_where": "/Users/qy/work/tingle/salt-ui.github.io",
+  "_where": "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui",
   "author": {
     "name": "minjie"
   },
   "dependencies": {
-    "@ali/tingle-box": "~1.0.1",
-    "@ali/tingle-button": "~1.0.2",
-    "@ali/tingle-context": "~1.0.0",
-    "@ali/tingle-icon": "~1.0.3",
-    "@ali/tingle-layer": "~1.0.2",
-    "@ali/tingle-mask": "~1.0.4",
-    "@ali/tingle-style": "~1.0.0",
+    "@ali/tingle-box": "^1.0.1",
+    "@ali/tingle-context": "^1.0.0",
+    "@ali/tingle-icon": "^2.0.0",
+    "@ali/tingle-layer": "^1.0.2",
     "classnames": "~2.2.3"
   },
   "description": "tingle-toast component for tingle.",
   "devDependencies": {
     "@ali/tingle-button": "^1.0.7",
-    "@ali/tingle-icon-source": "^1.0.6",
-    "@ali/tingle-ui": "~1.0.0",
+    "@ali/tingle-style": "^1.0.0",
+    "@ali/tingle-ui": "^2.0.0",
     "fastclick": "^1.0.6",
     "react": "^0.14.8",
     "react-dom": "^0.14.8",
     "salt-tools": "~0.1.0"
   },
   "dist": {
-    "shasum": "1e17595ac2298f7075a9e3837bab3af0f8a0f810",
-    "size": 6770,
-    "key": "@ali/tingle-toast/-/@ali/tingle-toast-1.0.13.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-toast/download/@ali/tingle-toast-1.0.13.tgz"
+    "shasum": "7a5af955a653f028fe7141f4d7864d374babb176",
+    "size": 6863,
+    "key": "@ali/tingle-toast/-/@ali/tingle-toast-1.0.15.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-toast/download/@ali/tingle-toast-1.0.15.tgz"
   },
   "files": [
     "dist",
     "src",
     "README.md"
   ],
-  "gitHead": "bb54f4696f8a43d7136b4b18a13ee9059dce7136",
+  "gitHead": "13ea7fc9b09a085a911c5218e1db0349eb587b6b",
   "keywords": [
     "tingle-toast",
     "Toast"
@@ -96,16 +92,8 @@
       "email": "caoke.ck@alibaba-inc.com"
     },
     {
-      "name": "jiasong.js",
-      "email": "jiasong.js@alibaba-inc.com"
-    },
-    {
       "name": "quanyun.mqy",
       "email": "quanyun.mqy@alibaba-inc.com"
-    },
-    {
-      "name": "zhouquan.yezq",
-      "email": "zhouquan.yezq@alibaba-inc.com"
     }
   ],
   "name": "@ali/tingle-toast",
@@ -113,7 +101,7 @@
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1487578855330,
+  "publish_time": 1491557031094,
   "readme": "ERROR: No README data found!",
   "readmeFilename": "README.md",
   "repository": {
@@ -130,5 +118,5 @@
     "tnpm-update": "salt-tools run tnpm-update",
     "update": "salt-tools run update"
   },
-  "version": "1.0.13"
+  "version": "1.0.15"
 }

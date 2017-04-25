@@ -2,20 +2,20 @@
   "_args": [
     [
       {
-        "raw": "@ali/tingle-calendar-field@1.0.3",
+        "raw": "@ali/tingle-calendar-field@^1.0.2",
         "scope": "@ali",
         "escapedName": "@ali%2ftingle-calendar-field",
         "name": "@ali/tingle-calendar-field",
-        "rawSpec": "1.0.3",
-        "spec": "1.0.3",
-        "type": "version"
+        "rawSpec": "^1.0.2",
+        "spec": ">=1.0.2 <2.0.0",
+        "type": "range"
       },
-      "/Users/qy/work/tingle/salt-ui.github.io"
+      "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
-  "_cnpm_publish_time": 1487854318833,
-  "_from": "@ali/tingle-calendar-field@1.0.3",
-  "_id": "@ali/tingle-calendar-field@1.0.3",
+  "_cnpm_publish_time": 1492659277808,
+  "_from": "@ali/tingle-calendar-field@>=1.0.2 <2.0.0",
+  "_id": "@ali/tingle-calendar-field@1.0.8",
   "_inCache": true,
   "_location": "/@ali/tingle-calendar-field",
   "_nodeVersion": "6.9.1",
@@ -24,36 +24,32 @@
     "email": "quanyun.mqy@alibaba-inc.com"
   },
   "_npmVersion": "3.10.9",
-  "_phantomChildren": {
-    "@ali/tingle-style": "1.0.22",
-    "classnames": "2.2.5"
-  },
+  "_phantomChildren": {},
   "_publish_on_cnpm": true,
   "_requested": {
-    "raw": "@ali/tingle-calendar-field@1.0.3",
+    "raw": "@ali/tingle-calendar-field@^1.0.2",
     "scope": "@ali",
     "escapedName": "@ali%2ftingle-calendar-field",
     "name": "@ali/tingle-calendar-field",
-    "rawSpec": "1.0.3",
-    "spec": "1.0.3",
-    "type": "version"
+    "rawSpec": "^1.0.2",
+    "spec": ">=1.0.2 <2.0.0",
+    "type": "range"
   },
   "_requiredBy": [
-    "#USER",
-    "/"
+    "/@ali/tingle-ui"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-calendar-field/download/@ali/tingle-calendar-field-1.0.3.tgz",
-  "_shasum": "2f176dcc1ca11390cd243f42306cd6149801b13e",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-calendar-field/download/@ali/tingle-calendar-field-1.0.8.tgz",
+  "_shasum": "65346542bb815aa3d16f93555637c1326d10077e",
   "_shrinkwrap": null,
-  "_spec": "@ali/tingle-calendar-field@1.0.3",
-  "_where": "/Users/qy/work/tingle/salt-ui.github.io",
+  "_spec": "@ali/tingle-calendar-field@^1.0.2",
+  "_where": "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui",
   "author": {
     "name": "quanyun.mqy"
   },
   "dependencies": {
     "@ali/tingle-calendar": "^2.0.0",
-    "@ali/tingle-context": "~1.0.0",
-    "@ali/tingle-field": "^1.0.14",
+    "@ali/tingle-context": "^1.0.0",
+    "@ali/tingle-field": "^1.1.0",
     "@ali/tingle-style": "^1.0.11",
     "classnames": "~2.2.3",
     "uxcore-formatter": "^0.1.4"
@@ -61,7 +57,6 @@
   "description": "tingle-calendar-field component for tingle.",
   "devDependencies": {
     "@ali/tingle-group": "^1.0.9",
-    "@ali/tingle-icon-source": "^1.0.6",
     "@ali/tingle-ui": "~1.0.0",
     "fastclick": "^1.0.6",
     "react": "^0.14.8",
@@ -69,17 +64,17 @@
     "salt-tools": "~0.1.0"
   },
   "dist": {
-    "shasum": "2f176dcc1ca11390cd243f42306cd6149801b13e",
-    "size": 6771,
-    "key": "@ali/tingle-calendar-field/-/@ali/tingle-calendar-field-1.0.3.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-calendar-field/download/@ali/tingle-calendar-field-1.0.3.tgz"
+    "shasum": "65346542bb815aa3d16f93555637c1326d10077e",
+    "size": 7482,
+    "key": "@ali/tingle-calendar-field/-/@ali/tingle-calendar-field-1.0.8.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-calendar-field/download/@ali/tingle-calendar-field-1.0.8.tgz"
   },
   "files": [
     "dist",
     "src",
     "README.md"
   ],
-  "gitHead": "13ae83ef596392ccb81d7e9812cbc696cb52f14f",
+  "gitHead": "4e35cbbf294b205492eea7cac51e3fdfaebde63f",
   "keywords": [
     "tingle-calendar-field",
     "CalendarField"
@@ -97,7 +92,7 @@
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1487854318833,
+  "publish_time": 1492659277808,
   "readme": "ERROR: No README data found!",
   "readmeFilename": "README.md",
   "repository": {
@@ -114,5 +109,5 @@
     "tnpm-update": "salt-tools run tnpm-update",
     "update": "salt-tools run update"
   },
-  "version": "1.0.3"
+  "version": "1.0.8"
 }

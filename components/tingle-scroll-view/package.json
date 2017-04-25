@@ -1,0 +1,114 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "@ali/tingle-scroll-view@^1.0.2",
+        "scope": "@ali",
+        "escapedName": "@ali%2ftingle-scroll-view",
+        "name": "@ali/tingle-scroll-view",
+        "rawSpec": "^1.0.2",
+        "spec": ">=1.0.2 <2.0.0",
+        "type": "range"
+      },
+      "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui"
+    ]
+  ],
+  "_cnpm_publish_time": 1489628192831,
+  "_from": "@ali/tingle-scroll-view@>=1.0.2 <2.0.0",
+  "_id": "@ali/tingle-scroll-view@1.0.2",
+  "_inCache": true,
+  "_location": "/@ali/tingle-scroll-view",
+  "_nodeVersion": "6.10.0",
+  "_npmUser": {
+    "name": "xiaohe.wp",
+    "email": "xiaohe.wp@alibaba-inc.com"
+  },
+  "_npmVersion": "3.10.9",
+  "_phantomChildren": {},
+  "_publish_on_cnpm": true,
+  "_requested": {
+    "raw": "@ali/tingle-scroll-view@^1.0.2",
+    "scope": "@ali",
+    "escapedName": "@ali%2ftingle-scroll-view",
+    "name": "@ali/tingle-scroll-view",
+    "rawSpec": "^1.0.2",
+    "spec": ">=1.0.2 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/@ali/tingle-picker-field",
+    "/@ali/tingle-scroll-list",
+    "/@ali/tingle-ui"
+  ],
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-scroll-view/download/@ali/tingle-scroll-view-1.0.2.tgz",
+  "_shasum": "aaed9393efdafb64092a786a7b7d65954477a64c",
+  "_shrinkwrap": null,
+  "_spec": "@ali/tingle-scroll-view@^1.0.2",
+  "_where": "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui",
+  "author": {
+    "name": "xiaohe.wp"
+  },
+  "dependencies": {
+    "@ali/tingle-context": "^1.0.0",
+    "@ali/tingle-infinite-scroll": "^1.0.2",
+    "@ali/tingle-refreshcontrol": "^1.0.1",
+    "@ali/tingle-style": "^1.0.11",
+    "classnames": "^2.2.3",
+    "lodash": "^4.17.4"
+  },
+  "description": "tingle-scroll-view component for tingle.",
+  "devDependencies": {
+    "@ali/tingle-ui": "^1.0.0",
+    "fastclick": "^1.0.6",
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8",
+    "salt-tools": "~0.1.0"
+  },
+  "dist": {
+    "shasum": "aaed9393efdafb64092a786a7b7d65954477a64c",
+    "size": 4366,
+    "key": "@ali/tingle-scroll-view/-/@ali/tingle-scroll-view-1.0.2.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-scroll-view/download/@ali/tingle-scroll-view-1.0.2.tgz"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "gitHead": "6a108721875267ce54d9fd1d137c0d2c2a6e2768",
+  "keywords": [
+    "tingle-scroll-view",
+    "ScrollView"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "maintainers": [
+    {
+      "name": "xiaohe.wp",
+      "email": "xiaohe.wp@alibaba-inc.com"
+    }
+  ],
+  "name": "@ali/tingle-scroll-view",
+  "optionalDependencies": {},
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
+  },
+  "publish_time": 1489628192831,
+  "readme": "ERROR: No README data found!",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-scroll-view"
+  },
+  "screenshots": "",
+  "scripts": {
+    "build": "salt-tools run build",
+    "dep": "salt-tools run dep",
+    "pub": "salt-tools run pub",
+    "start": "salt-tools run start",
+    "tnpm-dep": "salt-tools run tnpm-dep",
+    "tnpm-update": "salt-tools run tnpm-update",
+    "update": "salt-tools run update"
+  },
+  "version": "1.0.2"
+}

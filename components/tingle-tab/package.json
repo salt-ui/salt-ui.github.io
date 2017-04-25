@@ -10,21 +10,24 @@
         "spec": ">=1.0.0 <2.0.0",
         "type": "range"
       },
-      "/Users/qy/work/tingle/salt-ui.github.io"
+      "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
-  "_cnpm_publish_time": 1487574086742,
+  "_cnpm_publish_time": 1493104496025,
   "_from": "@ali/tingle-tab@>=1.0.0 <2.0.0",
-  "_id": "@ali/tingle-tab@1.0.26",
+  "_id": "@ali/tingle-tab@1.0.27",
   "_inCache": true,
   "_location": "/@ali/tingle-tab",
-  "_nodeVersion": "6.9.4",
+  "_nodeVersion": "4.7.2",
   "_npmUser": {
     "name": "caoke.ck",
     "email": "caoke.ck@alibaba-inc.com"
   },
   "_npmVersion": "3.10.9",
-  "_phantomChildren": {},
+  "_phantomChildren": {
+    "@ali/tingle-style": "1.0.23",
+    "classnames": "2.2.5"
+  },
   "_publish_on_cnpm": true,
   "_requested": {
     "raw": "@ali/tingle-tab@^1.0.0",
@@ -36,15 +39,14 @@
     "type": "range"
   },
   "_requiredBy": [
-    "/",
     "/@ali/tingle-grid/@ali/tingle-ui",
     "/@ali/tingle-ui"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-tab/download/@ali/tingle-tab-1.0.26.tgz",
-  "_shasum": "380c2b55939fa1f4c4c2004d9c76b686685969dc",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-tab/download/@ali/tingle-tab-1.0.27.tgz",
+  "_shasum": "967d792eb20058b3085440e61615a636f0d209b6",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-tab@^1.0.0",
-  "_where": "/Users/qy/work/tingle/salt-ui.github.io",
+  "_where": "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui",
   "author": {
     "name": "zhangshun@alipay.com"
   },
@@ -85,17 +87,17 @@
     "webpack": "~1.12.11"
   },
   "dist": {
-    "shasum": "380c2b55939fa1f4c4c2004d9c76b686685969dc",
-    "size": 17431,
-    "key": "@ali/tingle-tab/-/@ali/tingle-tab-1.0.26.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-tab/download/@ali/tingle-tab-1.0.26.tgz"
+    "shasum": "967d792eb20058b3085440e61615a636f0d209b6",
+    "size": 17445,
+    "key": "@ali/tingle-tab/-/@ali/tingle-tab-1.0.27.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-tab/download/@ali/tingle-tab-1.0.27.tgz"
   },
   "files": [
     "dist",
     "src",
     "README.md"
   ],
-  "gitHead": "c6f6c86895abf530d4d4cc2ace99674506299ee5",
+  "gitHead": "695143e9ae4564918e72f3d79120bc42ab8788ef",
   "keywords": [
     "tingle-tab",
     "Tab"
@@ -121,7 +123,7 @@
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1487574086742,
+  "publish_time": 1493104496025,
   "readme": "ERROR: No README data found!",
   "readmeFilename": "README.md",
   "repository": {
@@ -133,5 +135,5 @@
     "build": "gulp b",
     "start": "gulp d"
   },
-  "version": "1.0.26"
+  "version": "1.0.27"
 }

@@ -1,3 +1,9 @@
+1.0.23 / 2017-03-02
+=================
+
+ * remove `stylus_tingle` task from `build_js` task dependencies
+ * remove all useless css file from src
+
 
 0.2.1 / 2015-09-11
 ==================

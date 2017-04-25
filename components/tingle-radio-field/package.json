@@ -10,21 +10,25 @@
         "spec": ">=1.0.0 <2.0.0",
         "type": "range"
       },
-      "/Users/qy/work/tingle/salt-ui.github.io"
+      "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
-  "_cnpm_publish_time": 1487593896075,
+  "_cnpm_publish_time": 1489583209615,
   "_from": "@ali/tingle-radio-field@>=1.0.0 <2.0.0",
-  "_id": "@ali/tingle-radio-field@1.0.10",
+  "_id": "@ali/tingle-radio-field@1.0.11",
   "_inCache": true,
   "_location": "/@ali/tingle-radio-field",
   "_nodeVersion": "6.9.1",
   "_npmUser": {
-    "name": "guanghong.wsj",
-    "email": "guanghong.wsj@alibaba-inc.com"
+    "name": "quanyun.mqy",
+    "email": "quanyun.mqy@alibaba-inc.com"
   },
-  "_npmVersion": "2.15.11",
-  "_phantomChildren": {},
+  "_npmVersion": "3.10.9",
+  "_phantomChildren": {
+    "@ali/tingle-icon-source": "1.0.13",
+    "@ali/tingle-style": "1.0.23",
+    "classnames": "2.2.5"
+  },
   "_publish_on_cnpm": true,
   "_requested": {
     "raw": "@ali/tingle-radio-field@^1.0.0",
@@ -36,47 +40,45 @@
     "type": "range"
   },
   "_requiredBy": [
-    "/",
     "/@ali/tingle-grid/@ali/tingle-ui",
     "/@ali/tingle-ui"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-radio-field/download/@ali/tingle-radio-field-1.0.10.tgz",
-  "_shasum": "532151e713bc9769b3bfc97a296283ead0a5799c",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-radio-field/download/@ali/tingle-radio-field-1.0.11.tgz",
+  "_shasum": "958febd60e67db349d5eb1d01161e6cf958970e3",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-radio-field@^1.0.0",
-  "_where": "/Users/qy/work/tingle/salt-ui.github.io",
+  "_where": "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui",
   "author": {
     "name": "shanchao"
   },
   "dependencies": {
-    "@ali/tingle-context": "~1.0.0",
+    "@ali/tingle-context": "^1.0.0",
     "@ali/tingle-field": "~1.0.3",
     "@ali/tingle-group": "^1.0.2",
-    "@ali/tingle-icon": "~1.0.2",
-    "@ali/tingle-style": "~1.0.0",
+    "@ali/tingle-icon": "^2.0.0",
+    "@ali/tingle-style": "^1.0.0",
     "classnames": "~2.2.3"
   },
   "description": "tingle-radio-field component for tingle.",
   "devDependencies": {
-    "@ali/tingle-icon-source": "~1.0.4",
-    "@ali/tingle-ui": "~1.0.0",
+    "@ali/tingle-ui": "^1.0.0",
     "fastclick": "^1.0.6",
     "react": "^0.14.8",
     "react-dom": "^0.14.8",
     "salt-tools": "~0.1.0"
   },
   "dist": {
-    "shasum": "532151e713bc9769b3bfc97a296283ead0a5799c",
-    "size": 5536,
-    "key": "@ali/tingle-radio-field/-/@ali/tingle-radio-field-1.0.10.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-radio-field/download/@ali/tingle-radio-field-1.0.10.tgz"
+    "shasum": "958febd60e67db349d5eb1d01161e6cf958970e3",
+    "size": 5635,
+    "key": "@ali/tingle-radio-field/-/@ali/tingle-radio-field-1.0.11.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-radio-field/download/@ali/tingle-radio-field-1.0.11.tgz"
   },
   "files": [
     "dist",
     "src",
     "README.md"
   ],
-  "gitHead": "978641121be602aa0a19ebc76589f138270904a7",
+  "gitHead": "dce90a7a51a79848cb25d1aed7bfd511251bd4fa",
   "keywords": [
     "tingle-radio-field",
     "RadioField"
@@ -106,7 +108,7 @@
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1487593896075,
+  "publish_time": 1489583209615,
   "readme": "ERROR: No README data found!",
   "readmeFilename": "README.md",
   "repository": {
@@ -123,5 +125,5 @@
     "tnpm-update": "salt-tools run tnpm-update",
     "update": "salt-tools run update"
   },
-  "version": "1.0.10"
+  "version": "1.0.11"
 }

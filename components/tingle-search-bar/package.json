@@ -10,18 +10,18 @@
         "spec": ">=1.0.1 <2.0.0",
         "type": "range"
       },
-      "/Users/qy/work/tingle/salt-ui.github.io"
+      "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
-  "_cnpm_publish_time": 1487573695747,
+  "_cnpm_publish_time": 1489627706799,
   "_from": "@ali/tingle-search-bar@>=1.0.1 <2.0.0",
-  "_id": "@ali/tingle-search-bar@1.0.9",
+  "_id": "@ali/tingle-search-bar@1.0.10",
   "_inCache": true,
   "_location": "/@ali/tingle-search-bar",
-  "_nodeVersion": "6.9.4",
+  "_nodeVersion": "6.9.1",
   "_npmUser": {
-    "name": "caoke.ck",
-    "email": "caoke.ck@alibaba-inc.com"
+    "name": "quanyun.mqy",
+    "email": "quanyun.mqy@alibaba-inc.com"
   },
   "_npmVersion": "3.10.9",
   "_phantomChildren": {},
@@ -36,68 +36,44 @@
     "type": "range"
   },
   "_requiredBy": [
-    "/",
     "/@ali/tingle-grid/@ali/tingle-ui",
     "/@ali/tingle-ui"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-search-bar/download/@ali/tingle-search-bar-1.0.9.tgz",
-  "_shasum": "d1f3f1691fb9e3cfa32e519e32a190bf62c69c5c",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-search-bar/download/@ali/tingle-search-bar-1.0.10.tgz",
+  "_shasum": "76940cd3500d5504fbb6ef20cad5548ada51d85a",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-search-bar@^1.0.1",
-  "_where": "/Users/qy/work/tingle/salt-ui.github.io",
+  "_where": "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui",
   "author": {
     "name": "zhouquan.yezq"
   },
   "dependencies": {
-    "@ali/tingle-context": "~1.0.0",
-    "@ali/tingle-icon": "~1.0.2",
-    "@ali/tingle-icon-source": "~1.0.0",
-    "@ali/tingle-style": "~1.0.0",
+    "@ali/tingle-context": "^1.0.0",
+    "@ali/tingle-icon": "^2.0.0",
+    "@ali/tingle-style": "^1.0.0",
     "classnames": "~2.2.3",
     "lodash": "^4.14.0"
   },
   "description": "tingle-search-bar component for tingle.",
   "devDependencies": {
-    "@ali/tingle-ui": "~1.0.0",
-    "babel": "~6.3.26",
-    "babel-core": "~6.4.0",
-    "babel-loader": "~6.2.1",
-    "babel-plugin-add-module-exports": "~0.1.2",
-    "babel-preset-es2015": "~6.3.13",
-    "babel-preset-react": "~6.3.13",
-    "babel-preset-stage-1": "~6.3.13",
-    "browser-sync": "~2.11.1",
-    "cross-spawn": "^2.0.0",
-    "fastclick": "~1.0.6",
-    "gulp": "~3.9.0",
-    "gulp-babel": "~6.1.1",
-    "gulp-concat": "~2.6.0",
-    "gulp-just-replace": "~1.0.2",
-    "gulp-pathmap": "~0.1.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sourcemaps": "~1.6.0",
-    "gulp-stylus": "~2.3.1",
-    "gulp-svgstore": "^6.0.0",
-    "gulp-uglify": "~1.5.1",
-    "gulp-unique-files": "~0.1.2",
-    "react": "~0.14.8",
-    "react-dom": "~0.14.8",
-    "svg2react-loader": "^1.0.2",
-    "through2": "~2.0.1",
-    "webpack": "~1.12.11"
+    "@ali/tingle-ui": "^1.0.0",
+    "fastclick": "^1.0.6",
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8",
+    "salt-tools": "~0.1.0"
   },
   "dist": {
-    "shasum": "d1f3f1691fb9e3cfa32e519e32a190bf62c69c5c",
-    "size": 21246,
-    "key": "@ali/tingle-search-bar/-/@ali/tingle-search-bar-1.0.9.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-search-bar/download/@ali/tingle-search-bar-1.0.9.tgz"
+    "shasum": "76940cd3500d5504fbb6ef20cad5548ada51d85a",
+    "size": 8673,
+    "key": "@ali/tingle-search-bar/-/@ali/tingle-search-bar-1.0.10.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-search-bar/download/@ali/tingle-search-bar-1.0.10.tgz"
   },
   "files": [
     "dist",
     "src",
     "README.md"
   ],
-  "gitHead": "98c008012d77559ca77e6110a124244425a18497",
+  "gitHead": "cab85e6109327bd8fc6303a0b3f76aeebbfb88cb",
   "keywords": [
     "tingle-search-bar",
     "SearchBar"
@@ -131,7 +107,7 @@
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1487573695747,
+  "publish_time": 1489627706799,
   "readme": "ERROR: No README data found!",
   "readmeFilename": "README.md",
   "repository": {
@@ -140,8 +116,13 @@
   },
   "screenshots": "",
   "scripts": {
-    "build": "gulp b",
-    "start": "gulp d"
+    "build": "salt-tools run build",
+    "dep": "salt-tools run dep",
+    "pub": "salt-tools run pub",
+    "start": "salt-tools run start",
+    "tnpm-dep": "salt-tools run tnpm-dep",
+    "tnpm-update": "salt-tools run tnpm-update",
+    "update": "salt-tools run update"
   },
-  "version": "1.0.9"
+  "version": "1.0.10"
 }

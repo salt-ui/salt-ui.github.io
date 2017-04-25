@@ -10,7 +10,7 @@
         "spec": ">=1.0.0 <2.0.0",
         "type": "range"
       },
-      "/Users/qy/work/tingle/salt-ui.github.io"
+      "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
   "_cnpm_publish_time": 1487574009888,
@@ -24,7 +24,11 @@
     "email": "caoke.ck@alibaba-inc.com"
   },
   "_npmVersion": "3.10.9",
-  "_phantomChildren": {},
+  "_phantomChildren": {
+    "@ali/tingle-icon-source": "1.0.13",
+    "@ali/tingle-style": "1.0.23",
+    "classnames": "2.2.5"
+  },
   "_publish_on_cnpm": true,
   "_requested": {
     "raw": "@ali/tingle-switch-field@^1.0.0",
@@ -36,7 +40,6 @@
     "type": "range"
   },
   "_requiredBy": [
-    "/",
     "/@ali/tingle-grid/@ali/tingle-ui",
     "/@ali/tingle-ui"
   ],
@@ -44,7 +47,7 @@
   "_shasum": "ed2e3126849a5acb997295c054ea442bbd6ba921",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-switch-field@^1.0.0",
-  "_where": "/Users/qy/work/tingle/salt-ui.github.io",
+  "_where": "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui",
   "author": "",
   "dependencies": {
     "@ali/tingle-context": "~1.0.0",

@@ -10,20 +10,20 @@
         "spec": ">=1.0.0 <2.0.0",
         "type": "range"
       },
-      "/Users/qy/work/tingle/salt-ui.github.io"
+      "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
-  "_cnpm_publish_time": 1475046839494,
+  "_cnpm_publish_time": 1491460111001,
   "_from": "@ali/tingle-dialog@>=1.0.0 <2.0.0",
-  "_id": "@ali/tingle-dialog@1.0.19",
+  "_id": "@ali/tingle-dialog@1.0.20",
   "_inCache": true,
   "_location": "/@ali/tingle-dialog",
-  "_nodeVersion": "4.2.4",
+  "_nodeVersion": "6.9.1",
   "_npmUser": {
-    "name": "alex.mm",
-    "email": "alex.mm@alibaba-inc.com"
+    "name": "quanyun.mqy",
+    "email": "quanyun.mqy@alibaba-inc.com"
   },
-  "_npmVersion": "3.10.2",
+  "_npmVersion": "3.10.9",
   "_phantomChildren": {},
   "_publish_on_cnpm": true,
   "_requested": {
@@ -36,22 +36,20 @@
     "type": "range"
   },
   "_requiredBy": [
-    "/",
     "/@ali/tingle-grid/@ali/tingle-ui",
     "/@ali/tingle-ui"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-dialog/download/@ali/tingle-dialog-1.0.19.tgz",
-  "_shasum": "90a95f04a6e8d363fc97248054631545af08dd5a",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-dialog/download/@ali/tingle-dialog-1.0.20.tgz",
+  "_shasum": "44c41a21e9ff469a07cbe56201833332c62ce656",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-dialog@^1.0.0",
-  "_where": "/Users/qy/work/tingle/salt-ui.github.io",
+  "_where": "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui",
   "author": {
     "name": "cm"
   },
   "dependencies": {
     "@ali/tingle-context": "^1.0.8",
     "@ali/tingle-style": "^1.0.20",
-    "@ali/tingle-ui": "^1.0.13",
     "classnames": "~2.2.3",
     "i18n-helper": "^1.2.0"
   },
@@ -88,17 +86,17 @@
     "webpack": "~1.12.11"
   },
   "dist": {
-    "shasum": "90a95f04a6e8d363fc97248054631545af08dd5a",
-    "size": 13424,
-    "key": "@ali/tingle-dialog/-/@ali/tingle-dialog-1.0.19.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-dialog/download/@ali/tingle-dialog-1.0.19.tgz"
+    "shasum": "44c41a21e9ff469a07cbe56201833332c62ce656",
+    "size": 14425,
+    "key": "@ali/tingle-dialog/-/@ali/tingle-dialog-1.0.20.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-dialog/download/@ali/tingle-dialog-1.0.20.tgz"
   },
   "files": [
     "dist",
     "src",
     "README.md"
   ],
-  "gitHead": "c16347219e0ca17c412bf1e0e1cb856e49b64923",
+  "gitHead": "729306539a39d8d5f63ff9b752191cce196d1c92",
   "keywords": [
     "tingle-dialog",
     "Dialog"
@@ -128,7 +126,7 @@
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1475046839494,
+  "publish_time": 1491460111001,
   "readme": "ERROR: No README data found!",
   "readmeFilename": "README.md",
   "repository": {
@@ -140,5 +138,5 @@
     "build": "gulp b",
     "start": "gulp d"
   },
-  "version": "1.0.19"
+  "version": "1.0.20"
 }

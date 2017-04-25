@@ -10,21 +10,24 @@
         "spec": ">=1.0.0 <2.0.0",
         "type": "range"
       },
-      "/Users/qy/work/tingle/salt-ui.github.io"
+      "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
-  "_cnpm_publish_time": 1487593378844,
+  "_cnpm_publish_time": 1488953061093,
   "_from": "@ali/tingle-nav-bar@>=1.0.0 <2.0.0",
-  "_id": "@ali/tingle-nav-bar@1.0.3",
+  "_id": "@ali/tingle-nav-bar@1.0.4",
   "_inCache": true,
   "_location": "/@ali/tingle-nav-bar",
   "_nodeVersion": "6.9.1",
   "_npmUser": {
-    "name": "guanghong.wsj",
-    "email": "guanghong.wsj@alibaba-inc.com"
+    "name": "quanyun.mqy",
+    "email": "quanyun.mqy@alibaba-inc.com"
   },
-  "_npmVersion": "2.15.11",
-  "_phantomChildren": {},
+  "_npmVersion": "3.10.9",
+  "_phantomChildren": {
+    "@ali/tingle-style": "1.0.23",
+    "classnames": "2.2.5"
+  },
   "_publish_on_cnpm": true,
   "_requested": {
     "raw": "@ali/tingle-nav-bar@^1.0.0",
@@ -36,15 +39,14 @@
     "type": "range"
   },
   "_requiredBy": [
-    "/",
     "/@ali/tingle-grid/@ali/tingle-ui",
     "/@ali/tingle-ui"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-nav-bar/download/@ali/tingle-nav-bar-1.0.3.tgz",
-  "_shasum": "c92a64f007377a317d7688b9bf3fc0cc2b9c49fc",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-nav-bar/download/@ali/tingle-nav-bar-1.0.4.tgz",
+  "_shasum": "9600e1b4e141d97a8a3936fb225667d68f46e095",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-nav-bar@^1.0.0",
-  "_where": "/Users/qy/work/tingle/salt-ui.github.io",
+  "_where": "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui",
   "author": {
     "name": "ruiyang.dry"
   },
@@ -55,24 +57,24 @@
   },
   "description": "tingle-nav-bar component for tingle.",
   "devDependencies": {
-    "@ali/tingle-ui": "~1.0.0",
+    "@ali/tingle-ui": "^1.0.0",
     "fastclick": "^1.0.6",
     "react": "^0.14.8",
     "react-dom": "^0.14.8",
     "salt-tools": "~0.1.0"
   },
   "dist": {
-    "shasum": "c92a64f007377a317d7688b9bf3fc0cc2b9c49fc",
-    "size": 4350,
-    "key": "@ali/tingle-nav-bar/-/@ali/tingle-nav-bar-1.0.3.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-nav-bar/download/@ali/tingle-nav-bar-1.0.3.tgz"
+    "shasum": "9600e1b4e141d97a8a3936fb225667d68f46e095",
+    "size": 4421,
+    "key": "@ali/tingle-nav-bar/-/@ali/tingle-nav-bar-1.0.4.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-nav-bar/download/@ali/tingle-nav-bar-1.0.4.tgz"
   },
   "files": [
     "dist",
     "src",
     "README.md"
   ],
-  "gitHead": "0f6b69921ba97a866fbec9b371bf361d1e84788c",
+  "gitHead": "38329a369fac7b9827bbe0070422df729fe7da4f",
   "keywords": [
     "tingle-nav-bar",
     "NavBar"
@@ -98,7 +100,7 @@
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1487593378844,
+  "publish_time": 1488953061093,
   "readme": "ERROR: No README data found!",
   "readmeFilename": "README.md",
   "repository": {
@@ -115,5 +117,5 @@
     "tnpm-update": "salt-tools run tnpm-update",
     "update": "salt-tools run update"
   },
-  "version": "1.0.3"
+  "version": "1.0.4"
 }

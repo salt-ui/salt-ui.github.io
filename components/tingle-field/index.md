@@ -82,6 +82,26 @@ tnpm install @ali/tingle-field --save
 
 必填：否
 
+#### tip
+
+描述：提示信息,
+
+类型：String/React Element
+
+默认：''
+
+必填：否
+
+#### extra
+
+描述：放一些额外的元素(比如: 图标),
+
+类型：String/React Element
+
+默认：''
+
+必填：否
+
 ## Simple Usage
 
 ```

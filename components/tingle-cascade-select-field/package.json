@@ -10,18 +10,18 @@
         "spec": ">=1.0.12 <2.0.0",
         "type": "range"
       },
-      "/Users/qy/work/tingle/salt-ui.github.io"
+      "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
-  "_cnpm_publish_time": 1487741014815,
+  "_cnpm_publish_time": 1491880912482,
   "_from": "@ali/tingle-cascade-select-field@>=1.0.12 <2.0.0",
-  "_id": "@ali/tingle-cascade-select-field@1.0.14",
+  "_id": "@ali/tingle-cascade-select-field@1.1.0",
   "_inCache": true,
   "_location": "/@ali/tingle-cascade-select-field",
-  "_nodeVersion": "6.9.4",
+  "_nodeVersion": "6.9.1",
   "_npmUser": {
-    "name": "caoke.ck",
-    "email": "caoke.ck@alibaba-inc.com"
+    "name": "quanyun.mqy",
+    "email": "quanyun.mqy@alibaba-inc.com"
   },
   "_npmVersion": "3.10.9",
   "_phantomChildren": {},
@@ -36,50 +36,49 @@
     "type": "range"
   },
   "_requiredBy": [
-    "/",
     "/@ali/tingle-ui"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-cascade-select-field/download/@ali/tingle-cascade-select-field-1.0.14.tgz",
-  "_shasum": "2a5dbaf107cf66960d270085cda55c0984415e15",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-cascade-select-field/download/@ali/tingle-cascade-select-field-1.1.0.tgz",
+  "_shasum": "63cd2be03e2ce5b6d1dbe160a484f46ded7e76bc",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-cascade-select-field@^1.0.12",
-  "_where": "/Users/qy/work/tingle/salt-ui.github.io",
+  "_where": "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui",
   "author": {
     "name": "caoke.ck"
   },
   "dependencies": {
-    "@ali/tingle-context": "~1.0.0",
-    "@ali/tingle-field": "~1.0.1",
-    "@ali/tingle-slot": "~1.0.0",
+    "@ali/tingle-context": "^1.0.0",
+    "@ali/tingle-field": "^1.1.0",
+    "@ali/tingle-slot": "^1.0.0",
     "classnames": "~2.2.3",
     "lodash": "~4.17.4"
   },
   "description": "tingle-cascade-select-field component for tingle.",
   "devDependencies": {
     "@ali/tingle-field": "^1.0.14",
-    "@ali/tingle-group": "~1.0.7",
+    "@ali/tingle-group": "^1.0.7",
     "@ali/tingle-layer": "^1.0.6",
     "@ali/tingle-mask": "^1.0.5",
     "@ali/tingle-slot": "^1.0.11",
-    "@ali/tingle-style": "~1.0.0",
-    "@ali/tingle-ui": "~1.0.0",
+    "@ali/tingle-style": "^1.0.0",
+    "@ali/tingle-ui": "^1.0.0",
     "fastclick": "^1.0.6",
     "react": "^0.14.8",
     "react-dom": "^0.14.8",
     "salt-tools": "~0.1.0"
   },
   "dist": {
-    "shasum": "2a5dbaf107cf66960d270085cda55c0984415e15",
-    "size": 5684,
-    "key": "@ali/tingle-cascade-select-field/-/@ali/tingle-cascade-select-field-1.0.14.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-cascade-select-field/download/@ali/tingle-cascade-select-field-1.0.14.tgz"
+    "shasum": "63cd2be03e2ce5b6d1dbe160a484f46ded7e76bc",
+    "size": 6026,
+    "key": "@ali/tingle-cascade-select-field/-/@ali/tingle-cascade-select-field-1.1.0.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-cascade-select-field/download/@ali/tingle-cascade-select-field-1.1.0.tgz"
   },
   "files": [
     "dist",
     "src",
     "README.md"
   ],
-  "gitHead": "ba6357f8f0279f335eba3f0730517dcb767ea97f",
+  "gitHead": "adf5a58f9a69c2ded60343c5f2f12d21b0ba10f2",
   "keywords": [
     "tingle-cascade-select-field",
     "CascadeSelectField",
@@ -93,6 +92,10 @@
       "email": "caoke.ck@alibaba-inc.com"
     },
     {
+      "name": "qingnan.yqn",
+      "email": "qingnan.yqn@alibaba-inc.com"
+    },
+    {
       "name": "quanyun.mqy",
       "email": "quanyun.mqy@alibaba-inc.com"
     }
@@ -102,7 +105,7 @@
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1487741014815,
+  "publish_time": 1491880912482,
   "readme": "ERROR: No README data found!",
   "readmeFilename": "README.md",
   "repository": {
@@ -119,5 +122,5 @@
     "tnpm-update": "salt-tools run tnpm-update",
     "update": "salt-tools run update"
   },
-  "version": "1.0.14"
+  "version": "1.1.0"
 }

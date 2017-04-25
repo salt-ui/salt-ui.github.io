@@ -1,0 +1,121 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "@ali/tingle-picker-field@^1.0.0",
+        "scope": "@ali",
+        "escapedName": "@ali%2ftingle-picker-field",
+        "name": "@ali/tingle-picker-field",
+        "rawSpec": "^1.0.0",
+        "spec": ">=1.0.0 <2.0.0",
+        "type": "range"
+      },
+      "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui"
+    ]
+  ],
+  "_cnpm_publish_time": 1493087094638,
+  "_from": "@ali/tingle-picker-field@>=1.0.0 <2.0.0",
+  "_id": "@ali/tingle-picker-field@1.1.0",
+  "_inCache": true,
+  "_location": "/@ali/tingle-picker-field",
+  "_nodeVersion": "6.9.1",
+  "_npmUser": {
+    "name": "quanyun.mqy",
+    "email": "quanyun.mqy@alibaba-inc.com"
+  },
+  "_npmVersion": "3.10.9",
+  "_phantomChildren": {},
+  "_publish_on_cnpm": true,
+  "_requested": {
+    "raw": "@ali/tingle-picker-field@^1.0.0",
+    "scope": "@ali",
+    "escapedName": "@ali%2ftingle-picker-field",
+    "name": "@ali/tingle-picker-field",
+    "rawSpec": "^1.0.0",
+    "spec": ">=1.0.0 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/@ali/tingle-ui"
+  ],
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-picker-field/download/@ali/tingle-picker-field-1.1.0.tgz",
+  "_shasum": "2d3e7c4cd04c1558607b1f4ae661cbf3115e2bcd",
+  "_shrinkwrap": null,
+  "_spec": "@ali/tingle-picker-field@^1.0.0",
+  "_where": "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui",
+  "author": {
+    "name": "longyan"
+  },
+  "dependencies": {
+    "@ali/tingle-button": "^1.0.10",
+    "@ali/tingle-context": "^1.0.0",
+    "@ali/tingle-field": "^1.1.0",
+    "@ali/tingle-icon": "^2.0.0",
+    "@ali/tingle-popup": "^0.1.2",
+    "@ali/tingle-scroll-view": "^1.0.2",
+    "@ali/tingle-style": "^1.0.23",
+    "classnames": "~2.2.3",
+    "lie": "^3.1.1",
+    "natty-fetch": "~2.4.2"
+  },
+  "description": "一个表单域，从右侧滑出面板，上面包含搜索和列表，支持单选和多选两种模式，选择后返回",
+  "devDependencies": {
+    "@ali/tingle-group": "^1.0.7",
+    "@ali/tingle-ui": "^2.0.0",
+    "fastclick": "^1.0.6",
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8",
+    "salt-tools": "~0.1.0"
+  },
+  "dist": {
+    "shasum": "2d3e7c4cd04c1558607b1f4ae661cbf3115e2bcd",
+    "size": 12808,
+    "key": "@ali/tingle-picker-field/-/@ali/tingle-picker-field-1.1.0.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-picker-field/download/@ali/tingle-picker-field-1.1.0.tgz"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "gitHead": "afbb60928f15af37e0403781eaa401dcb50a84ed",
+  "keywords": [
+    "tingle-picker-field",
+    "PickerField",
+    "picker",
+    "field",
+    "表单",
+    "选择域"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "maintainers": [
+    {
+      "name": "quanyun.mqy",
+      "email": "quanyun.mqy@alibaba-inc.com"
+    }
+  ],
+  "name": "@ali/tingle-picker-field",
+  "optionalDependencies": {},
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
+  },
+  "publish_time": 1493087094638,
+  "readme": "ERROR: No README data found!",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-picker-field"
+  },
+  "screenshots": "",
+  "scripts": {
+    "build": "salt-tools run build",
+    "dep": "salt-tools run dep",
+    "pub": "salt-tools run pub",
+    "start": "salt-tools run start",
+    "tnpm-dep": "salt-tools run tnpm-dep",
+    "tnpm-update": "salt-tools run tnpm-update",
+    "update": "salt-tools run update"
+  },
+  "version": "1.1.0"
+}

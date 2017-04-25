@@ -2,7 +2,7 @@
 
 ## 底部选项卡菜单
 
-<img src="https://gw.alicdn.com/tps/TB1p2fLOpXXXXXQaXXXXXXXXXXX-690-1226.png" width="345"/>
+<img src="http://alipay-rmsdeploy-image.cn-hangzhou.alipay.aliyun-inc.com/skylark/attach/5304/92f2deaaa2f4dd1c/image.png" width="345"/>
 
 ## Simple Usage
 
@@ -77,6 +77,10 @@ class Demo extends React.Component {
 |badgeStyle|-|`object`|-|选项卡自定义角标样式(version>=1.2.0)
 
 ## APIs
+
+* onChange 
+ * type:function
+ * 点击每个item的时候触发的事件；
 
 ## Links
 

@@ -10,20 +10,20 @@
         "spec": ">=1.0.0 <2.0.0",
         "type": "range"
       },
-      "/Users/qy/work/tingle/salt-ui.github.io"
+      "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
-  "_cnpm_publish_time": 1487573859835,
+  "_cnpm_publish_time": 1488436809590,
   "_from": "@ali/tingle-style@>=1.0.0 <2.0.0",
-  "_id": "@ali/tingle-style@1.0.22",
+  "_id": "@ali/tingle-style@1.0.23",
   "_inCache": true,
   "_location": "/@ali/tingle-style",
-  "_nodeVersion": "6.9.4",
+  "_nodeVersion": "6.9.1",
   "_npmUser": {
-    "name": "caoke.ck",
-    "email": "caoke.ck@alibaba-inc.com"
+    "name": "guanghong.wsj",
+    "email": "guanghong.wsj@alibaba-inc.com"
   },
-  "_npmVersion": "3.10.9",
+  "_npmVersion": "2.15.11",
   "_phantomChildren": {},
   "_publish_on_cnpm": true,
   "_requested": {
@@ -36,51 +36,98 @@
     "type": "range"
   },
   "_requiredBy": [
-    "/",
+    "/@ali/tingle-action-sheet",
     "/@ali/tingle-avatar",
+    "/@ali/tingle-avatar/@ali/tingle-context",
     "/@ali/tingle-box",
+    "/@ali/tingle-box/@ali/tingle-context",
     "/@ali/tingle-button",
+    "/@ali/tingle-button/@ali/tingle-context",
     "/@ali/tingle-calendar",
+    "/@ali/tingle-calendar-field",
     "/@ali/tingle-checkbox-field",
     "/@ali/tingle-city-select-field",
+    "/@ali/tingle-city-select-field/@ali/tingle-context",
     "/@ali/tingle-context",
     "/@ali/tingle-crumb",
+    "/@ali/tingle-crumb/@ali/tingle-context",
     "/@ali/tingle-dialog",
     "/@ali/tingle-field",
+    "/@ali/tingle-field/@ali/tingle-context",
     "/@ali/tingle-gallery",
     "/@ali/tingle-grid",
+    "/@ali/tingle-grid/@ali/tingle-calendar",
     "/@ali/tingle-grid/@ali/tingle-checkbox-field",
+    "/@ali/tingle-grid/@ali/tingle-context",
+    "/@ali/tingle-grid/@ali/tingle-field",
+    "/@ali/tingle-grid/@ali/tingle-icon",
+    "/@ali/tingle-grid/@ali/tingle-layer",
+    "/@ali/tingle-grid/@ali/tingle-mask",
+    "/@ali/tingle-grid/@ali/tingle-scroll-list",
+    "/@ali/tingle-grid/@ali/tingle-slide",
     "/@ali/tingle-grid/@ali/tingle-tab-bar",
     "/@ali/tingle-grid/@ali/tingle-ui",
     "/@ali/tingle-group",
+    "/@ali/tingle-group/@ali/tingle-context",
     "/@ali/tingle-icon",
+    "/@ali/tingle-icon/@ali/tingle-context",
+    "/@ali/tingle-image-viewer",
+    "/@ali/tingle-image-viewer/@ali/tingle-context",
+    "/@ali/tingle-infinite-scroll",
     "/@ali/tingle-layer",
+    "/@ali/tingle-layer/@ali/tingle-context",
     "/@ali/tingle-list",
+    "/@ali/tingle-list/@ali/tingle-context",
     "/@ali/tingle-mask",
+    "/@ali/tingle-mask/@ali/tingle-context",
+    "/@ali/tingle-menu",
     "/@ali/tingle-nav-bar",
+    "/@ali/tingle-nav-bar/@ali/tingle-context",
     "/@ali/tingle-note",
     "/@ali/tingle-photo-field",
+    "/@ali/tingle-picker-field",
+    "/@ali/tingle-popup",
+    "/@ali/tingle-progress",
     "/@ali/tingle-radio-field",
+    "/@ali/tingle-radio-field/@ali/tingle-field",
+    "/@ali/tingle-radio-field/@ali/tingle-field/@ali/tingle-context",
+    "/@ali/tingle-radio-field/@ali/tingle-field/@ali/tingle-icon",
     "/@ali/tingle-rate",
+    "/@ali/tingle-rate/@ali/tingle-context",
+    "/@ali/tingle-refreshcontrol",
     "/@ali/tingle-scroll-list",
+    "/@ali/tingle-scroll-list/@ali/tingle-context",
+    "/@ali/tingle-scroll-view",
     "/@ali/tingle-scroller",
+    "/@ali/tingle-scroller/@ali/tingle-context",
     "/@ali/tingle-search-bar",
     "/@ali/tingle-slide",
+    "/@ali/tingle-slide/@ali/tingle-context",
     "/@ali/tingle-switch",
     "/@ali/tingle-switch-field",
+    "/@ali/tingle-switch-field/@ali/tingle-context",
+    "/@ali/tingle-switch-field/@ali/tingle-field",
+    "/@ali/tingle-switch-field/@ali/tingle-icon",
+    "/@ali/tingle-switch/@ali/tingle-context",
     "/@ali/tingle-tab",
     "/@ali/tingle-tab-bar",
+    "/@ali/tingle-tab/@ali/tingle-context",
+    "/@ali/tingle-table",
     "/@ali/tingle-text-field",
+    "/@ali/tingle-text-field/@ali/tingle-context",
+    "/@ali/tingle-text-field/@ali/tingle-field",
     "/@ali/tingle-textarea-field",
-    "/@ali/tingle-toast",
-    "/@ali/tingle-ui",
-    "/@ali/tingle-ui/@ali/tingle-scroll-list"
+    "/@ali/tingle-textarea-field/@ali/tingle-context",
+    "/@ali/tingle-textarea-field/@ali/tingle-field",
+    "/@ali/tingle-timeline",
+    "/@ali/tingle-timeline/@ali/tingle-context",
+    "/@ali/tingle-ui"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-style/download/@ali/tingle-style-1.0.22.tgz",
-  "_shasum": "62d47b1e9ca2ded031ccaa6a68b89aa9c6f8df75",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-style/download/@ali/tingle-style-1.0.23.tgz",
+  "_shasum": "6797db2beaa2715c49558a626231fe9ec23c6844",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-style@^1.0.0",
-  "_where": "/Users/qy/work/tingle/salt-ui.github.io",
+  "_where": "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui",
   "author": {
     "name": "gnosaij,maming,cm"
   },
@@ -103,17 +150,17 @@
     "gulp-stylus": "~2.3.1"
   },
   "dist": {
-    "shasum": "62d47b1e9ca2ded031ccaa6a68b89aa9c6f8df75",
-    "size": 25384,
-    "key": "@ali/tingle-style/-/@ali/tingle-style-1.0.22.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-style/download/@ali/tingle-style-1.0.22.tgz"
+    "shasum": "6797db2beaa2715c49558a626231fe9ec23c6844",
+    "size": 15256,
+    "key": "@ali/tingle-style/-/@ali/tingle-style-1.0.23.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-style/download/@ali/tingle-style-1.0.23.tgz"
   },
   "files": [
     "dist",
     "src",
     "README.md"
   ],
-  "gitHead": "960e7f1f04eb1b1b6aca2cb57c72c4c2e29bd809",
+  "gitHead": "bae0fc2c91b74502466ae18e3674bb470b10a54f",
   "keywords": [
     "tingle-style",
     "Style",
@@ -131,6 +178,10 @@
       "email": "caoke.ck@alibaba-inc.com"
     },
     {
+      "name": "guanghong.wsj",
+      "email": "guanghong.wsj@alibaba-inc.com"
+    },
+    {
       "name": "jiasong.js",
       "email": "jiasong.js@alibaba-inc.com"
     },
@@ -144,7 +195,7 @@
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1487573859835,
+  "publish_time": 1488436809590,
   "readme": "ERROR: No README data found!",
   "readmeFilename": "README.md",
   "repository": {
@@ -155,5 +206,5 @@
   "scripts": {
     "start": "gulp server"
   },
-  "version": "1.0.22"
+  "version": "1.0.23"
 }

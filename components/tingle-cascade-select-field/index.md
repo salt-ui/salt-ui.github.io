@@ -208,6 +208,27 @@ onSelect(value) {
 <CascadeSelectField value={this.state.value} onSelect={this.onSelect}></CascadeSelectField>
 ```
 
+### formatter
+
+描述：显示结果格式化函数。
+类型：`function`
+默认：`(value) => value.map((v) => v.text).join('/')`
+必选：否
+
+参数是选中对象。
+
+示例：
+
+```
+formatter(value) {
+    return value.map((v) => v.text).join('/');
+}
+
+...
+
+<CascadeSelectField formatter={this.formatter}></CascadeSelectField>
+```
+
 ## Links
 
 - [Issues](http://gitlab.alibaba-inc.com/tingle-ui/tingle-cascade-select-field/issues)

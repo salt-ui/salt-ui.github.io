@@ -117,7 +117,7 @@ render() {
 ### value
 
 描述：选中项。
-类型：`number`
+类型：`number`/`string`
 默认：无
 必选：否
 

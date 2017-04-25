@@ -1,3 +1,9 @@
+1.0.10 / 2017-03-16
+=================
+* `feat`: 升级tingle-icon，并修改demo，不再引入tingle-icon-source
+* `feat`: generator升级
+* `feat`: 格式化代码
+
 1.0.5 / 2016-12-05
 ==================
  * fix: set zIndex to 90

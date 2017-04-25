@@ -10,21 +10,26 @@
         "spec": ">=1.0.0 <2.0.0",
         "type": "range"
       },
-      "/Users/qy/work/tingle/salt-ui.github.io"
+      "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
-  "_cnpm_publish_time": 1487574252714,
+  "_cnpm_publish_time": 1488098881254,
   "_from": "@ali/tingle-textarea-field@>=1.0.0 <2.0.0",
-  "_id": "@ali/tingle-textarea-field@1.0.14",
+  "_id": "@ali/tingle-textarea-field@1.0.15",
   "_inCache": true,
   "_location": "/@ali/tingle-textarea-field",
-  "_nodeVersion": "6.9.4",
+  "_nodeVersion": "6.9.1",
   "_npmUser": {
-    "name": "caoke.ck",
-    "email": "caoke.ck@alibaba-inc.com"
+    "name": "quanyun.mqy",
+    "email": "quanyun.mqy@alibaba-inc.com"
   },
   "_npmVersion": "3.10.9",
-  "_phantomChildren": {},
+  "_phantomChildren": {
+    "@ali/tingle-icon": "2.0.2",
+    "@ali/tingle-icon-source": "1.0.13",
+    "@ali/tingle-style": "1.0.23",
+    "classnames": "2.2.5"
+  },
   "_publish_on_cnpm": true,
   "_requested": {
     "raw": "@ali/tingle-textarea-field@^1.0.0",
@@ -36,21 +41,20 @@
     "type": "range"
   },
   "_requiredBy": [
-    "/",
     "/@ali/tingle-grid/@ali/tingle-ui",
     "/@ali/tingle-ui"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-textarea-field/download/@ali/tingle-textarea-field-1.0.14.tgz",
-  "_shasum": "0fb36a58d25d57b98a3f751ffb0c18f3c751662e",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-textarea-field/download/@ali/tingle-textarea-field-1.0.15.tgz",
+  "_shasum": "c0097418cbc717f2904537eea4c6117d3f39203c",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-textarea-field@^1.0.0",
-  "_where": "/Users/qy/work/tingle/salt-ui.github.io",
+  "_where": "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui",
   "author": {
     "name": "zhangshun@alipay.com"
   },
   "dependencies": {
     "@ali/tingle-context": "~1.0.0",
-    "@ali/tingle-field": "~1.0.0",
+    "@ali/tingle-field": "~1.1.0",
     "@ali/tingle-style": "~1.0.0",
     "classnames": "~2.2.3"
   },
@@ -86,17 +90,17 @@
     "webpack": "~1.12.11"
   },
   "dist": {
-    "shasum": "0fb36a58d25d57b98a3f751ffb0c18f3c751662e",
-    "size": 13764,
-    "key": "@ali/tingle-textarea-field/-/@ali/tingle-textarea-field-1.0.14.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-textarea-field/download/@ali/tingle-textarea-field-1.0.14.tgz"
+    "shasum": "c0097418cbc717f2904537eea4c6117d3f39203c",
+    "size": 13798,
+    "key": "@ali/tingle-textarea-field/-/@ali/tingle-textarea-field-1.0.15.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-textarea-field/download/@ali/tingle-textarea-field-1.0.15.tgz"
   },
   "files": [
     "dist",
     "src",
     "README.md"
   ],
-  "gitHead": "cd34fa6acd9ae277e80ad7b453176a0a3834e8d9",
+  "gitHead": "66e452818d5e82895ccaea2c14e4f90b285c58a2",
   "keywords": [
     "tingle-textarea-field",
     "TextareaField",
@@ -126,7 +130,7 @@
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1487574252714,
+  "publish_time": 1488098881254,
   "readme": "ERROR: No README data found!",
   "readmeFilename": "README.md",
   "repository": {
@@ -138,5 +142,5 @@
     "build": "gulp b",
     "start": "gulp d"
   },
-  "version": "1.0.14"
+  "version": "1.0.15"
 }

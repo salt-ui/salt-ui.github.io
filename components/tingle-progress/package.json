@@ -1,0 +1,110 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "@ali/tingle-progress@^1.0.0",
+        "scope": "@ali",
+        "escapedName": "@ali%2ftingle-progress",
+        "name": "@ali/tingle-progress",
+        "rawSpec": "^1.0.0",
+        "spec": ">=1.0.0 <2.0.0",
+        "type": "range"
+      },
+      "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui"
+    ]
+  ],
+  "_cnpm_publish_time": 1490691680599,
+  "_from": "@ali/tingle-progress@>=1.0.0 <2.0.0",
+  "_id": "@ali/tingle-progress@1.0.0",
+  "_inCache": true,
+  "_location": "/@ali/tingle-progress",
+  "_nodeVersion": "6.9.1",
+  "_npmUser": {
+    "name": "quanyun.mqy",
+    "email": "quanyun.mqy@alibaba-inc.com"
+  },
+  "_npmVersion": "3.10.9",
+  "_phantomChildren": {},
+  "_publish_on_cnpm": true,
+  "_requested": {
+    "raw": "@ali/tingle-progress@^1.0.0",
+    "scope": "@ali",
+    "escapedName": "@ali%2ftingle-progress",
+    "name": "@ali/tingle-progress",
+    "rawSpec": "^1.0.0",
+    "spec": ">=1.0.0 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/@ali/tingle-ui"
+  ],
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-progress/download/@ali/tingle-progress-1.0.0.tgz",
+  "_shasum": "52188129e02b2ae66314f4a7c09d09f993d03477",
+  "_shrinkwrap": null,
+  "_spec": "@ali/tingle-progress@^1.0.0",
+  "_where": "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui",
+  "author": {
+    "name": "shallker.wxd",
+    "url": "dongnan"
+  },
+  "dependencies": {
+    "@ali/tingle-context": "^1.0.0",
+    "@ali/tingle-style": "^1.0.11",
+    "classnames": "^2.2.3"
+  },
+  "description": "tingle-progress component for tingle.",
+  "devDependencies": {
+    "@ali/tingle-ui": "^1.0.0",
+    "fastclick": "^1.0.6",
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8",
+    "salt-tools": "~0.1.0"
+  },
+  "dist": {
+    "shasum": "52188129e02b2ae66314f4a7c09d09f993d03477",
+    "size": 4400,
+    "key": "@ali/tingle-progress/-/@ali/tingle-progress-1.0.0.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-progress/download/@ali/tingle-progress-1.0.0.tgz"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "gitHead": "c19aaaa407a2bbe49b33b37b34d6cc49aecc21bf",
+  "keywords": [
+    "tingle-progress",
+    "Progress"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "maintainers": [
+    {
+      "name": "quanyun.mqy",
+      "email": "quanyun.mqy@alibaba-inc.com"
+    }
+  ],
+  "name": "@ali/tingle-progress",
+  "optionalDependencies": {},
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
+  },
+  "publish_time": 1490691680599,
+  "readme": "ERROR: No README data found!",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-progress"
+  },
+  "screenshots": "",
+  "scripts": {
+    "build": "salt-tools run build",
+    "dep": "salt-tools run dep",
+    "pub": "salt-tools run pub",
+    "start": "salt-tools run start",
+    "tnpm-dep": "salt-tools run tnpm-dep",
+    "tnpm-update": "salt-tools run tnpm-update",
+    "update": "salt-tools run update"
+  },
+  "version": "1.0.0"
+}

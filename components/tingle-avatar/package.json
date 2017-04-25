@@ -10,7 +10,7 @@
         "spec": ">=1.0.0 <2.0.0",
         "type": "range"
       },
-      "/Users/qy/work/tingle/salt-ui.github.io"
+      "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
   "_cnpm_publish_time": 1463146573812,
@@ -24,7 +24,10 @@
     "email": "alex.mm@alibaba-inc.com"
   },
   "_npmVersion": "2.15.2",
-  "_phantomChildren": {},
+  "_phantomChildren": {
+    "@ali/tingle-style": "1.0.23",
+    "classnames": "2.2.5"
+  },
   "_publish_on_cnpm": true,
   "_requested": {
     "raw": "@ali/tingle-avatar@^1.0.0",
@@ -36,7 +39,6 @@
     "type": "range"
   },
   "_requiredBy": [
-    "/",
     "/@ali/tingle-grid/@ali/tingle-ui",
     "/@ali/tingle-ui"
   ],
@@ -44,7 +46,7 @@
   "_shasum": "5587e63eb86803c7268d74a47f186f80b597678a",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-avatar@^1.0.0",
-  "_where": "/Users/qy/work/tingle/salt-ui.github.io",
+  "_where": "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui",
   "author": {
     "name": "maming"
   },

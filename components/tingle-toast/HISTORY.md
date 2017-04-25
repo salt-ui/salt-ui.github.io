@@ -1,3 +1,12 @@
+1.0.15 / 2017-04-07
+=================
+* `feat`: 从`dependencies`移除不必要的`@ali/tingle-button`、`@ali/tingle-mask`
+
+1.0.14 / 2017-03-16
+=================
+* `feat`: 不再引入tingle-icon-source
+* `feat`: 升级generator，格式化代码
+
 1.0.10 / 2016-10-17
 ==================
 * fix loading style

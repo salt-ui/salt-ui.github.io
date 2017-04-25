@@ -1,4 +1,146 @@
-# history
+## 2.1.5 / 2017-4-21
+* tingle-popup
+	* 新增组件
+* tingle-action-sheet
+	* 新增组件
+
+## 2.1.4 / 2017-4-21
+* tingle-picker-field@1.0.1
+	* bugfix
+* tingle-scroll-list@2.0.1
+	* fix: 修正className。打salt大包后，它会覆盖tingle-scroll-view的样式
+
+## 2.1.3 / 2017-4-21
+* tingle-picker-field
+	* 新增组件
+* tingle-calendar-field@1.0.8
+	* 传递 readOnly 到field
+* tingle-field@1.2.0
+	* 支持extra：放一些额外的元素，比如徽标等
+
+## 2.1.2 / 2017-4-19
+* tingle-field@1.1.2
+	* readOnly状态下不显示tip
+* tingle-slide@1.2.0 
+	* 发布正式版
+* tingle-gallery@1.2.0
+	* 发布正式版
+
+## 2.1.1 / 2017-4-11
+* tingle-calendar@2.1.0
+	* `fix`: 在iOS上某些场景下，会导致点击“取消”不消失，在样式上进行了兼容
+* tingle-table@1.0.5
+	* `fix`: 滚动条层级太高 和其他组件一同使用会有影响
+	* `fix`: 同时使用两个表格数据不一样时，高度不能自适应（原来用的id来选择元素，换成refs来选择）
+* tingle-checkbox-field@1.1.12
+	* fix: slot模式下，修正readOnly状态的颜色
+* tingle-datetime-field@1.1.0
+	* `feat`: 对tingle组件的依赖策略由`~`改为`^`
+* tingle-cascade-select-field@1.1.0
+	* `feat`: 对tingle组件的依赖策略由`~`改为`^`
+
+## 2.1.0 / 2017-4-9
+* tingle-layer
+	* 添加`renderToBody`配置项，可以选择是否把节点插入到body，默认为true。原来的逻辑是原位插入
+* tingle-mask
+	* 优化：当Mask visible的时候，禁用页面滚动
+* tingle-table
+  * 内容超出之后滚动不流畅，fix
+  * align为center时显示位置未居中，fix
+* tingle-slot
+	* 对tingle组件的依赖策略由`~`改为`^`
+
+## 2.0.2 / 2017-4-7
+* tingle-cascade-select-field 更新文档
+* tingle-mask
+	* 当Mask visible的时候，禁用页面滚动；否则复原
+	* z-index调整为1000
+* tingle-dialog，z-index调整为1020
+
+## 2.0.1 / 2017-4-5
+* 合并1.2.13
+
+## 1.2.13 / 2017-3-31
+* hotfix: 加入 dedupe plugin，修复打包过大的问题
+
+## 2.0.0 / 2017-3-28
+* 新增tingle-menu
+* 新增tingle-progress
+* tingle-scroll-list
+	* 有一系列`break change`
+		* 删除属性
+			* 删除 iscroll 的 `options` 属性
+			* 删除 `pushLoadTip`
+			* 删除 `cache` 属性
+		* 删除 API
+			* 删除 `clearCache` 方法
+		* 添加的属性
+			* 增加 `refreshing` 属性
+			* 增加 `loading` 属性
+			* 添加 `noMore` 属性
+		v 运行机制变动
+			* 使用 `tingle-scroll-view` 封装实现，去除了 `iscroll` 的依赖
+			* 底部加载的交互方式从手动上拉加载更换为触底自动加载
+			* `onLoad` 回调分解为两个方法：`onRefresh` 和 `onLoad`。分别对应下拉刷新和触底加载的回调。
+		* 注意事项
+			* 新版本的 dom 结构和 class 名称有变化，做了自定义样式的同学需要验证一下新版本的展示是否正确
+			* onLoad的使用方式有变化，分解为了 `onRefresh` 和 `onLoad`
+* tingle-table
+	* feat: 边框rem(1px)在部分设备下不显示
+	* feat: 当未固定时，滑动时左侧边框不显示
+* tingle-tab-bar
+	* feat: 升级tingle-icon，并修改demo，不再引入tingle-icon-source
+	* feat: 升级generator
+	* feat: 格式化代码、删除冗余代码
+	* fix: 修复中间特殊button的color
+	* feat: 修改css样式替换icon
+
+## 1.2.11 / 2017-3-16
+* 升级tingle-icon到2.0.0
+* 依赖tingle-icon的组件：
+	* 升级tingle-icon到2.x
+	* 修改demo，不再引入tingle-icon-source，不再往页面上插入svg
+	* generator升级，[升级generator的update任务](http://gitlab.alibaba-inc.com/tingle-ui/generator-tingle/blob/master/HISTORY.md#v1111)
+	* 格式化代码
+	* 并做小版本升级
+	* 涉及组件：
+		* tingle-checkbox-field
+		* tingle-datetime-field
+		* tingle-field
+		* tingle-list
+		* tingle-nav-bar
+		* tingle-note
+		* tingle-photo-field
+		* tingle-radio-field
+		* tingle-search-bar
+		* tingle-select-field
+		* tingle-toast
+		* tingle-table
+		* tingle-tab-bar
+* 新增或增强的组件：
+	* tingle-table
+	* tingle-timeline
+	* tingle-image-viewer
+	* tingle-tab-bar
+* 由上面的修改所带来的问题的修复
+
+## 1.2.10
+* 更新tingle-calendar样式
+
+## 1.2.9
+* 发正式版样式
+
+## 1.2.8
+* tingle-table 新增
+* tingle-timeline 新增
+* tingle-calendar-field
+ * feat: 点击mask关闭
+ * feat: 面板显示隐藏的逻辑，封装在组件内部
+
+## 1.2.7
+* 新增tingle-calendar-field
+* tingle-calendar升级到^2.0.0，含样式上和修复及其它优化
+
 ## 1.2.6
 * with tingle-scroll-list@1.3.0
 
@@ -64,79 +206,79 @@
  * Ali.alert，bugfix
 
 ## 1.1.10
-* @ali/tingle-box@1.0.2 
+* tingle-box@1.0.2 
  * 增加react依赖，支持node端渲染
-* @ali/tingle-checkbox-field@1.0.13 
+* tingle-checkbox-field@1.0.13 
  * feat: add required tag
-* @ali/tingle-gallery@1.1.2 
+* tingle-gallery@1.1.2 
   * 增加react依赖，支持node端渲染 
-* @ali/tingle-group@1.0.8 
+* tingle-group@1.0.8 
  * 增加react依赖，支持node端渲染
-* @ali/tingle-icon-source@1.0.13
+* tingle-icon-source@1.0.13
  * feat: add field-required
-* @ali/tingle-mask@1.0.6 
+* tingle-mask@1.0.6 
  * 增加react依赖，支持node端渲染
-* @ali/tingle-photo-field@1.0.3 
+* tingle-photo-field@1.0.3 
  * feat: add required tag
-* @ali/tingle-slide@1.0.8 
-* @ali/tingle-slot@1.0.9 
+* tingle-slide@1.0.8 
+* tingle-slot@1.0.9 
  * fix issue [#4](http://gitlab.alibaba-inc.com/tingle-ui/tingle-slot/issues/4)
-* @ali/tingle-toast@1.0.10 
+* tingle-toast@1.0.10 
  * feat: change loading
 
 ## 1.1.9
- * @ali/tingle-slot@1.0.9
+ * tingle-slot@1.0.9
    * bugfix
 
 ## 1.1.8
- * @ali/tingle-cascade-select-field
+ * tingle-cascade-select-field
    * 新增组件
 
 ## 1.1.7
- * @ali/tingle-dialog@1.0.19 
+ * tingle-dialog@1.0.19 
   * 修复国际化 bug
- * @ali/tingle-icon-source@1.0.12 
+ * tingle-icon-source@1.0.12 
   * 增加 toast 图标
- * @ali/tingle-tab@1.0.23 
+ * tingle-tab@1.0.23 
   * remove border-bottom in the brick mode
 
 ## 1.1.6
-* @ali/tingle-tab-bar@1.1.4
+* tingle-tab-bar@1.1.4
  * 调整选中态图片地址的传入方式为使用属性 activeIcon
  * 支持自定义 TabBar 和 TabBarItem 样式
-* @ali/tingle-search-bar@1.0.4
+* tingle-search-bar@1.0.4
  * 修复clear keyword未触发 onChange 的 bug
 
 ## 1.1.5
-* @ali/tingle-tab-bar@1.1.2
+* tingle-tab-bar@1.1.2
  * fix: touch scroll
-* @ali/tingle-dialog@1.0.18 
+* tingle-dialog@1.0.18 
  * 支持国际化
-* @ali/tingle-grid@1.0.4 
+* tingle-grid@1.0.4 
  * 代码优化
-* @ali/tingle-scroll-list@1.2.7
+* tingle-scroll-list@1.2.7
  * bugfix
  
 ## 1.1.4
-* @ali/tingle-scroll-list@1.2.2
+* tingle-scroll-list@1.2.2
  * Bugfix/reset position
-* @ali/tingle-search-bar@1.0.3
+* tingle-search-bar@1.0.3
  * fix: reset overflow after unmount
-* @ali/tingle-icon-source@1.0.11
+* tingle-icon-source@1.0.11
  * display none
  
 ## 1.1.3
-* @ali/tingle-scroll-list@1.2.1
+* tingle-scroll-list@1.2.1
  * fix default background image
  * fix rchild
-* @ali/tingle-tab@1.0.22 
+* tingle-tab@1.0.22 
  * fix title propType to `node`
  * style: formatting
  
 ## 1.1.2
-* @ali/tingle-rate@1.0.2 
+* tingle-rate@1.0.2 
  * gulpfile add plugin `add-module-exports`
-* @ali/tingle-scroll-list@1.1.5 
+* tingle-scroll-list@1.1.5 
  * fix rchild is undefined
  
 ## 1.1.1

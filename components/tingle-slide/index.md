@@ -13,22 +13,23 @@
   onMount={this.onMount}
   onSlideEnd={this.onSlideEnd}
   onSlideClick={this.onSlideClick}
+  nameList={['图片一','图片二','图片三','图片四','图片五']}
 >
-  <div className="t-image-slide-item" style={{backgroundImage: "1.jpg"}}>
+  <Slide.Item title="标题" className="t-image-slide-item" style={{backgroundImage: "1.jpg"}}>
     <span className="t-FCf t-OP0">随便写点东西</span>
-  </div>
-  <div className="t-image-slide-item" style={{backgroundImage: "1.jpg"}}>
+  </Slide.Item>
+  <Slide.Item className="t-image-slide-item" style={{backgroundImage: "1.jpg"}}>
+    <Slide.Item className="t-FCf t-OP0">随便写点东西</span>
+  </Slide.Item>
+  <Slide.Item className="t-image-slide-item" style={{backgroundImage: "1.jpg"}}>
     <span className="t-FCf t-OP0">随便写点东西</span>
-  </div>
-  <div className="t-image-slide-item" style={{backgroundImage: "1.jpg"}}>
+  </Slide.Item>
+  <Slide.Item className="t-image-slide-item" style={{backgroundImage: "1.jpg"}}>
     <span className="t-FCf t-OP0">随便写点东西</span>
-  </div>
-  <div className="t-image-slide-item" style={{backgroundImage: "1.jpg"}}>
-    <span className="t-FCf t-OP0">随便写点东西</span>
-  </div>
-  <div className="t-image-slide-item" style={{backgroundImage: "1.jpg"}}>
+  </Slide.Item>
+  <Slide.Item className="t-image-slide-item" style={{backgroundImage: "1.jpg"}}>
     <span className="t-FCf t-OP0">随便写点东西2</span>
-  </div>
+  </Slide.Item>
 </Slide>
 ```
 
@@ -168,6 +169,44 @@
     ...
 </Slide>
 ```
+
+### showTitle
+
+- 描述：是否展示轮播标题
+- 类型：`bool`
+- 默认：`false`
+- 必选：否
+
+示例：
+
+```javascript
+<Slide showTitle>
+    <Slide.Item title={'标题'}></Slide.Item>
+</Slide>
+```
+
+### autoSlideTime
+
+- 描述：切换动画的时长，接受一个参数`number`, 默认时长4000(4s)；
+- 类型：`number`
+- 默认：4000
+- 必选：否
+
+示例：
+
+```javascript
+<Slide autoSlideTime={4000}>
+    ...
+</Slide>
+```
+
+## Slide.Item props
+
+名称 | 类型 | 描述
+--- | --- | ---
+title | string | 标题
+style | object | 样式
+className | string | 类名
 
 ## Links
 

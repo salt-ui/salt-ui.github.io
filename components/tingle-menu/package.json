@@ -1,0 +1,117 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "@ali/tingle-menu@^0.1.0",
+        "scope": "@ali",
+        "escapedName": "@ali%2ftingle-menu",
+        "name": "@ali/tingle-menu",
+        "rawSpec": "^0.1.0",
+        "spec": ">=0.1.0 <0.2.0",
+        "type": "range"
+      },
+      "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui"
+    ]
+  ],
+  "_cnpm_publish_time": 1490165133086,
+  "_from": "@ali/tingle-menu@>=0.1.0 <0.2.0",
+  "_id": "@ali/tingle-menu@0.1.0",
+  "_inCache": true,
+  "_location": "/@ali/tingle-menu",
+  "_nodeVersion": "6.9.1",
+  "_npmUser": {
+    "name": "guanghong.wsj",
+    "email": "guanghong.wsj@alibaba-inc.com"
+  },
+  "_npmVersion": "2.15.11",
+  "_phantomChildren": {},
+  "_publish_on_cnpm": true,
+  "_requested": {
+    "raw": "@ali/tingle-menu@^0.1.0",
+    "scope": "@ali",
+    "escapedName": "@ali%2ftingle-menu",
+    "name": "@ali/tingle-menu",
+    "rawSpec": "^0.1.0",
+    "spec": ">=0.1.0 <0.2.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/@ali/tingle-ui"
+  ],
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-menu/download/@ali/tingle-menu-0.1.0.tgz",
+  "_shasum": "d44f8b98a2199c19f87b22dcb6b18e1bba86b6df",
+  "_shrinkwrap": null,
+  "_spec": "@ali/tingle-menu@^0.1.0",
+  "_where": "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui",
+  "author": {
+    "name": "wb-cq231719"
+  },
+  "dependencies": {
+    "@ali/tingle-context": "^1.0.0",
+    "@ali/tingle-icon": "^2.0.1",
+    "@ali/tingle-style": "^1.0.11",
+    "classnames": "^2.2.3",
+    "object-assign": "^4.1.1",
+    "rc-animate": "^2.3.3"
+  },
+  "description": "tingle-menu component for tingle.",
+  "devDependencies": {
+    "@ali/tingle-ui": "^1.0.0",
+    "babel-eslint": "^7.1.1",
+    "fastclick": "^1.0.6",
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8",
+    "salt-tools": "~0.1.0"
+  },
+  "dist": {
+    "shasum": "d44f8b98a2199c19f87b22dcb6b18e1bba86b6df",
+    "size": 8703,
+    "key": "@ali/tingle-menu/-/@ali/tingle-menu-0.1.0.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-menu/download/@ali/tingle-menu-0.1.0.tgz"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "gitHead": "c0fee0f18b3aebee90b173fda1cb8d0f2f461b39",
+  "keywords": [
+    "tingle-menu",
+    "Menu"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "maintainers": [
+    {
+      "name": "guanghong.wsj",
+      "email": "guanghong.wsj@alibaba-inc.com"
+    },
+    {
+      "name": "quanyun.mqy",
+      "email": "quanyun.mqy@alibaba-inc.com"
+    }
+  ],
+  "name": "@ali/tingle-menu",
+  "optionalDependencies": {},
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
+  },
+  "publish_time": 1490165133086,
+  "readme": "ERROR: No README data found!",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-menu"
+  },
+  "screenshots": "",
+  "scripts": {
+    "build": "salt-tools run build",
+    "dep": "salt-tools run dep",
+    "pub": "salt-tools run pub",
+    "start": "salt-tools run start",
+    "tnpm-dep": "salt-tools run tnpm-dep",
+    "tnpm-update": "salt-tools run tnpm-update",
+    "update": "salt-tools run update"
+  },
+  "version": "0.1.0"
+}

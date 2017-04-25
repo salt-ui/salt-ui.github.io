@@ -2,65 +2,67 @@
   "_args": [
     [
       {
-        "raw": "@ali/tingle-icon@^1.0.0",
+        "raw": "@ali/tingle-icon@^2.0.0",
         "scope": "@ali",
         "escapedName": "@ali%2ftingle-icon",
         "name": "@ali/tingle-icon",
-        "rawSpec": "^1.0.0",
-        "spec": ">=1.0.0 <2.0.0",
+        "rawSpec": "^2.0.0",
+        "spec": ">=2.0.0 <3.0.0",
         "type": "range"
       },
-      "/Users/qy/work/tingle/salt-ui.github.io"
+      "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
-  "_cnpm_publish_time": 1467266987619,
-  "_from": "@ali/tingle-icon@>=1.0.0 <2.0.0",
-  "_id": "@ali/tingle-icon@1.0.11",
+  "_cnpm_publish_time": 1489476405937,
+  "_from": "@ali/tingle-icon@>=2.0.0 <3.0.0",
+  "_id": "@ali/tingle-icon@2.0.2",
   "_inCache": true,
   "_location": "/@ali/tingle-icon",
-  "_nodeVersion": "4.2.4",
+  "_nodeVersion": "6.9.1",
   "_npmUser": {
-    "name": "alex.mm",
-    "email": "alex.mm@alibaba-inc.com"
+    "name": "quanyun.mqy",
+    "email": "quanyun.mqy@alibaba-inc.com"
   },
-  "_npmVersion": "3.10.2",
-  "_phantomChildren": {},
+  "_npmVersion": "3.10.9",
+  "_phantomChildren": {
+    "@ali/tingle-style": "1.0.23",
+    "classnames": "2.2.5"
+  },
   "_publish_on_cnpm": true,
   "_requested": {
-    "raw": "@ali/tingle-icon@^1.0.0",
+    "raw": "@ali/tingle-icon@^2.0.0",
     "scope": "@ali",
     "escapedName": "@ali%2ftingle-icon",
     "name": "@ali/tingle-icon",
-    "rawSpec": "^1.0.0",
-    "spec": ">=1.0.0 <2.0.0",
+    "rawSpec": "^2.0.0",
+    "spec": ">=2.0.0 <3.0.0",
     "type": "range"
   },
   "_requiredBy": [
-    "/",
     "/@ali/tingle-checkbox-field",
-    "/@ali/tingle-datetime-field",
     "/@ali/tingle-field",
-    "/@ali/tingle-grid/@ali/tingle-checkbox-field",
-    "/@ali/tingle-grid/@ali/tingle-tab-bar",
-    "/@ali/tingle-grid/@ali/tingle-ui",
+    "/@ali/tingle-infinite-scroll",
     "/@ali/tingle-list",
+    "/@ali/tingle-menu",
     "/@ali/tingle-note",
     "/@ali/tingle-photo-field",
+    "/@ali/tingle-picker-field",
     "/@ali/tingle-radio-field",
     "/@ali/tingle-rate",
+    "/@ali/tingle-refreshcontrol",
     "/@ali/tingle-scroll-list",
     "/@ali/tingle-search-bar",
-    "/@ali/tingle-select-field",
     "/@ali/tingle-tab-bar",
+    "/@ali/tingle-text-field/@ali/tingle-field",
+    "/@ali/tingle-textarea-field/@ali/tingle-field",
     "/@ali/tingle-toast",
-    "/@ali/tingle-ui",
-    "/@ali/tingle-ui/@ali/tingle-scroll-list"
+    "/@ali/tingle-ui"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-icon/download/@ali/tingle-icon-1.0.11.tgz",
-  "_shasum": "095b7cf8fe9861f510b489fdeb05fe8cc114839b",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-icon/download/@ali/tingle-icon-2.0.2.tgz",
+  "_shasum": "770f62b955f76acb6aaae92099a98936c916c872",
   "_shrinkwrap": null,
-  "_spec": "@ali/tingle-icon@^1.0.0",
-  "_where": "/Users/qy/work/tingle/salt-ui.github.io",
+  "_spec": "@ali/tingle-icon@^2.0.0",
+  "_where": "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui",
   "author": {
     "name": "fushan"
   },
@@ -72,46 +74,25 @@
   "description": "tingle-icon component for tingle.",
   "devDependencies": {
     "@ali/tingle-grid": "^1.0.2",
+    "@ali/tingle-svg2react-loader": "^1.0.0",
     "@ali/tingle-ui": "~1.0.0",
-    "babel": "~6.3.26",
-    "babel-core": "~6.4.0",
-    "babel-loader": "~6.2.1",
-    "babel-plugin-add-module-exports": "~0.1.2",
-    "babel-preset-es2015": "~6.3.13",
-    "babel-preset-react": "~6.3.13",
-    "babel-preset-stage-1": "~6.3.13",
-    "browser-sync": "~2.11.1",
-    "cross-spawn": "^2.0.0",
-    "fastclick": "~1.0.6",
-    "gulp": "~3.9.0",
-    "gulp-babel": "~6.1.1",
-    "gulp-concat": "~2.6.0",
-    "gulp-just-replace": "~1.0.2",
-    "gulp-pathmap": "~0.1.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sourcemaps": "~1.6.0",
-    "gulp-stylus": "~2.3.1",
-    "gulp-svgstore": "^6.0.0",
-    "gulp-uglify": "~1.5.1",
-    "gulp-unique-files": "~0.1.2",
-    "react": "~0.14.8",
-    "react-dom": "~0.14.8",
-    "svg2react-loader": "^1.0.2",
-    "through2": "~2.0.1",
-    "webpack": "~1.12.11"
+    "fastclick": "^1.0.6",
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8",
+    "salt-tools": "~0.1.0"
   },
   "dist": {
-    "shasum": "095b7cf8fe9861f510b489fdeb05fe8cc114839b",
-    "size": 13453,
-    "key": "@ali/tingle-icon/-/@ali/tingle-icon-1.0.11.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-icon/download/@ali/tingle-icon-1.0.11.tgz"
+    "shasum": "770f62b955f76acb6aaae92099a98936c916c872",
+    "size": 22913,
+    "key": "@ali/tingle-icon/-/@ali/tingle-icon-2.0.2.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-icon/download/@ali/tingle-icon-2.0.2.tgz"
   },
   "files": [
     "dist",
     "src",
     "README.md"
   ],
-  "gitHead": "d4dc314f1db82ac48db790cf646849020133307c",
+  "gitHead": "1fef67e0a1c4abdfdbb2d8dec9750f630834bb07",
   "keywords": [
     "tingle-icon",
     "Icon"
@@ -141,7 +122,7 @@
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1467266987619,
+  "publish_time": 1489476405937,
   "readme": "ERROR: No README data found!",
   "readmeFilename": "README.md",
   "repository": {
@@ -150,8 +131,13 @@
   },
   "screenshots": "",
   "scripts": {
-    "build": "gulp b",
-    "start": "gulp d"
+    "build": "salt-tools run icon-build",
+    "dep": "salt-tools run dep",
+    "pub": "salt-tools run icon-publish",
+    "start": "salt-tools run start",
+    "tnpm-dep": "salt-tools run tnpm-dep",
+    "tnpm-update": "salt-tools run tnpm-update",
+    "update": "salt-tools run update"
   },
-  "version": "1.0.11"
+  "version": "2.0.2"
 }

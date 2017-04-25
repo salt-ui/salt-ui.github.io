@@ -1,0 +1,111 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "@ali/tingle-table@^1.0.2",
+        "scope": "@ali",
+        "escapedName": "@ali%2ftingle-table",
+        "name": "@ali/tingle-table",
+        "rawSpec": "^1.0.2",
+        "spec": ">=1.0.2 <2.0.0",
+        "type": "range"
+      },
+      "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui"
+    ]
+  ],
+  "_cnpm_publish_time": 1491912736886,
+  "_from": "@ali/tingle-table@>=1.0.2 <2.0.0",
+  "_id": "@ali/tingle-table@1.0.5",
+  "_inCache": true,
+  "_location": "/@ali/tingle-table",
+  "_nodeVersion": "6.9.1",
+  "_npmUser": {
+    "name": "quanyun.mqy",
+    "email": "quanyun.mqy@alibaba-inc.com"
+  },
+  "_npmVersion": "3.10.9",
+  "_phantomChildren": {},
+  "_publish_on_cnpm": true,
+  "_requested": {
+    "raw": "@ali/tingle-table@^1.0.2",
+    "scope": "@ali",
+    "escapedName": "@ali%2ftingle-table",
+    "name": "@ali/tingle-table",
+    "rawSpec": "^1.0.2",
+    "spec": ">=1.0.2 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/@ali/tingle-ui"
+  ],
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-table/download/@ali/tingle-table-1.0.5.tgz",
+  "_shasum": "50f6b93c19694df177281dc748d6309302b97068",
+  "_shrinkwrap": null,
+  "_spec": "@ali/tingle-table@^1.0.2",
+  "_where": "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui",
+  "author": {
+    "name": "sujingjing"
+  },
+  "dependencies": {
+    "@ali/tingle-context": "^1.1.1",
+    "@ali/tingle-scroller": "^1.0.8",
+    "@ali/tingle-style": "^1.0.23",
+    "classnames": "~2.2.3",
+    "lodash": "^4.17.4"
+  },
+  "description": "tingle-table component for tingle.",
+  "devDependencies": {
+    "@ali/tingle-ui": "^1.0.0",
+    "fastclick": "^1.0.6",
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8",
+    "salt-tools": "~0.1.0"
+  },
+  "dist": {
+    "shasum": "50f6b93c19694df177281dc748d6309302b97068",
+    "size": 8300,
+    "key": "@ali/tingle-table/-/@ali/tingle-table-1.0.5.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-table/download/@ali/tingle-table-1.0.5.tgz"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "gitHead": "8c9a61944570214efad5825b110daf0bcc929986",
+  "keywords": [
+    "tingle-table",
+    "Table"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "maintainers": [
+    {
+      "name": "quanyun.mqy",
+      "email": "quanyun.mqy@alibaba-inc.com"
+    }
+  ],
+  "name": "@ali/tingle-table",
+  "optionalDependencies": {},
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
+  },
+  "publish_time": 1491912736886,
+  "readme": "ERROR: No README data found!",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-table"
+  },
+  "screenshots": "",
+  "scripts": {
+    "build": "salt-tools run build",
+    "dep": "salt-tools run dep",
+    "pub": "salt-tools run pub",
+    "start": "salt-tools run start",
+    "tnpm-dep": "salt-tools run tnpm-dep",
+    "tnpm-update": "salt-tools run tnpm-update",
+    "update": "salt-tools run update"
+  },
+  "version": "1.0.5"
+}

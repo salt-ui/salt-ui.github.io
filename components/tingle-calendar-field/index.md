@@ -2,7 +2,7 @@
 
 级联日期表单组件
 
-![](https://img.alicdn.com/tps/TB1me1UPFXXXXajXVXXXXXXXXXX-750-1334.png)
+<img src="https://img.alicdn.com/tps/TB1me1UPFXXXXajXVXXXXXXXXXX-750-1334.png" width="375">
 
 ## How to develop
 
@@ -24,9 +24,10 @@ npm run tnpm-update
 
 ## Props
 
-### 支持表单域的所有属性和方法，[参见这里](http://gitlab.alibaba-inc.com/tingle-ui/tingle-field#props)
-### 支持tingle-calendar的所有属性和方法，[参见这里](http://gitlab.alibaba-inc.com/tingle-ui/tingle-calendar#props)
-### 另外支持以下属性:
+- 支持表单域的所有属性和方法，[参见这里](http://gitlab.alibaba-inc.com/tingle-ui/tingle-field#props)
+- 支持tingle-calendar的所有属性和方法，[参见这里](http://gitlab.alibaba-inc.com/tingle-ui/tingle-calendar#props)
+
+- 另外支持以下属性:
 
 #### type
 描述：calendar类型
@@ -50,6 +51,18 @@ npm run tnpm-update
 描述：要显示的日期格式
 类型：`Boolean`
 默认：`false`
+必选：否
+
+#### showWeek
+描述：是否显示周几
+类型：`Boolean`
+默认：`true`
+必选：否
+
+#### showDateType
+描述：是否显示“全天”“上午”“下午”
+类型：`Boolean`
+默认：`true`
 必选：否
 
 ## APIs

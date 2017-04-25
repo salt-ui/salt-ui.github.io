@@ -10,12 +10,12 @@
         "spec": ">=1.0.0 <2.0.0",
         "type": "range"
       },
-      "/Users/qy/work/tingle/salt-ui.github.io"
+      "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
-  "_cnpm_publish_time": 1472733789890,
+  "_cnpm_publish_time": 1488966035602,
   "_from": "@ali/tingle-scroller@>=1.0.0 <2.0.0",
-  "_id": "@ali/tingle-scroller@1.0.7",
+  "_id": "@ali/tingle-scroller@1.0.8",
   "_inCache": true,
   "_location": "/@ali/tingle-scroller",
   "_nodeVersion": "4.2.4",
@@ -24,7 +24,10 @@
     "email": "alex.mm@alibaba-inc.com"
   },
   "_npmVersion": "3.10.2",
-  "_phantomChildren": {},
+  "_phantomChildren": {
+    "@ali/tingle-style": "1.0.23",
+    "classnames": "2.2.5"
+  },
   "_publish_on_cnpm": true,
   "_requested": {
     "raw": "@ali/tingle-scroller@^1.0.0",
@@ -36,20 +39,21 @@
     "type": "range"
   },
   "_requiredBy": [
-    "/",
     "/@ali/tingle-checkbox-field",
     "/@ali/tingle-crumb",
+    "/@ali/tingle-grid/@ali/tingle-scroll-list",
+    "/@ali/tingle-grid/@ali/tingle-slot",
     "/@ali/tingle-grid/@ali/tingle-ui",
     "/@ali/tingle-slot",
     "/@ali/tingle-tab",
-    "/@ali/tingle-ui",
-    "/@ali/tingle-ui/@ali/tingle-scroll-list"
+    "/@ali/tingle-table",
+    "/@ali/tingle-ui"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-scroller/download/@ali/tingle-scroller-1.0.7.tgz",
-  "_shasum": "2080a1c77827daf83b65e29941ba1503cd72e225",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-scroller/download/@ali/tingle-scroller-1.0.8.tgz",
+  "_shasum": "55a3f722b148f2f811dae06d052b2a52317e6514",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-scroller@^1.0.0",
-  "_where": "/Users/qy/work/tingle/salt-ui.github.io",
+  "_where": "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui",
   "author": {
     "name": "gbk"
   },
@@ -90,17 +94,17 @@
     "webpack": "~1.12.11"
   },
   "dist": {
-    "shasum": "2080a1c77827daf83b65e29941ba1503cd72e225",
-    "size": 73716,
-    "key": "@ali/tingle-scroller/-/@ali/tingle-scroller-1.0.7.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-scroller/download/@ali/tingle-scroller-1.0.7.tgz"
+    "shasum": "55a3f722b148f2f811dae06d052b2a52317e6514",
+    "size": 73882,
+    "key": "@ali/tingle-scroller/-/@ali/tingle-scroller-1.0.8.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-scroller/download/@ali/tingle-scroller-1.0.8.tgz"
   },
   "files": [
     "dist",
     "src",
     "README.md"
   ],
-  "gitHead": "471ab966f15d069b0371f9469f39fcfd0f4cf924",
+  "gitHead": "55d18791c191fa9c0cb2a5c18996d1d773a3652d",
   "keywords": [
     "tingle-scroller",
     "Scroller",
@@ -127,7 +131,7 @@
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1472733789890,
+  "publish_time": 1488966035602,
   "readme": "ERROR: No README data found!",
   "readmeFilename": "README.md",
   "repository": {
@@ -139,5 +143,5 @@
     "build": "gulp b",
     "start": "gulp d"
   },
-  "version": "1.0.7"
+  "version": "1.0.8"
 }

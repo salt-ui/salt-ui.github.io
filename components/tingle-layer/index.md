@@ -55,6 +55,13 @@ visible
 * 默认：false
 * 必填：否
 
+renderToBody
+
+* 描述：是否把节点插入到body
+* 类型：boolean
+* 默认：true
+* 必填：否
+
 ## APIs
  -暂无
  

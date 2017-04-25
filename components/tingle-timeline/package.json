@@ -1,0 +1,114 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "@ali/tingle-timeline@^1.0.3",
+        "scope": "@ali",
+        "escapedName": "@ali%2ftingle-timeline",
+        "name": "@ali/tingle-timeline",
+        "rawSpec": "^1.0.3",
+        "spec": ">=1.0.3 <2.0.0",
+        "type": "range"
+      },
+      "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui"
+    ]
+  ],
+  "_cnpm_publish_time": 1488522541948,
+  "_from": "@ali/tingle-timeline@>=1.0.3 <2.0.0",
+  "_id": "@ali/tingle-timeline@1.0.3",
+  "_inCache": true,
+  "_location": "/@ali/tingle-timeline",
+  "_nodeVersion": "6.9.1",
+  "_npmUser": {
+    "name": "quanyun.mqy",
+    "email": "quanyun.mqy@alibaba-inc.com"
+  },
+  "_npmVersion": "3.10.9",
+  "_phantomChildren": {
+    "@ali/tingle-style": "1.0.23",
+    "classnames": "2.2.5"
+  },
+  "_publish_on_cnpm": true,
+  "_requested": {
+    "raw": "@ali/tingle-timeline@^1.0.3",
+    "scope": "@ali",
+    "escapedName": "@ali%2ftingle-timeline",
+    "name": "@ali/tingle-timeline",
+    "rawSpec": "^1.0.3",
+    "spec": ">=1.0.3 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/@ali/tingle-ui"
+  ],
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-timeline/download/@ali/tingle-timeline-1.0.3.tgz",
+  "_shasum": "c6bcc3b73eb65f7fc0b006f5a32cb5bfb7800361",
+  "_shrinkwrap": null,
+  "_spec": "@ali/tingle-timeline@^1.0.3",
+  "_where": "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui",
+  "author": {
+    "name": "zhongsisi"
+  },
+  "dependencies": {
+    "@ali/tingle-context": "~1.0.0",
+    "@ali/tingle-style": "^1.0.11",
+    "classnames": "~2.2.3"
+  },
+  "description": "tingle-timeline component for tingle.",
+  "devDependencies": {
+    "@ali/tingle-icon": "^2.0.1",
+    "@ali/tingle-icon-source": "^1.0.6",
+    "@ali/tingle-ui": "~1.0.0",
+    "fastclick": "^1.0.6",
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8",
+    "salt-tools": "~0.1.0"
+  },
+  "dist": {
+    "shasum": "c6bcc3b73eb65f7fc0b006f5a32cb5bfb7800361",
+    "size": 4916,
+    "key": "@ali/tingle-timeline/-/@ali/tingle-timeline-1.0.3.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-timeline/download/@ali/tingle-timeline-1.0.3.tgz"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "gitHead": "0b5c6d616e92c7882799f446f477260fe20671e9",
+  "keywords": [
+    "tingle-timeline",
+    "Timeline"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "maintainers": [
+    {
+      "name": "quanyun.mqy",
+      "email": "quanyun.mqy@alibaba-inc.com"
+    }
+  ],
+  "name": "@ali/tingle-timeline",
+  "optionalDependencies": {},
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
+  },
+  "publish_time": 1488522541948,
+  "readme": "ERROR: No README data found!",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-timeline"
+  },
+  "screenshots": "",
+  "scripts": {
+    "build": "salt-tools run build",
+    "dep": "salt-tools run dep",
+    "pub": "salt-tools run pub",
+    "start": "salt-tools run start",
+    "tnpm-dep": "salt-tools run tnpm-dep",
+    "tnpm-update": "salt-tools run tnpm-update",
+    "update": "salt-tools run update"
+  },
+  "version": "1.0.3"
+}

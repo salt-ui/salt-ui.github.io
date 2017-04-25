@@ -10,12 +10,12 @@
         "spec": ">=1.0.0 <2.0.0",
         "type": "range"
       },
-      "/Users/qy/work/tingle/salt-ui.github.io"
+      "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
-  "_cnpm_publish_time": 1487594061359,
+  "_cnpm_publish_time": 1489480748065,
   "_from": "@ali/tingle-rate@>=1.0.0 <2.0.0",
-  "_id": "@ali/tingle-rate@1.0.3",
+  "_id": "@ali/tingle-rate@1.1.0",
   "_inCache": true,
   "_location": "/@ali/tingle-rate",
   "_nodeVersion": "6.9.1",
@@ -24,7 +24,10 @@
     "email": "guanghong.wsj@alibaba-inc.com"
   },
   "_npmVersion": "2.15.11",
-  "_phantomChildren": {},
+  "_phantomChildren": {
+    "@ali/tingle-style": "1.0.23",
+    "classnames": "2.2.5"
+  },
   "_publish_on_cnpm": true,
   "_requested": {
     "raw": "@ali/tingle-rate@^1.0.0",
@@ -36,20 +39,19 @@
     "type": "range"
   },
   "_requiredBy": [
-    "/",
     "/@ali/tingle-ui"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-rate/download/@ali/tingle-rate-1.0.3.tgz",
-  "_shasum": "fc6c75fc302c110e3ccb8f79a73c1776013bfae3",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-rate/download/@ali/tingle-rate-1.1.0.tgz",
+  "_shasum": "782a12b61aedfcd39b4260602f432e92f72ca170",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-rate@^1.0.0",
-  "_where": "/Users/qy/work/tingle/salt-ui.github.io",
+  "_where": "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui",
   "author": {
     "name": "quanyun.mqy"
   },
   "dependencies": {
     "@ali/tingle-context": "~1.0.0",
-    "@ali/tingle-icon": "^1.0.11",
+    "@ali/tingle-icon": "^2.0.0",
     "@ali/tingle-style": "^1.0.20",
     "classnames": "~2.2.3"
   },
@@ -63,17 +65,17 @@
     "salt-tools": "~0.1.0"
   },
   "dist": {
-    "shasum": "fc6c75fc302c110e3ccb8f79a73c1776013bfae3",
-    "size": 5062,
-    "key": "@ali/tingle-rate/-/@ali/tingle-rate-1.0.3.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-rate/download/@ali/tingle-rate-1.0.3.tgz"
+    "shasum": "782a12b61aedfcd39b4260602f432e92f72ca170",
+    "size": 5107,
+    "key": "@ali/tingle-rate/-/@ali/tingle-rate-1.1.0.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-rate/download/@ali/tingle-rate-1.1.0.tgz"
   },
   "files": [
     "dist",
     "src",
     "README.md"
   ],
-  "gitHead": "8f75db773c050bdc2481f051a9e95c716a3f5951",
+  "gitHead": "8f192b923860f76d5413bb1d8a8ce6d624bc131b",
   "keywords": [
     "tingle-rate",
     "Rate"
@@ -103,7 +105,7 @@
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1487594061359,
+  "publish_time": 1489480748065,
   "readme": "ERROR: No README data found!",
   "readmeFilename": "README.md",
   "repository": {
@@ -120,5 +122,5 @@
     "tnpm-update": "salt-tools run tnpm-update",
     "update": "salt-tools run update"
   },
-  "version": "1.0.3"
+  "version": "1.1.0"
 }

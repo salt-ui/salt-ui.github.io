@@ -10,18 +10,18 @@
         "spec": ">=1.0.7 <2.0.0",
         "type": "range"
       },
-      "/Users/qy/work/tingle/salt-ui.github.io"
+      "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
-  "_cnpm_publish_time": 1487676235675,
+  "_cnpm_publish_time": 1491873769361,
   "_from": "@ali/tingle-datetime-field@>=1.0.7 <2.0.0",
-  "_id": "@ali/tingle-datetime-field@1.0.8",
+  "_id": "@ali/tingle-datetime-field@1.1.0",
   "_inCache": true,
   "_location": "/@ali/tingle-datetime-field",
-  "_nodeVersion": "6.9.4",
+  "_nodeVersion": "6.9.1",
   "_npmUser": {
-    "name": "caoke.ck",
-    "email": "caoke.ck@alibaba-inc.com"
+    "name": "quanyun.mqy",
+    "email": "quanyun.mqy@alibaba-inc.com"
   },
   "_npmVersion": "3.10.9",
   "_phantomChildren": {},
@@ -36,49 +36,47 @@
     "type": "range"
   },
   "_requiredBy": [
-    "/",
     "/@ali/tingle-grid/@ali/tingle-ui",
     "/@ali/tingle-ui"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-datetime-field/download/@ali/tingle-datetime-field-1.0.8.tgz",
-  "_shasum": "1a1f2d768e91b2519dafd9de1a9e054ae22a1277",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-datetime-field/download/@ali/tingle-datetime-field-1.1.0.tgz",
+  "_shasum": "343aecd086a7e93f4d93f400cd42c16a3918e17a",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-datetime-field@^1.0.7",
-  "_where": "/Users/qy/work/tingle/salt-ui.github.io",
+  "_where": "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui",
   "author": {
     "name": "caoke.ck"
   },
   "dependencies": {
-    "@ali/tingle-context": "~1.0.0",
-    "@ali/tingle-field": "~1.0.1",
-    "@ali/tingle-icon": "~1.0.1",
-    "@ali/tingle-slot": "~1.0.0",
+    "@ali/tingle-context": "^1.0.0",
+    "@ali/tingle-field": "^1.1.0",
+    "@ali/tingle-slot": "^1.0.0",
     "classnames": "~2.2.3"
   },
   "description": "tingle-datetime-field component for tingle.",
   "devDependencies": {
-    "@ali/tingle-group": "~1.0.7",
+    "@ali/tingle-group": "^1.0.7",
     "@ali/tingle-layer": "^1.0.6",
     "@ali/tingle-mask": "^1.0.5",
-    "@ali/tingle-style": "~1.0.0",
-    "@ali/tingle-ui": "~1.0.0",
+    "@ali/tingle-style": "^1.0.0",
+    "@ali/tingle-ui": "^1.0.0",
     "fastclick": "^1.0.6",
     "react": "^0.14.8",
     "react-dom": "^0.14.8",
     "salt-tools": "~0.1.0"
   },
   "dist": {
-    "shasum": "1a1f2d768e91b2519dafd9de1a9e054ae22a1277",
-    "size": 6542,
-    "key": "@ali/tingle-datetime-field/-/@ali/tingle-datetime-field-1.0.8.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-datetime-field/download/@ali/tingle-datetime-field-1.0.8.tgz"
+    "shasum": "343aecd086a7e93f4d93f400cd42c16a3918e17a",
+    "size": 6979,
+    "key": "@ali/tingle-datetime-field/-/@ali/tingle-datetime-field-1.1.0.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-datetime-field/download/@ali/tingle-datetime-field-1.1.0.tgz"
   },
   "files": [
     "dist",
     "src",
     "README.md"
   ],
-  "gitHead": "e8a3e6f0fe6e3cadc5914601278054dee8db4eba",
+  "gitHead": "1f9ce969b3b5931eb74bb22fb692cc7e400ad36c",
   "keywords": [
     "tingle-datetime-field",
     "DatetimeField",
@@ -101,7 +99,7 @@
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1487676235675,
+  "publish_time": 1491873769361,
   "readme": "ERROR: No README data found!",
   "readmeFilename": "README.md",
   "repository": {
@@ -118,5 +116,5 @@
     "tnpm-update": "salt-tools run tnpm-update",
     "update": "salt-tools run update"
   },
-  "version": "1.0.8"
+  "version": "1.1.0"
 }

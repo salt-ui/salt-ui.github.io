@@ -10,7 +10,7 @@
         "spec": ">=1.0.0 <2.0.0",
         "type": "range"
       },
-      "/Users/qy/work/tingle/salt-ui.github.io"
+      "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
   "_cnpm_publish_time": 1476271469602,
@@ -36,21 +36,22 @@
     "type": "range"
   },
   "_requiredBy": [
-    "/",
     "/@ali/tingle-field",
+    "/@ali/tingle-grid/@ali/tingle-field",
+    "/@ali/tingle-grid/@ali/tingle-scroll-list",
     "/@ali/tingle-grid/@ali/tingle-ui",
     "/@ali/tingle-list",
-    "/@ali/tingle-note",
-    "/@ali/tingle-scroll-list",
-    "/@ali/tingle-search-bar",
-    "/@ali/tingle-ui",
-    "/@ali/tingle-ui/@ali/tingle-scroll-list"
+    "/@ali/tingle-radio-field/@ali/tingle-field",
+    "/@ali/tingle-switch-field/@ali/tingle-field",
+    "/@ali/tingle-text-field/@ali/tingle-field",
+    "/@ali/tingle-textarea-field/@ali/tingle-field",
+    "/@ali/tingle-ui"
   ],
   "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-icon-source/download/@ali/tingle-icon-source-1.0.13.tgz",
   "_shasum": "df6820868fac62be35b1a1f00794ddb5736ec4ec",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-icon-source@^1.0.0",
-  "_where": "/Users/qy/work/tingle/salt-ui.github.io",
+  "_where": "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui",
   "author": {
     "name": "fushan"
   },
