@@ -2,10 +2,10 @@
   "_args": [
     [
       {
-        "raw": "@ali/tingle-field@^1.0.0",
+        "raw": "@ali/tingle-card@^1.0.0",
         "scope": "@ali",
-        "escapedName": "@ali%2ftingle-field",
-        "name": "@ali/tingle-field",
+        "escapedName": "@ali%2ftingle-card",
+        "name": "@ali/tingle-card",
         "rawSpec": "^1.0.0",
         "spec": ">=1.0.0 <2.0.0",
         "type": "range"
@@ -13,11 +13,11 @@
       "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
-  "_cnpm_publish_time": 1492669153941,
-  "_from": "@ali/tingle-field@>=1.0.0 <2.0.0",
-  "_id": "@ali/tingle-field@1.2.0",
+  "_cnpm_publish_time": 1493297690486,
+  "_from": "@ali/tingle-card@>=1.0.0 <2.0.0",
+  "_id": "@ali/tingle-card@1.0.0",
   "_inCache": true,
-  "_location": "/@ali/tingle-field",
+  "_location": "/@ali/tingle-card",
   "_nodeVersion": "6.9.1",
   "_npmUser": {
     "name": "quanyun.mqy",
@@ -30,41 +30,31 @@
   },
   "_publish_on_cnpm": true,
   "_requested": {
-    "raw": "@ali/tingle-field@^1.0.0",
+    "raw": "@ali/tingle-card@^1.0.0",
     "scope": "@ali",
-    "escapedName": "@ali%2ftingle-field",
-    "name": "@ali/tingle-field",
+    "escapedName": "@ali%2ftingle-card",
+    "name": "@ali/tingle-card",
     "rawSpec": "^1.0.0",
     "spec": ">=1.0.0 <2.0.0",
     "type": "range"
   },
   "_requiredBy": [
-    "/@ali/tingle-calendar-field",
-    "/@ali/tingle-cascade-select-field",
-    "/@ali/tingle-checkbox-field",
-    "/@ali/tingle-city-select-field",
-    "/@ali/tingle-datetime-field",
-    "/@ali/tingle-number-picker-field",
-    "/@ali/tingle-picker-field",
-    "/@ali/tingle-select-field",
     "/@ali/tingle-ui"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-field/download/@ali/tingle-field-1.2.0.tgz",
-  "_shasum": "f9e84a5517c18a6a7c6c0a13d9de73f4222c5b75",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-card/download/@ali/tingle-card-1.0.0.tgz",
+  "_shasum": "2eb7c96b14a2019c80f049ca92e68220ca2427c0",
   "_shrinkwrap": null,
-  "_spec": "@ali/tingle-field@^1.0.0",
+  "_spec": "@ali/tingle-card@^1.0.0",
   "_where": "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui",
   "author": {
-    "name": "jiasong.js"
+    "name": "caiyongmin"
   },
   "dependencies": {
     "@ali/tingle-context": "~1.0.0",
-    "@ali/tingle-icon": "^2.0.0",
-    "@ali/tingle-icon-source": "~1.0.0",
-    "@ali/tingle-style": "~1.0.0",
+    "@ali/tingle-style": "^1.0.11",
     "classnames": "~2.2.3"
   },
-  "description": "tingle-field component for tingle.",
+  "description": "tingle-card component for tingle.",
   "devDependencies": {
     "@ali/tingle-ui": "^1.0.0",
     "fastclick": "^1.0.6",
@@ -73,49 +63,40 @@
     "salt-tools": "~0.1.0"
   },
   "dist": {
-    "shasum": "f9e84a5517c18a6a7c6c0a13d9de73f4222c5b75",
-    "size": 5726,
-    "key": "@ali/tingle-field/-/@ali/tingle-field-1.2.0.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-field/download/@ali/tingle-field-1.2.0.tgz"
+    "shasum": "2eb7c96b14a2019c80f049ca92e68220ca2427c0",
+    "size": 3546,
+    "key": "@ali/tingle-card/-/@ali/tingle-card-1.0.0.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-card/download/@ali/tingle-card-1.0.0.tgz"
   },
   "files": [
     "dist",
     "src",
     "README.md"
   ],
-  "gitHead": "983f536084520a5a80ba7826edb2063d1f3f7681",
+  "gitHead": "e89505ed98ab2372eceadd5699d6441fe5f1c87f",
   "keywords": [
-    "tingle-field",
-    "Field",
-    "tingle"
+    "tingle-card",
+    "Card"
   ],
   "license": "MIT",
   "main": "dist/index.js",
   "maintainers": [
     {
-      "name": "alex.mm",
-      "email": "alex.mm@alibaba-inc.com"
-    },
-    {
-      "name": "jiasong.js",
-      "email": "jiasong.js@alibaba-inc.com"
-    },
-    {
       "name": "quanyun.mqy",
       "email": "quanyun.mqy@alibaba-inc.com"
     }
   ],
-  "name": "@ali/tingle-field",
+  "name": "@ali/tingle-card",
   "optionalDependencies": {},
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1492669153941,
+  "publish_time": 1493297690486,
   "readme": "ERROR: No README data found!",
   "readmeFilename": "README.md",
   "repository": {
     "type": "git",
-    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-field"
+    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-card"
   },
   "screenshots": "",
   "scripts": {
@@ -127,5 +108,5 @@
     "tnpm-update": "salt-tools run tnpm-update",
     "update": "salt-tools run update"
   },
-  "version": "1.2.0"
+  "version": "1.0.0"
 }

@@ -13,9 +13,9 @@
       "/home/caoke/git/salt-ui/salt-ui.github.io"
     ]
   ],
-  "_cnpm_publish_time": 1492767092840,
+  "_cnpm_publish_time": 1493306919568,
   "_from": "@ali/tingle-ui@latest",
-  "_id": "@ali/tingle-ui@2.1.5",
+  "_id": "@ali/tingle-ui@2.1.6",
   "_inCache": true,
   "_location": "/@ali/tingle-ui",
   "_nodeVersion": "6.9.1",
@@ -38,8 +38,8 @@
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-ui/download/@ali/tingle-ui-2.1.5.tgz",
-  "_shasum": "9758e7eee4652755268bf933e397beac2f1fbd3e",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-ui/download/@ali/tingle-ui-2.1.6.tgz",
+  "_shasum": "a06b27069105848f13f529302c44d3617b111b08",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-ui@latest",
   "_where": "/home/caoke/git/salt-ui/salt-ui.github.io",
@@ -52,10 +52,12 @@
   "dependencies": {
     "@ali/tingle-action-sheet": "^0.1.0",
     "@ali/tingle-avatar": "^1.0.0",
+    "@ali/tingle-badge": "^1.0.0",
     "@ali/tingle-box": "^1.0.0",
     "@ali/tingle-button": "^1.0.0",
     "@ali/tingle-calendar": "^2.0.0",
     "@ali/tingle-calendar-field": "^1.0.2",
+    "@ali/tingle-card": "^1.0.0",
     "@ali/tingle-cascade-select-field": "^1.0.12",
     "@ali/tingle-checkbox-field": "^1.0.0",
     "@ali/tingle-city-select-field": "^1.0.2",
@@ -76,6 +78,8 @@
     "@ali/tingle-menu": "^0.1.0",
     "@ali/tingle-nav-bar": "^1.0.0",
     "@ali/tingle-note": "^1.0.0",
+    "@ali/tingle-number-picker": "^1.0.0",
+    "@ali/tingle-number-picker-field": "^1.0.0",
     "@ali/tingle-photo-field": "^1.0.1",
     "@ali/tingle-picker-field": "^1.0.0",
     "@ali/tingle-popup": "^0.1.2",
@@ -138,16 +142,16 @@
     "webpack": "~1.12.11"
   },
   "dist": {
-    "shasum": "9758e7eee4652755268bf933e397beac2f1fbd3e",
-    "size": 2677660,
-    "key": "@ali/tingle-ui/-/@ali/tingle-ui-2.1.5.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-ui/download/@ali/tingle-ui-2.1.5.tgz"
+    "shasum": "a06b27069105848f13f529302c44d3617b111b08",
+    "size": 2936669,
+    "key": "@ali/tingle-ui/-/@ali/tingle-ui-2.1.6.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-ui/download/@ali/tingle-ui-2.1.6.tgz"
   },
   "files": [
     "dist",
     "src"
   ],
-  "gitHead": "9e85da05141e54fadc662879fda092682e3c4977",
+  "gitHead": "dab01a30ff265044918f34c7cd7d0dc62bc13027",
   "keywords": [
     "tingle-ui",
     "style"
@@ -177,7 +181,7 @@
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1492767092840,
+  "publish_time": 1493306919568,
   "readme": "ERROR: No README data found!",
   "readmeFilename": "README.md",
   "repository": {
@@ -189,5 +193,5 @@
     "pub": "gulp p",
     "start": "gulp d"
   },
-  "version": "2.1.5"
+  "version": "2.1.6"
 }

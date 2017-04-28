@@ -1,3 +1,17 @@
+## 2.1.6 / 2017-4-27
+* @ali/tingle-picker-field
+	* add fetchDataOnOpen prop，default value is `true`
+* @ali/tingle-badge
+	* new component
+* @ali/tingle-card
+	* new component
+* @ali/tingle-number-picker
+	* new component
+* @ali/tingle-number-picker-field
+	* new component
+* @ali/tingle-scroll-list
+	* 添加内置数据源
+
 ## 2.1.5 / 2017-4-21
 * tingle-popup
 	* 新增组件
@@ -5,38 +19,38 @@
 	* 新增组件
 
 ## 2.1.4 / 2017-4-21
-* tingle-picker-field@1.0.1
+* tingle-picker-field
 	* bugfix
-* tingle-scroll-list@2.0.1
+* tingle-scroll-list
 	* fix: 修正className。打salt大包后，它会覆盖tingle-scroll-view的样式
 
 ## 2.1.3 / 2017-4-21
 * tingle-picker-field
 	* 新增组件
-* tingle-calendar-field@1.0.8
+* tingle-calendar-field
 	* 传递 readOnly 到field
-* tingle-field@1.2.0
+* tingle-field
 	* 支持extra：放一些额外的元素，比如徽标等
 
 ## 2.1.2 / 2017-4-19
-* tingle-field@1.1.2
+* tingle-field
 	* readOnly状态下不显示tip
-* tingle-slide@1.2.0 
+* tingle-slide
 	* 发布正式版
-* tingle-gallery@1.2.0
+* tingle-gallery
 	* 发布正式版
 
 ## 2.1.1 / 2017-4-11
-* tingle-calendar@2.1.0
+* tingle-calendar
 	* `fix`: 在iOS上某些场景下，会导致点击“取消”不消失，在样式上进行了兼容
-* tingle-table@1.0.5
+* tingle-table
 	* `fix`: 滚动条层级太高 和其他组件一同使用会有影响
 	* `fix`: 同时使用两个表格数据不一样时，高度不能自适应（原来用的id来选择元素，换成refs来选择）
-* tingle-checkbox-field@1.1.12
+* tingle-checkbox-field
 	* fix: slot模式下，修正readOnly状态的颜色
-* tingle-datetime-field@1.1.0
+* tingle-datetime-field
 	* `feat`: 对tingle组件的依赖策略由`~`改为`^`
-* tingle-cascade-select-field@1.1.0
+* tingle-cascade-select-field
 	* `feat`: 对tingle组件的依赖策略由`~`改为`^`
 
 ## 2.1.0 / 2017-4-9
