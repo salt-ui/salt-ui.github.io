@@ -13,9 +13,9 @@
       "/home/caoke/git/salt-ui/salt-ui.github.io"
     ]
   ],
-  "_cnpm_publish_time": 1493306919568,
+  "_cnpm_publish_time": 1493789607713,
   "_from": "@ali/tingle-ui@latest",
-  "_id": "@ali/tingle-ui@2.1.6",
+  "_id": "@ali/tingle-ui@2.1.7",
   "_inCache": true,
   "_location": "/@ali/tingle-ui",
   "_nodeVersion": "6.9.1",
@@ -38,8 +38,8 @@
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-ui/download/@ali/tingle-ui-2.1.6.tgz",
-  "_shasum": "a06b27069105848f13f529302c44d3617b111b08",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-ui/download/@ali/tingle-ui-2.1.7.tgz",
+  "_shasum": "02e7e3ad5d5c3854c50427cc0e4040ea0786a01f",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-ui@latest",
   "_where": "/home/caoke/git/salt-ui/salt-ui.github.io",
@@ -72,6 +72,7 @@
     "@ali/tingle-icon": "^2.0.0",
     "@ali/tingle-icon-source": "^1.0.0",
     "@ali/tingle-image-viewer": "^0.1.3",
+    "@ali/tingle-infinite-scroll": "^1.0.3",
     "@ali/tingle-layer": "^1.0.0",
     "@ali/tingle-list": "^1.0.0",
     "@ali/tingle-mask": "^1.0.0",
@@ -86,6 +87,7 @@
     "@ali/tingle-progress": "^1.0.0",
     "@ali/tingle-radio-field": "^1.0.0",
     "@ali/tingle-rate": "^1.0.0",
+    "@ali/tingle-refreshcontrol": "^1.0.1",
     "@ali/tingle-scroll-list": "^2.0.0",
     "@ali/tingle-scroll-view": "^1.0.2",
     "@ali/tingle-scroller": "^1.0.0",
@@ -142,16 +144,16 @@
     "webpack": "~1.12.11"
   },
   "dist": {
-    "shasum": "a06b27069105848f13f529302c44d3617b111b08",
-    "size": 2936669,
-    "key": "@ali/tingle-ui/-/@ali/tingle-ui-2.1.6.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-ui/download/@ali/tingle-ui-2.1.6.tgz"
+    "shasum": "02e7e3ad5d5c3854c50427cc0e4040ea0786a01f",
+    "size": 2937863,
+    "key": "@ali/tingle-ui/-/@ali/tingle-ui-2.1.7.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-ui/download/@ali/tingle-ui-2.1.7.tgz"
   },
   "files": [
     "dist",
     "src"
   ],
-  "gitHead": "dab01a30ff265044918f34c7cd7d0dc62bc13027",
+  "gitHead": "599baebca93ea9f1f3ce7db6d149e89e47c789c4",
   "keywords": [
     "tingle-ui",
     "style"
@@ -181,7 +183,7 @@
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1493306919568,
+  "publish_time": 1493789607713,
   "readme": "ERROR: No README data found!",
   "readmeFilename": "README.md",
   "repository": {
@@ -193,5 +195,5 @@
     "pub": "gulp p",
     "start": "gulp d"
   },
-  "version": "2.1.6"
+  "version": "2.1.7"
 }

@@ -10,7 +10,7 @@
         "spec": ">=1.0.1 <2.0.0",
         "type": "range"
       },
-      "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-scroll-view"
+      "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
   "_cnpm_publish_time": 1489492943023,
@@ -36,13 +36,14 @@
     "type": "range"
   },
   "_requiredBy": [
-    "/@ali/tingle-scroll-view"
+    "/@ali/tingle-scroll-view",
+    "/@ali/tingle-ui"
   ],
   "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-refreshcontrol/download/@ali/tingle-refreshcontrol-1.0.1.tgz",
   "_shasum": "03338273ea95d59dae0f605590b0d09709d3fef6",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-refreshcontrol@^1.0.1",
-  "_where": "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-scroll-view",
+  "_where": "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui",
   "author": {
     "name": "xiaohe.wp"
   },
@@ -79,6 +80,10 @@
   "license": "MIT",
   "main": "dist/index.js",
   "maintainers": [
+    {
+      "name": "quanyun.mqy",
+      "email": "quanyun.mqy@alibaba-inc.com"
+    },
     {
       "name": "xiaohe.wp",
       "email": "xiaohe.wp@alibaba-inc.com"

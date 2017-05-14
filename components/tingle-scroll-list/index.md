@@ -13,7 +13,7 @@ tnpm install @ali/tingle-scroll-list --save
 
 ## note
 
-- ~~tingle-scroll-list 组件所在的容器必须要限定高度~~, 2.x中已经不需要了
+- tingle-scroll-list 组件所在的容器必须要限定高度
 - 传给 tingle-scroll-list 的子组件, 只有最后一个会用后端返回的数据循环渲染, 其他子组件正常渲染, 详见 Demo
 - 如果要使用内置数据源(数据加载在组件内部完成), 需要给 tingle-scroll-list 传url, 这时自定义数据源相关的属性不需要传, 相反不需要传内置数据源相关属性
 
@@ -182,7 +182,6 @@ class Demo extends React.Component {
 |loadDataTip|optional|string|'释放加载数据'|释放加载数据的提示文案|
 |loadingTip|optional|string|'加载中...'|数据加载中的提示文案|
 |noMoreDataTip|optional|string|'没有更多了'|没有更多数据的提示文案|
-|hasError|required|bool|false|加载数据时是否出错|
 |errorTip|optional|string|'获取数据失败'|数据加载出错的提示文案|
 |noDataImage|optional|string|'https://img.alicdn.com/tps/TB1K6mHNpXXXXXiXpXXXXXXXXXX-1000-1000.svg'|没有数据的背景图|
 |noDataTip|optional|string|'暂无数据'|没有数据的提示文案|
@@ -199,6 +198,7 @@ class Demo extends React.Component {
 |onRefresh|required|func|null|下拉刷新回调|
 |onLoad|required|func|null|触底刷新的触发方法|
 |noMore|optional|bool|false|没有更多数据标志位|
+|hasError|required|bool|false|加载数据时是否出错|
 
 ### 内置数据源相关属性
 
@@ -212,7 +212,15 @@ class Demo extends React.Component {
 |currentPageKey|optional|string|'currentPage'|分页参数的key, 当后端的分页参数不叫currentPage时用到|
 
 
+## Item.Props
 
+| 配置项 | 类型 | 必填 | 默认值 | 功能/备注 |
+|---|---|---|---|---|
+|img|string|optional| - | 头像或图片 |
+|title|string|optional| - | 标题 |
+|description|string|optional| -| 描述 |
+|extra|React Element|optional| - | 右侧自定义区域 |
+|desMaxLine|number|optional| 2 | 描述占据几行 |
 
 
 

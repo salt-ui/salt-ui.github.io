@@ -13,9 +13,9 @@
       "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
-  "_cnpm_publish_time": 1490324512708,
+  "_cnpm_publish_time": 1493723307666,
   "_from": "@ali/tingle-city-select-field@>=1.0.2 <2.0.0",
-  "_id": "@ali/tingle-city-select-field@1.0.8",
+  "_id": "@ali/tingle-city-select-field@1.0.9",
   "_inCache": true,
   "_location": "/@ali/tingle-city-select-field",
   "_nodeVersion": "7.4.0",
@@ -23,7 +23,7 @@
     "name": "qingnan.yqn",
     "email": "qingnan.yqn@alibaba-inc.com"
   },
-  "_npmVersion": "3.10.9",
+  "_npmVersion": "3.10.10",
   "_phantomChildren": {
     "@ali/tingle-style": "1.0.23",
     "classnames": "2.2.5"
@@ -41,8 +41,8 @@
   "_requiredBy": [
     "/@ali/tingle-ui"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-city-select-field/download/@ali/tingle-city-select-field-1.0.8.tgz",
-  "_shasum": "b9b9dc5f33fef782a74b6d2d7a20b51fd6eb894b",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-city-select-field/download/@ali/tingle-city-select-field-1.0.9.tgz",
+  "_shasum": "7875d80137d47e66e5aacb2ace7795284ad77c1f",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-city-select-field@^1.0.2",
   "_where": "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui",
@@ -67,17 +67,17 @@
     "salt-tools": "~0.1.0"
   },
   "dist": {
-    "shasum": "b9b9dc5f33fef782a74b6d2d7a20b51fd6eb894b",
-    "size": 46466,
-    "key": "@ali/tingle-city-select-field/-/@ali/tingle-city-select-field-1.0.8.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-city-select-field/download/@ali/tingle-city-select-field-1.0.8.tgz"
+    "shasum": "7875d80137d47e66e5aacb2ace7795284ad77c1f",
+    "size": 11288,
+    "key": "@ali/tingle-city-select-field/-/@ali/tingle-city-select-field-1.0.9.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-city-select-field/download/@ali/tingle-city-select-field-1.0.9.tgz"
   },
   "files": [
     "dist",
     "src",
     "README.md"
   ],
-  "gitHead": "229a57e12197ea99034c3daee6d6943c48537228",
+  "gitHead": "a6bf1a72051afea97fdeec2a1bcd80d3769ce9b2",
   "keywords": [
     "tingle-city-select-field",
     "CitySelectField"
@@ -99,7 +99,7 @@
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1490324512708,
+  "publish_time": 1493723307666,
   "readme": "ERROR: No README data found!",
   "readmeFilename": "README.md",
   "repository": {
@@ -116,5 +116,5 @@
     "tnpm-update": "salt-tools run tnpm-update",
     "update": "salt-tools run update"
   },
-  "version": "1.0.8"
+  "version": "1.0.9"
 }

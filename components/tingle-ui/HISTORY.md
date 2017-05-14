@@ -1,15 +1,21 @@
+## 2.1.7 / 2017-5-3
+* tingle-refreshcontrol
+	* new component
+* tingle-infinite-scroll
+	* new component
+
 ## 2.1.6 / 2017-4-27
-* @ali/tingle-picker-field
+* tingle-picker-field
 	* add fetchDataOnOpen prop，default value is `true`
-* @ali/tingle-badge
+* tingle-badge
 	* new component
-* @ali/tingle-card
+* tingle-card
 	* new component
-* @ali/tingle-number-picker
+* tingle-number-picker
 	* new component
-* @ali/tingle-number-picker-field
+* tingle-number-picker-field
 	* new component
-* @ali/tingle-scroll-list
+* tingle-scroll-list
 	* 添加内置数据源
 
 ## 2.1.5 / 2017-4-21
