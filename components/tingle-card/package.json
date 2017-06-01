@@ -1,0 +1,112 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "@ali/tingle-card@^1.0.0",
+        "scope": "@ali",
+        "escapedName": "@ali%2ftingle-card",
+        "name": "@ali/tingle-card",
+        "rawSpec": "^1.0.0",
+        "spec": ">=1.0.0 <2.0.0",
+        "type": "range"
+      },
+      "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui"
+    ]
+  ],
+  "_cnpm_publish_time": 1493297690486,
+  "_from": "@ali/tingle-card@>=1.0.0 <2.0.0",
+  "_id": "@ali/tingle-card@1.0.0",
+  "_inCache": true,
+  "_location": "/@ali/tingle-card",
+  "_nodeVersion": "6.9.1",
+  "_npmUser": {
+    "name": "quanyun.mqy",
+    "email": "quanyun.mqy@alibaba-inc.com"
+  },
+  "_npmVersion": "3.10.9",
+  "_phantomChildren": {
+    "@ali/tingle-style": "1.0.23",
+    "classnames": "2.2.5"
+  },
+  "_publish_on_cnpm": true,
+  "_requested": {
+    "raw": "@ali/tingle-card@^1.0.0",
+    "scope": "@ali",
+    "escapedName": "@ali%2ftingle-card",
+    "name": "@ali/tingle-card",
+    "rawSpec": "^1.0.0",
+    "spec": ">=1.0.0 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/@ali/tingle-ui"
+  ],
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-card/download/@ali/tingle-card-1.0.0.tgz",
+  "_shasum": "2eb7c96b14a2019c80f049ca92e68220ca2427c0",
+  "_shrinkwrap": null,
+  "_spec": "@ali/tingle-card@^1.0.0",
+  "_where": "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui",
+  "author": {
+    "name": "caiyongmin"
+  },
+  "dependencies": {
+    "@ali/tingle-context": "~1.0.0",
+    "@ali/tingle-style": "^1.0.11",
+    "classnames": "~2.2.3"
+  },
+  "description": "tingle-card component for tingle.",
+  "devDependencies": {
+    "@ali/tingle-ui": "^1.0.0",
+    "fastclick": "^1.0.6",
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8",
+    "salt-tools": "~0.1.0"
+  },
+  "dist": {
+    "shasum": "2eb7c96b14a2019c80f049ca92e68220ca2427c0",
+    "size": 3546,
+    "key": "@ali/tingle-card/-/@ali/tingle-card-1.0.0.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-card/download/@ali/tingle-card-1.0.0.tgz"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "gitHead": "e89505ed98ab2372eceadd5699d6441fe5f1c87f",
+  "keywords": [
+    "tingle-card",
+    "Card"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "maintainers": [
+    {
+      "name": "quanyun.mqy",
+      "email": "quanyun.mqy@alibaba-inc.com"
+    }
+  ],
+  "name": "@ali/tingle-card",
+  "optionalDependencies": {},
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
+  },
+  "publish_time": 1493297690486,
+  "readme": "ERROR: No README data found!",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-card"
+  },
+  "screenshots": "",
+  "scripts": {
+    "build": "salt-tools run build",
+    "dep": "salt-tools run dep",
+    "pub": "salt-tools run pub",
+    "start": "salt-tools run start",
+    "tnpm-dep": "salt-tools run tnpm-dep",
+    "tnpm-update": "salt-tools run tnpm-update",
+    "update": "salt-tools run update"
+  },
+  "version": "1.0.0"
+}

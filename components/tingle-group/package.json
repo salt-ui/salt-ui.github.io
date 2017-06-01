@@ -43,6 +43,7 @@
     "/@ali/tingle-grid/@ali/tingle-checkbox-field",
     "/@ali/tingle-grid/@ali/tingle-ui",
     "/@ali/tingle-list",
+    "/@ali/tingle-number-picker-field",
     "/@ali/tingle-radio-field",
     "/@ali/tingle-ui"
   ],

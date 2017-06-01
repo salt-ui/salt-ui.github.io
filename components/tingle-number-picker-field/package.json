@@ -1,0 +1,112 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "@ali/tingle-number-picker-field@^1.0.0",
+        "scope": "@ali",
+        "escapedName": "@ali%2ftingle-number-picker-field",
+        "name": "@ali/tingle-number-picker-field",
+        "rawSpec": "^1.0.0",
+        "spec": ">=1.0.0 <2.0.0",
+        "type": "range"
+      },
+      "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui"
+    ]
+  ],
+  "_cnpm_publish_time": 1493299451555,
+  "_from": "@ali/tingle-number-picker-field@>=1.0.0 <2.0.0",
+  "_id": "@ali/tingle-number-picker-field@1.0.0",
+  "_inCache": true,
+  "_location": "/@ali/tingle-number-picker-field",
+  "_nodeVersion": "6.9.1",
+  "_npmUser": {
+    "name": "quanyun.mqy",
+    "email": "quanyun.mqy@alibaba-inc.com"
+  },
+  "_npmVersion": "3.10.9",
+  "_phantomChildren": {},
+  "_publish_on_cnpm": true,
+  "_requested": {
+    "raw": "@ali/tingle-number-picker-field@^1.0.0",
+    "scope": "@ali",
+    "escapedName": "@ali%2ftingle-number-picker-field",
+    "name": "@ali/tingle-number-picker-field",
+    "rawSpec": "^1.0.0",
+    "spec": ">=1.0.0 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/@ali/tingle-ui"
+  ],
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-number-picker-field/download/@ali/tingle-number-picker-field-1.0.0.tgz",
+  "_shasum": "e713e4fc9d6c81266dd34e714e2796ea35de90e2",
+  "_shrinkwrap": null,
+  "_spec": "@ali/tingle-number-picker-field@^1.0.0",
+  "_where": "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui",
+  "author": {
+    "name": "sujingjing"
+  },
+  "dependencies": {
+    "@ali/tingle-context": "^1.0.0",
+    "@ali/tingle-field": "^1.1.1",
+    "@ali/tingle-group": "^1.0.9",
+    "@ali/tingle-number-picker": "^1.0.0",
+    "@ali/tingle-style": "^1.0.11",
+    "classnames": "^2.2.3"
+  },
+  "description": "tingle-number-picker-field component for tingle.",
+  "devDependencies": {
+    "@ali/tingle-ui": "^1.0.0",
+    "fastclick": "^1.0.6",
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8",
+    "salt-tools": "~0.1.0"
+  },
+  "dist": {
+    "shasum": "e713e4fc9d6c81266dd34e714e2796ea35de90e2",
+    "size": 4207,
+    "key": "@ali/tingle-number-picker-field/-/@ali/tingle-number-picker-field-1.0.0.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-number-picker-field/download/@ali/tingle-number-picker-field-1.0.0.tgz"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "gitHead": "ac69ff294289504a3c713b9c19a82fb9851010c8",
+  "keywords": [
+    "tingle-number-picker-field",
+    "NumberPickerField"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "maintainers": [
+    {
+      "name": "quanyun.mqy",
+      "email": "quanyun.mqy@alibaba-inc.com"
+    }
+  ],
+  "name": "@ali/tingle-number-picker-field",
+  "optionalDependencies": {},
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
+  },
+  "publish_time": 1493299451555,
+  "readme": "ERROR: No README data found!",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-number-picker-field"
+  },
+  "screenshots": "",
+  "scripts": {
+    "build": "salt-tools run build",
+    "dep": "salt-tools run dep",
+    "pub": "salt-tools run pub",
+    "start": "salt-tools run start",
+    "tnpm-dep": "salt-tools run tnpm-dep",
+    "tnpm-update": "salt-tools run tnpm-update",
+    "update": "salt-tools run update"
+  },
+  "version": "1.0.0"
+}

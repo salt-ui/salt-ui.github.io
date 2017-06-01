@@ -37,6 +37,7 @@
   },
   "_requiredBy": [
     "/@ali/tingle-action-sheet",
+    "/@ali/tingle-badge",
     "/@ali/tingle-calendar",
     "/@ali/tingle-calendar-field",
     "/@ali/tingle-cascade-select-field",
@@ -47,6 +48,8 @@
     "/@ali/tingle-infinite-scroll",
     "/@ali/tingle-menu",
     "/@ali/tingle-note",
+    "/@ali/tingle-number-picker",
+    "/@ali/tingle-number-picker-field",
     "/@ali/tingle-photo-field",
     "/@ali/tingle-picker-field",
     "/@ali/tingle-popup",
