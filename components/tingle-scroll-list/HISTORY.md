@@ -1,16 +1,6 @@
-2.2.0 / 2017-05-11
-===============
-* `feat` 支持通过回调传递 Item
-* `feat` 新增子组件 Item，用于通用列表模板。
-
-2.1.0 / 2017-04-27
-================
-* `feat` add built-in dataSource 
-
 2.0.1 / 2017-4-22
 =================
-* `fix` 修正 className。打 salt 大包后，它会覆盖 tingle-scroll-view 的样式
-* `fix` className 同名覆盖的问题
+* fix: 修正className。打salt大包后，它会覆盖tingle-scroll-view的样式
 
 2.0.0 / 2017-03-22
 =================

@@ -36,8 +36,7 @@
     "type": "range"
   },
   "_requiredBy": [
-    "/@ali/tingle-scroll-view",
-    "/@ali/tingle-ui"
+    "/@ali/tingle-scroll-view"
   ],
   "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-refreshcontrol/download/@ali/tingle-refreshcontrol-1.0.1.tgz",
   "_shasum": "03338273ea95d59dae0f605590b0d09709d3fef6",
@@ -80,10 +79,6 @@
   "license": "MIT",
   "main": "dist/index.js",
   "maintainers": [
-    {
-      "name": "quanyun.mqy",
-      "email": "quanyun.mqy@alibaba-inc.com"
-    },
     {
       "name": "xiaohe.wp",
       "email": "xiaohe.wp@alibaba-inc.com"
