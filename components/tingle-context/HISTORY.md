@@ -4,6 +4,10 @@
 
 ## updates
 
+#### v1.1.1
+
+* 改变了 `supportHairline` 的识别逻辑
+
 #### v1.1.0
 
 * 升级脚手架yo @ali/tingle:upgrade

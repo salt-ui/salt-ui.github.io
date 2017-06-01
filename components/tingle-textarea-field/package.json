@@ -10,7 +10,7 @@
         "spec": ">=1.0.0 <2.0.0",
         "type": "range"
       },
-      "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui"
+      "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
   "_cnpm_publish_time": 1488098881254,
@@ -48,7 +48,7 @@
   "_shasum": "c0097418cbc717f2904537eea4c6117d3f39203c",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-textarea-field@^1.0.0",
-  "_where": "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui",
+  "_where": "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui",
   "author": {
     "name": "zhangshun@alipay.com"
   },

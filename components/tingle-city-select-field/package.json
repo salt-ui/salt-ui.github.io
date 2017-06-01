@@ -10,7 +10,7 @@
         "spec": ">=1.0.2 <2.0.0",
         "type": "range"
       },
-      "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui"
+      "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
   "_cnpm_publish_time": 1490324512708,
@@ -45,7 +45,7 @@
   "_shasum": "b9b9dc5f33fef782a74b6d2d7a20b51fd6eb894b",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-city-select-field@^1.0.2",
-  "_where": "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui",
+  "_where": "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui",
   "author": {
     "name": "qingnan.yqn"
   },

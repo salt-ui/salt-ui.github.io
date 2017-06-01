@@ -10,7 +10,7 @@
         "spec": ">=0.1.2 <0.2.0",
         "type": "range"
       },
-      "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui"
+      "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
   "_cnpm_publish_time": 1488976778775,
@@ -44,7 +44,7 @@
   "_shasum": "e551e2f432fe96b19d1eac6f853f1780495e287c",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-popup@^0.1.2",
-  "_where": "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui",
+  "_where": "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui",
   "author": {
     "name": "guanghong.wsj"
   },

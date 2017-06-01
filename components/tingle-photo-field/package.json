@@ -10,7 +10,7 @@
         "spec": ">=1.0.1 <2.0.0",
         "type": "range"
       },
-      "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui"
+      "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
   "_cnpm_publish_time": 1489582496752,
@@ -42,7 +42,7 @@
   "_shasum": "3076804ed8d870a203204c654ee15980df6e887a",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-photo-field@^1.0.1",
-  "_where": "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-ui",
+  "_where": "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui",
   "author": "",
   "dependencies": {
     "@ali/tingle-context": "^1.0.0",

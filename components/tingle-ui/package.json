@@ -10,7 +10,7 @@
         "spec": "latest",
         "type": "tag"
       },
-      "/home/caoke/git/salt-ui/salt-ui.github.io"
+      "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io"
     ]
   ],
   "_cnpm_publish_time": 1492767092840,
@@ -42,7 +42,7 @@
   "_shasum": "9758e7eee4652755268bf933e397beac2f1fbd3e",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-ui@latest",
-  "_where": "/home/caoke/git/salt-ui/salt-ui.github.io",
+  "_where": "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io",
   "author": {
     "name": "maming"
   },

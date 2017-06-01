@@ -10,7 +10,7 @@
         "spec": ">=1.0.1 <2.0.0",
         "type": "range"
       },
-      "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-scroll-view"
+      "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-scroll-view"
     ]
   ],
   "_cnpm_publish_time": 1489492943023,
@@ -42,7 +42,7 @@
   "_shasum": "03338273ea95d59dae0f605590b0d09709d3fef6",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-refreshcontrol@^1.0.1",
-  "_where": "/home/caoke/git/salt-ui/salt-ui.github.io/node_modules/@ali/tingle-scroll-view",
+  "_where": "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-scroll-view",
   "author": {
     "name": "xiaohe.wp"
   },
