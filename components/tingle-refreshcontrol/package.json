@@ -10,18 +10,18 @@
         "spec": ">=1.0.1 <2.0.0",
         "type": "range"
       },
-      "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-scroll-view"
+      "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
-  "_cnpm_publish_time": 1489492943023,
+  "_cnpm_publish_time": 1495536362482,
   "_from": "@ali/tingle-refreshcontrol@>=1.0.1 <2.0.0",
-  "_id": "@ali/tingle-refreshcontrol@1.0.1",
+  "_id": "@ali/tingle-refreshcontrol@1.0.3",
   "_inCache": true,
   "_location": "/@ali/tingle-refreshcontrol",
-  "_nodeVersion": "6.10.0",
+  "_nodeVersion": "6.9.1",
   "_npmUser": {
-    "name": "xiaohe.wp",
-    "email": "xiaohe.wp@alibaba-inc.com"
+    "name": "quanyun.mqy",
+    "email": "quanyun.mqy@alibaba-inc.com"
   },
   "_npmVersion": "3.10.9",
   "_phantomChildren": {},
@@ -36,13 +36,14 @@
     "type": "range"
   },
   "_requiredBy": [
-    "/@ali/tingle-scroll-view"
+    "/@ali/tingle-scroll-view",
+    "/@ali/tingle-ui"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-refreshcontrol/download/@ali/tingle-refreshcontrol-1.0.1.tgz",
-  "_shasum": "03338273ea95d59dae0f605590b0d09709d3fef6",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-refreshcontrol/download/@ali/tingle-refreshcontrol-1.0.3.tgz",
+  "_shasum": "0c875f449b05d7857b0081b5b6bef3b30c688ffd",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-refreshcontrol@^1.0.1",
-  "_where": "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-scroll-view",
+  "_where": "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui",
   "author": {
     "name": "xiaohe.wp"
   },
@@ -61,17 +62,17 @@
     "salt-tools": "~0.1.0"
   },
   "dist": {
-    "shasum": "03338273ea95d59dae0f605590b0d09709d3fef6",
-    "size": 9444,
-    "key": "@ali/tingle-refreshcontrol/-/@ali/tingle-refreshcontrol-1.0.1.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-refreshcontrol/download/@ali/tingle-refreshcontrol-1.0.1.tgz"
+    "shasum": "0c875f449b05d7857b0081b5b6bef3b30c688ffd",
+    "size": 8609,
+    "key": "@ali/tingle-refreshcontrol/-/@ali/tingle-refreshcontrol-1.0.3.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-refreshcontrol/download/@ali/tingle-refreshcontrol-1.0.3.tgz"
   },
   "files": [
     "dist",
     "src",
     "README.md"
   ],
-  "gitHead": "1dd1948167a025a2d2b7fec0a50168887f046836",
+  "gitHead": "4d20ecc1647c1f808957cf0341c3ebe20aee7812",
   "keywords": [
     "tingle-refreshcontrol",
     "Refreshcontrol"
@@ -79,6 +80,10 @@
   "license": "MIT",
   "main": "dist/index.js",
   "maintainers": [
+    {
+      "name": "quanyun.mqy",
+      "email": "quanyun.mqy@alibaba-inc.com"
+    },
     {
       "name": "xiaohe.wp",
       "email": "xiaohe.wp@alibaba-inc.com"
@@ -89,7 +94,7 @@
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1489492943023,
+  "publish_time": 1495536362482,
   "readme": "ERROR: No README data found!",
   "readmeFilename": "README.md",
   "repository": {
@@ -106,5 +111,5 @@
     "tnpm-update": "salt-tools run tnpm-update",
     "update": "salt-tools run update"
   },
-  "version": "1.0.1"
+  "version": "1.0.3"
 }

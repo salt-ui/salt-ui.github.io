@@ -2,10 +2,10 @@
   "_args": [
     [
       {
-        "raw": "@ali/tingle-card@^1.0.0",
+        "raw": "@ali/tingle-collapse@^1.0.0",
         "scope": "@ali",
-        "escapedName": "@ali%2ftingle-card",
-        "name": "@ali/tingle-card",
+        "escapedName": "@ali%2ftingle-collapse",
+        "name": "@ali/tingle-collapse",
         "rawSpec": "^1.0.0",
         "spec": ">=1.0.0 <2.0.0",
         "type": "range"
@@ -13,27 +13,24 @@
       "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
-  "_cnpm_publish_time": 1493297690486,
-  "_from": "@ali/tingle-card@>=1.0.0 <2.0.0",
-  "_id": "@ali/tingle-card@1.0.0",
+  "_cnpm_publish_time": 1494905596179,
+  "_from": "@ali/tingle-collapse@>=1.0.0 <2.0.0",
+  "_id": "@ali/tingle-collapse@1.0.0",
   "_inCache": true,
-  "_location": "/@ali/tingle-card",
+  "_location": "/@ali/tingle-collapse",
   "_nodeVersion": "6.9.1",
   "_npmUser": {
     "name": "quanyun.mqy",
     "email": "quanyun.mqy@alibaba-inc.com"
   },
   "_npmVersion": "3.10.9",
-  "_phantomChildren": {
-    "@ali/tingle-style": "1.0.23",
-    "classnames": "2.2.5"
-  },
+  "_phantomChildren": {},
   "_publish_on_cnpm": true,
   "_requested": {
-    "raw": "@ali/tingle-card@^1.0.0",
+    "raw": "@ali/tingle-collapse@^1.0.0",
     "scope": "@ali",
-    "escapedName": "@ali%2ftingle-card",
-    "name": "@ali/tingle-card",
+    "escapedName": "@ali%2ftingle-collapse",
+    "name": "@ali/tingle-collapse",
     "rawSpec": "^1.0.0",
     "spec": ">=1.0.0 <2.0.0",
     "type": "range"
@@ -41,20 +38,20 @@
   "_requiredBy": [
     "/@ali/tingle-ui"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-card/download/@ali/tingle-card-1.0.0.tgz",
-  "_shasum": "2eb7c96b14a2019c80f049ca92e68220ca2427c0",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-collapse/download/@ali/tingle-collapse-1.0.0.tgz",
+  "_shasum": "ab899f7479d756307da96d7827eddcbf904d5e9c",
   "_shrinkwrap": null,
-  "_spec": "@ali/tingle-card@^1.0.0",
+  "_spec": "@ali/tingle-collapse@^1.0.0",
   "_where": "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui",
-  "author": {
-    "name": "caiyongmin"
-  },
+  "author": "",
   "dependencies": {
-    "@ali/tingle-context": "~1.0.0",
-    "@ali/tingle-style": "^1.0.11",
-    "classnames": "~2.2.3"
+    "@ali/tingle-context": "^1.0.0",
+    "@ali/tingle-style": "^2.0.0",
+    "classnames": "^2.2.5",
+    "object-assign": "^4.1.1",
+    "rc-collapse": "^1.7.3"
   },
-  "description": "tingle-card component for tingle.",
+  "description": "tingle-collapse component for tingle.",
   "devDependencies": {
     "@ali/tingle-ui": "^1.0.0",
     "fastclick": "^1.0.6",
@@ -63,40 +60,44 @@
     "salt-tools": "~0.1.0"
   },
   "dist": {
-    "shasum": "2eb7c96b14a2019c80f049ca92e68220ca2427c0",
-    "size": 3546,
-    "key": "@ali/tingle-card/-/@ali/tingle-card-1.0.0.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-card/download/@ali/tingle-card-1.0.0.tgz"
+    "shasum": "ab899f7479d756307da96d7827eddcbf904d5e9c",
+    "size": 3985,
+    "key": "@ali/tingle-collapse/-/@ali/tingle-collapse-1.0.0.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-collapse/download/@ali/tingle-collapse-1.0.0.tgz"
   },
   "files": [
     "dist",
     "src",
     "README.md"
   ],
-  "gitHead": "e89505ed98ab2372eceadd5699d6441fe5f1c87f",
+  "gitHead": "fb96e73d3c2a1eed3ea34eb3888f8404d2153c59",
   "keywords": [
-    "tingle-card",
-    "Card"
+    "tingle-collapse",
+    "Collapse"
   ],
   "license": "MIT",
   "main": "dist/index.js",
   "maintainers": [
     {
+      "name": "guanghong.wsj",
+      "email": "guanghong.wsj@alibaba-inc.com"
+    },
+    {
       "name": "quanyun.mqy",
       "email": "quanyun.mqy@alibaba-inc.com"
     }
   ],
-  "name": "@ali/tingle-card",
+  "name": "@ali/tingle-collapse",
   "optionalDependencies": {},
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1493297690486,
+  "publish_time": 1494905596179,
   "readme": "ERROR: No README data found!",
   "readmeFilename": "README.md",
   "repository": {
     "type": "git",
-    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-card"
+    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-collapse"
   },
   "screenshots": "",
   "scripts": {

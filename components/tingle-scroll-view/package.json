@@ -13,15 +13,15 @@
       "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
-  "_cnpm_publish_time": 1489628192831,
+  "_cnpm_publish_time": 1495693175563,
   "_from": "@ali/tingle-scroll-view@>=1.0.2 <2.0.0",
-  "_id": "@ali/tingle-scroll-view@1.0.2",
+  "_id": "@ali/tingle-scroll-view@1.0.4",
   "_inCache": true,
   "_location": "/@ali/tingle-scroll-view",
-  "_nodeVersion": "6.10.0",
+  "_nodeVersion": "6.9.1",
   "_npmUser": {
-    "name": "xiaohe.wp",
-    "email": "xiaohe.wp@alibaba-inc.com"
+    "name": "quanyun.mqy",
+    "email": "quanyun.mqy@alibaba-inc.com"
   },
   "_npmVersion": "3.10.9",
   "_phantomChildren": {},
@@ -40,8 +40,8 @@
     "/@ali/tingle-scroll-list",
     "/@ali/tingle-ui"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-scroll-view/download/@ali/tingle-scroll-view-1.0.2.tgz",
-  "_shasum": "aaed9393efdafb64092a786a7b7d65954477a64c",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-scroll-view/download/@ali/tingle-scroll-view-1.0.4.tgz",
+  "_shasum": "c0f326015051fc637bef5e4a71cbb2c3bf384b94",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-scroll-view@^1.0.2",
   "_where": "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui",
@@ -65,17 +65,17 @@
     "salt-tools": "~0.1.0"
   },
   "dist": {
-    "shasum": "aaed9393efdafb64092a786a7b7d65954477a64c",
-    "size": 4366,
-    "key": "@ali/tingle-scroll-view/-/@ali/tingle-scroll-view-1.0.2.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-scroll-view/download/@ali/tingle-scroll-view-1.0.2.tgz"
+    "shasum": "c0f326015051fc637bef5e4a71cbb2c3bf384b94",
+    "size": 4349,
+    "key": "@ali/tingle-scroll-view/-/@ali/tingle-scroll-view-1.0.4.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-scroll-view/download/@ali/tingle-scroll-view-1.0.4.tgz"
   },
   "files": [
     "dist",
     "src",
     "README.md"
   ],
-  "gitHead": "6a108721875267ce54d9fd1d137c0d2c2a6e2768",
+  "gitHead": "38d139843a8e3717c2fd8cf64824b0f7073f6341",
   "keywords": [
     "tingle-scroll-view",
     "ScrollView"
@@ -83,6 +83,10 @@
   "license": "MIT",
   "main": "dist/index.js",
   "maintainers": [
+    {
+      "name": "quanyun.mqy",
+      "email": "quanyun.mqy@alibaba-inc.com"
+    },
     {
       "name": "xiaohe.wp",
       "email": "xiaohe.wp@alibaba-inc.com"
@@ -93,7 +97,7 @@
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1489628192831,
+  "publish_time": 1495693175563,
   "readme": "ERROR: No README data found!",
   "readmeFilename": "README.md",
   "repository": {
@@ -110,5 +114,5 @@
     "tnpm-update": "salt-tools run tnpm-update",
     "update": "salt-tools run update"
   },
-  "version": "1.0.2"
+  "version": "1.0.4"
 }

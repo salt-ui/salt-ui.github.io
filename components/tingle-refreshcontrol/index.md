@@ -83,6 +83,8 @@ class RefreshcontrolDemo extends React.Component {
 |refreshIcon|optional|react element|null|自定义icon，RefreshControl的组件顶部会添加refreshing class来区分refreshing状态和非refreshing装，自定义icon通过此class可以展现不同效果|
 |showIcon|optional|bool|true|自定义选项，loading时是否显示icon|
 |showText|optional|bool|true|自定义选项，loading时是否显示文案|
+|showRefreshing|optional|bool|true|手动刷新列表时是否要下拉的过程|
+
 
 ## APIs
 

@@ -15,36 +15,35 @@ class Demo extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeIndex: 0
-    }
+      activeIndex: 0,
+    };
+
+    this.tabBarItems = [
+      { title: '首页', icon: starUrl, activeIcon: starActiveUrl, name: 'star', badge: 122,path:'/star' },
+      { title: '收藏', icon: starUrl, activeIcon: starActiveUrl, name: 'map', badge: 122,path:"/a/star" },
+
+      { title: '隐藏', icon: 'plus', name: 'plus', cIconHeight:40, items:[
+        { "title": "用户", "icon": "user",  "name": "user","path":"/b/user"},
+        { "title": "时间", "icon": "time",  "name": "time","path":"/b/time"}
+      ] ,path:"/center"},
+      { title: '收藏', icon: starUrl, activeIcon: starActiveUrl, name: 'setting', badge: 122 ,path:"/b/star"},
+      { title: '收藏', icon: starUrl, activeIcon: starActiveUrl, name: 'user', badge: 122 ,path:"/c/star"}
+    ];
   }
 
   render() {
-    const onChange = (activeIndex)=> {
+    const onChange = (activeIndex) => {
+    // 这里是触发每个item之后的回调，会返回当前点击的item的index 值
       console.log(activeIndex);
     };
+
     const tabBarStyle = {
-      borderTop: '1px solid #3671D6',
+    // 这里是style 配置，参考API
     };
-    const tabBarItemStyle = {
-      titleStyle: { color: '#333', },
-      titleActiveStyle: { color: '#3671D6', },
-      iconStyle: { fill: '#333', },
-      iconActiveStyle: { fill: '#3671D6', },
-      badge: 100,
-    };
-    return <div>
-      <TabBar tabBarStyle={tabBarStyle} activeIndex={this.state.activeIndex} onChange={onChange.bind(this)}>
-        <TabBar.Item {...tabBarItemStyle} title="收藏" icon="star">这里是 "收藏"</TabBar.Item>
-        <TabBar.Item {...tabBarItemStyle} title="地图" icon="map">这里是 "地图"</TabBar.Item>
-        <TabBar.Item {...tabBarItemStyle} title="搜索" icon="search">这里是 "搜索"</TabBar.Item>
-        <TabBar.Item {...tabBarItemStyle} title="社区" icon={[
-          'https://gw.alicdn.com/tps/TB1bc1XNpXXXXciXpXXXXXXXXXX-200-200.png',
-          'https://gw.alicdn.com/tps/TB174GlNpXXXXaHXXXXXXXXXXXX-200-200.png',
-        ]}>这里是 "社区"</TabBar.Item>
-        <TabBar.Item {...tabBarItemStyle} badge="new" title="设置" icon="setting">这里是 "设置"</TabBar.Item>
-      </TabBar>
-    </div>
+
+    return (<div>
+      <TabBar tabBarStyle={tabBarStyle} activeIndex={this.state.activeIndex} onChange={onChange.bind(this)} items={this.tabBarItems} />
+    </div>);
   }
 }
 ```
@@ -73,7 +72,7 @@ class Demo extends React.Component {
 |activeIcon|-|`String`|-|选项卡图标(激活态, 图标为图片地址时建议必填)
 |iconStyle|-|`object`|-|选项卡图标样式(version>=1.1.4)
 |activeIconStyle|-|`object`|-|选项卡图标样式(激活态)(version>=1.1.4)
-|badge|*|`string` or `number`|-|选项卡角标 非数字时只会显示红点(version>=1.2.0)
+|badge|*|`string` or `number` or `object` |-|选项卡角标,支持数字、红点、string、以及对象(version>=1.3.11)
 |badgeStyle|-|`object`|-|选项卡自定义角标样式(version>=1.2.0)
 
 ## APIs
