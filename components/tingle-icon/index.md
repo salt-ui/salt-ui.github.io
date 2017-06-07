@@ -1,7 +1,7 @@
 # tingle-icon
 
 ## 预览
-![image](https://img.alicdn.com/tfs/TB1P2VnQXXXXXatXFXXXXXXXXXX-698-1398.png)
+![image](https://img.alicdn.com/tfs/TB14Tz_RXXXXXasXpXXXXXXXXXX-1490-2722.png)
 
 ## Install
 

@@ -13,17 +13,17 @@
       "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
-  "_cnpm_publish_time": 1491873769361,
+  "_cnpm_publish_time": 1496397318269,
   "_from": "@ali/tingle-datetime-field@>=1.0.7 <2.0.0",
-  "_id": "@ali/tingle-datetime-field@1.1.0",
+  "_id": "@ali/tingle-datetime-field@1.1.2",
   "_inCache": true,
   "_location": "/@ali/tingle-datetime-field",
   "_nodeVersion": "6.9.1",
   "_npmUser": {
-    "name": "quanyun.mqy",
-    "email": "quanyun.mqy@alibaba-inc.com"
+    "name": "guanghong.wsj",
+    "email": "guanghong.wsj@alibaba-inc.com"
   },
-  "_npmVersion": "3.10.9",
+  "_npmVersion": "3.10.10",
   "_phantomChildren": {},
   "_publish_on_cnpm": true,
   "_requested": {
@@ -39,8 +39,8 @@
     "/@ali/tingle-grid/@ali/tingle-ui",
     "/@ali/tingle-ui"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-datetime-field/download/@ali/tingle-datetime-field-1.1.0.tgz",
-  "_shasum": "343aecd086a7e93f4d93f400cd42c16a3918e17a",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-datetime-field/download/@ali/tingle-datetime-field-1.1.2.tgz",
+  "_shasum": "cb2dd162e630291cb3f630766570ea7cb30f9091",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-datetime-field@^1.0.7",
   "_where": "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui",
@@ -66,17 +66,17 @@
     "salt-tools": "~0.1.0"
   },
   "dist": {
-    "shasum": "343aecd086a7e93f4d93f400cd42c16a3918e17a",
-    "size": 6979,
-    "key": "@ali/tingle-datetime-field/-/@ali/tingle-datetime-field-1.1.0.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-datetime-field/download/@ali/tingle-datetime-field-1.1.0.tgz"
+    "shasum": "cb2dd162e630291cb3f630766570ea7cb30f9091",
+    "size": 7085,
+    "key": "@ali/tingle-datetime-field/-/@ali/tingle-datetime-field-1.1.2.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-datetime-field/download/@ali/tingle-datetime-field-1.1.2.tgz"
   },
   "files": [
     "dist",
     "src",
     "README.md"
   ],
-  "gitHead": "1f9ce969b3b5931eb74bb22fb692cc7e400ad36c",
+  "gitHead": "c44c32d104b70263c58cbf91755122af4e56c8db",
   "keywords": [
     "tingle-datetime-field",
     "DatetimeField",
@@ -90,6 +90,10 @@
       "email": "caoke.ck@alibaba-inc.com"
     },
     {
+      "name": "guanghong.wsj",
+      "email": "guanghong.wsj@alibaba-inc.com"
+    },
+    {
       "name": "quanyun.mqy",
       "email": "quanyun.mqy@alibaba-inc.com"
     }
@@ -99,7 +103,7 @@
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1491873769361,
+  "publish_time": 1496397318269,
   "readme": "ERROR: No README data found!",
   "readmeFilename": "README.md",
   "repository": {
@@ -116,5 +120,5 @@
     "tnpm-update": "salt-tools run tnpm-update",
     "update": "salt-tools run update"
   },
-  "version": "1.1.0"
+  "version": "1.1.2"
 }

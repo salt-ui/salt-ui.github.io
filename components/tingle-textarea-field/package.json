@@ -25,7 +25,7 @@
   },
   "_npmVersion": "3.10.9",
   "_phantomChildren": {
-    "@ali/tingle-icon": "2.0.2",
+    "@ali/tingle-icon": "2.0.5",
     "@ali/tingle-icon-source": "1.0.13",
     "@ali/tingle-style": "1.0.23",
     "classnames": "2.2.5"

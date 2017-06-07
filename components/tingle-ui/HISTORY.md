@@ -1,23 +1,18 @@
-## 3.0.0 / 2017-5-18
-* tingle-scroll-list
-	* 新增Item
-* tingle-collapse
-	* 新增
-* tingle-tab-bar
-	* 视觉规范跟进
-* tingle-slide
-	* 视觉规范跟进
-* tingle-slot
-	* 可以留驻在页面
-	* 视觉规范跟进
-* tingle-toast
-	* 新增轻提示
-	* 视觉规范跟进
-* tingle-button
-	* 视觉规范跟进
-	* 提供更多子组件
-	
+## 2.2.2 / 2017-6-2
+* tingle-datetime-field
+	* fix: 在小月的情况下选择大月 31 号取值错误的问题
+	* fix: 点击取消回填值不对
 
+## 2.2.1 / 2017-6-2
+* tingle-steps
+	* 样式更新
+
+## 2.2.0 / 2017-6-2
+* tingle-pagination
+	* new component
+* tingle-steps
+	* new component
+* 更新了一下readme
 
 ## 2.1.7 / 2017-5-3
 * tingle-refreshcontrol

@@ -13,17 +13,17 @@
       "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
-  "_cnpm_publish_time": 1494493886968,
+  "_cnpm_publish_time": 1496734725960,
   "_from": "@ali/tingle-infinite-scroll@>=1.0.3 <2.0.0",
-  "_id": "@ali/tingle-infinite-scroll@1.0.4",
+  "_id": "@ali/tingle-infinite-scroll@1.0.5",
   "_inCache": true,
   "_location": "/@ali/tingle-infinite-scroll",
-  "_nodeVersion": "6.9.1",
+  "_nodeVersion": "4.4.4",
   "_npmUser": {
-    "name": "quanyun.mqy",
-    "email": "quanyun.mqy@alibaba-inc.com"
+    "name": "minjie.lmj",
+    "email": "minjie.lmj@alibaba-inc.com"
   },
-  "_npmVersion": "3.10.9",
+  "_npmVersion": "3.10.10",
   "_phantomChildren": {},
   "_publish_on_cnpm": true,
   "_requested": {
@@ -39,8 +39,8 @@
     "/@ali/tingle-scroll-view",
     "/@ali/tingle-ui"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-infinite-scroll/download/@ali/tingle-infinite-scroll-1.0.4.tgz",
-  "_shasum": "acc477e12e03b74df24b4d731175c068b70c5e60",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-infinite-scroll/download/@ali/tingle-infinite-scroll-1.0.5.tgz",
+  "_shasum": "15e38db1479b988eb473d2935e36be9ee1d479d8",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-infinite-scroll@^1.0.3",
   "_where": "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui",
@@ -63,17 +63,17 @@
     "salt-tools": "~0.1.0"
   },
   "dist": {
-    "shasum": "acc477e12e03b74df24b4d731175c068b70c5e60",
-    "size": 4859,
-    "key": "@ali/tingle-infinite-scroll/-/@ali/tingle-infinite-scroll-1.0.4.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-infinite-scroll/download/@ali/tingle-infinite-scroll-1.0.4.tgz"
+    "shasum": "15e38db1479b988eb473d2935e36be9ee1d479d8",
+    "size": 4942,
+    "key": "@ali/tingle-infinite-scroll/-/@ali/tingle-infinite-scroll-1.0.5.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-infinite-scroll/download/@ali/tingle-infinite-scroll-1.0.5.tgz"
   },
   "files": [
     "dist",
     "src",
     "README.md"
   ],
-  "gitHead": "fcaeacb037f29ace9fd3534bd6fd21ecccf459ad",
+  "gitHead": "3ad14cd29046ce4186eebbe80eac2d4d48539b4b",
   "keywords": [
     "tingle-infinite-scroll",
     "InfiniteScroll"
@@ -99,7 +99,7 @@
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1494493886968,
+  "publish_time": 1496734725960,
   "readme": "ERROR: No README data found!",
   "readmeFilename": "README.md",
   "repository": {
@@ -116,5 +116,5 @@
     "tnpm-update": "salt-tools run tnpm-update",
     "update": "salt-tools run update"
   },
-  "version": "1.0.4"
+  "version": "1.0.5"
 }

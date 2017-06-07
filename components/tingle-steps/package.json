@@ -2,80 +2,79 @@
   "_args": [
     [
       {
-        "raw": "@ali/tingle-badge@^1.0.0",
+        "raw": "@ali/tingle-steps@^1.0.1",
         "scope": "@ali",
-        "escapedName": "@ali%2ftingle-badge",
-        "name": "@ali/tingle-badge",
-        "rawSpec": "^1.0.0",
-        "spec": ">=1.0.0 <2.0.0",
+        "escapedName": "@ali%2ftingle-steps",
+        "name": "@ali/tingle-steps",
+        "rawSpec": "^1.0.1",
+        "spec": ">=1.0.1 <2.0.0",
         "type": "range"
       },
       "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
-  "_cnpm_publish_time": 1496374070587,
-  "_from": "@ali/tingle-badge@>=1.0.0 <2.0.0",
-  "_id": "@ali/tingle-badge@1.1.1",
+  "_cnpm_publish_time": 1496383612626,
+  "_from": "@ali/tingle-steps@>=1.0.1 <2.0.0",
+  "_id": "@ali/tingle-steps@1.0.2",
   "_inCache": true,
-  "_location": "/@ali/tingle-badge",
-  "_nodeVersion": "6.9.1",
+  "_location": "/@ali/tingle-steps",
+  "_nodeVersion": "6.9.5",
   "_npmUser": {
-    "name": "quanyun.mqy",
-    "email": "quanyun.mqy@alibaba-inc.com"
+    "name": "muwen.lb",
+    "email": "muwen.lb@alibaba-inc.com"
   },
   "_npmVersion": "3.10.9",
   "_phantomChildren": {},
   "_publish_on_cnpm": true,
   "_requested": {
-    "raw": "@ali/tingle-badge@^1.0.0",
+    "raw": "@ali/tingle-steps@^1.0.1",
     "scope": "@ali",
-    "escapedName": "@ali%2ftingle-badge",
-    "name": "@ali/tingle-badge",
-    "rawSpec": "^1.0.0",
-    "spec": ">=1.0.0 <2.0.0",
+    "escapedName": "@ali%2ftingle-steps",
+    "name": "@ali/tingle-steps",
+    "rawSpec": "^1.0.1",
+    "spec": ">=1.0.1 <2.0.0",
     "type": "range"
   },
   "_requiredBy": [
     "/@ali/tingle-ui"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-badge/download/@ali/tingle-badge-1.1.1.tgz",
-  "_shasum": "99dd16891894971c4c5eb8ef1f6299b4cbd51760",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-steps/download/@ali/tingle-steps-1.0.2.tgz",
+  "_shasum": "9b044b94160cacc500bab7dbd10f00cacc7de349",
   "_shrinkwrap": null,
-  "_spec": "@ali/tingle-badge@^1.0.0",
+  "_spec": "@ali/tingle-steps@^1.0.1",
   "_where": "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui",
   "author": {
-    "name": "minjie.lmj"
+    "name": "muwen.lb"
   },
   "dependencies": {
     "@ali/tingle-context": "^1.0.0",
+    "@ali/tingle-icon": "^2.0.2",
     "@ali/tingle-style": "^1.0.11",
     "classnames": "^2.2.3"
   },
-  "description": "tingle-badge component for tingle.",
+  "description": "tingle-steps component for tingle.",
   "devDependencies": {
-    "@ali/tingle-group": "^1.0.9",
-    "@ali/tingle-select-field": "^1.0.12",
-    "@ali/tingle-ui": "^1.0.0",
+    "@ali/tingle-ui": "^2.0.0",
     "fastclick": "^1.0.6",
     "react": "^0.14.8",
     "react-dom": "^0.14.8",
     "salt-tools": "~0.1.0"
   },
   "dist": {
-    "shasum": "99dd16891894971c4c5eb8ef1f6299b4cbd51760",
-    "size": 4974,
-    "key": "@ali/tingle-badge/-/@ali/tingle-badge-1.1.1.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-badge/download/@ali/tingle-badge-1.1.1.tgz"
+    "shasum": "9b044b94160cacc500bab7dbd10f00cacc7de349",
+    "size": 9496,
+    "key": "@ali/tingle-steps/-/@ali/tingle-steps-1.0.2.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-steps/download/@ali/tingle-steps-1.0.2.tgz"
   },
   "files": [
     "dist",
     "src",
     "README.md"
   ],
-  "gitHead": "c4407a0b0e39a9c2f89c324f448a08b72793be74",
+  "gitHead": "68799778cd5240c5f1fe3c25acba01f053b5fa5d",
   "keywords": [
-    "tingle-badge",
-    "Badge"
+    "tingle-steps",
+    "Steps"
   ],
   "license": "MIT",
   "main": "dist/index.js",
@@ -85,21 +84,25 @@
       "email": "guanghong.wsj@alibaba-inc.com"
     },
     {
+      "name": "muwen.lb",
+      "email": "muwen.lb@alibaba-inc.com"
+    },
+    {
       "name": "quanyun.mqy",
       "email": "quanyun.mqy@alibaba-inc.com"
     }
   ],
-  "name": "@ali/tingle-badge",
+  "name": "@ali/tingle-steps",
   "optionalDependencies": {},
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1496374070587,
+  "publish_time": 1496383612626,
   "readme": "ERROR: No README data found!",
   "readmeFilename": "README.md",
   "repository": {
     "type": "git",
-    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-badge"
+    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-steps"
   },
   "screenshots": "",
   "scripts": {
@@ -111,5 +114,5 @@
     "tnpm-update": "salt-tools run tnpm-update",
     "update": "salt-tools run update"
   },
-  "version": "1.1.1"
+  "version": "1.0.2"
 }

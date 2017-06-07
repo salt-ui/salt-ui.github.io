@@ -4,6 +4,31 @@
 
 <img src="https://img.alicdn.com/tps/TB1A6YpJFXXXXaeXFXXXXXXXXXX-640-1136.png" width="300"/>
 
+## Props 定义
+
+配置项 |	类型 |	必填 |	默认值 |	功能/备注
+--- | --- | --- | --- | ---
+className | string | optional | null | 额外的css class
+height | number, string | optional | '5rem' | 定义轮播的高度
+active | number | optional | 0 | 当前轮播项的下标
+auto | boolean | optional | true | 是否自动轮播
+loop | boolean | optional | true | 是否循环轮播
+showNav | boolean | optional | true | 是否展示指示器
+onMount | function | optional | null | 轮播组件初始化并加载到页面之后的回调
+onSlideEnd | function | optional | null | 轮播执行完之后的回调
+onSlideClick | function | optional | null | 轮播项被点击后的回调，参数为 { index, data, item }
+showTitle | boolean | optional | true | 是否展示标题
+autoSlideTime | number | optional | 4000 | 轮播自动滚动的间隔时间，单位：ms
+displayMode | string | optional | 'normal' | 显示风格，有 normal 和 card 两种方式
+
+## Slide.Item props 定义
+
+配置项 | 类型 | 功能/备注
+--- | --- | ---
+title | string | 标题
+style | object | 样式
+className | string | 类名
+
 ## Simple Usage
 ```javascript
 <Slide

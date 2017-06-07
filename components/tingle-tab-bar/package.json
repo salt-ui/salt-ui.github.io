@@ -2,59 +2,59 @@
   "_args": [
     [
       {
-        "raw": "@ali/tingle-tab-bar@^2.0.0",
+        "raw": "@ali/tingle-tab-bar@^1.3.5",
         "scope": "@ali",
         "escapedName": "@ali%2ftingle-tab-bar",
         "name": "@ali/tingle-tab-bar",
-        "rawSpec": "^2.0.0",
-        "spec": ">=2.0.0 <3.0.0",
+        "rawSpec": "^1.3.5",
+        "spec": ">=1.3.5 <2.0.0",
         "type": "range"
       },
       "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
-  "_cnpm_publish_time": 1495105490841,
-  "_from": "@ali/tingle-tab-bar@>=2.0.0 <3.0.0",
-  "_id": "@ali/tingle-tab-bar@2.0.0",
+  "_cnpm_publish_time": 1493025638597,
+  "_from": "@ali/tingle-tab-bar@>=1.3.5 <2.0.0",
+  "_id": "@ali/tingle-tab-bar@1.3.10",
   "_inCache": true,
   "_location": "/@ali/tingle-tab-bar",
-  "_nodeVersion": "6.9.1",
+  "_nodeVersion": "6.10.0",
   "_npmUser": {
-    "name": "guanghong.wsj",
-    "email": "guanghong.wsj@alibaba-inc.com"
+    "name": "ruiyang.dry",
+    "email": "ruiyang.dry@alibaba-inc.com"
   },
-  "_npmVersion": "2.15.11",
+  "_npmVersion": "3.10.9",
   "_phantomChildren": {},
   "_publish_on_cnpm": true,
   "_requested": {
-    "raw": "@ali/tingle-tab-bar@^2.0.0",
+    "raw": "@ali/tingle-tab-bar@^1.3.5",
     "scope": "@ali",
     "escapedName": "@ali%2ftingle-tab-bar",
     "name": "@ali/tingle-tab-bar",
-    "rawSpec": "^2.0.0",
-    "spec": ">=2.0.0 <3.0.0",
+    "rawSpec": "^1.3.5",
+    "spec": ">=1.3.5 <2.0.0",
     "type": "range"
   },
   "_requiredBy": [
     "/@ali/tingle-ui"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-tab-bar/download/@ali/tingle-tab-bar-2.0.0.tgz",
-  "_shasum": "9be0f55b7dca253614c79f0c62d041a37cb705c7",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-tab-bar/download/@ali/tingle-tab-bar-1.3.10.tgz",
+  "_shasum": "f230b6fa2544c3830afed9c4d7c6a4ee8c3ef9f9",
   "_shrinkwrap": null,
-  "_spec": "@ali/tingle-tab-bar@^2.0.0",
+  "_spec": "@ali/tingle-tab-bar@^1.3.5",
   "_where": "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui",
   "author": {
     "name": "zhouwenjie"
   },
   "dependencies": {
-    "@ali/tingle-badge": "^1.0.0",
     "@ali/tingle-box": "^1.0.0",
     "@ali/tingle-context": "^1.0.0",
     "@ali/tingle-icon": "^2.0.0",
     "@ali/tingle-layer": "^1.0.2",
-    "@ali/tingle-style": "^2.0.0",
+    "@ali/tingle-style": "^1.0.0",
     "classnames": "~2.2.3",
-    "object-assign": "^4.1.0"
+    "object-assign": "^4.1.0",
+    "react": "^0.14.8"
   },
   "description": "tingle-tab-bar component for tingle.",
   "devDependencies": {
@@ -65,17 +65,17 @@
     "salt-tools": "~0.1.0"
   },
   "dist": {
-    "shasum": "9be0f55b7dca253614c79f0c62d041a37cb705c7",
-    "size": 10929,
-    "key": "@ali/tingle-tab-bar/-/@ali/tingle-tab-bar-2.0.0.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-tab-bar/download/@ali/tingle-tab-bar-2.0.0.tgz"
+    "shasum": "f230b6fa2544c3830afed9c4d7c6a4ee8c3ef9f9",
+    "size": 10223,
+    "key": "@ali/tingle-tab-bar/-/@ali/tingle-tab-bar-1.3.10.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-tab-bar/download/@ali/tingle-tab-bar-1.3.10.tgz"
   },
   "files": [
     "dist",
     "src",
     "README.md"
   ],
-  "gitHead": "e9119eb8a1c99ae55e87fa6e2c627cb750c7e441",
+  "gitHead": "8b573aa4e81aeb91f6de381ce3e6c8eee01558e8",
   "keywords": [
     "tingle-tab-bar",
     "TabBar"
@@ -117,7 +117,7 @@
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1495105490841,
+  "publish_time": 1493025638597,
   "readme": "ERROR: No README data found!",
   "readmeFilename": "README.md",
   "repository": {
@@ -134,5 +134,5 @@
     "tnpm-update": "salt-tools run tnpm-update",
     "update": "salt-tools run update"
   },
-  "version": "2.0.0"
+  "version": "1.3.10"
 }

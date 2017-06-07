@@ -27,8 +27,7 @@
   "_phantomChildren": {
     "@ali/tingle-avatar": "1.0.5",
     "@ali/tingle-box": "1.0.2",
-    "@ali/tingle-button": "1.0.10",
-    "@ali/tingle-datetime-field": "1.1.0",
+    "@ali/tingle-datetime-field": "1.1.2",
     "@ali/tingle-dialog": "1.0.20",
     "@ali/tingle-gallery": "1.2.0",
     "@ali/tingle-grid": "1.0.4",

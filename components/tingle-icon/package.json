@@ -13,17 +13,17 @@
       "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
-  "_cnpm_publish_time": 1489476405937,
+  "_cnpm_publish_time": 1495609373236,
   "_from": "@ali/tingle-icon@>=2.0.0 <3.0.0",
-  "_id": "@ali/tingle-icon@2.0.2",
+  "_id": "@ali/tingle-icon@2.0.5",
   "_inCache": true,
   "_location": "/@ali/tingle-icon",
   "_nodeVersion": "6.9.1",
   "_npmUser": {
-    "name": "quanyun.mqy",
-    "email": "quanyun.mqy@alibaba-inc.com"
+    "name": "guanghong.wsj",
+    "email": "guanghong.wsj@alibaba-inc.com"
   },
-  "_npmVersion": "3.10.9",
+  "_npmVersion": "3.10.10",
   "_phantomChildren": {
     "@ali/tingle-style": "1.0.23",
     "classnames": "2.2.5"
@@ -45,6 +45,7 @@
     "/@ali/tingle-list",
     "/@ali/tingle-menu",
     "/@ali/tingle-note",
+    "/@ali/tingle-number-picker",
     "/@ali/tingle-photo-field",
     "/@ali/tingle-picker-field",
     "/@ali/tingle-radio-field",
@@ -52,14 +53,15 @@
     "/@ali/tingle-refreshcontrol",
     "/@ali/tingle-scroll-list",
     "/@ali/tingle-search-bar",
+    "/@ali/tingle-steps",
     "/@ali/tingle-tab-bar",
     "/@ali/tingle-text-field/@ali/tingle-field",
     "/@ali/tingle-textarea-field/@ali/tingle-field",
     "/@ali/tingle-toast",
     "/@ali/tingle-ui"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-icon/download/@ali/tingle-icon-2.0.2.tgz",
-  "_shasum": "770f62b955f76acb6aaae92099a98936c916c872",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-icon/download/@ali/tingle-icon-2.0.5.tgz",
+  "_shasum": "4044802ca17514fe2cbbd661b415cb608fac30d9",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-icon@^2.0.0",
   "_where": "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui",
@@ -82,17 +84,17 @@
     "salt-tools": "~0.1.0"
   },
   "dist": {
-    "shasum": "770f62b955f76acb6aaae92099a98936c916c872",
-    "size": 22913,
-    "key": "@ali/tingle-icon/-/@ali/tingle-icon-2.0.2.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-icon/download/@ali/tingle-icon-2.0.2.tgz"
+    "shasum": "4044802ca17514fe2cbbd661b415cb608fac30d9",
+    "size": 26350,
+    "key": "@ali/tingle-icon/-/@ali/tingle-icon-2.0.5.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-icon/download/@ali/tingle-icon-2.0.5.tgz"
   },
   "files": [
     "dist",
     "src",
     "README.md"
   ],
-  "gitHead": "1fef67e0a1c4abdfdbb2d8dec9750f630834bb07",
+  "gitHead": "5d0233c25333022a261762b27035650efc75f440",
   "keywords": [
     "tingle-icon",
     "Icon"
@@ -122,7 +124,7 @@
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1489476405937,
+  "publish_time": 1495609373236,
   "readme": "ERROR: No README data found!",
   "readmeFilename": "README.md",
   "repository": {
@@ -139,5 +141,5 @@
     "tnpm-update": "salt-tools run tnpm-update",
     "update": "salt-tools run update"
   },
-  "version": "2.0.2"
+  "version": "2.0.5"
 }
