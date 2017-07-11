@@ -4,7 +4,7 @@ TINGLE=`tnpm view @ali/tingle-ui version`
 npm run build
 git add .
 git commit -m v$BRANCH
-git push origin source
+git push origin source-orange
 mkdir ~/SALT_UI_BUILD
 mv ./build/* ~/SALT_UI_BUILD/
 git checkout master
@@ -16,4 +16,4 @@ git commit -m v$BRANCH
 git push origin master
 git tag v$TINGLE
 git push origin v$TINGLE
-git checkout source
+git checkout source-orange
