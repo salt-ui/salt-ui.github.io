@@ -58,7 +58,7 @@ class Aside extends Component {
         onClick={this.handleClick}
         mode="inline"
         className="kuma-menu-none-border ui-side"
-        defaultOpenKeys={['General']}
+        defaultOpenKeys={['General', 'Display', 'Layout', 'Form', 'Other', 'Navigation', 'Feedback']}
         defaultSelectedKeys={['tingle-button']}
         selectedKeys={selectedKeys}
       >

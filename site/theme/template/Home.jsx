@@ -16,6 +16,9 @@ export default (props) => (
 
     <Wrap {...props}>
       <div className="ui-home-bg">
+        <img src="https://img.alicdn.com/tfs/TB1nITHSXXXXXcVaXXXXXXXXXXX-1050-772.png" className="ui-home-shadow" />
+        <img src="https://img.alicdn.com/tfs/TB1RkjQSXXXXXXHaXXXXXXXXXXX-520-1042.png" className="ui-home-phone" />
+        
         <div className="kuma-container-1180 layout-demo-container " style={{ position: 'relative' }}>
           <div className="ui-home-arrows">
             <img src="https://img.alicdn.com/tfs/TB1TRbBSXXXXXaYapXXXXXXXXXX-550-496.png" className="arrow-0"/>
@@ -27,7 +30,6 @@ export default (props) => (
             <Button type="outline" className="">Get Started</Button>
             <Button className="" type="white" ghost><i className="iconfont icon-github" /> Github</Button>
           </div>
-          <img src="https://img.alicdn.com/tfs/TB1RkjQSXXXXXXHaXXXXXXXXXXX-520-1042.png" className="ui-home-phone" />
         </div>
       </div>
       <div className="kuma-container-1180 layout-demo-container " style={{ position: 'relative' }}>

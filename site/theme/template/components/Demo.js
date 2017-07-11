@@ -60,43 +60,17 @@ export default class Demo extends React.Component {
 			const obj = {
 				name,
 				meta,
-				// highlightedCode: 
 				content: content[1][2][1]
 			};
 
 			if (content.length > 2) {
-				// obj.style = content[2][2][1];
 				obj.style =  content[2];
-				// obj.style = {
-				// 	content: content[2][2][1],
-				// 	highlightedCode: content[2][1].highlighted
-				// };
 			}
 
 			console.log(content,obj)
 
 			return obj;
 		}).sort((a, b) => a.meta.order - b.meta.order);
-		// let arr = Object.keys(demos).map(name => {
-		// 	const old = demos[name];
-		// 	const obj = {
-		// 		name,
-		// 		meta: old.meta,
-		// 		highlightedCode: old.highlightedCode,
-		// 		content: old.content[1][2][1]
-		// 	};
-
-		// 	if(old.content.length === 3 ){
-		// 		obj.style = {
-		// 			highlightedCode: old.content[2],
-		// 			content: old.content[2][2][1]
-		// 		}
-		// 	}
-
-		// 	return obj;
-		// });
-		// console.log(arr);
-		// return arr.sort((a, b) => a.meta.order - b.meta.order);
 	}
 
 	transform(data){
@@ -124,13 +98,6 @@ export default class Demo extends React.Component {
 			
 		}
 	}
-
-	// showExpandDemo(dialog){
-	// 	this.setState({
-	// 		dialog,
-	// 		showDialog: true
-	// 	})
-	// }
 
 	hideDialog(){
 		this.setState({
@@ -170,7 +137,7 @@ export default class Demo extends React.Component {
 							)
 						}
 					</Left>
-          <Right width={330} className="ui-preview">
+          <Right width={400} className="ui-preview">
           	<div className="ui-preview-content">
 							<div className="ui-preview-head" />
 							<iframe src={demoUrl} ref="preview" />
