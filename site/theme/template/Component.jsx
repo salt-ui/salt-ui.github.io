@@ -4,14 +4,17 @@ import DocumentTitle from 'react-document-title';
 import { toHTMLText } from 'jsonml.js/lib/html';
 import classnames from 'classnames';
 import uppercamelcase from 'uppercamelcase';
+import Layout from 'uxcore/lib/Layout';
 
 
-import Layout from './layout/Layout';
-import CardWrap from './layout/CardWrap';
-import Card from './layout/Card';
-import Markdown from './component/Markdown';
-import Demo from './component/Demo';
-import {removeTingle } from '../../utils';
+import Wrap from './layout/Wrap';
+import Markdown from './components/Markdown';
+import Demo from './components/Demo';
+import Aside from './components/Aside';
+import { removeTinglePrefix } from '../../utils';
+import { NAV_MAP } from '../../constants';
+
+const { Left, Right } = Layout;
 
 const parseDemoRaw = (demos) => {
 
@@ -55,22 +58,76 @@ const parseDemoRaw = (demos) => {
 };
 
 export default (props) => {
-  const { data, pageData, params, utils } = props;
-  const demos = utils.get(data.demos, params.component) || {};
-  // demos = parseDemoRaw(demos);
-  // detail: http://gitlab.alibaba-inc.com/uxcore/inner-doc/issues/1
+  const { data, pageData, params: { component }, utils } = props;
+
+  const demos = utils.get(data.demos, component) || {};
+  const demosList = parseDemoRaw(demos);
   const doc = pageData.index ? pageData.index.content : null;
   const history = pageData.HISTORY.content;
-  console.log(props)
-  const title = params.component === 'tingle-ui' ? 'History' : `${params.component} - Component`;
+  const title = component === 'tingle-ui' ? 'History' : `${component} - Component`;
+  const clearName = removeTinglePrefix(component);
+
   return (
     <DocumentTitle title={title}>
-      <div>
+     <Wrap {...props}>
+      <Layout>
+        <Left width={230}><Aside components={data.components} /></Left>
+        <Right adaptive={true}>
+          <div className="ui-main">
+            {
+              component !== 'tingle-ui' && (
+                <div className="ui-main-title">
+                  <span className="fn-highlight">{NAV_MAP[clearName].zh}</span>
+                  {uppercamelcase(clearName)}
+                </div>
+              )
+            }
+            {
+              Object.keys(demosList).length > 0 && (
+                <Demo demos={demosList} params={component} utils={utils} />
+              )
+            }
+            {
+              doc && (
+                <Markdown icon="document" title="文档" content={ utils.toReactComponent(doc) } />
+              )
+            }
+            {
+              history.length && (
+                <Markdown icon="history" title="版本更新" content={ utils.toReactComponent(history) } />
+              )
+            }
+          </div>
+        </Right>
+        </Layout>
+      </Wrap>
+    </DocumentTitle>
+  );
+}
+
+// <CardWrap width="100%">
+//               {
+//                 doc && (
+//                   <Card>
+//                     <Markdown icon="doc" title="文档" content={ utils.toReactComponent(doc) } />
+//                   </Card>
+//                 )
+//               }
+//               {
+//                 history.length && (
+//                   <Card>
+//                     <Markdown icon="history" title="版本更新" content={ utils.toReactComponent(history) } />
+//                   </Card>
+//                 )
+//               }
+//             </CardWrap>
+
+ /*<div>
         {
           params.component !== 'tingle-ui' && (
             <h2 className="component-page-title">
               <a href={`//gitlab.alibaba-inc.com/uxcore/${params.component}`} target="_blank">
-              {uppercamelcase(removeTingle(params.component))}</a>
+              {uppercamelcase(removeTinglePrefix(params.component))}</a>
             </h2>
           )
         }
@@ -99,7 +156,4 @@ export default (props) => {
             )
           }
         </CardWrap>
-      </div>
-    </DocumentTitle>
-  );
-}
+      </div>*/

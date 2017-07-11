@@ -1,5 +1,5 @@
 // import './tingle.min.css';
-import './base.less';
+/*import './base.less';
 import './animation.less';
 
 
@@ -13,4 +13,7 @@ import './footer.less';
 import './demo.less';
 import './markdown.less';
 import './highlighter.less';
-import './svg.less';
+import './svg.less';*/
+
+import 'uxcore/assets/iconfont.css';
+import 'uxcore/assets/blue.min.css';

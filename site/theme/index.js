@@ -1,4 +1,6 @@
 
+// require('./static/style.less');
+
 
 let routes = [
   {
@@ -7,33 +9,24 @@ let routes = [
     name: '首页',
   },
   {
-    path: '/components',
     name: '组件',
-    component: './template/layout/Layout', 
-    
-    childRoutes: [
-      {
-        path: '/components/:component',
-        component: './template/Component'
-      },
-    ]
+    path: '/components/:component',
+    component: './template/Component'
   },
-  /*{
-    path: '/components',
-    name: '组件',
-    icon: 'dashboard',
-    component: './template/layout/Layout', 
-    indexRoute: {
-      component: './template/Dashboard', 
-    },
-    childRoutes: [
-      {
-        path: '/components/:component',
-        component: './template/Component'
-      },
-    ]
-  },*/
+  // {
+  //   path: '/components',
+  //   name: '组件',
+  //   // component: './template/layout/Layout', 
+    
+  //   childRoutes: [
+  //     {
+  //       path: '/components/:component',
+  //       component: './template/Component'
+  //     },
+  //   ]
+  // },
   {
+    name: 'demo',
     path: '/components/:component/:name',
     component: './template/Kitchen',
   },

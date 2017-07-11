@@ -4,10 +4,14 @@ const commonConfig = require('./bisheng.common.config');
 
 module.exports = Object.assign({}, commonConfig, {
   port: 8003,
-  source: [
-    './components',
-    './demos'
-  ],
+  source: {
+    demos: './demos',
+    components: './components',
+  },
+  // source: [
+  //   './demos',
+  //   './components',
+  // ],
   output: './build',
   theme: './site/theme',
   htmlTemplate: path.join(__dirname, '..', 'template.html'),

@@ -1,35 +1,134 @@
-@svg-path: './svg/blue';
+@import url('//at.alicdn.com/t/font_pfhptwerf36usor.css');
 
+body{
+  min-width: 1180px;
+  font-family: "Helvetica Neue", Helvetica,"PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑",Arial,sans-serif;
+}
+.ui-nav{
+  width: 100%;
+  height: 64px;
 
-.kuma-dlg-content{
-	border-radius: 0;
-	.kuma-dlg-header{
-		/*background-color: #71a8d2;*/
-		background-color: #fff;
-		.kuma-dlg-title{
-			color: #4379a2;
-		}
-	}
+  &-search{
+    position: relative;
+    margin: 16px 40px 0 0;
+    width: 200px;
+    height: 32px;
 
-	.kuma-dlg-close-x{
-		color: #aaa;
+    &-icon{
+      position: absolute;
+      top: 4px;
+      right: 10px;
+      color: #ccc;
+    }
 
-		/*&:after{
-			content: '\e69a';
-		}*/
-	}
-	
-	.kuma-dlg-footer{
-		background-color: #fff;
-	}
+    .kuma-select2-arrow{
+      display: none;
+    }
+    .kuma-select2-selection--single{
+      height: 32px;
+      border-radius: 16px;
+      background-color: #F5F5F5;
+      border-color: transparent;
+    }
+  }
+
+  &-main {
+    padding-left: 300px;
+    height: 64px;
+    border-bottom: none;
+
+    &.has-bd{
+      border-bottom: 1px solid #EDEDED;
+    }
+
+    .kuma-menu-item{
+      height: 64px;
+      line-height: 64px;
+      font-size: 14px;
+    }
+  }
 }
 
-.kuma-button-primary{
-	background-color: #71a8d2;
-    border-color: #71a8d2;
+.ui-logo{
+  /*width: 100px;*/
+  margin: 10px 0 0 40px;
+  font-size: 26px;
+}
 
-    &:hover{
-    	background-color: #578eb8;
-    	border-color: #578eb8;
+.ui-footer{
+  position: relative;
+  width: 100%;
+  height: 325px;
+  background-color: #303233;
+  /*padding: 34px 0 0 110px;*/
+
+  &-item{
+    width: 146px;
+    color: #999;
+    margin-top: 34px;
+    a {
+      color: #999;
     }
+    dt{
+      color: #fff;
+      font-size: 12px;
+      margin-bottom: 24px;
+    }
+    dd{
+      margin-bottom: 12px;
+    }
+
+    &:first-child{
+      margin-left: 110px;
+    }
+  }
+
+  &-qrcode{
+    width: 116px;
+    padding: 6px;
+    background: rgba(255,255,255,0.10);
+
+    img{
+      width: 100%;
+    }
+
+    p{
+      text-align: center;
+      padding: 3px 6px 0;
+    }
+  }
+
+  &-hr{
+    height: 1px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.08);
+  }
+
+  &-right{
+    text-align: center;
+    color: #999;
+    line-height: 60px;
+  }
+}
+
+.ui-main{
+  border-left: 1px solid #EDEDED;
+  padding: 70px;
+
+  &-title{
+    color: rgba(76,96,121,0.40);
+    font-size: 26px;
+    line-height: 26px;
+    margin-bottom: 60px;
+    span{
+      margin-right: 10px;
+    }
+  }
+}
+
+.kuma-button-outline:hover{
+  background-color: #fef7f2;
+}
+.kuma-button-primary:hover{
+  background-color: #f2813f;
 }

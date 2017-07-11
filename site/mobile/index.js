@@ -16,6 +16,6 @@ module.exports = {
 			path: '/demos/:demo/:name', 
 			component: './template/Layout',
 		}]
-		}, 
+		},
 	],
 };

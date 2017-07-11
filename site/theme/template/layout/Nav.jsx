@@ -1,60 +1,61 @@
 import React from 'react';
-import { withRouter, Link } from 'react-router';
 import classnames from 'classnames';
 import Select from 'uxcore/lib/Select2';
+import Menu from 'uxcore/lib/Menu';
+import Icon from 'uxcore/lib/Icon';
+import { withRouter, Link } from 'react-router';
 
-
-import Icon from '../component/Icon';
-// import IconMenu from '../svg/Menu';
 const { Option } = Select;
-import NavLink from './NavLink';
 
-class Nav extends React.PureComponent {
-  
-  constructor(props) {
-    super(props);
-    
-    this._handleSearch = this._handleSearch.bind(this);
+const nav = ({
+  items,
+  router,
+  params,
+}) => {
+  const toPage = ({ key }) => router.push(key);
+  const onSelect = (key) => router.push(`/components/${key}`);
+  const selectedKeys = [];
+
+  if (params.component) {
+    selectedKeys.push(params.component === 'tingle-ui' ? '/components/tingle-ui' : '/components/tingle-button');
+  } else {
+    selectedKeys.push('/');
   }
 
+  return (
+    <div className="ui-nav">
 
-  _handleSearch(component) {
-    this.props.router.push(`/components/${component}`);
-  }
+      <div className="fn-right ui-nav-search">
+        <Select
+          dropdownClassName="kuma-select2-selected"
+          style={{ width: 200 }}
+          onSelect={onSelect}
+        >
+          {
+            Object.keys(items)
+              .map(item => <Option key={item} value={item} >{item}</Option>)
+          }
+        </Select>
+        <Icon name="sousuo" className="ui-nav-search-icon"/>
+      </div>
 
+      <div className="ui-logo fn-left fn-highlight">Salt UI</div>
 
-  renderSearchOption(components) {
-    return Object
-      .keys(components)
-      .map(component => <Option key={component} value={component} >{component}</Option>);
-  }
-  
-  render() {
-    const { components, route } = this.props;
-    const defaultComp = Object.keys(components)[0];
-    return (
-      <nav className="nav">
-        
-        <div className="search-container">
-          <Select
-            ref="selectContainer"
-            prefixCls="site-search"
-            placeholder={'搜索...'}
-            onChange={this._handleSearch}
-            getPopupContainer={() => this.refs.dropdownContainer}>
-            { this.renderSearchOption(components) }
-          </Select>
-          <div className="dropdown-container" ref="dropdownContainer"></div>
-        </div>
+      <Menu
+        onClick={toPage}
+        selectedKeys={selectedKeys}
+        mode="horizontal"
+        className={classnames({
+          'ui-nav-main': true,
+          'has-bd': selectedKeys[0] !== '/'
+        })}
+      >
+        <Menu.Item key="/">首页</Menu.Item>
+        <Menu.Item key="/components/tingle-button">组件</Menu.Item>
+        <Menu.Item key="/components/tingle-ui">历史</Menu.Item>
+      </Menu>
+    </div>
+  );
+}
 
-        <div className="logo" />
-        <NavLink href="/" name="首页" route={route} activeLink="/"/>
-        <NavLink href={`/components/${defaultComp}`} name="组件" route={route} activeLink="/components"/>
-        <NavLink href="/components/tingle-ui/" name="历史" route={route} activeLink="/components/tingle-ui/"/>
-        
-      </nav>
-    );
-  }
-} 
-
-export default withRouter(Nav);
+export default withRouter(nav);

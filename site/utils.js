@@ -1,5 +1,5 @@
 import { transform } from 'babel-standalone';
-import { mapping } from './constants';
+import { NAV_MAP } from './constants';
 
 export const transformCode = (contents) => {
   
@@ -16,15 +16,15 @@ export const transformCode = (contents) => {
     return { err: err.toString() }
   }
 
-}
+};
 
 export const upperFirstCharactor = (word) => word.slice(0, 1).toUpperCase() + word.slice(1);
 
-export const removeTingle = (word) => word.slice(7);
+export const removeTinglePrefix = (word) => word.slice(7);
 
 export const mappingNavItem = (name) => {
   const newName = removeTingle(name);
-  return mapping[newName].zh;
+  return NAV_MAP[newName].zh;
 
-}
+};
 

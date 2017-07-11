@@ -1,6 +1,6 @@
 export const typeOrder = ['General', 'Layout', 'Navigation', 'Form', 'Display', 'Feedback', 'Other'];
 
-export const mapping = {
+export const NAV_MAP = {
   'button':{
     zh: '按钮',
     // order: 0,

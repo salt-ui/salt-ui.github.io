@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
 import classnames from 'classnames';
 
-export default class Card extends React.PureComponent {
+export default class Card extends PureComponent {
 
   static defaultProps = {
   }
@@ -23,4 +23,4 @@ export default class Card extends React.PureComponent {
       </div>
     );
   }
-} 
+}

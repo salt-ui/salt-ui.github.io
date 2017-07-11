@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
 import classnames from 'classnames';
 import assign from 'object-assign';
 
-export default class CardWrap extends React.PureComponent {
+export default class CardWrap extends PureComponent {
 
   static defaultProps = {
     width: 200,
