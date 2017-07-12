@@ -4,6 +4,7 @@
   &-title{
     font-size: 20px;
     color: #708094;
+    margin-bottom: 20px;
   }
   &-body{
     margin-top: 20px;
@@ -53,10 +54,22 @@
 
   &-editor{
     border: 1px solid #e4e6e9;
+    padding-top: 10px;
+    position: relative;
+
+    .gutter-cell{
+      position: absolute;
+      top: 0;
+      height: 15px;
+      width: 48px;
+      background: #f5f6f7;
+    }
     /*border-top: none;*/
   }
 
   &-css{
+    max-height: 260px;
+    overflow-y: auto;
     .language-css{
       background-color: #f5f6f7;
     }
@@ -64,23 +77,28 @@
 
   .ace_editor{
     top: -1px;
+    font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
   }
 
   .ace-github .ace_gutter {
     background: #f5f6f7;
     color: #bdc4cd;
+    /*padding-top: 10px;*/
+  }
+  .ace_scroller{
+    /*padding-top: 10px;*/
   }
 }
 
 .ui-preview{
   height: 700px;
-  padding-left: 30px;
+  padding-left: 43px;
 
   &-head{
     position: absolute;
-    width: 323px;
-    height: 40px;
-    top: 88px;
+    width: 304px;
+    height: 20px;
+    top: 83px;
     left: 25px;
     /*width: 300px;
     height: 40px;
@@ -92,7 +110,7 @@
 
   &-content{
     position: relative;
-    height: 753px;
+    height: 711px;
     /*width: 400px;*/
     /*width: 400px;*/
     background: url('./imgs/iphone.png') no-repeat;
@@ -101,10 +119,10 @@
   }
   iframe{
     position: absolute;
-    top: 110px;
-    height: 548px;
-    width: 326px;
-    left: 22px;
+    top: 103px;
+    height: 528px;
+    width: 310px;
+    left: 21px;
     border: 1px solid #f7f7f7;
     border-top: 0 none;
   }

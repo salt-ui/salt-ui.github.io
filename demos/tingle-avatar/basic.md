@@ -80,12 +80,12 @@ ReactDOM.render(
     margin-top: 30px;
 }
 .hash-code{
-    padding: 20px;
+    padding: 10px;
 }
 .hash-code dt, .hash-code dd{
     line-height: 24px;
 }
 .t-avatar{
-    margin-right: 10px;
+    margin-right: 5px;
 }
 ```

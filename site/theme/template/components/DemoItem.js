@@ -50,8 +50,9 @@ export default class DemoItem extends React.Component {
 			theme: 'github',
 			mode:'jsx',
 			width: "100%",
-			height: "300px",
+			height: "400px",
       tabSize: 2,
+      fontSize: 13,
 			name: "UNIQUE_ID_OF_DIV",
 			editorProps: {$blockScrolling: true},
 			enableBasicAutocompletion: true,
@@ -84,6 +85,7 @@ export default class DemoItem extends React.Component {
           {
             expand && (
               <div className="ui-demos-item-editor">
+                <div className="gutter-cell " style={{ height: '15px' }}/>
             		<AceEditor {...paneProps} />
             		<div className="ui-demos-item-css">{data.style && utils.toReactComponent(data.style)}</div>
             	</div>
