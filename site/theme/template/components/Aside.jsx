@@ -44,10 +44,16 @@ class Aside extends Component {
   }
 
   componentWillReceiveProps(next) {
-    if (next.params.component !== this.props.params.component && next.params.component === 'tingle-ui') {
-      this.setState({
-        selectedKeys: []
-      });
+    if (next.params.component !== this.props.params.component) {
+      if (next.params.component === 'tingle-ui') {
+        this.setState({
+          selectedKeys: []
+        });
+      } else {
+        this.setState({
+          selectedKeys: [next.params.component]
+        });
+      }
     }
   }
 

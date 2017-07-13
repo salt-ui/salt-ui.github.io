@@ -118,6 +118,8 @@ export default class Demo extends React.Component {
 			? `${protocol}//${host}/demos/${params}/${selectDemo.name}/` 
 			: `${protocol}//${host}/mobile/demos/${params}/${selectDemo.name}`;
 
+		const height = demos.length > 3 ? 540 : 708 - 56 * demos.length;
+
 		return (
 			<div className="ui-example">
 				<div className="ui-example-title">基本使用</div>
@@ -133,6 +135,7 @@ export default class Demo extends React.Component {
 									selectIndex={selectDemoIndex}
 									toggleFrame={this.toggleFrame}
 									utils={utils}
+									height={height}
 								/>
 							)
 						}

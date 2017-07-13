@@ -41,16 +41,16 @@ export default class DemoItem extends React.Component {
 
 	render(){
     // const { data, selectIndex, index, showExpandDemo, toggleFrame, utils } = this.props;
-		const { data, selectIndex, index, toggleFrame, utils } = this.props;
+		const { data, selectIndex, index, toggleFrame, utils, height } = this.props;
 		const { expand } = this.state;
 
-    console.log(data);
+    const demoHeight = data.style ? height * 0.7 : height;
 
 		const paneProps = {
 			theme: 'github',
 			mode:'jsx',
 			width: "100%",
-			height: "400px",
+			height: `${demoHeight}px`,
       tabSize: 2,
       fontSize: 13,
 			name: "UNIQUE_ID_OF_DIV",
@@ -60,6 +60,8 @@ export default class DemoItem extends React.Component {
 			value: data.content,
 			onChange: this.onChangeValue.bind(this)
 		}
+
+    const Gen = () => <AceEditor {...paneProps} />;
 
 		return(
 			<div className={classnames('ui-demos-item', 
@@ -86,8 +88,8 @@ export default class DemoItem extends React.Component {
             expand && (
               <div className="ui-demos-item-editor">
                 <div className="gutter-cell " style={{ height: '15px' }}/>
-            		<AceEditor {...paneProps} />
-            		<div className="ui-demos-item-css">{data.style && utils.toReactComponent(data.style)}</div>
+            		<Gen />
+            		<div className="ui-demos-item-css" style={{ height: height - demoHeight }}>{data.style && utils.toReactComponent(data.style)}</div>
             	</div>
             )
           }
