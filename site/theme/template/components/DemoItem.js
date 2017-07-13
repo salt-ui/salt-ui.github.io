@@ -45,6 +45,7 @@ export default class DemoItem extends React.Component {
 		const { expand } = this.state;
 
     const demoHeight = data.style ? height * 0.7 : height;
+    console.log(height, demoHeight);
 
 		const paneProps = {
 			theme: 'github',
