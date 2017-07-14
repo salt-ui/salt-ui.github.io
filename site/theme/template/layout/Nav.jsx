@@ -3,15 +3,23 @@ import classnames from 'classnames';
 import Select from 'uxcore/lib/Select2';
 import Menu from 'uxcore/lib/Menu';
 import Icon from 'uxcore/lib/Icon';
+import Tooltip from 'uxcore/lib/Tooltip';
 import { withRouter, Link } from 'react-router';
+
+// import { theme, changeTheme } from '../../index';
+import { initTheme } from '../../../utils';
 
 const { Option } = Select;
 
-const nav = ({
+initTheme();
+
+const nav = (props) => {
+  const {
   items,
   router,
   params,
-}) => {
+} = props;
+  // console.log(props);
   const toPage = ({ key }) => router.push(key);
   const onSelect = (key) => router.push(`/components/${key}`);
   const selectedKeys = [];
@@ -21,6 +29,16 @@ const nav = ({
   } else {
     selectedKeys.push('/');
   }
+
+  const changeTheme = () => {
+    const storage = window.localStorage;
+    let theme = storage.getItem('theme') === 'blue' ? 'orange' : 'blue';
+    
+    storage.setItem('theme', theme);
+    const url = params.component ? `/components/${params.component}?theme=${theme}` : `/?theme=${theme}`;
+    // console.log(theme, url)
+    router.push(url);
+  };
 
   return (
     <div className="ui-nav">
@@ -38,6 +56,12 @@ const nav = ({
         </Select>
         <Icon name="sousuo" className="ui-nav-search-icon"/>
       </div>
+      <Tooltip overlay="切换主题" placement="bottom" trigger={['hover']}>
+        <div className="fn-right ui-nav-theme"
+          onClick={e => changeTheme()}
+        >
+        <i className="iconfont icon-theme" />
+      </div></Tooltip>
 
       <div className="ui-logo fn-left fn-highlight">Salt UI</div>
 
@@ -59,3 +83,11 @@ const nav = ({
 }
 
 export default withRouter(nav);
+
+// <div className={
+//           classnames("fn-right ui-nav-theme", {
+//             blue: theme !== 'blue',
+//             orange: theme === 'blue',
+//           })}
+//           onClick={e => changeTheme()}
+//         >

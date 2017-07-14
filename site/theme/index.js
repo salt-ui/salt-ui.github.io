@@ -2,7 +2,18 @@
 // require('./static/style.less');
 
 
-let routes = [
+// export const changeTheme = () => {
+//   const storage = window.localStorage;
+//   theme = theme === 'blue' ? 'orange' : 'blue';
+//   storage.setItem('theme', theme);
+
+//   const ele = document.getElementById('theme');
+//   ele.setAttribute('href', 'css2.css');
+//   return theme;
+// }
+
+
+const routes = [
   {
     path: '/',
     component: './template/Home',
@@ -13,18 +24,6 @@ let routes = [
     path: '/components/:component',
     component: './template/Component'
   },
-  // {
-  //   path: '/components',
-  //   name: '组件',
-  //   // component: './template/layout/Layout', 
-    
-  //   childRoutes: [
-  //     {
-  //       path: '/components/:component',
-  //       component: './template/Component'
-  //     },
-  //   ]
-  // },
   {
     name: 'demo',
     path: '/components/:component/:name',
@@ -32,8 +31,7 @@ let routes = [
   },
 ];
 
+
 module.exports = {
-  home: './',
-  sideNav: routes,
-  routes: routes
+  routes
 };

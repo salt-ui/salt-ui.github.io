@@ -4,31 +4,15 @@ import classnames from 'classnames';
 import { Link } from 'react-router';
 
 import Nav from './Nav';
-// import Aside from '../components/Aside';
 import { NAV_MAP } from '../../../constants';
 import { upperFirstCharactor, removeTinglePrefix, mappingNavItem } from '../../../utils';
 
 import 'uxcore/assets/iconfont.css';
 import 'uxcore/assets/orange.min.css';
 import '../../static/style.less';
-// require('uxcore/assets/blue.min.css');
 
 // export default ({ data, children, routeParams, route, params }) => {
 export default ({ data: { components }, children, route, params }) => {
-  // const navListData = {};
-  // console.log(props)
-  // Object.keys(components).map((compName) => {
-  //   let mapItem = NAV_MAP[removeTinglePrefix(compName)];
-  //   if(mapItem){
-  //     const type = mapItem.type;
-  //     if(!navListData[type]){
-  //       navListData[type] = [];
-  //     }
-
-  //     navListData[type].push({ ...mapItem, name: compName });
-  //   }
-  // });
-  // console.log(navListData);
   return (
     <div className="kuma-container-full layout-demo-container">
       <Nav route={route} items={components} />

@@ -25,6 +25,29 @@ export const removeTinglePrefix = (word) => word.slice(7);
 export const mappingNavItem = (name) => {
   const newName = removeTingle(name);
   return NAV_MAP[newName].zh;
-
 };
+
+export const initTheme = () => {
+  const storage = window.localStorage;
+  let theme = storage.getItem('theme');
+
+  if (!theme) {
+    storage.setItem('theme', 'blue');
+    theme = 'blue';
+  }
+
+  return theme;
+}
+
+export const changeTheme = () => {
+  const storage = window.localStorage;
+  let theme = storage.getItem('theme');
+  
+  theme === 'blue' ? 'orange' : 'blue';
+  storage.setItem('theme', theme);
+  // window.location.reload();
+  const ele = document.getElementById('theme');
+  ele.setAttribute('href', 'css2.css');
+  return theme;
+}
 

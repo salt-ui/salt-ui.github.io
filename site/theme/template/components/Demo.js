@@ -67,8 +67,6 @@ export default class Demo extends React.Component {
 				obj.style =  content[2];
 			}
 
-			console.log(content,obj)
-
 			return obj;
 		}).sort((a, b) => a.meta.order - b.meta.order);
 	}
