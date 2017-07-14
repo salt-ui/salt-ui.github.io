@@ -36,7 +36,6 @@ const nav = (props) => {
     
     storage.setItem('theme', theme);
     const url = params.component ? `/components/${params.component}?theme=${theme}` : `/?theme=${theme}`;
-    // console.log(theme, url)
     router.push(url);
   };
 

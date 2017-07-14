@@ -1,7 +1,7 @@
 import React from 'react';
 import brace from 'brace';
 import Button from 'uxcore/lib/Button';
-// import Dialog from 'uxcore/lib/Dialog';
+// import { withRouter } from 'react-router';
 import Layout from 'uxcore/lib/Layout';
 import 'brace/mode/jsx';
 import 'brace/mode/javascript';
@@ -11,21 +11,16 @@ import 'brace/theme/github';
 import DemoItem from './DemoItem';
 import { transformCode } from '../../../utils';
 
-// const { Row, Col } = Grid;
 const { Left, Right } = Layout;
 
-export default class Demo extends React.Component {
+class Demo extends React.Component {
 
 	constructor(props) {
     super(props);
     this.state = {
       selectDemoIndex: 0,
       demos: this.sortDemos(props.demos),
-      // dialog: {
-      // 	title: '',
-      // 	content: ''
-      // },
-      // showDialog: false
+      theme: window.localStorage.getItem('theme') || 'blue'
     };
 
     this.toggleFrame = this.toggleFrame.bind(this);
@@ -44,6 +39,17 @@ export default class Demo extends React.Component {
 					this.transform(this.state.demos[0]);
 				}, 1000)
 			})
+		}
+
+		const newTheme = window.localStorage.getItem('theme');
+
+		if (newTheme && newTheme !== this.state.theme) {
+			this.refs.preview.contentWindow.postMessage({
+				theme
+			}, '*');
+			this.setState({
+				theme: newTheme
+			});
 		}
 	}
 
@@ -105,8 +111,15 @@ export default class Demo extends React.Component {
 
 	render(){
 		// const { selectDemoIndex, demos, dialog, showDialog } = this.state;
-		const { selectDemoIndex, demos } = this.state;
-		const { params, utils } = this.props;
+		const { selectDemoIndex, demos, theme } = this.state;
+		const { params, utils, location } = this.props;
+		
+		// let theme = 'blue';
+	 //  if (location.query.theme) {
+	 //    theme = location.query.theme;
+	 //  } else {
+	 //    theme = window.localStorage.getItem('theme') || 'blue';
+	 //  }
 
 		const selectDemo = demos[selectDemoIndex > -1 ? selectDemoIndex : 0];
 		const isLocalMode = window.location.port;
@@ -150,6 +163,8 @@ export default class Demo extends React.Component {
 		)
 	}
 }
+
+export default Demo;
 
 // <Row className="ui-example-body">
 // 					<Col md={11} lg={12} className="ui-demos">
