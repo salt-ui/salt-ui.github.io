@@ -39,7 +39,7 @@ export const initTheme = () => {
   return theme;
 }
 
-export const changeTheme = () => {
+/*export const changeTheme = () => {
   const storage = window.localStorage;
   let theme = storage.getItem('theme');
   
@@ -49,5 +49,5 @@ export const changeTheme = () => {
   const ele = document.getElementById('theme');
   ele.setAttribute('href', 'css2.css');
   return theme;
-}
+}*/
 
