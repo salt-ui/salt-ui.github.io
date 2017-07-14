@@ -45,7 +45,7 @@ class Demo extends React.Component {
 
 		if (newTheme && newTheme !== this.state.theme) {
 			this.refs.preview.contentWindow.postMessage({
-				theme
+				theme: newTheme
 			}, '*');
 			this.setState({
 				theme: newTheme
