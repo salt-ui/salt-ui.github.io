@@ -55,7 +55,11 @@ class Demo extends React.Component {
 
 	componentDidMount(){
 		const { demos, selectDemoIndex } = this.state;
+		console.log('componentDidMount');
 		window.setTimeout(() => {
+			this.refs.preview.contentWindow.postMessage({
+				theme: window.localStorage.getItem('theme') || 'blue'
+			}, '*');
 			// this.transform(demos[selectDemoIndex].content, demos[selectDemoIndex].style);
 			this.transform(demos[selectDemoIndex]);
 		}, 3000)
