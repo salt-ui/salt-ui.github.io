@@ -42,7 +42,8 @@ const nav = (props) => {
     const href = theme === 'blue' 
       // ? '//raw.githubusercontent.com/salt-ui/salt-ui.github.io/source-blue/build/index.css'
       ? 'http://alixux.org/saltui/blue.css'
-      : '//raw.githubusercontent.com/salt-ui/salt-ui.github.io/source-orange/build/index.css'
+      // : '//raw.githubusercontent.com/salt-ui/salt-ui.github.io/source-orange/build/index.css'
+      : 'http://alixux.org/saltui/orange.css'
     ele.setAttribute('href', href);
 
   };
