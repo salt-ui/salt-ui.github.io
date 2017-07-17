@@ -25,9 +25,10 @@ const nav = (props) => {
   const selectedKeys = [];
   const eleTheme = document.getElementById('theme');
   const eleUI = document.getElementById('ui-theme');
+  const curTheme = window.localStorage.getItem('theme') || 'orange';
 
-  eleTheme.setAttribute('href', `/${window.localStorage.getItem('theme') || 'orange'}.css`);
-  eleUI.setAttribute('href', `//g.alicdn.com/??platform/common/s/1.1/global/global.css,uxcore/uxcore-kuma/2.2.1/${theme}.min.css`);
+  eleTheme.setAttribute('href', `/${}.css`);
+  eleUI.setAttribute('href', `//g.alicdn.com/??platform/common/s/1.1/global/global.css,uxcore/uxcore-kuma/2.2.1/${curTheme}.min.css`);
 
   if (params.component) {
     selectedKeys.push(params.component === 'tingle-ui' ? '/components/tingle-ui' : '/components/tingle-button');
