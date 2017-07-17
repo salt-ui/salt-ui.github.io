@@ -6,7 +6,6 @@ import Icon from 'uxcore/lib/Icon';
 import Tooltip from 'uxcore/lib/Tooltip';
 import { withRouter, Link } from 'react-router';
 
-// import { theme, changeTheme } from '../../index';
 import { initTheme } from '../../../utils';
 
 const { Option } = Select;
@@ -25,10 +24,10 @@ const nav = (props) => {
   const selectedKeys = [];
   const eleTheme = document.getElementById('theme');
   const eleUI = document.getElementById('ui-theme');
-  const curTheme = window.localStorage.getItem('theme') || 'orange';
+  // const curTheme = window.localStorage.getItem('theme') || 'orange';
 
-  eleTheme.setAttribute('href', `/${curTheme}.css`);
-  eleUI.setAttribute('href', `//g.alicdn.com/??platform/common/s/1.1/global/global.css,uxcore/uxcore-kuma/2.2.1/${curTheme}.min.css`);
+  // eleTheme.setAttribute('href', `/${curTheme}.css`);
+  // eleUI.setAttribute('href', `//g.alicdn.com/??platform/common/s/1.1/global/global.css,uxcore/uxcore-kuma/2.2.1/${curTheme}.min.css`);
 
   if (params.component) {
     selectedKeys.push(params.component === 'tingle-ui' ? '/components/tingle-ui' : '/components/tingle-button');

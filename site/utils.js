@@ -28,6 +28,9 @@ export const mappingNavItem = (name) => {
 };
 
 export const initTheme = () => {
+  console.log('init');
+  const eleTheme = document.getElementById('theme');
+  const eleUI = document.getElementById('ui-theme');
   const storage = window.localStorage;
   let theme = storage.getItem('theme');
 
@@ -36,18 +39,22 @@ export const initTheme = () => {
     theme = 'orange';
   }
 
+  eleTheme.setAttribute('href', `/${theme}.css`);
+  eleUI.setAttribute('href', `//g.alicdn.com/??platform/common/s/1.1/global/global.css,uxcore/uxcore-kuma/2.2.1/${theme}.min.css`);
+
+
   return theme;
 }
 
-export const changeTheme = () => {
-  const storage = window.localStorage;
-  let theme = storage.getItem('theme');
+// export const changeTheme = () => {
+//   const storage = window.localStorage;
+//   let theme = storage.getItem('theme');
   
-  theme === 'blue' ? 'orange' : 'blue';
-  storage.setItem('theme', theme);
-  // window.location.reload();
-  const ele = document.getElementById('theme');
-  ele.setAttribute('href', 'css2.css');
-  return theme;
-}
+//   theme === 'blue' ? 'orange' : 'blue';
+//   storage.setItem('theme', theme);
+//   // window.location.reload();
+//   const ele = document.getElementById('theme');
+//   ele.setAttribute('href', 'css2.css');
+//   return theme;
+// }
 
