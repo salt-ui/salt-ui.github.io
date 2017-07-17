@@ -10,6 +10,7 @@ mv ./build/* ~/SALT_UI_BUILD/
 git checkout master
 git pull origin master
 cp -rf ~/SALT_UI_BUILD/* .
+cp -rf ~/SALT_UI_BUILD/index.css ./orange.css
 rm -rf ~/SALT_UI_BUILD
 git add .
 git commit -m v$BRANCH
