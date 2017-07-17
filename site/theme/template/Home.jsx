@@ -25,11 +25,11 @@ const imgs = {
 }
 
 export default (props) => {
-  let theme = 'blue';
+  let theme = 'orange';
   if (props.location.query.theme) {
     theme = props.location.query.theme;
   } else {
-    theme = window.localStorage.getItem('theme') || 'blue';
+    theme = window.localStorage.getItem('theme') || 'orange';
   }
 
   return (

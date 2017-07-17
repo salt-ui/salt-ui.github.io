@@ -23,6 +23,7 @@ const nav = (props) => {
   const toPage = ({ key }) => router.push(key);
   const onSelect = (key) => router.push(`/components/${key}`);
   const selectedKeys = [];
+  const ele = document.getElementById('theme');
 
   if (params.component) {
     selectedKeys.push(params.component === 'tingle-ui' ? '/components/tingle-ui' : '/components/tingle-button');
@@ -37,6 +38,14 @@ const nav = (props) => {
     storage.setItem('theme', theme);
     const url = params.component ? `/components/${params.component}?theme=${theme}` : `/?theme=${theme}`;
     router.push(url);
+    
+    const href = theme === 'blue' 
+      // ? '//raw.githubusercontent.com/salt-ui/salt-ui.github.io/source-blue/build/index.css'
+      ? 'http://alixux.org/saltui/blue.css'
+      // : '//raw.githubusercontent.com/salt-ui/salt-ui.github.io/source-orange/build/index.css'
+      : 'http://alixux.org/saltui/orange.css'
+    ele.setAttribute('href', href);
+
   };
 
   return (

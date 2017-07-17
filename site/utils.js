@@ -32,8 +32,8 @@ export const initTheme = () => {
   let theme = storage.getItem('theme');
 
   if (!theme) {
-    storage.setItem('theme', 'blue');
-    theme = 'blue';
+    storage.setItem('theme', 'orange');
+    theme = 'orange';
   }
 
   return theme;

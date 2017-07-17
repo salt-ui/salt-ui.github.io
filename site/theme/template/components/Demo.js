@@ -20,7 +20,7 @@ class Demo extends React.Component {
     this.state = {
       selectDemoIndex: 0,
       demos: this.sortDemos(props.demos),
-      theme: window.localStorage.getItem('theme') || 'blue'
+      theme: window.localStorage.getItem('theme') || 'orange'
     };
 
     this.toggleFrame = this.toggleFrame.bind(this);
