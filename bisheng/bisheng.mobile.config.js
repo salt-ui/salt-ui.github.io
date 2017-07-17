@@ -3,9 +3,9 @@ const commonConfig = require('./bisheng.common.config');
 
 module.exports = Object.assign({}, commonConfig, {
   port: 8004,
-  source: [
-    './demos',
-  ],
+  source: {
+    demos: './demos',
+  },
   output: './build/mobile',
   root: '/mobile/',
   entryName: 'mobile',
