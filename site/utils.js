@@ -28,6 +28,9 @@ export const mappingNavItem = (name) => {
 };
 
 export const initTheme = () => {
+  console.log('init');
+  const eleTheme = document.getElementById('theme');
+  const eleUI = document.getElementById('ui-theme');
   const storage = window.localStorage;
   let theme = storage.getItem('theme');
 
@@ -35,6 +38,10 @@ export const initTheme = () => {
     storage.setItem('theme', 'blue');
     theme = 'blue';
   }
+
+  eleTheme.setAttribute('href', `/${theme}.css`);
+  eleUI.setAttribute('href', `//g.alicdn.com/??platform/common/s/1.1/global/global.css,uxcore/uxcore-kuma/2.2.1/${theme}.min.css`);
+
 
   return theme;
 }

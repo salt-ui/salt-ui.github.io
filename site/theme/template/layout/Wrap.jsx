@@ -9,7 +9,7 @@ import { upperFirstCharactor, removeTinglePrefix, mappingNavItem } from '../../.
 
 import 'uxcore/assets/iconfont.css';
 // import 'uxcore/assets/orange.min.css';
-import 'uxcore/assets/blue.min.css';
+// import 'uxcore/assets/blue.min.css';
 import '../../static/style.less';
 
 // export default ({ data, children, routeParams, route, params }) => {

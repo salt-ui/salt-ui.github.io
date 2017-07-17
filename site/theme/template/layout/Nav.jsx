@@ -23,7 +23,12 @@ const nav = (props) => {
   const toPage = ({ key }) => router.push(key);
   const onSelect = (key) => router.push(`/components/${key}`);
   const selectedKeys = [];
-  const ele = document.getElementById('theme');
+  const eleTheme = document.getElementById('theme');
+  const eleUI = document.getElementById('ui-theme');
+  // const curTheme = window.localStorage.getItem('theme') || 'orange';
+
+  // eleTheme.setAttribute('href', `/${curTheme}.css`);
+  // eleUI.setAttribute('href', `//g.alicdn.com/??platform/common/s/1.1/global/global.css,uxcore/uxcore-kuma/2.2.1/${curTheme}.min.css`);
 
   if (params.component) {
     selectedKeys.push(params.component === 'tingle-ui' ? '/components/tingle-ui' : '/components/tingle-button');
@@ -38,16 +43,9 @@ const nav = (props) => {
     storage.setItem('theme', theme);
     const url = params.component ? `/components/${params.component}?theme=${theme}` : `/?theme=${theme}`;
     router.push(url);
-    
-    const href = theme === 'blue' 
-      // ? '//raw.githubusercontent.com/salt-ui/salt-ui.github.io/source-blue/build/index.css'
-      // ? 'http://alixux.org/saltui/blue.css'
-      ? '/blue.css'
-      // : '//raw.githubusercontent.com/salt-ui/salt-ui.github.io/source-orange/build/index.css'
-      // : 'http://alixux.org/saltui/orange.css'
-      : '/orange.css'
-    ele.setAttribute('href', href);
-
+   
+    eleTheme.setAttribute('href', `/${theme}.css`);
+    eleUI.setAttribute('href', `//g.alicdn.com/??platform/common/s/1.1/global/global.css,uxcore/uxcore-kuma/2.2.1/${theme}.min.css`);
   };
 
   return (
