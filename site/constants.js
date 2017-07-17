@@ -21,6 +21,12 @@ export const NAV_MAP = {
     zh: '弹性容器',
     type: 'Layout'
   },
+  'card': {
+    zh: '卡片容器',
+    // order: 0,
+    type: 'Layout'
+  },
+  
   'grid' : {
     zh: '删格',
     type: 'Layout'
@@ -42,7 +48,19 @@ export const NAV_MAP = {
     zh: '选项卡菜单',
     type: 'Navigation'
   },
+  'steps' : {
+    zh: '步骤',
+    type: 'Navigation'
+  },
 
+  'badge' : {
+    zh: '角标',
+    type: 'Display'
+  },
+  'collapse' : {
+    zh: '折叠',
+    type: 'Display'
+  },
   'avatar': {
     zh: '头像',
     // order: 0,
@@ -50,6 +68,11 @@ export const NAV_MAP = {
   },
   'calendar': {
     zh: '日期',
+    // order: 0,
+    type: 'Display'
+  },
+  'number-picker': {
+    zh: '数字步进器',
     // order: 0,
     type: 'Display'
   },
@@ -68,13 +91,33 @@ export const NAV_MAP = {
     // order: 0,
     type: 'Display'
   },
+  'image-viewer': {
+    zh: '图片预览',
+    // order: 0,
+    type: 'Display'
+  },
   'rate': {
     zh: '评分',
     // order: 0,
     type: 'Display'
   },
+  'infinite-scroll': {
+    zh: '滚动刷新',
+    // order: 0,
+    type: 'Display'
+  },
+  'refreshcontrol-scroll': {
+    zh: '下拉刷新',
+    // order: 0,
+    type: 'Display'
+  },
   'scroll-list': {
     zh: '滑动列表',
+    // order: 0,
+    type: 'Display'
+  },
+  'scroll-view': {
+    zh: '滑动块',
     // order: 0,
     type: 'Display'
   },
@@ -108,6 +151,26 @@ export const NAV_MAP = {
     // order: 0,
     type: 'Display'
   },
+  'menu': {
+    zh: '菜单',
+    // order: 0,
+    type: 'Display'
+  },
+  'pagination': {
+    zh: '分页',
+    // order: 0,
+    type: 'Display'
+  },
+  'progress': {
+    zh: '进度条',
+    // order: 0,
+    type: 'Display'
+  },
+  'timeline': {
+    zh: '时间线',
+    type: 'Display'
+  },
+
 
 
   'calendar-field': {
@@ -170,6 +233,21 @@ export const NAV_MAP = {
     // order: 0,
     type: 'Form'
   },
+  'number-picker-filed': {
+    zh: '数字步进器',
+    // order: 0,
+    type: 'Form'
+  },
+  'picker-filed': {
+    zh: '选择器',
+    // order: 0,
+    type: 'Form'
+  },
+  'table': {
+    zh: '表格',
+    // order: 0,
+    type: 'Form'
+  },
 
   'dialog': {
     zh: '提示窗',
@@ -188,6 +266,11 @@ export const NAV_MAP = {
   },
   'toast': {
     zh: '轻提示',
+    // order: 0,
+    type: 'Feedback'
+  },
+  'popup': {
+    zh: '弹出窗',
     // order: 0,
     type: 'Feedback'
   },

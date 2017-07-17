@@ -49,7 +49,12 @@ const nav = (props) => {
 
   return (
     <div className="ui-nav">
-
+      <Tooltip overlay="切换主题" placement="bottom" trigger={['hover']}>
+        <div className="fn-right ui-nav-theme"
+          onClick={e => changeTheme()}
+        >
+        <i className="iconfont icon-theme" />
+      </div></Tooltip>
       <div className="fn-right ui-nav-search">
         <Select
           dropdownClassName="kuma-select2-selected"
@@ -63,12 +68,7 @@ const nav = (props) => {
         </Select>
         <Icon name="sousuo" className="ui-nav-search-icon"/>
       </div>
-      <Tooltip overlay="切换主题" placement="bottom" trigger={['hover']}>
-        <div className="fn-right ui-nav-theme"
-          onClick={e => changeTheme()}
-        >
-        <i className="iconfont icon-theme" />
-      </div></Tooltip>
+      
 
       <div className="ui-logo fn-left fn-highlight">Salt UI</div>
 
