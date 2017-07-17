@@ -23,9 +23,11 @@ const nav = (props) => {
   const toPage = ({ key }) => router.push(key);
   const onSelect = (key) => router.push(`/components/${key}`);
   const selectedKeys = [];
-  const ele = document.getElementById('theme');
+  const eleTheme = document.getElementById('theme');
+  const eleUI = document.getElementById('ui-theme');
 
-  ele.setAttribute('href', `/${window.localStorage.getItem('theme') || 'orange'}.css`);
+  eleTheme.setAttribute('href', `/${window.localStorage.getItem('theme') || 'orange'}.css`);
+  eleUI.setAttribute('href', `//g.alicdn.com/??platform/common/s/1.1/global/global.css,uxcore/uxcore-kuma/2.2.1/${theme}.min.css`);
 
   if (params.component) {
     selectedKeys.push(params.component === 'tingle-ui' ? '/components/tingle-ui' : '/components/tingle-button');
@@ -41,7 +43,8 @@ const nav = (props) => {
     const url = params.component ? `/components/${params.component}?theme=${theme}` : `/?theme=${theme}`;
     router.push(url);
    
-    ele.setAttribute('href', `/${theme}.css`);
+    eleTheme.setAttribute('href', `/${theme}.css`);
+    eleUI.setAttribute('href', `//g.alicdn.com/??platform/common/s/1.1/global/global.css,uxcore/uxcore-kuma/2.2.1/${theme}.min.css`);
   };
 
   return (

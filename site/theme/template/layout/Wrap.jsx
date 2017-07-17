@@ -8,7 +8,7 @@ import { NAV_MAP } from '../../../constants';
 import { upperFirstCharactor, removeTinglePrefix, mappingNavItem } from '../../../utils';
 
 import 'uxcore/assets/iconfont.css';
-import 'uxcore/assets/orange.min.css';
+// import 'uxcore/assets/orange.min.css';
 import '../../static/style.less';
 
 // export default ({ data, children, routeParams, route, params }) => {
