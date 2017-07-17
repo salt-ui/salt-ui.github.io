@@ -27,7 +27,7 @@ const nav = (props) => {
   const eleUI = document.getElementById('ui-theme');
   const curTheme = window.localStorage.getItem('theme') || 'orange';
 
-  eleTheme.setAttribute('href', `/${}.css`);
+  eleTheme.setAttribute('href', `/${curTheme}.css`);
   eleUI.setAttribute('href', `//g.alicdn.com/??platform/common/s/1.1/global/global.css,uxcore/uxcore-kuma/2.2.1/${curTheme}.min.css`);
 
   if (params.component) {
