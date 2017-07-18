@@ -40,21 +40,11 @@ export const initTheme = () => {
   }
 
   eleTheme.setAttribute('href', `/${theme}.css`);
+  // eleTheme.setAttribute('href', `/index.css`);
   eleUI.setAttribute('href', `//g.alicdn.com/??platform/common/s/1.1/global/global.css,uxcore/uxcore-kuma/2.2.1/${theme}.min.css`);
 
 
   return theme;
 }
 
-/*export const changeTheme = () => {
-  const storage = window.localStorage;
-  let theme = storage.getItem('theme');
-  
-  theme === 'blue' ? 'orange' : 'blue';
-  storage.setItem('theme', theme);
-  // window.location.reload();
-  const ele = document.getElementById('theme');
-  ele.setAttribute('href', 'css2.css');
-  return theme;
-}*/
 

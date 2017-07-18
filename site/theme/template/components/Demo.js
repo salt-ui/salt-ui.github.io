@@ -20,7 +20,7 @@ class Demo extends React.Component {
     this.state = {
       selectDemoIndex: 0,
       demos: this.sortDemos(props.demos),
-      theme: window.localStorage.getItem('theme') || 'blue'
+      theme: window.localStorage.getItem('theme') || 'orange'
     };
 
     this.toggleFrame = this.toggleFrame.bind(this);
@@ -55,13 +55,12 @@ class Demo extends React.Component {
 
 	componentDidMount(){
 		const { demos, selectDemoIndex } = this.state;
-		console.log('componentDidMount');
 		window.setTimeout(() => {
 			this.refs.preview.contentWindow.postMessage({
 				theme: window.localStorage.getItem('theme') || 'blue'
 			}, '*');
 			// this.transform(demos[selectDemoIndex].content, demos[selectDemoIndex].style);
-			this.transform(demos[selectDemoIndex]);
+			// this.transform(demos[selectDemoIndex]);
 		}, 3000)
 	}
 
@@ -87,7 +86,7 @@ class Demo extends React.Component {
 		if(!err){
 			this.refs.preview.contentWindow.postMessage({
 				code, 
-				style: data.style ? data.style[2][1] : null
+				// style: data.style ? data.style[2][1] : null
 			}, '*');
 		}	
 	}
@@ -130,7 +129,7 @@ class Demo extends React.Component {
 		const protocol = window.location.protocol;
 		const host = isLocalMode ? 'localhost:8004' : window.location.host;
 		const demoUrl = isLocalMode 
-			? `${protocol}//${host}/demos/${params}/${selectDemo.name}/` 
+			? `${protocol}//${host}/demos/${params}/${selectDemo.name}` 
 			: `${protocol}//${host}/mobile/demos/${params}/${selectDemo.name}`;
 
 		const height = demos.length > 3 ? 540 : 708 - 56 * demos.length;
@@ -151,6 +150,7 @@ class Demo extends React.Component {
 									toggleFrame={this.toggleFrame}
 									utils={utils}
 									height={height}
+									demoUrl={demoUrl}
 								/>
 							)
 						}
@@ -169,60 +169,3 @@ class Demo extends React.Component {
 }
 
 export default Demo;
-
-// <Row className="ui-example-body">
-// 					<Col md={11} lg={12} className="ui-demos">
-// 						{
-// 							demos.map((demo, i) => 
-// 								<DemoItem 
-// 									key={demo.name} 
-// 									data={demo} 
-// 									index={i} 
-// 									transform={this.transform}
-// 									selectIndex={selectDemoIndex}
-// 									toggleFrame={this.toggleFrame}
-// 									utils={utils}
-// 								/>
-// 							)
-// 						}
-// 					</Col>
-// 					<Col md={12} mdOffset={1} lg={10} lgOffset={1} className="ui-preview">
-// 						<div className="ui-preview-content">
-// 							<div className="ui-preview-head" />
-// 							<iframe 
-// 								src={demoUrl} 
-// 								ref="preview"
-// 								/>
-// 						</div>
-// 					</Col>
-// 				</Row>
-
-// <div className="ui-preview-header">
-// 							<div className="preview-statbar">
-// 								<img src="https://os.alipayobjects.com/rmsportal/VfVHYcSUxreetec.png" width="350" alt=""/>
-// 							</div>
-// 							<div className="preview-navbar">
-// 	            	<div className="preview-url">{`/demos/${params}/${selectDemo.name}`}</div>
-// 	            </div>
-// 						</div>
-
-// <Dialog title={dialog.title}
-//           visible={showDialog}
-//           closable={true}
-//           onCancel={this.hideDialog}
-//           width={900}
-//           footer={<Button type="primary" onClick={e => this.hideDialog()}>Back</Button>}
-//           className='demo-dialog'
-//           >
-//          	 {utils.toReactComponent(dialog.content)}
-         	 
-//          	 {dialog.style && utils.toReactComponent(dialog.style)}
-//         </Dialog>
-
-// <iframe 
-// 								src={demoUrl} 
-// 								ref = {e => {
-// 			            this.container = e;
-// 			          }}
-// 								/>
-
