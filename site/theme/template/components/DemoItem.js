@@ -3,6 +3,7 @@ import AceEditor from 'react-ace';
 import classnames from 'classnames';
 import Message from 'uxcore/lib/Message';
 import Tooltip from 'uxcore/lib/Tooltip';
+import QRCode from 'qrcode.react';
 import CopyToClipboard from 'react-copy-to-clipboard';
 
 import { transformCode } from '../../../utils';
@@ -41,7 +42,7 @@ export default class DemoItem extends React.Component {
 
 	render(){
     // const { data, selectIndex, index, showExpandDemo, toggleFrame, utils } = this.props;
-		const { data, selectIndex, index, toggleFrame, utils, height } = this.props;
+		const { data, selectIndex, index, toggleFrame, utils, height, demoUrl } = this.props;
 		const { expand } = this.state;
 
     const demoHeight = data.style ? height * 0.7 : height;
@@ -75,13 +76,25 @@ export default class DemoItem extends React.Component {
             text={data.content}
             onCopy={() => Message.info('复制成功！')}
             >
-            <Tooltip overlay="拷贝代码" placement="top">
+            <Tooltip overlay="拷贝代码" placement="bottom">
             <div className="ui-demos-item-btn copy">
               <i className='iconfont icon-fuzhi'/>
             </div>
             </Tooltip>
           </CopyToClipboard>
-          
+          <Tooltip
+            overlay={
+              <div>
+              <h4 style={{ margin: '8Px 0 12Px' }}>扫二维码查看演示效果</h4>
+              <QRCode size={144} value={demoUrl} />
+              </div>
+            }
+            placement="bottom"
+          >
+            <div className="ui-demos-item-btn copy">
+              <i className='iconfont icon-qrcode'/>
+            </div>
+          </Tooltip>
   				<h3 className="ui-demos-item-title" onClick={e => this.toggleCode(index)}>{data.meta.title}</h3>
         </div>
           {

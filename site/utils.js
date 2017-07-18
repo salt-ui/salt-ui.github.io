@@ -15,7 +15,6 @@ export const transformCode = (contents) => {
 
     return { err: err.toString() }
   }
-
 };
 
 export const upperFirstCharactor = (word) => word.slice(0, 1).toUpperCase() + word.slice(1);
@@ -39,22 +38,12 @@ export const initTheme = () => {
     theme = 'orange';
   }
 
-  eleTheme.setAttribute('href', `/${theme}.css`);
+  // eleTheme.setAttribute('href', `/${theme}.css`);
+  eleTheme.setAttribute('href', `/index.css`);
   eleUI.setAttribute('href', `//g.alicdn.com/??platform/common/s/1.1/global/global.css,uxcore/uxcore-kuma/2.2.1/${theme}.min.css`);
 
 
   return theme;
 }
 
-// export const changeTheme = () => {
-//   const storage = window.localStorage;
-//   let theme = storage.getItem('theme');
-  
-//   theme === 'blue' ? 'orange' : 'blue';
-//   storage.setItem('theme', theme);
-//   // window.location.reload();
-//   const ele = document.getElementById('theme');
-//   ele.setAttribute('href', 'css2.css');
-//   return theme;
-// }
 

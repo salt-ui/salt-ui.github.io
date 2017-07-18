@@ -16,14 +16,44 @@ export default class Layout extends React.Component {
 	    	changeFlag: 0
 	    }
 	    this.receiveMessage = this.receiveMessage.bind(this);
+	    this.renderCode = this.renderCode.bind(this);
 	}
 
 	componentDidMount(){
+		const { data: { demos }, params: { demo, name } } = this.props;
+		const data = demos[demo][name].content;
+		if (data.length > 2) {
+				let style = document.createElement('style');
+				style.type = 'text/css';
+				style.innerHTML = data[2][2][1];
+				document.getElementsByTagName('head').item(0).appendChild(style); 
+		}
+		console.log();
+		this.renderCode(transformCode(data[1][2][1]).code);
 		window.addEventListener('message', this.receiveMessage);
 	}
 
 	shouldComponentUpdate(){
 		return false;
+	}
+
+	renderCode(data){
+		const mount = this.refs.mountNode;
+		const copms = [ReactDOM, React, window.SaltUI, mount];
+		try{
+			let f = new Function(ARGS, data);
+			f.apply(null, copms);
+
+			// if(event.data.style){
+			// 	let style = document.createElement('style');
+			// 	style.type = 'text/css';
+			// 	style.innerHTML = event.data.style;
+			// 	document.getElementsByTagName('head').item(0).appendChild(style); 
+			// }
+
+		}catch (error){
+			console.log(error)
+		}
 	}
 
 	receiveMessage(event){
@@ -34,23 +64,8 @@ export default class Layout extends React.Component {
 			const href = `https://alinw.alicdn.com/platform/tingle-ui/2.2.2/${event.data.theme === 'blue' ? 'blue' : 'default'}.min.css`;
 			ele.setAttribute('href', href);
 		} else {
-			const mount = this.refs.mountNode;
-			const copms = [ReactDOM, React, window.SaltUI, mount];
-			try{
-				// let f = new Function(args, code);
-				let f = new Function(ARGS, event.data.code);
-				f.apply(null, copms);
-
-				if(event.data.style){
-					let style = document.createElement('style');
-					style.type = 'text/css';
-					style.innerHTML = event.data.style;
-					document.getElementsByTagName('head').item(0).appendChild(style); 
-				}
-
-			}catch (error){
-				console.log(error)
-			}
+			this.renderCode(event.data.code);
+			
 		}
 
 	}

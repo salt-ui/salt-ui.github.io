@@ -41,6 +41,7 @@
     "jsonml.js": "^0.1.0",
     "kuma-base": "^1.0.14",
     "object-assign": "^4.1.0",
+    "qrcode.react": "^0.7.1",
     "react-ace": "^4.4.0",
     "react-addons-css-transition-group": "^15.4.1",
     "react-copy-to-clipboard": "^4.2.3",

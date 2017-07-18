@@ -60,7 +60,7 @@ class Demo extends React.Component {
 				theme: window.localStorage.getItem('theme') || 'blue'
 			}, '*');
 			// this.transform(demos[selectDemoIndex].content, demos[selectDemoIndex].style);
-			this.transform(demos[selectDemoIndex]);
+			// this.transform(demos[selectDemoIndex]);
 		}, 3000)
 	}
 
@@ -86,7 +86,7 @@ class Demo extends React.Component {
 		if(!err){
 			this.refs.preview.contentWindow.postMessage({
 				code, 
-				style: data.style ? data.style[2][1] : null
+				// style: data.style ? data.style[2][1] : null
 			}, '*');
 		}	
 	}
@@ -129,7 +129,7 @@ class Demo extends React.Component {
 		const protocol = window.location.protocol;
 		const host = isLocalMode ? 'localhost:8004' : window.location.host;
 		const demoUrl = isLocalMode 
-			? `${protocol}//${host}/demos/${params}/${selectDemo.name}/` 
+			? `${protocol}//${host}/demos/${params}/${selectDemo.name}` 
 			: `${protocol}//${host}/mobile/demos/${params}/${selectDemo.name}`;
 
 		const height = demos.length > 3 ? 540 : 708 - 56 * demos.length;
@@ -150,6 +150,7 @@ class Demo extends React.Component {
 									toggleFrame={this.toggleFrame}
 									utils={utils}
 									height={height}
+									demoUrl={demoUrl}
 								/>
 							)
 						}
