@@ -32,3 +32,14 @@ tnpm run deploy
 ## 更新目录
 
 修改 `site/constants.js`
+
+## 开发注意
+
+请修改`site/theme/utils.js` 中的 `initTheme` 函数：
+```
+// 发布用
+eleTheme.setAttribute('href', `/${theme}.css`);
+
+// 开发用
+eleTheme.setAttribute('href', `/index.css`);
+```
