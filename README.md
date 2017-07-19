@@ -33,8 +33,14 @@ tnpm run deploy
 
 修改 `site/constants.js`
 
-## 更新css
 
-1. `npm run build`
-2. 请将`build/css` 提交至服务器中
-3. 更换 `template.html`和 `site/theme/layout/Nav.jsx` 文件中的链接地址
+## 开发注意
+
+请修改`site/theme/utils.js` 中的 `initTheme` 函数：
+```
+// 发布用
+eleTheme.setAttribute('href', `/${theme}.css`);
+
+// 开发用
+eleTheme.setAttribute('href', `/index.css`);
+```
