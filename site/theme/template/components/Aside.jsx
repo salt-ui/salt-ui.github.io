@@ -72,7 +72,7 @@ class Aside extends Component {
           Object.entries(this.navListData).map(([key, value]) => (
             <SubMenu key={key} title={key}>
               {
-                value.map(({ name, zh }) => <MenuItem key={name}>{zh}&nbsp;{upperFirstCharactor(name)}</MenuItem>)
+                value.map(({ name, zh }) => <MenuItem key={name}>{zh}&nbsp;{upperFirstCharactor(removeTinglePrefix(name))}</MenuItem>)
               }
             </SubMenu>
           )
