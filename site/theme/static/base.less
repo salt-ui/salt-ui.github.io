@@ -21,7 +21,8 @@ body{
       position: absolute;
       top: 4px;
       right: 10px;
-      color: #ccc;
+      color: rgba(76, 96, 121, 0.4);
+      /*color: #ccc;*/
     }
 
     .kuma-select2-arrow{
@@ -32,6 +33,11 @@ body{
       border-radius: 16px;
       background-color: #F5F5F5;
       border-color: transparent;
+    }
+    &:hover{
+      .ui-nav-search-icon{
+        color: rgba(76, 96, 121, 0.6);
+      }
     }
   }
 
@@ -158,9 +164,14 @@ body{
   }
 }
 
-.kuma-button-outline:hover{
-  background-color: #fef7f2;
+.kuma-button-outline{
+  border-color: #fff;
+  &:hover{
+    border-color: #fff;
+    background-color: #fef7f2;
+  }
 }
+
 .kuma-button-primary:hover{
   background-color: #f2813f;
 }

@@ -38,8 +38,8 @@ export const initTheme = () => {
     theme = 'orange';
   }
 
-  eleTheme.setAttribute('href', `/${theme}.css`);
-  // eleTheme.setAttribute('href', `/index.css`);
+  // eleTheme.setAttribute('href', `/${theme}.css`);
+  eleTheme.setAttribute('href', `/index.css`);
   eleUI.setAttribute('href', `//g.alicdn.com/??platform/common/s/1.1/global/global.css,uxcore/uxcore-kuma/2.2.1/${theme}.min.css`);
 
 
