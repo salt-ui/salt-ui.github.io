@@ -10,7 +10,7 @@
         "spec": ">=1.0.0 <2.0.0",
         "type": "range"
       },
-      "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui"
+      "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
   "_cnpm_publish_time": 1493299451555,
@@ -42,7 +42,7 @@
   "_shasum": "e713e4fc9d6c81266dd34e714e2796ea35de90e2",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-number-picker-field@^1.0.0",
-  "_where": "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui",
+  "_where": "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui",
   "author": {
     "name": "sujingjing"
   },

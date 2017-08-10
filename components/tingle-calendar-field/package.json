@@ -10,12 +10,12 @@
         "spec": ">=1.0.2 <2.0.0",
         "type": "range"
       },
-      "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui"
+      "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
-  "_cnpm_publish_time": 1492659277808,
+  "_cnpm_publish_time": 1496978175338,
   "_from": "@ali/tingle-calendar-field@>=1.0.2 <2.0.0",
-  "_id": "@ali/tingle-calendar-field@1.0.8",
+  "_id": "@ali/tingle-calendar-field@1.0.9",
   "_inCache": true,
   "_location": "/@ali/tingle-calendar-field",
   "_nodeVersion": "6.9.1",
@@ -38,11 +38,11 @@
   "_requiredBy": [
     "/@ali/tingle-ui"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-calendar-field/download/@ali/tingle-calendar-field-1.0.8.tgz",
-  "_shasum": "65346542bb815aa3d16f93555637c1326d10077e",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-calendar-field/download/@ali/tingle-calendar-field-1.0.9.tgz",
+  "_shasum": "8fc0f85e7e37f17cd7d66e2442ecbf3397a7ec6e",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-calendar-field@^1.0.2",
-  "_where": "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui",
+  "_where": "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui",
   "author": {
     "name": "quanyun.mqy"
   },
@@ -64,17 +64,17 @@
     "salt-tools": "~0.1.0"
   },
   "dist": {
-    "shasum": "65346542bb815aa3d16f93555637c1326d10077e",
-    "size": 7482,
-    "key": "@ali/tingle-calendar-field/-/@ali/tingle-calendar-field-1.0.8.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-calendar-field/download/@ali/tingle-calendar-field-1.0.8.tgz"
+    "shasum": "8fc0f85e7e37f17cd7d66e2442ecbf3397a7ec6e",
+    "size": 7549,
+    "key": "@ali/tingle-calendar-field/-/@ali/tingle-calendar-field-1.0.9.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-calendar-field/download/@ali/tingle-calendar-field-1.0.9.tgz"
   },
   "files": [
     "dist",
     "src",
     "README.md"
   ],
-  "gitHead": "4e35cbbf294b205492eea7cac51e3fdfaebde63f",
+  "gitHead": "5139df05abfc169f36e47baccfc87dfede21f78f",
   "keywords": [
     "tingle-calendar-field",
     "CalendarField"
@@ -92,7 +92,7 @@
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1492659277808,
+  "publish_time": 1496978175338,
   "readme": "ERROR: No README data found!",
   "readmeFilename": "README.md",
   "repository": {
@@ -109,5 +109,5 @@
     "tnpm-update": "salt-tools run tnpm-update",
     "update": "salt-tools run update"
   },
-  "version": "1.0.8"
+  "version": "1.0.9"
 }

@@ -10,7 +10,7 @@
         "spec": ">=1.0.12 <2.0.0",
         "type": "range"
       },
-      "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui"
+      "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
   "_cnpm_publish_time": 1491880912482,
@@ -42,7 +42,7 @@
   "_shasum": "63cd2be03e2ce5b6d1dbe160a484f46ded7e76bc",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-cascade-select-field@^1.0.12",
-  "_where": "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui",
+  "_where": "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui",
   "author": {
     "name": "caoke.ck"
   },

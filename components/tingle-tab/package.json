@@ -10,7 +10,7 @@
         "spec": ">=1.0.0 <2.0.0",
         "type": "range"
       },
-      "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui"
+      "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
   "_cnpm_publish_time": 1493104496025,
@@ -46,7 +46,7 @@
   "_shasum": "967d792eb20058b3085440e61615a636f0d209b6",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-tab@^1.0.0",
-  "_where": "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui",
+  "_where": "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui",
   "author": {
     "name": "zhangshun@alipay.com"
   },
@@ -112,10 +112,6 @@
     {
       "name": "caoke.ck",
       "email": "caoke.ck@alibaba-inc.com"
-    },
-    {
-      "name": "guanghong.wsj",
-      "email": "guanghong.wsj@alibaba-inc.com"
     },
     {
       "name": "quanyun.mqy",

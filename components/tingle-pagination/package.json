@@ -10,7 +10,7 @@
         "spec": ">=1.0.0 <2.0.0",
         "type": "range"
       },
-      "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui"
+      "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
   "_cnpm_publish_time": 1496714508487,
@@ -42,7 +42,7 @@
   "_shasum": "4ed9b031869bac1c8a4c0685e59204123598046c",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-pagination@^1.0.0",
-  "_where": "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui",
+  "_where": "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui",
   "author": {
     "name": "changming.zy"
   },
@@ -82,6 +82,10 @@
     {
       "name": "changming.zy",
       "email": "changming.zy@alibaba-inc.com"
+    },
+    {
+      "name": "guanghong.wsj",
+      "email": "guanghong.wsj@alibaba-inc.com"
     },
     {
       "name": "quanyun.mqy",

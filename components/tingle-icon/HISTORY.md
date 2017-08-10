@@ -1,20 +1,3 @@
-2.0.5 / 2017-05-24
-=================
-`feat`: 更新 search
-
-2.0.4 / 2017-05-17
-==================
-`feat`: 更新toast-error
-`feat`: 更新toast-success
-
-2.0.3 / 2017-05-17
-==================
-`feat`: 更新note-found
-`feat`: 更新star
-`feat`: 更新search
-`feat`: 新增warn-line
-`feat`: 新增loading-round
-
 2.0.2 / 2017-03-14
 ==================
 `feat`: 新增加13个icon

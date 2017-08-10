@@ -10,20 +10,20 @@
         "spec": ">=1.0.0 <2.0.0",
         "type": "range"
       },
-      "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui"
+      "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
-  "_cnpm_publish_time": 1495458815236,
+  "_cnpm_publish_time": 1472999775723,
   "_from": "@ali/tingle-button@>=1.0.0 <2.0.0",
-  "_id": "@ali/tingle-button@1.1.1",
+  "_id": "@ali/tingle-button@1.0.10",
   "_inCache": true,
   "_location": "/@ali/tingle-button",
-  "_nodeVersion": "6.9.1",
+  "_nodeVersion": "4.5.0",
   "_npmUser": {
-    "name": "guanghong.wsj",
-    "email": "guanghong.wsj@alibaba-inc.com"
+    "name": "caoke.ck",
+    "email": "caoke.ck@alibaba-inc.com"
   },
-  "_npmVersion": "3.10.10",
+  "_npmVersion": "2.15.9",
   "_phantomChildren": {
     "@ali/tingle-style": "1.0.23",
     "classnames": "2.2.5"
@@ -39,15 +39,15 @@
     "type": "range"
   },
   "_requiredBy": [
-    "/@ali/tingle-pagination",
+    "/@ali/tingle-grid/@ali/tingle-ui",
     "/@ali/tingle-picker-field",
     "/@ali/tingle-ui"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-button/download/@ali/tingle-button-1.1.1.tgz",
-  "_shasum": "2a0e7dae6584fe98bfbb1db7849213ebf3b46e5a",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-button/download/@ali/tingle-button-1.0.10.tgz",
+  "_shasum": "3b07133b9b747c41b2815c9e805ab32497f57337",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-button@^1.0.0",
-  "_where": "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui",
+  "_where": "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui",
   "author": {
     "name": "cm"
   },
@@ -58,17 +58,39 @@
   },
   "description": "tingle-button component for tingle.",
   "devDependencies": {
-    "@ali/tingle-ui": "^1.0.0",
-    "fastclick": "^1.0.6",
-    "react": "^0.14.8",
-    "react-dom": "^0.14.8",
-    "salt-tools": "~0.1.0"
+    "@ali/tingle-ui": "~1.0.0",
+    "babel": "~6.3.26",
+    "babel-core": "~6.4.0",
+    "babel-loader": "~6.2.1",
+    "babel-plugin-add-module-exports": "~0.1.2",
+    "babel-preset-es2015": "~6.3.13",
+    "babel-preset-react": "~6.3.13",
+    "babel-preset-stage-1": "~6.3.13",
+    "browser-sync": "~2.11.1",
+    "cross-spawn": "^2.0.0",
+    "fastclick": "~1.0.6",
+    "gulp": "~3.9.0",
+    "gulp-babel": "~6.1.1",
+    "gulp-concat": "~2.6.0",
+    "gulp-just-replace": "~1.0.2",
+    "gulp-pathmap": "~0.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "~1.6.0",
+    "gulp-stylus": "~2.3.1",
+    "gulp-svgstore": "~6.0.0",
+    "gulp-uglify": "~1.5.1",
+    "gulp-unique-files": "~0.1.2",
+    "react": "~0.14.8",
+    "react-dom": "~0.14.8",
+    "svg2react-loader": "^1.0.2",
+    "through2": "~2.0.1",
+    "webpack": "~1.12.11"
   },
   "dist": {
-    "shasum": "2a0e7dae6584fe98bfbb1db7849213ebf3b46e5a",
-    "size": 7815,
-    "key": "@ali/tingle-button/-/@ali/tingle-button-1.1.1.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-button/download/@ali/tingle-button-1.1.1.tgz"
+    "shasum": "3b07133b9b747c41b2815c9e805ab32497f57337",
+    "size": 11697,
+    "key": "@ali/tingle-button/-/@ali/tingle-button-1.0.10.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-button/download/@ali/tingle-button-1.0.10.tgz"
   },
   "files": [
     "dist",
@@ -92,8 +114,16 @@
       "email": "caoke.ck@alibaba-inc.com"
     },
     {
+      "name": "changming.zy",
+      "email": "changming.zy@alibaba-inc.com"
+    },
+    {
       "name": "guanghong.wsj",
       "email": "guanghong.wsj@alibaba-inc.com"
+    },
+    {
+      "name": "jiasong.js",
+      "email": "jiasong.js@alibaba-inc.com"
     },
     {
       "name": "quanyun.mqy",
@@ -105,7 +135,7 @@
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1495458815236,
+  "publish_time": 1472999775723,
   "readme": "ERROR: No README data found!",
   "readmeFilename": "README.md",
   "repository": {
@@ -114,13 +144,8 @@
   },
   "screenshots": "",
   "scripts": {
-    "build": "salt-tools run build",
-    "dep": "salt-tools run dep",
-    "pub": "salt-tools run pub",
-    "start": "salt-tools run start",
-    "tnpm-dep": "salt-tools run tnpm-dep",
-    "tnpm-update": "salt-tools run tnpm-update",
-    "update": "salt-tools run update"
+    "build": "gulp b",
+    "start": "gulp d"
   },
-  "version": "1.1.1"
+  "version": "1.0.10"
 }

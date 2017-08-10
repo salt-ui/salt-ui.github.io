@@ -10,7 +10,7 @@
         "spec": ">=1.0.0 <2.0.0",
         "type": "range"
       },
-      "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui"
+      "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
   "_cnpm_publish_time": 1489581537683,
@@ -37,7 +37,6 @@
   },
   "_requiredBy": [
     "/@ali/tingle-action-sheet",
-    "/@ali/tingle-badge",
     "/@ali/tingle-calendar",
     "/@ali/tingle-calendar-field",
     "/@ali/tingle-cascade-select-field",
@@ -48,9 +47,6 @@
     "/@ali/tingle-infinite-scroll",
     "/@ali/tingle-menu",
     "/@ali/tingle-note",
-    "/@ali/tingle-number-picker",
-    "/@ali/tingle-number-picker-field",
-    "/@ali/tingle-pagination",
     "/@ali/tingle-photo-field",
     "/@ali/tingle-picker-field",
     "/@ali/tingle-popup",
@@ -61,7 +57,6 @@
     "/@ali/tingle-search-bar",
     "/@ali/tingle-select-field",
     "/@ali/tingle-slot",
-    "/@ali/tingle-steps",
     "/@ali/tingle-tab-bar",
     "/@ali/tingle-table",
     "/@ali/tingle-toast",
@@ -71,7 +66,7 @@
   "_shasum": "0a879f1c729f0c6a9830184ef01eaba50e784eb5",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-context@^1.0.0",
-  "_where": "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui",
+  "_where": "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui",
   "author": {
     "name": "gnosaij"
   },

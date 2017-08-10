@@ -10,21 +10,22 @@
         "spec": ">=1.0.0 <2.0.0",
         "type": "range"
       },
-      "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui"
+      "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
-  "_cnpm_publish_time": 1495087680166,
+  "_cnpm_publish_time": 1492596732931,
   "_from": "@ali/tingle-slide@>=1.0.0 <2.0.0",
-  "_id": "@ali/tingle-slide@1.4.0",
+  "_id": "@ali/tingle-slide@1.2.1",
   "_inCache": true,
   "_location": "/@ali/tingle-slide",
-  "_nodeVersion": "6.9.1",
+  "_nodeVersion": "6.9.5",
   "_npmUser": {
-    "name": "quanyun.mqy",
-    "email": "quanyun.mqy@alibaba-inc.com"
+    "name": "changming.zy",
+    "email": "changming.zy@alibaba-inc.com"
   },
   "_npmVersion": "3.10.9",
   "_phantomChildren": {
+    "@ali/tingle-style": "1.0.23",
     "classnames": "2.2.5"
   },
   "_publish_on_cnpm": true,
@@ -42,39 +43,39 @@
     "/@ali/tingle-image-viewer",
     "/@ali/tingle-ui"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-slide/download/@ali/tingle-slide-1.4.0.tgz",
-  "_shasum": "74dec7144b1281e56116422a5f959d59e402e00f",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-slide/download/@ali/tingle-slide-1.2.1.tgz",
+  "_shasum": "c5a50d6bc238498de4aab9a1540845bf21ea1d6e",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-slide@^1.0.0",
-  "_where": "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui",
+  "_where": "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui",
   "author": {
     "name": "cm"
   },
   "dependencies": {
     "@ali/tingle-context": "~1.0.0",
-    "@ali/tingle-style": "^2.0.0",
+    "@ali/tingle-style": "~1.0.0",
     "classnames": "~2.2.3"
   },
   "description": "tingle-slide component for tingle.",
   "devDependencies": {
-    "@ali/tingle-ui": "^2.0.0",
+    "@ali/tingle-ui": "~1.0.0",
     "fastclick": "^1.0.6",
     "react": "^0.14.8",
     "react-dom": "^0.14.8",
     "salt-tools": "~0.1.0"
   },
   "dist": {
-    "shasum": "74dec7144b1281e56116422a5f959d59e402e00f",
-    "size": 15504,
-    "key": "@ali/tingle-slide/-/@ali/tingle-slide-1.4.0.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-slide/download/@ali/tingle-slide-1.4.0.tgz"
+    "shasum": "c5a50d6bc238498de4aab9a1540845bf21ea1d6e",
+    "size": 14130,
+    "key": "@ali/tingle-slide/-/@ali/tingle-slide-1.2.1.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-slide/download/@ali/tingle-slide-1.2.1.tgz"
   },
   "files": [
     "dist",
     "src",
     "README.md"
   ],
-  "gitHead": "52454a7cecfa82d4c1d53ca1491409d989c0a0b4",
+  "gitHead": "f5579d344cf536dfa7096d870e1d697512fa34c2",
   "keywords": [
     "tingle-slide",
     "Slide"
@@ -104,7 +105,7 @@
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1495087680166,
+  "publish_time": 1492596732931,
   "readme": "ERROR: No README data found!",
   "readmeFilename": "README.md",
   "repository": {
@@ -121,5 +122,5 @@
     "tnpm-update": "salt-tools run tnpm-update",
     "update": "salt-tools run update"
   },
-  "version": "1.4.0"
+  "version": "1.2.1"
 }

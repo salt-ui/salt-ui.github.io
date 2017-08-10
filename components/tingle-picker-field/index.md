@@ -250,6 +250,19 @@ afterFetch(arr) {
 <PickerField afterFetch={this.afterFetch}></PickerField>
 ```
 
+### showSearch
+
+描述：是否显示搜索框。
+类型：`bool`
+默认：`true`
+必选：否
+
+示例：
+
+```
+<PickerField showSearch={false}></PickerField>
+```
+
 ### searchTitle
 
 描述：搜索弹框标题。
@@ -340,6 +353,32 @@ onSelect(value) {
 ...
 
 <PickerField value={this.state.value} onSelect={this.onSelect}></PickerField>
+```
+
+### multiple
+
+描述：是否是多选。
+类型：`bool`
+默认：`false`
+必选：否
+
+示例：
+
+```
+<PickerField multiple></PickerField>
+```
+
+### selectText
+
+描述：多选时已选择项的文案。
+类型：`string`
+默认：`已选择：`
+必选：否
+
+示例：
+
+```
+<PickerField selectText="已选择："></PickerField>
 ```
 
 ## Links

@@ -177,7 +177,8 @@ class Demo extends React.Component {
 |属性名称|required|数据类型|默认值|备注|
 |---|---|---|---|---|
 |className|optional|string|''|className
-|scrollLoad|optional|bool|true|是否需要滑动加载|
+|scrollRefresh|optional|bool|true|是否需要下拉刷新|
+|scrollLoad|optional|bool|true|是否需要上拉加载更多|
 |pullLoadTip|optional|string|'下拉显示更多'|下拉加载更多的提示文案|
 |loadDataTip|optional|string|'释放加载数据'|释放加载数据的提示文案|
 |loadingTip|optional|string|'加载中...'|数据加载中的提示文案|

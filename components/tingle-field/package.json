@@ -10,7 +10,7 @@
         "spec": ">=1.0.0 <2.0.0",
         "type": "range"
       },
-      "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui"
+      "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
   "_cnpm_publish_time": 1492669153941,
@@ -44,7 +44,6 @@
     "/@ali/tingle-checkbox-field",
     "/@ali/tingle-city-select-field",
     "/@ali/tingle-datetime-field",
-    "/@ali/tingle-number-picker-field",
     "/@ali/tingle-picker-field",
     "/@ali/tingle-select-field",
     "/@ali/tingle-ui"
@@ -53,7 +52,7 @@
   "_shasum": "f9e84a5517c18a6a7c6c0a13d9de73f4222c5b75",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-field@^1.0.0",
-  "_where": "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui",
+  "_where": "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui",
   "author": {
     "name": "jiasong.js"
   },

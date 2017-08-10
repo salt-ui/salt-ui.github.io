@@ -10,12 +10,12 @@
         "spec": ">=0.1.2 <0.2.0",
         "type": "range"
       },
-      "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui"
+      "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
-  "_cnpm_publish_time": 1488976778775,
+  "_cnpm_publish_time": 1500372920351,
   "_from": "@ali/tingle-popup@>=0.1.2 <0.2.0",
-  "_id": "@ali/tingle-popup@0.1.2",
+  "_id": "@ali/tingle-popup@0.1.5",
   "_inCache": true,
   "_location": "/@ali/tingle-popup",
   "_nodeVersion": "6.9.1",
@@ -23,7 +23,7 @@
     "name": "guanghong.wsj",
     "email": "guanghong.wsj@alibaba-inc.com"
   },
-  "_npmVersion": "2.15.11",
+  "_npmVersion": "3.10.10",
   "_phantomChildren": {},
   "_publish_on_cnpm": true,
   "_requested": {
@@ -40,11 +40,11 @@
     "/@ali/tingle-picker-field",
     "/@ali/tingle-ui"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-popup/download/@ali/tingle-popup-0.1.2.tgz",
-  "_shasum": "e551e2f432fe96b19d1eac6f853f1780495e287c",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-popup/download/@ali/tingle-popup-0.1.5.tgz",
+  "_shasum": "e632e5c0709034f344b7f9e0ee0afee8fa1b0ded",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-popup@^0.1.2",
-  "_where": "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui",
+  "_where": "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui",
   "author": {
     "name": "guanghong.wsj"
   },
@@ -64,17 +64,17 @@
     "salt-tools": "~0.1.0"
   },
   "dist": {
-    "shasum": "e551e2f432fe96b19d1eac6f853f1780495e287c",
-    "size": 5190,
-    "key": "@ali/tingle-popup/-/@ali/tingle-popup-0.1.2.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-popup/download/@ali/tingle-popup-0.1.2.tgz"
+    "shasum": "e632e5c0709034f344b7f9e0ee0afee8fa1b0ded",
+    "size": 5387,
+    "key": "@ali/tingle-popup/-/@ali/tingle-popup-0.1.5.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-popup/download/@ali/tingle-popup-0.1.5.tgz"
   },
   "files": [
     "dist",
     "src",
     "README.md"
   ],
-  "gitHead": "4f7fae501bef26584084612892676a9ee1d2cd52",
+  "gitHead": "f3a017fbadbc21c3355f6bccdc0dce05d198cd93",
   "keywords": [
     "tingle-popup",
     "Popup"
@@ -92,7 +92,7 @@
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1488976778775,
+  "publish_time": 1500372920351,
   "readme": "ERROR: No README data found!",
   "readmeFilename": "README.md",
   "repository": {
@@ -109,5 +109,5 @@
     "tnpm-update": "salt-tools run tnpm-update",
     "update": "salt-tools run update"
   },
-  "version": "0.1.2"
+  "version": "0.1.5"
 }

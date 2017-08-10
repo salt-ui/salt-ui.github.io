@@ -2,20 +2,20 @@
   "_args": [
     [
       {
-        "raw": "@ali/tingle-ui@^2.*",
+        "raw": "@ali/tingle-ui@2.2.3",
         "scope": "@ali",
         "escapedName": "@ali%2ftingle-ui",
         "name": "@ali/tingle-ui",
-        "rawSpec": "^2.*",
-        "spec": ">=2.0.0 <3.0.0",
-        "type": "range"
+        "rawSpec": "2.2.3",
+        "spec": "2.2.3",
+        "type": "version"
       },
-      "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io"
+      "/Users/qy/work/tingle/salt-ui.github.io"
     ]
   ],
-  "_cnpm_publish_time": 1496401559224,
-  "_from": "@ali/tingle-ui@>=2.0.0 <3.0.0",
-  "_id": "@ali/tingle-ui@2.2.2",
+  "_cnpm_publish_time": 1497237058860,
+  "_from": "@ali/tingle-ui@2.2.3",
+  "_id": "@ali/tingle-ui@2.2.3",
   "_inCache": true,
   "_location": "/@ali/tingle-ui",
   "_nodeVersion": "6.9.1",
@@ -27,23 +27,23 @@
   "_phantomChildren": {},
   "_publish_on_cnpm": true,
   "_requested": {
-    "raw": "@ali/tingle-ui@^2.*",
+    "raw": "@ali/tingle-ui@2.2.3",
     "scope": "@ali",
     "escapedName": "@ali%2ftingle-ui",
     "name": "@ali/tingle-ui",
-    "rawSpec": "^2.*",
-    "spec": ">=2.0.0 <3.0.0",
-    "type": "range"
+    "rawSpec": "2.2.3",
+    "spec": "2.2.3",
+    "type": "version"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-ui/download/@ali/tingle-ui-2.2.2.tgz",
-  "_shasum": "cc8ba2387c495fea358897bfb9d1496490093f46",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-ui/download/@ali/tingle-ui-2.2.3.tgz",
+  "_shasum": "4b992e0930031adf93850e0df324a9a8d5e1a314",
   "_shrinkwrap": null,
-  "_spec": "@ali/tingle-ui@^2.*",
-  "_where": "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io",
+  "_spec": "@ali/tingle-ui@2.2.3",
+  "_where": "/Users/qy/work/tingle/salt-ui.github.io",
   "author": {
     "name": "maming"
   },
@@ -68,7 +68,7 @@
     "@ali/tingle-dialog": "^1.0.0",
     "@ali/tingle-field": "^1.0.0",
     "@ali/tingle-gallery": "^1.0.0",
-    "@ali/tingle-grid": "^1.0.0",
+    "@ali/tingle-grid": "~1.0.0",
     "@ali/tingle-group": "^1.0.0",
     "@ali/tingle-icon": "^2.0.0",
     "@ali/tingle-icon-source": "^1.0.0",
@@ -95,7 +95,7 @@
     "@ali/tingle-scroller": "^1.0.0",
     "@ali/tingle-search-bar": "^1.0.1",
     "@ali/tingle-select-field": "^1.0.0",
-    "@ali/tingle-slide": "^1.0.0",
+    "@ali/tingle-slide": "~1.2.1",
     "@ali/tingle-slot": "^1.0.0",
     "@ali/tingle-steps": "^1.0.1",
     "@ali/tingle-style": "^1.0.0",
@@ -147,16 +147,16 @@
     "webpack": "~1.12.11"
   },
   "dist": {
-    "shasum": "cc8ba2387c495fea358897bfb9d1496490093f46",
-    "size": 3005287,
-    "key": "@ali/tingle-ui/-/@ali/tingle-ui-2.2.2.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-ui/download/@ali/tingle-ui-2.2.2.tgz"
+    "shasum": "4b992e0930031adf93850e0df324a9a8d5e1a314",
+    "size": 3007124,
+    "key": "@ali/tingle-ui/-/@ali/tingle-ui-2.2.3.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-ui/download/@ali/tingle-ui-2.2.3.tgz"
   },
   "files": [
     "dist",
     "src"
   ],
-  "gitHead": "e7e2ca3d91bdb155d7b6159102309987e7b3af17",
+  "gitHead": "b8bcd23b7725ad6e383b54d7395530a9542bc695",
   "keywords": [
     "tingle-ui",
     "style"
@@ -186,7 +186,7 @@
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1496401559224,
+  "publish_time": 1497237058860,
   "readme": "ERROR: No README data found!",
   "readmeFilename": "README.md",
   "repository": {
@@ -198,5 +198,5 @@
     "pub": "gulp p",
     "start": "gulp d"
   },
-  "version": "2.2.2"
+  "version": "2.2.3"
 }

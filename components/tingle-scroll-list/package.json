@@ -10,20 +10,20 @@
         "spec": ">=2.0.0 <3.0.0",
         "type": "range"
       },
-      "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui"
+      "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
-  "_cnpm_publish_time": 1495539374587,
+  "_cnpm_publish_time": 1499953234700,
   "_from": "@ali/tingle-scroll-list@>=2.0.0 <3.0.0",
-  "_id": "@ali/tingle-scroll-list@2.2.4",
+  "_id": "@ali/tingle-scroll-list@2.3.1",
   "_inCache": true,
   "_location": "/@ali/tingle-scroll-list",
   "_nodeVersion": "6.9.1",
   "_npmUser": {
-    "name": "quanyun.mqy",
-    "email": "quanyun.mqy@alibaba-inc.com"
+    "name": "guanghong.wsj",
+    "email": "guanghong.wsj@alibaba-inc.com"
   },
-  "_npmVersion": "3.10.9",
+  "_npmVersion": "3.10.10",
   "_phantomChildren": {
     "@ali/tingle-style": "1.0.23",
     "classnames": "2.2.5"
@@ -41,11 +41,11 @@
   "_requiredBy": [
     "/@ali/tingle-ui"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-scroll-list/download/@ali/tingle-scroll-list-2.2.4.tgz",
-  "_shasum": "bf3d60e85d70413204c66f5f3f7dd2e318221af1",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-scroll-list/download/@ali/tingle-scroll-list-2.3.1.tgz",
+  "_shasum": "b21dfda6e84ca403ca85cd004ea61d99da78b882",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-scroll-list@^2.0.0",
-  "_where": "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui",
+  "_where": "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui",
   "author": {
     "name": "zhouquan.yezq"
   },
@@ -72,17 +72,17 @@
     "mobile"
   ],
   "dist": {
-    "shasum": "bf3d60e85d70413204c66f5f3f7dd2e318221af1",
-    "size": 18022,
-    "key": "@ali/tingle-scroll-list/-/@ali/tingle-scroll-list-2.2.4.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-scroll-list/download/@ali/tingle-scroll-list-2.2.4.tgz"
+    "shasum": "b21dfda6e84ca403ca85cd004ea61d99da78b882",
+    "size": 12426,
+    "key": "@ali/tingle-scroll-list/-/@ali/tingle-scroll-list-2.3.1.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-scroll-list/download/@ali/tingle-scroll-list-2.3.1.tgz"
   },
   "files": [
     "dist",
     "src",
     "README.md"
   ],
-  "gitHead": "059eeab313c5809159555a39b9f605fe213c06d2",
+  "gitHead": "854124bab77f26babfeb5be8a4df5ea552d83657",
   "keywords": [
     "tingle-scroll-list",
     "ScrollList"
@@ -132,7 +132,7 @@
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1495539374587,
+  "publish_time": 1499953234700,
   "readme": "ERROR: No README data found!",
   "readmeFilename": "README.md",
   "repository": {
@@ -149,5 +149,5 @@
     "tnpm-update": "salt-tools run tnpm-update",
     "update": "salt-tools run update"
   },
-  "version": "2.2.4"
+  "version": "2.3.1"
 }

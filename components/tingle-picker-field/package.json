@@ -10,12 +10,12 @@
         "spec": ">=1.0.0 <2.0.0",
         "type": "range"
       },
-      "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui"
+      "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
-  "_cnpm_publish_time": 1493087094638,
+  "_cnpm_publish_time": 1502187014713,
   "_from": "@ali/tingle-picker-field@>=1.0.0 <2.0.0",
-  "_id": "@ali/tingle-picker-field@1.1.0",
+  "_id": "@ali/tingle-picker-field@1.2.1",
   "_inCache": true,
   "_location": "/@ali/tingle-picker-field",
   "_nodeVersion": "6.9.1",
@@ -38,11 +38,11 @@
   "_requiredBy": [
     "/@ali/tingle-ui"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-picker-field/download/@ali/tingle-picker-field-1.1.0.tgz",
-  "_shasum": "2d3e7c4cd04c1558607b1f4ae661cbf3115e2bcd",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-picker-field/download/@ali/tingle-picker-field-1.2.1.tgz",
+  "_shasum": "fd4fb5b32514175b4a6dd7f9c814a23c464aef5f",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-picker-field@^1.0.0",
-  "_where": "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui",
+  "_where": "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui",
   "author": {
     "name": "longyan"
   },
@@ -68,17 +68,17 @@
     "salt-tools": "~0.1.0"
   },
   "dist": {
-    "shasum": "2d3e7c4cd04c1558607b1f4ae661cbf3115e2bcd",
-    "size": 12808,
-    "key": "@ali/tingle-picker-field/-/@ali/tingle-picker-field-1.1.0.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-picker-field/download/@ali/tingle-picker-field-1.1.0.tgz"
+    "shasum": "fd4fb5b32514175b4a6dd7f9c814a23c464aef5f",
+    "size": 15295,
+    "key": "@ali/tingle-picker-field/-/@ali/tingle-picker-field-1.2.1.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-picker-field/download/@ali/tingle-picker-field-1.2.1.tgz"
   },
   "files": [
     "dist",
     "src",
     "README.md"
   ],
-  "gitHead": "afbb60928f15af37e0403781eaa401dcb50a84ed",
+  "gitHead": "f899433c21e91a953a9826f88a2ab91edc36eaa8",
   "keywords": [
     "tingle-picker-field",
     "PickerField",
@@ -91,6 +91,14 @@
   "main": "dist/index.js",
   "maintainers": [
     {
+      "name": "guanghong.wsj",
+      "email": "guanghong.wsj@alibaba-inc.com"
+    },
+    {
+      "name": "lyw134718",
+      "email": "lyw134718@alibaba-inc.com"
+    },
+    {
       "name": "quanyun.mqy",
       "email": "quanyun.mqy@alibaba-inc.com"
     }
@@ -100,7 +108,7 @@
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1493087094638,
+  "publish_time": 1502187014713,
   "readme": "ERROR: No README data found!",
   "readmeFilename": "README.md",
   "repository": {
@@ -117,5 +125,5 @@
     "tnpm-update": "salt-tools run tnpm-update",
     "update": "salt-tools run update"
   },
-  "version": "1.1.0"
+  "version": "1.2.1"
 }

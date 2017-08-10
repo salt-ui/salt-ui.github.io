@@ -1,3 +1,15 @@
+## 2.2.3 / 2017-6-12
+* tingle-scroll-list
+	* `feat` 添加scrollRefresh来支持只下拉刷新不触底加载
+* tingle-infinite-scroll
+	* `feat` add getRef
+* tingle-pagination
+	* `fix` 修复上一页下一页禁用时仍然可以点击
+* tingle-tab-bar
+	* `feat` 增加中间大tab 的高度样式自定义
+* tingle-calendar-field
+	* `fix` 如果传入的 startDate 或 endDate 不存在，则不显示对应的值
+
 ## 2.2.2 / 2017-6-2
 * tingle-datetime-field
 	* fix: 在小月的情况下选择大月 31 号取值错误的问题

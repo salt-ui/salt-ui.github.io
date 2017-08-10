@@ -10,12 +10,12 @@
         "spec": ">=0.1.3 <0.2.0",
         "type": "range"
       },
-      "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui"
+      "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
-  "_cnpm_publish_time": 1490342519461,
+  "_cnpm_publish_time": 1499260028354,
   "_from": "@ali/tingle-image-viewer@>=0.1.3 <0.2.0",
-  "_id": "@ali/tingle-image-viewer@0.1.4",
+  "_id": "@ali/tingle-image-viewer@0.1.6",
   "_inCache": true,
   "_location": "/@ali/tingle-image-viewer",
   "_nodeVersion": "6.9.1",
@@ -23,7 +23,7 @@
     "name": "guanghong.wsj",
     "email": "guanghong.wsj@alibaba-inc.com"
   },
-  "_npmVersion": "2.15.11",
+  "_npmVersion": "3.10.10",
   "_phantomChildren": {
     "@ali/tingle-style": "1.0.23",
     "classnames": "2.2.5"
@@ -41,11 +41,11 @@
   "_requiredBy": [
     "/@ali/tingle-ui"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-image-viewer/download/@ali/tingle-image-viewer-0.1.4.tgz",
-  "_shasum": "e862100e169fbb34894cb495ac9021ee8f7625a4",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-image-viewer/download/@ali/tingle-image-viewer-0.1.6.tgz",
+  "_shasum": "2731fbc36dcfb67e94a785fb4cc428e4e6571f8c",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-image-viewer@^0.1.3",
-  "_where": "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui",
+  "_where": "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui",
   "author": {
     "name": "guanghong.wsj"
   },
@@ -69,17 +69,17 @@
     "salt-tools": "~0.1.0"
   },
   "dist": {
-    "shasum": "e862100e169fbb34894cb495ac9021ee8f7625a4",
-    "size": 7917,
-    "key": "@ali/tingle-image-viewer/-/@ali/tingle-image-viewer-0.1.4.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-image-viewer/download/@ali/tingle-image-viewer-0.1.4.tgz"
+    "shasum": "2731fbc36dcfb67e94a785fb4cc428e4e6571f8c",
+    "size": 7898,
+    "key": "@ali/tingle-image-viewer/-/@ali/tingle-image-viewer-0.1.6.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-image-viewer/download/@ali/tingle-image-viewer-0.1.6.tgz"
   },
   "files": [
     "dist",
     "src",
     "README.md"
   ],
-  "gitHead": "a2e5e216b0023e3ea33dc931bbc931ab89127bbc",
+  "gitHead": "3ac072afc7ab1a37c35d0d64a68ed9db813ae943",
   "keywords": [
     "tingle-image-viewer",
     "ImageViewer"
@@ -97,7 +97,7 @@
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1490342519461,
+  "publish_time": 1499260028354,
   "readme": "ERROR: No README data found!",
   "readmeFilename": "README.md",
   "repository": {
@@ -114,5 +114,5 @@
     "tnpm-update": "salt-tools run tnpm-update",
     "update": "salt-tools run update"
   },
-  "version": "0.1.4"
+  "version": "0.1.6"
 }

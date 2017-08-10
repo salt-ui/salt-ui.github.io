@@ -2,57 +2,59 @@
   "_args": [
     [
       {
-        "raw": "@ali/tingle-collapse@^1.0.0",
+        "raw": "@ali/tingle-collapse@1.1.0",
         "scope": "@ali",
         "escapedName": "@ali%2ftingle-collapse",
         "name": "@ali/tingle-collapse",
-        "rawSpec": "^1.0.0",
-        "spec": ">=1.0.0 <2.0.0",
-        "type": "range"
+        "rawSpec": "1.1.0",
+        "spec": "1.1.0",
+        "type": "version"
       },
-      "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui"
+      "/Users/qy/work/tingle/salt-ui.github.io"
     ]
   ],
-  "_cnpm_publish_time": 1494905596179,
-  "_from": "@ali/tingle-collapse@>=1.0.0 <2.0.0",
-  "_id": "@ali/tingle-collapse@1.0.0",
+  "_cnpm_publish_time": 1500433358483,
+  "_from": "@ali/tingle-collapse@1.1.0",
+  "_id": "@ali/tingle-collapse@1.1.0",
   "_inCache": true,
   "_location": "/@ali/tingle-collapse",
   "_nodeVersion": "6.9.1",
   "_npmUser": {
-    "name": "quanyun.mqy",
-    "email": "quanyun.mqy@alibaba-inc.com"
+    "name": "guanghong.wsj",
+    "email": "guanghong.wsj@alibaba-inc.com"
   },
-  "_npmVersion": "3.10.9",
+  "_npmVersion": "3.10.10",
   "_phantomChildren": {},
   "_publish_on_cnpm": true,
   "_requested": {
-    "raw": "@ali/tingle-collapse@^1.0.0",
+    "raw": "@ali/tingle-collapse@1.1.0",
     "scope": "@ali",
     "escapedName": "@ali%2ftingle-collapse",
     "name": "@ali/tingle-collapse",
-    "rawSpec": "^1.0.0",
-    "spec": ">=1.0.0 <2.0.0",
-    "type": "range"
+    "rawSpec": "1.1.0",
+    "spec": "1.1.0",
+    "type": "version"
   },
   "_requiredBy": [
-    "/@ali/tingle-ui"
+    "#USER",
+    "/"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-collapse/download/@ali/tingle-collapse-1.0.0.tgz",
-  "_shasum": "ab899f7479d756307da96d7827eddcbf904d5e9c",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-collapse/download/@ali/tingle-collapse-1.1.0.tgz",
+  "_shasum": "acf833fa71c0b9ea020bb2008ec92264154858ee",
   "_shrinkwrap": null,
-  "_spec": "@ali/tingle-collapse@^1.0.0",
-  "_where": "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui",
+  "_spec": "@ali/tingle-collapse@1.1.0",
+  "_where": "/Users/qy/work/tingle/salt-ui.github.io",
   "author": "",
   "dependencies": {
     "@ali/tingle-context": "^1.0.0",
-    "@ali/tingle-style": "^2.0.0",
     "classnames": "^2.2.5",
     "object-assign": "^4.1.1",
     "rc-collapse": "^1.7.3"
   },
   "description": "tingle-collapse component for tingle.",
   "devDependencies": {
+    "@ali/tingle-icon": "^3.1.2",
+    "@ali/tingle-style": "^2.0.0",
     "@ali/tingle-ui": "^1.0.0",
     "fastclick": "^1.0.6",
     "react": "^0.14.8",
@@ -60,17 +62,17 @@
     "salt-tools": "~0.1.0"
   },
   "dist": {
-    "shasum": "ab899f7479d756307da96d7827eddcbf904d5e9c",
-    "size": 3985,
-    "key": "@ali/tingle-collapse/-/@ali/tingle-collapse-1.0.0.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-collapse/download/@ali/tingle-collapse-1.0.0.tgz"
+    "shasum": "acf833fa71c0b9ea020bb2008ec92264154858ee",
+    "size": 4100,
+    "key": "@ali/tingle-collapse/-/@ali/tingle-collapse-1.1.0.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-collapse/download/@ali/tingle-collapse-1.1.0.tgz"
   },
   "files": [
     "dist",
     "src",
     "README.md"
   ],
-  "gitHead": "fb96e73d3c2a1eed3ea34eb3888f8404d2153c59",
+  "gitHead": "71feb6329ddda33f8f71595cc1482872c89c778d",
   "keywords": [
     "tingle-collapse",
     "Collapse"
@@ -92,7 +94,7 @@
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1494905596179,
+  "publish_time": 1500433358483,
   "readme": "ERROR: No README data found!",
   "readmeFilename": "README.md",
   "repository": {
@@ -109,5 +111,5 @@
     "tnpm-update": "salt-tools run tnpm-update",
     "update": "salt-tools run update"
   },
-  "version": "1.0.0"
+  "version": "1.1.0"
 }

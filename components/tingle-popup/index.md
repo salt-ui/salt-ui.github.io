@@ -25,7 +25,7 @@ npm run tnpm-update
 ## APIs
 
 
-### .show(content: React.Element, options: Object):
+### .show(content: React.Element, options: Object): instance
 
 `options` 可选项：
 
@@ -35,6 +35,12 @@ npm run tnpm-update
 - transitionName (string) - 自定义显示隐藏变换动画
 - maskTransitionName (string) - 自定义遮罩层变换动画
 - onMaskClose (function) - 遮罩层关闭时的回调，支持返回 Promise
+
+返回 `instance` 实例：
+
+- hide: 关闭该 instance
+- instanceId: 每个实例的 id
+- update: 实例的 update 方法，从外部向 content 传递数据时需要调用。
 
 ### .hide():
 

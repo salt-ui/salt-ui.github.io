@@ -10,12 +10,12 @@
         "spec": ">=1.0.1 <2.0.0",
         "type": "range"
       },
-      "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui"
+      "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
-  "_cnpm_publish_time": 1496383612626,
+  "_cnpm_publish_time": 1499423816730,
   "_from": "@ali/tingle-steps@>=1.0.1 <2.0.0",
-  "_id": "@ali/tingle-steps@1.0.2",
+  "_id": "@ali/tingle-steps@1.0.3",
   "_inCache": true,
   "_location": "/@ali/tingle-steps",
   "_nodeVersion": "6.9.5",
@@ -38,11 +38,11 @@
   "_requiredBy": [
     "/@ali/tingle-ui"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-steps/download/@ali/tingle-steps-1.0.2.tgz",
-  "_shasum": "9b044b94160cacc500bab7dbd10f00cacc7de349",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-steps/download/@ali/tingle-steps-1.0.3.tgz",
+  "_shasum": "0de3635f70ba41e9b9f845a32bc0b2f0fa2cf806",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-steps@^1.0.1",
-  "_where": "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui",
+  "_where": "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui",
   "author": {
     "name": "muwen.lb"
   },
@@ -61,17 +61,17 @@
     "salt-tools": "~0.1.0"
   },
   "dist": {
-    "shasum": "9b044b94160cacc500bab7dbd10f00cacc7de349",
-    "size": 9496,
-    "key": "@ali/tingle-steps/-/@ali/tingle-steps-1.0.2.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-steps/download/@ali/tingle-steps-1.0.2.tgz"
+    "shasum": "0de3635f70ba41e9b9f845a32bc0b2f0fa2cf806",
+    "size": 9512,
+    "key": "@ali/tingle-steps/-/@ali/tingle-steps-1.0.3.tgz",
+    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-steps/download/@ali/tingle-steps-1.0.3.tgz"
   },
   "files": [
     "dist",
     "src",
     "README.md"
   ],
-  "gitHead": "68799778cd5240c5f1fe3c25acba01f053b5fa5d",
+  "gitHead": "ba27ebdc0c20ae9b02a0c90093ffed6d8f125017",
   "keywords": [
     "tingle-steps",
     "Steps"
@@ -97,7 +97,7 @@
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1496383612626,
+  "publish_time": 1499423816730,
   "readme": "ERROR: No README data found!",
   "readmeFilename": "README.md",
   "repository": {
@@ -114,5 +114,5 @@
     "tnpm-update": "salt-tools run tnpm-update",
     "update": "salt-tools run update"
   },
-  "version": "1.0.2"
+  "version": "1.0.3"
 }

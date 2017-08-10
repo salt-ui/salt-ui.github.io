@@ -10,7 +10,7 @@
         "spec": ">=1.0.3 <2.0.0",
         "type": "range"
       },
-      "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui"
+      "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui"
     ]
   ],
   "_cnpm_publish_time": 1488522541948,
@@ -45,7 +45,7 @@
   "_shasum": "c6bcc3b73eb65f7fc0b006f5a32cb5bfb7800361",
   "_shrinkwrap": null,
   "_spec": "@ali/tingle-timeline@^1.0.3",
-  "_where": "/Users/Poling/Documents/Project/Mine/ali/salt-ui.github.io/node_modules/@ali/tingle-ui",
+  "_where": "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui",
   "author": {
     "name": "zhongsisi"
   },
