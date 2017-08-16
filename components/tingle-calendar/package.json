@@ -1,52 +1,19 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "@ali/tingle-calendar@^2.0.0",
-        "scope": "@ali",
-        "escapedName": "@ali%2ftingle-calendar",
-        "name": "@ali/tingle-calendar",
-        "rawSpec": "^2.0.0",
-        "spec": ">=2.0.0 <3.0.0",
-        "type": "range"
-      },
-      "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui"
-    ]
+  "name": "@ali/tingle-calendar",
+  "version": "2.1.0",
+  "description": "tingle-calendar component for tingle.",
+  "repository": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-calendar",
+  "author": "wenzhao.fw",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
   ],
-  "_cnpm_publish_time": 1491909462689,
-  "_from": "@ali/tingle-calendar@>=2.0.0 <3.0.0",
-  "_id": "@ali/tingle-calendar@2.1.0",
-  "_inCache": true,
-  "_location": "/@ali/tingle-calendar",
-  "_nodeVersion": "6.9.1",
-  "_npmUser": {
-    "name": "quanyun.mqy",
-    "email": "quanyun.mqy@alibaba-inc.com"
-  },
-  "_npmVersion": "3.10.9",
-  "_phantomChildren": {},
-  "_publish_on_cnpm": true,
-  "_requested": {
-    "raw": "@ali/tingle-calendar@^2.0.0",
-    "scope": "@ali",
-    "escapedName": "@ali%2ftingle-calendar",
-    "name": "@ali/tingle-calendar",
-    "rawSpec": "^2.0.0",
-    "spec": ">=2.0.0 <3.0.0",
-    "type": "range"
-  },
-  "_requiredBy": [
-    "/@ali/tingle-calendar-field",
-    "/@ali/tingle-ui"
+  "keywords": [
+    "tingle-calendar",
+    "Calendar"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-calendar/download/@ali/tingle-calendar-2.1.0.tgz",
-  "_shasum": "6acb84c8c134675ad9002cd4fec650eeb9892695",
-  "_shrinkwrap": null,
-  "_spec": "@ali/tingle-calendar@^2.0.0",
-  "_where": "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui",
-  "author": {
-    "name": "wenzhao.fw"
-  },
   "dependencies": {
     "@ali/tingle-context": "^1.0.0",
     "@ali/tingle-layer": "^1.0.6",
@@ -56,7 +23,6 @@
     "deepcopy": "^0.6.1",
     "uxcore-formatter": "^0.1.2"
   },
-  "description": "tingle-calendar component for tingle.",
   "devDependencies": {
     "@ali/tingle-button": "^1.0.9",
     "@ali/tingle-mask": "~1.0.5",
@@ -66,63 +32,20 @@
     "react-dom": "^0.14.8",
     "salt-tools": "~0.1.0"
   },
-  "dist": {
-    "shasum": "6acb84c8c134675ad9002cd4fec650eeb9892695",
-    "size": 22670,
-    "key": "@ali/tingle-calendar/-/@ali/tingle-calendar-2.1.0.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-calendar/download/@ali/tingle-calendar-2.1.0.tgz"
-  },
-  "files": [
-    "dist",
-    "src",
-    "README.md"
-  ],
-  "gitHead": "1b4047b86c6d6dea6f8bc914638b505135e627c6",
-  "keywords": [
-    "tingle-calendar",
-    "Calendar"
-  ],
-  "license": "MIT",
-  "main": "dist/index.js",
-  "maintainers": [
-    {
-      "name": "alex.mm",
-      "email": "alex.mm@alibaba-inc.com"
-    },
-    {
-      "name": "guanghong.wsj",
-      "email": "guanghong.wsj@alibaba-inc.com"
-    },
-    {
-      "name": "hanchao.shc",
-      "email": "hanchao.shc@alibaba-inc.com"
-    },
-    {
-      "name": "quanyun.mqy",
-      "email": "quanyun.mqy@alibaba-inc.com"
-    }
-  ],
-  "name": "@ali/tingle-calendar",
-  "optionalDependencies": {},
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1491909462689,
-  "readme": "ERROR: No README data found!",
-  "readmeFilename": "README.md",
-  "repository": {
-    "type": "git",
-    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-calendar"
-  },
-  "screenshots": "",
   "scripts": {
-    "build": "salt-tools run build",
-    "dep": "salt-tools run dep",
-    "pub": "salt-tools run pub",
     "start": "salt-tools run start",
+    "build": "salt-tools run build",
+    "pub": "salt-tools run pub",
+    "dep": "salt-tools run dep",
     "tnpm-dep": "salt-tools run tnpm-dep",
-    "tnpm-update": "salt-tools run tnpm-update",
-    "update": "salt-tools run update"
+    "update": "salt-tools run update",
+    "tnpm-update": "salt-tools run tnpm-update"
   },
-  "version": "2.1.0"
+  "license": "MIT",
+  "screenshots": "",
+  "_from": "@ali/tingle-calendar@2.1.0",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-calendar/download/@ali/tingle-calendar-2.1.0.tgz"
 }

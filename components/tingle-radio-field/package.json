@@ -1,56 +1,19 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "@ali/tingle-radio-field@^1.0.0",
-        "scope": "@ali",
-        "escapedName": "@ali%2ftingle-radio-field",
-        "name": "@ali/tingle-radio-field",
-        "rawSpec": "^1.0.0",
-        "spec": ">=1.0.0 <2.0.0",
-        "type": "range"
-      },
-      "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui"
-    ]
+  "name": "@ali/tingle-radio-field",
+  "version": "1.0.11",
+  "description": "tingle-radio-field component for tingle.",
+  "repository": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-radio-field",
+  "author": "shanchao",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
   ],
-  "_cnpm_publish_time": 1489583209615,
-  "_from": "@ali/tingle-radio-field@>=1.0.0 <2.0.0",
-  "_id": "@ali/tingle-radio-field@1.0.11",
-  "_inCache": true,
-  "_location": "/@ali/tingle-radio-field",
-  "_nodeVersion": "6.9.1",
-  "_npmUser": {
-    "name": "quanyun.mqy",
-    "email": "quanyun.mqy@alibaba-inc.com"
-  },
-  "_npmVersion": "3.10.9",
-  "_phantomChildren": {
-    "@ali/tingle-icon-source": "1.0.13",
-    "@ali/tingle-style": "1.0.23",
-    "classnames": "2.2.5"
-  },
-  "_publish_on_cnpm": true,
-  "_requested": {
-    "raw": "@ali/tingle-radio-field@^1.0.0",
-    "scope": "@ali",
-    "escapedName": "@ali%2ftingle-radio-field",
-    "name": "@ali/tingle-radio-field",
-    "rawSpec": "^1.0.0",
-    "spec": ">=1.0.0 <2.0.0",
-    "type": "range"
-  },
-  "_requiredBy": [
-    "/@ali/tingle-grid/@ali/tingle-ui",
-    "/@ali/tingle-ui"
+  "keywords": [
+    "tingle-radio-field",
+    "RadioField"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-radio-field/download/@ali/tingle-radio-field-1.0.11.tgz",
-  "_shasum": "958febd60e67db349d5eb1d01161e6cf958970e3",
-  "_shrinkwrap": null,
-  "_spec": "@ali/tingle-radio-field@^1.0.0",
-  "_where": "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui",
-  "author": {
-    "name": "shanchao"
-  },
   "dependencies": {
     "@ali/tingle-context": "^1.0.0",
     "@ali/tingle-field": "~1.0.3",
@@ -59,7 +22,6 @@
     "@ali/tingle-style": "^1.0.0",
     "classnames": "~2.2.3"
   },
-  "description": "tingle-radio-field component for tingle.",
   "devDependencies": {
     "@ali/tingle-ui": "^1.0.0",
     "fastclick": "^1.0.6",
@@ -67,63 +29,20 @@
     "react-dom": "^0.14.8",
     "salt-tools": "~0.1.0"
   },
-  "dist": {
-    "shasum": "958febd60e67db349d5eb1d01161e6cf958970e3",
-    "size": 5635,
-    "key": "@ali/tingle-radio-field/-/@ali/tingle-radio-field-1.0.11.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-radio-field/download/@ali/tingle-radio-field-1.0.11.tgz"
-  },
-  "files": [
-    "dist",
-    "src",
-    "README.md"
-  ],
-  "gitHead": "dce90a7a51a79848cb25d1aed7bfd511251bd4fa",
-  "keywords": [
-    "tingle-radio-field",
-    "RadioField"
-  ],
-  "license": "MIT",
-  "main": "dist/index.js",
-  "maintainers": [
-    {
-      "name": "alex.mm",
-      "email": "alex.mm@alibaba-inc.com"
-    },
-    {
-      "name": "guanghong.wsj",
-      "email": "guanghong.wsj@alibaba-inc.com"
-    },
-    {
-      "name": "jiasong.js",
-      "email": "jiasong.js@alibaba-inc.com"
-    },
-    {
-      "name": "quanyun.mqy",
-      "email": "quanyun.mqy@alibaba-inc.com"
-    }
-  ],
-  "name": "@ali/tingle-radio-field",
-  "optionalDependencies": {},
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1489583209615,
-  "readme": "ERROR: No README data found!",
-  "readmeFilename": "README.md",
-  "repository": {
-    "type": "git",
-    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-radio-field"
-  },
-  "screenshots": "",
   "scripts": {
-    "build": "salt-tools run build",
-    "dep": "salt-tools run dep",
-    "pub": "salt-tools run pub",
     "start": "salt-tools run start",
+    "build": "salt-tools run build",
+    "pub": "salt-tools run pub",
+    "dep": "salt-tools run dep",
     "tnpm-dep": "salt-tools run tnpm-dep",
-    "tnpm-update": "salt-tools run tnpm-update",
-    "update": "salt-tools run update"
+    "update": "salt-tools run update",
+    "tnpm-update": "salt-tools run tnpm-update"
   },
-  "version": "1.0.11"
+  "license": "MIT",
+  "screenshots": "",
+  "_from": "@ali/tingle-radio-field@1.0.11",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-radio-field/download/@ali/tingle-radio-field-1.0.11.tgz"
 }

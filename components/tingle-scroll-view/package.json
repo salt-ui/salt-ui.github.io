@@ -1,53 +1,28 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "@ali/tingle-scroll-view@^1.0.2",
-        "scope": "@ali",
-        "escapedName": "@ali%2ftingle-scroll-view",
-        "name": "@ali/tingle-scroll-view",
-        "rawSpec": "^1.0.2",
-        "spec": ">=1.0.2 <2.0.0",
-        "type": "range"
-      },
-      "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui"
-    ]
+  "name": "@ali/tingle-scroll-view",
+  "version": "1.0.4",
+  "description": "tingle-scroll-view component for tingle.",
+  "repository": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-scroll-view",
+  "author": "xiaohe.wp",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "salt-tools run start",
+    "build": "salt-tools run build",
+    "pub": "salt-tools run pub",
+    "dep": "salt-tools run dep",
+    "tnpm-dep": "salt-tools run tnpm-dep",
+    "update": "salt-tools run update",
+    "tnpm-update": "salt-tools run tnpm-update"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md"
   ],
-  "_cnpm_publish_time": 1495693175563,
-  "_from": "@ali/tingle-scroll-view@>=1.0.2 <2.0.0",
-  "_id": "@ali/tingle-scroll-view@1.0.4",
-  "_inCache": true,
-  "_location": "/@ali/tingle-scroll-view",
-  "_nodeVersion": "6.9.1",
-  "_npmUser": {
-    "name": "quanyun.mqy",
-    "email": "quanyun.mqy@alibaba-inc.com"
-  },
-  "_npmVersion": "3.10.9",
-  "_phantomChildren": {},
-  "_publish_on_cnpm": true,
-  "_requested": {
-    "raw": "@ali/tingle-scroll-view@^1.0.2",
-    "scope": "@ali",
-    "escapedName": "@ali%2ftingle-scroll-view",
-    "name": "@ali/tingle-scroll-view",
-    "rawSpec": "^1.0.2",
-    "spec": ">=1.0.2 <2.0.0",
-    "type": "range"
-  },
-  "_requiredBy": [
-    "/@ali/tingle-picker-field",
-    "/@ali/tingle-scroll-list",
-    "/@ali/tingle-ui"
+  "keywords": [
+    "tingle-scroll-view",
+    "ScrollView"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-scroll-view/download/@ali/tingle-scroll-view-1.0.4.tgz",
-  "_shasum": "c0f326015051fc637bef5e4a71cbb2c3bf384b94",
-  "_shrinkwrap": null,
-  "_spec": "@ali/tingle-scroll-view@^1.0.2",
-  "_where": "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui",
-  "author": {
-    "name": "xiaohe.wp"
-  },
   "dependencies": {
     "@ali/tingle-context": "^1.0.0",
     "@ali/tingle-infinite-scroll": "^1.0.2",
@@ -56,7 +31,6 @@
     "classnames": "^2.2.3",
     "lodash": "^4.17.4"
   },
-  "description": "tingle-scroll-view component for tingle.",
   "devDependencies": {
     "@ali/tingle-ui": "^1.0.0",
     "fastclick": "^1.0.6",
@@ -64,55 +38,11 @@
     "react-dom": "^0.14.8",
     "salt-tools": "~0.1.0"
   },
-  "dist": {
-    "shasum": "c0f326015051fc637bef5e4a71cbb2c3bf384b94",
-    "size": 4349,
-    "key": "@ali/tingle-scroll-view/-/@ali/tingle-scroll-view-1.0.4.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-scroll-view/download/@ali/tingle-scroll-view-1.0.4.tgz"
-  },
-  "files": [
-    "dist",
-    "src",
-    "README.md"
-  ],
-  "gitHead": "38d139843a8e3717c2fd8cf64824b0f7073f6341",
-  "keywords": [
-    "tingle-scroll-view",
-    "ScrollView"
-  ],
-  "license": "MIT",
-  "main": "dist/index.js",
-  "maintainers": [
-    {
-      "name": "quanyun.mqy",
-      "email": "quanyun.mqy@alibaba-inc.com"
-    },
-    {
-      "name": "xiaohe.wp",
-      "email": "xiaohe.wp@alibaba-inc.com"
-    }
-  ],
-  "name": "@ali/tingle-scroll-view",
-  "optionalDependencies": {},
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1495693175563,
-  "readme": "ERROR: No README data found!",
-  "readmeFilename": "README.md",
-  "repository": {
-    "type": "git",
-    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-scroll-view"
-  },
+  "license": "MIT",
   "screenshots": "",
-  "scripts": {
-    "build": "salt-tools run build",
-    "dep": "salt-tools run dep",
-    "pub": "salt-tools run pub",
-    "start": "salt-tools run start",
-    "tnpm-dep": "salt-tools run tnpm-dep",
-    "tnpm-update": "salt-tools run tnpm-update",
-    "update": "salt-tools run update"
-  },
-  "version": "1.0.4"
+  "_from": "@ali/tingle-scroll-view@1.0.4",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-scroll-view/download/@ali/tingle-scroll-view-1.0.4.tgz"
 }

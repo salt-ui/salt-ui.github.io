@@ -2,28 +2,24 @@ import { transform } from 'babel-standalone';
 import { NAV_MAP } from './constants';
 
 export const transformCode = (contents) => {
-  
-  try{
-      const { code } = transform(contents.trim(), {
-        presets: ['es2015', 'react', 'stage-2'],
-        compact: true,
-      });
+  try {
+    const { code } = transform(contents.trim(), {
+      presets: ['es2015', 'react', 'stage-2'],
+      compact: true,
+    });
 
-      return { code }
-
-  }catch(err){
-
-    return { err: err.toString() }
+    return { code };
+  } catch (err) {
+    return { err: err.toString() };
   }
-
 };
 
-export const upperFirstCharactor = (word) => word.slice(0, 1).toUpperCase() + word.slice(1);
+export const upperFirstCharactor = word => word.slice(0, 1).toUpperCase() + word.slice(1);
 
-export const removeTinglePrefix = (word) => word.slice(7);
+export const removeTinglePrefix = word => word.slice(7);
 
 export const mappingNavItem = (name) => {
-  const newName = removeTingle(name);
+  const newName = removeTinglePrefix(name);
   return NAV_MAP[newName].zh;
 };
 
@@ -38,13 +34,15 @@ export const initTheme = () => {
     storage.setItem('theme', 'blue');
     theme = 'blue';
   }
+  let isDev;
 
-  eleTheme.setAttribute('href', `/${theme}.css`);
-  // eleTheme.setAttribute('href', `/index.css`);
-  eleUI.setAttribute('href', `//g.alicdn.com/??platform/common/s/1.1/global/global.css,uxcore/uxcore-kuma/2.2.1/${theme}.min.css`);
+  __theme__webpack__placeholder__;
+
+  eleTheme.setAttribute('href', `/${isDev ? 'index' : theme}.css`);
+  // eleTheme.setAttribute('href', '/index.css');
+  eleUI.setAttribute('href', `//g.alicdn.com/??platform/common/s/1.1/global/global.css,uxcore/uxcore-kuma/2.2.1/${isDev ? 'blue' : theme}.min.css`);
 
 
   return theme;
-}
-
+};
 

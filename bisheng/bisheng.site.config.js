@@ -25,6 +25,6 @@ module.exports = Object.assign({}, commonConfig, {
         meta: markdownData.meta,
         // description: markdownData.description,
       };
-    }
-  }
+    },
+  },
 });

@@ -1,64 +1,29 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "@ali/tingle-textarea-field@^1.0.0",
-        "scope": "@ali",
-        "escapedName": "@ali%2ftingle-textarea-field",
-        "name": "@ali/tingle-textarea-field",
-        "rawSpec": "^1.0.0",
-        "spec": ">=1.0.0 <2.0.0",
-        "type": "range"
-      },
-      "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui"
-    ]
-  ],
-  "_cnpm_publish_time": 1488098881254,
-  "_from": "@ali/tingle-textarea-field@>=1.0.0 <2.0.0",
-  "_id": "@ali/tingle-textarea-field@1.0.15",
-  "_inCache": true,
-  "_location": "/@ali/tingle-textarea-field",
-  "_nodeVersion": "6.9.1",
-  "_npmUser": {
-    "name": "quanyun.mqy",
-    "email": "quanyun.mqy@alibaba-inc.com"
-  },
-  "_npmVersion": "3.10.9",
-  "_phantomChildren": {
-    "@ali/tingle-icon": "2.0.2",
-    "@ali/tingle-icon-source": "1.0.13",
-    "@ali/tingle-style": "1.0.23",
-    "classnames": "2.2.5"
-  },
-  "_publish_on_cnpm": true,
-  "_requested": {
-    "raw": "@ali/tingle-textarea-field@^1.0.0",
-    "scope": "@ali",
-    "escapedName": "@ali%2ftingle-textarea-field",
-    "name": "@ali/tingle-textarea-field",
-    "rawSpec": "^1.0.0",
-    "spec": ">=1.0.0 <2.0.0",
-    "type": "range"
-  },
-  "_requiredBy": [
-    "/@ali/tingle-grid/@ali/tingle-ui",
-    "/@ali/tingle-ui"
-  ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-textarea-field/download/@ali/tingle-textarea-field-1.0.15.tgz",
-  "_shasum": "c0097418cbc717f2904537eea4c6117d3f39203c",
-  "_shrinkwrap": null,
-  "_spec": "@ali/tingle-textarea-field@^1.0.0",
-  "_where": "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui",
-  "author": {
-    "name": "zhangshun@alipay.com"
-  },
-  "dependencies": {
-    "@ali/tingle-context": "~1.0.0",
-    "@ali/tingle-field": "~1.1.0",
-    "@ali/tingle-style": "~1.0.0",
-    "classnames": "~2.2.3"
-  },
+  "name": "@ali/tingle-textarea-field",
+  "version": "1.0.15",
   "description": "tingle-textarea-field component for tingle. textarea 域，支持设置 autosize",
+  "repository": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-textarea-field",
+  "author": "zhangshun@alipay.com",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "keywords": [
+    "tingle-textarea-field",
+    "TextareaField",
+    "tingle",
+    "文本框",
+    "autosize",
+    "多行"
+  ],
+  "dependencies": {
+    "classnames": "~2.2.3",
+    "@ali/tingle-context": "~1.0.0",
+    "@ali/tingle-style": "~1.0.0",
+    "@ali/tingle-field": "~1.1.0"
+  },
   "devDependencies": {
     "@ali/tingle-group": "~1.0.0",
     "@ali/tingle-ui": "~1.0.0",
@@ -70,8 +35,6 @@
     "babel-preset-react": "~6.3.13",
     "babel-preset-stage-1": "~6.3.13",
     "browser-sync": "~2.11.1",
-    "cross-spawn": "^2.0.0",
-    "fastclick": "~1.0.6",
     "gulp": "~3.9.0",
     "gulp-babel": "~6.1.1",
     "gulp-concat": "~2.6.0",
@@ -85,62 +48,21 @@
     "gulp-unique-files": "~0.1.2",
     "react": "~0.14.8",
     "react-dom": "~0.14.8",
+    "fastclick": "~1.0.6",
     "svg2react-loader": "^1.0.2",
     "through2": "~2.0.1",
+    "cross-spawn": "^2.0.0",
     "webpack": "~1.12.11"
   },
-  "dist": {
-    "shasum": "c0097418cbc717f2904537eea4c6117d3f39203c",
-    "size": 13798,
-    "key": "@ali/tingle-textarea-field/-/@ali/tingle-textarea-field-1.0.15.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-textarea-field/download/@ali/tingle-textarea-field-1.0.15.tgz"
-  },
-  "files": [
-    "dist",
-    "src",
-    "README.md"
-  ],
-  "gitHead": "66e452818d5e82895ccaea2c14e4f90b285c58a2",
-  "keywords": [
-    "tingle-textarea-field",
-    "TextareaField",
-    "tingle",
-    "文本框",
-    "autosize",
-    "多行"
-  ],
-  "license": "MIT",
-  "main": "dist/index.js",
-  "maintainers": [
-    {
-      "name": "alex.mm",
-      "email": "alex.mm@alibaba-inc.com"
-    },
-    {
-      "name": "caoke.ck",
-      "email": "caoke.ck@alibaba-inc.com"
-    },
-    {
-      "name": "quanyun.mqy",
-      "email": "quanyun.mqy@alibaba-inc.com"
-    }
-  ],
-  "name": "@ali/tingle-textarea-field",
-  "optionalDependencies": {},
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1488098881254,
-  "readme": "ERROR: No README data found!",
-  "readmeFilename": "README.md",
-  "repository": {
-    "type": "git",
-    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-textarea-field"
-  },
-  "screenshots": "",
   "scripts": {
-    "build": "gulp b",
-    "start": "gulp d"
+    "start": "gulp d",
+    "build": "gulp b"
   },
-  "version": "1.0.15"
+  "license": "MIT",
+  "screenshots": "",
+  "_from": "@ali/tingle-textarea-field@1.0.15",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-textarea-field/download/@ali/tingle-textarea-field-1.0.15.tgz"
 }

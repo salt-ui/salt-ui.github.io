@@ -1,67 +1,25 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "@ali/tingle-layer@^1.0.0",
-        "scope": "@ali",
-        "escapedName": "@ali%2ftingle-layer",
-        "name": "@ali/tingle-layer",
-        "rawSpec": "^1.0.0",
-        "spec": ">=1.0.0 <2.0.0",
-        "type": "range"
-      },
-      "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui"
-    ]
+  "name": "@ali/tingle-layer",
+  "version": "1.1.1",
+  "description": "tingle-layer component for tingle.",
+  "repository": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-layer",
+  "author": "gnosaij,zhouquan.yezq",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
   ],
-  "_cnpm_publish_time": 1491827731603,
-  "_from": "@ali/tingle-layer@>=1.0.0 <2.0.0",
-  "_id": "@ali/tingle-layer@1.1.0",
-  "_inCache": true,
-  "_location": "/@ali/tingle-layer",
-  "_nodeVersion": "6.9.1",
-  "_npmUser": {
-    "name": "quanyun.mqy",
-    "email": "quanyun.mqy@alibaba-inc.com"
-  },
-  "_npmVersion": "3.10.9",
-  "_phantomChildren": {
-    "@ali/tingle-style": "1.0.23",
-    "classnames": "2.2.5"
-  },
-  "_publish_on_cnpm": true,
-  "_requested": {
-    "raw": "@ali/tingle-layer@^1.0.0",
-    "scope": "@ali",
-    "escapedName": "@ali%2ftingle-layer",
-    "name": "@ali/tingle-layer",
-    "rawSpec": "^1.0.0",
-    "spec": ">=1.0.0 <2.0.0",
-    "type": "range"
-  },
-  "_requiredBy": [
-    "/@ali/tingle-calendar",
-    "/@ali/tingle-checkbox-field",
-    "/@ali/tingle-city-select-field",
-    "/@ali/tingle-slot",
-    "/@ali/tingle-tab-bar",
-    "/@ali/tingle-toast",
-    "/@ali/tingle-ui"
+  "keywords": [
+    "tingle-layer",
+    "Layer"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-layer/download/@ali/tingle-layer-1.1.0.tgz",
-  "_shasum": "46bb5623c98ecd87929871c75b70b2c0950ac8c2",
-  "_shrinkwrap": null,
-  "_spec": "@ali/tingle-layer@^1.0.0",
-  "_where": "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui",
-  "author": {
-    "name": "gnosaij,zhouquan.yezq"
-  },
   "dependencies": {
     "@ali/tingle-context": "~1.0.0",
     "@ali/tingle-mask": "^1.0.5",
     "@ali/tingle-style": "~1.0.0",
     "classnames": "~2.2.3"
   },
-  "description": "tingle-layer component for tingle.",
   "devDependencies": {
     "@ali/tingle-ui": "~1.0.0",
     "fastclick": "^1.0.6",
@@ -69,71 +27,20 @@
     "react-dom": "^0.14.8",
     "salt-tools": "~0.1.0"
   },
-  "dist": {
-    "shasum": "46bb5623c98ecd87929871c75b70b2c0950ac8c2",
-    "size": 6070,
-    "key": "@ali/tingle-layer/-/@ali/tingle-layer-1.1.0.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-layer/download/@ali/tingle-layer-1.1.0.tgz"
-  },
-  "files": [
-    "dist",
-    "src",
-    "README.md"
-  ],
-  "gitHead": "61672a48057cb5bd6f272cda5c8d5be2c2c3b25a",
-  "keywords": [
-    "tingle-layer",
-    "Layer"
-  ],
-  "license": "MIT",
-  "main": "dist/index.js",
-  "maintainers": [
-    {
-      "name": "alex.mm",
-      "email": "alex.mm@alibaba-inc.com"
-    },
-    {
-      "name": "caoke.ck",
-      "email": "caoke.ck@alibaba-inc.com"
-    },
-    {
-      "name": "guanghong.wsj",
-      "email": "guanghong.wsj@alibaba-inc.com"
-    },
-    {
-      "name": "jiasong.js",
-      "email": "jiasong.js@alibaba-inc.com"
-    },
-    {
-      "name": "quanyun.mqy",
-      "email": "quanyun.mqy@alibaba-inc.com"
-    },
-    {
-      "name": "zhouquan.yezq",
-      "email": "zhouquan.yezq@alibaba-inc.com"
-    }
-  ],
-  "name": "@ali/tingle-layer",
-  "optionalDependencies": {},
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1491827731603,
-  "readme": "ERROR: No README data found!",
-  "readmeFilename": "README.md",
-  "repository": {
-    "type": "git",
-    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-layer"
-  },
-  "screenshots": "",
   "scripts": {
-    "build": "salt-tools run build",
-    "dep": "salt-tools run dep",
-    "pub": "salt-tools run pub",
     "start": "salt-tools run start",
+    "build": "salt-tools run build",
+    "pub": "salt-tools run pub",
+    "dep": "salt-tools run dep",
     "tnpm-dep": "salt-tools run tnpm-dep",
-    "tnpm-update": "salt-tools run tnpm-update",
-    "update": "salt-tools run update"
+    "update": "salt-tools run update",
+    "tnpm-update": "salt-tools run tnpm-update"
   },
-  "version": "1.1.0"
+  "license": "MIT",
+  "screenshots": "",
+  "_from": "@ali/tingle-layer@1.1.1",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-layer/download/@ali/tingle-layer-1.1.1.tgz"
 }

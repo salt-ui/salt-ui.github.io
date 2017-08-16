@@ -1,52 +1,28 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "@ali/tingle-infinite-scroll@^1.0.3",
-        "scope": "@ali",
-        "escapedName": "@ali%2ftingle-infinite-scroll",
-        "name": "@ali/tingle-infinite-scroll",
-        "rawSpec": "^1.0.3",
-        "spec": ">=1.0.3 <2.0.0",
-        "type": "range"
-      },
-      "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui"
-    ]
+  "name": "@ali/tingle-infinite-scroll",
+  "version": "1.0.5",
+  "description": "tingle-infinite-scroll component for tingle.",
+  "repository": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-infinite-scroll",
+  "author": "xiaohe.wp",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "salt-tools run start",
+    "build": "salt-tools run build",
+    "pub": "salt-tools run pub",
+    "dep": "salt-tools run dep",
+    "tnpm-dep": "salt-tools run tnpm-dep",
+    "update": "salt-tools run update",
+    "tnpm-update": "salt-tools run tnpm-update"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md"
   ],
-  "_cnpm_publish_time": 1496734725960,
-  "_from": "@ali/tingle-infinite-scroll@>=1.0.3 <2.0.0",
-  "_id": "@ali/tingle-infinite-scroll@1.0.5",
-  "_inCache": true,
-  "_location": "/@ali/tingle-infinite-scroll",
-  "_nodeVersion": "4.4.4",
-  "_npmUser": {
-    "name": "minjie.lmj",
-    "email": "minjie.lmj@alibaba-inc.com"
-  },
-  "_npmVersion": "3.10.10",
-  "_phantomChildren": {},
-  "_publish_on_cnpm": true,
-  "_requested": {
-    "raw": "@ali/tingle-infinite-scroll@^1.0.3",
-    "scope": "@ali",
-    "escapedName": "@ali%2ftingle-infinite-scroll",
-    "name": "@ali/tingle-infinite-scroll",
-    "rawSpec": "^1.0.3",
-    "spec": ">=1.0.3 <2.0.0",
-    "type": "range"
-  },
-  "_requiredBy": [
-    "/@ali/tingle-scroll-view",
-    "/@ali/tingle-ui"
+  "keywords": [
+    "tingle-infinite-scroll",
+    "InfiniteScroll"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-infinite-scroll/download/@ali/tingle-infinite-scroll-1.0.5.tgz",
-  "_shasum": "15e38db1479b988eb473d2935e36be9ee1d479d8",
-  "_shrinkwrap": null,
-  "_spec": "@ali/tingle-infinite-scroll@^1.0.3",
-  "_where": "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui",
-  "author": {
-    "name": "xiaohe.wp"
-  },
   "dependencies": {
     "@ali/tingle-context": "^1.0.0",
     "@ali/tingle-icon": "^2.0.2",
@@ -54,7 +30,6 @@
     "classnames": "^2.2.3",
     "lodash": "^4.17.4"
   },
-  "description": "tingle-infinite-scroll component for tingle.",
   "devDependencies": {
     "@ali/tingle-ui": "^1.0.0",
     "fastclick": "^1.0.6",
@@ -62,59 +37,11 @@
     "react-dom": "^0.14.8",
     "salt-tools": "~0.1.0"
   },
-  "dist": {
-    "shasum": "15e38db1479b988eb473d2935e36be9ee1d479d8",
-    "size": 4942,
-    "key": "@ali/tingle-infinite-scroll/-/@ali/tingle-infinite-scroll-1.0.5.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-infinite-scroll/download/@ali/tingle-infinite-scroll-1.0.5.tgz"
-  },
-  "files": [
-    "dist",
-    "src",
-    "README.md"
-  ],
-  "gitHead": "3ad14cd29046ce4186eebbe80eac2d4d48539b4b",
-  "keywords": [
-    "tingle-infinite-scroll",
-    "InfiniteScroll"
-  ],
-  "license": "MIT",
-  "main": "dist/index.js",
-  "maintainers": [
-    {
-      "name": "minjie.lmj",
-      "email": "minjie.lmj@alibaba-inc.com"
-    },
-    {
-      "name": "quanyun.mqy",
-      "email": "quanyun.mqy@alibaba-inc.com"
-    },
-    {
-      "name": "xiaohe.wp",
-      "email": "xiaohe.wp@alibaba-inc.com"
-    }
-  ],
-  "name": "@ali/tingle-infinite-scroll",
-  "optionalDependencies": {},
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1496734725960,
-  "readme": "ERROR: No README data found!",
-  "readmeFilename": "README.md",
-  "repository": {
-    "type": "git",
-    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-infinite-scroll"
-  },
+  "license": "MIT",
   "screenshots": "",
-  "scripts": {
-    "build": "salt-tools run build",
-    "dep": "salt-tools run dep",
-    "pub": "salt-tools run pub",
-    "start": "salt-tools run start",
-    "tnpm-dep": "salt-tools run tnpm-dep",
-    "tnpm-update": "salt-tools run tnpm-update",
-    "update": "salt-tools run update"
-  },
-  "version": "1.0.5"
+  "_from": "@ali/tingle-infinite-scroll@1.0.5",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-infinite-scroll/download/@ali/tingle-infinite-scroll-1.0.5.tgz"
 }

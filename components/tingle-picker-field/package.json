@@ -1,51 +1,23 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "@ali/tingle-picker-field@^1.0.0",
-        "scope": "@ali",
-        "escapedName": "@ali%2ftingle-picker-field",
-        "name": "@ali/tingle-picker-field",
-        "rawSpec": "^1.0.0",
-        "spec": ">=1.0.0 <2.0.0",
-        "type": "range"
-      },
-      "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui"
-    ]
+  "name": "@ali/tingle-picker-field",
+  "version": "1.2.1",
+  "description": "一个表单域，从右侧滑出面板，上面包含搜索和列表，支持单选和多选两种模式，选择后返回",
+  "repository": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-picker-field",
+  "author": "longyan",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
   ],
-  "_cnpm_publish_time": 1502187014713,
-  "_from": "@ali/tingle-picker-field@>=1.0.0 <2.0.0",
-  "_id": "@ali/tingle-picker-field@1.2.1",
-  "_inCache": true,
-  "_location": "/@ali/tingle-picker-field",
-  "_nodeVersion": "6.9.1",
-  "_npmUser": {
-    "name": "quanyun.mqy",
-    "email": "quanyun.mqy@alibaba-inc.com"
-  },
-  "_npmVersion": "3.10.9",
-  "_phantomChildren": {},
-  "_publish_on_cnpm": true,
-  "_requested": {
-    "raw": "@ali/tingle-picker-field@^1.0.0",
-    "scope": "@ali",
-    "escapedName": "@ali%2ftingle-picker-field",
-    "name": "@ali/tingle-picker-field",
-    "rawSpec": "^1.0.0",
-    "spec": ">=1.0.0 <2.0.0",
-    "type": "range"
-  },
-  "_requiredBy": [
-    "/@ali/tingle-ui"
+  "keywords": [
+    "tingle-picker-field",
+    "PickerField",
+    "picker",
+    "field",
+    "表单",
+    "选择域"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-picker-field/download/@ali/tingle-picker-field-1.2.1.tgz",
-  "_shasum": "fd4fb5b32514175b4a6dd7f9c814a23c464aef5f",
-  "_shrinkwrap": null,
-  "_spec": "@ali/tingle-picker-field@^1.0.0",
-  "_where": "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui",
-  "author": {
-    "name": "longyan"
-  },
   "dependencies": {
     "@ali/tingle-button": "^1.0.10",
     "@ali/tingle-context": "^1.0.0",
@@ -58,7 +30,6 @@
     "lie": "^3.1.1",
     "natty-fetch": "~2.4.2"
   },
-  "description": "一个表单域，从右侧滑出面板，上面包含搜索和列表，支持单选和多选两种模式，选择后返回",
   "devDependencies": {
     "@ali/tingle-group": "^1.0.7",
     "@ali/tingle-ui": "^2.0.0",
@@ -67,63 +38,20 @@
     "react-dom": "^0.14.8",
     "salt-tools": "~0.1.0"
   },
-  "dist": {
-    "shasum": "fd4fb5b32514175b4a6dd7f9c814a23c464aef5f",
-    "size": 15295,
-    "key": "@ali/tingle-picker-field/-/@ali/tingle-picker-field-1.2.1.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-picker-field/download/@ali/tingle-picker-field-1.2.1.tgz"
-  },
-  "files": [
-    "dist",
-    "src",
-    "README.md"
-  ],
-  "gitHead": "f899433c21e91a953a9826f88a2ab91edc36eaa8",
-  "keywords": [
-    "tingle-picker-field",
-    "PickerField",
-    "picker",
-    "field",
-    "表单",
-    "选择域"
-  ],
-  "license": "MIT",
-  "main": "dist/index.js",
-  "maintainers": [
-    {
-      "name": "guanghong.wsj",
-      "email": "guanghong.wsj@alibaba-inc.com"
-    },
-    {
-      "name": "lyw134718",
-      "email": "lyw134718@alibaba-inc.com"
-    },
-    {
-      "name": "quanyun.mqy",
-      "email": "quanyun.mqy@alibaba-inc.com"
-    }
-  ],
-  "name": "@ali/tingle-picker-field",
-  "optionalDependencies": {},
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1502187014713,
-  "readme": "ERROR: No README data found!",
-  "readmeFilename": "README.md",
-  "repository": {
-    "type": "git",
-    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-picker-field"
-  },
-  "screenshots": "",
   "scripts": {
-    "build": "salt-tools run build",
-    "dep": "salt-tools run dep",
-    "pub": "salt-tools run pub",
     "start": "salt-tools run start",
+    "build": "salt-tools run build",
+    "pub": "salt-tools run pub",
+    "dep": "salt-tools run dep",
     "tnpm-dep": "salt-tools run tnpm-dep",
-    "tnpm-update": "salt-tools run tnpm-update",
-    "update": "salt-tools run update"
+    "update": "salt-tools run update",
+    "tnpm-update": "salt-tools run tnpm-update"
   },
-  "version": "1.2.1"
+  "license": "MIT",
+  "screenshots": "",
+  "_from": "@ali/tingle-picker-field@1.2.1",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-picker-field/download/@ali/tingle-picker-field-1.2.1.tgz"
 }

@@ -1,65 +1,29 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "@ali/tingle-switch-field@^1.0.0",
-        "scope": "@ali",
-        "escapedName": "@ali%2ftingle-switch-field",
-        "name": "@ali/tingle-switch-field",
-        "rawSpec": "^1.0.0",
-        "spec": ">=1.0.0 <2.0.0",
-        "type": "range"
-      },
-      "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui"
-    ]
-  ],
-  "_cnpm_publish_time": 1487574009888,
-  "_from": "@ali/tingle-switch-field@>=1.0.0 <2.0.0",
-  "_id": "@ali/tingle-switch-field@1.0.4",
-  "_inCache": true,
-  "_location": "/@ali/tingle-switch-field",
-  "_nodeVersion": "6.9.4",
-  "_npmUser": {
-    "name": "caoke.ck",
-    "email": "caoke.ck@alibaba-inc.com"
-  },
-  "_npmVersion": "3.10.9",
-  "_phantomChildren": {
-    "@ali/tingle-icon-source": "1.0.13",
-    "@ali/tingle-style": "1.0.23",
-    "classnames": "2.2.5"
-  },
-  "_publish_on_cnpm": true,
-  "_requested": {
-    "raw": "@ali/tingle-switch-field@^1.0.0",
-    "scope": "@ali",
-    "escapedName": "@ali%2ftingle-switch-field",
-    "name": "@ali/tingle-switch-field",
-    "rawSpec": "^1.0.0",
-    "spec": ">=1.0.0 <2.0.0",
-    "type": "range"
-  },
-  "_requiredBy": [
-    "/@ali/tingle-grid/@ali/tingle-ui",
-    "/@ali/tingle-ui"
-  ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-switch-field/download/@ali/tingle-switch-field-1.0.4.tgz",
-  "_shasum": "ed2e3126849a5acb997295c054ea442bbd6ba921",
-  "_shrinkwrap": null,
-  "_spec": "@ali/tingle-switch-field@^1.0.0",
-  "_where": "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui",
-  "author": "",
-  "dependencies": {
-    "@ali/tingle-context": "~1.0.0",
-    "@ali/tingle-field": "~1.0.0",
-    "@ali/tingle-style": "~1.0.0",
-    "@ali/tingle-switch": "~1.0.0",
-    "classnames": "~2.2.3"
-  },
+  "name": "@ali/tingle-switch-field",
+  "version": "1.0.4",
   "description": "tingle-switch-field component for tingle.",
+  "repository": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-switch-field",
+  "author": "",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "keywords": [
+    "tingle-switch-field",
+    "SwitchField"
+  ],
+  "dependencies": {
+    "classnames": "~2.2.3",
+    "@ali/tingle-context": "~1.0.0",
+    "@ali/tingle-switch": "~1.0.0",
+    "@ali/tingle-field": "~1.0.0",
+    "@ali/tingle-style": "~1.0.0"
+  },
   "devDependencies": {
-    "@ali/tingle-group": "~1.0.0",
     "@ali/tingle-ui": "~1.0.0",
+    "@ali/tingle-group": "~1.0.0",
     "babel": "~6.3.26",
     "babel-core": "~6.4.0",
     "babel-loader": "~6.2.1",
@@ -68,8 +32,6 @@
     "babel-preset-react": "~6.3.13",
     "babel-preset-stage-1": "~6.3.13",
     "browser-sync": "~2.11.1",
-    "cross-spawn": "^2.0.0",
-    "fastclick": "~1.0.6",
     "gulp": "~3.9.0",
     "gulp-babel": "~6.1.1",
     "gulp-concat": "~2.6.0",
@@ -83,58 +45,21 @@
     "gulp-unique-files": "~0.1.2",
     "react": "~0.14.8",
     "react-dom": "~0.14.8",
+    "fastclick": "~1.0.6",
     "svg2react-loader": "^1.0.2",
     "through2": "~2.0.1",
+    "cross-spawn": "^2.0.0",
     "webpack": "~1.12.11"
   },
-  "dist": {
-    "shasum": "ed2e3126849a5acb997295c054ea442bbd6ba921",
-    "size": 6143,
-    "key": "@ali/tingle-switch-field/-/@ali/tingle-switch-field-1.0.4.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-switch-field/download/@ali/tingle-switch-field-1.0.4.tgz"
-  },
-  "files": [
-    "dist",
-    "src",
-    "README.md"
-  ],
-  "gitHead": "073fae240f866f746133648bb0fd77148d1152ba",
-  "keywords": [
-    "tingle-switch-field",
-    "SwitchField"
-  ],
-  "license": "MIT",
-  "main": "dist/index.js",
-  "maintainers": [
-    {
-      "name": "alex.mm",
-      "email": "alex.mm@alibaba-inc.com"
-    },
-    {
-      "name": "caoke.ck",
-      "email": "caoke.ck@alibaba-inc.com"
-    },
-    {
-      "name": "quanyun.mqy",
-      "email": "quanyun.mqy@alibaba-inc.com"
-    }
-  ],
-  "name": "@ali/tingle-switch-field",
-  "optionalDependencies": {},
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1487574009888,
-  "readme": "ERROR: No README data found!",
-  "readmeFilename": "README.md",
-  "repository": {
-    "type": "git",
-    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-switch-field"
-  },
-  "screenshots": "",
   "scripts": {
-    "build": "gulp b",
-    "start": "gulp d"
+    "start": "gulp d",
+    "build": "gulp b"
   },
-  "version": "1.0.4"
+  "license": "MIT",
+  "screenshots": "",
+  "_from": "@ali/tingle-switch-field@1.0.4",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-switch-field/download/@ali/tingle-switch-field-1.0.4.tgz"
 }

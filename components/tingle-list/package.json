@@ -1,55 +1,19 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "@ali/tingle-list@^1.0.0",
-        "scope": "@ali",
-        "escapedName": "@ali%2ftingle-list",
-        "name": "@ali/tingle-list",
-        "rawSpec": "^1.0.0",
-        "spec": ">=1.0.0 <2.0.0",
-        "type": "range"
-      },
-      "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui"
-    ]
+  "name": "@ali/tingle-list",
+  "version": "1.0.13",
+  "description": "tingle-list component for tingle.",
+  "repository": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-list",
+  "author": "muxin",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
   ],
-  "_cnpm_publish_time": 1488942237970,
-  "_from": "@ali/tingle-list@>=1.0.0 <2.0.0",
-  "_id": "@ali/tingle-list@1.0.13",
-  "_inCache": true,
-  "_location": "/@ali/tingle-list",
-  "_nodeVersion": "6.9.1",
-  "_npmUser": {
-    "name": "quanyun.mqy",
-    "email": "quanyun.mqy@alibaba-inc.com"
-  },
-  "_npmVersion": "3.10.9",
-  "_phantomChildren": {
-    "@ali/tingle-style": "1.0.23",
-    "classnames": "2.2.5"
-  },
-  "_publish_on_cnpm": true,
-  "_requested": {
-    "raw": "@ali/tingle-list@^1.0.0",
-    "scope": "@ali",
-    "escapedName": "@ali%2ftingle-list",
-    "name": "@ali/tingle-list",
-    "rawSpec": "^1.0.0",
-    "spec": ">=1.0.0 <2.0.0",
-    "type": "range"
-  },
-  "_requiredBy": [
-    "/@ali/tingle-grid/@ali/tingle-ui",
-    "/@ali/tingle-ui"
+  "keywords": [
+    "tingle-list",
+    "List"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-list/download/@ali/tingle-list-1.0.13.tgz",
-  "_shasum": "c67e920298a41f2f2816fa5bdc8f40c523a06c15",
-  "_shrinkwrap": null,
-  "_spec": "@ali/tingle-list@^1.0.0",
-  "_where": "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui",
-  "author": {
-    "name": "muxin"
-  },
   "dependencies": {
     "@ali/tingle-box": "^1.0.1",
     "@ali/tingle-context": "~1.0.0",
@@ -59,7 +23,6 @@
     "@ali/tingle-style": "^1.0.13",
     "classnames": "~2.2.3"
   },
-  "description": "tingle-list component for tingle.",
   "devDependencies": {
     "@ali/tingle-ui": "^1.0.0",
     "fastclick": "^1.0.6",
@@ -67,63 +30,20 @@
     "react-dom": "^0.14.8",
     "salt-tools": "~0.1.0"
   },
-  "dist": {
-    "shasum": "c67e920298a41f2f2816fa5bdc8f40c523a06c15",
-    "size": 8510,
-    "key": "@ali/tingle-list/-/@ali/tingle-list-1.0.13.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-list/download/@ali/tingle-list-1.0.13.tgz"
-  },
-  "files": [
-    "dist",
-    "src",
-    "README.md"
-  ],
-  "gitHead": "992e96b3d84ab693df4643479d94824a433dd702",
-  "keywords": [
-    "tingle-list",
-    "List"
-  ],
-  "license": "MIT",
-  "main": "dist/index.js",
-  "maintainers": [
-    {
-      "name": "alex.mm",
-      "email": "alex.mm@alibaba-inc.com"
-    },
-    {
-      "name": "guanghong.wsj",
-      "email": "guanghong.wsj@alibaba-inc.com"
-    },
-    {
-      "name": "jiasong.js",
-      "email": "jiasong.js@alibaba-inc.com"
-    },
-    {
-      "name": "quanyun.mqy",
-      "email": "quanyun.mqy@alibaba-inc.com"
-    }
-  ],
-  "name": "@ali/tingle-list",
-  "optionalDependencies": {},
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1488942237970,
-  "readme": "ERROR: No README data found!",
-  "readmeFilename": "README.md",
-  "repository": {
-    "type": "git",
-    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-list"
-  },
-  "screenshots": "",
   "scripts": {
-    "build": "salt-tools run build",
-    "dep": "salt-tools run dep",
-    "pub": "salt-tools run pub",
     "start": "salt-tools run start",
+    "build": "salt-tools run build",
+    "pub": "salt-tools run pub",
+    "dep": "salt-tools run dep",
     "tnpm-dep": "salt-tools run tnpm-dep",
-    "tnpm-update": "salt-tools run tnpm-update",
-    "update": "salt-tools run update"
+    "update": "salt-tools run update",
+    "tnpm-update": "salt-tools run tnpm-update"
   },
-  "version": "1.0.13"
+  "license": "MIT",
+  "screenshots": "",
+  "_from": "@ali/tingle-list@1.0.13",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-list/download/@ali/tingle-list-1.0.13.tgz"
 }

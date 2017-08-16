@@ -1,62 +1,29 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "@ali/tingle-tab-bar@^1.3.5",
-        "scope": "@ali",
-        "escapedName": "@ali%2ftingle-tab-bar",
-        "name": "@ali/tingle-tab-bar",
-        "rawSpec": "^1.3.5",
-        "spec": ">=1.3.5 <2.0.0",
-        "type": "range"
-      },
-      "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui"
-    ]
+  "name": "@ali/tingle-tab-bar",
+  "version": "1.3.10",
+  "description": "tingle-tab-bar component for tingle.",
+  "repository": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-tab-bar",
+  "author": "zhouwenjie",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
   ],
-  "_cnpm_publish_time": 1493025638597,
-  "_from": "@ali/tingle-tab-bar@>=1.3.5 <2.0.0",
-  "_id": "@ali/tingle-tab-bar@1.3.10",
-  "_inCache": true,
-  "_location": "/@ali/tingle-tab-bar",
-  "_nodeVersion": "6.10.0",
-  "_npmUser": {
-    "name": "ruiyang.dry",
-    "email": "ruiyang.dry@alibaba-inc.com"
-  },
-  "_npmVersion": "3.10.9",
-  "_phantomChildren": {},
-  "_publish_on_cnpm": true,
-  "_requested": {
-    "raw": "@ali/tingle-tab-bar@^1.3.5",
-    "scope": "@ali",
-    "escapedName": "@ali%2ftingle-tab-bar",
-    "name": "@ali/tingle-tab-bar",
-    "rawSpec": "^1.3.5",
-    "spec": ">=1.3.5 <2.0.0",
-    "type": "range"
-  },
-  "_requiredBy": [
-    "/@ali/tingle-ui"
+  "keywords": [
+    "tingle-tab-bar",
+    "TabBar"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-tab-bar/download/@ali/tingle-tab-bar-1.3.10.tgz",
-  "_shasum": "f230b6fa2544c3830afed9c4d7c6a4ee8c3ef9f9",
-  "_shrinkwrap": null,
-  "_spec": "@ali/tingle-tab-bar@^1.3.5",
-  "_where": "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui",
-  "author": {
-    "name": "zhouwenjie"
-  },
   "dependencies": {
     "@ali/tingle-box": "^1.0.0",
     "@ali/tingle-context": "^1.0.0",
     "@ali/tingle-icon": "^2.0.0",
-    "@ali/tingle-layer": "^1.0.2",
     "@ali/tingle-style": "^1.0.0",
+    "@ali/tingle-layer": "^1.0.2",
     "classnames": "~2.2.3",
-    "object-assign": "^4.1.0",
-    "react": "^0.14.8"
+    "react": "^0.14.8",
+    "object-assign": "^4.1.0"
   },
-  "description": "tingle-tab-bar component for tingle.",
   "devDependencies": {
     "@ali/tingle-ui": "^1.0.0",
     "fastclick": "^1.0.6",
@@ -64,71 +31,20 @@
     "react-dom": "^0.14.8",
     "salt-tools": "~0.1.0"
   },
-  "dist": {
-    "shasum": "f230b6fa2544c3830afed9c4d7c6a4ee8c3ef9f9",
-    "size": 10223,
-    "key": "@ali/tingle-tab-bar/-/@ali/tingle-tab-bar-1.3.10.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-tab-bar/download/@ali/tingle-tab-bar-1.3.10.tgz"
-  },
-  "files": [
-    "dist",
-    "src",
-    "README.md"
-  ],
-  "gitHead": "8b573aa4e81aeb91f6de381ce3e6c8eee01558e8",
-  "keywords": [
-    "tingle-tab-bar",
-    "TabBar"
-  ],
-  "license": "MIT",
-  "main": "dist/index.js",
-  "maintainers": [
-    {
-      "name": "alex.mm",
-      "email": "alex.mm@alibaba-inc.com"
-    },
-    {
-      "name": "caoke.ck",
-      "email": "caoke.ck@alibaba-inc.com"
-    },
-    {
-      "name": "jiasong.js",
-      "email": "jiasong.js@alibaba-inc.com"
-    },
-    {
-      "name": "quanyun.mqy",
-      "email": "quanyun.mqy@alibaba-inc.com"
-    },
-    {
-      "name": "ruiyang.dry",
-      "email": "ruiyang.dry@alibaba-inc.com"
-    },
-    {
-      "name": "wb-zhouwenjie.a",
-      "email": "wb-zhouwenjie.a@alibaba-inc.com"
-    }
-  ],
-  "name": "@ali/tingle-tab-bar",
-  "optionalDependencies": {},
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1493025638597,
-  "readme": "ERROR: No README data found!",
-  "readmeFilename": "README.md",
-  "repository": {
-    "type": "git",
-    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-tab-bar"
-  },
-  "screenshots": "",
   "scripts": {
-    "build": "salt-tools run build",
-    "dep": "salt-tools run dep",
-    "pub": "salt-tools run pub",
     "start": "salt-tools run start",
+    "build": "salt-tools run build",
+    "pub": "salt-tools run pub",
+    "dep": "salt-tools run dep",
     "tnpm-dep": "salt-tools run tnpm-dep",
-    "tnpm-update": "salt-tools run tnpm-update",
-    "update": "salt-tools run update"
+    "update": "salt-tools run update",
+    "tnpm-update": "salt-tools run tnpm-update"
   },
-  "version": "1.3.10"
+  "license": "MIT",
+  "screenshots": "",
+  "_from": "@ali/tingle-tab-bar@1.3.10",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-tab-bar/download/@ali/tingle-tab-bar-1.3.10.tgz"
 }

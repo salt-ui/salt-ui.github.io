@@ -1,64 +1,25 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "@ali/tingle-text-field@^1.0.0",
-        "scope": "@ali",
-        "escapedName": "@ali%2ftingle-text-field",
-        "name": "@ali/tingle-text-field",
-        "rawSpec": "^1.0.0",
-        "spec": ">=1.0.0 <2.0.0",
-        "type": "range"
-      },
-      "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui"
-    ]
+  "name": "@ali/tingle-text-field",
+  "version": "1.0.9",
+  "description": "tingle-text-field component for tingle.",
+  "repository": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-text-field",
+  "author": "jiasong.js",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
   ],
-  "_cnpm_publish_time": 1488098341361,
-  "_from": "@ali/tingle-text-field@>=1.0.0 <2.0.0",
-  "_id": "@ali/tingle-text-field@1.0.9",
-  "_inCache": true,
-  "_location": "/@ali/tingle-text-field",
-  "_nodeVersion": "6.9.1",
-  "_npmUser": {
-    "name": "quanyun.mqy",
-    "email": "quanyun.mqy@alibaba-inc.com"
-  },
-  "_npmVersion": "3.10.9",
-  "_phantomChildren": {
-    "@ali/tingle-icon": "2.0.2",
-    "@ali/tingle-icon-source": "1.0.13",
-    "@ali/tingle-style": "1.0.23",
-    "classnames": "2.2.5"
-  },
-  "_publish_on_cnpm": true,
-  "_requested": {
-    "raw": "@ali/tingle-text-field@^1.0.0",
-    "scope": "@ali",
-    "escapedName": "@ali%2ftingle-text-field",
-    "name": "@ali/tingle-text-field",
-    "rawSpec": "^1.0.0",
-    "spec": ">=1.0.0 <2.0.0",
-    "type": "range"
-  },
-  "_requiredBy": [
-    "/@ali/tingle-grid/@ali/tingle-ui",
-    "/@ali/tingle-ui"
+  "keywords": [
+    "tingle-text-field",
+    "TextField"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-text-field/download/@ali/tingle-text-field-1.0.9.tgz",
-  "_shasum": "cc7fc493631db431df875435068a4c09fc04647e",
-  "_shrinkwrap": null,
-  "_spec": "@ali/tingle-text-field@^1.0.0",
-  "_where": "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui",
-  "author": {
-    "name": "jiasong.js"
-  },
   "dependencies": {
     "@ali/tingle-context": "~1.0.0",
     "@ali/tingle-field": "~1.1.0",
     "@ali/tingle-style": "~1.0.0",
     "classnames": "~2.2.3"
   },
-  "description": "tingle-text-field component for tingle.",
   "devDependencies": {
     "@ali/tingle-group": "~1.0.2",
     "@ali/tingle-ui": "~1.0.0",
@@ -89,58 +50,15 @@
     "through2": "~2.0.1",
     "webpack": "~1.12.11"
   },
-  "dist": {
-    "shasum": "cc7fc493631db431df875435068a4c09fc04647e",
-    "size": 11081,
-    "key": "@ali/tingle-text-field/-/@ali/tingle-text-field-1.0.9.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-text-field/download/@ali/tingle-text-field-1.0.9.tgz"
-  },
-  "files": [
-    "dist",
-    "src",
-    "README.md"
-  ],
-  "gitHead": "271240973d8d8144d64b138450c26605e550d68c",
-  "keywords": [
-    "tingle-text-field",
-    "TextField"
-  ],
-  "license": "MIT",
-  "main": "dist/index.js",
-  "maintainers": [
-    {
-      "name": "alex.mm",
-      "email": "alex.mm@alibaba-inc.com"
-    },
-    {
-      "name": "caoke.ck",
-      "email": "caoke.ck@alibaba-inc.com"
-    },
-    {
-      "name": "jiasong.js",
-      "email": "jiasong.js@alibaba-inc.com"
-    },
-    {
-      "name": "quanyun.mqy",
-      "email": "quanyun.mqy@alibaba-inc.com"
-    }
-  ],
-  "name": "@ali/tingle-text-field",
-  "optionalDependencies": {},
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1488098341361,
-  "readme": "ERROR: No README data found!",
-  "readmeFilename": "README.md",
-  "repository": {
-    "type": "git",
-    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-text-field"
-  },
-  "screenshots": "",
   "scripts": {
-    "build": "gulp b",
-    "start": "gulp d"
+    "start": "gulp d",
+    "build": "gulp b"
   },
-  "version": "1.0.9"
+  "license": "MIT",
+  "screenshots": "",
+  "_from": "@ali/tingle-text-field@1.0.9",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-text-field/download/@ali/tingle-text-field-1.0.9.tgz"
 }

@@ -1,69 +1,27 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "@ali/tingle-field@^1.0.0",
-        "scope": "@ali",
-        "escapedName": "@ali%2ftingle-field",
-        "name": "@ali/tingle-field",
-        "rawSpec": "^1.0.0",
-        "spec": ">=1.0.0 <2.0.0",
-        "type": "range"
-      },
-      "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui"
-    ]
-  ],
-  "_cnpm_publish_time": 1492669153941,
-  "_from": "@ali/tingle-field@>=1.0.0 <2.0.0",
-  "_id": "@ali/tingle-field@1.2.0",
-  "_inCache": true,
-  "_location": "/@ali/tingle-field",
-  "_nodeVersion": "6.9.1",
-  "_npmUser": {
-    "name": "quanyun.mqy",
-    "email": "quanyun.mqy@alibaba-inc.com"
-  },
-  "_npmVersion": "3.10.9",
-  "_phantomChildren": {
-    "@ali/tingle-style": "1.0.23",
-    "classnames": "2.2.5"
-  },
-  "_publish_on_cnpm": true,
-  "_requested": {
-    "raw": "@ali/tingle-field@^1.0.0",
-    "scope": "@ali",
-    "escapedName": "@ali%2ftingle-field",
-    "name": "@ali/tingle-field",
-    "rawSpec": "^1.0.0",
-    "spec": ">=1.0.0 <2.0.0",
-    "type": "range"
-  },
-  "_requiredBy": [
-    "/@ali/tingle-calendar-field",
-    "/@ali/tingle-cascade-select-field",
-    "/@ali/tingle-checkbox-field",
-    "/@ali/tingle-city-select-field",
-    "/@ali/tingle-datetime-field",
-    "/@ali/tingle-picker-field",
-    "/@ali/tingle-select-field",
-    "/@ali/tingle-ui"
-  ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-field/download/@ali/tingle-field-1.2.0.tgz",
-  "_shasum": "f9e84a5517c18a6a7c6c0a13d9de73f4222c5b75",
-  "_shrinkwrap": null,
-  "_spec": "@ali/tingle-field@^1.0.0",
-  "_where": "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui",
-  "author": {
-    "name": "jiasong.js"
-  },
-  "dependencies": {
-    "@ali/tingle-context": "~1.0.0",
-    "@ali/tingle-icon": "^2.0.0",
-    "@ali/tingle-icon-source": "~1.0.0",
-    "@ali/tingle-style": "~1.0.0",
-    "classnames": "~2.2.3"
-  },
+  "name": "@ali/tingle-field",
+  "version": "1.2.0",
   "description": "tingle-field component for tingle.",
+  "repository": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-field",
+  "author": "jiasong.js",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "keywords": [
+    "tingle-field",
+    "Field",
+    "tingle"
+  ],
+  "dependencies": {
+    "classnames": "~2.2.3",
+    "@ali/tingle-context": "~1.0.0",
+    "@ali/tingle-style": "~1.0.0",
+    "@ali/tingle-icon": "^2.0.0",
+    "@ali/tingle-icon-source": "~1.0.0"
+  },
   "devDependencies": {
     "@ali/tingle-ui": "^1.0.0",
     "fastclick": "^1.0.6",
@@ -71,60 +29,20 @@
     "react-dom": "^0.14.8",
     "salt-tools": "~0.1.0"
   },
-  "dist": {
-    "shasum": "f9e84a5517c18a6a7c6c0a13d9de73f4222c5b75",
-    "size": 5726,
-    "key": "@ali/tingle-field/-/@ali/tingle-field-1.2.0.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-field/download/@ali/tingle-field-1.2.0.tgz"
-  },
-  "files": [
-    "dist",
-    "src",
-    "README.md"
-  ],
-  "gitHead": "983f536084520a5a80ba7826edb2063d1f3f7681",
-  "keywords": [
-    "tingle-field",
-    "Field",
-    "tingle"
-  ],
-  "license": "MIT",
-  "main": "dist/index.js",
-  "maintainers": [
-    {
-      "name": "alex.mm",
-      "email": "alex.mm@alibaba-inc.com"
-    },
-    {
-      "name": "jiasong.js",
-      "email": "jiasong.js@alibaba-inc.com"
-    },
-    {
-      "name": "quanyun.mqy",
-      "email": "quanyun.mqy@alibaba-inc.com"
-    }
-  ],
-  "name": "@ali/tingle-field",
-  "optionalDependencies": {},
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1492669153941,
-  "readme": "ERROR: No README data found!",
-  "readmeFilename": "README.md",
-  "repository": {
-    "type": "git",
-    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-field"
-  },
-  "screenshots": "",
   "scripts": {
-    "build": "salt-tools run build",
-    "dep": "salt-tools run dep",
-    "pub": "salt-tools run pub",
     "start": "salt-tools run start",
+    "build": "salt-tools run build",
+    "pub": "salt-tools run pub",
+    "dep": "salt-tools run dep",
     "tnpm-dep": "salt-tools run tnpm-dep",
-    "tnpm-update": "salt-tools run tnpm-update",
-    "update": "salt-tools run update"
+    "update": "salt-tools run update",
+    "tnpm-update": "salt-tools run tnpm-update"
   },
-  "version": "1.2.0"
+  "license": "MIT",
+  "screenshots": "",
+  "_from": "@ali/tingle-field@1.2.0",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-field/download/@ali/tingle-field-1.2.0.tgz"
 }

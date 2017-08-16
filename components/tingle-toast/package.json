@@ -1,52 +1,20 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "@ali/tingle-toast@^1.0.0",
-        "scope": "@ali",
-        "escapedName": "@ali%2ftingle-toast",
-        "name": "@ali/tingle-toast",
-        "rawSpec": "^1.0.0",
-        "spec": ">=1.0.0 <2.0.0",
-        "type": "range"
-      },
-      "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui"
-    ]
+  "name": "@ali/tingle-toast",
+  "version": "1.0.15",
+  "description": "tingle-toast component for tingle.",
+  "repository": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-toast",
+  "author": "minjie",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
   ],
-  "_cnpm_publish_time": 1491557031094,
-  "_from": "@ali/tingle-toast@>=1.0.0 <2.0.0",
-  "_id": "@ali/tingle-toast@1.0.15",
-  "_inCache": true,
-  "_location": "/@ali/tingle-toast",
-  "_nodeVersion": "6.9.1",
-  "_npmUser": {
-    "name": "quanyun.mqy",
-    "email": "quanyun.mqy@alibaba-inc.com"
-  },
-  "_npmVersion": "3.10.9",
-  "_phantomChildren": {},
-  "_publish_on_cnpm": true,
-  "_requested": {
-    "raw": "@ali/tingle-toast@^1.0.0",
-    "scope": "@ali",
-    "escapedName": "@ali%2ftingle-toast",
-    "name": "@ali/tingle-toast",
-    "rawSpec": "^1.0.0",
-    "spec": ">=1.0.0 <2.0.0",
-    "type": "range"
-  },
-  "_requiredBy": [
-    "/@ali/tingle-grid/@ali/tingle-ui",
-    "/@ali/tingle-ui"
+  "keywords": [
+    "tingle-toast",
+    "Toast",
+    ""
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-toast/download/@ali/tingle-toast-1.0.15.tgz",
-  "_shasum": "7a5af955a653f028fe7141f4d7864d374babb176",
-  "_shrinkwrap": null,
-  "_spec": "@ali/tingle-toast@^1.0.0",
-  "_where": "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui",
-  "author": {
-    "name": "minjie"
-  },
   "dependencies": {
     "@ali/tingle-box": "^1.0.1",
     "@ali/tingle-context": "^1.0.0",
@@ -54,7 +22,6 @@
     "@ali/tingle-layer": "^1.0.2",
     "classnames": "~2.2.3"
   },
-  "description": "tingle-toast component for tingle.",
   "devDependencies": {
     "@ali/tingle-button": "^1.0.7",
     "@ali/tingle-style": "^1.0.0",
@@ -64,59 +31,20 @@
     "react-dom": "^0.14.8",
     "salt-tools": "~0.1.0"
   },
-  "dist": {
-    "shasum": "7a5af955a653f028fe7141f4d7864d374babb176",
-    "size": 6863,
-    "key": "@ali/tingle-toast/-/@ali/tingle-toast-1.0.15.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-toast/download/@ali/tingle-toast-1.0.15.tgz"
-  },
-  "files": [
-    "dist",
-    "src",
-    "README.md"
-  ],
-  "gitHead": "13ea7fc9b09a085a911c5218e1db0349eb587b6b",
-  "keywords": [
-    "tingle-toast",
-    "Toast"
-  ],
-  "license": "MIT",
-  "main": "dist/index.js",
-  "maintainers": [
-    {
-      "name": "alex.mm",
-      "email": "alex.mm@alibaba-inc.com"
-    },
-    {
-      "name": "caoke.ck",
-      "email": "caoke.ck@alibaba-inc.com"
-    },
-    {
-      "name": "quanyun.mqy",
-      "email": "quanyun.mqy@alibaba-inc.com"
-    }
-  ],
-  "name": "@ali/tingle-toast",
-  "optionalDependencies": {},
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1491557031094,
-  "readme": "ERROR: No README data found!",
-  "readmeFilename": "README.md",
-  "repository": {
-    "type": "git",
-    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-toast"
-  },
-  "screenshots": "",
   "scripts": {
-    "build": "salt-tools run build",
-    "dep": "salt-tools run dep",
-    "pub": "salt-tools run pub",
     "start": "salt-tools run start",
+    "build": "salt-tools run build",
+    "pub": "salt-tools run pub",
+    "dep": "salt-tools run dep",
     "tnpm-dep": "salt-tools run tnpm-dep",
-    "tnpm-update": "salt-tools run tnpm-update",
-    "update": "salt-tools run update"
+    "update": "salt-tools run update",
+    "tnpm-update": "salt-tools run tnpm-update"
   },
-  "version": "1.0.15"
+  "license": "MIT",
+  "screenshots": "",
+  "_from": "@ali/tingle-toast@1.0.15",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-toast/download/@ali/tingle-toast-1.0.15.tgz"
 }

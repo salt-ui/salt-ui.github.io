@@ -1,58 +1,34 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "@ali/tingle-pagination@^1.0.0",
-        "scope": "@ali",
-        "escapedName": "@ali%2ftingle-pagination",
-        "name": "@ali/tingle-pagination",
-        "rawSpec": "^1.0.0",
-        "spec": ">=1.0.0 <2.0.0",
-        "type": "range"
-      },
-      "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui"
-    ]
+  "name": "@ali/tingle-pagination",
+  "version": "1.0.2",
+  "description": "tingle-pagination component for tingle.",
+  "repository": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-pagination",
+  "author": "changming.zy",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "salt-tools run start",
+    "build": "salt-tools run build",
+    "pub": "salt-tools run pub",
+    "dep": "salt-tools run dep",
+    "tnpm-dep": "salt-tools run tnpm-dep",
+    "update": "salt-tools run update",
+    "tnpm-update": "salt-tools run tnpm-update"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md"
   ],
-  "_cnpm_publish_time": 1496714508487,
-  "_from": "@ali/tingle-pagination@>=1.0.0 <2.0.0",
-  "_id": "@ali/tingle-pagination@1.0.2",
-  "_inCache": true,
-  "_location": "/@ali/tingle-pagination",
-  "_nodeVersion": "6.9.5",
-  "_npmUser": {
-    "name": "changming.zy",
-    "email": "changming.zy@alibaba-inc.com"
-  },
-  "_npmVersion": "3.10.10",
-  "_phantomChildren": {},
-  "_publish_on_cnpm": true,
-  "_requested": {
-    "raw": "@ali/tingle-pagination@^1.0.0",
-    "scope": "@ali",
-    "escapedName": "@ali%2ftingle-pagination",
-    "name": "@ali/tingle-pagination",
-    "rawSpec": "^1.0.0",
-    "spec": ">=1.0.0 <2.0.0",
-    "type": "range"
-  },
-  "_requiredBy": [
-    "/@ali/tingle-ui"
+  "keywords": [
+    "tingle-pagination",
+    "Pagination"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-pagination/download/@ali/tingle-pagination-1.0.2.tgz",
-  "_shasum": "4ed9b031869bac1c8a4c0685e59204123598046c",
-  "_shrinkwrap": null,
-  "_spec": "@ali/tingle-pagination@^1.0.0",
-  "_where": "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui",
-  "author": {
-    "name": "changming.zy"
-  },
   "dependencies": {
     "@ali/tingle-button": "^1.0.10",
     "@ali/tingle-context": "^1.0.0",
     "@ali/tingle-style": "^1.0.11",
     "classnames": "^2.2.3"
   },
-  "description": "tingle-pagination component for tingle.",
   "devDependencies": {
     "@ali/tingle-ui": "^1.0.0",
     "fastclick": "^1.0.6",
@@ -60,59 +36,11 @@
     "react-dom": "^0.14.8",
     "salt-tools": "~0.1.0"
   },
-  "dist": {
-    "shasum": "4ed9b031869bac1c8a4c0685e59204123598046c",
-    "size": 4827,
-    "key": "@ali/tingle-pagination/-/@ali/tingle-pagination-1.0.2.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-pagination/download/@ali/tingle-pagination-1.0.2.tgz"
-  },
-  "files": [
-    "dist",
-    "src",
-    "README.md"
-  ],
-  "gitHead": "c09929ec1a2f5544c673d348f45d9118bc0fc2c6",
-  "keywords": [
-    "tingle-pagination",
-    "Pagination"
-  ],
-  "license": "MIT",
-  "main": "dist/index.js",
-  "maintainers": [
-    {
-      "name": "changming.zy",
-      "email": "changming.zy@alibaba-inc.com"
-    },
-    {
-      "name": "guanghong.wsj",
-      "email": "guanghong.wsj@alibaba-inc.com"
-    },
-    {
-      "name": "quanyun.mqy",
-      "email": "quanyun.mqy@alibaba-inc.com"
-    }
-  ],
-  "name": "@ali/tingle-pagination",
-  "optionalDependencies": {},
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1496714508487,
-  "readme": "ERROR: No README data found!",
-  "readmeFilename": "README.md",
-  "repository": {
-    "type": "git",
-    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-pagination"
-  },
+  "license": "MIT",
   "screenshots": "",
-  "scripts": {
-    "build": "salt-tools run build",
-    "dep": "salt-tools run dep",
-    "pub": "salt-tools run pub",
-    "start": "salt-tools run start",
-    "tnpm-dep": "salt-tools run tnpm-dep",
-    "tnpm-update": "salt-tools run tnpm-update",
-    "update": "salt-tools run update"
-  },
-  "version": "1.0.2"
+  "_from": "@ali/tingle-pagination@1.0.2",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-pagination/download/@ali/tingle-pagination-1.0.2.tgz"
 }

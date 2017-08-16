@@ -7,14 +7,11 @@
   2. 通过名字来计算 hashCode ，hashCode 算法采用 java 中的 hashCode 实现方式， __如果和客户端同时开发项目，请注意和 ios/android 同学沟通保持一致的 hash算法__（可以通过 Avatar.hashCode('xxx'); Avatar.hashCode('xxx', true); 来测试 hash 值）。计算结果默认为 int 型（可能会为负数），也可通过传入 isLong: true 得到 long 型（过长会用科学计数法表示）。
   3. 将 hashCode 取绝对值，对颜色集合的总数进行取模，得到颜色的索引，即得到了背景颜色
   4. 名字显示规则
-   * 如果是第一个字符是英文，则取第一个字符，转为大写；
-   * 如果小于等于两个字符，全部显示
-   * 如果等于三个字符，显示后两个字符
-   * 如果大于三个字符，显示前两个字符
-   * 如果没有名字，显示一个默认图片
+   * 纯英文，逗号点号多个空格都用一个空格替换。如果不存在空格则返回前两个字符，否则返回按空格分隔开来的第一串和第二串字符的首字符（比如Keyu Lin 显示KL）
+   * 非纯英文，移除逗号点号多个空格后返回最后两个字符
+   
 
-  <img src="http://aligitlab.oss-cn-hangzhou-zmf.aliyuncs.com/uploads/tingle-ui/tingle-ui/ca88c25bb4c0fb73ca3ac1fd0b167ff8/image.png" width="375"/>
-
+  <img src="http://git.cn-hangzhou.oss-cdn.aliyun-inc.com/uploads/tingle-ui/tingle-avatar/de9e01f2e0117a1158750e365aa9af22/image.png" width="375"/>
 ## Install
 
 ```
@@ -54,93 +51,33 @@ module.exports = Demo;
 
 ## Props
 
-#### src
+#### className
 
-描述：头像图片链接
+描述：自定义 class 属性
 
-类型：String
-
-默认：''
-
-必填：否
-
-#### name
-
-描述：名字
-
-类型：String
+类型：`string`
 
 默认：''
 
 必填：否
-
-#### size
-
-描述：头像大小
-
-类型：String / Number
-
-默认：40px
-
-必填：否
-
-#### fontSize
-
-描述：字体大小
-
-类型：String / Number
-
-默认：12px
-
-必填：否
-
 
 #### colors
 
 描述：用来生成背景的颜色集合，可通过 Context 进行全局设置， 也可以通过 props 传入
 
-类型：Array
+类型：`Array<string>`
 
-默认：["#FF8170", "#F5B153", "#56c8e8", "#79CC70", "#52bafa", "#9e9ee6"]
-
-必填：否
-
-
-#### className
-
-描述：自定义 class
-
-类型：String
-
-默认：''
+默认：['#78C06E', '#3BC2B5', '#78919D', '#5EC9F6', '#F6BF26']
 
 必填：否
 
-#### hashCode
+#### ~~defaultColor~~
 
-描述：hashCode 算法， 可通过 Context 进行全局设置， 也可以通过 props 传入(不建议自定义)
-
-类型：Function
-
-默认：java 默认的 hashCode 算法
-
-必填：否
-
-#### isLong
-
-描述：hashCode 的类型
-
-类型：Boolean
-
-默认：false
-
-必填：否
-
-#### defaultColor
+状态：**deprecated**，请配置 colors 为单元素数组
 
 描述：固定背景颜色，若传入此参数，则背景颜色为当前参数颜色
 
-类型：String
+类型：`string`
 
 默认：''
 
@@ -150,9 +87,81 @@ module.exports = Demo;
 
 描述：没有名字是显示的默认头像图片地址， 可通过 Context 进行全局设置， 也可以通过 props 传入
 
-类型：String
+类型：`string`
 
 默认：https://img.alicdn.com/tps/TB1.IgIKpXXXXbgXpXXXXXXXXXX-116-116.png
+
+必填：否
+
+#### hashCode
+
+描述：hashCode 算法， 可通过 Context 进行全局设置， 也可以通过 props 传入(不建议自定义)
+
+类型：`function`
+
+默认：java 默认的 hashCode 算法
+
+必填：否
+
+#### icon
+
+描述：图标
+
+类型：`React.Element`
+
+默认：null
+
+必填：否
+
+#### isLong
+
+描述：hashCode 的类型
+
+类型：`boolean`
+
+默认：false
+
+必填：否
+
+#### name
+
+描述：名字
+
+类型：`string`
+
+默认：''
+
+必填：否
+
+#### size
+
+描述：头像大小
+
+类型：`string` | `number`
+
+默认：'normal'
+
+可选值：'normal' | 'large' | ’50px‘
+
+必填：否
+
+#### src
+
+描述：头像图片链接
+
+类型：`string`
+
+默认：''
+
+必填：否
+
+#### style
+
+描述： 应用在最外层元素的自定义style
+
+类型：`object`
+
+默认：{}
 
 必填：否
 

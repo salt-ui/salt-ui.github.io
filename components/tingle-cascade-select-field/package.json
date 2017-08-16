@@ -1,51 +1,20 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "@ali/tingle-cascade-select-field@^1.0.12",
-        "scope": "@ali",
-        "escapedName": "@ali%2ftingle-cascade-select-field",
-        "name": "@ali/tingle-cascade-select-field",
-        "rawSpec": "^1.0.12",
-        "spec": ">=1.0.12 <2.0.0",
-        "type": "range"
-      },
-      "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui"
-    ]
+  "name": "@ali/tingle-cascade-select-field",
+  "version": "1.1.0",
+  "description": "tingle-cascade-select-field component for tingle.",
+  "repository": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-cascade-select-field",
+  "author": "caoke.ck",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
   ],
-  "_cnpm_publish_time": 1491880912482,
-  "_from": "@ali/tingle-cascade-select-field@>=1.0.12 <2.0.0",
-  "_id": "@ali/tingle-cascade-select-field@1.1.0",
-  "_inCache": true,
-  "_location": "/@ali/tingle-cascade-select-field",
-  "_nodeVersion": "6.9.1",
-  "_npmUser": {
-    "name": "quanyun.mqy",
-    "email": "quanyun.mqy@alibaba-inc.com"
-  },
-  "_npmVersion": "3.10.9",
-  "_phantomChildren": {},
-  "_publish_on_cnpm": true,
-  "_requested": {
-    "raw": "@ali/tingle-cascade-select-field@^1.0.12",
-    "scope": "@ali",
-    "escapedName": "@ali%2ftingle-cascade-select-field",
-    "name": "@ali/tingle-cascade-select-field",
-    "rawSpec": "^1.0.12",
-    "spec": ">=1.0.12 <2.0.0",
-    "type": "range"
-  },
-  "_requiredBy": [
-    "/@ali/tingle-ui"
+  "keywords": [
+    "tingle-cascade-select-field",
+    "CascadeSelectField",
+    "时间选择"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-cascade-select-field/download/@ali/tingle-cascade-select-field-1.1.0.tgz",
-  "_shasum": "63cd2be03e2ce5b6d1dbe160a484f46ded7e76bc",
-  "_shrinkwrap": null,
-  "_spec": "@ali/tingle-cascade-select-field@^1.0.12",
-  "_where": "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui",
-  "author": {
-    "name": "caoke.ck"
-  },
   "dependencies": {
     "@ali/tingle-context": "^1.0.0",
     "@ali/tingle-field": "^1.1.0",
@@ -53,7 +22,6 @@
     "classnames": "~2.2.3",
     "lodash": "~4.17.4"
   },
-  "description": "tingle-cascade-select-field component for tingle.",
   "devDependencies": {
     "@ali/tingle-field": "^1.0.14",
     "@ali/tingle-group": "^1.0.7",
@@ -67,60 +35,20 @@
     "react-dom": "^0.14.8",
     "salt-tools": "~0.1.0"
   },
-  "dist": {
-    "shasum": "63cd2be03e2ce5b6d1dbe160a484f46ded7e76bc",
-    "size": 6026,
-    "key": "@ali/tingle-cascade-select-field/-/@ali/tingle-cascade-select-field-1.1.0.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-cascade-select-field/download/@ali/tingle-cascade-select-field-1.1.0.tgz"
-  },
-  "files": [
-    "dist",
-    "src",
-    "README.md"
-  ],
-  "gitHead": "adf5a58f9a69c2ded60343c5f2f12d21b0ba10f2",
-  "keywords": [
-    "tingle-cascade-select-field",
-    "CascadeSelectField",
-    "时间选择"
-  ],
-  "license": "MIT",
-  "main": "dist/index.js",
-  "maintainers": [
-    {
-      "name": "caoke.ck",
-      "email": "caoke.ck@alibaba-inc.com"
-    },
-    {
-      "name": "qingnan.yqn",
-      "email": "qingnan.yqn@alibaba-inc.com"
-    },
-    {
-      "name": "quanyun.mqy",
-      "email": "quanyun.mqy@alibaba-inc.com"
-    }
-  ],
-  "name": "@ali/tingle-cascade-select-field",
-  "optionalDependencies": {},
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1491880912482,
-  "readme": "ERROR: No README data found!",
-  "readmeFilename": "README.md",
-  "repository": {
-    "type": "git",
-    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-cascade-select-field"
-  },
-  "screenshots": "",
   "scripts": {
-    "build": "salt-tools run build",
-    "dep": "salt-tools run dep",
-    "pub": "salt-tools run pub",
     "start": "salt-tools run start",
+    "build": "salt-tools run build",
+    "pub": "salt-tools run pub",
+    "dep": "salt-tools run dep",
     "tnpm-dep": "salt-tools run tnpm-dep",
-    "tnpm-update": "salt-tools run tnpm-update",
-    "update": "salt-tools run update"
+    "update": "salt-tools run update",
+    "tnpm-update": "salt-tools run tnpm-update"
   },
-  "version": "1.1.0"
+  "license": "MIT",
+  "screenshots": "",
+  "_from": "@ali/tingle-cascade-select-field@1.1.0",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-cascade-select-field/download/@ali/tingle-cascade-select-field-1.1.0.tgz"
 }

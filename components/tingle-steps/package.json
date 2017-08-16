@@ -1,58 +1,34 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "@ali/tingle-steps@^1.0.1",
-        "scope": "@ali",
-        "escapedName": "@ali%2ftingle-steps",
-        "name": "@ali/tingle-steps",
-        "rawSpec": "^1.0.1",
-        "spec": ">=1.0.1 <2.0.0",
-        "type": "range"
-      },
-      "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui"
-    ]
+  "name": "@ali/tingle-steps",
+  "version": "1.0.3",
+  "description": "tingle-steps component for tingle.",
+  "repository": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-steps",
+  "author": "muwen.lb",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "salt-tools run start",
+    "build": "salt-tools run build",
+    "pub": "salt-tools run pub",
+    "dep": "salt-tools run dep",
+    "tnpm-dep": "salt-tools run tnpm-dep",
+    "update": "salt-tools run update",
+    "tnpm-update": "salt-tools run tnpm-update"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md"
   ],
-  "_cnpm_publish_time": 1499423816730,
-  "_from": "@ali/tingle-steps@>=1.0.1 <2.0.0",
-  "_id": "@ali/tingle-steps@1.0.3",
-  "_inCache": true,
-  "_location": "/@ali/tingle-steps",
-  "_nodeVersion": "6.9.5",
-  "_npmUser": {
-    "name": "muwen.lb",
-    "email": "muwen.lb@alibaba-inc.com"
-  },
-  "_npmVersion": "3.10.9",
-  "_phantomChildren": {},
-  "_publish_on_cnpm": true,
-  "_requested": {
-    "raw": "@ali/tingle-steps@^1.0.1",
-    "scope": "@ali",
-    "escapedName": "@ali%2ftingle-steps",
-    "name": "@ali/tingle-steps",
-    "rawSpec": "^1.0.1",
-    "spec": ">=1.0.1 <2.0.0",
-    "type": "range"
-  },
-  "_requiredBy": [
-    "/@ali/tingle-ui"
+  "keywords": [
+    "tingle-steps",
+    "Steps"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-steps/download/@ali/tingle-steps-1.0.3.tgz",
-  "_shasum": "0de3635f70ba41e9b9f845a32bc0b2f0fa2cf806",
-  "_shrinkwrap": null,
-  "_spec": "@ali/tingle-steps@^1.0.1",
-  "_where": "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui",
-  "author": {
-    "name": "muwen.lb"
-  },
   "dependencies": {
     "@ali/tingle-context": "^1.0.0",
     "@ali/tingle-icon": "^2.0.2",
     "@ali/tingle-style": "^1.0.11",
     "classnames": "^2.2.3"
   },
-  "description": "tingle-steps component for tingle.",
   "devDependencies": {
     "@ali/tingle-ui": "^2.0.0",
     "fastclick": "^1.0.6",
@@ -60,59 +36,11 @@
     "react-dom": "^0.14.8",
     "salt-tools": "~0.1.0"
   },
-  "dist": {
-    "shasum": "0de3635f70ba41e9b9f845a32bc0b2f0fa2cf806",
-    "size": 9512,
-    "key": "@ali/tingle-steps/-/@ali/tingle-steps-1.0.3.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-steps/download/@ali/tingle-steps-1.0.3.tgz"
-  },
-  "files": [
-    "dist",
-    "src",
-    "README.md"
-  ],
-  "gitHead": "ba27ebdc0c20ae9b02a0c90093ffed6d8f125017",
-  "keywords": [
-    "tingle-steps",
-    "Steps"
-  ],
-  "license": "MIT",
-  "main": "dist/index.js",
-  "maintainers": [
-    {
-      "name": "guanghong.wsj",
-      "email": "guanghong.wsj@alibaba-inc.com"
-    },
-    {
-      "name": "muwen.lb",
-      "email": "muwen.lb@alibaba-inc.com"
-    },
-    {
-      "name": "quanyun.mqy",
-      "email": "quanyun.mqy@alibaba-inc.com"
-    }
-  ],
-  "name": "@ali/tingle-steps",
-  "optionalDependencies": {},
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1499423816730,
-  "readme": "ERROR: No README data found!",
-  "readmeFilename": "README.md",
-  "repository": {
-    "type": "git",
-    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-steps"
-  },
+  "license": "MIT",
   "screenshots": "",
-  "scripts": {
-    "build": "salt-tools run build",
-    "dep": "salt-tools run dep",
-    "pub": "salt-tools run pub",
-    "start": "salt-tools run start",
-    "tnpm-dep": "salt-tools run tnpm-dep",
-    "tnpm-update": "salt-tools run tnpm-update",
-    "update": "salt-tools run update"
-  },
-  "version": "1.0.3"
+  "_from": "@ali/tingle-steps@1.0.3",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-steps/download/@ali/tingle-steps-1.0.3.tgz"
 }

@@ -1,54 +1,28 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "@ali/tingle-image-viewer@^0.1.3",
-        "scope": "@ali",
-        "escapedName": "@ali%2ftingle-image-viewer",
-        "name": "@ali/tingle-image-viewer",
-        "rawSpec": "^0.1.3",
-        "spec": ">=0.1.3 <0.2.0",
-        "type": "range"
-      },
-      "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui"
-    ]
+  "name": "@ali/tingle-image-viewer",
+  "version": "0.1.6",
+  "description": "tingle-image-viewer component for tingle.",
+  "repository": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-image-viewer",
+  "author": "guanghong.wsj",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "salt-tools run start",
+    "build": "salt-tools run build",
+    "pub": "salt-tools run pub",
+    "dep": "salt-tools run dep",
+    "tnpm-dep": "salt-tools run tnpm-dep",
+    "update": "salt-tools run update",
+    "tnpm-update": "salt-tools run tnpm-update"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md"
   ],
-  "_cnpm_publish_time": 1499260028354,
-  "_from": "@ali/tingle-image-viewer@>=0.1.3 <0.2.0",
-  "_id": "@ali/tingle-image-viewer@0.1.6",
-  "_inCache": true,
-  "_location": "/@ali/tingle-image-viewer",
-  "_nodeVersion": "6.9.1",
-  "_npmUser": {
-    "name": "guanghong.wsj",
-    "email": "guanghong.wsj@alibaba-inc.com"
-  },
-  "_npmVersion": "3.10.10",
-  "_phantomChildren": {
-    "@ali/tingle-style": "1.0.23",
-    "classnames": "2.2.5"
-  },
-  "_publish_on_cnpm": true,
-  "_requested": {
-    "raw": "@ali/tingle-image-viewer@^0.1.3",
-    "scope": "@ali",
-    "escapedName": "@ali%2ftingle-image-viewer",
-    "name": "@ali/tingle-image-viewer",
-    "rawSpec": "^0.1.3",
-    "spec": ">=0.1.3 <0.2.0",
-    "type": "range"
-  },
-  "_requiredBy": [
-    "/@ali/tingle-ui"
+  "keywords": [
+    "tingle-image-viewer",
+    "ImageViewer"
   ],
-  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-image-viewer/download/@ali/tingle-image-viewer-0.1.6.tgz",
-  "_shasum": "2731fbc36dcfb67e94a785fb4cc428e4e6571f8c",
-  "_shrinkwrap": null,
-  "_spec": "@ali/tingle-image-viewer@^0.1.3",
-  "_where": "/Users/qy/work/tingle/salt-ui.github.io/node_modules/@ali/tingle-ui",
-  "author": {
-    "name": "guanghong.wsj"
-  },
   "dependencies": {
     "@ali/tingle-context": "~1.0.0",
     "@ali/tingle-slide": "^1.0.11",
@@ -58,7 +32,6 @@
     "lodash": "^4.17.4",
     "rc-animate": "^2.3.1"
   },
-  "description": "tingle-image-viewer component for tingle.",
   "devDependencies": {
     "@ali/tingle-button": "^1.0.10",
     "@ali/tingle-icon-source": "^1.0.6",
@@ -68,51 +41,11 @@
     "react-dom": "^0.14.8",
     "salt-tools": "~0.1.0"
   },
-  "dist": {
-    "shasum": "2731fbc36dcfb67e94a785fb4cc428e4e6571f8c",
-    "size": 7898,
-    "key": "@ali/tingle-image-viewer/-/@ali/tingle-image-viewer-0.1.6.tgz",
-    "tarball": "http://registry.npm.alibaba-inc.com/@ali/tingle-image-viewer/download/@ali/tingle-image-viewer-0.1.6.tgz"
-  },
-  "files": [
-    "dist",
-    "src",
-    "README.md"
-  ],
-  "gitHead": "3ac072afc7ab1a37c35d0d64a68ed9db813ae943",
-  "keywords": [
-    "tingle-image-viewer",
-    "ImageViewer"
-  ],
-  "license": "MIT",
-  "main": "dist/index.js",
-  "maintainers": [
-    {
-      "name": "guanghong.wsj",
-      "email": "guanghong.wsj@alibaba-inc.com"
-    }
-  ],
-  "name": "@ali/tingle-image-viewer",
-  "optionalDependencies": {},
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
   },
-  "publish_time": 1499260028354,
-  "readme": "ERROR: No README data found!",
-  "readmeFilename": "README.md",
-  "repository": {
-    "type": "git",
-    "url": "http://gitlab.alibaba-inc.com/tingle-ui/tingle-image-viewer"
-  },
+  "license": "MIT",
   "screenshots": "",
-  "scripts": {
-    "build": "salt-tools run build",
-    "dep": "salt-tools run dep",
-    "pub": "salt-tools run pub",
-    "start": "salt-tools run start",
-    "tnpm-dep": "salt-tools run tnpm-dep",
-    "tnpm-update": "salt-tools run tnpm-update",
-    "update": "salt-tools run update"
-  },
-  "version": "0.1.6"
+  "_from": "@ali/tingle-image-viewer@0.1.6",
+  "_resolved": "http://registry.npm.alibaba-inc.com/@ali/tingle-image-viewer/download/@ali/tingle-image-viewer-0.1.6.tgz"
 }
