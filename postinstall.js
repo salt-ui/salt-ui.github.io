@@ -24,9 +24,11 @@ runCmd('rm', ['-rf', './components/*']);
 console.log('Copy documents...');
 const pkg = JSON.parse(fs.readFileSync('./node_modules/@ali/tingle-ui/package.json'));
 const deps = Object.keys(pkg.dependencies)
-  .filter(dep => ['@ali/tingle-style', '@ali/tingle-icon'].indexOf(dep) === -1 && /^@ali\/tingle/.test(dep));
+  .filter(dep => ['@ali/tingle-style', '@ali/tingle-icon'].indexOf(dep) === -1 && /^@ali\/tingle/.test(dep))
+  .concat(['@ali/tingle-ui']);
 deps
   .forEach((dep) => {
+    const isMainProject = dep === '@ali/tingle-ui';
     ['HISTORY.md', 'package.json', 'README.md'].forEach((file) => {
       const dirPath = `./components/${dep.replace('@ali/', '')}`;
       try {
@@ -34,7 +36,7 @@ deps
       } catch (e) {
         runCmd('mkdir', [dirPath]);
       }
-      runCmd('cp', ['-rf', `./node_modules/@ali/tingle-ui/node_modules/${dep}/${file}`, file === 'README.md' ? `${dirPath}/index.md` : dirPath]);
+      runCmd('cp', ['-rf', `./node_modules/${isMainProject ? '' : '@ali/tingle-ui/node_modules/'}${dep}/${file}`, file === 'README.md' ? `${dirPath}/index.md` : dirPath]);
     });
   });
 console.log('Update tingle-ui version...');
