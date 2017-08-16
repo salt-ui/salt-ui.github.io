@@ -59,7 +59,7 @@ export default (props) => {
   const demos = utils.get(data.demos, component) || {};
   const demosList = parseDemoRaw(demos);
   const doc = pageData.index ? pageData.index.content : null;
-  const history = pageData.HISTOR ? pageData.HISTORY.content : [];
+  const history = pageData.HISTORY ? pageData.HISTORY.content : [];
   const title = component === 'tingle-ui' ? 'History' : `${component} - Component`;
   const clearName = removeTinglePrefix(component);
 
@@ -89,9 +89,9 @@ export default (props) => {
               )
             }
               {
-              history.length && (
+              history.length ? (
                 <Markdown icon="history" title="版本更新" content={utils.toReactComponent(history)} />
-              )
+              ) : null
             }
             </div>
           </Right>
