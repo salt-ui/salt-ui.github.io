@@ -34,6 +34,7 @@ const deploy = (theme = 'blue') => {
   const lessPath = './site/theme/static';
   cmd(`cp -rf ${lessPath}/vars/${theme}.less ${lessPath}/var.less`);
   cmd('npm run build');
+  cmd('ls -al ./build');
   console.log('build finished');
   setTimeout(() => {
     console.log('start deploy');
