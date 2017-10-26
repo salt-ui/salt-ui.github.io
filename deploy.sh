@@ -7,6 +7,7 @@ git commit -m v$BRANCH
 git push origin source-blue
 mkdir ~/SALT_UI_BUILD
 mv ./build/* ~/SALT_UI_BUILD/
+mv ./_site/* ~/SALT_UI_BUILD/
 git checkout master
 git pull origin master
 cp -rf ~/SALT_UI_BUILD/* .
