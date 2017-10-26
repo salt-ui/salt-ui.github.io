@@ -25,7 +25,7 @@ const BRANCH = new Date().toISOString();
 const cmd = (str) => {
   console.log(`================${str}==================`);
   const strArr = str.split(' ');
-  spawnSync(strArr[0], strArr.slice(1));
+  spawnSync(strArr[0], strArr.slice(1), { stdio: 'inherit' });
 };
 
 const deploy = (theme = 'blue') => {
