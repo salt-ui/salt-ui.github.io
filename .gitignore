@@ -1,7 +1,11 @@
 .vscode
 node_modules
+<<<<<<< HEAD
 build/components
 build/mobile
 build/index.js
 build/common.js
+=======
+build
+>>>>>>> 46f2a2654a4c7b1ef9663adf05ef5a19b5aeda72
 npm-debug.log

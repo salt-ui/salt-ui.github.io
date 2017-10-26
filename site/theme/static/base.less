@@ -53,20 +53,9 @@ body{
     cursor: pointer;
 
     &:hover{
-      background-color: #f37327;
+      background-color: @navThemeHover;
       transition: background-color .5s;
     }
-
-
-    /*&.orange:hover{
-      background-color: #2599f2;
-      transition: background-color .5s;
-    }
-
-    &.blue:hover{
-      background-color: #f37327;
-      transition: background-color .5s;
-    }*/
   }
 
   &-main {
@@ -171,12 +160,7 @@ body{
   }
 }
 
-
-.kuma-button-primary:hover{
-  background-color: #f2813f;
-}
-
 .fn-highlight{
-  color: #2599f2;
+  color: @highlightColor;
 }
 
