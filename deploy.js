@@ -25,6 +25,7 @@ const BRANCH = new Date().toISOString();
 const cmd = (str) => {
   console.log(`================${str}==================`);
   const strArr = str.split(' ');
+  console.log(strArr);
   spawnSync(strArr[0], strArr.slice(1), { stdio: 'inherit' });
 };
 
