@@ -37,7 +37,7 @@ const deploy = (theme = 'blue') => {
   cmd(`git commit -m v${BRANCH}`);
   cmd('git push origin source-blue');
   cmd('mkdir ../SALT_UI_BUILD');
-  cmd('mv ./build/* ../SALT_UI_BUILD/');
+  cmd('cp -rf ./build/* ../SALT_UI_BUILD/');
   cmd('git checkout master');
   cmd('git pull origin master');
   cmd('cp -rf ../SALT_UI_BUILD/* .');
