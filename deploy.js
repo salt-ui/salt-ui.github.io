@@ -32,23 +32,23 @@ const cmd = (str) => {
 
 const deploy = (theme = 'blue') => {
   const lessPath = './site/theme/static';
-  execSync(`cp -rf ${lessPath}/vars/${theme}.less ${lessPath}/var.less`);
-  execSync('npm run build');
-  execSync('git add .');
-  execSync(`git commit -m v${BRANCH}`);
-  execSync('git push origin source-blue');
-  execSync('mkdir ../SALT_UI_BUILD');
-  execSync('mv ./build/* ../SALT_UI_BUILD/');
-  execSync('mv ./_site/* ../SALT_UI_BUILD/');
-  execSync('git checkout master');
-  execSync('git pull origin master');
-  execSync('cp -rf ../SALT_UI_BUILD/* .');
-  execSync(`cp -rf ../SALT_UI_BUILD/index.css ./${theme}.css`);
-  execSync('rm -rf ../SALT_UI_BUILD');
-  execSync('git add .');
-  execSync(`git commit -m v${BRANCH}`);
-  execSync('git push origin master');
-  execSync('git checkout source-blue');
+  cmd(`cp -rf ${lessPath}/vars/${theme}.less ${lessPath}/var.less`);
+  cmd('npm run build');
+  cmd('git add .');
+  cmd(`git commit -m v${BRANCH}`);
+  cmd('git push origin source-blue');
+  cmd('mkdir ../SALT_UI_BUILD');
+  cmd('mv ./build/* ../SALT_UI_BUILD/');
+  cmd('mv ./_site/* ../SALT_UI_BUILD/');
+  cmd('git checkout master');
+  cmd('git pull origin master');
+  cmd('cp -rf ../SALT_UI_BUILD/* .');
+  cmd(`cp -rf ../SALT_UI_BUILD/index.css ./${theme}.css`);
+  cmd('rm -rf ../SALT_UI_BUILD');
+  cmd('git add .');
+  cmd(`git commit -m v${BRANCH}`);
+  cmd('git push origin master');
+  cmd('git checkout source-blue');
 };
 
 const themes = ['blue'];
