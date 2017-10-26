@@ -32,6 +32,7 @@ const deploy = (theme = 'blue') => {
   const lessPath = './site/theme/static';
   cmd(`cp -rf ${lessPath}/vars/${theme}.less ${lessPath}/var.less`);
   cmd('npm run build');
+  cmd('git add .');
   cmd(`git commit -m v${BRANCH}`);
   cmd('git push origin source-blue');
   cmd('mkdir ~/SALT_UI_BUILD');
