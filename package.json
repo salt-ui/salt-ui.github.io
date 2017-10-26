@@ -52,6 +52,7 @@
     "uxcore": "^0.15.0"
   },
   "devDependencies": {
+    "babel-plugin-import": "^1.6.2",
     "object-assign": "^4.1.1",
     "to-case": "^2.0.0",
     "to-pascal-case": "^1.0.0"

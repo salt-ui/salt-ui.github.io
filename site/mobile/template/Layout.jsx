@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM, { findDOMNode } from 'react-dom';
+import ReactDOM from 'react-dom';
 
 
 import { transformCode } from '../../utils';
@@ -47,9 +47,14 @@ export default class Layout extends React.Component {
 
   receiveMessage(event) {
     if (event.data.theme) {
+      const themeMap = {
+        blue: 'dd',
+        orange: 'salt-ui',
+      };
       console.log('change theme');
       const ele = document.getElementById('mobile-theme');
-      const href = `https://alinw.alicdn.com/platform/tingle-ui/2.2.2/${event.data.theme === 'blue' ? 'blue' : 'default'}.min.css`;
+      const href = `https://g.alicdn.com/platform/saltui/3.1.7/${themeMap[event.data.theme]}.min.css`;
+
       ele.setAttribute('href', href);
     } else {
       this.renderCode(event.data.code);

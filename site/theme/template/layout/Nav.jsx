@@ -38,9 +38,10 @@ const nav = (props) => {
     storage.setItem('theme', theme);
     const url = params.component ? `/components/${params.component}?theme=${theme}` : `/?theme=${theme}`;
     router.push(url);
-
-    eleTheme.setAttribute('href', `/${theme}.css`);
-    eleUI.setAttribute('href', `//g.alicdn.com/??platform/common/s/1.1/global/global.css,uxcore/uxcore-kuma/2.2.1/${theme}.min.css`);
+    if (location.port !== '8003') {
+      eleTheme.setAttribute('href', `/${theme}.css`);
+    }
+    eleUI.setAttribute('href', `//g.alicdn.com/??platform/common/s/1.1/global/global.css,uxcore/uxcore-kuma/2.3.2/${theme}.min.css`);
   };
 
   return (

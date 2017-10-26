@@ -1,5 +1,4 @@
 .ui-example{
-  /*margin-top: 60px;*/
   margin-bottom: 50px;
   &-title{
     font-size: 20px;
@@ -17,7 +16,7 @@
   &-head{
     position: relative;
     height: 46px;
-    background-color: #dbe8fa;
+    background-color: @demoItemHeadBgColor;
     line-height: 46px;
     padding: 0 20px;
     cursor: pointer;
@@ -40,11 +39,11 @@
     border-radius: 50%;
     line-height: 26px;
     color: #fff;
-    background-color: #83b1ee;
+    background-color: @demoItemBtnBgColor;
     cursor: pointer;
 
     &:hover{
-      background-color: #498ee6;
+      background-color: @demoItemBtnBgColorHover;
       transition: background-color .5s;
     }
 
@@ -65,12 +64,10 @@
       width: 49px;
       background: #f5f6f7;
     }
-    /*border-top: none;*/
   }
 
   &-css{
     background-color: #f5f6f7;
-    /*max-height: 260px;*/
     overflow-y: auto;
     .language-css{
       background-color: #f5f6f7;
@@ -85,10 +82,8 @@
   .ace-github .ace_gutter {
     background: #f5f6f7;
     color: #bdc4cd;
-    /*padding-top: 10px;*/
   }
   .ace_scroller{
-    /*padding-top: 10px;*/
   }
   .ace_content{
     color: #444;
@@ -105,10 +100,6 @@
     height: 20px;
     top: 83px;
     left: 25px;
-    /*width: 300px;
-    height: 40px;
-    top: 68px;
-    left: 20px;*/
     background: url('./imgs/iphone-status.png') no-repeat;
     background-size: contain;
   }
@@ -116,8 +107,6 @@
   &-content{
     position: relative;
     height: 711px;
-    /*width: 400px;*/
-    /*width: 400px;*/
     background: url('https://img.alicdn.com/tfs/TB1RMbLSXXXXXaoaXXXXXXXXXXX-870-1748.png') no-repeat;
     background-size: contain;
 

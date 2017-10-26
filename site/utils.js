@@ -40,7 +40,7 @@ export const initTheme = () => {
 
   eleTheme.setAttribute('href', `/${isDev ? 'index' : theme}.css`);
   // eleTheme.setAttribute('href', '/index.css');
-  eleUI.setAttribute('href', `//g.alicdn.com/??platform/common/s/1.1/global/global.css,uxcore/uxcore-kuma/2.2.1/${isDev ? 'blue' : theme}.min.css`);
+  eleUI.setAttribute('href', `//g.alicdn.com/??platform/common/s/1.1/global/global.css,uxcore/uxcore-kuma/2.3.2/${isDev ? 'blue' : theme}.min.css`);
 
 
   return theme;
