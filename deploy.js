@@ -23,6 +23,7 @@ const { runCmd } = require('./lib/util');
 
 const BRANCH = new Date().toISOString();
 const cmd = (str) => {
+  console.log(`================${str}==================`)
   const strArr = str.split(' ');
   runCmd(strArr[0], strArr.slice(1));
 };
