@@ -23,7 +23,7 @@ const { runCmd } = require('./lib/util');
 
 const BRANCH = new Date().toISOString();
 const cmd = (str) => {
-  console.log(`================${str}==================`)
+  console.log(`================${str}==================`);
   const strArr = str.split(' ');
   runCmd(strArr[0], strArr.slice(1));
 };
@@ -47,7 +47,7 @@ const deploy = (theme = 'blue') => {
   cmd('git checkout source-blue');
 };
 
-const themes = ['blue', 'orange'];
+const themes = ['blue'];
 themes.forEach((theme) => {
   deploy(theme);
 });
