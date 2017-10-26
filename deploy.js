@@ -18,14 +18,14 @@
 // git push origin v$SALTUI
 // git checkout source-blue
 
-const { runCmd } = require('./lib/util');
+const { spawnSync } = require('child_process');
 // const SALTUIVER = require('saltui/package.json').version;
 
 const BRANCH = new Date().toISOString();
 const cmd = (str) => {
   console.log(`================${str}==================`);
   const strArr = str.split(' ');
-  runCmd(strArr[0], strArr.slice(1));
+  spawnSync(strArr[0], strArr.slice(1));
 };
 
 const deploy = (theme = 'blue') => {
