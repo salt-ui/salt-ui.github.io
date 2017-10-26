@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-import { Link, withRouter } from 'react-router';
-import classnames from 'classnames';
-import uppercamelcase from 'uppercamelcase';
+import { withRouter } from 'react-router';
 import Menu from 'uxcore/lib/Menu';
+import toPascalCase from 'to-pascal-case';
 
-import { typeOrder, NAV_MAP } from '../../../constants';
-import { upperFirstCharactor, removeTinglePrefix } from '../../../utils';
+import { NAV_MAP } from '../../../constants';
 
 const SubMenu = Menu.SubMenu;
 const MenuItem = Menu.Item;
@@ -13,10 +11,10 @@ const MenuItem = Menu.Item;
 const getData = (components) => {
   const data = {};
   Object.keys(components).map((compName) => {
-    let mapItem = NAV_MAP[removeTinglePrefix(compName)];
-    if(mapItem){
+    const mapItem = NAV_MAP[compName];
+    if (mapItem) {
       const type = mapItem.type;
-      if(!data[type]){
+      if (!data[type]) {
         data[type] = [];
       }
       data[type].push({ ...mapItem, name: compName });
@@ -24,7 +22,7 @@ const getData = (components) => {
   });
 
   return data;
-}
+};
 
 class Aside extends Component {
   constructor(props) {
@@ -36,29 +34,30 @@ class Aside extends Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick({ key, keyPath }) {
+
+  componentWillReceiveProps(next) {
+    if (next.params.component !== this.props.params.component) {
+      if (next.params.component === 'tingle-ui') {
+        this.setState({
+          selectedKeys: [],
+        });
+      } else {
+        this.setState({
+          selectedKeys: [next.params.component],
+        });
+      }
+    }
+  }
+
+  handleClick({ key }) {
     const { router } = this.props;
     this.setState({
       selectedKeys: [key],
     }, () => router.push(`/components/${key}`));
   }
 
-  componentWillReceiveProps(next) {
-    if (next.params.component !== this.props.params.component) {
-      if (next.params.component === 'tingle-ui') {
-        this.setState({
-          selectedKeys: []
-        });
-      } else {
-        this.setState({
-          selectedKeys: [next.params.component]
-        });
-      }
-    }
-  }
-
   render() {
-    const { selectedKeys, openKeys } = this.state;
+    const { selectedKeys } = this.state;
     return (
       <Menu
         onClick={this.handleClick}
@@ -72,7 +71,7 @@ class Aside extends Component {
           Object.entries(this.navListData).map(([key, value]) => (
             <SubMenu key={key} title={key}>
               {
-                value.map(({ name, zh }) => <MenuItem key={name}>{zh}&nbsp;{upperFirstCharactor(removeTinglePrefix(name))}</MenuItem>)
+                value.map(({ name, zh }) => <MenuItem key={name}>{zh}&nbsp;{toPascalCase(name)}</MenuItem>)
               }
             </SubMenu>
           )
@@ -84,6 +83,4 @@ class Aside extends Component {
 }
 
 export default withRouter(Aside);
-
-
 

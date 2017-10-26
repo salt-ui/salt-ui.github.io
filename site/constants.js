@@ -1,332 +1,240 @@
 export const typeOrder = ['General', 'Layout', 'Navigation', 'Form', 'Display', 'Feedback', 'Other'];
 
 export const NAV_MAP = {
-  'button':{
+  button: {
     zh: '按钮',
-    // order: 0,
-    type: 'General'
+    type: 'General',
   },
-  'icon':{
+  icon: {
     zh: '图标',
-    // order: 0,
-    type: 'General'
+    type: 'General',
   },
   'icon-source': {
     zh: 'icon 资源',
-    // order: 0,
-    type: 'General'
+    type: 'General',
   },
 
-  'box' : {
+  box: {
     zh: '弹性容器',
-    type: 'Layout'
+    type: 'Layout',
   },
-  'card': {
+  card: {
     zh: '卡片容器',
-    // order: 0,
-    type: 'Layout'
+    type: 'Layout',
   },
-  
-  'grid' : {
+
+  grid: {
     zh: '删格',
-    type: 'Layout'
+    type: 'Layout',
   },
-  'group' : {
+  group: {
     zh: '列表容器',
-    type: 'Layout'
+    type: 'Layout',
   },
 
-  'crumb' : {
+  crumb: {
     zh: '面包屑',
-    type: 'Navigation'
+    type: 'Navigation',
   },
-  'nav-bar' : {
+  'nav-bar': {
     zh: '导航',
-    type: 'Navigation'
+    type: 'Navigation',
   },
-  'tab-bar' : {
+  'tab-bar': {
     zh: '选项卡菜单',
-    type: 'Navigation'
+    type: 'Navigation',
   },
-  'steps' : {
+  steps: {
     zh: '步骤',
-    type: 'Navigation'
+    type: 'Navigation',
   },
 
-  'badge' : {
+  badge: {
     zh: '角标',
-    type: 'Display'
+    type: 'Display',
   },
-  'collapse' : {
+  collapse: {
     zh: '折叠',
-    type: 'Display'
+    type: 'Display',
   },
-  'avatar': {
+  avatar: {
     zh: '头像',
-    // order: 0,
-    type: 'Display'
+    type: 'Display',
   },
-  'calendar': {
+  calendar: {
     zh: '日期',
-    // order: 0,
-    type: 'Display'
+    type: 'Display',
   },
   'number-picker': {
     zh: '数字步进器',
-    // order: 0,
-    type: 'Display'
+    type: 'Display',
   },
-  'list': {
+  list: {
     zh: '图文列表',
-    // order: 0,
-    type: 'Display'
+    type: 'Display',
   },
-  'mask': {
+  mask: {
     zh: '蒙层',
-    // order: 0,
-    type: 'Display'
+    type: 'Display',
   },
-  'gallery': {
+  gallery: {
     zh: '图片轮播',
-    // order: 0,
-    type: 'Display'
+    type: 'Display',
   },
   'image-viewer': {
     zh: '图片预览',
-    // order: 0,
-    type: 'Display'
+    type: 'Display',
   },
-  'rate': {
+  rate: {
     zh: '评分',
-    // order: 0,
-    type: 'Display'
+    type: 'Display',
   },
   'infinite-scroll': {
     zh: '滚动刷新',
-    // order: 0,
-    type: 'Display'
+    type: 'Display',
   },
   'refreshcontrol-scroll': {
     zh: '下拉刷新',
-    // order: 0,
-    type: 'Display'
+    type: 'Display',
   },
   'scroll-list': {
     zh: '滑动列表',
-    // order: 0,
-    type: 'Display'
+    type: 'Display',
   },
   'scroll-view': {
     zh: '滑动块',
-    // order: 0,
-    type: 'Display'
+    type: 'Display',
   },
-  'scroller': {
+  scroller: {
     zh: '滑动容器',
-    // order: 0,
-    type: 'Display'
+    type: 'Display',
   },
   'search-bar': {
     zh: '搜索',
-    // order: 0,
-    type: 'Display'
+    type: 'Display',
   },
-  'slide': {
+  slide: {
     zh: '轮播',
-    // order: 0,
-    type: 'Display'
+    type: 'Display',
   },
-  'slot': {
+  slot: {
     zh: '老虎机滚轮',
-    // order: 0,
-    type: 'Display'
+    type: 'Display',
   },
-  'switch': {
+  switch: {
     zh: '切换开关',
-    // order: 0,
-    type: 'Display'
+    type: 'Display',
   },
-  'tab': {
+  tab: {
     zh: '标签页',
-    // order: 0,
-    type: 'Display'
+    type: 'Display',
   },
-  'menu': {
+  menu: {
     zh: '菜单',
-    // order: 0,
-    type: 'Display'
+    type: 'Display',
   },
-  'pagination': {
+  pagination: {
     zh: '分页',
-    // order: 0,
-    type: 'Display'
+    type: 'Display',
   },
-  'progress': {
+  progress: {
     zh: '进度条',
-    // order: 0,
-    type: 'Display'
+    type: 'Display',
   },
-  'timeline': {
+  timeline: {
     zh: '时间线',
-    type: 'Display'
+    type: 'Display',
   },
-
 
 
   'calendar-field': {
     zh: '日期区间',
-    // order: 0,
-    type: 'Form'
+    type: 'Form',
   },
   'cascade-select-field': {
     zh: '级联选择',
-    // order: 0,
-    type: 'Form'
+    type: 'Form',
   },
   'checkbox-field': {
     zh: '复选框',
-    // order: 0,
-    type: 'Form'
+    type: 'Form',
   },
   'city-select-field': {
     zh: '省市区选择',
-    // order: 0,
-    type: 'Form'
+    type: 'Form',
   },
   'datetime-field': {
     zh: '时间',
-    // order: 0,
-    type: 'Form'
+    type: 'Form',
   },
-  'field': {
+  field: {
     zh: '基础表单',
-    // order: 0,
-    type: 'Form'
+    type: 'Form',
   },
   'photo-field': {
     zh: '上传/查看图片',
-    // order: 0,
-    type: 'Form'
+    type: 'Form',
   },
   'radio-field': {
     zh: '单选框',
-    // order: 0,
-    type: 'Form'
+    type: 'Form',
   },
   'select-field': {
     zh: '选择表单',
-    // order: 0,
-    type: 'Form'
+    type: 'Form',
   },
   'switch-field': {
     zh: '切换开关表单',
-    // order: 0,
-    type: 'Form'
+    type: 'Form',
   },
   'text-field': {
     zh: '单行文本框',
-    // order: 0,
-    type: 'Form'
+    type: 'Form',
   },
   'textarea-field': {
     zh: '多行文本框',
-    // order: 0,
-    type: 'Form'
+    type: 'Form',
   },
   'number-picker-filed': {
     zh: '数字步进器',
-    // order: 0,
-    type: 'Form'
+    type: 'Form',
   },
   'picker-filed': {
     zh: '选择器',
-    // order: 0,
-    type: 'Form'
+    type: 'Form',
   },
-  'table': {
+  table: {
     zh: '表格',
-    // order: 0,
-    type: 'Form'
+    type: 'Form',
   },
 
-  'dialog': {
+  dialog: {
     zh: '提示窗',
-    // order: 0,
-    type: 'Feedback'
+    type: 'Feedback',
   },
-  'layer': {
+  layer: {
     zh: '模态对话框',
-    // order: 0,
-    type: 'Feedback'
+    type: 'Feedback',
   },
-  'note': {
+  note: {
     zh: '全局提醒',
-    // order: 0,
-    type: 'Feedback'
+    type: 'Feedback',
   },
-  'toast': {
+  toast: {
     zh: '轻提示',
-    // order: 0,
-    type: 'Feedback'
+    type: 'Feedback',
   },
-  'popup': {
+  popup: {
     zh: '弹出窗',
-    // order: 0,
-    type: 'Feedback'
+    type: 'Feedback',
   },
 
-  'context': {
+  context: {
     zh: '上下文',
-    // order: 0,
-    type: 'Other'
+    type: 'Other',
   },
-  'style': {
+  style: {
     zh: '底层样式',
-    // order: 0,
-    type: 'Other'
+    type: 'Other',
   },
-  // 'ui': {
-  //   zh: '组件合集',
-  //   // order: 0,
-  //   type: 'Other'
-  // },
-
-
-
-  // 'calendar' : '日期',
-  // 'cascade-select-field' : '级联选择',
-  // 'checkbox-field' : '复选框',
-  // 'dialog' : '提示窗',
-  // 'datetime-field' : '时间',
-  // 'context' : '上下文',
-  // 'crumb': '面包屑',
-  // 'field': '基础表单',
-  // 'gallery': '图片轮播',
-  // 'grid': '删格',
-  // 'group': '列表容器',
-  // 'icon-source': ' icon 资源',
-  // 'icon': '图标',
-  // 'layer': '模态对话框',
-  // 'list': '图文列表',
-  // 'mask': '蒙层',
-  // 'note': '全局提醒',
-  // 'nav-bar': '导航',
-  // 'photo-field': '上传/查看图片',
-  // 'radio-field': '单选框',
-  // 'rate': '评分',
-  // 'scroll-list': '滑动列表',
-  // 'scroller': '滑动容器',
-  // 'search-bar': '搜索',
-  // 'select-field': '选择表单',
-  // 'slide': '轮播',
-  // 'slot': '老虎机滚轮',
-  // 'style': '底层样式',
-  // 'switch-field': '切换开关表单',
-  // 'switch': '切换开关',
-  // 'tab-bar': '选项卡菜单',
-  // 'tab': '标签页',
-  // 'text-field': '单行文本框',
-  // 'textarea-field': '多行文本框',
-  // 'toast': '轻提示',
-  // 'ui': '组件合集',
-}
+};

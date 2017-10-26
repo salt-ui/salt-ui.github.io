@@ -27,7 +27,7 @@
     "node": "6.1.0"
   },
   "dependencies": {
-    "@ali/tingle-ui": "^2.*",
+    "saltui": "3.x",
     "babel-runtime": "^6.23.0",
     "babel-standalone": "^6.21.1",
     "bisheng": "^0.24.2",
@@ -49,9 +49,11 @@
     "react-dom": "^15.4.2",
     "react-router": "^3.0.0",
     "uppercamelcase": "^1.1.0",
-    "uxcore": "^0.15.6-beta.0"
+    "uxcore": "^0.15.0"
   },
   "devDependencies": {
-    "object-assign": "^4.1.1"
+    "object-assign": "^4.1.1",
+    "to-case": "^2.0.0",
+    "to-pascal-case": "^1.0.0"
   }
 }

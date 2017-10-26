@@ -1,8 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router';
 import DocumentTitle from 'react-document-title';
-import { toHTMLText } from 'jsonml.js/lib/html';
-import classnames from 'classnames';
 import uppercamelcase from 'uppercamelcase';
 import Layout from 'uxcore/lib/Layout';
 
@@ -11,7 +8,6 @@ import Wrap from './layout/Wrap';
 import Markdown from './components/Markdown';
 import Demo from './components/Demo';
 import Aside from './components/Aside';
-import { removeTinglePrefix } from '../../utils';
 import { NAV_MAP } from '../../constants';
 
 const { Left, Right } = Layout;
@@ -61,7 +57,6 @@ export default (props) => {
   const doc = pageData.index ? pageData.index.content : null;
   const history = pageData.HISTORY ? pageData.HISTORY.content : [];
   const title = component === 'tingle-ui' ? 'History' : `${component} - Component`;
-  const clearName = removeTinglePrefix(component);
 
   return (
     <DocumentTitle title={title}>
@@ -73,8 +68,8 @@ export default (props) => {
               {
               component !== 'tingle-ui' && (
                 <div className="ui-main-title">
-                  <span className="fn-highlight">{NAV_MAP[clearName].zh}</span>
-                  {uppercamelcase(clearName)}
+                  <span className="fn-highlight">{NAV_MAP[component].zh}</span>
+                  {uppercamelcase(component)}
                 </div>
               )
             }

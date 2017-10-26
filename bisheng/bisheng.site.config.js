@@ -8,11 +8,6 @@ module.exports = Object.assign({}, commonConfig, {
     demos: './demos',
     components: './components',
   },
-  // source: [
-  //   './demos',
-  //   './components',
-  // ],
-  output: './build',
   theme: './site/theme',
   htmlTemplate: path.join(__dirname, '..', 'template.html'),
   doraConfig: {
@@ -20,10 +15,8 @@ module.exports = Object.assign({}, commonConfig, {
   },
   pick: {
     trans(markdownData) {
-      // console.log(markdownData.meta)
       return {
         meta: markdownData.meta,
-        // description: markdownData.description,
       };
     },
   },

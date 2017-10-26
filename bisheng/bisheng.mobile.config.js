@@ -6,9 +6,6 @@ module.exports = Object.assign({}, commonConfig, {
   source: {
     demos: './demos',
   },
-  // source: [
-  //   './demos',
-  // ],
   output: './build/mobile',
   root: '/mobile/',
   entryName: 'mobile',

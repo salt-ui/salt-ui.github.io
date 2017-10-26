@@ -4,9 +4,8 @@ import Select from 'uxcore/lib/Select2';
 import Menu from 'uxcore/lib/Menu';
 import Icon from 'uxcore/lib/Icon';
 import Tooltip from 'uxcore/lib/Tooltip';
-import { withRouter, Link } from 'react-router';
+import { withRouter } from 'react-router';
 
-// import { theme, changeTheme } from '../../index';
 import { initTheme } from '../../../utils';
 
 const { Option } = Select;
@@ -21,14 +20,10 @@ const nav = (props) => {
 } = props;
   // console.log(props);
   const toPage = ({ key }) => router.push(key);
-  const onSelect = (key) => router.push(`/components/${key}`);
+  const onSelect = key => router.push(`/components/${key}`);
   const selectedKeys = [];
   const eleTheme = document.getElementById('theme');
   const eleUI = document.getElementById('ui-theme');
-  // const curTheme = window.localStorage.getItem('theme') || 'orange';
-
-  // eleTheme.setAttribute('href', `/${curTheme}.css`);
-  // eleUI.setAttribute('href', `//g.alicdn.com/??platform/common/s/1.1/global/global.css,uxcore/uxcore-kuma/2.2.1/${curTheme}.min.css`);
 
   if (params.component) {
     selectedKeys.push(params.component === 'tingle-ui' ? '/components/tingle-ui' : '/components/tingle-button');
@@ -38,12 +33,12 @@ const nav = (props) => {
 
   const changeTheme = () => {
     const storage = window.localStorage;
-    let theme = storage.getItem('theme') === 'blue' ? 'orange' : 'blue';
-    
+    const theme = storage.getItem('theme') === 'blue' ? 'orange' : 'blue';
+
     storage.setItem('theme', theme);
     const url = params.component ? `/components/${params.component}?theme=${theme}` : `/?theme=${theme}`;
     router.push(url);
-   
+
     eleTheme.setAttribute('href', `/${theme}.css`);
     eleUI.setAttribute('href', `//g.alicdn.com/??platform/common/s/1.1/global/global.css,uxcore/uxcore-kuma/2.2.1/${theme}.min.css`);
   };
@@ -51,11 +46,12 @@ const nav = (props) => {
   return (
     <div className="ui-nav">
       <Tooltip overlay="切换主题" placement="bottom" trigger={['hover']}>
-        <div className="fn-right ui-nav-theme"
-          onClick={e => changeTheme()}
+        <div
+          className="fn-right ui-nav-theme"
+          onClick={() => changeTheme()}
         >
-        <i className="iconfont icon-theme" />
-      </div></Tooltip>
+          <i className="iconfont icon-theme" />
+        </div></Tooltip>
       <div className="fn-right ui-nav-search">
         <Select
           dropdownClassName="kuma-select2-selected"
@@ -67,9 +63,9 @@ const nav = (props) => {
               .map(item => <Option key={item} value={item} >{item}</Option>)
           }
         </Select>
-        <Icon name="sousuo" className="ui-nav-search-icon"/>
+        <Icon name="sousuo" className="ui-nav-search-icon" />
       </div>
-      
+
 
       <div className="ui-logo fn-left fn-highlight">Salt UI</div>
 
@@ -79,23 +75,15 @@ const nav = (props) => {
         mode="horizontal"
         className={classnames({
           'ui-nav-main': true,
-          'has-bd': selectedKeys[0] !== '/'
+          'has-bd': selectedKeys[0] !== '/',
         })}
       >
         <Menu.Item key="/">首页</Menu.Item>
-        <Menu.Item key="/components/tingle-button">组件</Menu.Item>
+        <Menu.Item key="/components/button">组件</Menu.Item>
         <Menu.Item key="/components/tingle-ui">历史</Menu.Item>
       </Menu>
     </div>
   );
-}
+};
 
 export default withRouter(nav);
-
-// <div className={
-//           classnames("fn-right ui-nav-theme", {
-//             blue: theme !== 'blue',
-//             orange: theme === 'blue',
-//           })}
-//           onClick={e => changeTheme()}
-//         >
