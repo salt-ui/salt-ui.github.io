@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Icon from 'salt-icon';
 
 
 import { transformCode } from '../../utils';
@@ -34,16 +35,6 @@ export default class Layout extends React.Component {
     return false;
   }
 
-  renderCode(data) {
-    const mount = this.refs.mountNode;
-    const copms = [ReactDOM, React, window.SaltUI, mount];
-    try {
-      const f = new Function(ARGS, data);
-      f(...copms);
-    } catch (error) {
-      console.log(error);
-    }
-  }
 
   receiveMessage(event) {
     if (event.data.theme) {
@@ -58,6 +49,19 @@ export default class Layout extends React.Component {
       ele.setAttribute('href', href);
     } else {
       this.renderCode(event.data.code);
+    }
+  }
+
+  renderCode(data) {
+    const mount = this.refs.mountNode;
+    // TODO, use babel-plugin to import
+    winddow.SaltUI.Icon = Icon;
+    const copms = [ReactDOM, React, window.SaltUI, mount];
+    try {
+      const f = new Function(ARGS, data);
+      f(...copms);
+    } catch (error) {
+      console.log(error);
     }
   }
 
