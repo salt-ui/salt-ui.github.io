@@ -53,9 +53,9 @@ export default class Layout extends React.Component {
   }
 
   renderCode(data) {
-    const mount = this.refs.mountNode;
+    const mount = this.mountNode;
     // TODO, use babel-plugin to import
-    winddow.SaltUI.Icon = Icon;
+    window.SaltUI.Icon = Icon;
     const copms = [ReactDOM, React, window.SaltUI, mount];
     try {
       const f = new Function(ARGS, data);
@@ -68,7 +68,7 @@ export default class Layout extends React.Component {
   render() {
     return (
       <div>
-        <div ref="mountNode" />
+        <div ref={(c) => { this.mountNode = c; }} />
       </div>
     );
   }
