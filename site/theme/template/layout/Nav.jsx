@@ -14,12 +14,19 @@ initTheme();
 
 const nav = (props) => {
   const {
-  items,
-  router,
-  params,
-} = props;
+    items,
+    router,
+    params,
+  } = props;
   // console.log(props);
-  const toPage = ({ key }) => router.push(key);
+  const toPage = ({ key }) => {
+    if (/^\//.test(key)) {
+      router.push(key);
+    }
+    if (key === 'history') {
+      window.open('https://github.com/salt-ui/saltui/blob/master/CHANGELOG.md', '_blank');
+    }
+  };
   const onSelect = key => router.push(`/components/${key}`);
   const selectedKeys = [];
   const eleTheme = document.getElementById('theme');
@@ -81,7 +88,7 @@ const nav = (props) => {
       >
         <Menu.Item key="/">首页</Menu.Item>
         <Menu.Item key="/components/button">组件</Menu.Item>
-        <Menu.Item key="/components/tingle-ui">历史</Menu.Item>
+        <Menu.Item key="history">历史</Menu.Item>
       </Menu>
     </div>
   );

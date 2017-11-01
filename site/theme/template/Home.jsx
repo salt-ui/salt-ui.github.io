@@ -48,7 +48,7 @@ export default (props) => {
             </div>
             <div className="ui-home-content">
               <p>高效、简洁的移动端UI组件库<br /><span>钉钉官方合作</span></p>
-              <a href="/components/tingle-button"><Button type="outline">Get Started</Button></a>
+              <a href="/components/button"><Button type="outline">Get Started</Button></a>
               <a href="https://github.com/salt-ui/saltui"><Button type="white" ghost><i className="iconfont icon-github" /> Github</Button></a>
             </div>
           </div>
