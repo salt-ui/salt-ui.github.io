@@ -44,7 +44,8 @@ export default class Layout extends React.Component {
       };
       console.log('change theme');
       const ele = document.getElementById('mobile-theme');
-      const href = `https://g.alicdn.com/platform/saltui/3.1.7/${themeMap[event.data.theme]}.min.css`;
+      const oldHref = ele.getAttribute('href');
+      const href = oldHref.replace(/\/(\w+?)\.min\.css/, `/${themeMap[event.data.theme]}.min.css`);
 
       ele.setAttribute('href', href);
     } else {
