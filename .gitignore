@@ -1,11 +1,28 @@
-.vscode
+*.iml
+*.log
+.idea/
+.ipr
+.iws
+*~
+~*
+*.diff
+*.patch
+*.bak
+.DS_Store
+Thumbs.db
+.project
+.*proj
+.svn/
+*.swp
+*.swo
+*.pyc
+*.pyo
+.build
 node_modules
-<<<<<<< HEAD
-build/components
-build/mobile
-build/index.js
-build/common.js
-=======
+_site
+sea-modules
+spm_modules
+.cache
+dist
 build
->>>>>>> 46f2a2654a4c7b1ef9663adf05ef5a19b5aeda72
 npm-debug.log

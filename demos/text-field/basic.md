@@ -6,36 +6,46 @@ title: 基础使用
 
 
 ```jsx
-const { Component } = React;
-const { Group, TextField } = SaltUI;
+const { Group, TextField, Toast } = SaltUI;
+
+const { LeftAddon, RightAddon, Count } = TextField;
 
 const numberRegExp = /^(\d+\.\d*)|(\d+\.)|\d+/;
 
-class TextFieldDemo extends Component {
+class Demo extends React.Component {
 
   constructor(props) {
     super(props);
     this.state = {
       t1: '',
       t2: '',
-      number: ''
-    }
+      number: '',
+    };
   }
 
   handleTextChange(name, newValue) {
     this.setState({
-      [name]: newValue
+      [name]: newValue,
     });
+    if (newValue.length > 5) {
+      this.setState({
+        errMsg: '最多输入5个字',
+      });
+    } else {
+      this.setState({
+        errMsg: null,
+      });
+    }
   }
 
   handleNumberChange(newValue) {
     this.setState({
-      number: newValue
+      number: newValue,
     });
   }
 
   numberFilter(originValue) {
-    let matches = originValue.match(numberRegExp);
+    const matches = originValue.match(numberRegExp);
     let number = '';
     if (matches) {
       number = matches[0];
@@ -45,46 +55,38 @@ class TextFieldDemo extends Component {
 
   handleNumberBlur(originValue) {
     this.setState({
-      number: originValue.replace(/\.$/, '').replace(/^0*([0-9]+)/, '$1')
+      number: originValue.replace(/\.$/, '').replace(/^0*([0-9]+)/, '$1'),
     });
   }
 
   render() {
-    let t = this;
+    const t = this;
     return (
       <div>
-        <Group.Head className='t-FS14 t-LH1_5 t-LH20 t-PT10 t-PB10 t-PL18'>文本框</Group.Head>
+        <Group.Head className="t-FS14 t-LH1_5 t-LH20 t-PT10 t-PB10 t-PL18">Label文字长度测试</Group.Head>
         <Group.List >
           <TextField
-            label="文本"
+            label="标题"
             placeholder="请输入"
             value={t.state.t1}
-            onChange={t.handleTextChange.bind(t, 't1')}
+            tip="这里是提示信息"
+            onChange={(value) => { t.handleTextChange('t1', value); }}
           />
           <TextField
-            label="仅限数字"
-            placeholder="请输入"
-            filter={t.numberFilter.bind(t)}
+            label="仅限数字" placeholder="请输入"
+            filter={value => t.numberFilter(value)}
             value={t.state.number}
-            onBlur={t.handleNumberBlur.bind(t)}
-            onChange={t.handleNumberChange.bind(t)}
+            onBlur={(value) => { t.handleNumberBlur(value); }}
+            onChange={(value) => { t.handleNumberChange(value); }}
           />
         </Group.List>
-        <Group.Head className='t-FS14 t-LH1_5 t-LH20 t-PT10 t-PB10 t-PL18'>不可修改</Group.Head>
+        <Group.Head className="t-FS14 t-LH1_5 t-LH20 t-PT10 t-PB10 t-PL18">不可修改</Group.Head>
         <Group.List>
-          <TextField
-            label="只读"
-            value="不能更改"
-            readOnly
-          />
+          <TextField label="只读" value="不能更改\n不能更改" readOnly />
         </Group.List>
-        <Group.Head className='t-FS14 t-LH1_5 t-LH20 t-PT10 t-PB10 t-PL18'>只读没有placeholder</Group.Head>
+        <Group.Head className="t-FS14 t-LH1_5 t-LH20 t-PT10 t-PB10 t-PL18">只读没有placeholder</Group.Head>
         <Group.List>
-          <TextField
-            label="不可修改"
-            value=""
-            readOnly
-          />
+          <TextField label="不可修改" value="这是一个只读的状态" readOnly />
         </Group.List>
         <Group.List>
           <TextField
@@ -92,7 +94,49 @@ class TextFieldDemo extends Component {
             label="上下结构"
             layout="v"
             value={t.state.t2}
-            onChange={t.handleTextChange.bind(t, 't2')}
+            onChange={(value) => { t.handleTextChange('t2', value); }}
+          />
+        </Group.List>
+        <Group.Head className="t-FS14 t-LH1_5 t-LH20 t-PT10 t-PB10 t-PL18">前缀</Group.Head>
+        <Group.List>
+          <TextField
+            label="前缀"
+            value={t.state.t1}
+            onChange={(value) => { t.handleTextChange('t1', value); }}
+            placeholder="请输入"
+          >
+            <LeftAddon>
+              <span>￥</span>
+            </LeftAddon>
+          </TextField>
+        </Group.List>
+        <Group.Head className="t-FS14 t-LH1_5 t-LH20 t-PT10 t-PB10 t-PL18">后缀</Group.Head>
+        <Group.List>
+          <TextField
+            label="后缀" value={t.state.t1}
+            onChange={(value) => { t.handleTextChange('t1', value); }}
+          >
+            <RightAddon>
+              <span>PST</span>
+            </RightAddon>
+          </TextField>
+        </Group.List>
+        <Group.Head className="t-FS14 t-LH1_5 t-LH20 t-PT10 t-PB10 t-PL18">计数器</Group.Head>
+        <Group.List>
+          <TextField
+            label="计数器" value={t.state.t1}
+            onChange={(value) => { t.handleTextChange('t1', value); }}
+          >
+            <Count total={20} length={t.state.t1.length} />
+          </TextField>
+        </Group.List>
+        <Group.Head className="t-FS14 t-LH1_5 t-LH20 t-PT10 t-PB10 t-PL18">即时校验</Group.Head>
+        <Group.List>
+          <TextField
+            label="即时校验" value={t.state.t1}
+            onChange={(value) => { t.handleTextChange('t1', value); }}
+            errMsg={t.state.errMsg}
+            toastComponent={Toast}
           />
         </Group.List>
       </div>
@@ -100,5 +144,5 @@ class TextFieldDemo extends Component {
   }
 }
 
-ReactDOM.render(<TextFieldDemo />, mountNode);
+ReactDOM.render(<Demo />, mountNode);
 ```
