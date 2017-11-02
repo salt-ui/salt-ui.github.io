@@ -24,8 +24,8 @@ class Demo extends React.Component {
         <CitySelectField
           // value={['110000', '110100']}
           layout="v"
-          // selectorType="city"
-          label="省市选择"
+          selectorType="province"
+          label="省选择"
           placeholder="请选择"
           required
           confirmText="确认"
@@ -36,6 +36,71 @@ class Demo extends React.Component {
           // readOnly
           districtData={districtData}
           // onSelect={value => this.setState({ value })}
+        />
+        <CitySelectField
+          // value={['110000', '110100']}
+          layout="v"
+          selectorType="city"
+          label="市选择"
+          placeholder="请选择"
+          required
+          confirmText="确认"
+          cancelText="取消"
+          provinceText="省"
+          cityText="市"
+          districtText="区"
+          // readOnly
+          districtData={districtData}
+        // onSelect={value => this.setState({ value })}
+        />
+        <CitySelectField
+          // value={['110000', '110100']}
+          layout="v"
+          selectorType="district"
+          label="区选择"
+          placeholder="请选择"
+          required
+          confirmText="确认"
+          cancelText="取消"
+          provinceText="省"
+          cityText="市"
+          districtText="区"
+          // readOnly
+          districtData={districtData}
+        // onSelect={value => this.setState({ value })}
+        />
+        <CitySelectField
+          // value={['110000', '110100']}
+          layout="v"
+          // selectorType="city"
+          label="省市区选择"
+          placeholder="请选择"
+          required
+          confirmText="确认"
+          cancelText="取消"
+          provinceText="省"
+          cityText="市"
+          districtText="区"
+          // readOnly
+          districtData={districtData}
+        // onSelect={value => this.setState({ value })}
+          tip="这里是提示信息"
+        />
+        <CitySelectField
+          // value={['110000', '110100']}
+          layout="v"
+          // selectorType="city"
+          label="省市区选择"
+          placeholder="请选择"
+          required
+          confirmText="确认"
+          cancelText="取消"
+          provinceText="省"
+          cityText="市"
+          districtText="区"
+          readOnly
+          value={["***"]}
+          districtData={districtData}
         />
       </div>
     );

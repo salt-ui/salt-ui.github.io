@@ -63,6 +63,7 @@ class SelectFieldDemo extends Component {
             options={monthArray}
             onSelect={this.handleChange1}
             value={this.state.value1}
+            tip="这里是tip"
           />
           <SelectField
             label="不可选"

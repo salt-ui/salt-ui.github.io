@@ -8,6 +8,7 @@ title: 基础使用
 ```jsx
 const { Component } = React;
 const { Group, TextareaField } = SaltUI;
+const { Count } = TextareaField;
 
 class TextareaFieldDemo extends Component {
 
@@ -27,27 +28,49 @@ class TextareaFieldDemo extends Component {
     });
   }
 
+
   render() {
     var t = this;
     return (
       <div>
-        <Group.Head className='t-FS14 t-LH1_5 t-LH20 t-PT10 t-PB10 t-PL18'>多行文本框</Group.Head>
+        <Group.Head className="t-FS14 t-LH1_5 t-LH20 t-PT10 t-PB10 t-PL18">多行文本框</Group.Head>
         <Group.List>
-          <TextareaField layout="v" label="俩字" minRows={2} maxRows={5}
+          <TextareaField
+            layout="h"
+            label="俩字"
+            minRows={2}
+            maxRows={5}
             placeholder="设置2个行高"
             value={t.state.t2}
-            onChange={t.handleChange.bind(t, 't2')}/>
+            tip={<p>这里有个tip<a href="http://www.taobao.com" target="_blank" rel="noopener noreferrer">这是个链接</a></p>}
+            onChange={(value) => { t.handleChange('t2', value); }}
+          />
         </Group.List>
         <Group.List>
-          <TextareaField label="三个字" minRows={2} maxRows={5} 
+          <TextareaField
+            label="三个字" minRows={2} maxRows={5}
             placeholder="3个行高 最大5个行高"
             value={t.state.t1}
-            onChange={t.handleChange.bind(t, 't1')}/>
+            onChange={(value) => { t.handleChange('t1', value); }}
+          />
         </Group.List>
         <Group.List>
-          <TextareaField layout="v" label="标题如果特别长，可以选择使用上下结构"
+          <TextareaField
+            layout="v" label="标题如果特别长，可以选择使用上下结构"
             placeholder="请输入"
-            onChange={t.handleChange.bind(t, 't3')}/>
+            tip="这里也有个提示"
+            onChange={(value) => { t.handleChange('t3', value); }}
+          />
+        </Group.List>
+        <Group.Head className="t-FS14 t-LH1_5 t-LH20 t-PT10 t-PB10 t-PL18">计数器</Group.Head>
+        <Group.List>
+          <TextareaField
+            label="计数器"
+            value={t.state.t2}
+            onChange={(value) => { t.handleChange('t2', value); }}
+          >
+            <Count total={300} length={t.state.t2.length} />
+          </TextareaField>
         </Group.List>
         <Group.List title="不可修改">
           <TextareaField label="只读"

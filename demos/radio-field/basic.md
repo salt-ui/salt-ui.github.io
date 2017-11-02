@@ -8,6 +8,7 @@ title: 基本使用
 ```jsx
 const { RadioField } = SaltUI;
 
+
 class Demo extends React.Component {
 
   constructor(props) {
@@ -25,14 +26,14 @@ class Demo extends React.Component {
             postName: '资深交互设计师',
           },
           checked: false,
-          text: (
-                    <table className="demoTable">
-                    <tbody>
-                    <tr>
-                    <td className="avatar-td"><img className="avatar" src="https://img.alicdn.com/tps/TB1vZnyJFXXXXX5XpXXXXXXXXXX-32-32.png" /></td>
-                    <td className="info-td"><div className="name">周姮</div><div className="postName">资深交互设计师</div></td>
-                    </tr>
-                    </tbody></table>),
+          content: (
+            <table className="demoTable">
+              <tbody>
+                <tr>
+                  <td className="avatar-td"><img className="avatar" src="https://img.alicdn.com/tps/TB1vZnyJFXXXXX5XpXXXXXXXXXX-32-32.png" /></td>
+                  <td className="info-td"><div className="name">周姮</div><div className="postName">资深交互设计师</div></td>
+                </tr>
+              </tbody></table>),
           disable: false,
         },
         {
@@ -41,28 +42,28 @@ class Demo extends React.Component {
             postName: '资深交互设计师',
           },
           checked: false,
-          text: (
-                    <table className="demoTable">
-                    <tbody>
-                    <tr>
-                    <td className="avatar-td"><img className="avatar" src="https://img.alicdn.com/tps/TB1CmDsJFXXXXcxXpXXXXXXXXXX-32-32.png" /></td>
-                    <td className="info-td"><div className="name">李伟（孟则）</div><div className="postName">资深交互设计师</div></td>
-                    </tr>
-                    </tbody></table>
+          content: (
+            <table className="demoTable">
+              <tbody>
+                <tr>
+                  <td className="avatar-td"><img className="avatar" src="https://img.alicdn.com/tps/TB1CmDsJFXXXXcxXpXXXXXXXXXX-32-32.png" /></td>
+                  <td className="info-td"><div className="name">李伟（孟则）</div><div className="postName">资深交互设计师</div></td>
+                </tr>
+              </tbody></table>
                 ),
           disable: false,
         },
         {
           value: '1',
-          checked: false,
-          text: '我也好',
+          checked: true,
+          content: '我也好',
           disable: false,
         },
         {
           value: '2',
-          checked: true,
-          text: '大家都好',
-          disable: true,
+          checked: false,
+          content: '大家都好大家都好大家都好大家都好大家都好大家都好',
+          disable: false,
         },
       ],
       onChange(value, index, data) {
@@ -72,12 +73,16 @@ class Demo extends React.Component {
         lineIndent: 15,
         itemIndent: 15,
       },
-      label: '这是一个label哦',
+      label: '单选（图标在左）',
       groupListFlag: true,
-      className: 'ccc'
+      className: 'ccc',
+      iconPosition: 'left',
+      required: true,
+      tip: '这里是提示信息',
     };
     return (<div>
-        <RadioField {...radioFieldProps} />
+      <RadioField {...radioFieldProps} />
+      <RadioField {...radioFieldProps} iconPosition="right" label="单选（图标在右）" />
     </div>);
   }
 }
