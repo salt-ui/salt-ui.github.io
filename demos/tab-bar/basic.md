@@ -5,78 +5,71 @@ title: 基础使用
 
 ```jsx
 const { Component } = React;
-const { TabBar } = SaltUI;
+const { TabBar, Icon } = SaltUI;
 
-const starUrl = '//gw.alicdn.com/tps/TB1Ofp3NpXXXXXDXVXXXXXXXXXX-216-200.png';
-const starActiveUrl = '//gw.alicdn.com/tps/TB1gERVNpXXXXXXaXXXXXXXXXXX-216-200.png';
-const peopleUrl = '//gw.alicdn.com/tps/TB1bc1XNpXXXXciXpXXXXXXXXXX-200-200.png';
-const peopleActiveUrl = '//gw.alicdn.com/tps/TB174GlNpXXXXaHXXXXXXXXXXXX-200-200.png';
-
-class TabBarDemo extends Component {
-
+class Demo extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeIndex: 0
+      activeIndex: 0,
     };
     this.tabBarItems = [
-      { title: '收藏', icon: starUrl, activeIcon: starActiveUrl, name: 'star', badge: 122 },
-      { title: '地图', icon: 'map', name: 'map', badge: 3 },
-      { title: '搜索', icon: 'search', name: 'search' },
-      { title: '社区', icon: [peopleUrl, peopleActiveUrl], name: 'user', badge: 200 },
-      { title: '设置', icon: 'setting', name: 'setting', badge: 'new' },
-      { title: '隐藏', icon: 'setting', name: 'hidden' },
+      {
+        title: '首页',
+        icon: <Icon name="time" />,
+        path: '/star',
+      },
+      {
+        title: '收藏',
+        icon: <Icon name="time" />,
+        badge: 'new',
+        badgeStyle: { right: -5 },
+        path: '/a/star',
+      },
+      {
+        title: '隐藏',
+        icon: <Icon name="plus" />,
+        iconHeight: 40,
+        items: [{
+          title: '用户',
+          icon: <Icon name="time" />,
+          badge: 8,
+          name: 'user',
+          path: '/b/user',
+        }, {
+          title: '时间',
+          icon: <Icon name="time" />,
+          badge: 8,
+          name: 'time',
+          path: '/b/time',
+        }],
+        path: '/center',
+      },
+      { title: '地图', icon: <Icon name="time" />, badge: 8, path: '/b/star' },
+      { title: '我的', icon: <Icon name="time" />, badge: 8, path: '/c/star' },
     ];
   }
 
-  onChange(activeIndex) {
-    this.setState({ activeIndex });
-  }
-
   render() {
-    const tabBarStyle = {
-      borderTop: '1px solid #ccc',
-      boxShadow: '0 0 4px 0 #999'
+    const onChange = (activeIndex) => {
+      // 这里是触发每个item之后的回调，会返回当前点击的item的index 值
+      console.log(activeIndex);
     };
 
-    const tabBarItemTitleStyle = {
-      //color: '#666',
-    };
-    const tabBarItemTitleActiveStyle = {
-      //color: '#3671D6',
-    };
-    const tabBarItemIconStyle = {
-      //fill: '#333',
-      width: 30,
-      height: 30,
-    };
-    const tabBarItemIconActiveStyle = {
-      //fill: '#3671D6',
-    };
+    const tabBarStyle = {};
 
-    return <div>
-      {`Current Tab Index: ${this.state.activeIndex}`}
-      <TabBar tabBarStyle={tabBarStyle} activeIndex={this.state.activeIndex} onChange={this.onChange.bind(this)}>
-        {this.tabBarItems.map((item, idx) => {
-          if (item.name === 'hidden') {
-            return null;
-          }
-          return <TabBar.Item
-            key={idx}
-            badge={item.badge}
-            title={item.title}
-            titleStyle={tabBarItemTitleStyle}
-            activeTitleStyle={tabBarItemTitleActiveStyle}
-            icon={item.icon}
-            activeIcon={item.activeIcon}
-            iconStyle={tabBarItemIconStyle}
-            activeIconStyle={tabBarItemIconActiveStyle}
-          />
-        })}
-      </TabBar>
-    </div>
+    return (<div>
+      <TabBar
+        tabBarStyle={tabBarStyle}
+        activeIndex={this.state.activeIndex}
+        onChange={onChange}
+        iconHeight={24}
+        cIconHeight={50}
+        items={this.tabBarItems}
+      />
+    </div>);
   }
 }
 
-ReactDOM.render(<TabBarDemo />, mountNode);
+ReactDOM.render(<Demo />, mountNode);
 ```

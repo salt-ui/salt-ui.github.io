@@ -1,6 +1,6 @@
 ---
-order: 0
-title: 不带图标TimeLine
+order: 1
+title: 带图标TimeLine
 ---
 
 ```jsx
@@ -11,10 +11,11 @@ class Demo extends React.Component {
   render() {
     return (
       <div className="timeline-demo">
-        <h3>不带图标:</h3>
+        <h3>带图标:</h3>
         <Timeline>
           <Timeline.Item
             description="2017/05/10"
+            icon={<Icon name="time" />}
             active
           >
             设计平台是信息平台UED重要的基石，是团队进行设计活动所依赖的标准和方法。
