@@ -1,6 +1,6 @@
 ---
-order: 0
-title: 基本类型使用
+order: 1
+title: 搭配Icon使用
 ---
 
 ```jsx
@@ -21,6 +21,7 @@ class Demo extends React.Component {
     this.onDeselect = this.onDeselect.bind(this);
   }
 
+  // 测试回调
   onClick({ key, keyPath, item, domEvent }) {
     console.log('click： ', key, keyPath, item, domEvent);
     keyPath.shift();
@@ -33,15 +34,13 @@ class Demo extends React.Component {
 
   onSelect({ item, key, selectedKeys }) {
     console.log('选中select ', item, key, selectedKeys);
-    //this.setState({ selectedKeys });
+    // this.setState({ selectedKeys });
   }
 
   onDeselect({ item, key, selectedKeys }) {
     console.log('取消选中select ', item, key, selectedKeys);
-    //this.setState({ selectedKeys });
+    // this.setState({ selectedKeys });
   }
-
-
 
   render() {
     const { selectedKeys, openKeys } = this.state;
@@ -49,24 +48,42 @@ class Demo extends React.Component {
       cursor: 'pointer',
       margin: '20px',
     };
-
     const testSpan = <span className="test">测试节点</span>;
 
     return (
       <div style={style}>
-        <p className="menu-demo-title">普通</p>
+        <p className="menu-demo-title">使用icon</p>
         <Menu
-        selectedKeys={selectedKeys}
-        openKeys={openKeys}
-        onClick={this.onClick}
-        onSelect={this.onSelect}
-        onDeselect={this.onDeselect}
-        multiple
-      >
-        <MenuItem title="浙江" key="zhejiang" />
-        <MenuItem title="江苏" key="jiangsu" />
-        <MenuItem title="河北" key="hebei" />
-      </Menu>
+          selectedKeys={selectedKeys}
+          openKeys={openKeys}
+          onClick={this.onClick}
+          onSelect={this.onSelect}
+          onDeselect={this.onDeselect}
+          multiple
+        >
+          <MenuItem
+            title={
+              <div>
+                <Icon name="lock" className="demo-icon" width={20} height={20} fill="rgba(0,0,0,0.8)" />
+                <span>浙江1</span>
+              </div>
+            }
+            key="zhejiang"
+          >
+            <MenuItem title="杭州" key="hangzhou" />
+            <MenuItem title="温州" key="wenzhou" />
+            <MenuItem title={testSpan} disabled key="lishui" />
+          </MenuItem>
+          <MenuItem
+            title={
+              <div>
+                <Icon name="lock" className="demo-icon" width={20} height={20} fill="rgba(0,0,0,0.8)" />
+                <span>江苏</span>
+              </div>
+            }
+            key="jiangsu"
+          />
+        </Menu>
       </div>
 
     );

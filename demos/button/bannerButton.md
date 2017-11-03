@@ -1,6 +1,6 @@
 ---
 order: 5
-title: bannerButton
+title: 通栏按钮
 ---
 
 

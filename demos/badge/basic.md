@@ -1,6 +1,6 @@
 ---
 order: 0
-title: 基本使用
+title: 作为容器使用
 ---
 
 ```jsx
@@ -57,44 +57,6 @@ class Demo extends React.Component {
             <a href="#1" className="demo-item" />
           </Badge>
         </div>
-        <h1 className="extra-head">Badge作为子元素: </h1>
-        <div
-          className="demo-line" style={{
-            position: 'relative',
-            height: 100,
-            border: '1px solid #aaa',
-            marginTop: 20,
-          }}
-        >
-          <Badge
-            text={'促'} style={{
-              left: 10,
-            }}
-          />
-          <Badge
-            text={'减'} style={{
-              left: 40,
-            }}
-          />
-          <Badge
-            text={'免'} style={{
-              left: 70,
-              background: '#66BC5C',
-            }}
-          />
-        </div>
-
-        <div
-          className="demo-line" style={{
-            position: 'relative',
-            height: 100,
-            width: '100%',
-            background: '#aaa',
-            marginTop: 20,
-          }}
-        >
-          <Badge text={'new'} corner="lt" />
-        </div>
       </div>
     );
   }
@@ -114,10 +76,6 @@ h1 {
 	margin: 10px 0;
 	font-weight: bold;
 	font-size: 20px;
-}
-
-.extra-head {
-	margin-top: 40px;
 }
 
 .demo-line {

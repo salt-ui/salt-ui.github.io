@@ -1,6 +1,6 @@
 ---
 order: 0
-title: basic
+title: 按钮类型
 ---
 
 
