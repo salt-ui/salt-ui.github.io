@@ -23,7 +23,6 @@ class Demo extends React.Component {
   render() {
     return (
       <div>
-        <h1>按钮组</h1>
          <div className="demo-section">
           <h2 className="section-title">按钮组1: 跟随内容双按钮</h2>
           <div className="section-content">

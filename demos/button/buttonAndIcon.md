@@ -23,9 +23,7 @@ class Demo extends React.Component {
   render() {
     return (
       <div>
-        <h1>按钮 Button</h1>
         <div classNmme="demo-section">
-            <h2 className="section-title">按钮 + 图标</h2>
             <div className="section-content">
                 <Button type="primary" onClick={this.handleClick}><Icon name="setting" />一级按钮</Button>
                 <br />

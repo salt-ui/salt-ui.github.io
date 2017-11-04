@@ -25,7 +25,6 @@ class Demo extends React.Component {
       <div>
         <h1>按钮 Button</h1>
         <div className="demo-section">
-          <h2 className="section-title">标准按钮</h2>
           <div className="section-content">
             <Button type="primary" onClick={this.handleClick}>一级按钮</Button>
             <br />

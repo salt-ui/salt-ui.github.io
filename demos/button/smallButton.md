@@ -1,6 +1,6 @@
 ---
 order: 1
-title: 按钮大小
+title: 小按钮
 ---
 
 
@@ -23,9 +23,7 @@ class Demo extends React.Component {
   render() {
     return (
       <div>
-        <h1>按钮 Button</h1>
         <div className="demo-section">
-          <h2 className="section-title">小按钮</h2>
           <div className="section-content">
             <div className="demo-row">
               <div className="demo-cell">

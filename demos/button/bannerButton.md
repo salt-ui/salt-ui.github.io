@@ -23,23 +23,21 @@ class Demo extends React.Component {
   render() {
     return (
       <div>
-        <h1>按钮 Button</h1>
-          <div className="demo-section">
-             <h2 className="section-title">通栏按钮</h2>
-             <div
-               className="section-content"
-               style={{ backgroundColor: 'rgba(31,56,88,0.06)', padding: '50px 0 100px 0' }}
-             >
-               <Button type="primary" display="banner" onClick={this.handleClick}>通栏一级按钮</Button> <br />
-               <Button type="secondary" display="banner" onClick={this.handleClick}>通栏二级按钮</Button> <br />
-               <Button type="minor" display="banner" onClick={this.handleClick}>通栏次级按钮</Button> <br />
-               <Button type="primary" display="banner" onClick={this.handleClick}>
-                 <Icon name="setting" />通栏按钮+图标
-               </Button>
-               <br />
-               <Button type="primary" display="banner" disabled onClick={this.handleClick}>通栏按钮 不可用</Button>
-             </div>
-           </div>
+        <div className="demo-section">
+            <div
+              className="section-content"
+              style={{ backgroundColor: 'rgba(31,56,88,0.06)', padding: '50px 0 100px 0' }}
+            >
+              <Button type="primary" display="banner" onClick={this.handleClick}>通栏一级按钮</Button> <br />
+              <Button type="secondary" display="banner" onClick={this.handleClick}>通栏二级按钮</Button> <br />
+              <Button type="minor" display="banner" onClick={this.handleClick}>通栏次级按钮</Button> <br />
+              <Button type="primary" display="banner" onClick={this.handleClick}>
+                <Icon name="setting" />通栏按钮+图标
+              </Button>
+              <br />
+              <Button type="primary" display="banner" disabled onClick={this.handleClick}>通栏按钮 不可用</Button>
+            </div>
+          </div>
       </div>
     );
   }
