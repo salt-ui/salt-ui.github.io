@@ -61,7 +61,7 @@ class Demo extends React.Component {
   render() {
     return (
       <div>
-        <PhotoField
+        <PhotoField.H5
           label="H5 图片"
           placeholder="请选择图片"
           required

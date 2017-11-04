@@ -89,14 +89,14 @@ body {
     background-color #f2f2f2
 }
 
-#TingleDemo .page {
+.page {
         position: fixed;
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
 }
-#TingleDemo .page .nowrap {
+.page .nowrap {
         white-space: nowrap;
 }
 

@@ -5,81 +5,103 @@ title: 基本使用
 
 ```jsx
 const { Calendar, Button, Context } = SaltUI;
-let prefixClass = Context.prefixClass;
-
 class Demo extends React.Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            show: false,
-            show2: false,
-            show3: false,
-            locale: 'zh-cn'
+  constructor(props) {
+    super(props);
+    this.state = {
+      // value: {
+        // value: 1499702400000,
+        // startDate: 1499702400000,
+        // startDateType: 'PM',
+        // endDate: 1499961600000,
+        // endDateType: 'PM',
+      // },
+      value: 1489702400000, // 1499961600000
+    };
+    // 禁用钉钉容器的 webViewBounce
+    window.dd && window.dd.ui.webViewBounce.disable();
+    this.calendarProps = {
+      maskClosable: true,
+      renderDayBadge: Calendar.util.generateSpecialWorkdayOrHolidayRender({
+        '2017-07-22': 'work',
+        '2017-07-25': 'leave',
+      }),
+      renderCustomDayLabel(curren, value) {
+        if (Calendar.util.isSameDay(curren, '2017.7.31')) {
+          return (
+            <span className="special-day">端午节</span>
+          );
         }
-    }
+        return null;
+      },
+    };
+  }
 
-    _handleClick(show) {
-        let t = this;
-        t.setState({
-            [show]: true
-        });
-    }
+  onOk(value) {
+    console.log('onOk, and value is: ', value);
+    this.setState({
+      value,
+      visible: false,
+    });
+  }
 
-    onCloseCalendar(show) {
-        let t = this;
-        t.setState({
-            [show]: false
-        });
-    }
+  onCancel() {
+    console.log('onCancel');
+    this.setState({
+      visible: false,
+    });
+  }
 
-    handleCalendarData(show, values) {
-        alert(JSON.stringify(values));
+  onMaskClose() {
+    console.log('onMaskClose');
+  }
 
-        let t = this;
-        t.setState({
-            [show]: false
-        });
-    }
-
-    handleSelecting(data, e){
-      console.log(data, e.target)
-    }
-
-    render() {
-        let t = this;
-        return (
-            <div className={prefixClass('calendar-demo')}>
-                <Button onClick={t._handleClick.bind(t, 'show')}>点我选择日期</Button>
-                <Button type="secondary" onClick={t._handleClick.bind(t, 'show2')}>点我选择日期(月面板)</Button>
-                <Button type="danger" onClick={t._handleClick.bind(t, 'show3')}>点我选择日期(年面板)</Button>
-
-                <Calendar visible={t.state.show}
-                    singleMode={true}
-                    value={'2016-01-02'}
-                    showHalfDay={false}
-                    showBottomPanel={false}
-                    extraClass=""
-                    onSelecting={t.handleSelecting}
-                    topPanelTitle={"请选择时间"}
-                    onCancel={t.onCloseCalendar.bind(t, 'show')}
-                    onOk={t.handleCalendarData.bind(t, 'show')}
-                    locale={t.state.locale} />
-                <Calendar.MonthCalendar
-                    visible={t.state.show2}
-                    singleMode={true}
-                    onCancel={t.onCloseCalendar.bind(t, 'show2')}
-                    onOk={t.handleCalendarData.bind(t, 'show2')}
-                    locale={t.state.locale} />
-                <Calendar.YearCalendar
-                    visible={t.state.show3}
-                    singleMode={false}
-                    onCancel={t.onCloseCalendar.bind(t, 'show3')}
-                    onOk={t.handleCalendarData.bind(t, 'show3')}
-                    locale={t.state.locale} />
-            </div>
-        );
-    }
+  render() {
+    return (
+      <div className="t-calendar-demo">
+        <Button onClick={() => {
+          this.setState({
+            visible: true,
+            singleMode: true,
+            animationType: 'slideLeft',
+            showHalfDay: false,
+          });
+        }}>打开单点日历</Button>
+        <Button onClick={() => {
+          this.setState({
+            visible: true,
+            singleMode: false,
+            animationType: 'slideLeft',
+            showHalfDay: false,
+          });
+        }}>打开级联日历</Button>
+        <Button onClick={() => {
+          this.setState({
+            visible: true,
+            singleMode: false,
+            showHalfDay: true,
+            animationType: 'slideLeft',
+          });
+        }}>打开级联日历，可选择半天</Button>
+        <Button onClick={() => {
+          this.setState({
+            visible: true,
+            singleMode: true,
+            animationType: 'slideUp',
+            showHalfDay: true,
+          });
+        }}>展示Popup模式</Button>
+        <Calendar
+          {...this.calendarProps}
+          {...this.state}
+          onOk={(value) => { this.onOk(value); }}
+          onCancel={() => { this.onCancel(); }}
+          onMaskClose={() => { this.onMaskClose(); }}
+        />
+      </div>
+    );
+  }
 }
 
 ReactDOM.render(

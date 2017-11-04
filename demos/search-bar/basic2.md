@@ -1,6 +1,6 @@
 ---
 order: 0
-title: 搜索栏
+title: 带容器的搜索栏
 ---
 
 
@@ -64,8 +64,10 @@ class Demo extends React.Component {
       },
     };
     return (<div>
-      <div className="head">搜索栏</div>
-      <SearchBar {...props} />
+      <div className="head">带容器的搜索栏</div>
+      <WithContainer {...props}>
+        <List ref="list" />
+      </WithContainer>
     </div>);
   }
 }
