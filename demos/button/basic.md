@@ -23,7 +23,6 @@ class Demo extends React.Component {
   render() {
     return (
       <div>
-        <h1>按钮 Button</h1>
         <div className="demo-section">
           <div className="section-content">
             <Button type="primary" onClick={this.handleClick}>一级按钮</Button>
@@ -51,11 +50,8 @@ ReactDOM.render(
 ```
 ````css
 body {
-  background: #f2f2f2;
-}
-
-h1 {
-    padding: 20px 8px;
+    padding-top: 100px;
+    background: #f2f2f2;
 }
 
 .demo-section { 

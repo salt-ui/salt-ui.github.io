@@ -1,6 +1,6 @@
 ---
 order: 0
-title: 基础使用
+title: Label文字长度测试
 ---
 
 
@@ -63,7 +63,6 @@ class Demo extends React.Component {
     const t = this;
     return (
       <div>
-        <Group.Head className="t-FS14 t-LH1_5 t-LH20 t-PT10 t-PB10 t-PL18">Label文字长度测试</Group.Head>
         <Group.List >
           <TextField
             label="标题"
@@ -78,65 +77,6 @@ class Demo extends React.Component {
             value={t.state.number}
             onBlur={(value) => { t.handleNumberBlur(value); }}
             onChange={(value) => { t.handleNumberChange(value); }}
-          />
-        </Group.List>
-        <Group.Head className="t-FS14 t-LH1_5 t-LH20 t-PT10 t-PB10 t-PL18">不可修改</Group.Head>
-        <Group.List>
-          <TextField label="只读" value="不能更改\n不能更改" readOnly />
-        </Group.List>
-        <Group.Head className="t-FS14 t-LH1_5 t-LH20 t-PT10 t-PB10 t-PL18">只读没有placeholder</Group.Head>
-        <Group.List>
-          <TextField label="不可修改" value="这是一个只读的状态" readOnly />
-        </Group.List>
-        <Group.List>
-          <TextField
-            placeholder="请输入"
-            label="上下结构"
-            layout="v"
-            value={t.state.t2}
-            onChange={(value) => { t.handleTextChange('t2', value); }}
-          />
-        </Group.List>
-        <Group.Head className="t-FS14 t-LH1_5 t-LH20 t-PT10 t-PB10 t-PL18">前缀</Group.Head>
-        <Group.List>
-          <TextField
-            label="前缀"
-            value={t.state.t1}
-            onChange={(value) => { t.handleTextChange('t1', value); }}
-            placeholder="请输入"
-          >
-            <LeftAddon>
-              <span>￥</span>
-            </LeftAddon>
-          </TextField>
-        </Group.List>
-        <Group.Head className="t-FS14 t-LH1_5 t-LH20 t-PT10 t-PB10 t-PL18">后缀</Group.Head>
-        <Group.List>
-          <TextField
-            label="后缀" value={t.state.t1}
-            onChange={(value) => { t.handleTextChange('t1', value); }}
-          >
-            <RightAddon>
-              <span>PST</span>
-            </RightAddon>
-          </TextField>
-        </Group.List>
-        <Group.Head className="t-FS14 t-LH1_5 t-LH20 t-PT10 t-PB10 t-PL18">计数器</Group.Head>
-        <Group.List>
-          <TextField
-            label="计数器" value={t.state.t1}
-            onChange={(value) => { t.handleTextChange('t1', value); }}
-          >
-            <Count total={20} length={t.state.t1.length} />
-          </TextField>
-        </Group.List>
-        <Group.Head className="t-FS14 t-LH1_5 t-LH20 t-PT10 t-PB10 t-PL18">即时校验</Group.Head>
-        <Group.List>
-          <TextField
-            label="即时校验" value={t.state.t1}
-            onChange={(value) => { t.handleTextChange('t1', value); }}
-            errMsg={t.state.errMsg}
-            toastComponent={Toast}
           />
         </Group.List>
       </div>

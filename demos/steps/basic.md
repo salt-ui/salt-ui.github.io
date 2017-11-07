@@ -1,6 +1,6 @@
 ---
-order: 0
-title: 基础使用
+order: 1
+title: 水平方向
 ---
 
 
@@ -19,13 +19,6 @@ class Demo extends React.Component {
           <Step key={2} />
           <Step key={3} />
           <Step key={4} />
-        </Steps>
-        <Steps current={2} showIcon={true} direction="vertical">
-          <Step key={0} title="步骤一" />
-          <Step key={1} title="步骤二" />
-          <Step key={2} title="步骤三" />
-          <Step key={3} title="步骤四" />
-          <Step key={4} title="步骤五" />
         </Steps>
       </div>
     );

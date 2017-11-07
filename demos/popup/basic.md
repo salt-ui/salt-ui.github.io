@@ -1,6 +1,6 @@
 ---
 order: 0
-title: 基本使用
+title: 滑动方向
 ---
 
 ```jsx
@@ -34,7 +34,7 @@ class Demo extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="demo">
         <Button onClick={() => {
           Popup.show(<div className="demo-popup-container">我是弹出层</div>, {
             animationType: 'slide-up',
@@ -59,25 +59,7 @@ class Demo extends React.Component {
           });
         }}
         >向左划出</Button>
-        <Button onClick={() => {
-          Popup.show(
-            <div className="demo-popup-container-2">
-              <div onClick={() => {
-                Popup.hide();
-              }}
-              >点我关闭 popup</div>
-            </div>, {
-              maskClosable: false,
-            });
-        }}
-        >手动控制关闭 Popup</Button>
-        <Button onClick={() => {
-          this.instance = Popup.show(
-            this.getContent()
-            , {});
-        }}
-        >测试内部数据透传</Button>
-        <Popup
+         <Popup
           content={
             <div>
               <input
@@ -93,7 +75,6 @@ class Demo extends React.Component {
         >
           {null}
         </Popup>
-        <Button onClick={() => { this.setState({ visible: true }); }}>手动控制 Visible</Button>
       </div>
     );
   }
@@ -104,11 +85,16 @@ ReactDOM.render(
 );
 ```
 ```css
-body{
+body {
   background-color: #f2f2f2;
   padding: 10px;
 }
-body .t-button{
+
+.demo {
+  margin-top: 100px;
+}
+
+.t-button {
   margin-bottom: 10px;
 }
 

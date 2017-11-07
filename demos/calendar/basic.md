@@ -1,6 +1,6 @@
 ---
 order: 0
-title: 基本使用
+title: 日历
 ---
 
 ```jsx
@@ -68,30 +68,6 @@ class Demo extends React.Component {
             showHalfDay: false,
           });
         }}>打开单点日历</Button>
-        <Button onClick={() => {
-          this.setState({
-            visible: true,
-            singleMode: false,
-            animationType: 'slideLeft',
-            showHalfDay: false,
-          });
-        }}>打开级联日历</Button>
-        <Button onClick={() => {
-          this.setState({
-            visible: true,
-            singleMode: false,
-            showHalfDay: true,
-            animationType: 'slideLeft',
-          });
-        }}>打开级联日历，可选择半天</Button>
-        <Button onClick={() => {
-          this.setState({
-            visible: true,
-            singleMode: true,
-            animationType: 'slideUp',
-            showHalfDay: true,
-          });
-        }}>展示Popup模式</Button>
         <Calendar
           {...this.calendarProps}
           {...this.state}
@@ -107,4 +83,10 @@ class Demo extends React.Component {
 ReactDOM.render(
   <Demo />, mountNode
 );
+```
+```css 
+.t-calendar-demo {
+  margin-top:200px;
+}
+
 ```

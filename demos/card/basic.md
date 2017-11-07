@@ -1,6 +1,6 @@
 ---
 order: 0
-title: 基本使用
+title: 使用场景
 ---
 
 ```jsx
@@ -22,7 +22,6 @@ class Demo extends React.Component {
     return (
       <div>
         <div className="card-wrap">
-          <div className="card-wrap-title">场景：</div>
           <Card className="card-sence">
             <div className={headerCls}>
               <img className="card-avatar" src="https://work.alibaba-inc.com/photo/WB217531.jpg?" alt="avatar" />
@@ -48,18 +47,6 @@ class Demo extends React.Component {
               </div>
               <div className="card-footer-extra">辅助文字</div>
             </div>
-          </Card>
-        </div>
-        <div className="card-wrap">
-          <div className="card-wrap-title">卡片圆角：</div>
-          <Card className="card-example">
-            有效内容区域
-          </Card>
-        </div>
-        <div className="card-wrap">
-          <div className="card-wrap-title">卡片通栏：</div>
-          <Card mode="full" className="card-example">
-            有效内容区域
           </Card>
         </div>
       </div>
