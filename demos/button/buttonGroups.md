@@ -76,11 +76,8 @@ ReactDOM.render(
 ```
 ````css
 body {
+    padding-top: 100px;
     background: #f2f2f2;
-}
-
-h1 {
-    padding: 20px 8px;
 }
 
 .demo-section { 

@@ -1,6 +1,6 @@
 ---
 order: 0
-title: 基本使用
+title: 成功
 ---
 
 ```jsx
@@ -33,12 +33,6 @@ class Demo extends React.Component {
       <div>
         <div style={{ marginBottom: '30px' }}>
           <Progress percent={t.state.percent1} status="normal" showInfo />
-        </div>
-        <div style={{ marginBottom: '30px' }}>
-          <Progress percent={t.state.percent2} status="exception" showInfo={false} />
-        </div>
-        <div style={{ marginBottom: '30px' }}>
-          <Progress percent={t.state.percent3} showInfo strokeWidth={1} />
         </div>
       </div>
     );

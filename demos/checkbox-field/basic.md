@@ -1,6 +1,6 @@
 ---
 order: 0
-title: 基本使用
+title: 左侧多选
 ---
 
 ```jsx
@@ -102,21 +102,6 @@ class Demo extends React.Component {
       <div className="checkbox-field-demo">
         <Group className="checkbox-field-demo-group">
           <Group.List><CheckboxField {...CheckboxFieldProps} /></Group.List>
-        </Group>
-        <Group className="checkbox-field-demo-group">
-          <Group.List>
-            <CheckboxField {...CheckboxFieldProps} iconPosition="right" />
-          </Group.List>
-        </Group>
-        <Group className="checkbox-field-demo-group">
-          <Group.List>
-            <CheckboxField
-              {...CheckboxFieldProps}
-              mode="slot"
-              label="多选（slot）"
-              required={false}
-            />
-          </Group.List>
         </Group>
       </div>
 

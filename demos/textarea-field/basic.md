@@ -1,6 +1,6 @@
 ---
 order: 0
-title: 基础使用
+title: 多行文本
 ---
 
 
@@ -54,28 +54,7 @@ class TextareaFieldDemo extends Component {
             onChange={(value) => { t.handleChange('t1', value); }}
           />
         </Group.List>
-        <Group.List>
-          <TextareaField
-            layout="v" label="标题如果特别长，可以选择使用上下结构"
-            placeholder="请输入"
-            tip="这里也有个提示"
-            onChange={(value) => { t.handleChange('t3', value); }}
-          />
-        </Group.List>
-        <Group.Head className="t-FS14 t-LH1_5 t-LH20 t-PT10 t-PB10 t-PL18">计数器</Group.Head>
-        <Group.List>
-          <TextareaField
-            label="计数器"
-            value={t.state.t2}
-            onChange={(value) => { t.handleChange('t2', value); }}
-          >
-            <Count total={300} length={t.state.t2.length} />
-          </TextareaField>
-        </Group.List>
-        <Group.List title="不可修改">
-          <TextareaField label="只读"
-           value="不能更改" readOnly={true}/>
-        </Group.List>
+     
       </div>
     );
   }

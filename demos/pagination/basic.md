@@ -1,6 +1,6 @@
 ---
 order: 0
-title: 基本使用
+title: 默认
 ---
 
 ```jsx
@@ -17,37 +17,10 @@ class Demo extends React.Component {
 
   render() {
     return (
-      <div>
-        <h1>tingle-pagination</h1>
-        <h5>默认</h5>
+      <div className="demo">
         <Pagination current={55} total={1000} pageSize={10} />
         <br />
-        <h5>外部控制页码</h5>
-        <Pagination
-          current={this.state.current} total={101} pageSize={10}
-          onChange={(current) => {
-            console.log(current);
-            this.setState({ current });
-          }}
-        />
-        <br />
-        <h5>Simple</h5>
-        <Pagination
-          simple
-          current={this.state.current} total={101} pageSize={10}
-          onChange={(current) => {
-            this.setState({ current });
-          }}
-        />
-        <br />
-        <h5>自定义样式</h5>
-        <Pagination
-          className={'custom-class'}
-          current={this.state.current} total={101} pageSize={10}
-          onChange={(current) => {
-            this.setState({ current });
-          }}
-        />
+       
       </div>
     );
   }
@@ -62,20 +35,9 @@ ReactDOM.render(
 body {
   background-color: #f2f2f2;
 }
-
-h1 {
-  color: #333;
-  margin: 20px 15px;
-  font-size: 20px;
-  font-weight: bolder;
+.demo {
+  margin-top: 200px;
 }
-
-h5 {
-  color: #666;
-  font-weight: bolder;
-  margin: 15px;
-}
-
 .custom-class {
   font-size: 16px;
   font-family: arial;

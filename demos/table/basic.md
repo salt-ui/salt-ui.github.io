@@ -1,6 +1,6 @@
 ---
 order: 0
-title: 基础使用
+title: 普通表格
 ---
 
 
@@ -115,41 +115,10 @@ class Demo extends React.Component {
     };
     return (
       <div>
-        <div className="tip">普通表格</div>
         <Table
           columns={t.state.columns2}
           data={t.state.data2}
           leftFixed={0}
-        />
-        <div className="tip">普通表格(隐藏分割线)</div>
-        <Table
-          columns={t.state.columns2}
-          data={t.state.data2}
-          hideSplitLine
-          leftFixed={0}
-        />
-        <div className="tip">列固定 不显示标题</div>
-        <Table
-          columns={t.state.columns}
-          data={t.state.data}
-          leftFixed={1}
-          rightFixed={1}
-          showHeader={false}
-        />
-        <div className="tip">列固定 不显示标题（隐藏分割线）</div>
-        <Table
-          columns={t.state.columns}
-          data={t.state.data}
-          hideSplitLine
-          leftFixed={1}
-          showHeader={false}
-        />
-        <div className="tip">无数据展示</div>
-        <Table
-          columns={t.state.columns}
-          data={data}
-          leftFixed={0}
-          showHeader
         />
       </div>
     );

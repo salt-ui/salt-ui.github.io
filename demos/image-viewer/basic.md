@@ -1,6 +1,6 @@
 ---
 order: 0
-title: 基本使用
+title: 查看图片1
 ---
 
 ```jsx
@@ -20,6 +20,7 @@ class Demo extends React.Component {
     return (
       <div
         style={{
+          marginTop: '200px',
           height: 1000,
         }}
       >
@@ -32,24 +33,6 @@ class Demo extends React.Component {
                 },
                 {
                   src: 'http://img.alicdn.com/tps/i4/TB1bokgFVXXXXbKXFXXYCct.pXX-238-238.png',
-                },
-              ],
-              current: 1,
-            });
-          }}
-        >点击查看</Button>
-        <Button
-          style={{
-            marginTop: 400,
-          }}
-          onClick={() => {
-            ImageViewer.show({
-              photos: [
-                {
-                  src: 'http://gtms01.alicdn.com/tps/i1/TB12i5PHFXXXXaKXVXXY7J9SpXX-500-699.jpeg',
-                },
-                {
-                  src: 'http://gtms04.alicdn.com/tps/i4/TB1E4yUHFXXXXboXFXXK0qsSpXX-500-750.jpeg',
                 },
               ],
               current: 1,
