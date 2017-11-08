@@ -1,6 +1,6 @@
 ---
-order: 0
-title: 基本使用
+order: 1
+title: 分享面板
 ---
 
 ```jsx
@@ -26,18 +26,16 @@ class Demo extends React.Component {
   render() {
     return (
       <div>
-      
+        
         <Button onClick={() => {
-          ActionSheet.show({
-            options: ['操作一', '操作二', '操作三', '清空聊天记录'],
-            destructiveButtonIndex: 3,
+          ActionSheet.showShare({
+            options: iconList,
             message: '我是描述我是描述',
-            maskClosable: false,
           }, (index) => {
             console.log(index);
           });
         }}
-        >默认状态</Button>
+        >分享面板</Button>
        
       </div>
     );

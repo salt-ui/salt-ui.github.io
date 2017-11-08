@@ -65,6 +65,10 @@ export const NAV_MAP = {
     zh: '日期',
     type: 'Display',
   },
+  datetime: {
+    zh: '日期选择组件',
+    type: 'Display'
+  },
   'foldable-pane': {
     zh: '折叠版面',
     type: 'Display'
@@ -194,6 +198,10 @@ export const NAV_MAP = {
   'radio-field': {
     zh: '单选框',
     type: 'Form',
+  },
+  'rate-field': {
+    zh: '评分表单',
+    type: 'Form'
   },
   'select-field': {
     zh: '选择表单',
