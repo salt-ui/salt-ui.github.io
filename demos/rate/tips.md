@@ -1,6 +1,6 @@
 ---
-order: 0
-title: Size
+order: 1
+title: Tips
 ---
 
 
@@ -40,15 +40,16 @@ class Demo extends React.Component {
             />
           </div>
         </div>
-        
-        <div className="tFB1">最终结果：</div>
-        <div className="rate-wrapper">
-          <Rate
-            size="large"
-            scoreTips={['表现太差', '表现一般', '表现良好', '表现优秀', '表现卓越']}
-            value={t.state.score4}
-            onChange={(value) => { t.handleChange('score4', value); }}
-          />
+        <div className="t-FBH t-FBAC t-H44">
+          <div className="tFB1">认路能力：</div>
+          <div>
+            <Rate
+              showTip={false}
+              size="normal"
+              value={t.state.score2}
+              onChange={(value) => { t.handleChange('score2', value); }}
+            />
+          </div>
         </div>
       </div>
     );

@@ -1,6 +1,6 @@
 ---
-order: 0
-title: 左侧图标
+order: 1
+title: 右侧图标
 ---
 
 
@@ -81,7 +81,7 @@ class Demo extends React.Component {
       tip: '这里是提示信息',
     };
     return (<div>
-      <RadioField {...radioFieldProps} />
+      <RadioField {...radioFieldProps} iconPosition="right" label="单选（图标在右）" />
     </div>);
   }
 }

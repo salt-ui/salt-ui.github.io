@@ -1,6 +1,6 @@
 ---
-order: 0
-title: 多行文本
+order: 1
+title: 默认
 ---
 
 
@@ -33,19 +33,6 @@ class TextareaFieldDemo extends Component {
     var t = this;
     return (
       <div>
-        <Group.Head className="t-FS14 t-LH1_5 t-LH20 t-PT10 t-PB10 t-PL18">多行文本框</Group.Head>
-        <Group.List>
-          <TextareaField
-            layout="h"
-            label="俩字"
-            minRows={2}
-            maxRows={5}
-            placeholder="设置2个行高"
-            value={t.state.t2}
-            tip={<p>这里有个tip<a href="http://www.taobao.com" target="_blank" rel="noopener noreferrer">这是个链接</a></p>}
-            onChange={(value) => { t.handleChange('t2', value); }}
-          />
-        </Group.List>
         <Group.List>
           <TextareaField
             label="三个字" minRows={2} maxRows={5}
@@ -54,7 +41,6 @@ class TextareaFieldDemo extends Component {
             onChange={(value) => { t.handleChange('t1', value); }}
           />
         </Group.List>
-     
       </div>
     );
   }
