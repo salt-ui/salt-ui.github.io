@@ -7,7 +7,6 @@ title: 查看图片2
 const { Button, ImageViewer } = SaltUI;
 
 
-
 class Demo extends React.Component {
 
   constructor(props) {

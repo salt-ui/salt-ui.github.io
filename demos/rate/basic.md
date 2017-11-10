@@ -40,7 +40,7 @@ class Demo extends React.Component {
             />
           </div>
         </div>
-        
+
         <div className="tFB1">最终结果：</div>
         <div className="rate-wrapper">
           <Rate

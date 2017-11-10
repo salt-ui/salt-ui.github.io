@@ -23,7 +23,7 @@ class Demo extends React.Component {
   render() {
     return (
       <div>
-         <div className="demo-section">
+        <div className="demo-section">
           <div className="section-content">
             <div className="demo-row">
               <div className="demo-cell">

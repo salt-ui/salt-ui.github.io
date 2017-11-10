@@ -13,7 +13,7 @@ class Demo extends React.Component {
   render() {
     return (
       <div>
-        <Steps current={2} showIcon={true} maxDescriptionWidth={10}>
+        <Steps current={2} showIcon maxDescriptionWidth={10}>
           <Step key={0} />
           <Step key={1} />
           <Step key={2} />

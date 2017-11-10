@@ -38,21 +38,15 @@ class Demo extends React.Component {
         </div>
         <div className="t-BCe t-FAC t-LH44">多种颜色的SVG图标</div>
         <Grid col={5} square>
-          {React.Children.toArray(this.state.colorIcons.map((icon) => {
-            return <Icon name={icon} className="demoIcon" />;
-          }))}
+          {React.Children.toArray(this.state.colorIcons.map(icon => <Icon name={icon} className="demoIcon" />))}
         </Grid>
         <div className="t-BCe t-FAC t-LH44">单色SVG图标</div>
         <Grid col={5} square>
-          {React.Children.toArray(this.state.icons.map((icon) => {
-            return <Icon name={icon} className="demoIcon" />;
-          }))}
+          {React.Children.toArray(this.state.icons.map(icon => <Icon name={icon} className="demoIcon" />))}
         </Grid>
         <div className="t-BCe t-FAC t-LH44">单色SVG图标, 设置尺寸和颜色</div>
         <Grid col={5} square>
-          {React.Children.toArray(this.state.icons.map((icon) => {
-            return <Icon name={icon} className="demoIcon2" />;
-          }))}
+          {React.Children.toArray(this.state.icons.map(icon => <Icon name={icon} className="demoIcon2" />))}
           <Icon name="toast-error" fill="#4d9df0" />
           <Icon name="toast-fail" fill="#9462a9" />
           <Icon name="toast-loading" fill="#7bc380" />

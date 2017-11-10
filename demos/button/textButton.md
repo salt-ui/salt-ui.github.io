@@ -23,68 +23,68 @@ class Demo extends React.Component {
   render() {
     return (
       <div>
-          <div className="demo-section">
-            <div className="section-content">
-                <div className="demo-row">
-                <div className="demo-cell">
-                    <TextButton size="small" onClick={this.handleClick}>文字按钮(小)</TextButton>
-                </div>
-                <div className="demo-cell">
-                    <TextButton size="small" disabled onClick={this.handleClick}>文字按钮(小)</TextButton>
-                </div>
-                </div>
-                <div className="demo-row">
-                <div className="demo-cell">
-                    <TextButton onClick={this.handleClick}>文字按钮(中)</TextButton>
-                </div>
-                <div className="demo-cell">
-                    <TextButton disabled onClick={this.handleClick}>文字按钮(中)</TextButton>
-                </div>
-                </div>
-                <div className="demo-row">
-                <div className="demo-cell">
-                    <TextButton size="large" onClick={this.handleClick}>文字按钮(大)</TextButton>
-                </div>
-                <div className="demo-cell">
-                    <TextButton size="large" disabled onClick={this.handleClick}>文字按钮(大)</TextButton>
-                </div>
-                </div>
-                <div className="demo-row">
-                <div className="demo-cell">
-                    <TextButton size="small" onClick={this.handleClick}><Icon name="setting" />文字+图标(小)</TextButton>
-                </div>
-                <div className="demo-cell">
-                    <TextButton size="small" disabled onClick={this.handleClick}><Icon name="setting" />文字+图标(小)</TextButton>
-                </div>
-                </div>
-                <div className="demo-row">
-                <div className="demo-cell">
-                    <TextButton onClick={this.handleClick}><Icon name="setting" />文字+图标(中)</TextButton>
-                </div>
-                <div className="demo-cell">
-                    <TextButton disabled onClick={this.handleClick}><Icon name="setting" />文字+图标(中)</TextButton>
-                </div>
-                </div>
-                <div className="demo-row">
-                <div className="demo-cell">
-                    <TextButton size="large" onClick={this.handleClick}><Icon name="setting" />文字+图标(大)</TextButton>
-                </div>
-                <div className="demo-cell">
-                    <TextButton size="large" disabled onClick={this.handleClick}><Icon name="setting" />文字+图标(大)</TextButton>
-                </div>
-                </div>
-                <div className="demo-row">
-                <div className="demo-cell">
-                    <TextButton type="secondary" size="large" onClick={this.handleClick}>二级按钮</TextButton>
-                </div>
-                <div className="demo-cell">
-                    <TextButton
-                    type="secondary" size="large" disabled
-                    onClick={this.handleClick}
-                    >二级按钮</TextButton>
-                </div>
-                </div>
+        <div className="demo-section">
+          <div className="section-content">
+            <div className="demo-row">
+              <div className="demo-cell">
+                <TextButton size="small" onClick={this.handleClick}>文字按钮(小)</TextButton>
+              </div>
+              <div className="demo-cell">
+                <TextButton size="small" disabled onClick={this.handleClick}>文字按钮(小)</TextButton>
+              </div>
             </div>
+            <div className="demo-row">
+              <div className="demo-cell">
+                <TextButton onClick={this.handleClick}>文字按钮(中)</TextButton>
+              </div>
+              <div className="demo-cell">
+                <TextButton disabled onClick={this.handleClick}>文字按钮(中)</TextButton>
+              </div>
+            </div>
+            <div className="demo-row">
+              <div className="demo-cell">
+                <TextButton size="large" onClick={this.handleClick}>文字按钮(大)</TextButton>
+              </div>
+              <div className="demo-cell">
+                <TextButton size="large" disabled onClick={this.handleClick}>文字按钮(大)</TextButton>
+              </div>
+            </div>
+            <div className="demo-row">
+              <div className="demo-cell">
+                <TextButton size="small" onClick={this.handleClick}><Icon name="setting" />文字+图标(小)</TextButton>
+              </div>
+              <div className="demo-cell">
+                <TextButton size="small" disabled onClick={this.handleClick}><Icon name="setting" />文字+图标(小)</TextButton>
+              </div>
+            </div>
+            <div className="demo-row">
+              <div className="demo-cell">
+                <TextButton onClick={this.handleClick}><Icon name="setting" />文字+图标(中)</TextButton>
+              </div>
+              <div className="demo-cell">
+                <TextButton disabled onClick={this.handleClick}><Icon name="setting" />文字+图标(中)</TextButton>
+              </div>
+            </div>
+            <div className="demo-row">
+              <div className="demo-cell">
+                <TextButton size="large" onClick={this.handleClick}><Icon name="setting" />文字+图标(大)</TextButton>
+              </div>
+              <div className="demo-cell">
+                <TextButton size="large" disabled onClick={this.handleClick}><Icon name="setting" />文字+图标(大)</TextButton>
+              </div>
+            </div>
+            <div className="demo-row">
+              <div className="demo-cell">
+                <TextButton type="secondary" size="large" onClick={this.handleClick}>二级按钮</TextButton>
+              </div>
+              <div className="demo-cell">
+                <TextButton
+                  type="secondary" size="large" disabled
+                  onClick={this.handleClick}
+                >二级按钮</TextButton>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     );

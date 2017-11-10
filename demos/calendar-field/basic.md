@@ -60,7 +60,7 @@ class Demo1 extends React.Component {
 
 ReactDOM.render(
   <div>
-      <Demo1 />
+    <Demo1 />
   </div>, mountNode
 );
 ```

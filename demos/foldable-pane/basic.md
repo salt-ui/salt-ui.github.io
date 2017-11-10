@@ -9,7 +9,7 @@ const { FoldablePane } = SaltUI;
 class Demo extends React.Component {
 
   constructor(props) {
-    super(props); 
+    super(props);
     this.state = {
       fold: true,
       changeText: true,

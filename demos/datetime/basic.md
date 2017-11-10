@@ -41,20 +41,21 @@ class Demo extends React.Component {
     const t = this;
     return (
       <div className="t-datetime-demo">
-      
+
         <Button onClick={() => {
           t.showSlot('slot1');
-        }}>日期选择</Button>
+        }}
+        >日期选择</Button>
         <Datetime
           {...this.datetimeProps}
-          slotRef={(s) => t.slot1 = s}
+          slotRef={s => t.slot1 = s}
           title="日期选择"
           value={t.state.value1}
           columns={Datetime.YMD}
           onConfirm={(value) => { this.onConfirm(value, 'value1'); }}
           onCancel={() => { this.onCancel('value1'); }}
         />
-       
+
       </div>
     );
   }

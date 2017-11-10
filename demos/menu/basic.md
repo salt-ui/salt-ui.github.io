@@ -33,14 +33,13 @@ class Demo extends React.Component {
 
   onSelect({ item, key, selectedKeys }) {
     console.log('选中select ', item, key, selectedKeys);
-    //this.setState({ selectedKeys });
+    // this.setState({ selectedKeys });
   }
 
   onDeselect({ item, key, selectedKeys }) {
     console.log('取消选中select ', item, key, selectedKeys);
-    //this.setState({ selectedKeys });
+    // this.setState({ selectedKeys });
   }
-
 
 
   render() {
@@ -56,17 +55,17 @@ class Demo extends React.Component {
       <div style={style}>
         <p className="menu-demo-title">普通</p>
         <Menu
-        selectedKeys={selectedKeys}
-        openKeys={openKeys}
-        onClick={this.onClick}
-        onSelect={this.onSelect}
-        onDeselect={this.onDeselect}
-        multiple
-      >
-        <MenuItem title="浙江" key="zhejiang" />
-        <MenuItem title="江苏" key="jiangsu" />
-        <MenuItem title="河北" key="hebei" />
-      </Menu>
+          selectedKeys={selectedKeys}
+          openKeys={openKeys}
+          onClick={this.onClick}
+          onSelect={this.onSelect}
+          onDeselect={this.onDeselect}
+          multiple
+        >
+          <MenuItem title="浙江" key="zhejiang" />
+          <MenuItem title="江苏" key="jiangsu" />
+          <MenuItem title="河北" key="hebei" />
+        </Menu>
       </div>
 
     );

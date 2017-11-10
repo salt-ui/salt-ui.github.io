@@ -36,7 +36,8 @@ class Demo extends React.Component {
           showToast({
             type: 'success',
             content: '提交成功你好',
-          }); }}
+          });
+        }}
       >success</Button>
       <Button
         className="demo"

@@ -7,7 +7,6 @@ title: 日期区间选择2
 const { Group, CalendarField } = SaltUI;
 
 
-
 class Demo2 extends React.Component {
 
   constructor(props) {
@@ -23,7 +22,7 @@ class Demo2 extends React.Component {
       //   startDate: 1491111113332,
       //   endDate: 1481111113332, // 错误的情况：endDate < 1491111113332
       // },
-      // value: '2016-01-02', 
+      // value: '2016-01-02',
       // value: {
       //   startDate: null,
       //   endDate: null,
@@ -72,7 +71,7 @@ class Demo2 extends React.Component {
 
 ReactDOM.render(
   <div>
-      <Demo2 />
+    <Demo2 />
   </div>, mountNode
 );
 ```

@@ -83,7 +83,7 @@ class Demo extends React.Component {
 
     const testSpan = <span className="test">测试节点</span>;
     const menu1 = (
-        <Menu
+      <Menu
         selectedKeys={selectedKeys}
         openKeys={openKeys}
         onClick={this.onClick}

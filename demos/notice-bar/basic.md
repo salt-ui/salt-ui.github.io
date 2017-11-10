@@ -30,7 +30,7 @@ class Demo extends React.Component {
             message={'这是一个message这是这是这是这是这是这是这是这是这是这是'}
             type="info"
             visible={this.state.visible}
-            optionsType={"close"}
+            optionsType={'close'}
             onClose={() => {
               t.handleClose();
             }}
@@ -41,7 +41,7 @@ class Demo extends React.Component {
             className="noticeMessage"
             message={'这是一个message'}
             type="success"
-            optionsType={"jumpto"}
+            optionsType={'jumpto'}
             onClick={() => {
               console.log('1');
             }}

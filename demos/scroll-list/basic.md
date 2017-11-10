@@ -44,8 +44,9 @@ const propsMap = [
   },
   {
     title: <span className="newlist-demo-has-icon"><Icon
-    name="map"
-    className="newlist-demo-front-icon" />标题文字</span>,
+      name="map"
+      className="newlist-demo-front-icon"
+    />标题文字</span>,
     extra: <Icon name="direction-right" className="newlist-demo-icon" />,
   },
   {

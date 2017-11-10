@@ -35,7 +35,7 @@ class Demo extends React.Component {
             <div>自定义输入元素的区域, 带图标, 带错误提示</div>
           </Field>
         </Group.List>
-        
+
         <Group.List>
           <Field
             layout="h" label="左右结构" multiLine

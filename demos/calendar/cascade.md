@@ -67,7 +67,8 @@ class Demo extends React.Component {
             animationType: 'slideLeft',
             showHalfDay: false,
           });
-        }}>打开级联日历</Button>
+        }}
+        >打开级联日历</Button>
         <Calendar
           {...this.calendarProps}
           {...this.state}

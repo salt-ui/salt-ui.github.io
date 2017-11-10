@@ -20,7 +20,7 @@ class Demo extends React.Component {
       <div className="demo">
         <Pagination current={55} total={1000} pageSize={10} />
         <br />
-       
+
       </div>
     );
   }

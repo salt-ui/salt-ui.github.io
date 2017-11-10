@@ -59,7 +59,7 @@ class Demo extends React.Component {
           });
         }}
         >向左划出</Button>
-         <Popup
+        <Popup
           content={
             <div>
               <input

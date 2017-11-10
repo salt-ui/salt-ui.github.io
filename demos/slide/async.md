@@ -59,7 +59,7 @@ class SlideDemo extends Component {
                 }}
               />
             )) : [
-              <img width="48" alt="" src="//aliwork.alicdn.com/tps/TB1fPYRMXXXXXcdXFXXXXXXXXXX-480-238.svg"/>,
+              <img width="48" alt="" src="//aliwork.alicdn.com/tps/TB1fPYRMXXXXXcdXFXXXXXXXXXX-480-238.svg" />,
             ]
         }
       </Slide>

@@ -35,7 +35,7 @@ class Demo extends React.Component {
       <div className="demoWrap">
 
         <Button key="show-multi-btn" className="demo" onClick={this.handleShow.bind(this, 'showMultiBtns', true)}>Multi Horizontal Btns</Button>
-       
+
         <Dialog
           show={this.state.showMultiBtns}
           title="多按钮title"
@@ -44,7 +44,7 @@ class Demo extends React.Component {
             {
               content: '按钮1',
               callback: () => { console.log('click btn1'); this.handleShow('showMultiBtns', false); },
-             
+
             },
             {
               content: '按钮2',

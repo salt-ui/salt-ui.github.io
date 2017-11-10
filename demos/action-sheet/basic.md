@@ -26,7 +26,7 @@ class Demo extends React.Component {
   render() {
     return (
       <div>
-      
+
         <Button onClick={() => {
           ActionSheet.show({
             options: ['操作一', '操作二', '操作三', '清空聊天记录'],
@@ -38,7 +38,7 @@ class Demo extends React.Component {
           });
         }}
         >默认状态</Button>
-       
+
       </div>
     );
   }

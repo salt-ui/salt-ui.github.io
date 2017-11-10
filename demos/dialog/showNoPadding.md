@@ -22,7 +22,6 @@ class Demo extends React.Component {
     };
   }
 
-  
 
   handleMultiLines() {
     Dialog.alert({

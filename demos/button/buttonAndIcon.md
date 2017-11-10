@@ -24,19 +24,19 @@ class Demo extends React.Component {
     return (
       <div>
         <div classNmme="demo-section">
-            <div className="section-content">
-                <Button type="primary" onClick={this.handleClick}><Icon name="setting" />一级按钮</Button>
-                <br />
-                <Button type="secondary" onClick={this.handleClick}><Icon name="setting" />二级按钮</Button>
-                <br />
-                <Button type="minor" onClick={this.handleClick}><Icon name="setting" />次要按钮</Button>
-                <br />
-                <Button disabled><Icon name="setting" />失效按钮</Button>
-                <br />
-                <Button type="danger"><Icon name="setting" />危险按钮</Button>
-                <br />
-            </div>
+          <div className="section-content">
+            <Button type="primary" onClick={this.handleClick}><Icon name="setting" />一级按钮</Button>
+            <br />
+            <Button type="secondary" onClick={this.handleClick}><Icon name="setting" />二级按钮</Button>
+            <br />
+            <Button type="minor" onClick={this.handleClick}><Icon name="setting" />次要按钮</Button>
+            <br />
+            <Button disabled><Icon name="setting" />失效按钮</Button>
+            <br />
+            <Button type="danger"><Icon name="setting" />危险按钮</Button>
+            <br />
           </div>
+        </div>
       </div>
     );
   }

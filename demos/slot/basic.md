@@ -20,8 +20,8 @@ class SlotDemo extends Component {
     ]);
 
     this.state = {
-      data: data, // 数据模型
-      value: value, // 选中的值
+      data, // 数据模型
+      value, // 选中的值
       confirmedValue: value, // 上次选中的值（取消选择时恢复用）
     };
 
@@ -39,7 +39,7 @@ class SlotDemo extends Component {
     // 确认选中项目
     this.setState({
       confirmedValue: value,
-      value: value,
+      value,
     });
   }
 
@@ -74,7 +74,8 @@ class SlotDemo extends Component {
           title="选择日期"
           onConfirm={this.handleConfirm}
           onChange={this.handleChange}
-          onCancel={this.handleCancel}/>
+          onCancel={this.handleCancel}
+        />
       </div>
     );
   }

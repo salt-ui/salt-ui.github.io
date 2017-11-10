@@ -32,13 +32,13 @@ class SelectFieldDemo extends Component {
 
   handleChange(value) {
     this.setState({
-      value: value
+      value,
     });
   }
 
   handleChange1(value) {
     this.setState({
-      value1: value
+      value1: value,
     });
   }
 
@@ -69,7 +69,7 @@ class SelectFieldDemo extends Component {
             label="不可选"
             options={monthArray}
             value={this.state.value1}
-            readOnly={true}
+            readOnly
           />
         </Group.List>
       </Group>

@@ -44,7 +44,7 @@ class Demo extends React.Component {
           />
         </Group.List>
       </div>
-      );
+    );
   }
 }
 

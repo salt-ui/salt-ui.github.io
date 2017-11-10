@@ -47,7 +47,7 @@ class Demo extends React.Component {
             });
         }}
         >手动控制关闭 Popup</Button>
-         <Popup
+        <Popup
           content={
             <div>
               <input

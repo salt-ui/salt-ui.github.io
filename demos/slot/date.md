@@ -18,23 +18,23 @@ class SlotDemo extends Component {
     // 数据格式化
     const { data, value } = Slot.formatDataValue(
       [
-        [ 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009,
-          2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019 ],
-        [ { text: 'Jan', value: 0 }, { text: 'Feb', value: 1 },
+        [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009,
+          2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019],
+        [{ text: 'Jan', value: 0 }, { text: 'Feb', value: 1 },
           { text: 'Mar', value: 2 }, { text: 'Apr', value: 3 },
           { text: 'May', value: 4 }, { text: 'Jun', value: 5 },
           { text: 'Jul', value: 6 }, { text: 'Aug', value: 7 },
           { text: 'Sep', value: 8 }, { text: 'Oct', value: 9 },
-          { text: 'Nov', value: 10 }, { text: 'Dec', value: 11 } ],
-        getDates(now.getFullYear(), now.getMonth()) // [ 1, 2, 3, ..., 31 ]
+          { text: 'Nov', value: 10 }, { text: 'Dec', value: 11 }],
+        getDates(now.getFullYear(), now.getMonth()), // [ 1, 2, 3, ..., 31 ]
       ],
-      [ now.getFullYear(), now.getMonth(), now.getDate() ] // [ 2015, 8, 7 ]
+      [now.getFullYear(), now.getMonth(), now.getDate()] // [ 2015, 8, 7 ]
     );
 
     this.state = {
-      data: data, // 数据模型
-      value: value, // 选中的值
-      confirmedValue: value // 上次选中的值（取消选择时恢复用）
+      data, // 数据模型
+      value, // 选中的值
+      confirmedValue: value, // 上次选中的值（取消选择时恢复用）
     };
 
     this.showSlot = this.showSlot.bind(this);
@@ -51,42 +51,37 @@ class SlotDemo extends Component {
     // 确认选中项目
     this.setState({
       confirmedValue: value,
-      value: value
+      value,
     });
   }
 
   handleChange(value, column, index) {
     let dates;
     if (column === 1) {
-
       // 改变了月份，会导致月内天数的改变
       dates = getDates(value[0].value, value[1].value);
-
     } else if (column === 0 && value[1].value === 1) {
-
       // 改变了年份，会导致 2 月天数的改变
       dates = getDates(value[0].value, 1);
     }
     if (dates) {
-
       // 同时变更日期和选中项
       const ret = Slot.formatColumnValue(dates, value[2]);
       value[2] = ret.columnValue;
       this.setState(React.addons.update(this.state, {
         data: {
-          [2]: {
-            $set: ret.columnData
-          }
+          2: {
+            $set: ret.columnData,
+          },
         },
         value: {
-          $set: value
-        }
+          $set: value,
+        },
       }));
     } else {
-
       // 仅改变了选中项
       this.setState({
-        value: value
+        value,
       });
     }
   }
@@ -99,13 +94,13 @@ class SlotDemo extends Component {
 
     this.setState(React.addons.update(this.state, {
       data: {
-        [2]: {
-          $set: ret.columnData
-        }
+        2: {
+          $set: ret.columnData,
+        },
       },
       value: {
-        $set: value
-      }
+        $set: value,
+      },
     }));
   }
 
@@ -116,17 +111,18 @@ class SlotDemo extends Component {
           <div>
             <Button size="large" onClick={this.showSlot}>show slot</Button>
           </div>
-          <div>确认值：{this.state.confirmedValue[2].text + ' ' + this.state.confirmedValue[1].text + ' ' + this.state.confirmedValue[0].text}</div>
-          <div>临时值：{this.state.value[2].text + ' ' + this.state.value[1].text + ' ' + this.state.value[0].text}</div>
+          <div>确认值：{`${this.state.confirmedValue[2].text} ${this.state.confirmedValue[1].text} ${this.state.confirmedValue[0].text}`}</div>
+          <div>临时值：{`${this.state.value[2].text} ${this.state.value[1].text} ${this.state.value[0].text}`}</div>
         </div>
         <Slot ref="slot" data={this.state.data}
-            value={this.state.value}
-            title="选择日期" onConfirm={this.handleConfirm}
-            onChange={this.handleChange} onCancel={this.handleCancel}/>
+          value={this.state.value}
+          title="选择日期" onConfirm={this.handleConfirm}
+          onChange={this.handleChange} onCancel={this.handleCancel}
+        />
       </div>
     );
   }
-};
+}
 
 // 是否是闰年的判断
 function isLeapYear(year) {

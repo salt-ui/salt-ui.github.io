@@ -35,7 +35,7 @@ class Demo extends React.Component {
       <div className="demoWrap">
 
         <Button key="show-trans" className="demo" onClick={this.handleShow.bind(this, 'showTransBg', true)}>showTransBg</Button>
-       
+
         <Dialog
           content={<img style={{ width: '100%' }} src="https://img.alicdn.com/tfs/TB1YhbHQpXXXXcNapXXXXXXXXXX-546-506.png" alt="图片" />}
           show={this.state.showTransBg}

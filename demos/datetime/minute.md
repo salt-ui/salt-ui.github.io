@@ -43,10 +43,11 @@ class Demo extends React.Component {
       <div className="t-datetime-demo">
         <Button onClick={() => {
           t.showSlot('slot3');
-        }}>时间选择</Button>
+        }}
+        >时间选择</Button>
         <Datetime
           {...this.datetimeProps}
-          slotRef={(s) => t.slot3 = s}
+          slotRef={s => t.slot3 = s}
           title="时间选择"
           value={t.state.value3}
           columns={Datetime.YMDWHM}

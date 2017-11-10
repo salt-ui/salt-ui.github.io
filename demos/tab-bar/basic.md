@@ -4,7 +4,6 @@ title: 基础使用
 ---
 
 ```jsx
-const { Component } = React;
 const { TabBar, Icon } = SaltUI;
 
 class Demo extends React.Component {

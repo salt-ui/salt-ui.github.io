@@ -16,13 +16,13 @@ class SwitchDemo extends Component {
     this.state = {
       on1: true,
       on2: false,
-      on3: false
-    }
+      on3: false,
+    };
   }
 
   handleChange(from, on) {
     this.setState({
-      [from]: on
+      [from]: on,
     });
   }
 

@@ -9,11 +9,11 @@ const testData = [{
   label: '范范',
   key: '023456',
   avater: 'http://www.xxxxxx.com/aaa.jpg',
-},{
+}, {
   label: '笑笑',
   key: '023457',
   avater: 'http://www.xxxxxx.com/aaa.jpg',
-},{
+}, {
   label: '闹闹',
   key: '023458',
   avater: 'http://www.xxxxxx.com/aaa.jpg',

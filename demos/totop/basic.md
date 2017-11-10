@@ -58,8 +58,7 @@ class Demo extends React.Component {
           customChildren={false}
           to={100}
           size="large"
-        >
-        </Totop>
+        />
       </div>
     );
   }

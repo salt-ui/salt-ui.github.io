@@ -6,9 +6,7 @@ title: 基本使用
 ```jsx
 const { InfiniteScroll } = SaltUI;
 
-const Item = (props) => {
-  return <div className="demo-item">{props.children}</div>;
-}
+const Item = props => <div className="demo-item">{props.children}</div>;
 
 class Demo extends React.Component {
 

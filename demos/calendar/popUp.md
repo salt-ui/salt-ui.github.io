@@ -67,7 +67,8 @@ class Demo extends React.Component {
             animationType: 'slideUp',
             showHalfDay: true,
           });
-        }}>展示Popup模式</Button>
+        }}
+        >展示Popup模式</Button>
         <Calendar
           {...this.calendarProps}
           {...this.state}

@@ -15,19 +15,19 @@ class Demo extends React.Component {
     super(props);
     this.state = {
       n: 1,
-      list: [0,1,2,3,4,5,6]
-    }
+      list: [0, 1, 2, 3, 4, 5, 6],
+    };
   }
 
   add() {
-    let t = this;
+    const t = this;
     t.setState({
-      n: t.state.n + 1
+      n: t.state.n + 1,
     });
   }
 
   render() {
-    let t = this;
+    const t = this;
     return (
       <div>
         <Grid col={4} className="t-BCf" square>
@@ -70,7 +70,7 @@ class Demo extends React.Component {
       </div>
     );
   }
-};
+}
 
 ReactDOM.render(
   <Demo />, mountNode

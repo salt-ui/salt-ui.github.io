@@ -26,7 +26,7 @@ class Demo extends React.Component {
   render() {
     return (
       <div>
-        
+
         <Button onClick={() => {
           ActionSheet.showShare({
             options: iconList,
@@ -36,7 +36,7 @@ class Demo extends React.Component {
           });
         }}
         >分享面板</Button>
-       
+
       </div>
     );
   }

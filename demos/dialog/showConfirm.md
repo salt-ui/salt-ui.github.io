@@ -44,7 +44,7 @@ class Demo extends React.Component {
           onConfirm={() => { console.log('confirm confirm'); this.handleShow('showConfirm', false); }}
           onCancel={() => { console.log('cancel confirm'); this.handleShow('showConfirm', false); }}
         >
-          {/*<textarea value={this.state.text} onChange={e => this.setState({ text: e.target.value })} />*/}
+          {/* <textarea value={this.state.text} onChange={e => this.setState({ text: e.target.value })} />*/}
           <h3>{this.state.text}</h3>
         </Dialog>
 

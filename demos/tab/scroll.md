@@ -12,25 +12,23 @@ ReactDOM.render(
     active={'2'}
     showScroll
   >
-    <Tab.Item title="头条" data={{"customKey1":"自定义值1","customKey2":"自定义值2"}}>
-    <div className="t-LH1_5 t-P10">
+    <Tab.Item title="头条" data={{ customKey1: '自定义值1', customKey2: '自定义值2' }}>
+      <div className="t-LH1_5 t-P10">
        与 Angular，Ember，Backbone 等等比起来 React 的表现如何？要如何处理数据？要如何连接服务器？JSX 到底是什么？“组件”又是如何定义的？
-    </div>
+      </div>
     </Tab.Item>
     <Tab.Item title="移动互联">
-     <div className="t-LH1_5 t-P10">
+      <div className="t-LH1_5 t-P10">
        移动互联网，就是将移动通信和互联网二者结合起来，成为一体。是指互联网的技术、平台、商业模式和应用与移动通信技术结合并实践的活动的总称。4G时代的开启以及移动终端设备的凸显必将为移动互联网的发展注入巨大的能量，2014年移动互联网...
-    </div>
+      </div>
     </Tab.Item>
     <Tab.Item title="热点">
-     <div className="t-LH1_5 t-P10">
+      <div className="t-LH1_5 t-P10">
        今日新闻网传播新闻事实,关注最近热点新闻事件,最新新闻报道国内、国际、财经、房产、娱乐、体育、消费、数码科技等新闻消息,今日关注探寻热点新闻事件真相,对今日关注...
-    </div>
+      </div>
     </Tab.Item>
     <Tab.Item title="杭州">
-    <div className="demoListView tM10">
-      
-    </div>
+      <div className="demoListView tM10" />
     </Tab.Item>
     <Tab.Item title="房产"> <div className="t-LH1_5 t-P10">
        搜房网房天下是中国最大的房地产家居网络平台,提供全面及时的房地产新闻资讯内容,为所有楼盘提供网上浏览、业主论坛和社区网站,房地产精英人物个人主页,是国内房地产

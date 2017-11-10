@@ -34,24 +34,24 @@ class SwitchFieldDemo extends Component {
           <SwitchField
             label="默认选中"
             on={this.state.on}
-            onChange={this.handleChange.bind(this,'on')}
+            onChange={this.handleChange.bind(this, 'on')}
           />
           <SwitchField
             label="默认没选中"
             on={this.state.on1}
-            onChange={this.handleChange.bind(this,'on1')}
+            onChange={this.handleChange.bind(this, 'on1')}
           />
           <SwitchField
             label="不可选"
             on={this.state.on2}
             readOnly
-            onChange={this.handleChange.bind(this,'on2')}
+            onChange={this.handleChange.bind(this, 'on2')}
           />
           <SwitchField
             label="不可选"
             on={this.state.on3}
             readOnly
-            onChange={this.handleChange.bind(this,'on3')}
+            onChange={this.handleChange.bind(this, 'on3')}
           />
         </Group.List>
       </Group>
