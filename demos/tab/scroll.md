@@ -9,7 +9,7 @@ const { Tab } = SaltUI;
 
 ReactDOM.render(
   <Tab
-    active={2}
+    active={'2'}
     showScroll
   >
     <Tab.Item title="头条" data={{"customKey1":"自定义值1","customKey2":"自定义值2"}}>

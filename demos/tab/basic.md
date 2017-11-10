@@ -7,7 +7,7 @@ title: 基础使用
 const { Tab } = SaltUI;
 
 ReactDOM.render(
-  <Tab active={1}>
+  <Tab active={'1'}>
     <Tab.Item title="已完成">
 
     </Tab.Item>
