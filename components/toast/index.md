@@ -93,8 +93,6 @@ height
 * 默认：'auto'
 * 必填：否
 
-#### hide(onDidHide)
-
 onDidHide
 
 * 描述：关闭后的回调函数
@@ -116,7 +114,5 @@ transitionName
 * 默认：'fix-top',包括'fix-top', 'fix-bottom'
 * 必填：否
 
+#### hide(onDidHide)
 
-## Links
-
-- [Issues](https://github.com/salt-ui/saltui/issues/new)
