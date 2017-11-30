@@ -48,7 +48,7 @@ export const NAV_MAP = {
     zh: '步骤',
     type: 'Navigation',
   },
- 
+
   badge: {
     zh: '角标',
     type: 'Display',
@@ -67,11 +67,11 @@ export const NAV_MAP = {
   },
   datetime: {
     zh: '日期选择组件',
-    type: 'Display'
+    type: 'Display',
   },
   'foldable-pane': {
     zh: '折叠版面',
-    type: 'Display'
+    type: 'Display',
   },
   'number-picker': {
     zh: '数字步进器',
@@ -87,7 +87,7 @@ export const NAV_MAP = {
   },
   'notice-bar': {
     zh: '提示信息',
-    type: 'Display'
+    type: 'Display',
   },
   gallery: {
     zh: '图片轮播',
@@ -105,7 +105,7 @@ export const NAV_MAP = {
     zh: '滚动刷新',
     type: 'Display',
   },
-  'refreshcontrol-scroll': {
+  refreshcontrol: {
     zh: '下拉刷新',
     type: 'Display',
   },
@@ -159,7 +159,7 @@ export const NAV_MAP = {
   },
   totop: {
     zh: '返回顶部',
-    type: 'Display'
+    type: 'Display',
   },
 
 
@@ -201,7 +201,7 @@ export const NAV_MAP = {
   },
   'rate-field': {
     zh: '评分表单',
-    type: 'Form'
+    type: 'Form',
   },
   'select-field': {
     zh: '选择表单',
@@ -225,7 +225,7 @@ export const NAV_MAP = {
   },
   'password-input': {
     zh: '密码输入框',
-    type: 'Form'
+    type: 'Form',
   },
   'picker-filed': {
     zh: '选择器',
@@ -237,8 +237,8 @@ export const NAV_MAP = {
   },
 
   'action-sheet': {
-    zh:'动作版面',
-    type:'Feedback'
+    zh: '动作版面',
+    type: 'Feedback',
   },
   dialog: {
     zh: '提示窗',
@@ -262,9 +262,9 @@ export const NAV_MAP = {
   },
   popover: {
     zh: '气泡菜单',
-    type: 'Feedback'
+    type: 'Feedback',
   },
-  
+
   context: {
     zh: '上下文',
     type: 'Other',
