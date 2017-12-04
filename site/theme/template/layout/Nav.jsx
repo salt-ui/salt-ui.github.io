@@ -26,6 +26,9 @@ const nav = (props) => {
     if (key === 'history') {
       window.open('https://github.com/salt-ui/saltui/blob/master/CHANGELOG.md', '_blank');
     }
+    if (key === 'start') {
+      window.open('https://github.com/salt-ui/saltui/blob/master/README.md', '_blank');
+    }
   };
   const onSelect = key => router.push(`/components/${key}`);
   const selectedKeys = [];
@@ -33,7 +36,7 @@ const nav = (props) => {
   const eleUI = document.getElementById('ui-theme');
 
   if (params.component) {
-    selectedKeys.push(params.component === 'tingle-ui' ? '/components/tingle-ui' : '/components/tingle-button');
+    selectedKeys.push('/components/button');
   } else {
     selectedKeys.push('/');
   }
@@ -89,6 +92,7 @@ const nav = (props) => {
         <Menu.Item key="/">首页</Menu.Item>
         <Menu.Item key="/components/button">组件</Menu.Item>
         <Menu.Item key="history">历史</Menu.Item>
+        <Menu.Item key="start">开始使用</Menu.Item>
       </Menu>
     </div>
   );
