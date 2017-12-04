@@ -1,4 +1,4 @@
-# tingle-icon
+# salt-icon
 
 ## 预览
 ![image](https://img.alicdn.com/tfs/TB1UTkQSXXXXXXQaXXXXXXXXXXX-1068-2376.png)
@@ -6,7 +6,7 @@
 ## Install
 
 ```
-tnpm install @ali/tingle-icon --save
+tnpm install salt-icon --save
 
 ```
 
@@ -15,7 +15,7 @@ tnpm install @ali/tingle-icon --save
 - 方式一（推荐）：
 
 ```js
-import Eye from '@ali/tingle-icon/lib/Eye';
+import Eye from 'salt-icon/lib/Eye';
 
 render() {
     return <Eye />
@@ -25,7 +25,7 @@ render() {
 - 方式二：
 
 ```js
-import Icon from '@tingle-icon';
+import Icon from 'salt-icon';
 
 render() {
     return <Icon name='icon-name'/>
@@ -35,7 +35,7 @@ render() {
 - 方法三：（不推荐）
 
 ```js
-import Icon from '@tingle-icon/dist/Symbol';
+import Icon from 'salt-icon/dist/Symbol';
 
 render() {
     return <Icon name='icon-name'/>
@@ -96,3 +96,7 @@ render() {
 类型：Function
 
 默认：`() => {}`
+
+## Links
+
+- [Issues](http://gitlab.alibaba-inc.com/tingle-ui/tingle-icon/issues)

@@ -16,3 +16,5 @@ docs.forEach((md) => {
   }
   runCmd('cp', ['-rf', `${docPath}/${md}`, `${dirPath}/index.md`]);
 });
+
+runCmd('cp', ['-rf', './node_modules/salt-icon/README.md', './components/Icon/index.md']);
