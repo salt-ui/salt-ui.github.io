@@ -4,8 +4,9 @@ title: 使用场景
 ---
 
 ```jsx
-import { Context, Card } from 'saltui';
-import { Eye, StartLine } from 'salt-icon';
+
+import { Context, Card, Icon } from 'saltui';
+import { Eye } from 'salt-icon';
 
 class Demo extends React.Component {
 
@@ -42,7 +43,7 @@ class Demo extends React.Component {
                   <span className="card-eye-count">12</span>
                 </span>
                 <span className="card-footer-meta-item">
-                  <StartLine className="card-icon" />
+                  <Eye className="card-icon" />
                   <span className="card-like-count">12</span>
                 </span>
               </div>

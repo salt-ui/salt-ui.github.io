@@ -5,7 +5,8 @@ title: 卡片通栏
 
 ```jsx
 
-import { Context, Card } from 'saltui';
+import { Card } from 'saltui';
+
 class Demo extends React.Component {
 
   constructor(props) {
