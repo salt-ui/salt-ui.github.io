@@ -6,8 +6,9 @@ title: 基础使用
 
 
 ```jsx
+import { Group, SwitchField } from 'saltui';
+
 const { Component } = React;
-const { Group, SwitchField } = SaltUI;
 
 class SwitchFieldDemo extends Component {
 

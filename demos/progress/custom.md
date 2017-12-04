@@ -4,7 +4,7 @@ title: 自定义样式
 ---
 
 ```jsx
-const { Progress } = SaltUI;
+import { Progress } from 'saltui';
 
 class Demo extends React.Component {
 

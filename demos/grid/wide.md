@@ -6,8 +6,11 @@ title: 高宽不相等
 
 
 ```jsx
-const { Grid, Icon, Badge } = SaltUI;
-
+import { Grid, Badge } from 'saltui';
+import User from 'salt-icon/lib/User';
+import Time from 'salt-icon/lib/Time';
+import Map from 'salt-icon/lib/Map';
+import Star from 'salt-icon/lib/Star';
 
 class Demo extends React.Component {
 
@@ -31,29 +34,29 @@ class Demo extends React.Component {
     return (
       <div>
         <Grid col={2} className="t-BCf t-MB30">
-          <div className="t-FBH t-FBAC demo-cell" onClick={t.add.bind(t)}>
-            <div className="icon-round t-FBH t-FBJC t-FBAC"><Icon name="user" fill={'#42A5F5'} /></div>&nbsp;&nbsp;
+          <div className="t-FBH t-FBAC demo-cell" onClick={() => { t.add(); }}>
+            <div className="icon-round t-FBH t-FBJC t-FBAC"><User fill={'#42A5F5'} /></div>&nbsp;&nbsp;
             <div className="t-FBV t-FBJC icon-desc">
               <h5>标题文字 <Badge count={99} /></h5>
               <p>协议优先，信用支付</p>
             </div>
           </div>
-          <div className="t-FBH t-FBAC demo-cell" onClick={t.add.bind(t)}>
-            <div className="icon-round t-FBH t-FBJC t-FBAC"><Icon name="time" fill={'#FF8A65'} /></div>&nbsp;&nbsp;
+          <div className="t-FBH t-FBAC demo-cell" onClick={() => { t.add(); }}>
+            <div className="icon-round t-FBH t-FBJC t-FBAC"><Time fill={'#FF8A65'} /></div>&nbsp;&nbsp;
             <div className="t-FBV t-FBJC icon-desc">
               <h5>标题文字</h5>
               <p>协议优先，信用支付</p>
             </div>
           </div>
-          <div className="t-FBH t-FBAC demo-cell" onClick={t.add.bind(t)}>
-            <div className="icon-round t-FBH t-FBJC t-FBAC"><Icon name="star" fill={'#EA80FC'} /></div>&nbsp;&nbsp;
+          <div className="t-FBH t-FBAC demo-cell" onClick={() => { t.add(); }}>
+            <div className="icon-round t-FBH t-FBJC t-FBAC"><Star fill={'#EA80FC'} /></div>&nbsp;&nbsp;
             <div className="t-FBV t-FBJC icon-desc">
               <h5>标题文字 <Badge dot /></h5>
               <p>协议优先，信用支付</p>
             </div>
           </div>
-          <div className="t-FBH t-FBAC demo-cell" onClick={t.add.bind(t)}>
-            <div className="icon-round t-FBH t-FBJC t-FBAC"><Icon name="map" fill={'#EF9A9A'} /></div>&nbsp;&nbsp;
+          <div className="t-FBH t-FBAC demo-cell" onClick={() => { t.add(); }}>
+            <div className="icon-round t-FBH t-FBJC t-FBAC"><Map fill={'#EF9A9A'} /></div>&nbsp;&nbsp;
             <div className="t-FBV t-FBJC icon-desc">
               <h5>标题文字</h5>
               <p>协议优先，信用支付</p>

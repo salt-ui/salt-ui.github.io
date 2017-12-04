@@ -4,7 +4,7 @@ title: 查看图片2
 ---
 
 ```jsx
-const { Button, ImageViewer } = SaltUI;
+import { Button, ImageViewer } from 'saltui';
 
 
 class Demo extends React.Component {

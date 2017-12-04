@@ -6,7 +6,13 @@ title: 基本使用
 
 
 ```jsx
-const { Icon, Grid } = SaltUI;
+import { Grid } from 'saltui';
+import Icon from 'salt-icon';
+import ToastError from 'salt-icon/lib/ToastError';
+import ToastFail from 'salt-icon/lib/ToastFail';
+import ToastLoading from 'salt-icon/lib/ToastLoading';
+import ToastSuccess from 'salt-icon/lib/ToastSuccess';
+import PlusCircle from 'salt-icon/lib/PlusCircle';
 
 class Demo extends React.Component {
 
@@ -47,11 +53,11 @@ class Demo extends React.Component {
         <div className="t-BCe t-FAC t-LH44">单色SVG图标, 设置尺寸和颜色</div>
         <Grid col={5} square>
           {React.Children.toArray(this.state.icons.map(icon => <Icon name={icon} className="demoIcon2" />))}
-          <Icon name="toast-error" fill="#4d9df0" />
-          <Icon name="toast-fail" fill="#9462a9" />
-          <Icon name="toast-loading" fill="#7bc380" />
-          <Icon name="toast-success" fill="#942a09" />
-          <Icon name="plus-circle" fill="#e65100" />
+          <ToastError fill="#4d9df0" />
+          <ToastFail fill="#9462a9" />
+          <ToastLoading fill="#7bc380" />
+          <ToastSuccess fill="#942a09" />
+          <PlusCircle fill="#e65100" />
         </Grid>
       </div>
     );

@@ -4,7 +4,7 @@ title: 不可编辑(按钮不可操作)
 ---
 
 ```jsx
-const { NumberPicker } = SaltUI;
+import { NumberPicker } from 'saltui';
 
 class Demo extends React.Component {
 

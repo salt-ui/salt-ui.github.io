@@ -6,7 +6,7 @@ title: 列表项有空值(null, undefined, '')的情况
 
 
 ```jsx
-const { Group } = SaltUI;
+import { Group } from 'saltui';
 
 class Demo extends React.Component {
 

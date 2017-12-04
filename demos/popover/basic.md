@@ -4,7 +4,8 @@ title: 基本使用
 ---
 
 ```jsx
-const { Menu, Popover } = SaltUI;
+import { Menu, Popover } from 'saltui';
+
 const { MenuItem } = Menu;
 
 const text = (

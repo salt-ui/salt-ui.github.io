@@ -4,7 +4,7 @@ title: Alert
 ---
 
 ```jsx
-const { Button, Dialog } = SaltUI;
+import { Button, Dialog } from 'saltui';
 
 class Demo extends React.Component {
 

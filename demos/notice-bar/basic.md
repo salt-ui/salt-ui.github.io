@@ -4,7 +4,7 @@ title: 基本使用
 ---
 
 ```jsx
-const { NoticeBar, Button } = SaltUI;
+import { NoticeBar, Button } from 'saltui';
 
 class Demo extends React.Component {
 

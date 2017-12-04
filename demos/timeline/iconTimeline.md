@@ -4,7 +4,8 @@ title: 带图标TimeLine
 ---
 
 ```jsx
-const { Timeline, Icon } = SaltUI;
+import { Timeline } from 'saltui';
+import Time from 'salt-icon/lib/Time';
 
 class Demo extends React.Component {
 
@@ -15,7 +16,7 @@ class Demo extends React.Component {
         <Timeline>
           <Timeline.Item
             description="2017/05/10"
-            icon={<Icon name="time" />}
+            icon={<Time />}
             active
           >
             设计平台是信息平台UED重要的基石，是团队进行设计活动所依赖的标准和方法。

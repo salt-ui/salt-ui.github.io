@@ -4,7 +4,7 @@ title: 基本使用
 ---
 
 ```jsx
-const { Gallery } = SaltUI;
+import { Gallery } from 'saltui';
 
 class Demo extends React.Component {
 

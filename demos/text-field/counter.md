@@ -6,9 +6,9 @@ title: 计数器
 
 
 ```jsx
-const { Group, TextField, Toast } = SaltUI;
+import { Group, TextField } from 'saltui';
 
-const { LeftAddon, RightAddon, Count } = TextField;
+const { Count } = TextField;
 
 const numberRegExp = /^(\d+\.\d*)|(\d+\.)|\d+/;
 

@@ -5,7 +5,7 @@ title: 标题滚动
 
 
 ```jsx
-const { Tab } = SaltUI;
+import { Tab } from 'saltui';
 
 ReactDOM.render(
   <Tab

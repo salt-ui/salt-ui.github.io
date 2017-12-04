@@ -6,8 +6,8 @@ title: 带容器的搜索栏
 
 
 ```jsx
-const { Component } = React;
-const { SearchBar } = SaltUI;
+import { SearchBar } from 'saltui';
+
 const { WithContainer } = SearchBar;
 
 // build之后, 测试一下下面一行, 把上面一行注释掉
@@ -41,7 +41,6 @@ class List extends React.Component {
 }
 
 class Demo extends React.Component {
-
   render() {
     const t = this;
     const props = {

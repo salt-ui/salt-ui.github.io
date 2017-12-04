@@ -4,7 +4,7 @@ title: 基本使用
 ---
 
 ```jsx
-const { ScrollView } = SaltUI;
+import { ScrollView } from 'saltui';
 
 class Item extends React.Component {
   static defaultProps = {

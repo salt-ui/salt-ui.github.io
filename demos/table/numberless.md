@@ -6,7 +6,7 @@ title: 无数据
 
 
 ```jsx
-const { Table } = SaltUI;
+import { Table } from 'saltui';
 
 class Demo extends React.Component {
 

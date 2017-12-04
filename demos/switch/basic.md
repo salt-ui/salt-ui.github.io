@@ -6,8 +6,9 @@ title: 基础使用
 
 
 ```jsx
+import { Switch } from 'saltui';
+
 const { Component } = React;
-const { Switch } = SaltUI;
 
 class SwitchDemo extends Component {
 

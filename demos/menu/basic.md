@@ -4,7 +4,7 @@ title: 基本类型使用
 ---
 
 ```jsx
-const { Menu, Icon, Badge, Button, Popup, Popover } = SaltUI;
+import { Menu } from 'saltui';
 
 const { MenuItem } = Menu;
 

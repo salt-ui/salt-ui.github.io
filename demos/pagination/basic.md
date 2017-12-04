@@ -4,7 +4,7 @@ title: 默认
 ---
 
 ```jsx
-const { Pagination } = SaltUI;
+import { Pagination } from 'saltui';
 
 class Demo extends React.Component {
 

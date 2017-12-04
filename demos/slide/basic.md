@@ -6,8 +6,9 @@ title: 基础使用
 
 
 ```jsx
+import { Slide } from 'saltui';
+
 const { Component } = React;
-const { Slide } = SaltUI;
 
 class SlideDemo extends Component {
   constructor(props) {

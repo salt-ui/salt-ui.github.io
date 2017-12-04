@@ -6,7 +6,7 @@ title: 默认样式
 
 
 ```jsx
-const { Group } = SaltUI;
+import { Group } from 'saltui';
 
 class Demo extends React.Component {
 

@@ -4,7 +4,9 @@ title: 基础使用
 ---
 
 ```jsx
-const { TabBar, Icon } = SaltUI;
+import { TabBar } from 'saltui';
+import Time from 'salt-icon/lib/Time';
+import Plus from 'salt-icon/lib/Plus';
 
 class Demo extends React.Component {
   constructor(props) {
@@ -15,37 +17,37 @@ class Demo extends React.Component {
     this.tabBarItems = [
       {
         title: '首页',
-        icon: <Icon name="time" />,
+        icon: <Time />,
         path: '/star',
       },
       {
         title: '收藏',
-        icon: <Icon name="time" />,
+        icon: <Time />,
         badge: 'new',
         badgeStyle: { right: -5 },
         path: '/a/star',
       },
       {
         title: '隐藏',
-        icon: <Icon name="plus" />,
+        icon: <Plus />,
         iconHeight: 40,
         items: [{
           title: '用户',
-          icon: <Icon name="time" />,
+          icon: <Time />,
           badge: 8,
           name: 'user',
           path: '/b/user',
         }, {
           title: '时间',
-          icon: <Icon name="time" />,
+          icon: <Time />,
           badge: 8,
           name: 'time',
           path: '/b/time',
         }],
         path: '/center',
       },
-      { title: '地图', icon: <Icon name="time" />, badge: 8, path: '/b/star' },
-      { title: '我的', icon: <Icon name="time" />, badge: 8, path: '/c/star' },
+      { title: '地图', icon: <Time />, badge: 8, path: '/b/star' },
+      { title: '我的', icon: <Time />, badge: 8, path: '/c/star' },
     ];
   }
 

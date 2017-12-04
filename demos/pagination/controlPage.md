@@ -4,7 +4,7 @@ title: 外部控制页码
 ---
 
 ```jsx
-const { Pagination } = SaltUI;
+import { Pagination } from 'saltui';
 
 class Demo extends React.Component {
 

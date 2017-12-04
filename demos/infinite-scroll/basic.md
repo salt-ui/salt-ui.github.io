@@ -4,7 +4,7 @@ title: 基本使用
 ---
 
 ```jsx
-const { InfiniteScroll } = SaltUI;
+import { InfiniteScroll } from 'saltui';
 
 const Item = props => <div className="demo-item">{props.children}</div>;
 

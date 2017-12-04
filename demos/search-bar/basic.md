@@ -6,39 +6,8 @@ title: 搜索栏
 
 
 ```jsx
-const { Component } = React;
-const { SearchBar } = SaltUI;
-const { WithContainer } = SearchBar;
 
-// build之后, 测试一下下面一行, 把上面一行注释掉
-// const SearchBar = require('../../dist');
-
-class List extends React.Component {
-
-  constructor(props) {
-    super(props);
-    this.state = {
-      keyword: '',
-    };
-  }
-
-  fetchData(params = {}) {
-    const keyword = params.keyword;
-    if (!keyword) {
-      return;
-    }
-    this.setState({
-      keyword,
-    });
-  }
-
-  render() {
-    if (this.state.keyword) {
-      return <div className="list">{`这里是 ${this.state.keyword} 的搜索结果`}</div>;
-    }
-    return null;
-  }
-}
+import { SearchBar } from 'saltui';
 
 class Demo extends React.Component {
 

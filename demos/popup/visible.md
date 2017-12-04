@@ -4,7 +4,7 @@ title: 手动控制 Visible
 ---
 
 ```jsx
-const { Button, Popup } = SaltUI;
+import { Button, Popup } from 'saltui';
 
 class Demo extends React.Component {
 

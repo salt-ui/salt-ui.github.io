@@ -4,7 +4,7 @@ title: 手动控制关闭 Popup
 ---
 
 ```jsx
-const { Button, Popup } = SaltUI;
+import { Button, Popup } from 'saltui';
 
 class Demo extends React.Component {
 

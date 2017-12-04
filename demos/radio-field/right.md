@@ -6,8 +6,7 @@ title: 右侧图标
 
 
 ```jsx
-const { RadioField } = SaltUI;
-
+import { RadioField } from 'saltui';
 
 class Demo extends React.Component {
 

@@ -4,7 +4,7 @@ title: 基本使用
 ---
 
 ```jsx
-const { Crumb } = SaltUI;
+import { Crumb } from 'saltui';
 
 class Demo extends React.Component {
 
@@ -13,16 +13,16 @@ class Demo extends React.Component {
     this.state = {
     };
     this.crumbs = [
-            { text: '刘一' },
-            { text: '陈二' },
-            { text: '张三' },
-            { text: '李四' },
-            { text: '王五' },
-            { text: '赵六' },
-            { text: '孙七' },
-            { text: '周八' },
-            { text: '吴九' },
-            { text: '郑十' },
+      { text: '刘一' },
+      { text: '陈二' },
+      { text: '张三' },
+      { text: '李四' },
+      { text: '王五' },
+      { text: '赵六' },
+      { text: '孙七' },
+      { text: '周八' },
+      { text: '吴九' },
+      { text: '郑十' },
     ];
   }
 
@@ -39,8 +39,8 @@ class Demo extends React.Component {
       <div>
         <Crumb onClick={t.onClick.bind(t)}>
           {
-                        this.crumbs.map((crumb, key) => <Crumb.Item key={key}>{crumb.text}</Crumb.Item>)
-                    }
+            this.crumbs.map((crumb, key) => <Crumb.Item key={key}>{crumb.text}</Crumb.Item>)
+          }
         </Crumb>
         <div style={{ marginTop: '50px' }}>{`you clicked: ${this.state.navText || ''}`}</div>
       </div>

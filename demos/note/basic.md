@@ -6,7 +6,7 @@ title: 基本使用
 
 
 ```jsx
-const { Note } = SaltUI;
+import { Note } from 'saltui';
 
 class Demo extends React.Component {
 

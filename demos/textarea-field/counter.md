@@ -6,8 +6,9 @@ title: 计数器
 
 
 ```jsx
+import { Group, TextareaField } from 'saltui';
+
 const { Component } = React;
-const { Group, TextareaField } = SaltUI;
 const { Count } = TextareaField;
 
 class TextareaFieldDemo extends Component {

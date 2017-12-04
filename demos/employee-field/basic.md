@@ -4,7 +4,8 @@ title: 基本使用
 ---
 
 ```jsx
-const { Group, EmployeeField } = SaltUI;
+import { Group, EmployeeField } from 'saltui';
+
 const testData = [{
   label: '范范',
   key: '023456',

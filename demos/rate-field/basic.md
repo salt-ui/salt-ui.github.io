@@ -4,7 +4,7 @@ title: 基本使用
 ---
 
 ```jsx
-const { RateField } = SaltUI;
+import { RateField } from 'saltui';
 
 class Demo extends React.Component {
 

@@ -4,7 +4,7 @@ title: 搭配PopUp使用
 ---
 
 ```jsx
-const { Menu, Icon, Badge, Button, Popup, Popover } = SaltUI;
+import { Menu, Popover, Popup, Button } from 'saltui';
 
 const { MenuItem } = Menu;
 
@@ -42,16 +42,6 @@ class Demo extends React.Component {
     // this.setState({ selectedKeys });
   }
 
-  handlePopup() {
-    this.popup = Popup.show(
-      this.getContent(),
-      {
-        animationType: 'slide-right',
-        className: 't-menu-popup',
-      }
-    );
-  }
-
   getContent() {
     const { selectedKeys, openKeys } = this.state;
     const testSpan = <span className="test">测试节点</span>;
@@ -74,6 +64,17 @@ class Demo extends React.Component {
     );
   }
 
+  handlePopup() {
+    this.popup = Popup.show(
+      this.getContent(),
+      {
+        animationType: 'slide-right',
+        className: 't-menu-popup',
+      }
+    );
+  }
+
+
   render() {
     const { selectedKeys, openKeys } = this.state;
     const style = {
@@ -81,7 +82,6 @@ class Demo extends React.Component {
       margin: '20px',
     };
 
-    const testSpan = <span className="test">测试节点</span>;
     const menu1 = (
       <Menu
         selectedKeys={selectedKeys}

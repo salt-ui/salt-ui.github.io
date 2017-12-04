@@ -6,7 +6,7 @@ title: 基本使用
 
 
 ```jsx
-const { Mask } = SaltUI;
+import { Mask } from 'saltui';
 
 class Demo extends React.Component {
 

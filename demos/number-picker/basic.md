@@ -4,7 +4,7 @@ title: 可编辑
 ---
 
 ```jsx
-const { NumberPicker } = SaltUI;
+import { NumberPicker } from 'saltui';
 
 class Demo extends React.Component {
 

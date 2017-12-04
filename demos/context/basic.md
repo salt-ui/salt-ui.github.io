@@ -4,7 +4,7 @@ title: 基本使用
 ---
 
 ```jsx
-const { Context } = SaltUI;
+import { Context } from 'saltui';
 
 class Demo extends React.Component {
 

@@ -4,10 +4,9 @@ title: 日期选择（年月日/上下午）
 ---
 
 ```jsx
-const { Button, Datetime } = SaltUI;
+import { Button, Datetime } from 'saltui';
 
 class Demo extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -41,10 +40,10 @@ class Demo extends React.Component {
     const t = this;
     return (
       <div className="t-datetime-demo">
-
-        <Button onClick={() => {
-          t.showSlot('slot2');
-        }}
+        <Button 
+          onClick={() => {
+            t.showSlot('slot2');
+          }}
         >日期/上下午选择</Button>
         <Datetime
           {...this.datetimeProps}

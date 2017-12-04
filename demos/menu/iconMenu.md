@@ -4,7 +4,8 @@ title: 搭配Icon使用
 ---
 
 ```jsx
-const { Menu, Icon, Badge, Button, Popup, Popover } = SaltUI;
+import { Menu } from 'saltui';
+import Lock from 'salt-icon/lib/Lock';
 
 const { MenuItem } = Menu;
 
@@ -64,7 +65,7 @@ class Demo extends React.Component {
           <MenuItem
             title={
               <div>
-                <Icon name="lock" className="demo-icon" width={20} height={20} fill="rgba(0,0,0,0.8)" />
+                <Lock className="demo-icon" width={20} height={20} fill="rgba(0,0,0,0.8)" />
                 <span>浙江1</span>
               </div>
             }
@@ -77,7 +78,7 @@ class Demo extends React.Component {
           <MenuItem
             title={
               <div>
-                <Icon name="lock" className="demo-icon" width={20} height={20} fill="rgba(0,0,0,0.8)" />
+                <Lock className="demo-icon" width={20} height={20} fill="rgba(0,0,0,0.8)" />
                 <span>江苏</span>
               </div>
             }

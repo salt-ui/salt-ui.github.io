@@ -6,9 +6,9 @@ title: 带前缀
 
 
 ```jsx
-const { Group, TextField, Toast } = SaltUI;
+import { Group, TextField } from 'saltui';
 
-const { LeftAddon, RightAddon, Count } = TextField;
+const { LeftAddon } = TextField;
 
 const numberRegExp = /^(\d+\.\d*)|(\d+\.)|\d+/;
 

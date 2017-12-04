@@ -4,10 +4,9 @@ title: 基本使用
 ---
 
 ```jsx
-const { Group, DatetimeField } = SaltUI;
+import { Group, DatetimeField } from 'saltui';
 
 class Demo extends React.Component {
-
   constructor(props) {
     super(props);
 

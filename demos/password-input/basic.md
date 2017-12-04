@@ -4,7 +4,7 @@ title: 基本使用
 ---
 
 ```jsx
-const { Group, PasswordInput } = SaltUI;
+import { Group, PasswordInput } from 'saltui';
 
 class Demo extends React.Component {
 

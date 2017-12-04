@@ -4,7 +4,9 @@ title: 基本使用
 ---
 
 ```jsx
-const { Collapse, Icon } = SaltUI;
+import { Collapse, Icon } from 'salt-ui';
+import { Eye } from 'salt-icon';
+
 const Panel = Collapse.Panel;
 class Demo extends React.Component {
 
@@ -19,7 +21,7 @@ class Demo extends React.Component {
 
   render() {
     const header = <span>自定义头</span>;
-    const inconHeader = <span><Icon name="lock" fill="rgba(0, 0, 0, 0.6)" width={22} height={22} />带Icon的头</span>;
+    const inconHeader = <span><Eye fill="rgba(0, 0, 0, 0.6)" width={22} height={22} />带Icon的头</span>;
 
     return (
       <div>

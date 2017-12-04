@@ -6,7 +6,7 @@ title: 隔线两边缩进10px & Item无缩进(默认)
 
 
 ```jsx
-const { Group } = SaltUI;
+import { Group } from 'saltui';
 
 class Demo extends React.Component {
 

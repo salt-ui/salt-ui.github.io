@@ -4,7 +4,7 @@ title: 基本使用
 ---
 
 ```jsx
-const { Scroller, Group } = SaltUI;
+import { Scroller, Group } from 'saltui';
 
 class Demo extends React.Component {
 

@@ -4,13 +4,13 @@ title: 基本使用
 ---
 
 ```jsx
-const { Icon, Button, Totop } = SaltUI;
-const { Box } = Totop;
+
+import { Icon, Button, Totop } from 'saltui';
 
 const getRandomColor = () => {
   const letters = '0123456789ABCDEF'.split('');
   let color = '#';
-  for (let i = 0; i < 6; i++) {
+  for (let i = 0; i < 6; i += 1) {
     color += letters[Math.floor(Math.random() * 16)];
   }
   return color;
@@ -18,13 +18,12 @@ const getRandomColor = () => {
 
 const len = (Math.random() * 10) + 10;
 const mockData = [];
-for (let i = 0; i < len; i++) {
+for (let i = 0; i < len; i += 1) {
   mockData.push({
     index: i,
     color: getRandomColor(),
   });
 }
-
 
 class Demo extends React.Component {
 

@@ -4,7 +4,7 @@ title: 不带图标TimeLine
 ---
 
 ```jsx
-const { Timeline, Icon } = SaltUI;
+import { Timeline } from 'saltui';
 
 class Demo extends React.Component {
 

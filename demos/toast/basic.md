@@ -6,8 +6,7 @@ title: 基本状态
 
 
 ```jsx
-const { Component } = React;
-const { Button, Toast } = SaltUI;
+import { Button, Toast } from 'saltui';
 
 const showToast = (options) => {
   Toast.show(options);

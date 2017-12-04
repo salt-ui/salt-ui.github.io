@@ -6,7 +6,7 @@ title: 列固定 不显示标题（隐藏分割线）
 
 
 ```jsx
-const { Table } = SaltUI;
+import { Table } from 'saltui';
 
 class Demo extends React.Component {
 

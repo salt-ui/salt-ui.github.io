@@ -4,7 +4,7 @@ title: 无页码
 ---
 
 ```jsx
-const { Pagination } = SaltUI;
+import { Pagination } from 'saltui';
 
 class Demo extends React.Component {
 

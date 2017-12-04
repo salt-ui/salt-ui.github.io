@@ -4,7 +4,7 @@ title: 基本使用
 ---
 
 ```jsx
-const { Group, CascadeSelectField } = SaltUI;
+import { Group, CascadeSelectField } from 'saltui';
 
 const options = [{
   value: 'zhejiang',

@@ -6,7 +6,7 @@ title: 间隔线左缩进30px & Item两边缩进14px
 
 
 ```jsx
-const { Group } = SaltUI;
+import { Group } from 'saltui';
 
 class Demo extends React.Component {
 

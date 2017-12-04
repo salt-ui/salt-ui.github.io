@@ -4,7 +4,7 @@ title: 基本使用
 ---
 
 ```jsx
-const { FoldablePane } = SaltUI;
+import { FoldablePane } from 'saltui';
 
 class Demo extends React.Component {
 

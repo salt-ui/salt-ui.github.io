@@ -4,7 +4,7 @@ title: 基本使用
 ---
 
 ```jsx
-const { ScrollList, Icon } = SaltUI;
+import { ScrollList, Icon } from 'saltui';
 
 const { PropTypes } = React;
 

@@ -4,7 +4,7 @@ title: 搭配Badge使用
 ---
 
 ```jsx
-const { Menu, Icon, Badge, Button, Popup, Popover } = SaltUI;
+import { Menu, Badge } from 'saltui';
 
 const { MenuItem } = Menu;
 

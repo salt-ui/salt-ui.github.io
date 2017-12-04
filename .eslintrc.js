@@ -22,6 +22,7 @@ module.exports = {
         "import/extensions": "off",
         "react/forbid-prop-types": "off",
         "react/react-in-jsx-scope": "off",
-        "react/jsx-filename-extension": "off"
+        "react/jsx-filename-extension": "off",
+        "jsx-a11y/no-static-element-interactions": "off"
     }
 };

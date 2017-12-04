@@ -4,7 +4,7 @@ title: Use show prop Confirm
 ---
 
 ```jsx
-const { Button, Dialog } = SaltUI;
+import { Button, Dialog } from 'saltui';
 
 class Demo extends React.Component {
 

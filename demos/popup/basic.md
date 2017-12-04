@@ -4,7 +4,7 @@ title: 滑动方向
 ---
 
 ```jsx
-const { Button, Popup } = SaltUI;
+import { Button, Popup } from 'saltui';
 
 class Demo extends React.Component {
 

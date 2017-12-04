@@ -6,7 +6,7 @@ title: 小标题
 
 
 ```jsx
-const { Group } = SaltUI;
+import { Group } from 'saltui';
 
 class Demo extends React.Component {
 

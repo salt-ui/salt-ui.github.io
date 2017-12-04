@@ -4,7 +4,7 @@ title: 左侧多选
 ---
 
 ```jsx
-const { Group, CheckboxField } = SaltUI;
+import { Group, CheckboxField } from 'salt-ui';
 
 class Demo extends React.Component {
 

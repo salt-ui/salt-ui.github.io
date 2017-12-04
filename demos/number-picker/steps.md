@@ -4,7 +4,7 @@ title: 步长为小数
 ---
 
 ```jsx
-const { NumberPicker } = SaltUI;
+import { NumberPicker } from 'saltui';
 
 class Demo extends React.Component {
 

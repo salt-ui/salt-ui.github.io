@@ -6,8 +6,9 @@ title: 基础使用
 
 
 ```jsx
+import { SelectField, Group } from 'saltui';
+
 const { Component } = React;
-const { SelectField, Group } = SaltUI;
 
 const monthArray = [
   { value: 0, text: '一月' }, { value: 1, text: '二月' },

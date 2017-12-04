@@ -4,7 +4,7 @@ title: 测试内部数据透传
 ---
 
 ```jsx
-const { Button, Popup } = SaltUI;
+import { Button, Popup } from 'saltui';
 
 class Demo extends React.Component {
 

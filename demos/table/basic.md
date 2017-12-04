@@ -6,7 +6,7 @@ title: 普通表格
 
 
 ```jsx
-const { Table } = SaltUI;
+import { Table } from 'saltui';
 
 class Demo extends React.Component {
 

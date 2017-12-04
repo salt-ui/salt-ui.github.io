@@ -6,8 +6,17 @@ title: 四等分可点击
 
 
 ```jsx
-const { Grid, Icon, Badge } = SaltUI;
 
+import { Grid } from 'saltui';
+import User from 'salt-icon/lib/User';
+import Time from 'salt-icon/lib/Time';
+import Map from 'salt-icon/lib/Map';
+import Star from 'salt-icon/lib/Star';
+import Pen from 'salt-icon/lib/Pen';
+import InfoCircle from 'salt-icon/lib/InfoCircle';
+import PlusCircle from 'salt-icon/lib/PlusCircle';
+import Search from 'salt-icon/lib/Search';
+import Plus from 'salt-icon/lib/Plus';
 
 class Demo extends React.Component {
 
@@ -31,40 +40,40 @@ class Demo extends React.Component {
     return (
       <div>
         <Grid col={4} className="t-BCf" square touchable>
-          <div className="demo" onClick={t.add.bind(t)}>
-            <Icon name="user" fill={'#42A5F5'} />
+          <div className="demo" onClick={() => { t.add(); }}>
+            <User fill={'#42A5F5'} />
             <div className="menu-title">用户</div>
           </div>
-          <div className="demo" onClick={t.add.bind(t)}>
-            <Icon name="time" fill={'#FF8A65'} />
+          <div className="demo" onClick={() => { t.add(); }}>
+            <Time fill={'#FF8A65'} />
             <div className="menu-title">时钟</div>
           </div>
-          <div className="demo" onClick={t.add.bind(t)}>
-            <Icon name="star" fill={'#EA80FC'} />
+          <div className="demo" onClick={() => { t.add(); }}>
+            <Star fill={'#EA80FC'} />
             <div className="menu-title">星星</div>
           </div>
-          <div className="demo" onClick={t.add.bind(t)}>
-            <Icon name="map" fill={'#EF9A9A'} />
+          <div className="demo" onClick={() => { t.add(); }}>
+            <Map fill={'#EF9A9A'} />
             <div className="menu-title">地图</div>
           </div>
-          <div className="demo" onClick={t.add.bind(t)}>
-            <Icon name="pen" fill={'#9FA8DA'} />
+          <div className="demo" onClick={() => { t.add(); }}>
+            <Pen fill={'#9FA8DA'} />
             <div className="menu-title">编辑</div>
           </div>
-          <div className="demo" onClick={t.add.bind(t)}>
-            <Icon name="info-circle" fill={'#80DEEA'} />
+          <div className="demo" onClick={() => { t.add(); }}>
+            <InfoCircle fill={'#80DEEA'} />
             <div className="menu-title">信息</div>
           </div>
-          <div className="demo" onClick={t.add.bind(t)}>
-            <Icon name="plus-circle" fill={'#DCE775'} />
+          <div className="demo" onClick={() => { t.add(); }}>
+            <PlusCircle fill={'#DCE775'} />
             <div className="menu-title">添加</div>
           </div>
-          <div className="demo" onClick={t.add.bind(t)}>
-            <Icon name="search" fill={'#A1887F'} />
+          <div className="demo" onClick={() => { t.add(); }}>
+            <Search fill={'#A1887F'} />
             <div className="menu-title">搜索</div>
           </div>
-          <div className="demo" onClick={t.add.bind(t)}>
-            <Icon name="plus" fill={'#BDBDBD'} />
+          <div className="demo" onClick={() => { t.add(); }}>
+            <Plus fill={'#BDBDBD'} />
           </div>
         </Grid>
       </div>

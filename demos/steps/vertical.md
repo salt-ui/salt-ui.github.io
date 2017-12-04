@@ -6,7 +6,8 @@ title: 垂直方向
 
 
 ```jsx
-const { Steps } = SaltUI;
+import { Steps } from 'saltui';
+
 const Step = Steps.Step;
 
 class Demo extends React.Component {

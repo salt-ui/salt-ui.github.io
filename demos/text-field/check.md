@@ -6,9 +6,7 @@ title: 即时校验
 
 
 ```jsx
-const { Group, TextField, Toast } = SaltUI;
-
-const { LeftAddon, RightAddon, Count } = TextField;
+import { Group, TextField, Toast } from 'saltui';
 
 const numberRegExp = /^(\d+\.\d*)|(\d+\.)|\d+/;
 

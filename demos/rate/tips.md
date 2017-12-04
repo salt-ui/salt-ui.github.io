@@ -6,7 +6,7 @@ title: Tips
 
 
 ```jsx
-const { Rate } = SaltUI;
+import { Rate } from 'saltui';
 
 class Demo extends React.Component {
 

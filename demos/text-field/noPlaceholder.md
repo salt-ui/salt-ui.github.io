@@ -6,9 +6,7 @@ title: 只读没有placeholder
 
 
 ```jsx
-const { Group, TextField, Toast } = SaltUI;
-
-const { LeftAddon, RightAddon, Count } = TextField;
+import { Group, TextField } from 'saltui';
 
 const numberRegExp = /^(\d+\.\d*)|(\d+\.)|\d+/;
 

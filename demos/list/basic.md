@@ -6,7 +6,8 @@ title: 基本使用
 
 
 ```jsx
-const { Icon, Group, Boxs, List } = SaltUI;
+import { Icon, Group, Boxs, List } from 'saltui';
+
 const { HBox, Box } = Boxs;
 
 class Demo extends React.Component {

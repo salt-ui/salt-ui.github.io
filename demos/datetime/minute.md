@@ -4,7 +4,7 @@ title: 日期选择（年月日星期/时分）
 ---
 
 ```jsx
-const { Button, Datetime } = SaltUI;
+import { Button, Datetime } from 'saltui';
 
 class Demo extends React.Component {
 

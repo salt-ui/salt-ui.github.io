@@ -6,10 +6,10 @@ title: 图标全览
 
 
 ```jsx
-const { Icon, Grid, Toast } = SaltUI;
+import { Grid, Toast } from 'saltui';
+import Icon from 'salt-icon';
 
 class Demo extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -54,11 +54,13 @@ class Demo extends React.Component {
         <div className="t-BCe t-FAC t-LH44">点击图标显示 name</div>
         <Grid col={5} square>
           {React.Children.toArray(this.state.icons.map(icon => (
-            <Icon name={icon} className="demoIcon" onClick={() => {
-              Toast.show({ content: icon });
-            }}
+            <Icon
+              name={icon}
+              className="demoIcon" onClick={() => {
+                Toast.show({ content: icon });
+              }}
             />
-            )))}
+          )))}
         </Grid>
       </div>
     );

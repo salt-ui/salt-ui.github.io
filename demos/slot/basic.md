@@ -6,8 +6,9 @@ title: 基础使用
 
 
 ```jsx
+import { Button, Slot } from 'saltui';
+
 const { Component } = React;
-const { Button, Slot } = SaltUI;
 
 class SlotDemo extends Component {
 

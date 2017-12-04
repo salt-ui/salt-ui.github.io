@@ -4,10 +4,9 @@ title: 多选slot
 ---
 
 ```jsx
-const { Group, CheckboxField } = SaltUI;
+import { Group, CheckboxField } from 'salt-ui';
 
 class Demo extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {};

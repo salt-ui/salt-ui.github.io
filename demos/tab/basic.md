@@ -4,7 +4,7 @@ title: 基础使用
 ---
 
 ```jsx
-const { Tab } = SaltUI;
+import { Tab } from 'saltui';
 
 ReactDOM.render(
   <Tab active={'1'}>

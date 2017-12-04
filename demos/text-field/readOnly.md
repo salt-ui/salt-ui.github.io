@@ -6,9 +6,8 @@ title: 只读
 
 
 ```jsx
-const { Group, TextField, Toast } = SaltUI;
+import { Group, TextField } from 'saltui';
 
-const { LeftAddon, RightAddon, Count } = TextField;
 
 const numberRegExp = /^(\d+\.\d*)|(\d+\.)|\d+/;
 
@@ -60,7 +59,6 @@ class Demo extends React.Component {
   }
 
   render() {
-    const t = this;
     return (
       <div>
         <Group.List>

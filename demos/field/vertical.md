@@ -4,8 +4,8 @@ title: 上下结构
 ---
 
 ```jsx
-const { Group, Field, Icon, Toast } = SaltUI;
 
+import { Group, Field, Icon, Toast } from 'saltui';
 
 class Demo extends React.Component {
 

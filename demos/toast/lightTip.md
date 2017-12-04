@@ -6,24 +6,10 @@ title: 轻提示
 
 
 ```jsx
-const { Component } = React;
-const { Button, Toast } = SaltUI;
+import { Button, Toast } from 'saltui';
 
 const showToast = (options) => {
   Toast.show(options);
-};
-
-const showLoadingToast = () => {
-  Toast.show({
-    type: 'loading',
-    content: '加载中...',
-  });
-
-  setTimeout(() => {
-    Toast.hide(() => {
-      console.log(888);
-    });
-  }, 4000);
 };
 
 class Demo extends React.Component {

@@ -4,7 +4,7 @@ title: 异常
 ---
 
 ```jsx
-const { Progress } = SaltUI;
+import { Progress } from 'saltui';
 
 class Demo extends React.Component {
 

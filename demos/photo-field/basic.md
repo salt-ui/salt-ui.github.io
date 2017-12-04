@@ -4,7 +4,7 @@ title: 基本使用
 ---
 
 ```jsx
-const { PhotoField } = SaltUI;
+import { PhotoField } from 'saltui';
 
 class Demo extends React.Component {
 

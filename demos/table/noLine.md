@@ -6,7 +6,7 @@ title: 普通表格(隐藏分割线)
 
 
 ```jsx
-const { Table } = SaltUI;
+import { Table } from 'saltui';
 
 class Demo extends React.Component {
 
