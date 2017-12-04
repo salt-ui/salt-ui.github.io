@@ -4,7 +4,7 @@ title: 作为容器使用
 ---
 
 ```jsx
-const { Badge } = SaltUI;
+import { Badge } from 'saltui';
 
 class Demo extends React.Component {
 

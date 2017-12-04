@@ -6,7 +6,7 @@ title: 按钮类型
 
 
 ```jsx
-const { Button, Icon } = SaltUI;
+import { Button } from 'saltui';
 
 const {
   TextButton,

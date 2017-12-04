@@ -6,12 +6,11 @@ title: 文字按钮
 
 
 ```jsx
-const { Button, Icon } = SaltUI;
+import { Button } from 'saltui';
+import Setting from 'salt-icon/lib/Setting';
 
 const {
   TextButton,
-  IconButton,
-  ButtonGroup,
 } = Button;
 
 class Demo extends React.Component {
@@ -51,26 +50,26 @@ class Demo extends React.Component {
             </div>
             <div className="demo-row">
               <div className="demo-cell">
-                <TextButton size="small" onClick={this.handleClick}><Icon name="setting" />文字+图标(小)</TextButton>
+                <TextButton size="small" onClick={this.handleClick}><Setting />文字+图标(小)</TextButton>
               </div>
               <div className="demo-cell">
-                <TextButton size="small" disabled onClick={this.handleClick}><Icon name="setting" />文字+图标(小)</TextButton>
-              </div>
-            </div>
-            <div className="demo-row">
-              <div className="demo-cell">
-                <TextButton onClick={this.handleClick}><Icon name="setting" />文字+图标(中)</TextButton>
-              </div>
-              <div className="demo-cell">
-                <TextButton disabled onClick={this.handleClick}><Icon name="setting" />文字+图标(中)</TextButton>
+                <TextButton size="small" disabled onClick={this.handleClick}><Setting />文字+图标(小)</TextButton>
               </div>
             </div>
             <div className="demo-row">
               <div className="demo-cell">
-                <TextButton size="large" onClick={this.handleClick}><Icon name="setting" />文字+图标(大)</TextButton>
+                <TextButton onClick={this.handleClick}><Setting />文字+图标(中)</TextButton>
               </div>
               <div className="demo-cell">
-                <TextButton size="large" disabled onClick={this.handleClick}><Icon name="setting" />文字+图标(大)</TextButton>
+                <TextButton disabled onClick={this.handleClick}><Setting />文字+图标(中)</TextButton>
+              </div>
+            </div>
+            <div className="demo-row">
+              <div className="demo-cell">
+                <TextButton size="large" onClick={this.handleClick}><Setting />文字+图标(大)</TextButton>
+              </div>
+              <div className="demo-cell">
+                <TextButton size="large" disabled onClick={this.handleClick}><Setting />文字+图标(大)</TextButton>
               </div>
             </div>
             <div className="demo-row">

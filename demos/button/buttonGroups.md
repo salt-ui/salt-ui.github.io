@@ -6,10 +6,9 @@ title: 按钮组
 
 
 ```jsx
-const { Button, Icon } = SaltUI;
+import { Button } from 'saltui';
 
 const {
-  TextButton,
   IconButton,
   ButtonGroup,
 } = Button;

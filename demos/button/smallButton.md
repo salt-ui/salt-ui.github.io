@@ -6,13 +6,8 @@ title: 按钮大小
 
 
 ```jsx
-const { Button, Icon } = SaltUI;
-
-const {
-  TextButton,
-  IconButton,
-  ButtonGroup,
-} = Button;
+import { Button } from 'saltui';
+import Setting from 'salt-icon/lib/Setting';
 
 class Demo extends React.Component {
 
@@ -67,10 +62,10 @@ class Demo extends React.Component {
             </div>
             <div className="demo-row">
               <div className="demo-cell">
-                <Button type="danger" size="small" display="inline"><Icon name="setting" />带图标</Button>
+                <Button type="danger" size="small" display="inline"><Setting />带图标</Button>
               </div>
               <div className="demo-cell">
-                <Button type="danger" size="small" display="inline" disabled><Icon name="setting" />带图标</Button>
+                <Button type="danger" size="small" display="inline" disabled><Setting />带图标</Button>
               </div>
             </div>
           </div>

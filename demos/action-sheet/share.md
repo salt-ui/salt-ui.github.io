@@ -4,7 +4,8 @@ title: 分享面板
 ---
 
 ```jsx
-const { Button, Icon, ActionSheet } = SaltUI;
+import { Button, ActionSheet } from 'saltui';
+import { ToastLoading, User } from 'salt-icon';
 
 const iconList = [
   { icon: <img role="presentation" src="https://zos.alipayobjects.com/rmsportal/WmEzpOsElbbvgmrexFSH.png" />, title: '发送朋友' },
@@ -12,8 +13,8 @@ const iconList = [
   { icon: <img role="presentation" src="https://zos.alipayobjects.com/rmsportal/HCGowLrLFMFglxRAKjWd.png" />, title: '生活圈' },
   { icon: <img role="presentation" src="https://zos.alipayobjects.com/rmsportal/LeZNKxCTkLHDWsjFfqqn.png" />, title: '微信好友' },
   { icon: <img role="presentation" src="https://zos.alipayobjects.com/rmsportal/YHHFcpGxlvQIqCAvZdbw.png" />, title: 'QQ' },
-  { icon: <Icon name="toast-loading" />, title: '刷新' },
-  { icon: <Icon name="user" />, title: '投诉' },
+  { icon: <ToastLoading />, title: '刷新' },
+  { icon: <User />, title: '投诉' },
 ];
 
 class Demo extends React.Component {

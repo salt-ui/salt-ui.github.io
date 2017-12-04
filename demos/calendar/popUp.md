@@ -4,19 +4,13 @@ title: 日历+PopUp
 ---
 
 ```jsx
-const { Calendar, Button, Context } = SaltUI;
+import { Calendar, Button } from 'saltui';
+
 class Demo extends React.Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      // value: {
-        // value: 1499702400000,
-        // startDate: 1499702400000,
-        // startDateType: 'PM',
-        // endDate: 1499961600000,
-        // endDateType: 'PM',
-      // },
       value: 1489702400000, // 1499961600000
     };
     // 禁用钉钉容器的 webViewBounce

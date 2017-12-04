@@ -4,11 +4,12 @@ title: 基本使用
 ---
 
 ```jsx
-const { HBox, VBox, Box } = SaltUI.Boxs;
+import { Boxs } from 'saltui';
+
+const { HBox, VBox, Box } = Boxs;
 
 class Demo extends React.Component {
   render() {
-    const t = this;
     return (<div>
       <HBox className="wrapper">
         <Box className="box1">60 * 60</Box>

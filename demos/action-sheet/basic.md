@@ -4,17 +4,7 @@ title: 基本使用
 ---
 
 ```jsx
-const { Button, Icon, ActionSheet } = SaltUI;
-
-const iconList = [
-  { icon: <img role="presentation" src="https://zos.alipayobjects.com/rmsportal/WmEzpOsElbbvgmrexFSH.png" />, title: '发送朋友' },
-  { icon: <img role="presentation" src="https://zos.alipayobjects.com/rmsportal/HssPJKvrjEByyVWJIFwl.png" />, title: '新浪微博' },
-  { icon: <img role="presentation" src="https://zos.alipayobjects.com/rmsportal/HCGowLrLFMFglxRAKjWd.png" />, title: '生活圈' },
-  { icon: <img role="presentation" src="https://zos.alipayobjects.com/rmsportal/LeZNKxCTkLHDWsjFfqqn.png" />, title: '微信好友' },
-  { icon: <img role="presentation" src="https://zos.alipayobjects.com/rmsportal/YHHFcpGxlvQIqCAvZdbw.png" />, title: 'QQ' },
-  { icon: <Icon name="toast-loading" />, title: '刷新' },
-  { icon: <Icon name="user" />, title: '投诉' },
-];
+import { Button, ActionSheet } from 'saltui';
 
 class Demo extends React.Component {
 
@@ -27,7 +17,8 @@ class Demo extends React.Component {
     return (
       <div>
 
-        <Button onClick={() => {
+        <Button 
+          onClick={() => {
           ActionSheet.show({
             options: ['操作一', '操作二', '操作三', '清空聊天记录'],
             destructiveButtonIndex: 3,

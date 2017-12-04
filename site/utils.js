@@ -10,7 +10,7 @@ export const transformCode = (contents) => {
 
     return { code };
   } catch (err) {
-    return { err: err.toString() };
+    console.warn(err.stack);
   }
 };
 

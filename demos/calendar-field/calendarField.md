@@ -4,7 +4,7 @@ title: 日期区间选择2
 ---
 
 ```jsx
-const { Group, CalendarField } = SaltUI;
+import { Group, CalendarField } from 'saltui';
 
 
 class Demo2 extends React.Component {

@@ -6,7 +6,8 @@ title: 通栏按钮
 
 
 ```jsx
-const { Button, Icon } = SaltUI;
+import { Button } from 'saltui';
+import Setting from 'salt-icon/lib/Setting';
 
 const {
   TextButton,
@@ -32,7 +33,7 @@ class Demo extends React.Component {
             <Button type="secondary" display="banner" onClick={this.handleClick}>通栏二级按钮</Button> <br />
             <Button type="minor" display="banner" onClick={this.handleClick}>通栏次级按钮</Button> <br />
             <Button type="primary" display="banner" onClick={this.handleClick}>
-              <Icon name="setting" />通栏按钮+图标
+              <Setting />通栏按钮+图标
             </Button>
             <br />
             <Button type="primary" display="banner" disabled onClick={this.handleClick}>通栏按钮 不可用</Button>

@@ -6,7 +6,8 @@ title: 按钮 + 图标
 
 
 ```jsx
-const { Button, Icon } = SaltUI;
+import { Button } from 'saltui';
+import Setting from 'salt-icon/lib/Setting';
 
 const {
   TextButton,
@@ -25,15 +26,15 @@ class Demo extends React.Component {
       <div>
         <div classNmme="demo-section">
           <div className="section-content">
-            <Button type="primary" onClick={this.handleClick}><Icon name="setting" />一级按钮</Button>
+            <Button type="primary" onClick={this.handleClick}><Setting />一级按钮</Button>
             <br />
-            <Button type="secondary" onClick={this.handleClick}><Icon name="setting" />二级按钮</Button>
+            <Button type="secondary" onClick={this.handleClick}><Setting />二级按钮</Button>
             <br />
-            <Button type="minor" onClick={this.handleClick}><Icon name="setting" />次要按钮</Button>
+            <Button type="minor" onClick={this.handleClick}><Setting />次要按钮</Button>
             <br />
-            <Button disabled><Icon name="setting" />失效按钮</Button>
+            <Button disabled><Setting />失效按钮</Button>
             <br />
-            <Button type="danger"><Icon name="setting" />危险按钮</Button>
+            <Button type="danger"><Setting />危险按钮</Button>
             <br />
           </div>
         </div>

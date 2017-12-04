@@ -4,8 +4,8 @@ title: 卡片通栏
 ---
 
 ```jsx
-const { Context, Icon, Card } = SaltUI;
 
+import { Context, Card } from 'saltui';
 class Demo extends React.Component {
 
   constructor(props) {
@@ -15,10 +15,6 @@ class Demo extends React.Component {
   }
 
   render() {
-    const headerCls = Context.prefixClass('card-header');
-    const bodyCls = Context.prefixClass('card-body');
-    const footerCls = Context.prefixClass('card-footer');
-
     return (
       <div>
         <div className="card-wrap">
@@ -121,12 +117,12 @@ body {
   margin-right: 17px;
 }
 
-.card-icon {
+.car {
   line-height: 1;
   margin-right: 9px;
 }
 
- .card-icon svg {
+ .car svg {
     fill: rgba(31,56,88,0.6);
     width: 16px;
     height: 18px;

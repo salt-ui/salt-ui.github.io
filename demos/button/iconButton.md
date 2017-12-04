@@ -6,10 +6,10 @@ title: 图标按钮
 
 
 ```jsx
-const { Button, Icon } = SaltUI;
+import { Button } from 'saltui';
+import Setting from 'salt-icon/lib/Setting';
 
 const {
-  TextButton,
   IconButton,
   ButtonGroup,
 } = Button;
@@ -27,18 +27,18 @@ class Demo extends React.Component {
           <div className="section-content">
             <div className="demo-row">
               <div className="demo-cell">
-                <IconButton onClick={this.handleClick}><Icon name="setting" /></IconButton>
+                <IconButton onClick={this.handleClick}><Setting /></IconButton>
               </div>
               <div className="demo-cell">
-                <IconButton disabled onClick={this.handleClick}><Icon name="setting" /></IconButton>
+                <IconButton disabled onClick={this.handleClick}><Setting /></IconButton>
               </div>
             </div>
             <div className="demo-row">
               <div className="demo-cell">
-                <IconButton type="secondary" onClick={this.handleClick}><Icon name="setting" /></IconButton>
+                <IconButton type="secondary" onClick={this.handleClick}><Setting /></IconButton>
               </div>
               <div className="demo-cell">
-                <IconButton type="secondary" disabled onClick={this.handleClick}><Icon name="setting" /></IconButton>
+                <IconButton type="secondary" disabled onClick={this.handleClick}><Setting /></IconButton>
               </div>
             </div>
           </div>

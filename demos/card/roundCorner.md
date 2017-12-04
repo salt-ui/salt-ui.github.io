@@ -4,7 +4,8 @@ title: 卡片圆角
 ---
 
 ```jsx
-const { Context, Icon, Card } = SaltUI;
+
+import { Context, Card } from 'saltui';
 
 class Demo extends React.Component {
 
@@ -15,10 +16,6 @@ class Demo extends React.Component {
   }
 
   render() {
-    const headerCls = Context.prefixClass('card-header');
-    const bodyCls = Context.prefixClass('card-body');
-    const footerCls = Context.prefixClass('card-footer');
-
     return (
       <div>
         <div className="card-wrap">

@@ -4,7 +4,8 @@ title: 联级日历
 ---
 
 ```jsx
-const { Calendar, Button, Context } = SaltUI;
+import { Calendar, Button } from 'saltui';
+
 class Demo extends React.Component {
 
   constructor(props) {

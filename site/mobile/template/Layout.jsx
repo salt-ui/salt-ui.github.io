@@ -5,7 +5,7 @@ import Icon from 'salt-icon';
 
 import { transformCode } from '../../utils';
 
-const ARGS = 'ReactDOM, React, SaltUI, mountNode';
+const ARGS = 'ReactDOM, React, SaltUI, mountNode, require';
 
 
 export default class Layout extends React.Component {
@@ -57,7 +57,24 @@ export default class Layout extends React.Component {
     const mount = this.mountNode;
     // TODO, use babel-plugin to import
     window.SaltUI.Icon = Icon;
-    const copms = [ReactDOM, React, window.SaltUI, mount];
+    const require = (dep) => {
+      const saltuiComp = dep.match(/saltui\/lib\/(.*)/);
+      if (saltuiComp) {
+        return SaltUI[saltuiComp[1]];
+      }
+      const saltIcon = dep.match(/salt-icon\/lib\/(.*)/);
+      if (saltIcon) {
+        return Icon[saltIcon[1]];
+      }
+      if (dep === 'saltui') {
+        return SaltUI;
+      }
+      if (dep === 'salt-icon') {
+        return Icon;
+      }
+      return null;
+    };
+    const copms = [ReactDOM, React, window.SaltUI, mount, require];
     try {
       const f = new Function(ARGS, data);
       f(...copms);

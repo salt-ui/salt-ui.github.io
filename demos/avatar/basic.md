@@ -4,7 +4,8 @@ title: 基本使用
 ---
 
 ```jsx
-const { Avatar } = SaltUI;
+import { Avatar } from 'saltui';
+
 const avatarColors = ['#78C06E', '#3BC2B5', '#78919D', '#5EC9F6', '#F6BF26'];
 
 class Demo extends React.Component {

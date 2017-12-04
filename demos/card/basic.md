@@ -4,7 +4,8 @@ title: 使用场景
 ---
 
 ```jsx
-const { Context, Icon, Card } = SaltUI;
+import { Context, Card } from 'saltui';
+import { Eye, StartLine } from 'salt-icon';
 
 class Demo extends React.Component {
 
@@ -37,11 +38,11 @@ class Demo extends React.Component {
             <div className={footerCls}>
               <div className="card-footer-meta">
                 <span className="card-footer-meta-item">
-                  <Icon name="eye" className="card-icon" />
+                  <Eye className="card-icon" />
                   <span className="card-eye-count">12</span>
                 </span>
                 <span className="card-footer-meta-item">
-                  <Icon name="start-line" className="card-icon" />
+                  <StartLine className="card-icon" />
                   <span className="card-like-count">12</span>
                 </span>
               </div>
