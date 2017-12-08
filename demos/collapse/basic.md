@@ -4,7 +4,7 @@ title: 基本使用
 ---
 
 ```jsx
-import { Collapse, Icon } from 'salt-ui';
+import { Collapse, Icon } from 'saltui';
 import { Eye } from 'salt-icon';
 
 const Panel = Collapse.Panel;
