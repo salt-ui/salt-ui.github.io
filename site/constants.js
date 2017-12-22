@@ -227,7 +227,7 @@ export const NAV_MAP = {
     zh: '密码输入框',
     type: 'Form',
   },
-  'picker-filed': {
+  'picker-field': {
     zh: '选择器',
     type: 'Form',
   },
