@@ -7,7 +7,7 @@ title: 基础使用
 import { Tab } from 'saltui';
 
 ReactDOM.render(
-  <Tab active={'1'}>
+  <Tab activeKey={'1'}>
     <Tab.Item title="已完成" />
     <Tab.Item title="未完成" />
     <Tab.Item title="通过" />
