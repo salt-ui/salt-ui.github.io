@@ -4,10 +4,9 @@ title: 可编辑
 ---
 
 ```jsx
-import { NumberPicker } from 'saltui';
+import { NumberPicker, Context } from 'saltui';
 
 class Demo extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -25,6 +24,7 @@ class Demo extends React.Component {
   }
 
   handleChange(name, value) {
+    console.log(name, value);
     const t = this;
     t.setState({
       [name]: value,
@@ -34,9 +34,9 @@ class Demo extends React.Component {
     const t = this;
     return (
       <div>
-        <div className="line">默认样式 <NumberPicker value={t.state.a} max={4} step={1} onChange={t.handleChange.bind(t, 'a')} /></div>
-        <div className="line">禁用样式单个 <NumberPicker value={t.state.b} max={5} min={2} step={1} onChange={t.handleChange.bind(t, 'b')} /></div>
-        <div className="line">禁用样式单个 <NumberPicker value={t.state.c} max={2} step={1} onChange={t.handleChange.bind(t, 'c')} /></div>
+        <div className="line">默认样式 <NumberPicker value={t.state.a} max={4} step={1} onChange={t.handleChange.bind(t, 'a')} useTouch={!Context.isPC} /></div>
+        <div className="line">禁用样式单个 <NumberPicker value={t.state.b} max={5} min={2} step={1} onChange={t.handleChange.bind(t, 'b')} useTouch={!Context.isPC} /></div>
+        <div className="line">禁用样式单个 <NumberPicker value={t.state.c} max={2} step={1} onChange={t.handleChange.bind(t, 'c')} useTouch={!Context.isPC} /></div>
         <div className="line">全部禁用<NumberPicker value={t.state.count} max={4} step={1} disabled /></div>
       </div>
     );

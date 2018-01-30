@@ -4,7 +4,7 @@ title: 步长为小数
 ---
 
 ```jsx
-import { NumberPicker } from 'saltui';
+import { NumberPicker, Context } from 'saltui';
 
 class Demo extends React.Component {
 
@@ -35,7 +35,7 @@ class Demo extends React.Component {
     return (
       <div>
         <div className="tip">步长为小数</div>
-        <div className="line">默认样式 <NumberPicker value={t.state.i} max={3} step={0.1} min={0} onChange={t.handleChange.bind(t, 'i')} /></div>
+        <div className="line">默认样式 <NumberPicker value={t.state.i} max={3} step={0.1} min={0} onChange={t.handleChange.bind(t, 'i')} useTouch={!Context.isPC} /></div>
       </div>
     );
   }
