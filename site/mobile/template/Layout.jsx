@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Icon from 'salt-icon';
+import nattyFetch from 'natty-fetch';
 
 
 import { transformCode } from '../../utils';
@@ -71,6 +72,9 @@ export default class Layout extends React.Component {
       }
       if (dep === 'salt-icon') {
         return Icon;
+      }
+      if (dep === 'natty-fetch') {
+        return nattyFetch;
       }
       return null;
     };
