@@ -75,6 +75,7 @@ class Demo extends React.Component {
 
   render() {
     const t = this;
+    const fetchUrl = 'https://www.easy-mock.com/mock/5a2f75a26ce8af6869ec49f0/saltui/picker-data?jsonp_param_name=callback';
     return (
       <div>
         <Group>
@@ -90,14 +91,14 @@ class Demo extends React.Component {
             />
             <PickerField
               label="从接口中获取"
-              fetchUrl="http://dip.alibaba-inc.com/api/v2/services/schema/mock/57833.jsonp"
+              fetchUrl={fetchUrl}
               onSelect={(e) => {
                 t.handleChange1(e);
               }}
               value={t.state.value1}
             />
             <PickerField
-              fetchUrl="http://dip.alibaba-inc.com/api/v2/services/schema/mock/57833.jsonp"
+              fetchUrl={fetchUrl}
               fetchDataOnOpen
               label="没有默认值"
               onSelect={(e) => {
@@ -107,7 +108,7 @@ class Demo extends React.Component {
               placeholder="请输入"
             />
             <PickerField
-              fetchUrl="http://dip.alibaba-inc.com/api/v2/services/schema/mock/57833.jsonp"
+              fetchUrl={fetchUrl}
               label="无搜索框"
               onSelect={(e) => {
                 t.handleChange3(e);
@@ -117,7 +118,7 @@ class Demo extends React.Component {
               showSearch={false}
             />
             <PickerField
-              fetchUrl="http://dip.alibaba-inc.com/api/v2/services/schema/mock/57833.jsonp"
+              fetchUrl={fetchUrl}
               label="多选"
               onSelect={(e) => {
                 t.handleChange4(e);
@@ -137,7 +138,7 @@ class Demo extends React.Component {
               groupingIndicator
             />
             <PickerField
-              fetchUrl="http://dip.alibaba-inc.com/api/v2/services/schema/mock/57833.jsonp"
+              fetchUrl={fetchUrl}
               label="不可选"
               value={t.state.value6}
               readOnly
