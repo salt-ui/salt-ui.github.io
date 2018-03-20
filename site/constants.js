@@ -14,7 +14,7 @@ export const NAV_MAP = {
     type: 'General',
   },
 
-  box: {
+  boxs: {
     zh: '弹性容器',
     type: 'Layout',
   },
