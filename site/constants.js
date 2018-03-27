@@ -161,8 +161,10 @@ export const NAV_MAP = {
     zh: '返回顶部',
     type: 'Display',
   },
-
-
+  'number-field': {
+    zh: '数字输入框',
+    type: 'Form',
+  },
   'calendar-field': {
     zh: '日期区间',
     type: 'Form',
