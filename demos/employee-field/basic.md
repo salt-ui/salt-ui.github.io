@@ -9,19 +9,16 @@ import { Group, EmployeeField } from 'saltui';
 const testData = [{
   label: '范范',
   key: '023456',
-  avater: 'http://www.xxxxxx.com/aaa.jpg',
+  avatar: 'https://gw.alicdn.com/tfs/TB1D9YIkb9YBuNjy0FgXXcxcXXa-200-200.jpg',
 }, {
   label: '笑笑',
   key: '023457',
-  avater: 'http://www.xxxxxx.com/aaa.jpg',
 }, {
   label: '闹闹',
   key: '023458',
-  avater: 'http://www.xxxxxx.com/aaa.jpg',
 }];
 
 class Demo extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {

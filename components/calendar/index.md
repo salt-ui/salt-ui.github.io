@@ -1,4 +1,10 @@
-# 日期区间选择
+# 日期选择
+
+## 何时使用？
+
+* 短距离区间选择
+* 日期还包含额外信息的情况，如日程
+* 其余情况推荐使用 DateTime
 
 ## Simple Usage
 
@@ -111,6 +117,7 @@ export default CalendarDemo;
 类型：`Function`
 默认：`new Function`
 必选：否
+说明：仅适用于 type 为 day 的情况，disabledDate 会遍历日历上的每一个日期，返回 true 代表当前日期被禁用。参数 `current` 代表当前遍历到的日期，`value` 表示当前选中的值。
 示例：
 ```
 <Calendar disabledDate={(current, value)=>{console.log(current, value); return false;}} />
