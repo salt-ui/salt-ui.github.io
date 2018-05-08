@@ -17,4 +17,13 @@ docs.forEach((md) => {
   runCmd('cp', ['-rf', `${docPath}/${md}`, `${dirPath}/index.md`]);
 });
 
+const mobileTemplatePath = './template.mobile.html';
+const saltuiPkg = JSON.parse(fs.readFileSync('./node_modules/saltui/package.json'));
+
+const mobileTemplate = fs.readFileSync(mobileTemplatePath, 'utf-8');
+
+const newMobileTemplate = mobileTemplate.replace(/(saltui@)\d+.\d+.\d+/g, `$1${saltuiPkg.version}`);
+fs.writeFileSync(mobileTemplatePath, newMobileTemplate);
+
+
 runCmd('cp', ['-rf', './node_modules/salt-icon/README.md', './components/Icon/index.md']);
