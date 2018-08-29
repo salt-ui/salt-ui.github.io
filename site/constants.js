@@ -66,15 +66,19 @@ export const NAV_MAP = {
     type: 'Display',
   },
   datetime: {
-    zh: '日期选择组件',
-    type: 'Display',
-  },
-  'foldable-pane': {
-    zh: '折叠版面',
+    zh: '日期选择',
     type: 'Display',
   },
   'number-picker': {
     zh: '数字步进器',
+    type: 'Display',
+  },
+  picker: {
+    zh: '全屏选择器',
+    type: 'Form',
+  },
+  'foldable-pane': {
+    zh: '折叠版面',
     type: 'Display',
   },
   list: {
@@ -161,32 +165,36 @@ export const NAV_MAP = {
     zh: '返回顶部',
     type: 'Display',
   },
+  'tag-field': {
+    zh: '标签输入表单',
+    type: 'Form',
+  },
   'number-field': {
-    zh: '数字输入框',
+    zh: '数字输入表单',
     type: 'Form',
   },
   'calendar-field': {
-    zh: '日期区间',
+    zh: '日期区间表单',
     type: 'Form',
   },
   'cascade-select-field': {
-    zh: '级联选择',
+    zh: '级联选择表单',
     type: 'Form',
   },
   'checkbox-field': {
-    zh: '复选框',
+    zh: '复选表单',
     type: 'Form',
   },
   'city-select-field': {
-    zh: '省市区选择',
+    zh: '地区选择表单',
     type: 'Form',
   },
   'datetime-field': {
-    zh: '时间',
+    zh: '时间选择表单',
     type: 'Form',
   },
   'employee-field': {
-    zh: '人员选择',
+    zh: '人员选择表单',
     type: 'Form',
   },
   field: {
@@ -194,11 +202,11 @@ export const NAV_MAP = {
     type: 'Form',
   },
   'photo-field': {
-    zh: '上传/查看图片',
+    zh: '图片上传表单',
     type: 'Form',
   },
   'radio-field': {
-    zh: '单选框',
+    zh: '单选表单',
     type: 'Form',
   },
   'rate-field': {
@@ -214,15 +222,15 @@ export const NAV_MAP = {
     type: 'Form',
   },
   'text-field': {
-    zh: '单行文本框',
+    zh: '单行文本表单',
     type: 'Form',
   },
   'textarea-field': {
-    zh: '多行文本框',
+    zh: '多行文本表单',
     type: 'Form',
   },
   'number-picker-filed': {
-    zh: '数字步进器',
+    zh: '数字步进表单',
     type: 'Form',
   },
   'password-input': {
@@ -230,12 +238,12 @@ export const NAV_MAP = {
     type: 'Form',
   },
   'picker-field': {
-    zh: '选择器',
+    zh: '全屏选择表单',
     type: 'Form',
   },
   table: {
     zh: '表格',
-    type: 'Form',
+    type: 'Display',
   },
 
   'action-sheet': {

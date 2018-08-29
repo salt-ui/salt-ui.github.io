@@ -48,7 +48,7 @@
     "react-dom": "^15.4.2",
     "react-router": "^3.0.0",
     "salt-icon": "^3.4.0",
-    "saltui": "3.x",
+    "saltui": "4.x",
     "uppercamelcase": "^1.1.0",
     "uxcore": "^0.15.0"
   },

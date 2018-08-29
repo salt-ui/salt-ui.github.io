@@ -1,8 +1,8 @@
 
 
-## PickerField 
+## Picker 
 
-一个表单域，从右侧滑出面板，上面包含搜索和列表，支持单选和多选两种模式，选择后返回
+一个选择的弹框，从右侧滑出面板，上面包含搜索和列表，支持单选和多选两种模式，选择后触发回调
 
 ## Simple Usage
 
@@ -11,20 +11,18 @@ constructor(props) {
   super(props);
   this.state = {
     // 选中的值
-    value: { value: 6, text: '七月' }
+    visible: false,
   };
 }
-handleChange(value) {
+showPicker = (value) => {
   // 数据确认变更
-  this.setState({
-    value: value
-  });
+  this.setState({ visible: true });
 }
 render() {
-  var t = this;
   return (
     <div>
-      <PickerField label="请选择" onSelect={t.handleChange.bind(t)} value={t.state.value}/>
+      <button onClick={this.showPicker}></button>
+      <Picker visible={this.state.visible}/>
     </div>
   );
 }
@@ -42,20 +40,7 @@ render() {
 示例：
 
 ```jsx
-<PickerField className="customClass"></PickerField>
-```
-
-### label
-
-描述：表单域名称。
-类型：`string`
-默认：`''`
-必选：否
-
-示例：
-
-```jsx
-<PickerField label="名称"></PickerField>
+<Picker className="customClass"></Picker>
 ```
 
 ### value
@@ -68,15 +53,22 @@ render() {
 示例：
 
 ```jsx
-var value = {
+var value = [{
   text: '江苏',
   value: 'jiangsu'
-};
+}];
 
 ...
 
-<PickerField value={value}></PickerField>
+<Picker value={value}></Picker>
 ```
+
+### visible
+
+描述：是否显示。
+类型：`boolean`
+默认：`false`
+必选：否
 
 ### locale  
 描述：国际化。  
@@ -94,7 +86,7 @@ var value = {
 示例：
 
 ```jsx
-<PickerField readOnly={false}></PickerField>
+<Picker readOnly={false}></Picker>
 ```
 
 ### placeholder
@@ -107,7 +99,7 @@ var value = {
 示例：
 
 ```jsx
-<PickerField placeholder="请输入"></PickerField>
+<Picker placeholder="请输入"></Picker>
 ```
 
 ### confirmText
@@ -120,7 +112,7 @@ var value = {
 示例：
 
 ```jsx
-<PickerField confirmText="完成"></PickerField>
+<Picker confirmText="完成"></Picker>
 ```
 
 ### options
@@ -133,7 +125,7 @@ var value = {
 示例：
 
 ```jsx
-<PickerField options={[{ value: 1, text: '选项 1' }, { value: 2, text: '选项 2' }]}></PickerField>
+<Picker options={[{ value: 1, text: '选项 1' }, { value: 2, text: '选项 2' }]}></Picker>
 ```
 
 ### fetchUrl
@@ -146,7 +138,7 @@ var value = {
 示例：
 
 ```jsx
-<PickerField fetchUrl="http://domain.com/url.jsonp"></PickerField>
+<Picker fetchUrl="http://domain.com/url.jsonp"></Picker>
 ```
 
 ### fetchDataOnOpen
@@ -159,7 +151,7 @@ var value = {
 示例：
 
 ```jsx
-<PickerField fetchDataOnOpen={false}></PickerField>
+<Picker fetchDataOnOpen={false}></Picker>
 ```
 
 ### dataType
@@ -172,7 +164,7 @@ var value = {
 示例：
 
 ```jsx
-<PickerField dataType="jsonp"></PickerField>
+<Picker dataType="jsonp"></Picker>
 ```
 
 ### beforeFetch
@@ -192,7 +184,7 @@ beforeFetch(obj) {
 
 ...
 
-<PickerField beforeFetch={this.beforeFetch}></PickerField>
+<Picker beforeFetch={this.beforeFetch}></Picker>
 ```
 
 ### fitResponse
@@ -217,7 +209,7 @@ fitResponse(response) {
 
 ...
 
-<PickerField fitResponse={this.fitResponse}></PickerField>
+<Picker fitResponse={this.fitResponse}></Picker>
 ```
 
 ### afterFetch
@@ -239,7 +231,7 @@ afterFetch(arr) {
 
 ...
 
-<PickerField afterFetch={this.afterFetch}></PickerField>
+<Picker afterFetch={this.afterFetch}></Picker>
 ```
 
 ### showSearch
@@ -252,7 +244,7 @@ afterFetch(arr) {
 示例：
 
 ```jsx
-<PickerField showSearch={false}></PickerField>
+<Picker showSearch={false}></Picker>
 ```
 
 
@@ -266,7 +258,7 @@ afterFetch(arr) {
 示例：
 
 ```jsx
-<PickerField searchDelay={100}></PickerField>
+<Picker searchDelay={100}></Picker>
 ```
 
 ### searchPlaceholder
@@ -279,7 +271,7 @@ afterFetch(arr) {
 示例：
 
 ```jsx
-<PickerField searchPlaceholder="搜索"></PickerField>
+<Picker searchPlaceholder="搜索"></Picker>
 ```
 
 ### searchNotFoundContent
@@ -292,7 +284,7 @@ afterFetch(arr) {
 示例：
 
 ```jsx
-<PickerField searchNotFoundContent="无匹配内容"></PickerField>
+<Picker searchNotFoundContent="无匹配内容"></Picker>
 ```
 
 ### formatter
@@ -318,7 +310,7 @@ formatItem(value, type) {
 
 ...
 
-<PickerField value={this.state.value} formatter={this.formatItem}></PickerField>
+<Picker value={this.state.value} formatter={this.formatItem}></Picker>
 ```
 
 ### phonetic
@@ -338,28 +330,7 @@ getPhonetic(value) {
 
 ...
 
-<PickerField formatter={getPhonetic}></PickerField>
-```
-
-### onSelect
-
-描述：值变化触发的事件。
-类型：`function`
-默认：`无`
-必选：否
-
-示例：
-
-```jsx
-onSelect(value) {
-  this.setState({
-    value: value
-  });
-}
-
-...
-
-<PickerField value={this.state.value} onSelect={this.onSelect}></PickerField>
+<Picker formatter={getPhonetic}></Picker>
 ```
 
 ### multiple
@@ -372,7 +343,7 @@ onSelect(value) {
 示例：
 
 ```jsx
-<PickerField multiple></PickerField>
+<Picker multiple></Picker>
 ```
 
 ### grouping
@@ -385,7 +356,7 @@ onSelect(value) {
 示例：
 
 ```jsx
-<PickerField grouping></PickerField>
+<Picker grouping></Picker>
 ```
 
 ### groupingIndicator
@@ -398,24 +369,7 @@ onSelect(value) {
 示例：
 
 ```jsx
-<PickerField grouping groupingIndicator></PickerField>
-```
-
-
-### icon
-
-
-描述：额外的 icon，渲染在箭头前面。
-类型：`React Element`
-默认：` 无`
-必选：否
-
-示例：
-
-```jsx
-import PlusCircle from 'salt-icon/lib/PlusCircle'
-
-<PickerField icon={<PlusCircle onClick={(e) => { e.stopPropagation(); }} />} />
+<Picker grouping groupingIndicator></Picker>
 ```
 
 ### resultFormatter
@@ -429,7 +383,7 @@ import PlusCircle from 'salt-icon/lib/PlusCircle'
 ```jsx
 import PlusCircle from 'salt-icon/lib/PlusCircle'
 
-<PickerField resultFormatter={value => (`我已经选择了${value.length}项`) } />} />
+<Picker resultFormatter={value => (`我已经选择了${value.length}项`) } />} />
 ```
 
 
