@@ -13,8 +13,8 @@ export default class DemoItem extends React.Component {
     super(props);
     this.state = {
       // expand: false
-      expand: props.selectIndex === props.index
-    }
+      expand: props.selectIndex === props.index,
+    };
 
     // this.transform = this.transform.bind(this);
     this.toggleCode = this.toggleCode.bind(this);
@@ -27,96 +27,96 @@ export default class DemoItem extends React.Component {
   }
 
 
-  onChangeValue(newValue){
-    const { data } = this.props;
-    this.props.transform({ content: newValue, style: data.style });
+  onChangeValue(newValue) {
+    const { data, transform } = this.props;
+    transform({ content: newValue, style: data.style });
   }
 
-  toggleCode(e){
-    this.props.toggleFrame(this.props.index);
+  toggleCode() {
+    const { toggleFrame, index } = this.props;
+    const { expand } = this.state;
+    toggleFrame(index);
     this.setState({
-      expand: !this.state.expand
+      expand: !expand,
     });
   }
-  
 
-  render(){
+
+  render() {
     // const { data, selectIndex, index, showExpandDemo, toggleFrame, utils } = this.props;
-    const { data, selectIndex, index, toggleFrame, utils, height, demoUrl } = this.props;
+    const {
+      data, selectIndex, index, toggleFrame, utils, height, demoUrl,
+    } = this.props;
     const { expand } = this.state;
 
     const demoHeight = data.style ? height * 0.7 : height;
 
     const paneProps = {
       theme: 'github',
-      mode:'jsx',
-      width: "100%",
+      mode: 'jsx',
+      width: '100%',
       height: `${demoHeight}px`,
       tabSize: 2,
       fontSize: 13,
-      name: "UNIQUE_ID_OF_DIV",
-      editorProps: {$blockScrolling: true},
+      name: 'UNIQUE_ID_OF_DIV',
+      editorProps: { $blockScrolling: true },
       enableBasicAutocompletion: true,
       enableLiveAutocompletion: true,
       value: data.content,
-      onChange: this.onChangeValue.bind(this)
-    }
+      onChange: this.onChangeValue.bind(this),
+    };
 
     const Gen = () => <AceEditor {...paneProps} />;
 
-    return(
-      <div className={classnames('ui-demos-item', 
+    return (
+      <div className={classnames('ui-demos-item',
         {
           'ui-demos-item-expand': expand,
           'ui-demos-item-selected': selectIndex === index,
         })}
       >
         <div className="ui-demos-item-head">
-          <CopyToClipboard 
+          <CopyToClipboard
             text={data.content}
             onCopy={() => Message.info('复制成功！')}
-            >
+          >
             <Tooltip overlay="拷贝代码" placement="bottom">
-            <div className="ui-demos-item-btn copy">
-              <i className='iconfont icon-fuzhi'/>
-            </div>
+              <div className="ui-demos-item-btn copy">
+                <i className="iconfont icon-fuzhi" />
+              </div>
             </Tooltip>
           </CopyToClipboard>
           <Tooltip
-            overlay={
+            overlay={(
               <div>
-              <h4 style={{ margin: '8Px 0 12Px' }}>扫二维码查看演示效果</h4>
-              <QRCode size={144} value={demoUrl} />
+                <h4 style={{ margin: '8Px 0 12Px' }}>
+                  扫二维码查看演示效果
+                </h4>
+                <QRCode size={144} value={demoUrl} />
               </div>
-            }
+            )}
             placement="bottom"
           >
             <div className="ui-demos-item-btn copy">
-              <i className='iconfont icon-qrcode'/>
+              <i className="iconfont icon-qrcode" />
             </div>
           </Tooltip>
-          <h3 className="ui-demos-item-title" onClick={e => this.toggleCode(index)}>{data.meta.title}</h3>
+          <h3 className="ui-demos-item-title" onClick={e => this.toggleCode(index)}>
+            {data.meta.title}
+          </h3>
         </div>
-          {
-            expand && (
-              <div className="ui-demos-item-editor">
-                <div className="gutter-cell " style={{ height: '15px' }}/>
-                <Gen />
-                <div className="ui-demos-item-css" style={{ height: height - demoHeight }}>{data.style && utils.toReactComponent(data.style)}</div>
+        {
+          expand && (
+            <div className="ui-demos-item-editor">
+              <div className="gutter-cell " style={{ height: '15px' }} />
+              <Gen />
+              <div className="ui-demos-item-css" style={{ height: height - demoHeight }}>
+                {data.style && utils.toReactComponent(data.style)}
               </div>
-            )
-          }
+            </div>
+          )
+        }
       </div>
     );
   }
 }
-
-// <span className="ui-demos-item-btn expand">
-//             <i className='iconfont icon-expand' 
-//               onClick={() => showExpandDemo({ 
-//                 title: data.name, 
-//                 content: data.highlightedCode,
-//                 style: data.style ? data.style.highlightedCode : null
-//               })}
-//             />
-//           </span>

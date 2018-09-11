@@ -14,7 +14,7 @@ const { Left, Right } = Layout;
 
 const parseDemoRaw = (demos) => {
   const ret = Object.keys(demos).map((name) => {
-    const content = demos[name].content;
+    const { content } = demos[name];
 
     if (content[2] && content[2][0] && content[2][0] === 'ul') {
       let raw = content.splice(2, 1);
@@ -50,7 +50,9 @@ const parseDemoRaw = (demos) => {
 };
 
 export default (props) => {
-  const { data, pageData, params: { component }, utils } = props;
+  const {
+    data, pageData, params: { component }, utils,
+  } = props;
 
   const demos = utils.get(data.demos, component) || {};
   const demosList = parseDemoRaw(demos);
@@ -62,13 +64,17 @@ export default (props) => {
     <DocumentTitle title={title}>
       <Wrap {...props}>
         <Layout>
-          <Left width={230}><Aside components={data.components} /></Left>
+          <Left width={230}>
+            <Aside components={data.components} />
+          </Left>
           <Right adaptive>
             <div className="ui-main">
               {
               component !== 'tingle-ui' && (
                 <div className="ui-main-title">
-                  <span className="fn-highlight">{NAV_MAP[component].zh}</span>
+                  <span className="fn-highlight">
+                    {NAV_MAP[component].zh}
+                  </span>
                   {uppercamelcase(component)}
                 </div>
               )

@@ -11,6 +11,7 @@ export const transformCode = (contents) => {
     return { code };
   } catch (err) {
     console.warn(err.stack);
+    return { err };
   }
 };
 
@@ -45,4 +46,3 @@ export const initTheme = () => {
 
   return theme;
 };
-
