@@ -16,7 +16,7 @@ export default () => (
       <dl className="fn-left ui-footer-item">
         <dt>使用帮助</dt>
         <dd className="ui-footer-qrcode">
-          <img src="https://img.alicdn.com/tfs/TB1xscnSXXXXXXNXXXXXXXXXXXX-200-200.png" />
+          <img src="https://camo.githubusercontent.com/5b5667587467404fce0fa5bcd7b8372f354974b5/68747470733a2f2f696d672e616c6963646e2e636f6d2f7466732f54423137774e6265737249384b4a6a79304668585862666e7058612d3837372d313037382e6a7067" />
           <p>使用钉钉扫一扫<br/>加入问题反馈群</p>
         </dd>
       </dl>

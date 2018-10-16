@@ -1,6 +1,7 @@
 const assign = require('object-assign');
 const process = require('process');
 const webpack = require('webpack');
+// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
   lazyLoad: false,
@@ -16,13 +17,16 @@ module.exports = {
       newConfig.plugins.push(
         new webpack.DefinePlugin({
           __theme__webpack__placeholder__: 'isDev = true',
-        })
+        }),
       );
+      // newConfig.plugins.push(
+      //   new BundleAnalyzerPlugin(),
+      // );
     } else {
       newConfig.plugins.push(
         new webpack.DefinePlugin({
           __theme__webpack__placeholder__: 'isDev = false',
-        })
+        }),
       );
     }
     newConfig.externals = {
