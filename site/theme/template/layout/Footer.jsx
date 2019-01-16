@@ -22,7 +22,7 @@ export default () => (
       </dl>
     </div>
     <div className="ui-footer-hr" />
-    <p className="ui-footer-right">© 2017 Alibaba, Inc. Powered by 信息平台用户体验</p>
+    <p className="ui-footer-right">© 2019 Alibaba, Inc. Powered by 企业智能事业部用户体验</p>
   </div>
 );
 
@@ -35,7 +35,7 @@ export default () => (
     <div className="footer-power">
       <span>CREATED BY</span>
       <img src="https://img.alicdn.com/tps/TB1YdwBPXXXXXbPXFXXXXXXXXXX-336-102.png" />
-      <span>阿里巴巴信息平台用户体验</span>
+      <span>阿里巴巴企业智能事业部用户体验</span>
     </div>
   </div>
   }

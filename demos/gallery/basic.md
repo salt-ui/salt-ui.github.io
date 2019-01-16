@@ -14,22 +14,22 @@ class Demo extends React.Component {
       images: [
         {
           src: 'https://gw.alicdn.com/tps/TB1HMQVJpXXXXbZXpXXXXXXXXXX-640-340.jpg',
-          name: '信息平台前端团队',
+          name: '企业智能事业部前端团队',
           href: 'http://www.alibaba-inc.com',
         },
         {
           src: 'https://gw.alicdn.com/tps/TB1X.oFJpXXXXbMXVXXXXXXXXXX-484-282.png',
-          name: '信息平台前端团队',
+          name: '企业智能事业部前端团队',
           href: 'http://www.alibaba-inc.com',
         },
         {
           src: 'https://gw.alicdn.com/tps/TB1E2M9JpXXXXXQXXXXXXXXXXXX-820-356.png',
-          name: '信息平台前端团队',
+          name: '企业智能事业部前端团队',
           href: 'http://www.alibaba-inc.com',
         },
         {
           src: 'https://gw.alicdn.com/tps/TB1Qy3RJpXXXXcxXFXXXXXXXXXX-2000-680.jpg',
-          name: '信息平台前端团队 突破十大障碍最终登上人生巅峰',
+          name: '企业智能事业部前端团队 突破十大障碍最终登上人生巅峰',
           href: 'http://www.alibaba-inc.com',
         }],
     };
