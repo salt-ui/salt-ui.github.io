@@ -18,4 +18,20 @@
   
   <script src="/common.js"></script>
   <script src="/index.js"></script>
+  <script>
+    (function() {
+      if (window.addEventListener) {
+        window.addEventListener("load", function() {
+          var script = document.createElement("script");
+
+          script.src = "/regSW.pwa.js?t=" + Date.now();
+          script.async = true;
+          script.type = "text/javascript";
+          script.crossOrigin = "anonymous";
+
+          document.head.insertBefore(script, document.head.firstChild);
+        });
+      }
+    })();
+  </script>
 </html>
