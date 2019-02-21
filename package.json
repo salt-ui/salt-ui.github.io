@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run bisheng",
+    "start": "cp -rf extra/* _site && npm run bisheng",
     "postinstall": "node ./postinstall.js",
     "bisheng1": "bisheng start -c ./bisheng/bisheng.site.config.js --no-livereload",
     "bisheng2": "bisheng start -c ./bisheng/bisheng.mobile.config.js --no-livereload",
@@ -54,6 +54,7 @@
   },
   "devDependencies": {
     "babel-plugin-import": "^1.6.2",
+    "copy-webpack-plugin": "^5.0.0",
     "object-assign": "^4.1.1",
     "to-case": "^2.0.0",
     "to-pascal-case": "^1.0.0",

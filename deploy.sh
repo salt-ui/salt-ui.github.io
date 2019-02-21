@@ -1,4 +1,5 @@
 #!/bin/bash
+cp -rf extra/* _site
 BRANCH=`date +%Y.%m%d.%H%M%S`
 SALTUI=`tnpm view saltui version`
 npm run build
