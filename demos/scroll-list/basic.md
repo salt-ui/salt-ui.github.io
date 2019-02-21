@@ -4,7 +4,8 @@ title: 基本使用
 ---
 
 ```jsx
-import { ScrollList, Icon } from 'saltui';
+import { ScrollList, Icon, Avatar, Badge } from 'saltui';
+import { DirectionRight, Map } from 'salt-icon';
 
 const { PropTypes } = React;
 
@@ -14,11 +15,11 @@ Item.propTypes = {
   name: PropTypes.string,
 };
 function Other1() {
-  return <div className="newlist-demo-item other1">{'Other1'}</div>;
+  return <div className="newlist-demo-item other1">Other1</div>;
 }
 
 function Other2() {
-  return <div className="newlist-demo-item other2">{'Other2'}</div>;
+  return <div className="newlist-demo-item other2">Other2</div>;
 }
 
 function getJsonp(page, size) {
@@ -31,23 +32,40 @@ function getJsonp(page, size) {
 
 const propsMap = [
   {
+    title: <span className="newlist-demo-has-avatar"><Avatar name="tingle" size={20} src="https://img.alicdn.com/tps/TB1amOaKpXXXXbsXVXXXXXXXXXX-144-144.png"/>标题文字(如姓名)</span>,
+  },
+  {
+    description: <span className="newlist-demo-has-avatar"><Avatar name="tingle" size={20} src="https://img.alicdn.com/tps/TB1amOaKpXXXXbsXVXXXXXXXXXX-144-144.png"/>标题文字(如姓名)</span>,
+  },
+  {
+    img: 'https://gw.alicdn.com/tfs/TB15larRXXXXXbcXpXXXXXXXXXX-300-300.jpg',
+    title: '标题文字(如姓名)',
+    badge:  <Badge text="徽章文本" style={{ marginLeft: 10, background: '#ff6600', }}/>,
+    description: '放上人物相关简介和title，使人物信息更加饱满，文本内容文本内容文本内容文本内容文本内容文本内容文本内容文本内容',
+    extra: <DirectionRight name="direction-right" className="newlist-demo-icon" />,
+  },
+  {
+    img: 'https://gw.alicdn.com/tfs/TB15larRXXXXXbcXpXXXXXXXXXX-300-300.jpg',
+    title: '标题文字(如姓名)',
+    badge:  '徽章文本2',
+    titleTag: '<span className="newlist-demo-has-title-tag">标题带标签</span>',
+    description: '多行模式，文字超长则换行；文本内容文本内容文本内容文本内容文本内容文本内容',
+  },
+  {
     title: '标题文字',
   },
   {
     title: '标题文字',
-    extra: <Icon name="direction-right" className="newlist-demo-icon" />,
+    extra: <DirectionRight className="newlist-demo-icon" />,
   },
   {
     img: 'https://gw.alicdn.com/tfs/TB15larRXXXXXbcXpXXXXXXXXXX-300-300.jpg',
     title: '标题文字',
-    extra: <Icon name="direction-right" className="newlist-demo-icon" />,
+    extra: <DirectionRight name="direction-right" className="newlist-demo-icon" />,
   },
   {
-    title: <span className="newlist-demo-has-icon"><Icon
-      name="map"
-      className="newlist-demo-front-icon"
-    />标题文字</span>,
-    extra: <Icon name="direction-right" className="newlist-demo-icon" />,
+    title: <span className="newlist-demo-has-icon"><Map className="newlist-demo-front-icon" />标题文字</span>,
+    extra: <DirectionRight name="direction-right" className="newlist-demo-icon" />,
   },
   {
     title: '标题文字',
@@ -56,13 +74,13 @@ const propsMap = [
   {
     title: '标题文字',
     description: '副标题',
-    extra: <Icon name="direction-right" className="newlist-demo-icon" />,
+    extra: <DirectionRight name="direction-right" className="newlist-demo-icon" />,
   },
   {
     img: 'https://gw.alicdn.com/tfs/TB15larRXXXXXbcXpXXXXXXXXXX-300-300.jpg',
     title: '标题文字',
     description: '副标题',
-    extra: <Icon name="direction-right" className="newlist-demo-icon" />,
+    extra: <DirectionRight name="direction-right" className="newlist-demo-icon" />,
   },
   {
     title: '2017财年绩效评估',
@@ -77,9 +95,25 @@ const propsMap = [
     img: 'https://gw.alicdn.com/tfs/TB15larRXXXXXbcXpXXXXXXXXXX-300-300.jpg',
     title: '2017财年绩效评估',
     description: '多行模式，文字超长则换行；文本内容文本内容文本内容文本内容文本内容文本内容',
-    extra: <Icon name="direction-right" className="newlist-demo-icon" />,
+    extra: <DirectionRight name="direction-right" className="newlist-demo-icon" />,
   },
 ];
+
+const tagListProps1 = {
+  onClick: (it) => {console.log(it)},
+  data: ['可以直接输入字符串', '每个标签都是显示作用']
+}
+const tagListProps2 = {
+  onClick: (it, index) => {console.log(it, '带value', index)},
+  data: [
+    { value: '信息平台极致匠心1' },
+    { value: '信息平台极致匠心2' },
+    { value: '信息平台极致匠心3' },
+    { value: '马萨拉蒂1' },
+    { value: '马萨拉蒂2' },
+    { value: '马萨拉蒂3' },
+  ]
+}
 
 class Demo extends React.Component {
   constructor(props) {
@@ -89,7 +123,7 @@ class Demo extends React.Component {
       data: [],
       hasError: false,
       pageSize: 10,
-      pageNum: 1,
+      pageNum: 0,
       loading: false,
       refreshing: false,
     };
@@ -98,18 +132,21 @@ class Demo extends React.Component {
   }
 
   onRefresh = () => {
+    console.log('refreshing');
     this.setState({ refreshing: true });
 
     setTimeout(() => {
       this.bindJsonpCallback((noMore, items) => {
-        this.setState({
-          refreshing: false,
-          dataGetted: true,
-          data: items,
-          pageNum: 1,
-          noMore: items.length < this.state.pageSize,
-          hasError: false,
-        });
+        setTimeout(() => {
+          this.setState({
+            refreshing: false,
+            dataGetted: true,
+            data: items,
+            pageNum: 1,
+            noMore: items.length < this.state.pageSize,
+            hasError: false,
+          });
+        }, 10000);
       }, () => {
         this.setState({
           refreshing: false,
@@ -120,24 +157,36 @@ class Demo extends React.Component {
       });
 
       getJsonp(1, this.state.pageSize);
-    }, 2000);
+    }, 500);
   }
 
   onLoad = () => {
     const curr = this.state.pageNum;
-
     this.setState({ loading: true });
-
+    console.log('will load page', curr);
+    if (curr >= 3) {
+      this.setState({
+        loading: false,
+        dataGetted: true,
+        noMore: true,
+        hasError: false,
+      });
+      console.log('no more');
+      return;
+    }
+    console.log('start loading page', curr);
     setTimeout(() => {
       this.bindJsonpCallback((noMore, items) => {
-        this.setState({
-          loading: false,
-          dataGetted: true,
-          data: this.state.data.concat(items),
-          pageNum: curr + 1,
-          noMore,
-          hasError: false,
-        });
+        setTimeout(() => {
+          this.setState({
+            loading: false,
+            dataGetted: true,
+            data: this.state.data.concat(items),
+            pageNum: curr + 1,
+            noMore,
+            hasError: false,
+          });
+        }, 0);
       }, () => {
         this.setState({
           loading: false,
@@ -147,10 +196,11 @@ class Demo extends React.Component {
         });
       });
       getJsonp(curr, this.state.pageSize);
-    }, 1000);
+    }, 500);
   }
 
   bindJsonpCallback(success, error) {
+    console.log('jsonp');
     const i = this.fetchTimes;
 
     window.jsonpCallbak = (data) => {
@@ -168,33 +218,42 @@ class Demo extends React.Component {
   }
 
   render() {
-    return (<div >
-      <div className="container">
-        <ScrollList
-          className="scroll-list-demo"
-          dataGetted={this.state.dataGetted}
-          data={this.state.data}
-          hasError={this.state.hasError}
-          noMore={this.state.noMore}
-          refreshing={this.state.refreshing}
-          onRefresh={this.onRefresh}
-          loading={this.state.loading}
-          onLoad={this.onLoad}
-        >
-          <Other1 />
-          <Other2 />
-          {(data, index) => {
-            const itemProps = propsMap[index % 9];
-            return (
-              <ScrollList.Item
-                key={index}
-                {...itemProps}
-              />
-            );
-          }}
-        </ScrollList>
+    return (
+      <div >
+        <div className="container">
+          <ScrollList
+            className="scroll-list-demo"
+            dataGetted={this.state.dataGetted}
+            data={this.state.data}
+            hasError={this.state.hasError}
+            noMore={this.state.noMore}
+            refreshing={this.state.refreshing}
+            onRefresh={this.onRefresh}
+            loading={this.state.loading}
+            onLoad={this.onLoad}
+            ref={(c) => { this.list = c; }}
+          >
+            <Other1 />
+            <Other2 />
+            <ScrollList.TagList
+              {...tagListProps1}
+            />
+            <ScrollList.TagList
+              {...tagListProps2}
+            />
+            {(data, index) => {
+              const itemProps = propsMap[index % 9];
+              return (
+                <ScrollList.Item
+                  key={index}
+                  {...itemProps}
+                />
+              );
+            }}
+          </ScrollList>
+        </div>
       </div>
-    </div>);
+    );
   }
 }
 

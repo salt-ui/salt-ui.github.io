@@ -177,6 +177,10 @@ export const NAV_MAP = {
     zh: '加载骨架',
     type: 'Display',
   },
+  filter: {
+    zh: '筛选器',
+    type: 'Display',
+  },
   'tag-field': {
     zh: '标签输入表单',
     type: 'Form',

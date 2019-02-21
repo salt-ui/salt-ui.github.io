@@ -146,7 +146,7 @@ class Demo extends React.Component {
               ))
             }
           </Left>
-          <Right width={413} className="ui-preview">
+          <Right width={460} className="ui-preview">
             <div className="ui-preview-content">
               <div className="ui-preview-head" />
               <iframe src={demoUrl} ref="preview" />
