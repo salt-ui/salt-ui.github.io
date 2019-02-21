@@ -133,6 +133,10 @@ export const NAV_MAP = {
     zh: '轮播',
     type: 'Display',
   },
+  carousel: {
+    zh: '轮播',
+    type: 'Display',
+  },
   slot: {
     zh: '老虎机滚轮',
     type: 'Display',
@@ -163,6 +167,14 @@ export const NAV_MAP = {
   },
   totop: {
     zh: '返回顶部',
+    type: 'Display',
+  },
+  'number-info': {
+    zh: '数据信息视图',
+    type: 'Display',
+  },
+  skeleton: {
+    zh: '加载骨架',
     type: 'Display',
   },
   'tag-field': {
@@ -225,6 +237,10 @@ export const NAV_MAP = {
     zh: '单行文本表单',
     type: 'Form',
   },
+  textarea: {
+    zh: '多行文本',
+    type: 'Form',
+  },
   'textarea-field': {
     zh: '多行文本表单',
     type: 'Form',
@@ -239,6 +255,14 @@ export const NAV_MAP = {
   },
   'picker-field': {
     zh: '全屏选择表单',
+    type: 'Form',
+  },
+  slider: {
+    zh: '滑动输入条',
+    type: 'Form',
+  },
+  'slider-field': {
+    zh: '滑动输入表单',
     type: 'Form',
   },
   table: {
