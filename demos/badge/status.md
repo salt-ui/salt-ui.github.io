@@ -1,6 +1,6 @@
 ---
-order: 1
-title: 作为子元素使用
+order: 2
+title: 作为状态子元素使用
 ---
 
 ```jsx
@@ -26,45 +26,62 @@ class Demo extends React.Component {
   render() {
     return (
       <div>
-        <h1 className="extra-head">Badge作为子元素: </h1>
+        <h1 className="extra-head">Badge作为状态 </h1>
         <div
           className="demo-line"
         >
           <Badge
-            text="促"
+            dot
+            dotType="status"
+            status="warning"
+            breath
             style={{
               marginRight: 10,
             }}
           />
-          <Badge
-            text="减"
-            style={{
-              marginRight: 10,
-            }}
-          />
-          <Badge
-            text="免"
-            style={{
-              marginRight: 10,
-              background: '#66BC5C',
-            }}
-          />
+          <span className="demo-status-text">待提交</span>
         </div>
-
         <div
           className="demo-line"
-          style={{
-            position: 'relative',
-            height: 100,
-            width: '100%',
-            background: '#e8e8e8',
-            marginTop: 20,
-          }}
         >
-          <Badge text="new" corner="lt" />
-          <Badge text="new" corner="rt" />
-          <Badge text="new" corner="lb" />
-          <Badge text="new" corner="rb" />
+          <Badge
+            dot
+            dotType="status"
+            status="info"
+            breath
+            style={{
+              marginRight: 10,
+            }}
+          />
+          <span className="demo-status-text">流程中</span>
+        </div>
+        <div
+          className="demo-line"
+        >
+          <Badge
+            dot
+            dotType="status"
+            status="error"
+            breath
+            style={{
+              marginRight: 10,
+            }}
+          />
+          <span className="demo-status-text">已拒绝</span>
+        </div>
+        <div
+          className="demo-line"
+        >
+          <Badge
+            dot
+            dotType="status"
+            status="success"
+            breath
+            style={{
+              marginRight: 10,
+            }}
+          />
+          <span className="demo-status-text">已通过</span>
         </div>
       </div>
     );

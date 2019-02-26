@@ -29,32 +29,47 @@ class Demo extends React.Component {
         <h1>Badge作为容器: </h1>
         <div className="demo-line">
           <Badge count={0}>
-            <a href="#1" className="demo-item" />
+            <span href="#1" className="demo-item" />
           </Badge>
         </div>
         <div className="demo-line">
           <Badge count={5}>
-            <a href="#1" className="demo-item" />
+            <span href="#1" className="demo-item" />
           </Badge>
         </div>
         <div className="demo-line">
           <Badge count={100}>
-            <a href="#1" className="demo-item" />
+            <span href="#1" className="demo-item" />
           </Badge>
         </div>
         <div className="demo-line">
           <Badge dot>
-            <a href="#1" className="demo-item" />
+            <span href="#1" className="demo-item" />
           </Badge>
         </div>
         <div className="demo-line">
-          <Badge text={'new'}>
-            <a href="#1" className="demo-item" />
+          <Badge text="new">
+            <span href="#1" className="demo-item" />
           </Badge>
         </div>
         <div className="demo-line">
-          <Badge text={'new'} corner="lt">
-            <a href="#1" className="demo-item" />
+          <Badge text="new" corner="lt">
+            <span href="#1" className="demo-item" />
+          </Badge>
+        </div>
+        <div className="demo-line">
+          <Badge text="new" corner="lb">
+            <span href="#1" className="demo-item" />
+          </Badge>
+        </div>
+        <div className="demo-line">
+          <Badge text="new" corner="rt">
+            <span href="#1" className="demo-item" />
+          </Badge>
+        </div>
+        <div className="demo-line">
+          <Badge text="new" corner="rb">
+            <span href="#1" className="demo-item" />
           </Badge>
         </div>
       </div>
